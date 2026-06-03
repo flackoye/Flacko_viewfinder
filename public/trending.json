@@ -18,6 +18,42 @@
     "score": 6
   },
   {
+    "id": "cab74e5e7139",
+    "title": "Introducing new capabilities to GPT-Rosalind",
+    "summary": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
+    "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-03T13:15:00+00:00",
+    "llm_score": 8,
+    "llm_summary": "GPT-Rosalind增强生物推理与实验能力，助力生命科学研究。",
+    "llm_tags": [
+      "OpenAI",
+      "生命科学",
+      "多模态/工具"
+    ],
+    "llm_reason": "内容涉及 OpenAI 的新模型 GPT-Rosalind 及其在生命科学领域的具体应用，具有前沿性和较高的信息密度，对计算机专业学生了解 AI 在垂直领域的落地有参考价值。",
+    "score": 8
+  },
+  {
+    "id": "2565b1dae8bc",
+    "title": "Direct Preference Optimization Beyond Chatbots",
+    "summary": "",
+    "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-03T12:55:11+00:00",
+    "llm_score": 8,
+    "llm_summary": "深入解析 DPO 算法在非对话场景的应用。",
+    "llm_tags": [
+      "DPO",
+      "RLHF",
+      "Hugging Face"
+    ],
+    "llm_reason": "Hugging Face 官方博客，内容基于论文，技术深度高，适合进阶学习。",
+    "score": 8
+  },
+  {
     "id": "a8b1e0e9c715",
     "title": "A blueprint for democratic governance of frontier AI",
     "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
@@ -35,6 +71,25 @@
     ],
     "llm_reason": "该内容主要涉及AI政策与监管，虽非硬核技术，但有助于CS学生了解前沿AI的社会与政策约束，具备宏观参考价值。",
     "score": 6
+  },
+  {
+    "id": "f0b2c0343879",
+    "title": "Adding MCP Tools to Reachy Mini",
+    "summary": "",
+    "url": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-03T00:00:00+00:00",
+    "llm_score": 8,
+    "llm_summary": "介绍如何为Reachy Mini机器人添加MCP工具。",
+    "llm_tags": [
+      "MCP",
+      "具身智能",
+      "Hugging Face",
+      "AI Agent"
+    ],
+    "llm_reason": "MCP（模型上下文协议）是近期LLM Agent生态的重要前沿技术。结合机器人硬件的实操教程对计算机专业学生理解Agent工具调用和具身智能具有极高的实用性和信息密度。",
+    "score": 8
   },
   {
     "id": "9e17090abb74",
@@ -78,6 +133,25 @@
     "score": 8
   },
   {
+    "id": "c7ccb25baa28",
+    "title": "Holo3.1: Fast & Local Computer Use Agents",
+    "summary": "",
+    "url": "https://huggingface.co/blog/Hcompany/holo31",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-02T14:13:23+00:00",
+    "llm_score": 8,
+    "llm_summary": "介绍Holo3.1：一款快速且支持本地部署的计算机使用智能体。",
+    "llm_tags": [
+      "AI Agent",
+      "Computer Use",
+      "本地部署",
+      "Hugging Face"
+    ],
+    "llm_reason": "Computer Use Agent 是当前 AI 领域的前沿热点。该内容对 CS 学生极具实用价值，本地部署特性也高度契合底层技术学习与探索的需求。",
+    "score": 8
+  },
+  {
     "id": "36399780627b",
     "title": "TheStageAI/edge-lm ⭐72",
     "summary": "Tiny llms optimised for edge deployment ",
@@ -96,6 +170,27 @@
       "轻量化"
     ],
     "llm_reason": "内容简洁明了，提供了具体的 GitHub 项目链接，针对边缘部署这一热门且实用的场景，具有较高的参考价值。",
+    "score": 8
+  },
+  {
+    "id": "ed8837388007",
+    "title": "Amazinghorseli/RedNote-Insight ⭐44",
+    "summary": "小红书爆款雷达 - 翻评论、找痛点、定方向，用 AI 从评论区挖出下一个爆款",
+    "url": "https://github.com/Amazinghorseli/RedNote-Insight",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-02T12:48:34Z",
+    "stars": 44,
+    "language": "Python",
+    "llm_score": 8,
+    "llm_summary": "利用AI分析小红书评论挖掘爆款方向。",
+    "llm_tags": [
+      "GitHub",
+      "小红书",
+      "数据分析",
+      "AI应用"
+    ],
+    "llm_reason": "内容展示了具体的AI落地应用场景，具有实际参考价值，且信息密度较高。",
     "score": 8
   },
   {
@@ -194,6 +289,43 @@
     ],
     "llm_reason": "展示了AI在实时生成图文内容方面的前沿应用潜力，具有很高的技术演示和参考价值。",
     "score": 7
+  },
+  {
+    "id": "e4b943609e0a",
+    "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+    "summary": "",
+    "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-01T15:45:17+00:00",
+    "llm_score": 7,
+    "llm_summary": "JetBrains发布120亿参数的Mellum2代码专家混合模型。",
+    "llm_tags": [
+      "LLM",
+      "MoE",
+      "代码生成",
+      "开源模型"
+    ],
+    "llm_reason": "MoE是当前大模型的重要前沿架构，且由知名IDE厂商发布，对CS学生了解代码大模型发展具有较高实用性和参考价值。但摘要缺失，信息密度与可读性受影响。",
+    "score": 7
+  },
+  {
+    "id": "626a9bf65ddc",
+    "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
+    "summary": "",
+    "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-01T13:51:18+00:00",
+    "llm_score": 8,
+    "llm_summary": "探讨企业级 AI 从 LLM 向 Agent 架构演进的趋势与逻辑。",
+    "llm_tags": [
+      "LLM",
+      "Agent",
+      "Enterprise AI"
+    ],
+    "llm_reason": "内容探讨了 LLM 之外的企业级 AI 落地新范式，具有前瞻性和较高的信息密度，适合计算机专业学生了解行业趋势。",
+    "score": 8
   },
   {
     "id": "7978c517b9dd",
