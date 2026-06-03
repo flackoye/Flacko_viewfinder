@@ -150,7 +150,52 @@ npm run dev
 - [ ] **添加页面过渡动画**：用 Framer Motion 实现 page transition
 - [ ] **性能优化**：跑一次 Lighthouse，针对 LCP/CLS/FID 逐项优化
 
-### 🔥 进阶级（学习新技术）
+### 🧠 LLM 应用方向（核心特色）
+
+这是本项目最想突破的方向——把学到的 LLM 底层知识落地到真实产品中。
+
+#### 第一阶段：AI 对话助手
+
+- [ ] **站内 AI 聊天窗口**：嵌入一个基于 GLM API 的对话组件
+  - 可以问 "最近 AI 有什么新进展？" → 基于热点数据回答
+  - 学习：Prompt Engineering、流式输出（SSE）、对话上下文管理
+  - 技术栈：Next.js Route Handler + zai-sdk + React Streaming
+- [ ] **对话历史记忆**：用 cookie/localStorage 保存聊天记录，实现多轮对话
+  - 学习：Token 计算、上下文窗口管理、消息截断策略
+
+#### 第二阶段：知识库 + RAG（检索增强生成）
+
+- [ ] **个人知识库向量化**：把笔记、收藏的热点文章转成 Embedding 向量
+  - 技术栈：智谱 Embedding-3 API + pgvector（Supabase）或本地 ChromaDB
+  - 学习：文本分块（chunking）、向量化、相似度检索
+- [ ] **RAG 问答**：用户提问时，先从知识库检索相关内容，再送给 LLM 生成回答
+  - 学习：Retrieval-Augmented Generation 的完整流程
+  - 效果：问 "Transformer 的注意力机制怎么工作的？" → 从你的笔记+热点中找答案
+- [ ] **知识库管理界面**：上传文档、查看分块结果、调整检索参数
+
+#### 第三阶段：Agent 助手
+
+- [ ] **工具调用（Function Calling）**：让 AI 助手能调用外部工具
+  - 示例：用户说 "帮我搜一下最新的 LLM 论文" → Agent 调用 Semantic Scholar API → 返回结果
+  - 学习：Function Calling 协议、工具描述设计、多工具编排
+- [ ] **多步推理 Agent**：实现 ReAct（Reasoning + Acting）循环
+  - 用户问复杂问题时，Agent 自动拆解为多个子任务，逐步执行
+  - 学习：Agent 循环、观察-思考-行动模式、错误恢复
+- [ ] **自定义 Agent 技能**：定义一组可复用的 "Skill"（搜索、总结、翻译、对比），Agent 自主选择执行
+
+#### 💡 涉及的 LLM 底层概念 → 工程落地映射
+
+| 学过的底层概念 | 在本项目中的落地方式 |
+|---------------|-------------------|
+| Tokenization | 控制对话上下文长度、计算 API 调用成本 |
+| Embedding | 笔记和热点向量化，支撑语义搜索 |
+| Attention / Self-Attention | 理解 RAG 为什么能 "找到相关内容" |
+| Temperature / Top-p Sampling | 已在热点筛选中应用（`.env` 配置） |
+| Prompt Engineering | System Prompt 设计（已在 `fetch_trending.py` 中使用） |
+| Function Calling | Agent 工具调用的底层协议 |
+| Streaming (SSE) | 聊天窗口的逐字输出体验 |
+
+### 🔥 进阶级（全栈工程）
 
 - [ ] **接入数据库**：用 Prisma + Supabase/PlanetScale 替代 JSON 文件存储热点数据
   - 热点数据持久化，不用每次 commit JSON 到 repo
@@ -158,7 +203,6 @@ npm run dev
 - [ ] **全栈功能**：用户系统（NextAuth.js）
   - 登录后可以收藏热点、写笔记、自定义首页
 - [ ] **RSS 订阅输出**：让别人的 RSS 阅读器能订阅你的站点更新
-- [ ] **AI 对话集成**：在站点里嵌入一个基于 GLM API 的简单聊天窗口，回答关于 AI 热点的问题
 
 ### 🚀 挑战级（工程化提升）
 
