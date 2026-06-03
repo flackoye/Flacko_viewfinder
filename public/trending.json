@@ -1,0 +1,240 @@
+[
+  {
+    "id": "d3886421a90c",
+    "title": "How virtual power plants could provide energy for data centers",
+    "summary": "Would you take a payment to ramp down your electricity use? Would it change anything if you were doing so to help power a local data center? Google just signed a new deal to help pay for a virtual power plant (VPP) in the largest power grid in the US. The agreement is with Voltus,&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/03/1138350/virtual-power-plants-data-centers/",
+    "source": "MIT Tech Review AI",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-03T16:51:38+00:00",
+    "llm_score": 6,
+    "llm_summary": "谷歌与Voltus合作，利用虚拟电厂为数据中心提供能源。",
+    "llm_tags": [
+      "能源",
+      "数据中心",
+      "虚拟电厂"
+    ],
+    "llm_reason": "内容涉及AI基础设施与能源管理的结合，具有行业参考价值，但作为技术学习资料，其技术深度和前沿性一般。",
+    "score": 6
+  },
+  {
+    "id": "a8b1e0e9c715",
+    "title": "A blueprint for democratic governance of frontier AI",
+    "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
+    "url": "https://openai.com/index/frontier-safety-blueprint",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-03T10:00:00+00:00",
+    "llm_score": 6,
+    "llm_summary": "OpenAI提出前沿AI的美国治理蓝图，聚焦安全与国安。",
+    "llm_tags": [
+      "AI政策",
+      "AI治理",
+      "OpenAI",
+      "前沿AI"
+    ],
+    "llm_reason": "该内容主要涉及AI政策与监管，虽非硬核技术，但有助于CS学生了解前沿AI的社会与政策约束，具备宏观参考价值。",
+    "score": 6
+  },
+  {
+    "id": "9e17090abb74",
+    "title": "CWS6206/Lucerne-Geo-AI-Searching ⭐68",
+    "summary": "Lucerne Geo-AI-Searching ist eine Applikation, die Standort- und Grundstücksanalysen im Kanton Luzern mithilfe von offiziellen Geodaten (WFS / ÖREB) und Künstlicher Intelligenz (AI) automatisiert.",
+    "url": "https://github.com/CWS6206/Lucerne-Geo-AI-Searching",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-02T17:44:56Z",
+    "stars": 68,
+    "language": "JavaScript",
+    "llm_score": 7,
+    "llm_summary": "基于AI的瑞士卢塞恩地区地块分析应用。",
+    "llm_tags": [
+      "GitHub",
+      "GeoAI",
+      "应用案例"
+    ],
+    "llm_reason": "展示了 GeoAI 在地理空间数据处理中的实际落地应用，包含 WFS 和 ÖREB 数据源，对理解 AI 在特定垂直领域的应用有一定参考价值。",
+    "score": 7
+  },
+  {
+    "id": "78dfd37231b3",
+    "title": "anvia-hq/lexa ⭐52",
+    "summary": "Lexa - Fast local code intelligence for humans and AI agents. Lexa turns a codebase into a portable, queryable graph so every tool can work from the same stable view of the project.",
+    "url": "https://github.com/anvia-hq/lexa",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-02T16:58:00Z",
+    "stars": 52,
+    "language": "Rust",
+    "llm_score": 8,
+    "llm_summary": "Lexa：将代码库转为可查询图，为AI提供本地代码智能。",
+    "llm_tags": [
+      "代码智能",
+      "GraphRAG",
+      "AI Agent",
+      "开发工具"
+    ],
+    "llm_reason": "该开源工具展示了如何利用图结构为AI Agent提供代码上下文，对CS学生理解LLM在代码工程中的应用及RAG技术具有极高的前沿性和实用参考价值。",
+    "score": 8
+  },
+  {
+    "id": "36399780627b",
+    "title": "TheStageAI/edge-lm ⭐72",
+    "summary": "Tiny llms optimised for edge deployment ",
+    "url": "https://github.com/TheStageAI/edge-lm",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-02T13:46:30Z",
+    "stars": 72,
+    "language": "Python",
+    "llm_score": 8,
+    "llm_summary": "面向边缘部署的微型大语言模型库。",
+    "llm_tags": [
+      "GitHub",
+      "边缘计算",
+      "LLM",
+      "轻量化"
+    ],
+    "llm_reason": "内容简洁明了，提供了具体的 GitHub 项目链接，针对边缘部署这一热门且实用的场景，具有较高的参考价值。",
+    "score": 8
+  },
+  {
+    "id": "d4a7d061f055",
+    "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+    "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
+    "url": "https://openai.com/index/travelers",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-02T12:00:00+00:00",
+    "llm_score": 6,
+    "llm_summary": "Travelers利用OpenAI推出全国性AI理赔助手，提供全天候客服。",
+    "llm_tags": [
+      "企业应用",
+      "案例分析",
+      "LLM",
+      "客服机器人"
+    ],
+    "llm_reason": "该内容展示了LLM在大型企业中的实际落地场景，对了解AI商业应用有参考价值；但属于偏营销的客户案例，缺乏底层技术细节，技术信息密度一般。",
+    "score": 6
+  },
+  {
+    "id": "2d21c6771add",
+    "title": "Rehumanizing global health care with agentic AI",
+    "summary": "The global health care sector is under increasing strain.&#160; Decades of chronic underinvestment and constraints in recruitment have coincided with a surge in demand for services for aging populations. Gaps in provision are already taking a toll, with fragmented access to care and high rates of stress and burnout among staff. And it’s getting worse.&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/02/1137827/rehumanizing-global-health-care-with-agentic-ai/",
+    "source": "MIT Tech Review AI",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-02T11:23:34+00:00",
+    "llm_score": 7,
+    "llm_summary": "探讨 AI 代理如何重塑全球医疗体系。",
+    "llm_tags": [
+      "AI应用",
+      "医疗健康",
+      "前沿趋势"
+    ],
+    "llm_reason": "内容涉及 AI 在医疗领域的具体应用场景，具有前沿性和一定的实用性，但摘要截断导致信息密度和可读性受限。",
+    "score": 7
+  },
+  {
+    "id": "9f17ec9ebf91",
+    "title": "Soul-AILab/SoulX-Transcriber ⭐126",
+    "summary": "An end-to-end framework for multi-speaker transcription that jointly models who spoke, when, and what.",
+    "url": "https://github.com/Soul-AILab/SoulX-Transcriber",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-02T05:08:08Z",
+    "stars": 126,
+    "language": "Python",
+    "llm_score": 8,
+    "llm_summary": "开源多说话人语音转写框架，联合建模说话人、时间和内容。",
+    "llm_tags": [
+      "开源项目",
+      "语音识别",
+      "多说话人"
+    ],
+    "llm_reason": "内容涉及具体的开源项目，信息密度高，对学习 ASR 和多说话人建模有实际参考价值。",
+    "score": 8
+  },
+  {
+    "id": "ec83f57dc9fd",
+    "title": "jd-opensource/JoyAI-Echo ⭐233",
+    "summary": "JoyAI-Echo: Pushing the Frontier of Long Audio-Visual Generation",
+    "url": "https://github.com/jd-opensource/JoyAI-Echo",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-02T03:25:51Z",
+    "stars": 233,
+    "language": "Python",
+    "llm_score": 9,
+    "llm_summary": "开源长音频视觉生成模型，探索前沿多模态技术。",
+    "llm_tags": [
+      "开源项目",
+      "多模态",
+      "长音频"
+    ],
+    "llm_reason": "内容涉及长音频视觉生成这一前沿多模态方向，GitHub Star 数量高，具有很高的技术参考价值和实用性。",
+    "score": 9
+  },
+  {
+    "id": "04b56e1b73b3",
+    "title": "zonghaoyuan/infiplot ⭐119",
+    "summary": "InfiPlot is the world's first interactive plot game that AI generates all text and images in real-time. InfiPlot是全球首个由 AI 实时生成全部图文内容的交互式剧情游戏",
+    "url": "https://github.com/zonghaoyuan/infiplot",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-02T02:49:30Z",
+    "stars": 119,
+    "language": "TypeScript",
+    "llm_score": 7,
+    "llm_summary": "AI实时生成图文的交互式剧情游戏Demo",
+    "llm_tags": [
+      "AI应用",
+      "交互式体验",
+      "GitHub"
+    ],
+    "llm_reason": "展示了AI在实时生成图文内容方面的前沿应用潜力，具有很高的技术演示和参考价值。",
+    "score": 7
+  },
+  {
+    "id": "7978c517b9dd",
+    "title": "PanisHandsome/ai-rules-sync ⭐84",
+    "summary": "Keep one source of truth for your AI coding-agent rules. Convert and sync between AGENTS.md, CLAUDE.md, .cursorrules, Copilot, Windsurf, Cline, Aider & Gemini — or scaffold a fresh AGENTS.md. Zero dep",
+    "url": "https://github.com/PanisHandsome/ai-rules-sync",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-01T03:32:48Z",
+    "stars": 84,
+    "language": "JavaScript",
+    "llm_score": 8,
+    "llm_summary": "同步多种AI编程助手配置文件的开源工具。",
+    "llm_tags": [
+      "AI编程助手",
+      "开发工具",
+      "GitHub",
+      "效率提升"
+    ],
+    "llm_reason": "该工具解决了当前使用多种大模型编程助手时配置规则碎片化的痛点，对计算机专业学生在日常开发中高效使用AI具有极高的实用价值，信息明确且无营销水分。",
+    "score": 8
+  },
+  {
+    "id": "4155a4342e31",
+    "title": "couragec/llm-intern-skill ⭐80",
+    "summary": "LLM internship resume and job-search Codex Skill: resume polish, JD tailoring, evidence guard, interview grilling, and Project Scout for LLM/RAG/Agent roles. 大模型实习简历与求职工具箱。",
+    "url": "https://github.com/couragec/llm-intern-skill",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-01T03:20:26Z",
+    "stars": 80,
+    "language": "Markdown",
+    "llm_score": 8,
+    "llm_summary": "大模型实习求职工具箱，提供简历润色与面试模拟等功能。",
+    "llm_tags": [
+      "求职",
+      "LLM",
+      "工具箱",
+      "面试准备"
+    ],
+    "llm_reason": "该内容对寻找AI岗位的计算机专业学生具有极高的实用价值，直接针对LLM相关岗位的简历修改和面试准备，信息明确且切中痛点。",
+    "score": 8
+  }
+]

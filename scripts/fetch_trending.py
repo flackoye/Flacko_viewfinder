@@ -5,47 +5,72 @@ AI 热点爬取管道
 流程：
 1. 从多个数据源爬取内容（RSS + Semantic Scholar + GitHub Trending）
 2. 调用 GLM API 对每条内容进行筛选、打分、生成摘要
-3. 只保留得分 >= 6 的优质内容
-4. 管理滚动窗口：自动删除超过 3 天的内容
+3. 只保留得分 >= 阈值 的优质内容
+4. 管理滚动窗口：自动删除超过指定天数的内容
 5. 输出到 public/trending.json
 
-使用方法：
-  export ZHIPU_API_KEY="你的key"
-  python scripts/fetch_trending.py
+所有配置均在项目根目录 .env 文件中管理，修改配置无需改代码。
+模型文档: https://docs.bigmodel.cn/cn/guide/start/model-overview
 """
 
 import json
 import os
 import sys
+import io
 import time
 import hashlib
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from xml.etree import ElementTree
 
+# Windows 终端默认 GBK 编码无法输出 emoji，强制切换 UTF-8
+if sys.platform == "win32":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+
 import feedparser
 import httpx
-from zhipuai import ZhipuAI
+from zai import ZhipuAiClient
 
 
-# 自动加载项目根目录的 .env 文件
+# ========== 环境变量加载 ==========
+
 def load_env():
+    """自动加载项目根目录的 .env 文件"""
     env_file = Path(__file__).parent.parent / ".env"
     if env_file.exists():
         for line in env_file.read_text(encoding="utf-8").splitlines():
             line = line.strip()
             if line and not line.startswith("#") and "=" in line:
                 key, value = line.split("=", 1)
-                os.environ.setdefault(key.strip(), value.strip())
+                os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
 
 load_env()
 
-# ========== 配置 ==========
 
+# ========== 从环境变量读取配置（带默认值） ==========
+
+def _env(key: str, default: str = "") -> str:
+    """读取环境变量，去掉引号"""
+    val = os.environ.get(key, default)
+    return val.strip('"').strip("'")
+
+# --- 输出 ---
 OUTPUT_FILE = Path(__file__).parent.parent / "public" / "trending.json"
-MAX_AGE_DAYS = 3
-GLM_MODEL = "glm-4-air"  # 稍强一点但不太贵
-SCORE_THRESHOLD = 6.0     # 6分以上才保留
+
+# --- 筛选规则 ---
+MAX_AGE_DAYS = int(_env("MAX_AGE_DAYS", "3"))
+SCORE_THRESHOLD = float(_env("SCORE_THRESHOLD", "6.0"))
+
+# --- GLM 模型配置 ---
+GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7-flash")
+GLM_TEMPERATURE = float(_env("ZHIPU_TEMPERATURE", "0.1"))
+GLM_MAX_TOKENS = int(_env("ZHIPU_MAX_TOKENS", "256"))
+
+# --- 爬取控制 ---
+RSS_ITEMS_PER_SOURCE = int(_env("RSS_ITEMS_PER_SOURCE", "5"))
+LLM_CALL_INTERVAL = float(_env("LLM_CALL_INTERVAL", "0.5"))
+HTTP_TIMEOUT = int(_env("HTTP_TIMEOUT", "15"))
 
 # AI 领域优质 RSS 源
 RSS_SOURCES = [
@@ -89,11 +114,11 @@ def fetch_rss() -> list[dict]:
     items = []
     for source in RSS_SOURCES:
         try:
-            resp = httpx.get(source["url"], timeout=15, follow_redirects=True)
+            resp = httpx.get(source["url"], timeout=HTTP_TIMEOUT, follow_redirects=True)
             feed = feedparser.parse(resp.text)
 
-            for entry in feed.entries[:5]:  # 每个源最多 5 条
-                # 只保留最近 3 天的
+            for entry in feed.entries[:RSS_ITEMS_PER_SOURCE]:
+                # 只保留最近 MAX_AGE_DAYS 天的
                 published = None
                 if hasattr(entry, "published_parsed") and entry.published_parsed:
                     published = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
@@ -128,8 +153,7 @@ def fetch_semantic_scholar() -> list[dict]:
     """获取 AI 领域趋势论文（按引用速度排序）"""
     items = []
     try:
-        # 搜索最近 3 天的高影响力 AI 论文
-        three_days_ago = (datetime.now(timezone.utc) - timedelta(days=3)).strftime("%Y-%m-%d")
+        three_days_ago = (datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)).strftime("%Y-%m-%d")
         url = "https://api.semanticscholar.org/graph/v1/paper/search"
         params = {
             "query": "large language model OR transformer OR generative AI",
@@ -138,7 +162,15 @@ def fetch_semantic_scholar() -> list[dict]:
             "limit": 10,
             "sort": "publicationDate:desc",
         }
-        resp = httpx.get(url, params=params, timeout=20)
+        # Semantic Scholar 限流严格，加重试
+        for attempt in range(3):
+            resp = httpx.get(url, params=params, timeout=HTTP_TIMEOUT + 5)
+            if resp.status_code == 429:
+                wait = 5 * (attempt + 1)
+                print(f"  ⏳ Semantic Scholar 限流，等待 {wait}s 后重试...")
+                time.sleep(wait)
+                continue
+            break
         data = resp.json()
 
         for paper in data.get("data", []):
@@ -174,16 +206,18 @@ def fetch_github_trending() -> list[dict]:
     """爬取 GitHub AI 相关 trending 仓库"""
     items = []
     try:
+        # GitHub API 要求日期格式为 YYYY-MM-DD
+        since = (datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)).strftime("%Y-%m-%d")
         resp = httpx.get(
             "https://api.github.com/search/repositories",
             params={
-                "q": "AI OR LLM OR transformer created:>3-days-ago",
+                "q": f"AI OR LLM OR transformer created:>{since}",
                 "sort": "stars",
                 "order": "desc",
                 "per_page": 10,
             },
             headers={"Accept": "application/vnd.github.v3+json"},
-            timeout=15,
+            timeout=HTTP_TIMEOUT,
         )
         data = resp.json()
 
@@ -227,7 +261,7 @@ SYSTEM_PROMPT = """你是一个 AI 领域的内容筛选专家。你的任务是
 
 只返回 JSON，不要其他文字。"""
 
-def llm_filter(client: ZhipuAI, item: dict) -> dict | None:
+def llm_filter(client: ZhipuAiClient, item: dict) -> dict | None:
     """调用 GLM 对单条内容进行筛选"""
     user_msg = f"""请评估以下内容：
 
@@ -244,8 +278,10 @@ def llm_filter(client: ZhipuAI, item: dict) -> dict | None:
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": user_msg},
             ],
-            temperature=0.1,  # 低温度，评分更稳定
-            max_tokens=200,
+            temperature=GLM_TEMPERATURE,
+            max_tokens=GLM_MAX_TOKENS,
+            # 关闭思维链 — 筛选任务不需要深度推理，避免 token 浪费在思考上
+            thinking={"type": "disabled"},
         )
 
         raw = response.choices[0].message.content.strip()
@@ -272,6 +308,7 @@ def llm_filter(client: ZhipuAI, item: dict) -> dict | None:
 
     except json.JSONDecodeError:
         print(f"    ⚠ LLM 返回了非 JSON 内容，跳过: {item['title'][:40]}")
+        print(f"       原始返回: {raw[:200]}")
         return None
     except Exception as e:
         print(f"    ⚠ LLM error: {e}")
@@ -292,7 +329,7 @@ def load_existing_data() -> list[dict]:
 
 
 def prune_old_items(items: list[dict]) -> list[dict]:
-    """删除超过 3 天的内容"""
+    """删除超过指定天数的内容"""
     cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
     kept = []
     for item in items:
@@ -320,16 +357,17 @@ def main():
     print("=" * 50)
     print("🚀 AI 热点爬取管道启动")
     print(f"   时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"   模型: {GLM_MODEL}")
+    print(f"   阈值: {SCORE_THRESHOLD} | 保留: {MAX_AGE_DAYS}天")
     print("=" * 50)
 
     # 检查 API Key
-    api_key = os.environ.get("ZHIPU_API_KEY")
+    api_key = _env("ZHIPU_API_KEY")
     if not api_key:
-        print("❌ 请设置环境变量 ZHIPU_API_KEY")
-        print("   export ZHIPU_API_KEY='你的key'")
+        print("❌ 请在 .env 中设置 ZHIPU_API_KEY")
         sys.exit(1)
 
-    client = ZhipuAI(api_key=api_key)
+    client = ZhipuAiClient(api_key=api_key)
 
     # 1. 加载已有数据 + 清理过期
     existing = load_existing_data()
@@ -363,7 +401,7 @@ def main():
                 print(f"    ✅ 得分: {llm_result['llm_score']} | {llm_result['llm_summary']}")
             else:
                 print(f"    ❌ 未通过筛选")
-            time.sleep(0.5)  # 避免 rate limit
+            time.sleep(LLM_CALL_INTERVAL)
 
         print(f"\n🎯 筛选结果: {len(filtered)}/{len(new_items)} 条通过")
         existing.extend(filtered)

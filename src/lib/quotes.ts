@@ -30,10 +30,16 @@ const fallbackQuotes: Quote[] = [
  */
 export async function fetchQuote(): Promise<Quote> {
   try {
-    // c=d(文学) c=h(影视) c=i(诗词) c=k(哲学)
+    // 加 5 秒超时，防止 API 卡住导致页面一直 loading
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 5000);
+
     const res = await fetch('https://v1.hitokoto.cn/?c=d&c=h&c=i&c=k', {
-      next: { revalidate: 3600 }, // 服务端缓存 1 小时
+      signal: controller.signal,
+      next: { revalidate: 3600 },
     });
+
+    clearTimeout(timeout);
 
     if (!res.ok) throw new Error('API 请求失败');
 
@@ -45,7 +51,7 @@ export async function fetchQuote(): Promise<Quote> {
       from: data.from || undefined,
     };
   } catch {
-    // API 挂了 → 用本地备用，按当天日期选一条
+    // API 挂了 / 超时 → 用本地备用
     const today = new Date();
     const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
     return fallbackQuotes[seed % fallbackQuotes.length];

@@ -26,7 +26,17 @@ jobs:
 
       - name: Fetch & filter trending
         env:
+          # API Key 从 GitHub Secrets 读取（安全）
           ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+          # 以下配置与 .env 保持一致，改模型时两边同步
+          ZHIPU_MODEL: "glm-4.7-flash"
+          ZHIPU_TEMPERATURE: "0.1"
+          ZHIPU_MAX_TOKENS: "512"
+          SCORE_THRESHOLD: "6.0"
+          MAX_AGE_DAYS: "3"
+          RSS_ITEMS_PER_SOURCE: "5"
+          LLM_CALL_INTERVAL: "0.5"
+          HTTP_TIMEOUT: "15"
         run: python scripts/fetch_trending.py
 
       - name: Commit changes

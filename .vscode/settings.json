@@ -1,0 +1,11 @@
+{
+  // 终端打开时自动激活项目 Python 虚拟环境
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.terminal.activateEnvironment": true,
+
+  // 每个新终端自动执行激活命令（兼容 bash / powershell / cmd）
+  "terminal.integrated.env.windows": {
+    "VIRTUAL_ENV": "${workspaceFolder}/.venv",
+    "PATH": "${workspaceFolder}/.venv/Scripts;${env:PATH}"
+  }
+}
