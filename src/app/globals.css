@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+/* ========== 主题配置（Tailwind v4 语法） ========== */
+@theme inline {
+  --color-bg: #12141c;
+  --color-bg-deep: #0a0c12;
+  --color-bg-card: rgba(255, 255, 255, 0.04);
+  --color-bg-card-hover: rgba(255, 255, 255, 0.07);
+  --color-accent: #e2b659;
+  --color-accent-light: #f0cb75;
+  --color-accent-dim: #b8943f;
+  --color-text: #eaecf0;
+  --color-text-muted: #a0a6b0;
+  --color-text-dim: #6b7280;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-light: rgba(255, 255, 255, 0.16);
+  --font-sans: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+  --animate-pulse-slow: pulse-slow 3s ease-in-out infinite;
+}
+
+/* ========== 基础样式 ========== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(226, 182, 89, 0.25);
+  color: #f1f5f9;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0c12;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2d3e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3d4e;
+}
+
+/* ========== 玻璃拟态组件 ========== */
+
+/* 玻璃卡片 */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.glass:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(226, 182, 89, 0.22);
+  box-shadow: 0 8px 32px rgba(226, 182, 89, 0.06);
+}
+
+/* 玻璃导航栏 */
+.glass-nav {
+  background: rgba(18, 20, 28, 0.75);
+  backdrop-filter: blur(20px) saturate(1.3);
+  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.35s ease;
+}
+
+/* 玻璃按钮（主按钮） */
+.glass-btn {
+  background: rgba(226, 182, 89, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(226, 182, 89, 0.25);
+  border-radius: 12px;
+  color: #f0cb75;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+
+.glass-btn:hover {
+  background: rgba(226, 182, 89, 0.28);
+  border-color: rgba(226, 182, 89, 0.45);
+  box-shadow: 0 6px 24px rgba(226, 182, 89, 0.15);
+  transform: translateY(-2px);
+}
+
+.glass-btn:active {
+  transform: translateY(0);
+  transition-duration: 0.1s;
+}
+
+/* 玻璃按钮（次级） */
+.glass-btn-outline {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: #a0a6b0;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+
+.glass-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #eaecf0;
+  transform: translateY(-2px);
+}
+
+.glass-btn-outline:active {
+  transform: translateY(0);
+  transition-duration: 0.1s;
+}
+
+/* ========== 交互增强 ========== */
+
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+}
+
+.hover-lift:active {
+  transform: translateY(-1px);
+  transition-duration: 0.1s;
+}
+
+/* 标签 */
+.tag {
+  padding: 2px 10px;
+  font-size: 12px;
+  border-radius: 9999px;
+  background: rgba(226, 182, 89, 0.1);
+  border: 1px solid rgba(226, 182, 89, 0.18);
+  color: #a0a6b0;
+  transition: all 0.25s ease;
+}
+
+.tag:hover {
+  border-color: rgba(226, 182, 89, 0.35);
+  color: #f0cb75;
+  background: rgba(226, 182, 89, 0.15);
+  transform: translateY(-1px);
+}
+
+/* 渐变文字 */
+.gradient-text {
+  background: linear-gradient(135deg, #e2b659, #f0cb75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 站名设计 */
+.site-name {
+  background: linear-gradient(135deg, #e2b659 0%, #f0cb75 50%, #e2b659 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.08em;
+  position: relative;
+}
+
+.site-subname {
+  color: rgba(160, 166, 176, 0.6);
+  letter-spacing: 0.2em;
+  transition: color 0.3s ease;
+}
+
+a:hover .site-subname {
+  color: rgba(160, 166, 176, 0.9);
+}
+
+/* 分割线 */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
+
+/* 页面淡入 */
+.page-fade-in {
+  animation: fadeIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 慢速呼吸脉冲 */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* ========== 滑块样式（自定义面板） ========== */
+.custom-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+  transition: background 0.2s;
+}
+
+.custom-slider:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e2b659;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 8px rgba(226, 182, 89, 0.3);
+  transition: all 0.2s ease;
+}
+
+.custom-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 2px 12px rgba(226, 182, 89, 0.5);
+}
+
+.custom-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e2b659;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 8px rgba(226, 182, 89, 0.3);
+}
+
+/* ========== 全局链接和按钮交互 ========== */
+
+a, button {
+  transition: all 0.25s ease;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid rgba(226, 182, 89, 0.4);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+input {
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.08) !important;
+}

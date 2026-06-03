@@ -1,0 +1,38 @@
+name: Update AI Trending
+
+on:
+  # 每 5 小时跑一次：UTC 0:00, 5:00, 10:00, 15:00, 20:00
+  schedule:
+    - cron: "0 0,5,10,15,20 * * *"
+  # 也支持手动触发
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch & filter trending
+        env:
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+        run: python scripts/fetch_trending.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "trending-bot"
+          git config user.email "bot@flacko.dev"
+          git add public/trending.json
+          git diff --cached --quiet || git commit -m "🔄 update trending data"
+          git push
