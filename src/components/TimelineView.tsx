@@ -131,11 +131,11 @@ export default function TimelineView({ items }: { items: TrendingItem[] }) {
                       rel="noopener noreferrer"
                       className="flex-1 glass p-5 hover-lift block"
                     >
-                      {/* 头部：来源 + 得分 */}
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2 text-xs">
-                          <SourceIcon className={`w-3.5 h-3.5 ${config.color}`} />
-                          <span className="text-text-dim">{item.source}</span>
+                      {/* 头部：来源 + 标签 + 得分 */}
+                      <div className="flex items-start justify-between gap-2 mb-2">
+                        <div className="flex flex-wrap items-center gap-1.5 text-xs">
+                          <SourceIcon className={`w-3.5 h-3.5 shrink-0 ${config.color}`} />
+                          <span className="text-text-dim whitespace-nowrap">{item.source}</span>
                           {item.llm_tags && item.llm_tags.map((tag) => (
                             <span key={tag} className="tag text-[10px]">{tag}</span>
                           ))}
@@ -144,7 +144,7 @@ export default function TimelineView({ items }: { items: TrendingItem[] }) {
                           )}
                         </div>
                         {item.score && (
-                          <span className="text-xs font-mono text-accent">
+                          <span className="text-xs font-mono text-accent whitespace-nowrap">
                             {item.score.toFixed(1)}
                           </span>
                         )}
