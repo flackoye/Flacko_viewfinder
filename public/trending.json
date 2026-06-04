@@ -1,5 +1,105 @@
 [
   {
+    "id": "e6461a7e5333",
+    "title": "Sapphiretrudirect/free-claude-code-ai-desktop-app-492 ⭐72",
+    "summary": "claude code ai free desktop app  api cli open source opencode aider gemini alternative download github local llm ollama setup guide tutorial api  2026",
+    "url": "https://github.com/Sapphiretrudirect/free-claude-code-ai-desktop-app-492",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-04T16:57:10Z",
+    "stars": 72,
+    "language": "C#",
+    "llm_score": 7,
+    "llm_summary": "Claude Code 桌面端开源替代方案教程。",
+    "llm_tags": [
+      "开源",
+      "桌面应用",
+      "Claude",
+      "教程"
+    ],
+    "llm_reason": "内容涉及开源桌面应用和本地 LLM 集成，对有特定开发需求的学生具有实用参考价值。",
+    "score": 7
+  },
+  {
+    "id": "686deb138b13",
+    "title": "VergeWarlord/KeyType-134 ⭐72",
+    "summary": "An open-source Cotypist with macOS system wide AI autocomplete",
+    "url": "https://github.com/VergeWarlord/KeyType-134",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-04T16:13:44Z",
+    "stars": 72,
+    "language": "Swift",
+    "llm_score": 7,
+    "llm_summary": "开源 macOS 系统级 AI 自动补全工具。",
+    "llm_tags": [
+      "macOS",
+      "AI工具",
+      "开源"
+    ],
+    "llm_reason": "涉及 AI 辅助编程工具，具有实际参考价值，但技术深度和前沿性一般。",
+    "score": 7
+  },
+  {
+    "id": "93a10828a004",
+    "title": "PostStokerStride/llm-intern-skill-232 ⭐73",
+    "summary": "LLM internship resume and job-search Codex Skill: resume polish, JD tailoring, evidence guard, interview grilling, and Project Scout for LLM/RAG/Agent roles. 大模型实习简历与求职工具箱。",
+    "url": "https://github.com/PostStokerStride/llm-intern-skill-232",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-04T15:59:59Z",
+    "stars": 73,
+    "language": "Markdown",
+    "llm_score": 8,
+    "llm_summary": "LLM求职简历优化与面试准备工具箱。",
+    "llm_tags": [
+      "GitHub",
+      "求职",
+      "简历优化"
+    ],
+    "llm_reason": "针对LLM/Agent岗位的求职实战工具，包含简历润色、JD匹配等实用技能，信息密度高，对CS学生求职有直接帮助。",
+    "score": 8
+  },
+  {
+    "id": "97356d354e72",
+    "title": "Sandfomodulator/subforge-177 ⭐72",
+    "summary": "Rust CLI for AI subtitle workflows: transcribe, segment, translate, evaluate, and burn or mux subtitles.",
+    "url": "https://github.com/Sandfomodulator/subforge-177",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-04T15:30:53Z",
+    "stars": 72,
+    "language": "Rust",
+    "llm_score": 8,
+    "llm_summary": "Rust CLI 工具，用于 AI 字幕工作流处理。",
+    "llm_tags": [
+      "Rust",
+      "CLI",
+      "Subtitle",
+      "Workflow"
+    ],
+    "llm_reason": "内容具体，提供了 Rust 实现的 CLI 工具，涵盖了字幕处理的完整流程，对计算机专业学生具有实用参考价值。",
+    "score": 8
+  },
+  {
+    "id": "8f7e162bbf56",
+    "title": "How to Fine-Tune Nemotron 3.5 ASR for Your Language, Domain, or Accent",
+    "summary": "",
+    "url": "https://huggingface.co/blog/nvidia/fine-tuning-nemotron-35-asr",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-04T12:59:35+00:00",
+    "llm_score": 8,
+    "llm_summary": "介绍如何微调 Nemotron 3.5 ASR 模型以适应特定语言和领域。",
+    "llm_tags": [
+      "微调",
+      "ASR",
+      "Nemotron"
+    ],
+    "llm_reason": "内容针对具体的开源模型（Nemotron 3.5）提供了微调教程，具有很高的技术实用性和前沿性，适合计算机专业学生参考。",
+    "score": 8
+  },
+  {
     "id": "7cadff6dce8b",
     "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
     "summary": "",
@@ -90,6 +190,44 @@
     "score": 7
   },
   {
+    "id": "284c0aa57ffb",
+    "title": "Dreaming: Better memory for a more helpful ChatGPT",
+    "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
+    "url": "https://openai.com/index/chatgpt-memory-dreaming",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-04T09:00:00+00:00",
+    "llm_score": 8,
+    "llm_summary": "OpenAI发布ChatGPT记忆系统，提升多轮对话连贯性。",
+    "llm_tags": [
+      "OpenAI",
+      "ChatGPT",
+      "RAG",
+      "长文本"
+    ],
+    "llm_reason": "内容来自官方博客，详细介绍了ChatGPT最新的记忆机制，对理解大模型如何处理长期上下文和用户偏好具有重要参考价值。",
+    "score": 8
+  },
+  {
+    "id": "75cbc7993bec",
+    "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+    "summary": "",
+    "url": "https://huggingface.co/blog/hf-cli-for-agents",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-04T00:00:00+00:00",
+    "llm_score": 8,
+    "llm_summary": "Hugging Face CLI 代理化设计解析，提升开发者效率。",
+    "llm_tags": [
+      "Hugging Face",
+      "CLI",
+      "Agent",
+      "工程实践"
+    ],
+    "llm_reason": "内容涉及 Hugging Face 生态的核心工具设计，探讨如何将 CLI 优化为 Agent 友好模式，对计算机专业学生理解 AI 工具链和工程化实践具有较高参考价值。",
+    "score": 8
+  },
+  {
     "id": "d3886421a90c",
     "title": "How virtual power plants could provide energy for data centers",
     "summary": "Would you take a payment to ramp down your electricity use? Would it change anything if you were doing so to help power a local data center? Google just signed a new deal to help pay for a virtual power plant (VPP) in the largest power grid in the US. The agreement is with Voltus,&#8230;",
@@ -163,6 +301,24 @@
     ],
     "llm_reason": "Hugging Face 官方博客，内容基于论文，技术深度高，适合进阶学习。",
     "score": 8
+  },
+  {
+    "id": "d601d92da7ad",
+    "title": "The Download: Trump’s new AI order, and smart glasses for warfare",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. 5 key points in Trump&#8217;s new AI order Less than two weeks after scrapping an executive order on AI, President Donald Trump signed a new one on Tuesday. Promising to promote&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/03/1138322/the-download-trump-ai-order-smart-glasses-warfare/",
+    "source": "MIT Tech Review AI",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-03T12:10:00+00:00",
+    "llm_score": 7,
+    "llm_summary": "特朗普新AI行政令与军事智能眼镜，涵盖政策与硬件前沿动态。",
+    "llm_tags": [
+      "政策",
+      "前沿动态",
+      "硬件"
+    ],
+    "llm_reason": "内容涉及最新的AI政策动向（特朗普新行政令）及硬件应用（智能眼镜），信息密度较高，符合计算机专业学生关注行业趋势的需求。",
+    "score": 7
   },
   {
     "id": "ca098c700197",
@@ -480,42 +636,5 @@
     ],
     "llm_reason": "展示了AI在实时生成图文内容方面的前沿应用潜力，具有很高的技术演示和参考价值。",
     "score": 7
-  },
-  {
-    "id": "e4b943609e0a",
-    "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
-    "summary": "",
-    "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-01T15:45:17+00:00",
-    "llm_score": 7,
-    "llm_summary": "JetBrains发布120亿参数的Mellum2代码专家混合模型。",
-    "llm_tags": [
-      "LLM",
-      "MoE",
-      "代码生成",
-      "开源模型"
-    ],
-    "llm_reason": "MoE是当前大模型的重要前沿架构，且由知名IDE厂商发布，对CS学生了解代码大模型发展具有较高实用性和参考价值。但摘要缺失，信息密度与可读性受影响。",
-    "score": 7
-  },
-  {
-    "id": "626a9bf65ddc",
-    "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
-    "summary": "",
-    "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-01T13:51:18+00:00",
-    "llm_score": 8,
-    "llm_summary": "探讨企业级 AI 从 LLM 向 Agent 架构演进的趋势与逻辑。",
-    "llm_tags": [
-      "LLM",
-      "Agent",
-      "Enterprise AI"
-    ],
-    "llm_reason": "内容探讨了 LLM 之外的企业级 AI 落地新范式，具有前瞻性和较高的信息密度，适合计算机专业学生了解行业趋势。",
-    "score": 8
   }
 ]
