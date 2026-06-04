@@ -18,6 +18,27 @@
     "score": 6
   },
   {
+    "id": "63f915e0cfae",
+    "title": "razr001/align-dev ⭐41",
+    "summary": "AlignDev helps AI-assisted frontend teams generate shared coding standards and SKILL.md so Claude Code, Cursor, Copilot, and other agents write consistently.",
+    "url": "https://github.com/razr001/align-dev",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T14:19:33Z",
+    "stars": 41,
+    "language": "TypeScript",
+    "llm_score": 7,
+    "llm_summary": "AlignDev助力前端团队生成共享编码规范，提升AI编程助手代码一致性。",
+    "llm_tags": [
+      "AI辅助编程",
+      "Cursor",
+      "Claude Code",
+      "前端开发"
+    ],
+    "llm_reason": "该项目紧贴当前AI辅助编程（Cursor/Claude Code）的开发趋势，对计算机学生的实际工程开发具有较高实用价值，能帮助规范AI生成的代码，信息明确且无营销水分。",
+    "score": 7
+  },
+  {
     "id": "cab74e5e7139",
     "title": "Introducing new capabilities to GPT-Rosalind",
     "summary": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
@@ -52,6 +73,26 @@
     ],
     "llm_reason": "Hugging Face 官方博客，内容基于论文，技术深度高，适合进阶学习。",
     "score": 8
+  },
+  {
+    "id": "ca098c700197",
+    "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+    "summary": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
+    "url": "https://openai.com/index/wasmer",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-03T12:00:00+00:00",
+    "llm_score": 7,
+    "llm_summary": "Wasmer结合Codex与GPT-5.5构建边缘Node.js运行时，大幅提升开发效率。",
+    "llm_tags": [
+      "AI辅助编程",
+      "Codex",
+      "边缘计算",
+      "Node.js",
+      "Wasmer"
+    ],
+    "llm_reason": "内容展示了LLM在实际工程中的落地案例，对计算机专业学生了解AI辅助开发极具参考价值；但偏向商业PR，技术细节密度一般，且包含疑似虚构的模型版本（GPT-5.5）。",
+    "score": 7
   },
   {
     "id": "a8b1e0e9c715",
@@ -89,6 +130,27 @@
       "AI Agent"
     ],
     "llm_reason": "MCP（模型上下文协议）是近期LLM Agent生态的重要前沿技术。结合机器人硬件的实操教程对计算机专业学生理解Agent工具调用和具身智能具有极高的实用性和信息密度。",
+    "score": 8
+  },
+  {
+    "id": "00a0271e1ce4",
+    "title": "zaydmulani09/mnemo ⭐78",
+    "summary": "Local-first AI memory layer for any LLM. Persistent knowledge graph, entity extraction, semantic retrieval. Works with Ollama, OpenAI, Anthropic, or any OpenAI-compatible backend.",
+    "url": "https://github.com/zaydmulani09/mnemo",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-02T23:15:18Z",
+    "stars": 78,
+    "language": "Rust",
+    "llm_score": 8,
+    "llm_summary": "开源的本地优先LLM记忆层，支持持久化知识图谱与多后端。",
+    "llm_tags": [
+      "LLM",
+      "记忆机制",
+      "知识图谱",
+      "开源项目"
+    ],
+    "llm_reason": "该项目提供了实用的本地知识图谱和实体提取功能，对CS学生理解并构建LLM记忆层（RAG进阶）具有极高的代码参考价值，且支持本地部署，信息密度高。",
     "score": 8
   },
   {
@@ -191,6 +253,27 @@
       "AI应用"
     ],
     "llm_reason": "内容展示了具体的AI落地应用场景，具有实际参考价值，且信息密度较高。",
+    "score": 8
+  },
+  {
+    "id": "deedd27d2abf",
+    "title": "weicj/vLLM-2080Ti-Definitive ⭐34",
+    "summary": "The definitive vLLM runtime for dual RTX 2080 Ti 22GB + NVLink, delivering 27B/31B local inference with 100+ tok/s single-request decode and native 262K context.",
+    "url": "https://github.com/weicj/vLLM-2080Ti-Definitive",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-02T12:15:32Z",
+    "stars": 34,
+    "language": "Python",
+    "llm_score": 8,
+    "llm_summary": "双卡RTX 2080 Ti运行vLLM实现27B大模型高速推理的配置方案",
+    "llm_tags": [
+      "vLLM",
+      "开源项目",
+      "LLM部署",
+      "硬件优化"
+    ],
+    "llm_reason": "该项目对CS学生极具实用参考价值，展示了如何通过底层硬件（NVLink）与推理框架（vLLM）的深度优化，在消费级/准专业级显卡上实现大模型的高效部署，非常契合学习LLM工程化落地的需求。",
     "score": 8
   },
   {
@@ -325,48 +408,6 @@
       "Enterprise AI"
     ],
     "llm_reason": "内容探讨了 LLM 之外的企业级 AI 落地新范式，具有前瞻性和较高的信息密度，适合计算机专业学生了解行业趋势。",
-    "score": 8
-  },
-  {
-    "id": "7978c517b9dd",
-    "title": "PanisHandsome/ai-rules-sync ⭐84",
-    "summary": "Keep one source of truth for your AI coding-agent rules. Convert and sync between AGENTS.md, CLAUDE.md, .cursorrules, Copilot, Windsurf, Cline, Aider & Gemini — or scaffold a fresh AGENTS.md. Zero dep",
-    "url": "https://github.com/PanisHandsome/ai-rules-sync",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-01T03:32:48Z",
-    "stars": 84,
-    "language": "JavaScript",
-    "llm_score": 8,
-    "llm_summary": "同步多种AI编程助手配置文件的开源工具。",
-    "llm_tags": [
-      "AI编程助手",
-      "开发工具",
-      "GitHub",
-      "效率提升"
-    ],
-    "llm_reason": "该工具解决了当前使用多种大模型编程助手时配置规则碎片化的痛点，对计算机专业学生在日常开发中高效使用AI具有极高的实用价值，信息明确且无营销水分。",
-    "score": 8
-  },
-  {
-    "id": "4155a4342e31",
-    "title": "couragec/llm-intern-skill ⭐80",
-    "summary": "LLM internship resume and job-search Codex Skill: resume polish, JD tailoring, evidence guard, interview grilling, and Project Scout for LLM/RAG/Agent roles. 大模型实习简历与求职工具箱。",
-    "url": "https://github.com/couragec/llm-intern-skill",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-01T03:20:26Z",
-    "stars": 80,
-    "language": "Markdown",
-    "llm_score": 8,
-    "llm_summary": "大模型实习求职工具箱，提供简历润色与面试模拟等功能。",
-    "llm_tags": [
-      "求职",
-      "LLM",
-      "工具箱",
-      "面试准备"
-    ],
-    "llm_reason": "该内容对寻找AI岗位的计算机专业学生具有极高的实用价值，直接针对LLM相关岗位的简历修改和面试准备，信息明确且切中痛点。",
     "score": 8
   }
 ]
