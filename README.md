@@ -38,7 +38,6 @@ src/
 │   └── Footer.tsx          # 页脚
 └── lib/                    # 工具库
     ├── quotes.ts           # 一言 API + 本地备用名言
-    ├── trending.ts         # 多源热点聚合 + 评分引擎
     └── settings.ts         # 主题设置管理
 
 scripts/
@@ -67,15 +66,14 @@ scripts/
 
 ### 第三阶段：数据聚合（理解算法）
 
-8. **`src/lib/trending.ts`** — 多源数据聚合 + 归一化评分算法（重点看 `scoreItems` 函数）
-9. **`src/app/trending/page.tsx`** → **`src/components/TimelineView.tsx`** — 数据到 UI 的渲染
-10. **`scripts/fetch_trending.py`** — Python 爬取管道，理解 LLM 筛选流程
+8. **`src/app/trending/page.tsx`** → **`src/components/TimelineView.tsx`** — 数据到 UI 的渲染
+9. **`scripts/fetch_trending.py`** — Python 爬取管道，理解 LLM 筛选流程
 
 ### 第四阶段：其他页面
 
-11. **`src/app/about/page.tsx`** — 静态页面，学习渐变文字和徽章布局
-12. **`src/app/notes/page.tsx`** — 搜索 + 分类过滤的 UI 模式
-13. **`src/app/projects/page.tsx`** — 网格布局 + 状态标签
+10. **`src/app/about/page.tsx`** — 静态页面，学习渐变文字和徽章布局
+11. **`src/app/notes/page.tsx`** — 搜索 + 分类过滤的 UI 模式
+12. **`src/app/projects/page.tsx`** — 网格布局 + 状态标签
 
 ---
 
@@ -94,7 +92,9 @@ npm run dev
 
 ## 部署
 
-> 🔍 待探究：如何免费部署到长期运行的服务器
+- **平台**：Vercel（自动从 GitHub 同步）
+- **域名**：https://flackoye.bond
+- **流程**：`git push` → Vercel 自动构建部署
 
 ---
 
@@ -102,20 +102,22 @@ npm run dev
 
 ## 待探究的问题
 
-- [ ] **免费部署方案**：如何把站点免费部署到一个长期稳定运行的服务上？
+- [x] **免费部署方案**：如何把站点免费部署到一个长期稳定运行的服务上？
   - 备选：Vercel（Next.js 亲儿子）、Cloudflare Pages、Netlify
   - 需要考虑：Python 爬取管道在哪里跑？GitHub Actions 写回 repo 的数据能不能被静态部署读取？
   - 关键问题：SSR 页面（首页名言、热点）需要服务端运行时，纯静态托管不够
+  - 解决：选择了vercel部署我的网站，然后在阿里云买了我个人的域名flackoye.bond
 
 - [ ] **热点爬取质量评估**：观察几天后评估
   - GLM 筛选的评分是否合理？是否有些优质内容被误判？
   - Semantic Scholar 限流问题怎么解决（代理？降低频率？换 API？）
   - GitHub Trending 的搜索词 `AI OR LLM OR transformer` 是否太宽泛，导致混入无关项目？
 
-- [ ] **`trending.ts` vs `fetch_trending.py` 的关系**：目前有两条热点数据链路
+- [x] **`trending.ts` vs `fetch_trending.py` 的关系**：目前有两条热点数据链路
   - 前端 `src/lib/trending.ts`：运行时从 HN/Reddit/arxiv 实时抓取
   - 后端 `scripts/fetch_trending.py`：定时爬取 + LLM 筛选 → 写入 `public/trending.json`
   - 两条链路数据源有重叠，应考虑统一
+  - 解决：trending是之前版本的热点爬取方案，选取的arkiv、hackernews这样的，效果太差，但是忘记清除了
 
 ## 想提升的方向
 
@@ -206,7 +208,7 @@ npm run dev
 
 ### 🚀 挑战级（工程化提升）
 
-- [ ] **单元测试**：给 `trending.ts` 的评分算法和 `quotes.ts` 的降级逻辑写测试（Jest + React Testing Library）
+- [ ] **单元测试**：给 `quotes.ts` 的降级逻辑和 `fetch_trending.py` 的评分算法写测试（Jest + React Testing Library）
 - [ ] **E2E 测试**：用 Playwright 跑关键用户路径（首页加载 → 点击热点 → 查看详情）
 - [ ] **Docker 容器化**：把 Next.js + Python 爬取管道打包成 Docker Compose，一键部署到任何服务器
 - [ ] **CI/CD 流水线**：不只是爬取热点，还能自动跑 lint、测试、构建、部署
