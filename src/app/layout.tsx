@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_SC } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -40,6 +41,7 @@ export default function RootLayout({
           <Footer />
           <Customizer />
         </SettingsProvider>
+        <Analytics />
       </body>
     </html>
   );
