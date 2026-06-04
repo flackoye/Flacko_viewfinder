@@ -1,5 +1,95 @@
 [
   {
+    "id": "7cadff6dce8b",
+    "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+    "summary": "",
+    "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-04T12:24:58+00:00",
+    "llm_score": 8,
+    "llm_summary": "EVA-Bench 2.0 发布，包含多领域工具与场景。",
+    "llm_tags": [
+      "Benchmark",
+      "Evaluation",
+      "Tools"
+    ],
+    "llm_reason": "内容涉及最新的 LLM 评估基准 EVA-Bench 2.0，包含 121 个工具和 213 个场景，对研究 LLM 工具使用能力的计算机专业学生具有很高的参考价值。",
+    "score": 8
+  },
+  {
+    "id": "53a3b3f370a0",
+    "title": "The Download: AI-generated lawsuits and virtual power plants for data centers",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How courts are coping with a flood of AI-generated lawsuits Most days in her chambers, Judge Maritza Braswell, a federal magistrate judge in Colorado, sifts through stacks of documents written by&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/04/1138408/the-download-ai-lawsuits-virtual-power-plants-data-centers/",
+    "source": "MIT Tech Review AI",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-04T12:10:00+00:00",
+    "llm_score": 7,
+    "llm_summary": "探讨AI诉讼与数据中心虚拟电厂。",
+    "llm_tags": [
+      "行业动态",
+      "法律与伦理",
+      "基础设施"
+    ],
+    "llm_reason": "内容涉及AI法律诉讼这一热点话题，对了解AI落地面临的挑战有参考价值，但摘要信息密度较低。",
+    "score": 7
+  },
+  {
+    "id": "9b7a24053aae",
+    "title": "How Endava is redesigning software delivery around AI agents",
+    "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+    "url": "https://openai.com/index/endava-frontiers",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-04T12:00:00+00:00",
+    "llm_score": 8,
+    "llm_summary": "企业级 AI 代理落地实践与软件交付重构案例。",
+    "llm_tags": [
+      "企业应用",
+      "AI Agents",
+      "OpenAI"
+    ],
+    "llm_reason": "来自 OpenAI 官方博客，提供了 AI Agents 在企业软件交付中的具体落地案例，具有较高的参考价值和实用性。",
+    "score": 8
+  },
+  {
+    "id": "84d31ca74a43",
+    "title": "Task-Seeded Synthetic Q&A Generation for Nemotron Pretraining",
+    "summary": "",
+    "url": "https://huggingface.co/blog/nvidia/task-seeded-sdg",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-04T11:24:53+00:00",
+    "llm_score": 8,
+    "llm_summary": "Nemotron 预训练数据合成方法详解。",
+    "llm_tags": [
+      "Nemotron",
+      "数据合成",
+      "预训练"
+    ],
+    "llm_reason": "Hugging Face 官方博客，详细介绍了 NVIDIA Nemotron 模型预训练所用的 Task-Seeded Synthetic Q&A 生成技术，对理解大模型数据工程极具参考价值。",
+    "score": 8
+  },
+  {
+    "id": "2d128829e7a0",
+    "title": "How courts are coping with a flood of AI-generated lawsuits",
+    "summary": "Most days in her chambers, Judge Maritza Braswell, a federal magistrate judge in Colorado, sifts through stacks of documents written by people without a lawyer. Many of them can’t afford to hire a lawyer, and others have cases too weak or too small to interest one. She reads each one carefully, mindful of how daunting&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/",
+    "source": "MIT Tech Review AI",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-04T10:50:18+00:00",
+    "llm_score": 7,
+    "llm_summary": "探讨法院如何应对AI生成诉讼激增的现状。",
+    "llm_tags": [
+      "法律与AI",
+      "前沿趋势",
+      "社会影响"
+    ],
+    "llm_reason": "内容涉及AI生成内容在法律领域的实际应用与挑战，具有前沿性和一定的社会参考价值，但摘要截断导致信息密度和完整性不足。",
+    "score": 7
+  },
+  {
     "id": "d3886421a90c",
     "title": "How virtual power plants could provide energy for data centers",
     "summary": "Would you take a payment to ramp down your electricity use? Would it change anything if you were doing so to help power a local data center? Google just signed a new deal to help pay for a virtual power plant (VPP) in the largest power grid in the US. The agreement is with Voltus,&#8230;",
@@ -111,6 +201,24 @@
       "前沿AI"
     ],
     "llm_reason": "该内容主要涉及AI政策与监管，虽非硬核技术，但有助于CS学生了解前沿AI的社会与政策约束，具备宏观参考价值。",
+    "score": 6
+  },
+  {
+    "id": "ecd22c71eeba",
+    "title": "OpenAI public policy agenda",
+    "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
+    "url": "https://openai.com/index/public-policy-agenda",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-03T10:00:00+00:00",
+    "llm_score": 6,
+    "llm_summary": "OpenAI阐述AI公共政策议程，涵盖安全与全球标准。",
+    "llm_tags": [
+      "OpenAI",
+      "Policy",
+      "Safety"
+    ],
+    "llm_reason": "内容涉及OpenAI的政策方向，对理解行业宏观趋势有一定参考价值，但作为技术学习资料，信息密度较低，偏向行业观察而非技术细节。",
     "score": 6
   },
   {
