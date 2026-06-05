@@ -100,6 +100,11 @@ RSS_SOURCES = [
         "url": "https://www.technologyreview.com/feed/",
         "source_type": "tech_media",
     },
+    {
+        "name": "36氪",
+        "url": "https://36kr.com/feed",
+        "source_type": "tech_media",
+    },
 ]
 
 # ========== 数据结构 ==========

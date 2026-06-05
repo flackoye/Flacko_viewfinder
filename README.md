@@ -14,7 +14,7 @@
 | **字体** | next/font (Inter + Noto Sans SC) | 零布局偏移的字体加载 |
 | **图标** | Lucide React | 轻量 SVG 图标库 |
 | **AI 管道** | Python + zai-sdk + GLM-4.7-Flash | 热点爬取 + LLM 筛选评分 |
-| **数据源** | RSS / GitHub API / Semantic Scholar | 多源 AI 热点聚合 |
+| **数据源** | RSS / GitHub API / HackerNews / Reddit / 36氪 | 多源 AI 热点聚合 |
 | **CI/CD** | GitHub Actions | 每 5 小时自动爬取热点 |
 
 ## 项目结构
@@ -120,7 +120,7 @@ npm run dev
   - 解决：trending是之前版本的热点爬取方案，选取的arkiv、hackernews这样的，效果太差，但是忘记清除了
 
 ## 想提升的方向
-- [ ] **丰富热点内容**：目前每次约 20 条抓取 → 10 条通过筛选，目标是增加到 50 条
+- [x] **丰富热点内容**：目前每次约 20 条抓取 → 10 条通过筛选，目标是增加到 50 条
   - 增加数据源：HackerNews、Reddit、更多 RSS 源
   - 解决 Semantic Scholar 限流问题
   - 降低 LLM 入库门槛（保存更多），但展示仍只显示 ≥ 6.0 分的
