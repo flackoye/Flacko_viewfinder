@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "version": "v2.0.65",
+      "date": "2026-06-05",
+      "title": "热点页 Tab 化 + 贡献榜",
+      "changes": [
+        { "type": "feature", "description": "热点页新增三 Tab：全部热点 / 今日热点 / 热点贡献榜" },
+        { "type": "feature", "description": "贡献榜展示来源前两名的统计数量与进度条" },
+        { "type": "improvement", "description": "空状态文案根据当前 Tab 上下文智能适配" }
+      ]
+    },
+    {
       "version": "v2.0.0",
       "date": "2026-06-05",
       "title": "更新日志功能上线",
