@@ -60,8 +60,8 @@ OUTPUT_FILE = Path(__file__).parent.parent / "public" / "trending.json"
 
 # --- 筛选规则 ---
 MAX_AGE_DAYS = int(_env("MAX_AGE_DAYS", "3"))
-SCORE_THRESHOLD = float(_env("SCORE_THRESHOLD", "6.0"))        # 展示门槛：只向前端展示这个分数以上的
-SAVE_THRESHOLD = float(_env("SAVE_THRESHOLD", "4.0"))           # 入库门槛：低于此分数直接丢弃
+SCORE_THRESHOLD = float(_env("SCORE_THRESHOLD", "5.5"))        # 统一筛选门槛
+SAVE_THRESHOLD = float(_env("SAVE_THRESHOLD", "5.5"))           # 与展示门槛一致
 
 # --- GLM 模型配置 ---
 GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7-flash")

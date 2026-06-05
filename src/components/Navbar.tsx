@@ -3,13 +3,14 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { BookOpen, FolderGit2, Sparkles, User, Menu, X, Flame } from 'lucide-react';
+import { BookOpen, FolderGit2, Sparkles, User, Menu, X, Flame, ScrollText } from 'lucide-react';
 
 const navItems = [
   { name: '首页', href: '/', icon: Sparkles },
   { name: '热点', href: '/trending', icon: Flame },
   { name: '笔记', href: '/notes', icon: BookOpen },
   { name: '项目', href: '/projects', icon: FolderGit2 },
+  { name: '日志', href: '/changelog', icon: ScrollText },
   { name: '关于', href: '/about', icon: User },
 ];
 

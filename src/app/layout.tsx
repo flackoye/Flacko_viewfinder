@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_SC } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import fs from "fs";
+import path from "path";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Customizer from "@/components/Customizer";
 import { SettingsProvider } from "@/components/SettingsProvider";
+import AnnouncementBanner from "@/components/AnnouncementBanner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,6 +30,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // 读取公告数据
+  let announcement = null;
+  try {
+    const raw = fs.readFileSync(path.join(process.cwd(), 'public', 'changelog.json'), 'utf-8');
+    const data = JSON.parse(raw);
+    announcement = data.announcement || null;
+  } catch {
+    // 文件不存在或解析失败 = 无公告
+  }
+
   return (
     <html lang="zh-CN" className={`h-full antialiased ${inter.variable} ${notoSansSC.variable}`}>
       <head>
@@ -34,6 +47,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-bg text-text">
         <SettingsProvider>
+          <AnnouncementBanner announcement={announcement} />
           <Navbar />
           <main className="flex-1 pt-16 page-fade-in">
             {children}

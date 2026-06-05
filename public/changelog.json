@@ -1,0 +1,41 @@
+{
+  "announcement": {
+    "message": "站点 v2.0 已上线，新增更新日志功能 🎉",
+    "type": "info",
+    "date": "2026-06-05",
+    "dismissible": true
+  },
+  "entries": [
+    {
+      "version": "v2.0.0",
+      "date": "2026-06-05",
+      "title": "更新日志功能上线",
+      "changes": [
+        { "type": "feature", "description": "新增更新日志页面，记录站点所有重要变更" },
+        { "type": "feature", "description": "新增置顶公告条，支持一键关闭" },
+        { "type": "improvement", "description": "首页按钮由「了解更多」改为「日志公告」" }
+      ]
+    },
+    {
+      "version": "v1.3.0",
+      "date": "2026-06-04",
+      "title": "AI 热点管道升级",
+      "changes": [
+        { "type": "feature", "description": "新增 36氪、HackerNews、Reddit 数据源" },
+        { "type": "improvement", "description": "LLM 评分精度升级为小数（如 6.3、7.8）" },
+        { "type": "fix", "description": "修复手机端热点标签竖排布局问题" }
+      ]
+    },
+    {
+      "version": "v1.2.0",
+      "date": "2026-06-04",
+      "title": "网站上线",
+      "changes": [
+        { "type": "feature", "description": "网站部署至 Vercel，绑定自定义域名" },
+        { "type": "feature", "description": "AI 热点爬取管道搭建完成（GLM-4.7-Flash）" },
+        { "type": "feature", "description": "接入 Vercel Analytics 访客统计" },
+        { "type": "feature", "description": "完成首页、热点、关于、笔记、项目页面" }
+      ]
+    }
+  ]
+}

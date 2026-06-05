@@ -91,8 +91,8 @@ export default function HomeContent({ initialQuote }: { initialQuote: Quote }) {
             <Link href="/notes" className="glass-btn px-6 py-3 font-medium hover-lift">
               浏览笔记
             </Link>
-            <Link href="/about" className="glass-btn-outline px-6 py-3 font-medium hover-lift">
-              了解更多
+            <Link href="/changelog" className="glass-btn-outline px-6 py-3 font-medium hover-lift">
+              日志公告
             </Link>
           </div>
         </div>

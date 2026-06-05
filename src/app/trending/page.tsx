@@ -22,7 +22,7 @@ export default async function TrendingPage() {
     }))
     .filter((item: Record<string, unknown>) => {
       const score = item.score ?? item.llm_score ?? 0;
-      return Number(score) >= 6.0;
+      return Number(score) >= 5.5;
     });
 
   return <TimelineView items={parsed} />;
