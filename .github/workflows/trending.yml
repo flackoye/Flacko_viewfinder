@@ -43,6 +43,7 @@ jobs:
         run: |
           git config user.name "trending-bot"
           git config user.email "bot@flacko.dev"
+          git pull --rebase origin main
           git add public/trending.json
           git diff --cached --quiet || git commit -m "🔄 update trending data"
           git push
