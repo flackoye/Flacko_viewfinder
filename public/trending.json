@@ -372,6 +372,24 @@
     "score": 7
   },
   {
+    "id": "5ce61f167675",
+    "title": "How courts are coping with a flood of AI-generated lawsuits",
+    "summary": "Most days in her chambers, Judge Maritza Braswell, a federal magistrate judge in Colorado, sifts through stacks of documents written by people without a lawyer. Many of them can’t afford to hire a lawyer, and others have cases too weak or too small to interest one. She reads each one carefully, mindful of how daunting&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-04T10:50:18+00:00",
+    "llm_score": 5.2,
+    "llm_summary": "探讨法院如何应对AI生成诉讼激增的现状。",
+    "llm_tags": [
+      "AI伦理",
+      "法律",
+      "社会影响"
+    ],
+    "llm_reason": "内容涉及AI生成内容在法律领域的应用与挑战，具有时效性，但作为计算机专业学习资料，其技术深度和实操参考价值较低。",
+    "score": 5.2
+  },
+  {
     "id": "284c0aa57ffb",
     "title": "Dreaming: Better memory for a more helpful ChatGPT",
     "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
@@ -1134,5 +1152,25 @@
     ],
     "llm_reason": "内容针对 AI 编码助手（如 Claude, Cursor, Copilot）的配置文件同步痛点，提供了实用的开源解决方案，具有较高的实用性和信息密度。",
     "score": 8.5
+  },
+  {
+    "id": "f2fca8e671d8",
+    "title": "couragec/LLMInternSkill ⭐106",
+    "summary": "LLMInternSkill: LLM internship resume and job-search Codex Skill for resume polish, JD tailoring, evidence guard, interview grilling, and Project Scout. 大模型实习简历与求职工具箱。",
+    "url": "https://github.com/couragec/LLMInternSkill",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-01T03:20:26Z",
+    "stars": 106,
+    "language": "Markdown",
+    "llm_score": 7.8,
+    "llm_summary": "LLM求职简历优化与面试辅助工具箱",
+    "llm_tags": [
+      "GitHub",
+      "求职",
+      "工具"
+    ],
+    "llm_reason": "内容针对性强，提供了LLM求职的具体工具链（简历、JD、面试），实用性和信息密度较高，适合计算机专业学生参考。",
+    "score": 7.8
   }
 ]
