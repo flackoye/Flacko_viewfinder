@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import { MessageSquare, FileText, ArrowUpRight, Star, Code2, Globe } from 'lucide-react';
 
 export interface TrendingItem {
@@ -49,12 +52,35 @@ function formatDateKey(date: Date): string {
   return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
 }
 
+type TabKey = 'all' | 'today' | 'leaderboard';
+
 export default function TimelineView({ items }: { items: TrendingItem[] }) {
-  // 按日期分组
+  const [activeTab, setActiveTab] = useState<TabKey>('all');
+
+  // 判断是否为今天
+  const todayKey = formatDateKey(new Date());
+  const todayItems = items.filter((item) => formatDateKey(item.timestamp) === todayKey);
+
+  // 贡献榜：按来源统计数量，取前 2 名
+  const sourceStats = new Map<string, { count: number; source_type: string }>();
+  for (const item of items) {
+    const prev = sourceStats.get(item.source);
+    if (prev) {
+      prev.count++;
+    } else {
+      sourceStats.set(item.source, { count: 1, source_type: item.source_type });
+    }
+  }
+  const topSources = [...sourceStats.entries()]
+    .sort((a, b) => b[1].count - a[1].count)
+    .slice(0, 2);
+
+  // 按日期分组（根据 Tab 筛选）
+  const displayItems = activeTab === 'today' ? todayItems : items;
   const grouped: { date: string; dateLabel: string; items: TrendingItem[] }[] = [];
   const dateMap = new Map<string, TrendingItem[]>();
 
-  for (const item of items) {
+  for (const item of displayItems) {
     const key = formatDateKey(item.timestamp);
     if (!dateMap.has(key)) dateMap.set(key, []);
     dateMap.get(key)!.push(item);
@@ -78,15 +104,80 @@ export default function TimelineView({ items }: { items: TrendingItem[] }) {
         <p className="text-text-muted">LLM 筛选 · 每 5 小时更新 · 保留最近 3 天</p>
       </div>
 
-      {items.length === 0 ? (
+      {/* Tab 切换 */}
+      <div className="flex gap-1 mb-8 p-1 glass rounded-xl w-fit">
+        {([
+          { key: 'all' as TabKey, label: '全部热点' },
+          { key: 'today' as TabKey, label: '今日热点' },
+          { key: 'leaderboard' as TabKey, label: '热点贡献榜' },
+        ]).map((tab) => (
+          <button
+            key={tab.key}
+            onClick={() => setActiveTab(tab.key)}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+              activeTab === tab.key
+                ? 'bg-accent text-bg shadow-sm'
+                : 'text-text-muted hover:text-text hover:bg-white/5'
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+
+      {/* 贡献榜面板 */}
+      {activeTab === 'leaderboard' ? (
+        <div className="space-y-4">
+          {topSources.length === 0 ? (
+            <div className="text-center py-20 text-text-dim">
+              <FileText className="w-16 h-16 mx-auto mb-4 opacity-20" />
+              <p className="text-lg mb-2">暂无数据</p>
+            </div>
+          ) : (
+            topSources.map(([source, stat], idx) => {
+              const config = getTypeConfig(stat.source_type);
+              const Icon = config.icon;
+              const medal = idx === 0 ? '🥇' : '🥈';
+              const barWidth = topSources[0]
+                ? `${(stat.count / topSources[0][1].count) * 100}%`
+                : '0%';
+
+              return (
+                <div key={source} className="glass p-5 flex items-center gap-4">
+                  <span className="text-2xl">{medal}</span>
+                  <Icon className={`w-5 h-5 shrink-0 ${config.color}`} />
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="font-semibold text-text truncate">{source}</span>
+                      <span className="text-sm font-mono text-accent whitespace-nowrap ml-2">
+                        {stat.count} 条
+                      </span>
+                    </div>
+                    <div className="h-1.5 rounded-full bg-bg overflow-hidden">
+                      <div
+                        className="h-full rounded-full bg-accent/60 transition-all duration-500"
+                        style={{ width: barWidth }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              );
+            })
+          )}
+        </div>
+      ) : displayItems.length === 0 ? (
         <div className="text-center py-20 text-text-dim">
           <FileText className="w-16 h-16 mx-auto mb-4 opacity-20" />
-          <p className="text-lg mb-2">暂无内容</p>
-          <p className="text-sm">数据管道尚未运行，请先执行：
-            <code className="ml-2 px-2 py-0.5 rounded bg-bg-card text-accent text-xs">
-              python scripts/fetch_trending.py
-            </code>
+          <p className="text-lg mb-2">
+            {activeTab === 'today' ? '今日暂无热点' : '暂无内容'}
           </p>
+          {activeTab === 'all' && (
+            <p className="text-sm">数据管道尚未运行，请先执行：
+              <code className="ml-2 px-2 py-0.5 rounded bg-bg-card text-accent text-xs">
+                python scripts/fetch_trending.py
+              </code>
+            </p>
+          )}
         </div>
       ) : (
         <div className="relative">
