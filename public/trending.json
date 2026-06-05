@@ -36,6 +36,26 @@
     "score": 7.8
   },
   {
+    "id": "f0cdedc5474e",
+    "title": "veryyoldman/undress-ai-image-video-generator ⭐125",
+    "summary": "AI tool for generating uncensored images and videos",
+    "url": "https://github.com/veryyoldman/undress-ai-image-video-generator",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-05T00:25:02Z",
+    "stars": 125,
+    "language": "Python",
+    "llm_score": 5.2,
+    "llm_summary": "GitHub开源AI工具，生成无限制图像视频。",
+    "llm_tags": [
+      "GitHub",
+      "AI工具",
+      "图像生成"
+    ],
+    "llm_reason": "内容涉及AI图像视频生成，但属于灰色地带工具，缺乏技术深度和前沿性，实用性较低。",
+    "score": 5.2
+  },
+  {
     "id": "f112a58c769e",
     "title": "You guys were right - Qwen 3.6 35B IS good...and KV Cache DOES matter.",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>WARNING:</strong> <em>I'm speed typing this, no time to organizea/format, so if short paragraph chunks bother you, just keep it moving.</em></p> <p><strong>CO",
@@ -188,6 +208,25 @@
     ],
     "llm_reason": "内容具体，提供了 Rust 实现的 CLI 工具，涵盖了字幕处理的完整流程，对计算机专业学生具有实用参考价值。",
     "score": 8
+  },
+  {
+    "id": "c707b2a72eec",
+    "title": "KVarN: new KV-cache quant from Huawei. 3–5× KV cache compression with actual speed-up instead of slow-down, and unlike TurboQuant it holds up on reasoning (Apache 2.0, vLLM single flag)",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1twptw2/kvarn_new_kvcache_quant_from_huawei_35_kv_cache/\"> <img alt=\"KVarN: new KV-cache quant from Huawei. 3–5× KV cache compres",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1twptw2/kvarn_new_kvcache_quant_from_huawei_35_kv_cache/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-04T14:47:10+00:00",
+    "llm_score": 8.2,
+    "llm_summary": "华为KVarN：3-5倍KV缓存压缩，推理性能提升。",
+    "llm_tags": [
+      "KV Cache",
+      "量化",
+      "推理加速",
+      "华为"
+    ],
+    "llm_reason": "涉及最新的 KV Cache 量化技术，针对推理场景有显著的实际性能提升，信息密度高，适合计算机专业学生参考。",
+    "score": 8.2
   },
   {
     "id": "e42cec4394cc",
