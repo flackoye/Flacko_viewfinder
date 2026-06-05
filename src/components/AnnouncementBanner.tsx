@@ -43,7 +43,7 @@ export default function AnnouncementBanner({ announcement }: { announcement: Ann
   };
 
   return (
-    <div className={`fixed top-0 left-0 right-0 z-[51] border-b ${style}`}>
+    <div className={`border-b ${style}`}>
       <div className="max-w-5xl mx-auto px-6 py-2.5 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Megaphone className="w-4 h-4 shrink-0" />

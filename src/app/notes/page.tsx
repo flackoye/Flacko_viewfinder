@@ -6,9 +6,6 @@ import { BookOpen, Search } from 'lucide-react';
 const categories = [
   { key: 'all', label: '全部' },
   { key: 'transformer', label: 'Transformer' },
-  { key: 'deep-learning', label: '深度学习' },
-  { key: 'math', label: '数学基础' },
-  { key: 'system', label: '系统工程' },
   { key: 'project', label: '项目笔记' },
 ];
 

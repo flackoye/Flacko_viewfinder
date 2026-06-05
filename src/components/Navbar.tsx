@@ -37,7 +37,7 @@ export default function Navbar() {
           <span className="site-name text-xl md:text-2xl font-bold tracking-wider">
             Flacko
           </span>
-          <span className="site-subname text-xs md:text-sm tracking-widest">
+          <span className="site-subname text-xs md:text-xl tracking-widest">
             的取景框
           </span>
         </Link>

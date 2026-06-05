@@ -12,7 +12,6 @@
       "title": "热点管道大升级：17 源 + 保底机制",
       "changes": [
         { "type": "improvement", "description": "更新频率由每 5 小时调整为每 12 小时，降低资源消耗" },
-        { "type": "feature", "description": "数据源由 6 个扩展至 17 个（新增 Google/Meta AI、TechCrunch、机器之心等）" },
         { "type": "feature", "description": "新增三轮递进保底机制，确保每次更新至少入库 15 条有效内容" },
         { "type": "improvement", "description": "内容保留天数由 3 天延长至 5 天" }
       ]

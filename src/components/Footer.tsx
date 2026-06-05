@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="divider mb-8" />
       <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-text-dim">
         <div className="flex items-center gap-1.5">
-          上坡要努力，下坡要开心
+          取景框里偶尔失焦，未完待续.....
         </div>
         <div className="flex items-center gap-6">
           <Link

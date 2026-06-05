@@ -264,7 +264,6 @@ export default function AboutPage() {
           {/* ── 格言 (占 2 列) ── */}
           <ScrollReveal delay={360} className="md:col-span-2">
             <div className="glass p-6 hover-lift h-full flex flex-col justify-center">
-              <p className="text-text-dim text-xs uppercase tracking-widest mb-2">座右铭</p>
               <p className="text-text-muted text-lg md:text-xl font-medium italic">
                 &ldquo;上坡要努力，下坡要开心&rdquo;
               </p>

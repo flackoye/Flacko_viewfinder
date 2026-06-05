@@ -22,7 +22,7 @@ const notoSansSC = Noto_Sans_SC({
 
 export const metadata: Metadata = {
   title: "Flacko的取景框",
-  description: "个人知识库 — 学习、探索、创造",
+  // description: "个人知识库 — 学习、探索、创造",
 };
 
 export default function RootLayout({
@@ -47,8 +47,8 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-bg text-text">
         <SettingsProvider>
-          <AnnouncementBanner announcement={announcement} />
           <Navbar />
+          <AnnouncementBanner announcement={announcement} />
           <main className="flex-1 pt-16 page-fade-in-enhanced">
             {children}
           </main>
