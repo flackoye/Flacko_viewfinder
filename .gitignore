@@ -31,5 +31,8 @@ npm-debug.log*
 # Python virtual environment
 .venv/
 
+# Local proxy script (everyone has different proxy settings)
+proxy-push.bat
+
 # Claude Code
 .claude/

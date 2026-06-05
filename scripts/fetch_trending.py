@@ -60,7 +60,8 @@ OUTPUT_FILE = Path(__file__).parent.parent / "public" / "trending.json"
 
 # --- 筛选规则 ---
 MAX_AGE_DAYS = int(_env("MAX_AGE_DAYS", "3"))
-SCORE_THRESHOLD = float(_env("SCORE_THRESHOLD", "6.0"))
+SCORE_THRESHOLD = float(_env("SCORE_THRESHOLD", "6.0"))        # 展示门槛：只向前端展示这个分数以上的
+SAVE_THRESHOLD = float(_env("SAVE_THRESHOLD", "4.0"))           # 入库门槛：低于此分数直接丢弃
 
 # --- GLM 模型配置 ---
 GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7-flash")
@@ -214,7 +215,7 @@ def fetch_github_trending() -> list[dict]:
                 "q": f"AI OR LLM OR transformer created:>{since}",
                 "sort": "stars",
                 "order": "desc",
-                "per_page": 10,
+                "per_page": 15,
             },
             headers={"Accept": "application/vnd.github.v3+json"},
             timeout=HTTP_TIMEOUT,
@@ -240,24 +241,123 @@ def fetch_github_trending() -> list[dict]:
     return items
 
 
+# ========== 数据源 4: HackerNews ==========
+
+def fetch_hackernews() -> list[dict]:
+    """从 HackerNews 获取 AI 相关热门帖子"""
+    items = []
+    try:
+        resp = httpx.get(
+            "https://hn.algolia.com/api/v1/search",
+            params={
+                "query": "AI OR LLM OR GPT OR transformer OR machine learning",
+                "tags": "story",
+                "hitsPerPage": 15,
+                "numericFilters": "points>10",
+            },
+            timeout=HTTP_TIMEOUT,
+        )
+        data = resp.json()
+
+        for hit in data.get("hits", []):
+            title = (hit.get("title") or "").strip()
+            if not title:
+                continue
+
+            created = hit.get("created_at", "")
+            try:
+                ts = datetime.fromisoformat(created.replace("Z", "+00:00"))
+            except:
+                ts = datetime.now(timezone.utc)
+
+            # 只保留最近 MAX_AGE_DAYS 天的
+            if ts < datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS):
+                continue
+
+            items.append({
+                "id": make_id(title + "HN"),
+                "title": title,
+                "summary": f"HN 热度: {hit.get('points', 0)} 点赞, {hit.get('num_comments', 0)} 评论",
+                "url": hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID', '')}",
+                "source": "HackerNews",
+                "source_type": "tech_community",
+                "timestamp": ts.isoformat(),
+            })
+    except Exception as e:
+        print(f"  ⚠ HackerNews fetch failed: {e}")
+
+    print(f"  🔶 HackerNews: fetched {len(items)} items")
+    return items
+
+
+# ========== 数据源 5: Reddit ==========
+
+def fetch_reddit() -> list[dict]:
+    """从 Reddit AI 相关子版获取热门帖子"""
+    items = []
+    subreddits = ["MachineLearning", "artificial", "LocalLLaMA", "singularity"]
+    for sub in subreddits:
+        try:
+            resp = httpx.get(
+                f"https://www.reddit.com/r/{sub}/hot.json",
+                params={"limit": 8},
+                headers={"User-Agent": "FlackoTrending/2.0"},
+                timeout=HTTP_TIMEOUT,
+            )
+            if not resp.ok:
+                continue
+            data = resp.json()
+
+            for post in data.get("data", {}).get("children", []):
+                p = post["data"]
+                title = (p.get("title") or "").strip()
+                if not title or p.get("score", 0) < 10:
+                    continue
+
+                thumb = p.get("thumbnail", "")
+                thumb = thumb if thumb.startswith("http") else None
+
+                items.append({
+                    "id": make_id(title + sub),
+                    "title": title,
+                    "summary": (p.get("selftext") or "")[:200] or None,
+                    "url": f"https://www.reddit.com{p.get('permalink', '')}",
+                    "source": f"r/{sub}",
+                    "source_type": "tech_community",
+                    "timestamp": datetime.fromtimestamp(p.get("created_utc", 0), tz=timezone.utc).isoformat(),
+                    "thumbnail": thumb,
+                    "tags": [p.get("link_flair_text")] if p.get("link_flair_text") else [sub],
+                })
+        except Exception as e:
+            print(f"  ⚠ Reddit r/{sub} fetch failed: {e}")
+            continue
+
+    print(f"  💬 Reddit: fetched {len(items)} items")
+    return items
+
+
 # ========== LLM 筛选引擎 ==========
 
 SYSTEM_PROMPT = """你是一个 AI 领域的内容筛选专家。你的任务是评估一条 AI 相关的内容是否值得推荐给一个正在学习 AI/LLM 的计算机专业学生。
 
-评估标准（每项 0-10 分）：
-1. **前沿性**：内容是否涉及最新的 AI 技术进展？
-2. **实用性**：对学习者是否有实际参考价值？
-3. **信息密度**：内容是否有实质信息，而非空洞的 PR 或营销？
-4. **可读性**：标题和摘要是否清晰明了？
+评估标准（每项 0-10 分，取加权平均作为最终得分）：
+1. **前沿性**（权重 30%）：内容是否涉及最新的 AI 技术进展？
+2. **实用性**（权重 30%）：对学习者是否有实际参考价值？
+3. **信息密度**（权重 25%）：内容是否有实质信息，而非空洞的 PR 或营销？
+4. **可读性**（权重 15%）：标题和摘要是否清晰明了？
 
 你需要返回一个 JSON 对象，格式如下：
 {
   "relevant": true/false,
-  "score": 0-10,
+  "score": 精确到一位小数的得分，如 6.3、7.8、5.2，
   "one_line_summary": "一句话中文摘要，不超过40字",
   "tags": ["标签1", "标签2"],
   "reason": "简短的筛选理由"
 }
+
+重要规则：
+- score 必须是一位小数，不要返回整数（如不要返回 6，要返回 6.0）
+- 只要内容与 AI/LLM 稍微相关，relevant 就设为 true（由后续阈值过滤）
 
 只返回 JSON，不要其他文字。"""
 
@@ -296,7 +396,7 @@ def llm_filter(client: ZhipuAiClient, item: dict) -> dict | None:
 
         if not result.get("relevant", False):
             return None
-        if result.get("score", 0) < SCORE_THRESHOLD:
+        if result.get("score", 0) < SAVE_THRESHOLD:
             return None
 
         return {
@@ -358,7 +458,7 @@ def main():
     print("🚀 AI 热点爬取管道启动")
     print(f"   时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"   模型: {GLM_MODEL}")
-    print(f"   阈值: {SCORE_THRESHOLD} | 保留: {MAX_AGE_DAYS}天")
+    print(f"   入库门槛: {SAVE_THRESHOLD} | 展示门槛: {SCORE_THRESHOLD} | 保留: {MAX_AGE_DAYS}天")
     print("=" * 50)
 
     # 检查 API Key
@@ -380,6 +480,8 @@ def main():
     raw_items.extend(fetch_rss())
     raw_items.extend(fetch_semantic_scholar())
     raw_items.extend(fetch_github_trending())
+    raw_items.extend(fetch_hackernews())
+    raw_items.extend(fetch_reddit())
 
     # 去重
     new_items = deduplicate(existing, raw_items)

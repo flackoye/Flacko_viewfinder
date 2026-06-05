@@ -82,6 +82,26 @@
     "score": 8
   },
   {
+    "id": "e42cec4394cc",
+    "title": "Forlives/cloudsight-ai ⭐56",
+    "summary": "云鉴 CloudSight AI — dual-engine IoT encrypted-traffic threat detection (showcase: full UI + demo backend + bilingual docs)",
+    "url": "https://github.com/Forlives/cloudsight-ai",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-04T13:28:34Z",
+    "stars": 56,
+    "language": null,
+    "llm_score": 7.2,
+    "llm_summary": "基于双引擎的 IoT 流量威胁检测项目，含完整 UI 与后端。",
+    "llm_tags": [
+      "IoT",
+      "Security",
+      "Showcase"
+    ],
+    "llm_reason": "内容展示了完整的 IoT 安全检测系统，包含前端 UI 和后端实现，对计算机专业学生理解系统架构和实际应用有一定参考价值。",
+    "score": 7.2
+  },
+  {
     "id": "8f7e162bbf56",
     "title": "How to Fine-Tune Nemotron 3.5 ASR for Your Language, Domain, or Accent",
     "summary": "",
@@ -209,6 +229,46 @@
     "score": 8
   },
   {
+    "id": "374849298f07",
+    "title": "lxxgg92/xianxin-design-workflow ⭐20",
+    "summary": "A complete AI-powered workflow for UI/UX designers, from design systems to final delivery.",
+    "url": "https://github.com/lxxgg92/xianxin-design-workflow",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-04T07:45:13Z",
+    "stars": 20,
+    "language": "JavaScript",
+    "llm_score": 6.8,
+    "llm_summary": "AI 驱动的 UI/UX 设计工作流仓库。",
+    "llm_tags": [
+      "GitHub",
+      "UI/UX",
+      "Workflow"
+    ],
+    "llm_reason": "内容与 AI 应用相关，但主要面向设计师而非计算机专业学生，实用性一般。",
+    "score": 6.8
+  },
+  {
+    "id": "ebbf6e1b3985",
+    "title": "SaqlainXoas/llm-system-patterns ⭐17",
+    "summary": "A docs-first guide to LLM system design — hybrid search, embedding pipelines, reranking, and LLM-as-judge patterns.",
+    "url": "https://github.com/SaqlainXoas/llm-system-patterns",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-04T07:44:10Z",
+    "stars": 17,
+    "language": null,
+    "llm_score": 8.7,
+    "llm_summary": "LLM系统设计模式指南，涵盖搜索与重排序。",
+    "llm_tags": [
+      "系统设计",
+      "LLM应用",
+      "GitHub"
+    ],
+    "llm_reason": "内容聚焦LLM系统架构核心模式，信息密度高且实用性强，适合计算机专业学生深入理解技术细节。",
+    "score": 8.7
+  },
+  {
     "id": "75cbc7993bec",
     "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
     "summary": "",
@@ -226,6 +286,84 @@
     ],
     "llm_reason": "内容涉及 Hugging Face 生态的核心工具设计，探讨如何将 CLI 优化为 Agent 友好模式，对计算机专业学生理解 AI 工具链和工程化实践具有较高参考价值。",
     "score": 8
+  },
+  {
+    "id": "1190e9e2de10",
+    "title": "Biodefense in the Intelligence Age",
+    "summary": "An action plan for AI-powered biological resilience",
+    "url": "https://openai.com/index/biodefense-in-the-intelligence-age",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-04T00:00:00+00:00",
+    "llm_score": 8.5,
+    "llm_summary": "OpenAI关于AI赋能生物防御的战略计划。",
+    "llm_tags": [
+      "OpenAI",
+      "生物安全",
+      "战略规划"
+    ],
+    "llm_reason": "虽然是博客文章，但涉及前沿的AI与生物安全交叉领域，具有很高的信息密度和战略参考价值。",
+    "score": 8.5
+  },
+  {
+    "id": "e00e0f465009",
+    "title": "yuyu667yyy-byte/llamacore ⭐17",
+    "summary": " Full-featured desktop client for llama.cpp. Chat with local GGUF models, manage llama-server processes, convert Hugging Face models, monitor training, and build multi-step AI workflows. Electron + Re",
+    "url": "https://github.com/yuyu667yyy-byte/llamacore",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T23:24:01Z",
+    "stars": 17,
+    "language": "TypeScript",
+    "llm_score": 8.2,
+    "llm_summary": "功能全面的本地 LLM 桌面客户端，支持模型管理与工作流构建。",
+    "llm_tags": [
+      "本地部署",
+      "桌面应用",
+      "工具"
+    ],
+    "llm_reason": "内容涉及 llama.cpp 的桌面客户端，具有实用价值，信息密度高，适合开发者使用。",
+    "score": 8.2
+  },
+  {
+    "id": "fc16b2f18213",
+    "title": "cybergoldsmithview/Topaz-Video-AI-crack ⭐24",
+    "summary": "About Topaz Video AI - AI-powered video upscaling, deinterlacing, and frame interpolation. Comprehensive guide with setup instructions, feature highlights",
+    "url": "https://github.com/cybergoldsmithview/Topaz-Video-AI-crack",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T22:10:47Z",
+    "stars": 24,
+    "language": null,
+    "llm_score": 4.5,
+    "llm_summary": "Topaz Video AI 功能介绍与安装指南",
+    "llm_tags": [
+      "视频处理",
+      "工具指南"
+    ],
+    "llm_reason": "内容介绍了 Topaz Video AI 的功能，但标题包含 'crack'（破解），属于灰色地带，且摘要未提及具体技术细节，信息密度较低。",
+    "score": 4.5
+  },
+  {
+    "id": "6918ef2b60f8",
+    "title": "tastyeffectco/sandboxes ⭐381",
+    "summary": "Self-hosted dev sandboxes with preview URLs. One command. No Kubernetes, perfect for coding agents and Saas factories",
+    "url": "https://github.com/tastyeffectco/sandboxes",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T18:55:02Z",
+    "stars": 381,
+    "language": "Go",
+    "llm_score": 7.8,
+    "llm_summary": "自托管开发沙箱，支持预览URL，适合编程代理和SaaS工厂。",
+    "llm_tags": [
+      "GitHub",
+      "开发工具",
+      "沙箱",
+      "Self-hosted"
+    ],
+    "llm_reason": "内容涉及实用的开发工具，信息密度高，对学习 AI Agent 开发和部署具有实际参考价值。",
+    "score": 7.8
   },
   {
     "id": "d3886421a90c",
@@ -321,6 +459,27 @@
     "score": 7
   },
   {
+    "id": "058eb0420ca2",
+    "title": "ferdinandobons/AWSBedrockAgentCoreSkill ⭐34",
+    "summary": "Authoritative, source-cited Claude Code plugin/skill that lets a coding agent autonomously build production-grade AI agents on AWS (Strands Agents, Amazon Bedrock, Bedrock AgentCore) with official bes",
+    "url": "https://github.com/ferdinandobons/AWSBedrockAgentCoreSkill",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T12:07:17Z",
+    "stars": 34,
+    "language": "Python",
+    "llm_score": 7.8,
+    "llm_summary": "Claude 插件，用于自动化构建 AWS Bedrock 代理。",
+    "llm_tags": [
+      "GitHub",
+      "AWS Bedrock",
+      "Agent",
+      "Claude Code"
+    ],
+    "llm_reason": "涉及最新的 AgentCore 技术栈，具有高实用性和信息密度，适合计算机专业学生参考。",
+    "score": 7.8
+  },
+  {
     "id": "ca098c700197",
     "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
     "summary": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
@@ -339,6 +498,26 @@
     ],
     "llm_reason": "内容展示了LLM在实际工程中的落地案例，对计算机专业学生了解AI辅助开发极具参考价值；但偏向商业PR，技术细节密度一般，且包含疑似虚构的模型版本（GPT-5.5）。",
     "score": 7
+  },
+  {
+    "id": "7402b3fd6862",
+    "title": "AI272/speaker ⭐42",
+    "summary": "Speaker is a Codex skill project for academic presentations: read real.pptx, combine text extraction, PPTX structure parsing, page-by-page rendering, OCR, and visual review to generate page-by-page sp",
+    "url": "https://github.com/AI272/speaker",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T11:33:33Z",
+    "stars": 42,
+    "language": "Python",
+    "llm_score": 6.5,
+    "llm_summary": "基于 Codex 的学术演示文稿自动生成工具",
+    "llm_tags": [
+      "GitHub",
+      "LLM应用",
+      "PPT生成"
+    ],
+    "llm_reason": "内容展示了 LLM 在特定垂直场景（学术演示）下的落地应用，结合了 OCR 和文档解析技术，具有一定的技术参考价值。",
+    "score": 6.5
   },
   {
     "id": "a8b1e0e9c715",
@@ -376,6 +555,107 @@
     ],
     "llm_reason": "内容涉及OpenAI的政策方向，对理解行业宏观趋势有一定参考价值，但作为技术学习资料，信息密度较低，偏向行业观察而非技术细节。",
     "score": 6
+  },
+  {
+    "id": "e78232ff6757",
+    "title": "Happy-Chen-CH/text_classification ⭐21",
+    "summary": "This is a text classification project based on the \"Category News\" feature of Toutiao. Initially, we used the random forest algorithm, then upgraded to FastText, and finally built a new text classific",
+    "url": "https://github.com/Happy-Chen-CH/text_classification",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T07:39:51Z",
+    "stars": 21,
+    "language": "Python",
+    "llm_score": 4.5,
+    "llm_summary": "基于头条新闻的文本分类项目，算法迭代过程。",
+    "llm_tags": [
+      "GitHub",
+      "文本分类",
+      "算法实践"
+    ],
+    "llm_reason": "内容展示了从随机森林到FastText的算法迭代过程，具有一定的技术参考价值，但信息密度较低且较为陈旧。",
+    "score": 4.5
+  },
+  {
+    "id": "33bca4328249",
+    "title": "gaoweiblue-source/tob-llm-paradigm-collection ⭐21",
+    "summary": "",
+    "url": "https://github.com/gaoweiblue-source/tob-llm-paradigm-collection",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T07:11:44Z",
+    "stars": 21,
+    "language": "TypeScript",
+    "llm_score": 8.5,
+    "llm_summary": "GitHub 仓库，整理 TOB LLM 领域技术范式与最佳实践。",
+    "llm_tags": [
+      "GitHub",
+      "LLM",
+      "TOB",
+      "技术栈"
+    ],
+    "llm_reason": "针对 TOB（面向企业）场景的 LLM 技术范式集合，对计算机专业学生理解实际落地场景具有较高参考价值。",
+    "score": 8.5
+  },
+  {
+    "id": "236efe333d94",
+    "title": "Lsq128/MiraFrame ⭐22",
+    "summary": "MiraFrame 是一个面向 AI 漫剧创作的全栈 Agent 项目。它不是简单调用一次大模型，而是把“故事大纲 → 角色设定 → 分镜脚本 → 角色图 → 镜头素材 → 导出”拆成可观察、可重试、可人工反馈的创作流水线。这个项目特别适合正在从前端转向 AI Agent / AI 应用工程的同学",
+    "url": "https://github.com/Lsq128/MiraFrame",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T07:09:57Z",
+    "stars": 22,
+    "language": "TypeScript",
+    "llm_score": 7.5,
+    "llm_summary": "全栈AI漫剧创作Agent流水线项目",
+    "llm_tags": [
+      "Agent",
+      "全栈",
+      "AI应用"
+    ],
+    "llm_reason": "内容展示了AI Agent在复杂工作流中的应用，对AI应用工程方向的学习者具有较高参考价值。",
+    "score": 7.5
+  },
+  {
+    "id": "98140b25dbaf",
+    "title": "XiNian-dada/Fuck_My_Shit_Mountain ⭐30",
+    "summary": "An evidence-based AI code audit skill. Professional output. Zero emotional bullshit.",
+    "url": "https://github.com/XiNian-dada/Fuck_My_Shit_Mountain",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T06:57:37Z",
+    "stars": 30,
+    "language": "HTML",
+    "llm_score": 7.5,
+    "llm_summary": "基于证据的AI代码审计技能分享。",
+    "llm_tags": [
+      "代码审计",
+      "实战技巧",
+      "GitHub"
+    ],
+    "llm_reason": "内容涉及AI代码审计这一具体且实用的技能，信息密度较高，符合计算机专业学生的需求。",
+    "score": 7.5
+  },
+  {
+    "id": "ed5e7da22466",
+    "title": "K-Dense-AI/scientific-agents ⭐34",
+    "summary": "Expert-thinking AGENTS.md profiles that teach AI agents to reason like senior scientists and engineers.",
+    "url": "https://github.com/K-Dense-AI/scientific-agents",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T02:43:24Z",
+    "stars": 34,
+    "language": null,
+    "llm_score": 7.5,
+    "llm_summary": "GitHub项目：教授AI代理像资深科学家一样推理。",
+    "llm_tags": [
+      "GitHub",
+      "Agent",
+      "Reasoning"
+    ],
+    "llm_reason": "内容涉及AI代理推理能力的提升，具有前沿性和较高的信息密度，适合计算机专业学生参考。",
+    "score": 7.5
   },
   {
     "id": "f0b2c0343879",
@@ -539,6 +819,24 @@
     ],
     "llm_reason": "该项目对CS学生极具实用参考价值，展示了如何通过底层硬件（NVLink）与推理框架（vLLM）的深度优化，在消费级/准专业级显卡上实现大模型的高效部署，非常契合学习LLM工程化落地的需求。",
     "score": 8
+  },
+  {
+    "id": "4f554dbbc638",
+    "title": "The Download: AI can run your admin department now",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How small businesses can leverage AI From accounting to design to market research and product development, there’s a staggering breadth of skills needed to run a business. Large companies can hire&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/02/1138277/the-download-ai-tips-small-businesses-admin/",
+    "source": "MIT Tech Review AI",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-02T12:10:00+00:00",
+    "llm_score": 5.8,
+    "llm_summary": "探讨AI如何赋能小企业各部门运营。",
+    "llm_tags": [
+      "AI应用",
+      "商业落地",
+      "行业趋势"
+    ],
+    "llm_reason": "内容涉及AI在商业领域的应用，但信息密度较低，多为泛泛而谈，缺乏具体技术细节。",
+    "score": 5.8
   },
   {
     "id": "d4a7d061f055",

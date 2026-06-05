@@ -33,6 +33,7 @@ jobs:
           ZHIPU_TEMPERATURE: "0.1"
           ZHIPU_MAX_TOKENS: "512"
           SCORE_THRESHOLD: "6.0"
+          SAVE_THRESHOLD: "4.0"
           MAX_AGE_DAYS: "3"
           RSS_ITEMS_PER_SOURCE: "5"
           LLM_CALL_INTERVAL: "0.5"

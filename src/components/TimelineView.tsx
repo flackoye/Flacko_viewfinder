@@ -25,6 +25,7 @@ const typeConfig: Record<string, { label: string; icon: typeof Globe; color: str
   official_blog: { label: '官方博客', icon: Globe, color: 'text-accent', dotColor: 'bg-accent' },
   tech_blog: { label: '技术博客', icon: Code2, color: 'text-[#ff9f43]', dotColor: 'bg-[#ff9f43]' },
   tech_media: { label: '科技媒体', icon: MessageSquare, color: 'text-[#54a0ff]', dotColor: 'bg-[#54a0ff]' },
+  tech_community: { label: '社区', icon: MessageSquare, color: 'text-[#ff6b6b]', dotColor: 'bg-[#ff6b6b]' },
   paper: { label: '论文', icon: FileText, color: 'text-[#5f27cd]', dotColor: 'bg-[#5f27cd]' },
   open_source: { label: '开源', icon: Star, color: 'text-[#2ecc71]', dotColor: 'bg-[#2ecc71]' },
   default: { label: '资讯', icon: ArrowUpRight, color: 'text-text-muted', dotColor: 'bg-text-muted' },
