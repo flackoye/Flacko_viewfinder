@@ -34,10 +34,10 @@ export default function Navbar() {
       <div className="w-full px-4 md:px-6 py-5 flex items-center justify-between">
         {/* 左侧站名 — 大气设计 */}
         <Link href="/" className="group flex items-baseline gap-3 select-none">
-          <span className="site-name text-xl md:text-2xl font-bold tracking-wider">
+          <span className="font-[family-name:var(--font-dancing)] text-2xl md:text-3xl tracking-wider text-accent">
             Flacko
           </span>
-          <span className="site-subname text-xs md:text-xl tracking-widest">
+          <span className="site-subname text-xs md:text-sm tracking-widest">
             的取景框
           </span>
         </Link>

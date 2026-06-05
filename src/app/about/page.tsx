@@ -251,7 +251,7 @@ export default function AboutPage() {
                   </svg>
                 </a>
                 <a
-                  href="mailto:contact@flacko.dev"
+                  href="mailto:08244498@cumt.edu.cn"
                   className="glass-btn-outline w-12 h-12 rounded-full flex items-center justify-center hover-lift"
                   aria-label="Email"
                 >

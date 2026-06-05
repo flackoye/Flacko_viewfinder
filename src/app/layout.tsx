@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Noto_Sans_SC } from "next/font/google";
+import { Inter, Noto_Sans_SC, Dancing_Script } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import fs from "fs";
 import path from "path";
@@ -18,6 +18,12 @@ const inter = Inter({
 const notoSansSC = Noto_Sans_SC({
   subsets: ["latin"],
   variable: "--font-noto-sans-sc",
+});
+
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  variable: "--font-dancing",
+  weight: "700",
 });
 
 export const metadata: Metadata = {
@@ -41,7 +47,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="zh-CN" className={`h-full antialiased ${inter.variable} ${notoSansSC.variable}`}>
+    <html lang="zh-CN" className={`h-full antialiased ${inter.variable} ${notoSansSC.variable} ${dancingScript.variable}`}>
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </head>
