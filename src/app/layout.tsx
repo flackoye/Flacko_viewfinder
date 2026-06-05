@@ -49,7 +49,7 @@ export default function RootLayout({
         <SettingsProvider>
           <AnnouncementBanner announcement={announcement} />
           <Navbar />
-          <main className="flex-1 pt-16 page-fade-in">
+          <main className="flex-1 pt-16 page-fade-in-enhanced">
             {children}
           </main>
           <Footer />
