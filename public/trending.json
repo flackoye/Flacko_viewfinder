@@ -1,5 +1,114 @@
 [
   {
+    "id": "729d9c5b9655",
+    "title": "How do you identify researchers who are good? [D]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>About 10 years ago, I got into the basics of ML (like regression, KNN's, LVQ's) and read a few papers before taking a break a few years back.</p> <p>It feels like now",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1txlxm6/how_do_you_identify_researchers_who_are_good_d/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T14:04:59+00:00",
+    "llm_score": 5.5,
+    "llm_summary": "讨论如何识别优秀AI研究员，内容不完整。",
+    "llm_tags": [
+      "社区讨论",
+      "职业发展"
+    ],
+    "llm_reason": "内容涉及AI研究员的识别标准，但摘要截断且缺乏实质性技术细节，信息密度较低。",
+    "score": 5.5
+  },
+  {
+    "id": "5d17d348dccc",
+    "title": "I implemented KVarN in my llama.cpp fork and ran KLD benchmarks. It's promising!",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Saw this post here yesterday: <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1twptw2/kvarn_new_kvcache_quant_from_huawei_35_kv_cache/\">KVarN: new KV-cache quan",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txlhxu/i_implemented_kvarn_in_my_llamacpp_fork_and_ran/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T13:48:37+00:00",
+    "llm_score": 7.8,
+    "llm_summary": "本地LLM社区实测KVarN量化技术，性能表现积极。",
+    "llm_tags": [
+      "量化",
+      "KV Cache",
+      "llama.cpp",
+      "性能优化"
+    ],
+    "llm_reason": "内容涉及华为最新的 KV Cache 量化技术 KVarN，属于前沿技术；作者在 llama.cpp 框架下进行了实际基准测试，信息密度高，对学习 LLM 推理优化有参考价值。",
+    "score": 7.8
+  },
+  {
+    "id": "c0eae8f91b08",
+    "title": "Benchmark: ONNX Runtime vs HF Transformers vs GGUF for Parakeet TDT 0.6B on CPU-only hardware [D]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Sharing a small CPU inference benchmark for nvidia/parakeet-tdt-0.6b-v3 that turned up a result I didn't expect going in.</p> <p><strong>Setup:</strong> 2 x86-64 vCPU",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1txkbsf/benchmark_onnx_runtime_vs_hf_transformers_vs_gguf/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T13:01:08+00:00",
+    "llm_score": 8.2,
+    "llm_summary": "CPU推理性能基准测试，对比三种主流框架。",
+    "llm_tags": [
+      "Benchmark",
+      "Inference",
+      "CPU",
+      "Parakeet"
+    ],
+    "llm_reason": "内容提供了具体的模型（Parakeet TDT 0.6B）在CPU环境下的性能对比数据，信息密度高，对实际部署和选型有直接参考价值。",
+    "score": 8.2
+  },
+  {
+    "id": "8ba2fe76ac77",
+    "title": "An autonomous research agent was the #1 contributor in OpenAI's Hiring Competition Parameter Golf (by merged records)[R]",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1txka8q/an_autonomous_research_agent_was_the_1/\"> <img alt=\"An autonomous research agent was the #1 contributor in OpenAI's ",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1txka8q/an_autonomous_research_agent_was_the_1/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T12:59:36+00:00",
+    "llm_score": 6.5,
+    "llm_summary": "AI代理在招聘竞赛中表现优异，展示技术潜力。",
+    "llm_tags": [
+      "AI Agent",
+      "OpenAI",
+      "Research"
+    ],
+    "llm_reason": "内容展示了AI代理在真实场景（招聘竞赛）中的能力，具有前沿性和一定的实用性，但作为Reddit帖子，信息密度和可读性相对一般。",
+    "score": 6.5
+  },
+  {
+    "id": "2816a3adce31",
+    "title": "The Download: AI hacking beyond Mythos, and chatbots’ impact on our brains",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The Meta hack shows there’s more to AI security than Mythos On Monday, reports emerged that attackers had used Meta’s AI customer support agent to steal Instagram accounts. Their approach was&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/05/1138452/the-download-ai-hacking-mythos-chatbots-brain-impacts/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-05T12:10:00+00:00",
+    "llm_score": 6.8,
+    "llm_summary": "Meta AI 安全漏洞与 AI 对大脑影响，内容相关但深度一般。",
+    "llm_tags": [
+      "AI安全",
+      "Meta",
+      "神经科学"
+    ],
+    "llm_reason": "内容涉及 Meta AI 安全漏洞和 AI 对大脑的影响，与 AI/LLM 学习者相关。但摘要信息密度较低，且属于大众科技新闻，缺乏深度技术细节。",
+    "score": 6.8
+  },
+  {
+    "id": "e9995dc9740c",
+    "title": "Are AI chatbots making us lose control of our brains?",
+    "summary": "This week I’ve been at SXSW London. There’s been music, film, and a lot—and I mean a lot—of talk about AI. I also had the opportunity to sit down with Gloria Mark, a psychologist at the University of California, Irvine, who has spent the last 30 years studying how people interact with digital technologies. Early&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/05/1138427/are-ai-chatbots-making-us-lose-control-of-our-brains/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-05T09:00:00+00:00",
+    "llm_score": 6.5,
+    "llm_summary": "MIT采访心理学家探讨AI对人类注意力的潜在影响。",
+    "llm_tags": [
+      "心理学",
+      "注意力机制",
+      "MIT"
+    ],
+    "llm_reason": "内容涉及AI对人类认知和注意力的潜在影响，具有前沿性和一定的实用性，但摘要信息密度较低，仅展示了开头部分。",
+    "score": 6.5
+  },
+  {
     "id": "2f179ae337cf",
     "title": "Is it allowed to use OpenAI API outputs to create a silver code dataset or benchmark for a specific Python library? [d]",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hello everyone,</p> <p>Is it allowed to use OpenAI API outputs to create a silver code dataset or benchmark for a specific Python library?</p> <p>I am working on a pr",
