@@ -1,5 +1,95 @@
 [
   {
+    "id": "d6bfbb06c608",
+    "title": "Finally finished my LLM server: EPYC 9575F, 4× RTX 3090 (96GB VRAM), 768GB ECC RAM",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tx9tf2/finally_finished_my_llm_server_epyc_9575f_4_rtx/\"> <img alt=\"Finally finished my LLM server: EPYC 9575F, 4× RTX 3090 (96G",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tx9tf2/finally_finished_my_llm_server_epyc_9575f_4_rtx/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T03:49:25+00:00",
+    "llm_score": 7.8,
+    "llm_summary": "分享本地大模型服务器硬件配置与搭建经验。",
+    "llm_tags": [
+      "硬件",
+      "本地部署",
+      "LLM"
+    ],
+    "llm_reason": "内容涉及具体的本地 LLM 硬件配置（EPYC + RTX 3090），对有志于进行本地部署的学生具有很高的参考价值和实用性。",
+    "score": 7.8
+  },
+  {
+    "id": "f52c71ba4b07",
+    "title": "Hi Reddit, I posted my Build Your Own LLM workshop to Youtube (GPT2 & Qwen3.6 style)",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tx7gzu/hi_reddit_i_posted_my_build_your_own_llm_workshop/\"> <img alt=\"Hi Reddit, I posted my Build Your Own LLM workshop to Yout",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tx7gzu/hi_reddit_i_posted_my_build_your_own_llm_workshop/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T01:58:22+00:00",
+    "llm_score": 7.8,
+    "llm_summary": "分享在 YouTube 上构建 LLM 的工作坊教程。",
+    "llm_tags": [
+      "教程",
+      "实战",
+      "LLM"
+    ],
+    "llm_reason": "内容涉及构建 LLM 的实战教程，具有较好的实用性和信息密度，适合计算机专业学生参考。",
+    "score": 7.8
+  },
+  {
+    "id": "f112a58c769e",
+    "title": "You guys were right - Qwen 3.6 35B IS good...and KV Cache DOES matter.",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>WARNING:</strong> <em>I'm speed typing this, no time to organizea/format, so if short paragraph chunks bother you, just keep it moving.</em></p> <p><strong>CO",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1twyoqe/you_guys_were_right_qwen_36_35b_is_goodand_kv/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-04T19:57:06+00:00",
+    "llm_score": 7.2,
+    "llm_summary": "实测Qwen 3.6 35B性能，验证KV Cache重要性。",
+    "llm_tags": [
+      "Qwen",
+      "模型评测",
+      "KV Cache"
+    ],
+    "llm_reason": "内容涉及最新的Qwen 3.6模型及KV Cache技术细节，具有实际参考价值，信息密度较高。",
+    "score": 7.2
+  },
+  {
+    "id": "30584144b6b6",
+    "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+    "summary": "",
+    "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-04T18:57:45+00:00",
+    "llm_score": 6.5,
+    "llm_summary": "NVIDIA发布企业级多模态内容安全模型。",
+    "llm_tags": [
+      "NVIDIA",
+      "内容安全",
+      "企业级"
+    ],
+    "llm_reason": "内容涉及 NVIDIA 的新模型发布，具有前沿性，但摘要信息密度较低，缺乏具体技术细节。",
+    "score": 6.5
+  },
+  {
+    "id": "ebef419416de",
+    "title": "How do ML researchers actually use AI tools to improve their writing? [D]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>As an ML researcher, how do you use AI tools in your daily work? Do you mostly use them to clean up grammar and wording, or also to rewrite, structure, or draft techn",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1twtpmb/how_do_ml_researchers_actually_use_ai_tools_to/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-04T17:02:53+00:00",
+    "llm_score": 7.5,
+    "llm_summary": "探讨 ML 研究者如何利用 AI 工具辅助写作与科研流程。",
+    "llm_tags": [
+      "科研工具",
+      "写作辅助",
+      "社区讨论"
+    ],
+    "llm_reason": "内容针对 ML 研究者群体，讨论了 AI 在科研写作中的实际应用场景，具有较高的实用性和信息密度。",
+    "score": 7.5
+  },
+  {
     "id": "e6461a7e5333",
     "title": "Sapphiretrudirect/free-claude-code-ai-desktop-app-492 ⭐72",
     "summary": "claude code ai free desktop app  api cli open source opencode aider gemini alternative download github local llm ollama setup guide tutorial api  2026",
@@ -61,6 +151,24 @@
     "score": 8
   },
   {
+    "id": "db1a1e774aca",
+    "title": "Nvidia's been paying shills on LinkedIn",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1twrvts/nvidias_been_paying_shills_on_linkedin/\"> <img alt=\"Nvidia's been paying shills on LinkedIn\" src=\"https://preview.redd.it",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1twrvts/nvidias_been_paying_shills_on_linkedin/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-04T15:59:37+00:00",
+    "llm_score": 4.5,
+    "llm_summary": "讨论 Nvidia 在 LinkedIn 的营销行为，非技术性讨论。",
+    "llm_tags": [
+      "Industry",
+      "Marketing",
+      "Discussion"
+    ],
+    "llm_reason": "内容主要讨论 Nvidia 的公关策略而非技术细节，信息密度低，对学习 AI 技术的实际参考价值有限。",
+    "score": 4.5
+  },
+  {
     "id": "97356d354e72",
     "title": "Sandfomodulator/subforge-177 ⭐72",
     "summary": "Rust CLI for AI subtitle workflows: transcribe, segment, translate, evaluate, and burn or mux subtitles.",
@@ -102,6 +210,24 @@
     "score": 7.2
   },
   {
+    "id": "18b085efbb18",
+    "title": "KVarN: Variance-Normalized KV-Cache Quantization [R]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Excited to share some of my own work here :) </p> <p><strong>KVarN</strong> is our new KV-Cache quantization method. In very brief, we combine Hadamard rotations with",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1twnj5r/kvarn_variancenormalized_kvcache_quantization_r/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-04T13:21:59+00:00",
+    "llm_score": 8.5,
+    "llm_summary": "KVarN：结合 Hadamard 旋转的 KV-Cache 量化新方法",
+    "llm_tags": [
+      "量化",
+      "KV-Cache",
+      "前沿论文"
+    ],
+    "llm_reason": "内容涉及最新的 KV-Cache 量化技术，信息密度高，具有很高的学术和工程参考价值。",
+    "score": 8.5
+  },
+  {
     "id": "8f7e162bbf56",
     "title": "How to Fine-Tune Nemotron 3.5 ASR for Your Language, Domain, or Accent",
     "summary": "",
@@ -118,6 +244,24 @@
     ],
     "llm_reason": "内容针对具体的开源模型（Nemotron 3.5）提供了微调教程，具有很高的技术实用性和前沿性，适合计算机专业学生参考。",
     "score": 8
+  },
+  {
+    "id": "17a6d4be08e8",
+    "title": "On-policy distillation: one of the hottest terms on PapersWithCode [R]",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1twmhud/onpolicy_distillation_one_of_the_hottest_terms_on/\"> <img alt=\"On-policy distillation: one of the hottest terms on P",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1twmhud/onpolicy_distillation_one_of_the_hottest_terms_on/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-04T12:40:48+00:00",
+    "llm_score": 6.8,
+    "llm_summary": "讨论强化学习中的 On-policy Distillation 热度与趋势。",
+    "llm_tags": [
+      "强化学习",
+      "蒸馏",
+      "趋势"
+    ],
+    "llm_reason": "内容涉及强化学习中的热门概念 On-policy distillation，具有一定的技术讨论价值，但摘要截断且信息密度一般。",
+    "score": 6.8
   },
   {
     "id": "7cadff6dce8b",
@@ -154,6 +298,24 @@
     ],
     "llm_reason": "内容涉及AI法律诉讼这一热点话题，对了解AI落地面临的挑战有参考价值，但摘要信息密度较低。",
     "score": 7
+  },
+  {
+    "id": "3bac1b254274",
+    "title": "The Download: AI-generated lawsuits and virtual power plants for data centers",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How courts are coping with a flood of AI-generated lawsuits Most days in her chambers, Judge Maritza Braswell, a federal magistrate judge in Colorado, sifts through stacks of documents written by&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/04/1138408/the-download-ai-lawsuits-virtual-power-plants-data-centers/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-04T12:10:00+00:00",
+    "llm_score": 7.5,
+    "llm_summary": "探讨AI生成内容引发的诉讼及数据中心虚拟电厂。",
+    "llm_tags": [
+      "AI法律",
+      "数据中心",
+      "行业动态"
+    ],
+    "llm_reason": "内容涉及AI生成内容引发的最新法律诉讼，属于AI领域的前沿热点，且信息密度较高，对计算机专业学生了解AI伦理与法律边界具有参考价值。",
+    "score": 7.5
   },
   {
     "id": "9b7a24053aae",
@@ -382,6 +544,24 @@
     ],
     "llm_reason": "内容涉及AI基础设施与能源管理的结合，具有行业参考价值，但作为技术学习资料，其技术深度和前沿性一般。",
     "score": 6
+  },
+  {
+    "id": "372581ecc666",
+    "title": "How virtual power plants could provide energy for data centers",
+    "summary": "Would you take a payment to ramp down your electricity use? Would it change anything if you were doing so to help power a local data center? Google just signed a new deal to help pay for a virtual power plant (VPP) in the largest power grid in the US. The agreement is with Voltus,&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/03/1138350/virtual-power-plants-data-centers/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-03T16:51:38+00:00",
+    "llm_score": 6.5,
+    "llm_summary": "谷歌与Voltus合作利用虚拟电厂为数据中心供电，探讨能源与AI的协同。",
+    "llm_tags": [
+      "能源",
+      "数据中心",
+      "虚拟电厂"
+    ],
+    "llm_reason": "内容涉及谷歌与虚拟电厂的合作，展示了AI基础设施与能源管理的结合，具有一定的行业参考价值，但技术深度较浅。",
+    "score": 6.5
   },
   {
     "id": "63f915e0cfae",
@@ -934,5 +1114,25 @@
     ],
     "llm_reason": "展示了AI在实时生成图文内容方面的前沿应用潜力，具有很高的技术演示和参考价值。",
     "score": 7
+  },
+  {
+    "id": "7978c517b9dd",
+    "title": "PanisHandsome/ai-rules-sync ⭐105",
+    "summary": "Keep one source of truth for your AI coding-agent rules. Convert and sync between AGENTS.md, CLAUDE.md, .cursorrules, Copilot, Windsurf, Cline, Aider & Gemini — or scaffold a fresh AGENTS.md. Zero dep",
+    "url": "https://github.com/PanisHandsome/ai-rules-sync",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-01T03:32:48Z",
+    "stars": 105,
+    "language": "JavaScript",
+    "llm_score": 8.5,
+    "llm_summary": "统一管理多种 AI 编码助手的规则配置。",
+    "llm_tags": [
+      "GitHub",
+      "工具",
+      "开发效率"
+    ],
+    "llm_reason": "内容针对 AI 编码助手（如 Claude, Cursor, Copilot）的配置文件同步痛点，提供了实用的开源解决方案，具有较高的实用性和信息密度。",
+    "score": 8.5
   }
 ]
