@@ -69,12 +69,16 @@ GLM_TEMPERATURE = float(_env("ZHIPU_TEMPERATURE", "0.1"))
 GLM_MAX_TOKENS = int(_env("ZHIPU_MAX_TOKENS", "256"))
 
 # --- 爬取控制 ---
-RSS_ITEMS_PER_SOURCE = int(_env("RSS_ITEMS_PER_SOURCE", "5"))
+RSS_ITEMS_PER_SOURCE = int(_env("RSS_ITEMS_PER_SOURCE", "3"))
 LLM_CALL_INTERVAL = float(_env("LLM_CALL_INTERVAL", "0.5"))
 HTTP_TIMEOUT = int(_env("HTTP_TIMEOUT", "15"))
 
-# AI 领域优质 RSS 源
+# --- 保底机制 ---
+MIN_ITEMS_PER_UPDATE = int(_env("MIN_ITEMS_PER_UPDATE", "15"))  # 每次更新最少入库条数
+
+# AI 领域优质 RSS 源（官方博客 + 科技媒体 + 学术 + 中文源）
 RSS_SOURCES = [
+    # ── 官方 AI 实验室博客 ──
     {
         "name": "OpenAI Blog",
         "url": "https://openai.com/blog/rss.xml",
@@ -96,14 +100,73 @@ RSS_SOURCES = [
         "source_type": "official_blog",
     },
     {
-        "name": "MIT Tech Review AI",
+        "name": "Google AI Blog",
+        "url": "https://blog.google/technology/ai/rss/",
+        "source_type": "official_blog",
+    },
+    {
+        "name": "Meta AI Blog",
+        "url": "https://ai.meta.com/blog/rss/",
+        "source_type": "official_blog",
+    },
+    # ── 英文科技媒体 ──
+    {
+        "name": "MIT Tech Review",
         "url": "https://www.technologyreview.com/feed/",
         "source_type": "tech_media",
     },
     {
+        "name": "TechCrunch AI",
+        "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "source_type": "tech_media",
+    },
+    {
+        "name": "The Verge AI",
+        "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+        "source_type": "tech_media",
+    },
+    {
+        "name": "VentureBeat AI",
+        "url": "https://venturebeat.com/category/ai/feed/",
+        "source_type": "tech_media",
+    },
+    {
+        "name": "Ars Technica AI",
+        "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+        "source_type": "tech_media",
+    },
+    # ── 学术 / 研究类 ──
+    {
+        "name": "ArXiv cs.AI",
+        "url": "https://rss.arxiv.org/rss/cs.AI",
+        "source_type": "paper",
+    },
+    {
+        "name": "Distill",
+        "url": "https://distill.pub/feed.xml",
+        "source_type": "paper",
+    },
+    # ── 中文科技媒体 ──
+    {
         "name": "36氪",
         "url": "https://36kr.com/feed",
         "source_type": "tech_media",
+    },
+    {
+        "name": "机器之心",
+        "url": "https://www.jiqizhixin.com/rss",
+        "source_type": "tech_media",
+    },
+    {
+        "name": "量子位",
+        "url": "https://www.qbitai.com/feed",
+        "source_type": "tech_media",
+    },
+    # ── 开发者社区 ──
+    {
+        "name": "Dev.to AI",
+        "url": "https://dev.to/feed/tag/ai",
+        "source_type": "tech_community",
     },
 ]
 
@@ -165,7 +228,7 @@ def fetch_semantic_scholar() -> list[dict]:
             "query": "large language model OR transformer OR generative AI",
             "year": "2025-2026",
             "fields": "title,abstract,url,authors,publicationDate,citationCount",
-            "limit": 10,
+            "limit": 5,
             "sort": "publicationDate:desc",
         }
         # Semantic Scholar 限流严格，加重试
@@ -220,7 +283,7 @@ def fetch_github_trending() -> list[dict]:
                 "q": f"AI OR LLM OR transformer created:>{since}",
                 "sort": "stars",
                 "order": "desc",
-                "per_page": 15,
+                "per_page": 8,
             },
             headers={"Accept": "application/vnd.github.v3+json"},
             timeout=HTTP_TIMEOUT,
@@ -257,7 +320,7 @@ def fetch_hackernews() -> list[dict]:
             params={
                 "query": "AI OR LLM OR GPT OR transformer OR machine learning",
                 "tags": "story",
-                "hitsPerPage": 15,
+                "hitsPerPage": 8,
                 "numericFilters": "points>10",
             },
             timeout=HTTP_TIMEOUT,
@@ -305,7 +368,7 @@ def fetch_reddit() -> list[dict]:
         try:
             resp = httpx.get(
                 f"https://www.reddit.com/r/{sub}/hot.json",
-                params={"limit": 8},
+                params={"limit": 4},
                 headers={"User-Agent": "FlackoTrending/2.0"},
                 timeout=HTTP_TIMEOUT,
             )
@@ -366,8 +429,8 @@ SYSTEM_PROMPT = """你是一个 AI 领域的内容筛选专家。你的任务是
 
 只返回 JSON，不要其他文字。"""
 
-def llm_filter(client: ZhipuAiClient, item: dict) -> dict | None:
-    """调用 GLM 对单条内容进行筛选"""
+def llm_filter(client: ZhipuAiClient, item: dict, threshold: float = SAVE_THRESHOLD) -> dict | None:
+    """调用 GLM 对单条内容进行筛选，threshold 可动态调整"""
     user_msg = f"""请评估以下内容：
 
 标题：{item['title']}
@@ -401,7 +464,7 @@ def llm_filter(client: ZhipuAiClient, item: dict) -> dict | None:
 
         if not result.get("relevant", False):
             return None
-        if result.get("score", 0) < SAVE_THRESHOLD:
+        if result.get("score", 0) < threshold:
             return None
 
         return {
@@ -458,12 +521,32 @@ def deduplicate(old_items: list[dict], new_items: list[dict]) -> list[dict]:
     return [item for item in new_items if item["id"] not in existing_ids]
 
 
+def run_llm_pass(client, items: list[dict], threshold: float, label: str = "") -> tuple[list[dict], list[dict]]:
+    """对 items 执行一轮 LLM 筛选，返回 (通过列表, 被拒列表)"""
+    passed, rejected = [], []
+    prefix = f" ({label})" if label else ""
+    for i, item in enumerate(items):
+        print(f"  [{i+1}/{len(items)}]{prefix} {item['title'][:50]}...")
+        llm_result = llm_filter(client, item, threshold=threshold)
+        if llm_result:
+            item.update(llm_result)
+            item["score"] = llm_result["llm_score"]
+            passed.append(item)
+            print(f"    ✅ 得分: {llm_result['llm_score']} | {llm_result['llm_summary']}")
+        else:
+            rejected.append(item)
+            print(f"    ❌ 未通过筛选 (门槛 {threshold})")
+        time.sleep(LLM_CALL_INTERVAL)
+    return passed, rejected
+
+
 def main():
     print("=" * 50)
     print("🚀 AI 热点爬取管道启动")
     print(f"   时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"   模型: {GLM_MODEL}")
     print(f"   入库门槛: {SAVE_THRESHOLD} | 展示门槛: {SCORE_THRESHOLD} | 保留: {MAX_AGE_DAYS}天")
+    print(f"   保底: 每次更新至少 {MIN_ITEMS_PER_UPDATE} 条")
     print("=" * 50)
 
     # 检查 API Key
@@ -495,28 +578,39 @@ def main():
     if not new_items:
         print("✅ 没有新内容需要筛选")
     else:
-        # 3. LLM 筛选
-        print(f"\n🤖 开始 LLM 筛选（{len(new_items)} 条）...")
-        filtered = []
-        for i, item in enumerate(new_items):
-            print(f"  [{i+1}/{len(new_items)}] {item['title'][:50]}...")
-            llm_result = llm_filter(client, item)
-            if llm_result:
-                item.update(llm_result)
-                item["score"] = llm_result["llm_score"]
-                filtered.append(item)
-                print(f"    ✅ 得分: {llm_result['llm_score']} | {llm_result['llm_summary']}")
-            else:
-                print(f"    ❌ 未通过筛选")
-            time.sleep(LLM_CALL_INTERVAL)
+        # 3. 第一轮 LLM 筛选（正常阈值）
+        print(f"\n🤖 第一轮 LLM 筛选（门槛 {SAVE_THRESHOLD}，{len(new_items)} 条）...")
+        filtered, rejected = run_llm_pass(client, new_items, threshold=SAVE_THRESHOLD, label="首轮")
+        print(f"\n🎯 首轮结果: {len(filtered)}/{len(new_items)} 条通过")
 
-        print(f"\n🎯 筛选结果: {len(filtered)}/{len(new_items)} 条通过")
+        # 4. 保底机制：不足 MIN_ITEMS_PER_UPDATE 则降门槛补充
+        deficit = MIN_ITEMS_PER_UPDATE - len(filtered)
+        if deficit > 0 and rejected:
+            # 第二轮：降低 1.0 分
+            relaxed_threshold = max(SAVE_THRESHOLD - 1.0, 3.0)
+            print(f"\n🔬 保底补充（门槛降至 {relaxed_threshold}，需补 {deficit} 条，候选 {len(rejected)} 条）...")
+            extra, still_rejected = run_llm_pass(client, rejected, threshold=relaxed_threshold, label="补充")
+            filtered.extend(extra)
+            print(f"   补充了 {len(extra)} 条，当前合计 {len(filtered)} 条")
+
+            # 第三轮：仍然不足，再降 1.0
+            deficit = MIN_ITEMS_PER_UPDATE - len(filtered)
+            if deficit > 0 and still_rejected:
+                final_threshold = max(relaxed_threshold - 1.0, 2.0)
+                print(f"\n🆘 终极兜底（门槛降至 {final_threshold}，需补 {deficit} 条，候选 {len(still_rejected)} 条）...")
+                final_extra, _ = run_llm_pass(client, still_rejected, threshold=final_threshold, label="兜底")
+                filtered.extend(final_extra)
+                print(f"   终极兜底 {len(final_extra)} 条，最终合计 {len(filtered)} 条")
+
+        if len(filtered) < MIN_ITEMS_PER_UPDATE:
+            print(f"\n⚠️  注意：经三轮筛选仍仅 {len(filtered)} 条，未达保底 {MIN_ITEMS_PER_UPDATE} 条（原始素材不足）")
+
         existing.extend(filtered)
 
-    # 4. 按时间排序
+    # 5. 按时间排序
     existing.sort(key=lambda x: x.get("timestamp", ""), reverse=True)
 
-    # 5. 写入文件
+    # 6. 写入文件
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(existing, f, ensure_ascii=False, indent=2)

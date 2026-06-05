@@ -1,9 +1,9 @@
 name: Update AI Trending
 
 on:
-  # 每 5 小时跑一次：UTC 0:00, 5:00, 10:00, 15:00, 20:00
+  # 每 12 小时跑一次：UTC 0:00, 12:00
   schedule:
-    - cron: "0 0,5,10,15,20 * * *"
+    - cron: "0 0,12 * * *"
   # 也支持手动触发
   workflow_dispatch:
 
@@ -34,10 +34,11 @@ jobs:
           ZHIPU_MAX_TOKENS: "512"
           SCORE_THRESHOLD: "5.5"
           SAVE_THRESHOLD: "5.5"
-          MAX_AGE_DAYS: "3"
-          RSS_ITEMS_PER_SOURCE: "5"
+          MAX_AGE_DAYS: "5"
+          RSS_ITEMS_PER_SOURCE: "3"
           LLM_CALL_INTERVAL: "0.5"
           HTTP_TIMEOUT: "15"
+          MIN_ITEMS_PER_UPDATE: "15"
         run: python scripts/fetch_trending.py
 
       - name: Commit changes
