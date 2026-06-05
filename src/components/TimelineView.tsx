@@ -101,7 +101,7 @@ export default function TimelineView({ items }: { items: TrendingItem[] }) {
         <h1 className="text-4xl font-bold mb-3">
           <span className="gradient-text">AI 热点</span>
         </h1>
-        <p className="text-text-muted">LLM 筛选 · 每 5 小时更新 · 保留最近 3 天</p>
+        <p className="text-text-muted">LLM 筛选 · 每 12 小时更新 · 17 源聚合 · 保留最近 5 天</p>
       </div>
 
       {/* Tab 切换 */}
