@@ -1,5 +1,24 @@
 [
   {
+    "id": "2f179ae337cf",
+    "title": "Is it allowed to use OpenAI API outputs to create a silver code dataset or benchmark for a specific Python library? [d]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hello everyone,</p> <p>Is it allowed to use OpenAI API outputs to create a silver code dataset or benchmark for a specific Python library?</p> <p>I am working on a pr",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1txc6qd/is_it_allowed_to_use_openai_api_outputs_to_create/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T05:52:32+00:00",
+    "llm_score": 7.5,
+    "llm_summary": "探讨使用 OpenAI 输出构建代码数据集的合规性。",
+    "llm_tags": [
+      "OpenAI",
+      "Code",
+      "Ethics",
+      "Dataset"
+    ],
+    "llm_reason": "内容涉及 OpenAI API 的使用规范与代码数据集构建，对开发者具有实际参考价值，信息密度较高。",
+    "score": 7.5
+  },
+  {
     "id": "d6bfbb06c608",
     "title": "Finally finished my LLM server: EPYC 9575F, 4× RTX 3090 (96GB VRAM), 768GB ECC RAM",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tx9tf2/finally_finished_my_llm_server_epyc_9575f_4_rtx/\"> <img alt=\"Finally finished my LLM server: EPYC 9575F, 4× RTX 3090 (96G",
