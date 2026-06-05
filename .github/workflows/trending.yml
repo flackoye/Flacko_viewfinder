@@ -45,7 +45,7 @@ jobs:
       - name: Commit changes
         run: |
           git config user.name "trending-bot"
-          git config user.email "bot@flacko.dev"
+          git config user.email "2090006831@qq.com"
           git stash
           git fetch origin main
           git rebase origin/main
