@@ -11,7 +11,7 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-const ATTACHMENTS_DIR = path.join(process.cwd(), 'public', 'notes-attachments');
+const ATTACHMENTS_DIR = path.join(process.cwd(), 'content', 'notes-attachments');
 
 /** 扩展名 → Content-Type 映射 */
 const MIME_MAP: Record<string, string> = {

@@ -250,8 +250,8 @@ export function getSidebarTree(): SidebarBranch[] {
     }
   }
 
-  // 2. 附件目录（从 public/notes-attachments/ 读取）
-  const attachDir = path.join(process.cwd(), 'public', 'notes-attachments');
+  // 2. 附件目录（从 content/notes-attachments/ 读取）
+  const attachDir = path.join(process.cwd(), 'content', 'notes-attachments');
   if (fs.existsSync(attachDir)) {
     const dirs = fs.readdirSync(attachDir, { withFileTypes: true });
 
@@ -288,7 +288,7 @@ function parseHeadings(content: string): Heading[] {
     const match = line.match(/^(#{1,3})\s+(.+)/);
     if (match) {
       const level = match[1].length;
-      const text = match[2].replace(/[*_`~]/g, '').trim();
+      const text = match[2].replace(/[*`~]/g, '').trim();
       const id = s.slug(text);
       headings.push({ id, text, level });
     }
