@@ -3,229 +3,215 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import Image from 'next/image';
 
-/** 说话气泡内容 */
-const SPEECH_BUBBLES = [
-  '嘿！别点我 😤',
-  '又来？你很烦诶 😒',
-  '🎵 思念是一种病～',
-  '别闹了，我在休息 💤',
-  '点我也不会有彩蛋的 🙄',
-  '你是不是太闲了？🤨',
-  '再点我就报警了！🚨',
-  '今天也要加油啊 💪',
-  '我喜欢待在这里 🏠',
-  '你看起来心情不错 😎',
-  '偷偷告诉你...我是个歌手 🎤',
-  '放心，我会一直陪着你 🫶',
+/** 🎵 台词 — 全部单行，气泡自适应宽度 */
+const GREETING_FIRST = '大家好，我是阿岳 ✌️';
+const GREETING_SECOND = '山林老北来给你唱歌啦 🎤';
+const LYRICS_POOL = [
+  '把生命浪费在美好的事物上 🌿',
+  '上坡要努力，下坡要开心 🚴',
+  '哎呦喂呀，谁是我的老婆 😏',
+  '逝去的过往，就别再回头望 🌊',
+  '在凌晨两点十分慌张想你，吸着无法入眠的空气 🌙',
+  '一个人走，去你妈的路口 🎸',
+  '择期不如就今天，Bye-bye Blue Monday 🎉',
+  '总有些惊奇的际遇，比方说当我遇见你 💫',
+  '吃汉堡，我每天吃八个 🍔',
+  '我们都已经长大了，就再也回不去 😢',
+  '当你在穿山越岭的另一边 🏔️',
+  '爱我别走 ❤️',
 ];
 
-/** 宠物状态 */
-type PetState = 'idle' | 'hover' | 'clicked' | 'dragging';
+const VISIT_KEY = 'pet-visit-count';
+const PET_WIDTH = 170;
+const PET_HEIGHT = 240;
+
+type PetState = 'idle' | 'hover' | 'clicked';
 
 export default function PetCharacter() {
   const [state, setState] = useState<PetState>('idle');
-  const [position, setPosition] = useState({ x: 24, y: 24 }); // 左下角偏移
   const [bubble, setBubble] = useState<string | null>(null);
   const [bubbleVisible, setBubbleVisible] = useState(false);
-  const [isDragging, setIsDragging] = useState(false);
-  const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
-  const [clickCount, setClickCount] = useState(0);
   const [isHidden, setIsHidden] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  const petRef = useRef<HTMLDivElement>(null);
-  const dragStartPos = useRef({ x: 0, y: 0 });
   const bubbleTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const lastBubbleIndex = useRef(-1);
+  const lastLyricIndex = useRef(-1);
 
-  /** 显示随机气泡 */
-  const showBubble = useCallback(() => {
-    // 避免连续重复
+  useEffect(() => { setMounted(true); }, []);
+
+  const bumpVisitCount = useCallback((): number => {
+    const raw = sessionStorage.getItem(VISIT_KEY);
+    const prev = raw ? parseInt(raw, 10) : 0;
+    const next = prev + 1;
+    sessionStorage.setItem(VISIT_KEY, String(next));
+    return next;
+  }, []);
+
+  const getRandomLyric = useCallback((): string => {
     let idx: number;
     do {
-      idx = Math.floor(Math.random() * SPEECH_BUBBLES.length);
-    } while (idx === lastBubbleIndex.current && SPEECH_BUBBLES.length > 1);
-    lastBubbleIndex.current = idx;
+      idx = Math.floor(Math.random() * LYRICS_POOL.length);
+    } while (idx === lastLyricIndex.current && LYRICS_POOL.length > 1);
+    lastLyricIndex.current = idx;
+    return LYRICS_POOL[idx];
+  }, []);
 
-    setBubble(SPEECH_BUBBLES[idx]);
+  const showBubble = useCallback((text: string) => {
+    setBubble(text);
     setBubbleVisible(true);
-
     if (bubbleTimer.current) clearTimeout(bubbleTimer.current);
-    bubbleTimer.current = setTimeout(() => {
-      setBubbleVisible(false);
-    }, 3000);
+    bubbleTimer.current = setTimeout(() => setBubbleVisible(false), 4500);
   }, []);
 
-  /** 处理点击 */
   const handleClick = useCallback(() => {
-    if (isDragging) return;
     setState('clicked');
-    setClickCount(prev => prev + 1);
-    showBubble();
+    const clickNum = bumpVisitCount();
+    if (clickNum === 1) showBubble(GREETING_FIRST);
+    else if (clickNum === 2) showBubble(GREETING_SECOND);
+    else showBubble(getRandomLyric());
+    setTimeout(() => setState(prev => prev === 'clicked' ? 'idle' : prev), 700);
+  }, [showBubble, bumpVisitCount, getRandomLyric]);
 
-    setTimeout(() => {
-      setState(prev => (prev === 'clicked' ? 'idle' : prev));
-    }, 600);
-  }, [isDragging, showBubble]);
-
-  /** 拖拽开始 */
-  const handlePointerDown = useCallback(
-    (e: React.PointerEvent) => {
-      if (!petRef.current) return;
-      e.preventDefault();
-      const rect = petRef.current.getBoundingClientRect();
-      setDragOffset({
-        x: e.clientX - rect.left,
-        y: e.clientY - rect.top,
-      });
-      dragStartPos.current = { x: e.clientX, y: e.clientY };
-      setIsDragging(false);
-      setState('dragging');
-      petRef.current.setPointerCapture(e.pointerId);
-    },
-    []
-  );
-
-  /** 拖拽移动 */
-  const handlePointerMove = useCallback(
-    (e: React.PointerEvent) => {
-      if (state !== 'dragging') return;
-      const dx = Math.abs(e.clientX - dragStartPos.current.x);
-      const dy = Math.abs(e.clientY - dragStartPos.current.y);
-      if (dx > 5 || dy > 5) {
-        setIsDragging(true);
-      }
-
-      const newX = window.innerWidth - e.clientX + dragOffset.x - 120;
-      const newY = window.innerHeight - e.clientY + dragOffset.y - 120;
-      setPosition({
-        x: Math.max(0, Math.min(newX, window.innerWidth - 120)),
-        y: Math.max(0, Math.min(newY, window.innerHeight - 120)),
-      });
-    },
-    [state, dragOffset]
-  );
-
-  /** 拖拽结束 */
-  const handlePointerUp = useCallback(() => {
-    if (state !== 'dragging') return;
-    if (!isDragging) {
-      // 没有实际拖动 → 视为点击
-      handleClick();
-    }
-    setState('idle');
-    setIsDragging(false);
-  }, [state, isDragging, handleClick]);
-
-  // 清理定时器
   useEffect(() => {
-    return () => {
-      if (bubbleTimer.current) clearTimeout(bubbleTimer.current);
-    };
+    return () => { if (bubbleTimer.current) clearTimeout(bubbleTimer.current); };
   }, []);
+
+  if (!mounted) return null;
+
+  const showClose = state === 'hover' || state === 'clicked';
 
   return (
     <>
-      {/* 隐藏/显示按钮 */}
+      {/* 隐藏后的恢复按钮 */}
       <button
-        onClick={() => setIsHidden(prev => !prev)}
-        className="fixed bottom-6 left-6 z-[60] w-8 h-8 rounded-full glass-btn flex items-center justify-center text-xs text-text-muted hover:text-accent transition-colors"
-        title={isHidden ? '显示小宠物' : '隐藏小宠物'}
-        style={{ opacity: isHidden ? 1 : 0, pointerEvents: isHidden ? 'auto' : 'none' }}
+        onClick={() => setIsHidden(false)}
+        className="fixed z-[60] w-10 h-10 rounded-full flex items-center justify-center text-lg
+          hover:scale-110 active:scale-95 transition-all duration-300"
+        style={{
+          left: 32, bottom: 32,
+          background: 'rgba(226, 182, 89, 0.12)',
+          backdropFilter: 'blur(12px)',
+          border: '1px solid rgba(226, 182, 89, 0.2)',
+          opacity: isHidden ? 1 : 0,
+          pointerEvents: isHidden ? 'auto' : 'none',
+          transform: isHidden ? 'scale(1)' : 'scale(0.8)',
+          color: 'var(--color-accent)',
+        }}
+        title="召唤阿岳"
       >
         🎵
       </button>
 
-      {/* 宠物主体 */}
+      {/* 外层 wrapper：比宠物大一圈，给关闭按钮留空间 */}
       <div
-        ref={petRef}
         className="fixed z-50 select-none"
         style={{
-          left: position.x,
-          bottom: position.y,
-          width: 120,
-          height: 120,
-          cursor: state === 'dragging' ? 'grabbing' : 'grab',
+          left: 4, bottom: 0,
+          width: PET_WIDTH + 24,
+          height: PET_HEIGHT + 24,
+          padding: 12,
+          cursor: 'pointer',
           opacity: isHidden ? 0 : 1,
           pointerEvents: isHidden ? 'none' : 'auto',
-          transition: isDragging ? 'none' : 'opacity 0.3s',
+          transform: isHidden ? 'scale(0.5) translateY(20px)' : 'scale(1) translateY(0)',
+          transition: 'opacity 0.4s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
         }}
-        onPointerDown={handlePointerDown}
-        onPointerMove={handlePointerMove}
-        onPointerUp={handlePointerUp}
-        onPointerCancel={handlePointerUp}
-        onMouseEnter={() => {
-          if (state !== 'dragging') setState('hover');
+        onClick={(e) => {
+          if ((e.target as HTMLElement).closest('[data-close-btn]')) return;
+          handleClick();
         }}
-        onMouseLeave={() => {
-          if (state !== 'dragging') setState('idle');
-        }}
+        onMouseEnter={() => { if (state !== 'clicked') setState('hover'); }}
+        onMouseLeave={() => { if (state !== 'clicked') setState('idle'); }}
       >
-        {/* 说话气泡 */}
+        {/* ===== 说话气泡（右上角，自适应宽度，不换行） ===== */}
         <div
-          className="absolute -top-16 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-xl px-3 py-1.5 text-sm font-medium
-            bg-white/10 backdrop-blur-md border border-white/15 text-text shadow-lg"
+          className="absolute rounded-2xl px-5 py-3 text-[15px] font-medium leading-relaxed"
           style={{
+            left: PET_WIDTH * 0.55 + 12,
+            bottom: PET_HEIGHT - 4,
+            width: 'max-content',
+            maxWidth: 'min(400px, calc(100vw - 60px))',
+            whiteSpace: 'nowrap',
             opacity: bubbleVisible ? 1 : 0,
-            transform: `translateX(-50%) translateY(${bubbleVisible ? '0' : '8px'})`,
-            transition: 'opacity 0.3s, transform 0.3s',
+            transform: bubbleVisible ? 'translateY(0) scale(1)' : 'translateY(8px) scale(0.92)',
+            transition: 'opacity 0.4s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
             pointerEvents: 'none',
+            background: 'linear-gradient(135deg, rgba(226,182,89,0.14), rgba(255,255,255,0.07))',
+            backdropFilter: 'blur(20px) saturate(1.4)',
+            WebkitBackdropFilter: 'blur(20px) saturate(1.4)',
+            border: '1px solid rgba(226, 182, 89, 0.22)',
+            boxShadow: '0 8px 40px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.05) inset',
+            color: 'var(--color-text)',
           }}
         >
           {bubble}
-          {/* 气泡小三角 */}
           <div
-            className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 rotate-45
-              bg-white/10 border-b border-r border-white/15"
+            className="absolute -left-[6px] bottom-3 w-3 h-3 rotate-45"
+            style={{
+              background: 'linear-gradient(135deg, rgba(226,182,89,0.14), rgba(255,255,255,0.07))',
+              borderLeft: '1px solid rgba(226, 182, 89, 0.22)',
+              borderBottom: '1px solid rgba(226, 182, 89, 0.22)',
+            }}
           />
         </div>
 
-        {/* 关闭按钮 */}
+        {/* ===== 关闭按钮 ===== */}
         <button
-          onClick={(e) => {
-            e.stopPropagation();
-            setIsHidden(true);
-          }}
-          className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-bg-card border border-border
-            flex items-center justify-center text-[10px] text-text-muted hover:text-accent transition-colors"
+          data-close-btn="true"
+          onClick={(e) => { e.stopPropagation(); setIsHidden(true); }}
+          className="absolute top-1 right-1 w-7 h-7 rounded-full flex items-center justify-center
+            text-sm transition-all duration-200 hover:scale-125 active:scale-90 z-10"
           style={{
-            opacity: state === 'hover' || state === 'clicked' ? 1 : 0,
-            transition: 'opacity 0.2s',
+            opacity: showClose ? 1 : 0,
+            pointerEvents: showClose ? 'auto' : 'none',
+            background: 'rgba(18, 20, 28, 0.9)',
+            border: '1px solid rgba(255,255,255,0.15)',
+            color: 'var(--color-text-muted)',
+            backdropFilter: 'blur(8px)',
           }}
-          title="隐藏"
+          title="让阿岳休息"
         >
           ✕
         </button>
 
-        {/* 宠物图片 */}
+        {/* ===== 宠物图片 ===== */}
         <div
           className="w-full h-full"
           style={{
             animation:
-              state === 'idle'
-                ? 'pet-idle 3s ease-in-out infinite'
-                : state === 'clicked'
-                  ? 'pet-jump 0.5s ease-out'
-                  : state === 'hover'
-                    ? 'pet-hover 1.5s ease-in-out infinite'
-                    : 'none',
+              state === 'idle' ? 'pet-idle 3s ease-in-out infinite'
+              : state === 'clicked' ? 'pet-jump 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)'
+              : state === 'hover' ? 'pet-hover 1.2s ease-in-out infinite'
+              : 'none',
             filter:
-              state === 'hover'
-                ? 'brightness(1.1) drop-shadow(0 0 12px rgba(226,182,89,0.3))'
-                : state === 'clicked'
-                  ? 'brightness(1.2) drop-shadow(0 0 16px rgba(226,182,89,0.5))'
-                  : 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))',
-            transition: 'filter 0.3s',
+              state === 'hover' ? 'brightness(1.08) drop-shadow(0 0 18px rgba(226,182,89,0.35))'
+              : state === 'clicked' ? 'brightness(1.15) drop-shadow(0 0 28px rgba(226,182,89,0.5))'
+              : 'drop-shadow(0 6px 16px rgba(0,0,0,0.4))',
+            transition: 'filter 0.3s ease',
           }}
         >
           <Image
-            src="/pet-character.png"
-            alt="小宠物"
-            width={120}
-            height={120}
+            src="/pet-ayue.png"
+            alt="阿岳"
+            width={PET_WIDTH}
+            height={PET_HEIGHT}
             className="w-full h-full object-contain pointer-events-none"
             draggable={false}
+            priority
           />
         </div>
+
+        {/* ===== 点击粒子效果 ===== */}
+        {state === 'clicked' && (
+          <>
+            <span className="pet-particle" style={{ '--delay': '0ms', '--angle': '30deg', left: '30%', top: '30%' } as React.CSSProperties} />
+            <span className="pet-particle" style={{ '--delay': '50ms', '--angle': '70deg', left: '50%', top: '20%' } as React.CSSProperties} />
+            <span className="pet-particle" style={{ '--delay': '100ms', '--angle': '120deg', left: '60%', top: '40%' } as React.CSSProperties} />
+            <span className="pet-particle" style={{ '--delay': '60ms', '--angle': '170deg', left: '70%', top: '30%' } as React.CSSProperties} />
+            <span className="pet-particle" style={{ '--delay': '30ms', '--angle': '220deg', left: '40%', top: '50%' } as React.CSSProperties} />
+            <span className="pet-particle" style={{ '--delay': '80ms', '--angle': '290deg', left: '55%', top: '45%' } as React.CSSProperties} />
+          </>
+        )}
       </div>
     </>
   );
