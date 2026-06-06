@@ -62,9 +62,6 @@ export default async function NotePage({
         </Link>
 
         <h1 className="text-3xl font-bold text-text mb-2">{note.title}</h1>
-        {note.date && (
-          <p className="text-sm text-text-dim mb-6">{note.date}</p>
-        )}
         {note.tags && note.tags.length > 0 && (
           <div className="flex flex-wrap gap-1.5 mb-8">
             {note.tags.map((tag) => (

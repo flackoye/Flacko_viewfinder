@@ -55,7 +55,7 @@ Python 管道 (scripts/fetch_trending.py)
 | 热点 | `/trending` | ✅ 完成 | 时间线 + 统计卡片 + 来源标签 |
 | 更新日志 | `/changelog` | ✅ 完成 | 版本时间线 + 顶部公告 |
 | 关于 | `/about` | ✅ 完成 | 个人信息 + 技术栈 + 收藏网址 |
-| 笔记 | `/notes` | 🔲 空壳 | 待接入 Markdown/MDX |
+| 笔记 | `/notes` | ✅ 完成 | Markdown 渲染 + 侧栏目录 + 附件查看 |
 | 项目 | `/projects` | 🔲 空壳 | 待接入 GitHub API |
 
 ## 关键文件速查
@@ -70,6 +70,10 @@ Python 管道 (scripts/fetch_trending.py)
 | 改全局样式 | `src/app/globals.css` |
 | 改导航 | `src/components/Navbar.tsx` |
 | 改主题系统 | `src/components/Customizer.tsx` + `src/lib/settings.ts` |
+| 加笔记 | 在 `content/notes/` 下新建子目录 + `.md` 文件 |
+| 加笔记附件 | 在 `content/notes-attachments/` 对应目录下放文件 |
+| 改笔记侧栏 | `src/lib/notes.ts` → `getSidebarTree()` |
+| 改附件服务 | `src/app/notes-attachments/[...path]/route.ts` |
 
 ## 本地运行
 
@@ -85,3 +89,10 @@ npm install && npm run dev                    # Next.js 开发服务器
 - `public/trending.json` 和 `public/changelog.json` 是运行时数据，CI 会自动更新
 - 前端 `page.tsx` 用 `fs.readFileSync` 读 JSON（SSR），不是客户端 fetch
 - 旧的 `src/lib/trending.ts` 前端实时抓取方案已废弃并清除
+
+### 笔记系统
+- **Markdown 文件**：放在 `content/notes/` 下，子目录结构映射为 URL slug（如 `content/notes/Transformer/Transformer_Learning.md` → `/notes/Transformer/Transformer_Learning`）
+- **附件文件**：放在 `content/notes-attachments/`（**不在 `public/`**），由 Route Handler `src/app/notes-attachments/[...path]/route.ts` 接管服务，强制 `Content-Type` + `Content-Disposition: inline` 确保浏览器内联显示而非下载
+- **侧栏目录**：`src/lib/notes.ts` → `getSidebarTree()` 从 md 文件提取 h1 标题生成锚点链接，同时扫描附件目录生成文件链接
+- **锚点 ID 生成**：`parseHeadings()` 使用 `github-slugger`，必须与 `rehype-slug` 生成的 h1 id 一致；注意正则 `[`~]` 不要误删下划线 `_`，否则会导致侧栏跳转失败
+- **侧栏跳转**：`NotesToc.tsx` 用 `scrollIntoView()` 手动滚动而非依赖原生 `<a href="#hash">`，避免 SPA 环境下被 React 事件吞掉

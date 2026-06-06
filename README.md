@@ -135,7 +135,7 @@ npm run dev
 
 ### 🔰 入门级（巩固现有技能）
 
-- [ ] **完成 Notes 页面**：用 MDX 实现笔记系统，学习 Next.js 动态路由 `[slug]`
+- [x] **完成 Notes 页面**：用 MDX 实现笔记系统，学习 Next.js 动态路由 `[slug]`
 - [ ] **完成 Projects 页面**：从 GitHub API 拉取仓库列表，练习 `fetch` + 缓存策略
 - [ ] **添加页面过渡动画**：用 Framer Motion 实现 page transition
 - [ ] **性能优化**：跑一次 Lighthouse，针对 LCP/CLS/FID 逐项优化

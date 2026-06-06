@@ -5,7 +5,7 @@ tags: [transformer, attention, NLP, GPT]
 ---
 # Fun-Transformer
 来自[datawahle的文档](https://github.com/datawhalechina/fun-transformer)
-代码参考：Attachment/demo_Transformer
+代码参考：**Attachment/demo_Transformer**
 
 ## 4.25 Fun-Transformer
 
@@ -172,6 +172,7 @@ Q "找什么"不是人为设计的，是训练出来的——梯度从最终 Los
 # LLM_from_scratch
 学习一个经典的项目[llm_from_scratch](https://github.com/rasbt/LLMs-from-scratch)
 算是对于llm的底层拆解，带有详细的图片和代码
+关于QKV的理解、反向传播的过程、矩形乘法的梯度计算我写在了**learning_record**
 
 # ch04_main 
 Implementing a GPT Model from Scratch

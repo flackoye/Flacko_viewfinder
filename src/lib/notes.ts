@@ -61,6 +61,18 @@ function stripExt(filename: string): string {
   return filename.replace(/\.(md|mdx)$/, '');
 }
 
+/** gray-matter 会把 YAML 日期解析为 Date 对象，这里统一转回 YYYY-MM-DD */
+function formatDate(d: unknown): string | undefined {
+  if (!d) return undefined;
+  if (d instanceof Date) {
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${y}-${m}-${day}`;
+  }
+  return String(d);
+}
+
 /** 读取单个 md 文件的 frontmatter */
 function readFrontmatter(filePath: string): NoteMeta {
   const raw = fs.readFileSync(filePath, 'utf-8');
@@ -72,7 +84,7 @@ function readFrontmatter(filePath: string): NoteMeta {
   return {
     slug: slugParts,
     title: data.title || stripExt(path.basename(filePath)),
-    date: data.date ? String(data.date) : undefined,
+    date: formatDate(data.date),
     tags: data.tags || undefined,
   };
 }
@@ -156,7 +168,7 @@ export function getNoteBySlug(slug: string[]): NoteData | null {
       return {
         slug,
         title: data.title || stripExt(slug[slug.length - 1]),
-        date: data.date ? String(data.date) : undefined,
+        date: formatDate(data.date),
         tags: data.tags || undefined,
         content,
         headings: parseHeadings(content),
