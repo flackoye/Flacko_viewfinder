@@ -1,5 +1,59 @@
 [
   {
+    "id": "c88dbe7a27cf",
+    "title": "Domino: Decoupling Causal Modeling from Autoregressive Drafting in Speculative Decoding",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tyfqmp/domino_decoupling_causal_modeling_from/\"> <img alt=\"Domino: Decoupling Causal Modeling from Autoregressive Drafting in Sp",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyfqmp/domino_decoupling_causal_modeling_from/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T12:16:45+00:00",
+    "llm_score": 8.5,
+    "llm_summary": "Domino 探索推测解码中因果建模与自回归草稿的解耦。",
+    "llm_tags": [
+      "推测解码",
+      "推理优化",
+      "架构创新"
+    ],
+    "llm_reason": "内容涉及推测解码这一前沿优化方向，提出了新颖的解耦架构，具有较高的技术深度和实用参考价值。",
+    "score": 8.5
+  },
+  {
+    "id": "9d50ff7ba60d",
+    "title": "Using FC26 to simulate the world cup ? [D]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>maybe this should be asked in the Fc26 game subreddit but not sure. Anyway I just saw a video of someone predicting the winner of the world cup using the simulate mat",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1tybqrx/using_fc26_to_simulate_the_world_cup_d/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T08:34:37+00:00",
+    "llm_score": 4.5,
+    "llm_summary": "用FC26模拟世界杯结果，非AI技术讨论。",
+    "llm_tags": [
+      "非AI",
+      "游戏",
+      "低价值"
+    ],
+    "llm_reason": "内容讨论的是足球游戏模拟而非AI/LLM技术，与学习目标无关。",
+    "score": 4.5
+  },
+  {
+    "id": "58c70de2c737",
+    "title": "Qwen3.6-35B-A3B-Uncensored-Claude-4.6-Genesis-APEX-GGUF",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>Here model:</strong> <a href=\"https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Claude-4.6-Genesis-APEX-GGUF\">https://huggingface.co/LuffyTheFox/Q",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyb6u7/qwen3635ba3buncensoredclaude46genesisapexgguf/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T08:01:32+00:00",
+    "llm_score": 4.8,
+    "llm_summary": "模型混叠与GGUF量化文件分享，非前沿技术。",
+    "llm_tags": [
+      "模型分享",
+      "GGUF",
+      "模型混叠"
+    ],
+    "llm_reason": "内容为特定模型变体的GGUF文件分享，缺乏技术深度，属于社区资源而非前沿技术或深度教程。",
+    "score": 4.8
+  },
+  {
     "id": "57de7c31370b",
     "title": "DeepSeek V4 Flash is amazing! (WIP llama.cpp PR #24162)",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p>In case you're not aware already, the DeepSeek V4 series is finally getting supported on llama.cpp <a href=\"https://github.com/ggml-org/llama.cpp/pull/24162\">with thi",
@@ -127,6 +181,26 @@
     ],
     "llm_reason": "内容展示了将 SystemVerilog 硬件逻辑编译为 WebAssembly 在浏览器运行，涉及前沿的软硬件协同编译技术，信息密度高且具有极高的工程参考价值。",
     "score": 8.5
+  },
+  {
+    "id": "d48b3c6ade6e",
+    "title": "melojuve31-source/kahoottoolsai-desktop-app ⭐75",
+    "summary": "Simple and clean standalone desktop application for KahootToolsAi on Windows PC. Easily manage quizzes, study smarter, and generate educational insights with AI assistance.",
+    "url": "https://github.com/melojuve31-source/kahoottoolsai-desktop-app",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-05T16:53:08Z",
+    "stars": 75,
+    "language": "C++",
+    "llm_score": 6.5,
+    "llm_summary": "Windows端Kahoot工具的AI桌面应用",
+    "llm_tags": [
+      "Desktop App",
+      "GitHub",
+      "Educational Tools"
+    ],
+    "llm_reason": "内容展示了基于AI的桌面应用开发，具有一定实用性，但属于特定垂直领域的工具，非通用AI技术前沿。",
+    "score": 6.5
   },
   {
     "id": "20c3454082ef",
@@ -386,6 +460,26 @@
     ],
     "llm_reason": "内容涉及AI图像视频生成，但属于灰色地带工具，缺乏技术深度和前沿性，实用性较低。",
     "score": 5.2
+  },
+  {
+    "id": "4fbbda36dfe4",
+    "title": "louisfb01/start-ai-engineering ⭐62",
+    "summary": "A complete guide to start and improve in AI engineering in 2026 without ANY background in the field and stay up-to-date with the latest news and state-of-the-art techniques!",
+    "url": "https://github.com/louisfb01/start-ai-engineering",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-04T20:14:21Z",
+    "stars": 62,
+    "language": null,
+    "llm_score": 7.2,
+    "llm_summary": "零基础AI工程入门指南，涵盖2026年前沿技术。",
+    "llm_tags": [
+      "GitHub",
+      "入门指南",
+      "AI工程"
+    ],
+    "llm_reason": "内容针对零基础学习者，强调2026年最新技术，具有明确的实用价值和较高的信息密度。",
+    "score": 7.2
   },
   {
     "id": "f112a58c769e",
@@ -1049,6 +1143,24 @@
     "score": 7
   },
   {
+    "id": "b01da35aef9f",
+    "title": "The Download: Trump’s new AI order, and smart glasses for warfare",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. 5 key points in Trump&#8217;s new AI order Less than two weeks after scrapping an executive order on AI, President Donald Trump signed a new one on Tuesday. Promising to promote&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/03/1138322/the-download-trump-ai-order-smart-glasses-warfare/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-03T12:10:00+00:00",
+    "llm_score": 6.3,
+    "llm_summary": "特朗普新AI行政令与智能眼镜军事应用",
+    "llm_tags": [
+      "政策",
+      "军事",
+      "新闻"
+    ],
+    "llm_reason": "内容涉及特朗普新AI行政令，具有时效性，但摘要信息密度较低，且偏向宏观新闻而非技术细节，对计算机专业学生的技术学习参考价值有限。",
+    "score": 6.3
+  },
+  {
     "id": "058eb0420ca2",
     "title": "ferdinandobons/AWSBedrockAgentCoreSkill ⭐34",
     "summary": "Authoritative, source-cited Claude Code plugin/skill that lets a coding agent autonomously build production-grade AI agents on AWS (Strands Agents, Amazon Bedrock, Bedrock AgentCore) with official bes",
@@ -1429,6 +1541,24 @@
     "score": 5.8
   },
   {
+    "id": "ddafa86cc40b",
+    "title": "The Download: AI can run your admin department now",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How small businesses can leverage AI From accounting to design to market research and product development, there’s a staggering breadth of skills needed to run a business. Large companies can hire&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/02/1138277/the-download-ai-tips-small-businesses-admin/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-02T12:10:00+00:00",
+    "llm_score": 5.8,
+    "llm_summary": "探讨AI在中小企业管理中的应用潜力。",
+    "llm_tags": [
+      "AI应用",
+      "商业管理",
+      "MIT Tech Review"
+    ],
+    "llm_reason": "内容涉及AI在商业流程中的应用，但信息密度较低，缺乏具体技术细节，仅适合作为泛读素材。",
+    "score": 5.8
+  },
+  {
     "id": "d4a7d061f055",
     "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
     "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
@@ -1524,5 +1654,23 @@
     ],
     "llm_reason": "展示了AI在实时生成图文内容方面的前沿应用潜力，具有很高的技术演示和参考价值。",
     "score": 7
+  },
+  {
+    "id": "e4b943609e0a",
+    "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+    "summary": "",
+    "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-01T15:45:17+00:00",
+    "llm_score": 8.5,
+    "llm_summary": "JetBrains发布12B MoE模型，开源权重与训练细节。",
+    "llm_tags": [
+      "开源模型",
+      "Mixture-of-Experts",
+      "JetBrains"
+    ],
+    "llm_reason": "内容涉及最新的 MoE 架构开源模型，包含详细的训练数据和方法论，对计算机专业学生具有很高的参考价值。",
+    "score": 8.5
   }
 ]
