@@ -34,12 +34,13 @@ jobs:
           ZHIPU_MODEL: "glm-4.7-flash"
           ZHIPU_TEMPERATURE: "0.1"
           ZHIPU_MAX_TOKENS: "512"
-          SCORE_THRESHOLD: "5.5"
-          SAVE_THRESHOLD: "5.5"
+          FRONTIER_THRESHOLD: "80"
+          SIGNAL_THRESHOLD: "80"
+          COMPOSITE_THRESHOLD: "60"
           MAX_AGE_DAYS: "5"
-          RSS_ITEMS_PER_SOURCE: "8"
+          RSS_ITEMS_PER_SOURCE: "5"
           HTTP_TIMEOUT: "15"
-          MIN_ITEMS_PER_UPDATE: "15"
+          MIN_ITEMS_PER_UPDATE: "8"
         run: python scripts/fetch_trending.py
 
       - name: Commit changes

@@ -58,8 +58,9 @@ def _env(key: str, default: str = "") -> str:
 OUTPUT_FILE = Path(__file__).parent.parent / "public" / "trending.json"
 
 MAX_AGE_DAYS = int(_env("MAX_AGE_DAYS", "5"))
-SCORE_THRESHOLD = float(_env("SCORE_THRESHOLD", "5.5"))
-SAVE_THRESHOLD = float(_env("SAVE_THRESHOLD", "5.5"))
+FRONTIER_THRESHOLD = int(_env("FRONTIER_THRESHOLD", "80"))
+SIGNAL_THRESHOLD = int(_env("SIGNAL_THRESHOLD", "80"))
+COMPOSITE_THRESHOLD = int(_env("COMPOSITE_THRESHOLD", "60"))
 
 GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7-flash")
 GLM_TEMPERATURE = float(_env("ZHIPU_TEMPERATURE", "0.1"))
@@ -67,9 +68,23 @@ GLM_MAX_TOKENS = int(_env("ZHIPU_MAX_TOKENS", "512"))
 
 RSS_ITEMS_PER_SOURCE = int(_env("RSS_ITEMS_PER_SOURCE", "8"))
 HTTP_TIMEOUT = int(_env("HTTP_TIMEOUT", "15"))
-MIN_ITEMS_PER_UPDATE = int(_env("MIN_ITEMS_PER_UPDATE", "15"))
+MIN_ITEMS_PER_UPDATE = int(_env("MIN_ITEMS_PER_UPDATE", "8"))
 
 LLM_CONCURRENCY = 5  # 并发 LLM 调用上限
+
+
+# ========== OR 门评分逻辑 ==========
+
+def should_accept(frontier: int, signal: int) -> bool:
+    """OR 门入选逻辑：单维度爆表直接入选，否则看加权综合"""
+    # 质量底线：双维度都很低 → 直接淘汰
+    if frontier < 25 and signal < 25:
+        return False
+    # 单维度爆表 → 直接入选
+    if frontier >= FRONTIER_THRESHOLD or signal >= SIGNAL_THRESHOLD:
+        return True
+    # 否则看加权综合（前沿性权重更高）
+    return frontier * 0.6 + signal * 0.4 >= COMPOSITE_THRESHOLD
 
 
 # ========== 精简数据源（v2） ==========
@@ -286,39 +301,65 @@ async def fetch_all_sources() -> list[dict]:
 
 # ========== LLM 筛选引擎 ==========
 
-SYSTEM_PROMPT = """你是一个 AI 领域的内容筛选专家。你的任务是评估一条 AI 相关的内容是否值得推荐给一个正在学习 AI/LLM 的计算机专业学生。
+SYSTEM_PROMPT = """你是 AI 领域的内容筛选专家，为关注 AI 技术的计算机从业者筛选值得阅读的内容。
 
-评估标准（每项 0-10 分，取加权平均作为最终得分）：
-1. **前沿性**（权重 30%）：内容是否涉及最新的 AI 技术进展？
-2. **实用性**（权重 30%）：对学习者是否有实际参考价值？
-3. **信息密度**（权重 25%）：内容是否有实质信息，而非空洞的 PR 或营销？
-4. **可读性**（权重 15%）：标题和摘要是否清晰明了？
+━━━ 评估维度 ━━━
 
-你需要返回一个 JSON 对象，格式如下：
+对每条内容从两个维度分别打分（0-100 整数）：
+
+1. 前沿性 — 内容涉及的技术/产品/发现有多前沿？
+   90-100: 行业里程碑（新架构、重大突破、首个某类产品）
+   70-89:  重要进展（新模型、重要论文、重大版本更新）
+   50-69:  常规动态（版本迭代、功能改进、应用案例）
+   30-49:  旧闻重发或浅层解读
+   0-29:   无新技术内容
+
+2. 信息含量 — 内容包含多少实质信息？
+   90-100: 信息密集（含代码、数据、完整方案、深入分析）
+   70-89:  有 2-3 个明确信息点（有数据、有具体描述）
+   50-69:  有 1 个有价值的信息点（基本事实清楚但缺细节）
+   30-49:  主要为转述（缺乏增量信息）
+   0-29:   空洞营销/标题党（无实质内容）
+
+━━━ 评分示例 ━━━
+
+示例1:
+标题: "OpenAI announces GPT-5 with native multimodal reasoning"
+来源: OpenAI Blog
+→ frontier: 95, signal: 65
+（新模型 = 行业里程碑；PR 稿有核心规格但缺技术细节）
+
+示例2:
+标题: "A practical guide to fine-tuning LLMs with LoRA and QLoRA"
+来源: Hugging Face Blog
+→ frontier: 40, signal: 92
+（LoRA 已成熟不算前沿；但教程含完整代码，信息含量极高）
+
+示例3:
+标题: "AI will replace 80% of jobs by 2030, says tech CEO"
+来源: MIT Tech Review
+→ frontier: 10, signal: 15
+（纯观点炒作，无新技术无实质信息）
+
+━━━ 输出格式 ━━━
+
+只返回 JSON，不要其他文字：
 {
-  "relevant": true/false,
-  "score": 精确到一位小数的得分，如 6.3、7.8、5.2，
-  "one_line_summary": "一句话中文摘要，不超过40字",
-  "tags": ["标签1", "标签2"],
-  "reason": "简短的筛选理由"
+  "frontier": 整数,
+  "signal": 整数,
+  "summary": "一句话中文摘要，15-35字",
+  "tags": ["标签1", "标签2"]
 }
 
-重要规则：
-- score 必须是一位小数，不要返回整数（如不要返回 6，要返回 6.0）
-- 只要内容与 AI/LLM 稍微相关，relevant 就设为 true（由后续阈值过滤）
-
-只返回 JSON，不要其他文字。"""
+tags 规则：2-4 个 | 中文 | 每个标签 2-6 字 | 只描述技术领域（不写"教程""新闻"）"""
 
 
-def _llm_filter_sync(client: ZhipuAiClient, item: dict, threshold: float) -> dict | None:
+def _llm_filter_sync(client: ZhipuAiClient, item: dict) -> dict | None:
     """同步 LLM 筛选（在线程池中运行）"""
-    user_msg = f"""请评估以下内容：
-
-标题：{item['title']}
+    user_msg = f"""标题：{item['title']}
 来源：{item['source']}
-摘要：{item.get('summary', '无摘要')[:300]}
-
-请给出评分和筛选结果。"""
+类型：{item.get('source_type', 'unknown')}
+摘要：{item.get('summary', '无摘要')[:300]}"""
 
     try:
         response = client.chat.completions.create(
@@ -341,16 +382,20 @@ def _llm_filter_sync(client: ZhipuAiClient, item: dict, threshold: float) -> dic
 
         result = json.loads(raw)
 
-        if not result.get("relevant", False):
-            return None
-        if result.get("score", 0) < threshold:
+        frontier = int(result.get("frontier", 0))
+        signal = int(result.get("signal", 0))
+
+        if not should_accept(frontier, signal):
             return None
 
+        composite = round(frontier * 0.6 + signal * 0.4)
+
         return {
-            "llm_score": result["score"],
-            "llm_summary": result.get("one_line_summary", ""),
+            "frontier": frontier,
+            "signal": signal,
+            "score": composite,
+            "llm_summary": result.get("summary", ""),
             "llm_tags": result.get("tags", []),
-            "llm_reason": result.get("reason", ""),
         }
 
     except json.JSONDecodeError:
@@ -364,19 +409,16 @@ def _llm_filter_sync(client: ZhipuAiClient, item: dict, threshold: float) -> dic
 async def run_llm_pass_async(
     client: ZhipuAiClient,
     items: list[dict],
-    threshold: float,
-    label: str = "",
 ) -> tuple[list[dict], list[dict]]:
     """并发 LLM 筛选（信号量控制并发数）"""
     semaphore = asyncio.Semaphore(LLM_CONCURRENCY)
-    prefix = f" ({label})" if label else ""
 
     async def process(i: int, item: dict):
         async with semaphore:
-            result = await asyncio.to_thread(_llm_filter_sync, client, item, threshold)
+            result = await asyncio.to_thread(_llm_filter_sync, client, item)
             return i, item, result
 
-    print(f"  🤖{prefix} 筛选 {len(items)} 条（并发={LLM_CONCURRENCY}，门槛={threshold}）...")
+    print(f"  🤖 筛选 {len(items)} 条（并发={LLM_CONCURRENCY}）...")
     tasks = [process(i, item) for i, item in enumerate(items)]
     results = await asyncio.gather(*tasks)
 
@@ -384,9 +426,8 @@ async def run_llm_pass_async(
     for i, item, result in sorted(results, key=lambda x: x[0]):
         if result:
             item.update(result)
-            item["score"] = result["llm_score"]
             passed.append(item)
-            print(f"    ✅ [{i+1}] {result['llm_score']} | {result['llm_summary']}")
+            print(f"    ✅ [{i+1}] F{result['frontier']} S{result['signal']} → {result['score']} | {result['llm_summary']}")
         else:
             rejected.append(item)
             print(f"    ❌ [{i+1}] {item['title'][:30]}...")
@@ -438,8 +479,8 @@ async def main():
     print("🚀 AI 热点爬取管道 v2（异步版）")
     print(f"   时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"   模型: {GLM_MODEL}")
-    print(f"   入库: {SAVE_THRESHOLD} | 展示: {SCORE_THRESHOLD} | 保留: {MAX_AGE_DAYS}天")
-    print(f"   保底: {MIN_ITEMS_PER_UPDATE} 条 | 并发: {LLM_CONCURRENCY}")
+    print(f"   OR门: 前沿≥{FRONTIER_THRESHOLD} | 信息≥{SIGNAL_THRESHOLD} | 综合≥{COMPOSITE_THRESHOLD}")
+    print(f"   保留: {MAX_AGE_DAYS}天 | 监控线: {MIN_ITEMS_PER_UPDATE}条 | 并发: {LLM_CONCURRENCY}")
     print(f"   数据源: {len(RSS_SOURCES)} RSS + GitHub + HN + {len(REDDIT_RSS_SOURCES)} Reddit")
     print("=" * 50)
 
@@ -468,36 +509,14 @@ async def main():
     if not new_items:
         print("✅ 没有新内容需要筛选")
     else:
-        # 4. 第一轮 LLM 筛选（并发）
+        # 4. LLM 筛选（并发，OR 门逻辑）
         t_llm = time.time()
-        filtered, rejected = await run_llm_pass_async(
-            client, new_items, threshold=SAVE_THRESHOLD, label="首轮",
-        )
-        print(f"\n🎯 首轮: {len(filtered)}/{len(new_items)} 通过 ({time.time() - t_llm:.1f}s)")
+        filtered, _ = await run_llm_pass_async(client, new_items)
+        print(f"\n🎯 通过: {len(filtered)}/{len(new_items)} ({time.time() - t_llm:.1f}s)")
 
-        # 5. 保底机制
-        deficit = MIN_ITEMS_PER_UPDATE - len(filtered)
-        if deficit > 0 and rejected:
-            relaxed = max(SAVE_THRESHOLD - 1.0, 3.0)
-            print(f"\n🔬 保底（门槛 {relaxed}，需补 {deficit} 条，候选 {len(rejected)} 条）...")
-            extra, still = await run_llm_pass_async(
-                client, rejected, threshold=relaxed, label="补充",
-            )
-            filtered.extend(extra)
-            print(f"   补充 {len(extra)} 条，合计 {len(filtered)} 条")
-
-            deficit = MIN_ITEMS_PER_UPDATE - len(filtered)
-            if deficit > 0 and still:
-                final_t = max(relaxed - 1.0, 2.0)
-                print(f"\n🆘 终极兜底（门槛 {final_t}，需补 {deficit} 条）...")
-                final_extra, _ = await run_llm_pass_async(
-                    client, still, threshold=final_t, label="兜底",
-                )
-                filtered.extend(final_extra)
-                print(f"   终极 {len(final_extra)} 条，最终 {len(filtered)} 条")
-
+        # 5. 软监控（不降门槛，不打二轮）
         if len(filtered) < MIN_ITEMS_PER_UPDATE:
-            print(f"\n⚠️ 仅 {len(filtered)} 条，未达保底 {MIN_ITEMS_PER_UPDATE}")
+            print(f"\n⚠️ 本轮仅 {len(filtered)} 条，低于监控线 {MIN_ITEMS_PER_UPDATE}（不强制补充）")
 
         existing.extend(filtered)
 

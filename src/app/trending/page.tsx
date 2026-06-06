@@ -14,16 +14,12 @@ export default async function TrendingPage() {
     // JSON 文件不存在或为空（管道还没跑过）
   }
 
-  // 转换时间字符串为 Date 对象，只展示得分 >= 6.0 的内容
+  // 转换时间字符串为 Date 对象（后端 OR 门已过滤，前端不再二次筛选）
   const parsed = items
     .map((item: Record<string, unknown>) => ({
       ...item,
       timestamp: new Date(item.timestamp as string),
-    }))
-    .filter((item: Record<string, unknown>) => {
-      const score = item.score ?? item.llm_score ?? 0;
-      return Number(score) >= 5.5;
-    });
+    }));
 
   return <TimelineView items={parsed} />;
 }

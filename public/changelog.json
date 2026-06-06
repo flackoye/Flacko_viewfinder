@@ -1,11 +1,23 @@
 {
   "announcement": {
-    "message": "站点 v2.0 已上线，新增更新日志功能 🎉",
-    "type": "info",
-    "date": "2026-06-05",
+    "message": "评分系统重构：4 维 AND 门 → 2 维 OR 门，让LLM的筛选更合理！",
+    "type": "success",
+    "date": "2026-06-07",
     "dismissible": true
   },
   "entries": [
+    {
+      "version": "v2.1.0",
+      "date": "2026-06-07",
+      "title": "评分系统重构：从 AND 门到 OR 门",
+      "changes": [
+        { "type": "improvement", "description": "评分维度从 4 维（前沿性+实用性+信息密度+可读性）精简为 2 维（前沿性+信息含量）" },
+        { "type": "feature", "description": "入选逻辑从加权平均改为 OR 门：任意维度 ≥ 80 直接入选，否则综合 ≥ 60 入选" },
+        { "type": "feature", "description": "Prompt 新增 5 级分数锚定 + 3 个 few-shot 示例，减少 LLM 评分漂移" },
+        { "type": "fix", "description": "移除多轮降门槛保底机制（之前会混入 undress-ai 等垃圾内容）" },
+        { "type": "improvement", "description": "分数从 0-10 制改为 0-100 制，前端显示更直观" }
+      ]
+    },
     {
       "version": "v2.0.70",
       "date": "2026-06-05",

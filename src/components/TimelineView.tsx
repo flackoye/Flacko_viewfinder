@@ -12,6 +12,8 @@ export interface TrendingItem {
   source_type: string;
   timestamp: Date;
   score?: number;
+  frontier?: number;
+  signal?: number;
   llm_summary?: string;
   llm_tags?: string[];
   llm_reason?: string;
@@ -255,7 +257,7 @@ export default function TimelineView({ items }: { items: TrendingItem[] }) {
                         </div>
                         {item.score && (
                           <span className="text-xs font-mono text-accent whitespace-nowrap">
-                            {item.score.toFixed(1)}
+                            {Math.round(item.score)}
                           </span>
                         )}
                       </div>
