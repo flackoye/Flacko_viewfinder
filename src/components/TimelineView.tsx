@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { MessageSquare, FileText, ArrowUpRight, Star, Code2, Globe } from 'lucide-react';
+import { MessageSquare, FileText, ArrowUpRight, Star, Code2, Globe, Flame, Sparkles, Trophy } from 'lucide-react';
 
 export interface TrendingItem {
   id: string;
@@ -52,16 +52,16 @@ function formatDateKey(date: Date): string {
   return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
 }
 
-type TabKey = 'all' | 'today' | 'leaderboard';
+const MEDALS = ['🥇', '🥈', '🥉'];
 
 export default function TimelineView({ items }: { items: TrendingItem[] }) {
-  const [activeTab, setActiveTab] = useState<TabKey>('all');
+  const [activeTab, setActiveTab] = useState<'all' | 'today'>('all');
 
   // 判断是否为今天
   const todayKey = formatDateKey(new Date());
   const todayItems = items.filter((item) => formatDateKey(item.timestamp) === todayKey);
 
-  // 贡献榜：按来源统计数量，取前 2 名
+  // 贡献榜：按来源统计数量
   const sourceStats = new Map<string, { count: number; source_type: string }>();
   for (const item of items) {
     const prev = sourceStats.get(item.source);
@@ -72,8 +72,8 @@ export default function TimelineView({ items }: { items: TrendingItem[] }) {
     }
   }
   const topSources = [...sourceStats.entries()]
-    .sort((a, b) => b[1].count - a[1].count)
-    .slice(0, 2);
+    .sort((a, b) => b[1].count - a[1].count);
+  const uniqueSourceCount = topSources.length;
 
   // 按日期分组（根据 Tab 筛选）
   const displayItems = activeTab === 'today' ? todayItems : items;
@@ -97,75 +97,93 @@ export default function TimelineView({ items }: { items: TrendingItem[] }) {
   return (
     <div className="max-w-3xl mx-auto px-6 py-12">
       {/* 标题 */}
-      <div className="mb-12">
+      <div className="mb-8">
         <h1 className="text-4xl font-bold mb-3">
           <span className="gradient-text">AI 热点</span>
         </h1>
-        <p className="text-text-muted">LLM 筛选 · 每 12 小时更新 · 6 源聚合 · 保留最近 5 天</p>
+        <p className="text-text-muted">
+          LLM 筛选 · 每 12 小时更新 · {uniqueSourceCount} 源聚合 · 保留最近 5 天
+        </p>
       </div>
 
-      {/* Tab 切换 */}
-      <div className="flex gap-1 mb-8 p-1 glass rounded-xl w-fit">
-        {([
-          { key: 'all' as TabKey, label: '全部热点' },
-          { key: 'today' as TabKey, label: '今日热点' },
-          { key: 'leaderboard' as TabKey, label: '热点贡献榜' },
-        ]).map((tab) => (
-          <button
-            key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-              activeTab === tab.key
-                ? 'bg-accent text-bg shadow-sm'
-                : 'text-text-muted hover:text-text hover:bg-white/5'
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
+      {/* ========== 统计卡片 ========== */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+        {/* 全部热点 */}
+        <button
+          onClick={() => setActiveTab('all')}
+          className={`glass p-6 text-left transition-all duration-300 hover-lift group ${
+            activeTab === 'all'
+              ? 'ring-2 ring-accent/40 shadow-lg shadow-accent/10'
+              : 'hover:ring-1 hover:ring-white/10'
+          }`}
+        >
+          <div className="flex items-center gap-2 text-sm text-text-muted mb-3">
+            <Sparkles className={`w-4 h-4 transition-transform duration-200 group-hover:scale-110 ${activeTab === 'all' ? 'text-accent' : ''}`} />
+            <span className={activeTab === 'all' ? 'text-text' : ''}>全部热点</span>
+          </div>
+          <div className="text-5xl font-bold gradient-text leading-none">{items.length}</div>
+          <div className="text-xs text-text-dim mt-3">{uniqueSourceCount} 源聚合 · 保留 5 天</div>
+        </button>
 
-      {/* 贡献榜面板 */}
-      {activeTab === 'leaderboard' ? (
-        <div className="space-y-4">
-          {topSources.length === 0 ? (
-            <div className="text-center py-20 text-text-dim">
-              <FileText className="w-16 h-16 mx-auto mb-4 opacity-20" />
-              <p className="text-lg mb-2">暂无数据</p>
-            </div>
-          ) : (
-            topSources.map(([source, stat], idx) => {
-              const config = getTypeConfig(stat.source_type);
-              const Icon = config.icon;
-              const medal = idx === 0 ? '🥇' : '🥈';
-              const barWidth = topSources[0]
-                ? `${(stat.count / topSources[0][1].count) * 100}%`
-                : '0%';
+        {/* 今日热点 */}
+        <button
+          onClick={() => setActiveTab('today')}
+          className={`glass p-6 text-left transition-all duration-300 hover-lift group ${
+            activeTab === 'today'
+              ? 'ring-2 ring-accent/40 shadow-lg shadow-accent/10'
+              : 'hover:ring-1 hover:ring-white/10'
+          }`}
+        >
+          <div className="flex items-center gap-2 text-sm text-text-muted mb-3">
+            <Flame className={`w-4 h-4 transition-transform duration-200 group-hover:scale-110 ${activeTab === 'today' ? 'text-accent' : ''}`} />
+            <span className={activeTab === 'today' ? 'text-text' : ''}>今日热点</span>
+          </div>
+          <div className="text-5xl font-bold gradient-text leading-none">{todayItems.length}</div>
+          <div className="text-xs text-text-dim mt-3">
+            {todayItems.length > 0 ? '今日已更新' : '暂无今日更新'}
+          </div>
+        </button>
+
+        {/* 热点贡献榜 */}
+        <div className="glass p-6 hover-lift">
+          <div className="flex items-center gap-2 text-sm text-text-muted mb-4">
+            <Trophy className="w-4 h-4 text-accent" />
+            <span className="text-text">热点贡献榜</span>
+          </div>
+          <div className="space-y-2.5">
+            {topSources.slice(0, 5).map(([source, stat], idx) => {
+              const maxCount = topSources[0]?.[1].count || 1;
+              const barWidth = `${(stat.count / maxCount) * 100}%`;
 
               return (
-                <div key={source} className="glass p-5 flex items-center gap-4">
-                  <span className="text-2xl">{medal}</span>
-                  <Icon className={`w-5 h-5 shrink-0 ${config.color}`} />
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="font-semibold text-text truncate">{source}</span>
-                      <span className="text-sm font-mono text-accent whitespace-nowrap ml-2">
-                        {stat.count} 条
+                <div key={source}>
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="flex items-center gap-2 text-sm min-w-0">
+                      <span className="w-5 text-center shrink-0 text-xs">
+                        {idx < 3 ? MEDALS[idx] : `${idx + 1}.`}
                       </span>
-                    </div>
-                    <div className="h-1.5 rounded-full bg-bg overflow-hidden">
-                      <div
-                        className="h-full rounded-full bg-accent/60 transition-all duration-500"
-                        style={{ width: barWidth }}
-                      />
-                    </div>
+                      <span className="truncate text-text/80">{source}</span>
+                    </span>
+                    <span className="text-sm font-mono text-accent whitespace-nowrap ml-2">
+                      {stat.count}
+                    </span>
+                  </div>
+                  {/* 迷你进度条 */}
+                  <div className="ml-7 h-1 rounded-full bg-white/5 overflow-hidden">
+                    <div
+                      className="h-full rounded-full bg-accent/40 transition-all duration-500"
+                      style={{ width: barWidth }}
+                    />
                   </div>
                 </div>
               );
-            })
-          )}
+            })}
+          </div>
         </div>
-      ) : displayItems.length === 0 ? (
+      </div>
+
+      {/* ========== 时间轴内容 ========== */}
+      {displayItems.length === 0 ? (
         <div className="text-center py-20 text-text-dim">
           <FileText className="w-16 h-16 mx-auto mb-4 opacity-20" />
           <p className="text-lg mb-2">

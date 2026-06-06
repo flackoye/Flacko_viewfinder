@@ -37,7 +37,7 @@ jobs:
           SCORE_THRESHOLD: "5.5"
           SAVE_THRESHOLD: "5.5"
           MAX_AGE_DAYS: "5"
-          RSS_ITEMS_PER_SOURCE: "3"
+          RSS_ITEMS_PER_SOURCE: "8"
           HTTP_TIMEOUT: "15"
           MIN_ITEMS_PER_UPDATE: "15"
         run: python scripts/fetch_trending.py

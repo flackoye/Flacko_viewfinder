@@ -65,7 +65,7 @@ GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7-flash")
 GLM_TEMPERATURE = float(_env("ZHIPU_TEMPERATURE", "0.1"))
 GLM_MAX_TOKENS = int(_env("ZHIPU_MAX_TOKENS", "512"))
 
-RSS_ITEMS_PER_SOURCE = int(_env("RSS_ITEMS_PER_SOURCE", "3"))
+RSS_ITEMS_PER_SOURCE = int(_env("RSS_ITEMS_PER_SOURCE", "8"))
 HTTP_TIMEOUT = int(_env("HTTP_TIMEOUT", "15"))
 MIN_ITEMS_PER_UPDATE = int(_env("MIN_ITEMS_PER_UPDATE", "15"))
 
@@ -159,7 +159,7 @@ async def fetch_single_reddit(client: httpx.AsyncClient, sub: dict) -> list[dict
         resp = await client.get(sub["url"])
         feed = feedparser.parse(resp.text)
         items = []
-        for entry in feed.entries[:5]:
+        for entry in feed.entries[:8]:
             title = (entry.get("title") or "").strip()
             if not title:
                 continue
@@ -209,7 +209,7 @@ async def fetch_github_trending() -> list[dict]:
                     "q": f"AI OR LLM OR transformer created:>{since}",
                     "sort": "stars",
                     "order": "desc",
-                    "per_page": 8,
+                    "per_page": 20,
                 },
                 headers={"Accept": "application/vnd.github.v3+json"},
             )
@@ -242,7 +242,7 @@ async def fetch_hackernews() -> list[dict]:
                 params={
                     "query": "AI OR LLM OR GPT OR transformer OR machine learning",
                     "tags": "story",
-                    "hitsPerPage": 8,
+                    "hitsPerPage": 15,
                     "numericFilters": "points>10",
                 },
             )
