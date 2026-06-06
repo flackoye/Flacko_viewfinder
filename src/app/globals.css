@@ -477,3 +477,50 @@ input:focus {
   margin: 1.5rem 0;
   max-width: 100%;
 }
+
+/* ========== 宠物角色动画 ========== */
+
+/* 闲置：轻微浮动 + 呼吸 */
+@keyframes pet-idle {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.02);
+  }
+}
+
+/* 悬停：更大的浮动 + 微微倾斜 */
+@keyframes pet-hover {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg) scale(1.05);
+  }
+  25% {
+    transform: translateY(-3px) rotate(-3deg) scale(1.06);
+  }
+  75% {
+    transform: translateY(-3px) rotate(3deg) scale(1.06);
+  }
+}
+
+/* 点击：跳跃弹起 */
+@keyframes pet-jump {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  20% {
+    transform: translateY(4px) scale(0.95, 1.05);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05, 0.95);
+  }
+  70% {
+    transform: translateY(-8px) scale(1);
+  }
+  85% {
+    transform: translateY(2px) scale(0.98, 1.02);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}

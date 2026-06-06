@@ -6,6 +6,7 @@ import Link from "next/link";
 import { RefreshCw } from 'lucide-react';
 import { fetchQuote, type Quote } from '@/lib/quotes';
 import { useSettings } from '@/components/SettingsProvider';
+import PetCharacter from '@/components/PetCharacter';
 
 export default function HomeContent({ initialQuote }: { initialQuote: Quote }) {
   const [quote, setQuote] = useState(initialQuote);
@@ -27,6 +28,9 @@ export default function HomeContent({ initialQuote }: { initialQuote: Quote }) {
 
   return (
     <>
+      {/* ========== 小宠物 ========== */}
+      <PetCharacter />
+
       {/* ========== Hero 区域：动态背景 + 每日一言 ========== */}
       <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
         {/* 背景图 — 所有参数由设置实时驱动 */}
