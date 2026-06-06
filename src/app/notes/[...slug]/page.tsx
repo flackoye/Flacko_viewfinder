@@ -4,7 +4,7 @@ import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeSlug from 'rehype-slug';
 import NoteLayout from '@/components/NoteLayout';
-import { getNotesTree, getNoteBySlug, getAllSlugs } from '@/lib/notes';
+import { getNoteBySlug, getAllSlugs, getSidebarTree } from '@/lib/notes';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
@@ -33,6 +33,7 @@ export default async function NotePage({
   params: Promise<{ slug: string[] }>;
 }) {
   const { slug } = await params;
+  const sidebarTree = getSidebarTree();
   const note = getNoteBySlug(slug);
 
   if (!note) {
@@ -47,7 +48,7 @@ export default async function NotePage({
   }
 
   return (
-    <NoteLayout headings={note.headings} noteTitle={note.title}>
+    <NoteLayout sidebarTree={sidebarTree}>
       <article className="max-w-4xl">
         {/* 返回 + 标题 */}
         <Link

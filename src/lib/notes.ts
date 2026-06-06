@@ -198,6 +198,71 @@ export function getAllSlugs(): string[][] {
   return getAllNotes().map(n => n.slug);
 }
 
+// ── 侧栏树 ──
+
+/** 侧栏子项：标题 or 文件 */
+export interface SidebarChild {
+  label: string;
+  href: string;   // 笔记标题: /notes/[slug]#[id] | 附件文件: /notes-attachments/[dir]/[file]
+}
+
+/** 侧栏主干 */
+export interface SidebarBranch {
+  name: string;
+  children: SidebarChild[];
+}
+
+/**
+ * 构建侧栏树，分两类主干：
+ * - 含 .md 文件的目录 → 子项为 h1 标题（点击跳转锚点）
+ * - 不含 .md 文件的目录 → 子项为文件名（点击下载/查看）
+ */
+export function getSidebarTree(): SidebarBranch[] {
+  if (!ensureDir()) return [];
+
+  const branches: SidebarBranch[] = [];
+  const dirs = fs.readdirSync(NOTES_DIR, { withFileTypes: true });
+
+  for (const dir of dirs) {
+    if (!dir.isDirectory() || dir.name.startsWith('.')) continue;
+
+    const dirPath = path.join(NOTES_DIR, dir.name);
+    const files = fs.readdirSync(dirPath);
+
+    // 找 .md 文件
+    const mdFiles = files.filter(f => f.endsWith('.md') || f.endsWith('.mdx'));
+    const otherFiles = files.filter(f => !f.startsWith('.') && !f.endsWith('.md') && !f.endsWith('.mdx'));
+
+    if (mdFiles.length > 0) {
+      // 笔记目录：提取第一个 md 文件的 h1 标题
+      const mdPath = path.join(dirPath, mdFiles[0]);
+      const raw = fs.readFileSync(mdPath, 'utf-8');
+      const { content } = matter(raw);
+      const headings = parseHeadings(content).filter(h => h.level === 1);
+      const slugParts = [dir.name, stripExt(mdFiles[0])];
+
+      branches.push({
+        name: dir.name,
+        children: headings.map(h => ({
+          label: h.text,
+          href: `/notes/${slugParts.join('/')}#${h.id}`,
+        })),
+      });
+    } else if (otherFiles.length > 0) {
+      // 附件目录：显示文件名
+      branches.push({
+        name: dir.name,
+        children: otherFiles.map(f => ({
+          label: f,
+          href: `/notes-attachments/${dir.name}/${encodeURIComponent(f)}`,
+        })),
+      });
+    }
+  }
+
+  return branches;
+}
+
 // ── 标题解析 ──
 
 /** 从 markdown 内容中提取 h1/h2/h3 标题 */
