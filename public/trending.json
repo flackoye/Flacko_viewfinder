@@ -1,5 +1,60 @@
 [
   {
+    "id": "57de7c31370b",
+    "title": "DeepSeek V4 Flash is amazing! (WIP llama.cpp PR #24162)",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>In case you're not aware already, the DeepSeek V4 series is finally getting supported on llama.cpp <a href=\"https://github.com/ggml-org/llama.cpp/pull/24162\">with thi",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyb3np/deepseek_v4_flash_is_amazing_wip_llamacpp_pr_24162/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T07:56:42+00:00",
+    "llm_score": 7.8,
+    "llm_summary": "llama.cpp 支持最新 DeepSeek V4 模型，性能优化显著。",
+    "llm_tags": [
+      "DeepSeek",
+      "llama.cpp",
+      "本地部署",
+      "模型量化"
+    ],
+    "llm_reason": "内容涉及最新的 DeepSeek V4 模型在 llama.cpp 上的集成与优化，对关注本地部署和模型性能的学生具有很高的实用性和前沿性。",
+    "score": 7.8
+  },
+  {
+    "id": "f2ffefa134c1",
+    "title": "AA comparison of the latest local models",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tya05j/aa_comparison_of_the_latest_local_models/\"> <img alt=\"AA comparison of the latest local models\" src=\"https://preview.redd",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tya05j/aa_comparison_of_the_latest_local_models/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T06:53:46+00:00",
+    "llm_score": 7.5,
+    "llm_summary": "Reddit讨论最新本地模型对比，含图表。",
+    "llm_tags": [
+      "本地模型",
+      "模型对比",
+      "社区讨论"
+    ],
+    "llm_reason": "内容涉及最新的本地大模型对比，具有实用参考价值，信息密度较高，适合计算机专业学生了解当前技术栈。",
+    "score": 7.5
+  },
+  {
+    "id": "b2b15bbf92de",
+    "title": "Building a Custom Drones MuJoCo Environment [P]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hi all, Lately I have been working on creating a package for Multi Agent RL based drone environments with different objectives, all bundled into a single GitHub repos",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1ty60zo/building_a_custom_drones_mujoco_environment_p/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T03:24:43+00:00",
+    "llm_score": 6.8,
+    "llm_summary": "分享多智能体无人机强化学习环境构建经验",
+    "llm_tags": [
+      "RL",
+      "Drone",
+      "Environment"
+    ],
+    "llm_reason": "内容涉及多智能体强化学习与无人机环境构建，具有技术参考价值，但信息密度较低，仅展示了初步想法。",
+    "score": 6.8
+  },
+  {
     "id": "476038c24b13",
     "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
     "summary": "",
@@ -53,6 +108,43 @@
     ],
     "llm_reason": "内容涉及最新的开源TTS模型（dots.tts 2B），具有前沿性和较高的实用性，适合计算机专业学生参考。",
     "score": 7.2
+  },
+  {
+    "id": "5b709453bcba",
+    "title": "TinyTPU: SystemVerilog systolic array compiled to WASM, running live in browser - RTL golden-verified against numpy [P]",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1txvvo4/tinytpu_systemverilog_systolic_array_compiled_to/\"> <img alt=\"TinyTPU: SystemVerilog systolic array compiled to WASM",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1txvvo4/tinytpu_systemverilog_systolic_array_compiled_to/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T20:05:17+00:00",
+    "llm_score": 8.5,
+    "llm_summary": "SystemVerilog TPU 硬件在浏览器中运行，验证了软硬件协同设计。",
+    "llm_tags": [
+      "硬件加速",
+      "SystemVerilog",
+      "WASM",
+      "TPU"
+    ],
+    "llm_reason": "内容展示了将 SystemVerilog 硬件逻辑编译为 WebAssembly 在浏览器运行，涉及前沿的软硬件协同编译技术，信息密度高且具有极高的工程参考价值。",
+    "score": 8.5
+  },
+  {
+    "id": "20c3454082ef",
+    "title": "Gemma 4 with quantization-aware training",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1txpeo0/gemma_4_with_quantizationaware_training/\"> <img alt=\"Gemma 4 with quantization-aware training\" src=\"https://external-prev",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txpeo0/gemma_4_with_quantizationaware_training/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T16:11:21+00:00",
+    "llm_score": 6.8,
+    "llm_summary": "讨论Gemma 4量化训练的社区帖子。",
+    "llm_tags": [
+      "Gemma 4",
+      "量化训练",
+      "社区讨论"
+    ],
+    "llm_reason": "内容涉及Gemma 4的最新量化技术，具有前沿性，但作为Reddit帖子，信息密度和可读性受限于社区讨论形式，且摘要不完整。",
+    "score": 6.8
   },
   {
     "id": "3c53aa6688ad",
