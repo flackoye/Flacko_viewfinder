@@ -7,5 +7,12 @@
   "terminal.integrated.env.windows": {
     "VIRTUAL_ENV": "${workspaceFolder}/.venv",
     "PATH": "${workspaceFolder}/.venv/Scripts;${env:PATH}"
-  }
+  },
+
+  // Paste Image 插件：在 content/notes/ 写 md 时粘贴图片
+  // 图片保存到 public/notes/<当前目录名>/images/，md 里自动插入 /notes/... 路径
+  "pasteImage.path": "${projectRoot}/public/notes/${currentTextEditorDirNameForDiff}/images",
+  "pasteImage.prefix": "/notes/${currentTextEditorDirNameForDiff}/images/",
+  "pasteImage.name": "image-${currentDate}",
+  "pasteImage.showFilePathConfirmInputBox": false
 }
