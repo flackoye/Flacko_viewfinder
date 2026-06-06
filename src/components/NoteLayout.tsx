@@ -1,42 +1,38 @@
 'use client';
 
 import { useState } from 'react';
-import { PanelLeftClose, PanelLeft } from 'lucide-react';
-import NotesTree from './NotesTree';
-import type { TreeNode } from '@/lib/notes';
+import { PanelLeft } from 'lucide-react';
+import NotesToc from './NotesToc';
+import type { Heading } from '@/lib/notes';
 
 interface NoteLayoutProps {
-  tree: TreeNode[];
-  activeSlug?: string[];
+  headings: Heading[];
+  noteTitle: string;
   children: React.ReactNode;
 }
 
-export default function NoteLayout({ tree, activeSlug, children }: NoteLayoutProps) {
+export default function NoteLayout({ headings, noteTitle, children }: NoteLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className="flex min-h-[calc(100vh-10rem)] relative">
-      {/* ── 左侧目录树（桌面端常驻，移动端抽屉） ── */}
+      {/* ── 左侧 TOC（桌面端 sticky，移动端抽屉） ── */}
       <aside
-        className={`fixed inset-y-0 left-0 z-40 w-64 glass-nav border-r border-white/5 pt-20 pb-6 px-3 overflow-y-auto transition-transform duration-300 md:relative md:pt-0 md:translate-x-0 ${
+        className={`fixed inset-y-0 left-0 z-40 w-64 glass-nav border-r border-white/5 pt-20 pb-6 px-3 overflow-y-auto transition-transform duration-300 md:sticky md:top-16 md:pt-6 md:translate-x-0 md:shrink-0 ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'
         }`}
+        style={{ maxHeight: 'calc(100vh - 4rem)' }}
       >
-        <div className="flex items-center justify-between px-2 mb-4">
-          <span className="text-xs font-medium text-text-dim uppercase tracking-widest">笔记目录</span>
-          {/* 移动端关闭按钮 */}
-          <button
-            onClick={() => setSidebarOpen(false)}
-            className="md:hidden p-1 rounded text-text-dim hover:text-text"
-          >
-            <PanelLeftClose className="w-4 h-4" />
-          </button>
+        <div className="flex items-center justify-between px-2 mb-3">
+          <span className="text-xs font-medium text-text-dim uppercase tracking-widest">
+            {noteTitle}
+          </span>
         </div>
 
-        {tree.length === 0 ? (
-          <p className="text-xs text-text-dim px-2">暂无笔记</p>
+        {headings.length > 0 ? (
+          <NotesToc headings={headings} />
         ) : (
-          <NotesTree tree={tree} activeSlug={activeSlug} />
+          <p className="text-xs text-text-dim px-2">暂无标题</p>
         )}
       </aside>
 
@@ -49,7 +45,7 @@ export default function NoteLayout({ tree, activeSlug, children }: NoteLayoutPro
       )}
 
       {/* ── 右侧内容区 ── */}
-      <main className="flex-1 min-w-0 px-6 py-8">
+      <main className="flex-1 min-w-0 px-6 md:px-10 py-8">
         {/* 移动端打开侧栏按钮 */}
         <button
           onClick={() => setSidebarOpen(true)}

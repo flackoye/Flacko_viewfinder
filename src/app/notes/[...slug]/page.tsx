@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
+import rehypeSlug from 'rehype-slug';
 import NoteLayout from '@/components/NoteLayout';
 import { getNotesTree, getNoteBySlug, getAllSlugs } from '@/lib/notes';
 import { ArrowLeft } from 'lucide-react';
@@ -18,7 +19,6 @@ export function generateMetadata({
 }: {
   params: Promise<{ slug: string[] }>;
 }): Promise<Metadata> {
-  // async — Next.js 16 要求 params 是 Promise
   return params.then(({ slug }) => {
     const note = getNoteBySlug(slug);
     return {
@@ -33,25 +33,22 @@ export default async function NotePage({
   params: Promise<{ slug: string[] }>;
 }) {
   const { slug } = await params;
-  const tree = getNotesTree();
   const note = getNoteBySlug(slug);
 
   if (!note) {
     return (
-      <NoteLayout tree={tree} activeSlug={slug}>
-        <div className="text-center py-20 text-text-dim">
-          <p className="text-lg mb-4">笔记未找到</p>
-          <Link href="/notes" className="text-accent hover:underline">
-            ← 返回笔记列表
-          </Link>
-        </div>
-      </NoteLayout>
+      <div className="max-w-5xl mx-auto px-6 py-12 text-center text-text-dim">
+        <p className="text-lg mb-4">笔记未找到</p>
+        <Link href="/notes" className="text-accent hover:underline">
+          ← 返回笔记列表
+        </Link>
+      </div>
     );
   }
 
   return (
-    <NoteLayout tree={tree} activeSlug={slug}>
-      <article className="max-w-3xl">
+    <NoteLayout headings={note.headings} noteTitle={note.title}>
+      <article className="max-w-4xl">
         {/* 返回 + 标题 */}
         <Link
           href="/notes"
@@ -63,7 +60,7 @@ export default async function NotePage({
 
         <h1 className="text-3xl font-bold text-text mb-2">{note.title}</h1>
         {note.date && (
-          <p className="text-sm text-text-dim mb-8">{note.date}</p>
+          <p className="text-sm text-text-dim mb-6">{note.date}</p>
         )}
         {note.tags && note.tags.length > 0 && (
           <div className="flex flex-wrap gap-1.5 mb-8">
@@ -73,9 +70,12 @@ export default async function NotePage({
           </div>
         )}
 
-        {/* Markdown 内容 */}
+        {/* Markdown 内容 — rehypeSlug 给 h1/h2/h3 加 id，供 TOC 跳转 */}
         <div className="prose-notes">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeHighlight, rehypeSlug]}
+          >
             {note.content}
           </ReactMarkdown>
         </div>

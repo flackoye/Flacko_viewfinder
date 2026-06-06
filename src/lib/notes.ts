@@ -22,6 +22,14 @@ export interface NoteMeta {
 
 export interface NoteData extends NoteMeta {
   content: string;         // 原始 markdown 内容（不含 frontmatter）
+  headings: Heading[];     // 解析出的标题列表
+}
+
+/** md 内容中的标题，用于左侧 TOC */
+export interface Heading {
+  id: string;              // 锚点 id，如 "425-fun-transformer"
+  text: string;            // 标题文字
+  level: number;           // 1/2/3
 }
 
 export interface TreeFolder {
@@ -150,6 +158,7 @@ export function getNoteBySlug(slug: string[]): NoteData | null {
         date: data.date ? String(data.date) : undefined,
         tags: data.tags || undefined,
         content,
+        headings: parseHeadings(content),
       };
     }
   }
@@ -187,4 +196,38 @@ export function getAllNotes(): NoteMeta[] {
  */
 export function getAllSlugs(): string[][] {
   return getAllNotes().map(n => n.slug);
+}
+
+// ── 标题解析 ──
+
+/** 从 markdown 内容中提取 h1/h2/h3 标题 */
+function parseHeadings(content: string): Heading[] {
+  const headings: Heading[] = [];
+  const lines = content.split('\n');
+
+  for (const line of lines) {
+    const match = line.match(/^(#{1,3})\s+(.+)/);
+    if (match) {
+      const level = match[1].length;
+      const text = match[2].replace(/[*_`~]/g, '').trim();
+      const id = text
+        .toLowerCase()
+        .replace(/[^\w一-鿿\s-]/g, '')   // 保留中英文、数字、空格、连字符
+        .replace(/\s+/g, '-')                       // 空格 → 连字符
+        .slice(0, 60);                              // 截断
+      headings.push({ id, text, level });
+    }
+  }
+
+  // 处理重复 id：加后缀
+  const seen = new Map<string, number>();
+  for (const h of headings) {
+    const count = seen.get(h.id) || 0;
+    seen.set(h.id, count + 1);
+    if (count > 0) {
+      h.id = `${h.id}-${count}`;
+    }
+  }
+
+  return headings;
 }
