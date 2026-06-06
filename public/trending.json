@@ -1,5 +1,79 @@
 [
   {
+    "id": "476038c24b13",
+    "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+    "summary": "",
+    "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-05T22:18:46+00:00",
+    "llm_score": 8.5,
+    "llm_summary": "3B模型实现多智能体经济系统，极具工程参考价值。",
+    "llm_tags": [
+      "多智能体",
+      "模型部署",
+      "工程实践"
+    ],
+    "llm_reason": "内容展示了在极小参数量（3B）上实现复杂多智能体交互系统的工程能力，结合了前沿的 LLM Agent 应用场景，信息密度高且实用性强。",
+    "score": 8.5
+  },
+  {
+    "id": "243afa77b33c",
+    "title": "OpenLumara - A different kind of AI agent, written from scratch, not vibecoded. Extremely token-efficient, super small system prompt, made for local models. Everything is modular.",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1txxgpq/openlumara_a_different_kind_of_ai_agent_written/\"> <img alt=\"OpenLumara - A different kind of AI agent, written from scra",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txxgpq/openlumara_a_different_kind_of_ai_agent_written/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T21:05:08+00:00",
+    "llm_score": 7.8,
+    "llm_summary": "开源本地模型专用的高效AI智能体框架。",
+    "llm_tags": [
+      "开源",
+      "本地部署",
+      "Agent",
+      "效率优化"
+    ],
+    "llm_reason": "针对本地模型优化的轻量级 Agent 框架，技术细节具体，对学习 LLM 应用开发有实际参考价值。",
+    "score": 7.8
+  },
+  {
+    "id": "188f70aef85e",
+    "title": "dots.tts 2B🎙️ SOTA TTS from RedNote",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1txwbge/dotstts_2b_sota_tts_from_rednote/\"> <img alt=\"dots.tts 2B🎙️ SOTA TTS from RedNote\" src=\"https://preview.redd.it/m196z979w",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txwbge/dotstts_2b_sota_tts_from_rednote/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T20:21:33+00:00",
+    "llm_score": 7.2,
+    "llm_summary": "RedNote开源2B参数TTS模型，SOTA性能。",
+    "llm_tags": [
+      "TTS",
+      "开源模型",
+      "语音合成"
+    ],
+    "llm_reason": "内容涉及最新的开源TTS模型（dots.tts 2B），具有前沿性和较高的实用性，适合计算机专业学生参考。",
+    "score": 7.2
+  },
+  {
+    "id": "3c53aa6688ad",
+    "title": "Unsloth just dropped MTP GGUF weights for Gemma 4!",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>It appears like Unsloth pushed MTP GGUF weights (Q8, F16, BF16) for 31B, 26B-A4B, 12B.</p> <p><a href=\"https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/tree/main/MT",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txnhqp/unsloth_just_dropped_mtp_gguf_weights_for_gemma_4/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-05T15:02:57+00:00",
+    "llm_score": 7.5,
+    "llm_summary": "Unsloth发布Gemma 4的MTP GGUF量化权重。",
+    "llm_tags": [
+      "Gemma 4",
+      "GGUF",
+      "量化",
+      "本地部署"
+    ],
+    "llm_reason": "涉及最新的Gemma 4模型和GGUF格式，对本地部署和量化研究有较高实用价值，信息密度较高。",
+    "score": 7.5
+  },
+  {
     "id": "729d9c5b9655",
     "title": "How do you identify researchers who are good? [D]",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p>About 10 years ago, I got into the basics of ML (like regression, KNN's, LVQ's) and read a few papers before taking a break a few years back.</p> <p>It feels like now",
@@ -107,6 +181,44 @@
     ],
     "llm_reason": "内容涉及AI对人类认知和注意力的潜在影响，具有前沿性和一定的实用性，但摘要信息密度较低，仅展示了开头部分。",
     "score": 6.5
+  },
+  {
+    "id": "4959b79e9ee2",
+    "title": "The Meta hack shows there’s more to AI security than Mythos",
+    "summary": "On June 5, 404 Media reported that attackers had been using Meta’s AI customer support agent to steal Instagram accounts. Their approach was simple: They asked the agent to link the accounts to email addresses that they controlled, and the agent complied. One attacker broke into the dormant Obama White House account and made pro-Iran&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-05T09:00:00+00:00",
+    "llm_score": 7.5,
+    "llm_summary": "Meta AI客服漏洞被利用窃取账号，揭示安全新风险。",
+    "llm_tags": [
+      "AI安全",
+      "漏洞利用",
+      "Meta"
+    ],
+    "llm_reason": "内容涉及具体的AI安全漏洞案例，具有前沿性和较高的信息密度，对理解LLM安全风险很有价值。",
+    "score": 7.5
+  },
+  {
+    "id": "9e5bb5982780",
+    "title": "CWS6206/ai-coding-starter-kit ⭐251",
+    "summary": "Kuratierte Agent Skills, Checklisten, Templates und Leitfäden für Schweizer Entwicklungsteams – direkt aus meinen Blog-Artikeln destilliert.",
+    "url": "https://github.com/CWS6206/ai-coding-starter-kit",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-05T08:46:35Z",
+    "stars": 251,
+    "language": null,
+    "llm_score": 6.2,
+    "llm_summary": "瑞士开发团队的 AI 编程工具精选集。",
+    "llm_tags": [
+      "GitHub",
+      "AI 工具",
+      "资源集合"
+    ],
+    "llm_reason": "内容与 AI 编程工具相关，但摘要信息密度较低，缺乏具体技术细节，实用性一般。",
+    "score": 6.2
   },
   {
     "id": "2f179ae337cf",
@@ -555,6 +667,27 @@
     ],
     "llm_reason": "内容涉及AI生成内容在法律领域的应用与挑战，具有时效性，但作为计算机专业学习资料，其技术深度和实操参考价值较低。",
     "score": 5.2
+  },
+  {
+    "id": "c7f29e7033d9",
+    "title": "Forlives/21-day-self-interview ⭐139",
+    "summary": "🪞 An AI existential-psychology counselor asks you 3 meaningful questions every night for 21 days — and remembers, reflecting your own words back to you. Bilingual zh/en. A Hermes Agent skill. 每晚三个问题，一",
+    "url": "https://github.com/Forlives/21-day-self-interview",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-04T09:53:52Z",
+    "stars": 139,
+    "language": "Python",
+    "llm_score": 7.2,
+    "llm_summary": "AI 心理咨询师 21 天自我对话项目",
+    "llm_tags": [
+      "AI Agent",
+      "心理",
+      "交互",
+      "开源"
+    ],
+    "llm_reason": "内容展示了 AI Agent 在特定垂直领域的创新应用（心理陪伴），具有前沿性、高信息密度和实用参考价值。",
+    "score": 7.2
   },
   {
     "id": "284c0aa57ffb",
@@ -1299,45 +1432,5 @@
     ],
     "llm_reason": "展示了AI在实时生成图文内容方面的前沿应用潜力，具有很高的技术演示和参考价值。",
     "score": 7
-  },
-  {
-    "id": "7978c517b9dd",
-    "title": "PanisHandsome/ai-rules-sync ⭐105",
-    "summary": "Keep one source of truth for your AI coding-agent rules. Convert and sync between AGENTS.md, CLAUDE.md, .cursorrules, Copilot, Windsurf, Cline, Aider & Gemini — or scaffold a fresh AGENTS.md. Zero dep",
-    "url": "https://github.com/PanisHandsome/ai-rules-sync",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-01T03:32:48Z",
-    "stars": 105,
-    "language": "JavaScript",
-    "llm_score": 8.5,
-    "llm_summary": "统一管理多种 AI 编码助手的规则配置。",
-    "llm_tags": [
-      "GitHub",
-      "工具",
-      "开发效率"
-    ],
-    "llm_reason": "内容针对 AI 编码助手（如 Claude, Cursor, Copilot）的配置文件同步痛点，提供了实用的开源解决方案，具有较高的实用性和信息密度。",
-    "score": 8.5
-  },
-  {
-    "id": "f2fca8e671d8",
-    "title": "couragec/LLMInternSkill ⭐106",
-    "summary": "LLMInternSkill: LLM internship resume and job-search Codex Skill for resume polish, JD tailoring, evidence guard, interview grilling, and Project Scout. 大模型实习简历与求职工具箱。",
-    "url": "https://github.com/couragec/LLMInternSkill",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-01T03:20:26Z",
-    "stars": 106,
-    "language": "Markdown",
-    "llm_score": 7.8,
-    "llm_summary": "LLM求职简历优化与面试辅助工具箱",
-    "llm_tags": [
-      "GitHub",
-      "求职",
-      "工具"
-    ],
-    "llm_reason": "内容针对性强，提供了LLM求职的具体工具链（简历、JD、面试），实用性和信息密度较高，适合计算机专业学生参考。",
-    "score": 7.8
   }
 ]
