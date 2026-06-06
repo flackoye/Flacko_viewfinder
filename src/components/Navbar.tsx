@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { BookOpen, FolderGit2, Sparkles, User, Menu, X, Flame, ScrollText } from 'lucide-react';
@@ -23,6 +23,16 @@ export default function Navbar() {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  // 路由变化时关闭菜单
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
+  const closeMobileMenu = useCallback(() => {
+    // 延迟关闭，让 Link 的导航事件先完成
+    setTimeout(() => setMobileOpen(false), 120);
   }, []);
 
   return (
@@ -65,16 +75,34 @@ export default function Navbar() {
 
         {/* 移动端菜单按钮 */}
         <button
-          className="md:hidden p-2 rounded-lg text-text-muted hover:text-text hover:bg-white/5 transition-colors"
+          className="md:hidden p-2 rounded-lg text-text-muted hover:text-text hover:bg-white/5 transition-colors relative z-[60]"
           onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label={mobileOpen ? '关闭菜单' : '打开菜单'}
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </div>
 
-      {/* 移动端菜单 */}
-      {mobileOpen && (
-        <div className="md:hidden glass-nav border-t border-white/5">
+      {/* 移动端菜单 — 始终渲染，CSS 控制显隐 */}
+      <div
+        className={`md:hidden fixed inset-0 top-0 z-50 transition-opacity duration-300 ${
+          mobileOpen
+            ? 'opacity-100 pointer-events-auto'
+            : 'opacity-0 pointer-events-none'
+        }`}
+      >
+        {/* 遮罩层 */}
+        <div
+          className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+          onClick={() => setMobileOpen(false)}
+        />
+
+        {/* 菜单面板 — 从顶部滑下 */}
+        <div
+          className={`relative mt-[72px] glass-nav border-t border-white/5 transition-transform duration-300 ${
+            mobileOpen ? 'translate-y-0' : '-translate-y-4'
+          }`}
+        >
           <div className="px-6 py-4 space-y-1">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
@@ -87,7 +115,7 @@ export default function Navbar() {
                       ? 'text-accent bg-accent/10'
                       : 'text-text-muted hover:text-text hover:bg-white/5'
                   }`}
-                  onClick={() => setMobileOpen(false)}
+                  onClick={closeMobileMenu}
                 >
                   <item.icon className="w-4 h-4" />
                   {item.name}
@@ -96,7 +124,7 @@ export default function Navbar() {
             })}
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 }

@@ -54,8 +54,8 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-bg text-text">
         <SettingsProvider>
           <Navbar />
-          <AnnouncementBanner announcement={announcement} />
           <main className="flex-1 pt-16 page-fade-in-enhanced">
+            <AnnouncementBanner announcement={announcement} />
             {children}
           </main>
           <Footer />
