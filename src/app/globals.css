@@ -409,9 +409,9 @@ input:focus {
   font-size: 0.95rem;
   line-height: 1.8;
 }
-.prose-notes h1 { font-size: 1.5rem; margin-top: 2.5rem; margin-bottom: 1rem; font-weight: 700; color: var(--color-text); }
-.prose-notes h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.75rem; font-weight: 600; color: var(--color-text); }
-.prose-notes h3 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; font-weight: 600; color: var(--color-text); }
+.prose-notes h1 { font-size: 1.5rem; margin-top: 2.5rem; margin-bottom: 1rem; font-weight: 700; color: var(--color-text); scroll-margin-top: 5rem; }
+.prose-notes h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.75rem; font-weight: 600; color: var(--color-text); scroll-margin-top: 5rem; }
+.prose-notes h3 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; font-weight: 600; color: var(--color-text); scroll-margin-top: 5rem; }
 .prose-notes p { margin-bottom: 1rem; color: var(--color-text-muted); }
 .prose-notes a { color: var(--color-accent-light); text-decoration: underline; text-underline-offset: 2px; }
 .prose-notes a:hover { color: var(--color-accent); }
