@@ -7,10 +7,11 @@ import type { SidebarBranch } from '@/lib/notes';
 
 interface NoteLayoutProps {
   sidebarTree: SidebarBranch[];
+  currentPath?: string;
   children: React.ReactNode;
 }
 
-export default function NoteLayout({ sidebarTree, children }: NoteLayoutProps) {
+export default function NoteLayout({ sidebarTree, currentPath, children }: NoteLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -27,7 +28,7 @@ export default function NoteLayout({ sidebarTree, children }: NoteLayoutProps) {
         </div>
 
         {sidebarTree.length > 0 ? (
-          <SidebarTree branches={sidebarTree} />
+          <SidebarTree branches={sidebarTree} currentPath={currentPath} />
         ) : (
           <p className="text-xs text-text-dim px-2">暂无内容</p>
         )}

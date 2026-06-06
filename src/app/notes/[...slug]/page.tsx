@@ -47,8 +47,10 @@ export default async function NotePage({
     );
   }
 
+  const currentPath = `/notes/${slug.join('/')}`;
+
   return (
-    <NoteLayout sidebarTree={sidebarTree}>
+    <NoteLayout sidebarTree={sidebarTree} currentPath={currentPath}>
       <article className="max-w-4xl">
         {/* 返回 + 标题 */}
         <Link

@@ -7,9 +7,17 @@
   },
   "entries": [
     {
+      "version": "v2.1.6",
+      "date": "2026-06-07",
+      "title": "笔记上线！很潦草因为是自己的随手记",
+      "changes": [
+        { "type": "feature", "description": "带有目录和相关的附件代码，欢迎围观" }
+      ]
+    },
+    {
       "version": "v2.1.0",
       "date": "2026-06-07",
-      "title": "评分系统重构：从 AND 门到 OR 门",
+      "title": "热点评分系统重构：从 AND 门到 OR 门",
       "changes": [
         { "type": "improvement", "description": "评分维度从 4 维（前沿性+实用性+信息密度+可读性）精简为 2 维（前沿性+信息含量）" },
         { "type": "feature", "description": "入选逻辑从加权平均改为 OR 门：任意维度 ≥ 80 直接入选，否则综合 ≥ 60 入选" },
@@ -21,7 +29,7 @@
     {
       "version": "v2.0.70",
       "date": "2026-06-05",
-      "title": "热点管道大升级：17 源 + 保底机制",
+      "title": "热点管道大升级",
       "changes": [
         { "type": "improvement", "description": "更新频率由每 5 小时调整为每 12 小时，降低资源消耗" },
         { "type": "feature", "description": "新增三轮递进保底机制，确保每次更新至少入库 15 条有效内容" },

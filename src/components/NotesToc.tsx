@@ -6,19 +6,20 @@ import type { SidebarBranch } from '@/lib/notes';
 
 interface SidebarTreeProps {
   branches: SidebarBranch[];
+  currentPath?: string;   // 当前页面路径，如 "/notes/Transformer/Transformer_Learning"
 }
 
-export default function SidebarTree({ branches }: SidebarTreeProps) {
+export default function SidebarTree({ branches, currentPath }: SidebarTreeProps) {
   return (
     <nav className="space-y-1">
       {branches.map((branch) => (
-        <BranchItem key={branch.name} branch={branch} />
+        <BranchItem key={branch.name} branch={branch} currentPath={currentPath} />
       ))}
     </nav>
   );
 }
 
-function BranchItem({ branch }: { branch: SidebarBranch }) {
+function BranchItem({ branch, currentPath }: { branch: SidebarBranch; currentPath?: string }) {
   const [expanded, setExpanded] = useState(true);
   const isAttachment = branch.name.toLowerCase() === 'attachment';
   const Icon = isAttachment ? Paperclip : Folder;
@@ -39,18 +40,26 @@ function BranchItem({ branch }: { branch: SidebarBranch }) {
       </button>
       {expanded && (
         <div className="mt-0.5">
-          {branch.children.map((child, i) => (
-            <a
-              key={i}
-              href={child.href}
-              className="flex items-center gap-1.5 px-2 py-1.5 text-sm text-text-dim hover:text-accent transition-colors rounded-lg hover:bg-white/[0.03]"
-              style={{ paddingLeft: '28px' }}
-              title={child.label}
-            >
-              <FileText className="w-3 h-3 shrink-0 opacity-40" />
-              <span className="truncate">{child.label}</span>
-            </a>
-          ))}
+          {branch.children.map((child, i) => {
+            // 如果 href 指向当前页面，只保留 #锚点 部分，避免 Next.js 客户端重新导航
+            let href = child.href;
+            if (currentPath && href.startsWith(currentPath + '#')) {
+              href = href.slice(currentPath.length);  // 变成 "#425-fun-transformer"
+            }
+
+            return (
+              <a
+                key={i}
+                href={href}
+                className="flex items-center gap-1.5 px-2 py-1.5 text-sm text-text-dim hover:text-accent transition-colors rounded-lg hover:bg-white/[0.03]"
+                style={{ paddingLeft: '28px' }}
+                title={child.label}
+              >
+                <FileText className="w-3 h-3 shrink-0 opacity-40" />
+                <span className="truncate">{child.label}</span>
+              </a>
+            );
+          })}
         </div>
       )}
     </div>
