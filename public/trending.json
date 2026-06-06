@@ -1,5 +1,62 @@
 [
   {
+    "id": "4de8359fb3ed",
+    "title": "Job Searcher",
+    "summary": "",
+    "url": "https://huggingface.co/blog/build-small-hackathon/job-search-blog",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-06T15:36:51+00:00",
+    "frontier": 40,
+    "signal": 85,
+    "score": 58,
+    "llm_summary": "开源求职助手，支持多模态简历解析",
+    "llm_tags": [
+      "RAG",
+      "多模态",
+      "简历解析",
+      "开源工具"
+    ]
+  },
+  {
+    "id": "97e475396b38",
+    "title": "MoQ GGUFs and GSQ: Low-Bit GGUFs Are About to Get Much Better",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tyjkfh/moq_ggufs_and_gsq_lowbit_ggufs_are_about_to_get/\"> <img alt=\"MoQ GGUFs and GSQ: Low-Bit GGUFs Are About to Get Much Bette",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyjkfh/moq_ggufs_and_gsq_lowbit_ggufs_are_about_to_get/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T15:01:41+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 79,
+    "llm_summary": "MoQ与GSQ新量化方案提升低比特GGUF模型质量",
+    "llm_tags": [
+      "量化",
+      "GGUF",
+      "模型压缩",
+      "推理加速"
+    ]
+  },
+  {
+    "id": "bbf6bed01c25",
+    "title": "Gemma 4 QAT Q4_0 Bench on Strix Halo",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><h1>Gemma 4 QAT Q4_0 Bench on Strix Halo</h1> <p>These are Google's official Gemma 4 QAT Q4_0 GGUF models, served locally through llama.cpp Vulkan/RADV on a Strix Halo A",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyilv7/gemma_4_qat_q4_0_bench_on_strix_halo/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T14:22:55+00:00",
+    "frontier": 45,
+    "signal": 85,
+    "score": 61,
+    "llm_summary": "Gemma 4 QAT Q4_0 在 Strix Halo 上的本地性能基准测试",
+    "llm_tags": [
+      "量化",
+      "本地部署",
+      "基准测试",
+      "Gemma"
+    ]
+  },
+  {
     "id": "c88dbe7a27cf",
     "title": "Domino: Decoupling Causal Modeling from Autoregressive Drafting in Speculative Decoding",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tyfqmp/domino_decoupling_causal_modeling_from/\"> <img alt=\"Domino: Decoupling Causal Modeling from Autoregressive Drafting in Sp",
@@ -1616,6 +1673,27 @@
     "score": 8
   },
   {
+    "id": "7bfbf14108b0",
+    "title": "Somnusochi/VLM-AutoYOLO ⭐65",
+    "summary": "AI Auto Annotation & YOLO Training Pipeline, End-to-end object detection auto-labeling and YOLO training platform. VLM-powered annotation with NVIDIA LocateAnything-3B, manual refinement, one-click YO",
+    "url": "https://github.com/Somnusochi/VLM-AutoYOLO",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-02T03:55:53Z",
+    "stars": 65,
+    "language": "Python",
+    "frontier": 75,
+    "signal": 85,
+    "score": 79,
+    "llm_summary": "基于VLM的端到端目标检测自动标注与训练平台",
+    "llm_tags": [
+      "目标检测",
+      "自动标注",
+      "VLM",
+      "YOLO"
+    ]
+  },
+  {
     "id": "ec83f57dc9fd",
     "title": "jd-opensource/JoyAI-Echo ⭐233",
     "summary": "JoyAI-Echo: Pushing the Frontier of Long Audio-Visual Generation",
@@ -1654,23 +1732,5 @@
     ],
     "llm_reason": "展示了AI在实时生成图文内容方面的前沿应用潜力，具有很高的技术演示和参考价值。",
     "score": 7
-  },
-  {
-    "id": "e4b943609e0a",
-    "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
-    "summary": "",
-    "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-01T15:45:17+00:00",
-    "llm_score": 8.5,
-    "llm_summary": "JetBrains发布12B MoE模型，开源权重与训练细节。",
-    "llm_tags": [
-      "开源模型",
-      "Mixture-of-Experts",
-      "JetBrains"
-    ],
-    "llm_reason": "内容涉及最新的 MoE 架构开源模型，包含详细的训练数据和方法论，对计算机专业学生具有很高的参考价值。",
-    "score": 8.5
   }
 ]
