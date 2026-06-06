@@ -8,6 +8,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import slugger from 'github-slugger';
 
 const NOTES_DIR = path.join(process.cwd(), 'content', 'notes');
 
@@ -214,49 +215,61 @@ export interface SidebarBranch {
 
 /**
  * 构建侧栏树，分两类主干：
- * - 含 .md 文件的目录 → 子项为 h1 标题（点击跳转锚点）
- * - 不含 .md 文件的目录 → 子项为文件名（点击下载/查看）
+ * - content/notes/ 下含 .md 文件的目录 → 子项为 h1 标题（点击跳转锚点）
+ * - public/notes-attachments/ 下的目录 → 子项为文件名（点击打开/下载）
  */
 export function getSidebarTree(): SidebarBranch[] {
-  if (!ensureDir()) return [];
-
   const branches: SidebarBranch[] = [];
-  const dirs = fs.readdirSync(NOTES_DIR, { withFileTypes: true });
 
-  for (const dir of dirs) {
-    if (!dir.isDirectory() || dir.name.startsWith('.')) continue;
+  // 1. 笔记目录
+  if (ensureDir()) {
+    const dirs = fs.readdirSync(NOTES_DIR, { withFileTypes: true });
 
-    const dirPath = path.join(NOTES_DIR, dir.name);
-    const files = fs.readdirSync(dirPath);
+    for (const dir of dirs) {
+      if (!dir.isDirectory() || dir.name.startsWith('.')) continue;
 
-    // 找 .md 文件
-    const mdFiles = files.filter(f => f.endsWith('.md') || f.endsWith('.mdx'));
-    const otherFiles = files.filter(f => !f.startsWith('.') && !f.endsWith('.md') && !f.endsWith('.mdx'));
+      const dirPath = path.join(NOTES_DIR, dir.name);
+      const files = fs.readdirSync(dirPath);
+      const mdFiles = files.filter(f => f.endsWith('.md') || f.endsWith('.mdx'));
 
-    if (mdFiles.length > 0) {
-      // 笔记目录：提取第一个 md 文件的 h1 标题
-      const mdPath = path.join(dirPath, mdFiles[0]);
-      const raw = fs.readFileSync(mdPath, 'utf-8');
-      const { content } = matter(raw);
-      const headings = parseHeadings(content).filter(h => h.level === 1);
-      const slugParts = [dir.name, stripExt(mdFiles[0])];
+      if (mdFiles.length > 0) {
+        const mdPath = path.join(dirPath, mdFiles[0]);
+        const raw = fs.readFileSync(mdPath, 'utf-8');
+        const { content } = matter(raw);
+        const headings = parseHeadings(content).filter(h => h.level === 1);
+        const slugParts = [dir.name, stripExt(mdFiles[0])];
 
-      branches.push({
-        name: dir.name,
-        children: headings.map(h => ({
-          label: h.text,
-          href: `/notes/${slugParts.join('/')}#${h.id}`,
-        })),
-      });
-    } else if (otherFiles.length > 0) {
-      // 附件目录：显示文件名
-      branches.push({
-        name: dir.name,
-        children: otherFiles.map(f => ({
-          label: f,
-          href: `/notes-attachments/${dir.name}/${encodeURIComponent(f)}`,
-        })),
-      });
+        branches.push({
+          name: dir.name,
+          children: headings.map(h => ({
+            label: h.text,
+            href: `/notes/${slugParts.join('/')}#${h.id}`,
+          })),
+        });
+      }
+    }
+  }
+
+  // 2. 附件目录（从 public/notes-attachments/ 读取）
+  const attachDir = path.join(process.cwd(), 'public', 'notes-attachments');
+  if (fs.existsSync(attachDir)) {
+    const dirs = fs.readdirSync(attachDir, { withFileTypes: true });
+
+    for (const dir of dirs) {
+      if (!dir.isDirectory() || dir.name.startsWith('.')) continue;
+
+      const dirPath = path.join(attachDir, dir.name);
+      const files = fs.readdirSync(dirPath).filter(f => !f.startsWith('.'));
+
+      if (files.length > 0) {
+        branches.push({
+          name: dir.name,
+          children: files.map(f => ({
+            label: f,
+            href: `/notes-attachments/${dir.name}/${encodeURIComponent(f)}`,
+          })),
+        });
+      }
     }
   }
 
@@ -265,32 +278,19 @@ export function getSidebarTree(): SidebarBranch[] {
 
 // ── 标题解析 ──
 
-/** 从 markdown 内容中提取 h1/h2/h3 标题 */
+/** 从 markdown 内容中提取 h1/h2/h3 标题，用 github-slugger 生成 id（与 rehype-slag 一致） */
 function parseHeadings(content: string): Heading[] {
   const headings: Heading[] = [];
   const lines = content.split('\n');
+  const s = new slugger();   // 每个 md 用独立实例，自动处理重复
 
   for (const line of lines) {
     const match = line.match(/^(#{1,3})\s+(.+)/);
     if (match) {
       const level = match[1].length;
       const text = match[2].replace(/[*_`~]/g, '').trim();
-      const id = text
-        .toLowerCase()
-        .replace(/[^\w一-鿿\s-]/g, '')   // 保留中英文、数字、空格、连字符
-        .replace(/\s+/g, '-')                       // 空格 → 连字符
-        .slice(0, 60);                              // 截断
+      const id = s.slug(text);
       headings.push({ id, text, level });
-    }
-  }
-
-  // 处理重复 id：加后缀
-  const seen = new Map<string, number>();
-  for (const h of headings) {
-    const count = seen.get(h.id) || 0;
-    seen.set(h.id, count + 1);
-    if (count > 0) {
-      h.id = `${h.id}-${count}`;
     }
   }
 

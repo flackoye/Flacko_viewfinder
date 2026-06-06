@@ -173,7 +173,8 @@ Q "找什么"不是人为设计的，是训练出来的——梯度从最终 Los
 学习一个经典的项目[llm_from_scratch](https://github.com/rasbt/LLMs-from-scratch)
 算是对于llm的底层拆解，带有详细的图片和代码
 
-# ch04_main Implementing a GPT Model from Scratch
+# ch04_main 
+Implementing a GPT Model from Scratch
 对于gpt2模型的底层拆解
 
 ## 5.27 llm_from_scratch ch04_01_main
