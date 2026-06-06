@@ -11,6 +11,7 @@ import matter from 'gray-matter';
 import slugger from 'github-slugger';
 
 const NOTES_DIR = path.join(process.cwd(), 'content', 'notes');
+const ATTACHMENTS_DIR = path.join(process.cwd(), 'content', 'notes-attachments');
 
 // ── 类型 ──
 
@@ -48,6 +49,12 @@ export interface TreeFile {
 }
 
 export type TreeNode = TreeFolder | TreeFile;
+
+/** 附件数据 — 根据 .md / 代码 / 文件类型返回不同结构 */
+export type AttachmentData =
+  | { type: 'markdown'; title: string; content: string; headings: Heading[] }
+  | { type: 'code'; content: string; language: string; fileName: string }
+  | { type: 'file'; fileName: string; ext: string };
 
 // ── 工具函数 ──
 
@@ -263,14 +270,13 @@ export function getSidebarTree(): SidebarBranch[] {
   }
 
   // 2. 附件目录（从 content/notes-attachments/ 读取）
-  const attachDir = path.join(process.cwd(), 'content', 'notes-attachments');
-  if (fs.existsSync(attachDir)) {
-    const dirs = fs.readdirSync(attachDir, { withFileTypes: true });
+  if (fs.existsSync(ATTACHMENTS_DIR)) {
+    const dirs = fs.readdirSync(ATTACHMENTS_DIR, { withFileTypes: true });
 
     for (const dir of dirs) {
       if (!dir.isDirectory() || dir.name.startsWith('.')) continue;
 
-      const dirPath = path.join(attachDir, dir.name);
+      const dirPath = path.join(ATTACHMENTS_DIR, dir.name);
       const files = fs.readdirSync(dirPath).filter(f => !f.startsWith('.'));
 
       if (files.length > 0) {
@@ -278,7 +284,7 @@ export function getSidebarTree(): SidebarBranch[] {
           name: dir.name,
           children: files.map(f => ({
             label: f,
-            href: `/notes-attachments/${dir.name}/${encodeURIComponent(f)}`,
+            href: `/notes/attachments/${dir.name}/${encodeURIComponent(f)}`,
           })),
         });
       }
@@ -307,4 +313,85 @@ function parseHeadings(content: string): Heading[] {
   }
 
   return headings;
+}
+
+// ── 附件读取 ──
+
+/** 扩展名 → 代码语言 */
+const EXT_TO_LANG: Record<string, string> = {
+  '.py': 'python',
+  '.js': 'javascript',
+  '.ts': 'typescript',
+  '.jsx': 'jsx',
+  '.tsx': 'tsx',
+  '.css': 'css',
+  '.html': 'html',
+  '.json': 'json',
+  '.yaml': 'yaml',
+  '.yml': 'yaml',
+  '.sh': 'bash',
+  '.sql': 'sql',
+  '.java': 'java',
+  '.c': 'c',
+  '.cpp': 'cpp',
+  '.go': 'go',
+  '.rs': 'rust',
+  '.txt': 'text',
+  '.log': 'text',
+  '.csv': 'text',
+};
+
+/**
+ * 读取附件文件，根据类型返回不同渲染数据
+ */
+export function getAttachmentByPath(dirName: string, fileName: string): AttachmentData | null {
+  const filePath = path.join(ATTACHMENTS_DIR, dirName, fileName);
+
+  // 安全检查
+  const resolved = path.resolve(filePath);
+  if (!resolved.startsWith(path.resolve(ATTACHMENTS_DIR))) return null;
+  if (!fs.existsSync(resolved) || !fs.statSync(resolved).isFile()) return null;
+
+  const ext = path.extname(fileName).toLowerCase();
+
+  // Markdown 文件 — 和笔记一样的渲染
+  if (ext === '.md' || ext === '.mdx') {
+    const raw = fs.readFileSync(resolved, 'utf-8');
+    const { data, content } = matter(raw);
+    return {
+      type: 'markdown',
+      title: data.title || stripExt(fileName),
+      content,
+      headings: parseHeadings(content),
+    };
+  }
+
+  // 代码/文本文件 — 语法高亮
+  const language = EXT_TO_LANG[ext];
+  if (language) {
+    const content = fs.readFileSync(resolved, 'utf-8');
+    return { type: 'code', content, language, fileName };
+  }
+
+  // 其他文件（图片、PDF 等）
+  return { type: 'file', fileName, ext };
+}
+
+/**
+ * 为 generateStaticParams 生成附件 slug 列表
+ */
+export function getAttachmentSlugs(): string[][] {
+  const slugs: string[][] = [];
+  if (!fs.existsSync(ATTACHMENTS_DIR)) return slugs;
+
+  const dirs = fs.readdirSync(ATTACHMENTS_DIR, { withFileTypes: true });
+  for (const dir of dirs) {
+    if (!dir.isDirectory() || dir.name.startsWith('.')) continue;
+    const files = fs.readdirSync(path.join(ATTACHMENTS_DIR, dir.name)).filter(f => !f.startsWith('.'));
+    for (const file of files) {
+      slugs.push(['attachments', dir.name, file]);
+    }
+  }
+
+  return slugs;
 }
