@@ -7,6 +7,14 @@
   },
   "entries": [
     {
+      "version": "v2.1.8",
+      "date": "2026-06-07",
+      "title": "阿岳上线！阿岳会给你唱歌",
+      "changes": [
+        { "type": "feature", "description": "山林老北欢迎你" }
+      ]
+    },
+    {
       "version": "v2.1.6",
       "date": "2026-06-07",
       "title": "笔记上线！很潦草因为是自己的随手记",

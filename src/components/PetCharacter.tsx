@@ -159,7 +159,7 @@ export default function PetCharacter() {
         <button
           data-close-btn="true"
           onClick={(e) => { e.stopPropagation(); setIsHidden(true); }}
-          className="absolute top-1 right-1 w-7 h-7 rounded-full flex items-center justify-center
+          className="absolute top-1 left-1 w-7 h-7 rounded-full flex items-center justify-center
             text-sm transition-all duration-200 hover:scale-125 active:scale-90 z-10"
           style={{
             opacity: showClose ? 1 : 0,
