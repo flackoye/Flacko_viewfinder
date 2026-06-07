@@ -57,6 +57,27 @@
     ]
   },
   {
+    "id": "d1b8c62589b1",
+    "title": "trueugenee/ai-linux-webapp-wrapper ⭐72",
+    "summary": "",
+    "url": "https://github.com/trueugenee/ai-linux-webapp-wrapper",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-06T18:46:01Z",
+    "stars": 72,
+    "language": "JavaScript",
+    "frontier": 85,
+    "signal": 88,
+    "score": 86,
+    "llm_summary": "开源 AI Linux Web 应用封装器，支持多模型接入",
+    "llm_tags": [
+      "AI应用",
+      "Linux",
+      "Web封装",
+      "开源"
+    ]
+  },
+  {
     "id": "69e6ab806784",
     "title": "KV cache quant benchmarks: KVarN 6-bit matches q8_0, 4-bit matches q5_0. Massive!",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>TL;DR Based on long context KLD benchmarks, KVarN appears to be</strong> <strong><em>just better</em></strong> <strong>than usual llama.cpp KV cache quants. A",
@@ -1735,25 +1756,6 @@
       "开发工具"
     ],
     "llm_reason": "该开源工具展示了如何利用图结构为AI Agent提供代码上下文，对CS学生理解LLM在代码工程中的应用及RAG技术具有极高的前沿性和实用参考价值。",
-    "score": 8
-  },
-  {
-    "id": "c7ccb25baa28",
-    "title": "Holo3.1: Fast & Local Computer Use Agents",
-    "summary": "",
-    "url": "https://huggingface.co/blog/Hcompany/holo31",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-02T14:13:23+00:00",
-    "llm_score": 8,
-    "llm_summary": "介绍Holo3.1：一款快速且支持本地部署的计算机使用智能体。",
-    "llm_tags": [
-      "AI Agent",
-      "Computer Use",
-      "本地部署",
-      "Hugging Face"
-    ],
-    "llm_reason": "Computer Use Agent 是当前 AI 领域的前沿热点。该内容对 CS 学生极具实用价值，本地部署特性也高度契合底层技术学习与探索的需求。",
     "score": 8
   }
 ]
