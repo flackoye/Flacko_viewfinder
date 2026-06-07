@@ -76,7 +76,9 @@ ARXIV_MAX_ITEMS_PER_SOURCE = int(_env("ARXIV_MAX_ITEMS_PER_SOURCE", "100"))
 GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7-flash")
 GLM_TEMPERATURE = float(_env("ZHIPU_TEMPERATURE", "0.1"))
 GLM_MAX_TOKENS = int(_env("ZHIPU_MAX_TOKENS", "512"))
-LLM_CONCURRENCY = 5
+LLM_CONCURRENCY = 3  # 降低并发避免 429
+LLM_RETRY_MAX = 3       # 429 最大重试次数
+LLM_RETRY_BASE = 3.0    # 重试基础等待（秒）
 
 # --- 爬取 ---
 RSS_ITEMS_PER_SOURCE = int(_env("RSS_ITEMS_PER_SOURCE", "8"))
@@ -607,44 +609,56 @@ def _llm_filter_sync(
     system_prompt: str,
     user_msg: str,
 ) -> dict | None:
-    """同步 LLM 筛选（在线程池中运行）"""
-    try:
-        response = client.chat.completions.create(
-            model=GLM_MODEL,
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_msg},
-            ],
-            temperature=GLM_TEMPERATURE,
-            max_tokens=GLM_MAX_TOKENS,
-            thinking={"type": "disabled"},
-        )
+    """同步 LLM 筛选（在线程池中运行），遇 429 自动退避重试"""
+    for attempt in range(LLM_RETRY_MAX):
+        try:
+            response = client.chat.completions.create(
+                model=GLM_MODEL,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_msg},
+                ],
+                temperature=GLM_TEMPERATURE,
+                max_tokens=GLM_MAX_TOKENS,
+                thinking={"type": "disabled"},
+            )
 
-        raw = response.choices[0].message.content.strip()
+            raw = response.choices[0].message.content.strip()
 
-        if "```" in raw:
-            raw = raw.split("```")[1]
-            if raw.startswith("json"):
-                raw = raw[4:]
+            if "```" in raw:
+                raw = raw.split("```")[1]
+                if raw.startswith("json"):
+                    raw = raw[4:]
 
-        result = json.loads(raw)
+            result = json.loads(raw)
 
-        frontier = int(result.get("frontier", 0))
-        signal = int(result.get("signal", 0))
+            frontier = int(result.get("frontier", 0))
+            signal = int(result.get("signal", 0))
 
-        return {
-            "frontier": frontier,
-            "signal": signal,
-            "llm_summary": result.get("summary", ""),
-            "llm_tags": result.get("tags", []),
-        }
+            return {
+                "frontier": frontier,
+                "signal": signal,
+                "llm_summary": result.get("summary", ""),
+                "llm_tags": result.get("tags", []),
+            }
 
-    except json.JSONDecodeError:
-        print(f"    ⚠ LLM 非JSON: {item['title'][:40]}")
-        return None
-    except Exception as e:
-        print(f"    ⚠ LLM error: {e}")
-        return None
+        except json.JSONDecodeError:
+            print(f"    ⚠ LLM 非JSON: {item['title'][:40]}")
+            return None
+        except Exception as e:
+            err_str = str(e)
+            # 429 限速：退避重试
+            if "429" in err_str or "速率限制" in err_str or "rate" in err_str.lower():
+                wait = LLM_RETRY_BASE * (attempt + 1)
+                print(f"    ⏳ 429 限速，{wait:.0f}s 后重试 ({attempt+1}/{LLM_RETRY_MAX}): {item['title'][:30]}")
+                time.sleep(wait)
+                continue
+            # 其他错误：不重试
+            print(f"    ⚠ LLM error: {e}")
+            return None
+
+    print(f"    ❌ 重试耗尽: {item['title'][:40]}")
+    return None
 
 
 def _build_user_msg_regular(item: dict) -> str:
