@@ -95,6 +95,27 @@
     ]
   },
   {
+    "id": "f392ccdfe0d0",
+    "title": "Anthropic-Claude-Mythos/Claude-Mythos-AI-App ⭐49",
+    "summary": "Claude Mythos AI Anthropic App desktop  free  pro opus  frontend client API wrapper Claude 3.5 Sonnet Opus LLM chatbot roleplay jailbreak uncensored character prompt templates",
+    "url": "https://github.com/Anthropic-Claude-Mythos/Claude-Mythos-AI-App",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-06T17:35:13Z",
+    "stars": 49,
+    "language": "C#",
+    "frontier": 75,
+    "signal": 85,
+    "score": 79,
+    "llm_summary": "Claude 3.5 Sonnet 前端客户端，支持角色扮演与提示词模板",
+    "llm_tags": [
+      "Claude",
+      "前端",
+      "客户端",
+      "角色扮演"
+    ]
+  },
+  {
     "id": "4de8359fb3ed",
     "title": "Job Searcher",
     "summary": "",
@@ -560,6 +581,26 @@
     "score": 6.2
   },
   {
+    "id": "4d101a3ff4bd",
+    "title": "Forsy-AI/forsy-trace-skill ⭐100",
+    "summary": "Open skill for capturing AI agent work as structured traces.",
+    "url": "https://github.com/Forsy-AI/forsy-trace-skill",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-05T08:31:53Z",
+    "stars": 100,
+    "language": "Python",
+    "frontier": 95,
+    "signal": 90,
+    "score": 93,
+    "llm_summary": "开源技能用于结构化捕获 AI Agent 工作流",
+    "llm_tags": [
+      "Agent",
+      "可观测性",
+      "开源"
+    ]
+  },
+  {
     "id": "2f179ae337cf",
     "title": "Is it allowed to use OpenAI API outputs to create a silver code dataset or benchmark for a specific Python library? [d]",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hello everyone,</p> <p>Is it allowed to use OpenAI API outputs to create a silver code dataset or benchmark for a specific Python library?</p> <p>I am working on a pr",
@@ -849,6 +890,27 @@
     "score": 8.2
   },
   {
+    "id": "9d85a08515bb",
+    "title": "myccarl/ai-shortVideo-pipeline ⭐54",
+    "summary": "End-to-end AI short-video production pipeline. FastAPI orchestration + Spring Boot gateway with multi-model failover, circuit breaker, metering, and full-stack observability. AI quality gating: prompt",
+    "url": "https://github.com/myccarl/ai-shortVideo-pipeline",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-04T13:49:51Z",
+    "stars": 54,
+    "language": "Python",
+    "frontier": 75,
+    "signal": 85,
+    "score": 79,
+    "llm_summary": "开源端到端短视频生产流水线，含多模型容错与质量门控",
+    "llm_tags": [
+      "短视频",
+      "微服务",
+      "容错机制",
+      "质量门控"
+    ]
+  },
+  {
     "id": "e42cec4394cc",
     "title": "Forlives/cloudsight-ai ⭐56",
     "summary": "云鉴 CloudSight AI — dual-engine IoT encrypted-traffic threat detection (showcase: full UI + demo backend + bilingual docs)",
@@ -1127,6 +1189,26 @@
     ],
     "llm_reason": "内容聚焦LLM系统架构核心模式，信息密度高且实用性强，适合计算机专业学生深入理解技术细节。",
     "score": 8.7
+  },
+  {
+    "id": "952330dc05d5",
+    "title": "techjarves/Local-AI-Image-Generator ⭐117",
+    "summary": "A fully self-contained, offline AI image generation studio for Windows. Runs Stable Diffusion (Safetensors/GGUF) locally with zero manual setup. Auto-configures CUDA for Nvidia GPUs and Vulkan for AMD",
+    "url": "https://github.com/techjarves/Local-AI-Image-Generator",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-04T03:45:01Z",
+    "stars": 117,
+    "language": "JavaScript",
+    "frontier": 45,
+    "signal": 82,
+    "score": 60,
+    "llm_summary": "零配置本地AI绘图工作室",
+    "llm_tags": [
+      "本地部署",
+      "Stable Diffusion",
+      "Windows工具"
+    ]
   },
   {
     "id": "75cbc7993bec",
@@ -1672,162 +1754,6 @@
       "Hugging Face"
     ],
     "llm_reason": "Computer Use Agent 是当前 AI 领域的前沿热点。该内容对 CS 学生极具实用价值，本地部署特性也高度契合底层技术学习与探索的需求。",
-    "score": 8
-  },
-  {
-    "id": "36399780627b",
-    "title": "TheStageAI/edge-lm ⭐72",
-    "summary": "Tiny llms optimised for edge deployment ",
-    "url": "https://github.com/TheStageAI/edge-lm",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-02T13:46:30Z",
-    "stars": 72,
-    "language": "Python",
-    "llm_score": 8,
-    "llm_summary": "面向边缘部署的微型大语言模型库。",
-    "llm_tags": [
-      "GitHub",
-      "边缘计算",
-      "LLM",
-      "轻量化"
-    ],
-    "llm_reason": "内容简洁明了，提供了具体的 GitHub 项目链接，针对边缘部署这一热门且实用的场景，具有较高的参考价值。",
-    "score": 8
-  },
-  {
-    "id": "ed8837388007",
-    "title": "Amazinghorseli/RedNote-Insight ⭐44",
-    "summary": "小红书爆款雷达 - 翻评论、找痛点、定方向，用 AI 从评论区挖出下一个爆款",
-    "url": "https://github.com/Amazinghorseli/RedNote-Insight",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-02T12:48:34Z",
-    "stars": 44,
-    "language": "Python",
-    "llm_score": 8,
-    "llm_summary": "利用AI分析小红书评论挖掘爆款方向。",
-    "llm_tags": [
-      "GitHub",
-      "小红书",
-      "数据分析",
-      "AI应用"
-    ],
-    "llm_reason": "内容展示了具体的AI落地应用场景，具有实际参考价值，且信息密度较高。",
-    "score": 8
-  },
-  {
-    "id": "deedd27d2abf",
-    "title": "weicj/vLLM-2080Ti-Definitive ⭐34",
-    "summary": "The definitive vLLM runtime for dual RTX 2080 Ti 22GB + NVLink, delivering 27B/31B local inference with 100+ tok/s single-request decode and native 262K context.",
-    "url": "https://github.com/weicj/vLLM-2080Ti-Definitive",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-02T12:15:32Z",
-    "stars": 34,
-    "language": "Python",
-    "llm_score": 8,
-    "llm_summary": "双卡RTX 2080 Ti运行vLLM实现27B大模型高速推理的配置方案",
-    "llm_tags": [
-      "vLLM",
-      "开源项目",
-      "LLM部署",
-      "硬件优化"
-    ],
-    "llm_reason": "该项目对CS学生极具实用参考价值，展示了如何通过底层硬件（NVLink）与推理框架（vLLM）的深度优化，在消费级/准专业级显卡上实现大模型的高效部署，非常契合学习LLM工程化落地的需求。",
-    "score": 8
-  },
-  {
-    "id": "4f554dbbc638",
-    "title": "The Download: AI can run your admin department now",
-    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How small businesses can leverage AI From accounting to design to market research and product development, there’s a staggering breadth of skills needed to run a business. Large companies can hire&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/02/1138277/the-download-ai-tips-small-businesses-admin/",
-    "source": "MIT Tech Review AI",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-02T12:10:00+00:00",
-    "llm_score": 5.8,
-    "llm_summary": "探讨AI如何赋能小企业各部门运营。",
-    "llm_tags": [
-      "AI应用",
-      "商业落地",
-      "行业趋势"
-    ],
-    "llm_reason": "内容涉及AI在商业领域的应用，但信息密度较低，多为泛泛而谈，缺乏具体技术细节。",
-    "score": 5.8
-  },
-  {
-    "id": "ddafa86cc40b",
-    "title": "The Download: AI can run your admin department now",
-    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How small businesses can leverage AI From accounting to design to market research and product development, there’s a staggering breadth of skills needed to run a business. Large companies can hire&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/02/1138277/the-download-ai-tips-small-businesses-admin/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-02T12:10:00+00:00",
-    "llm_score": 5.8,
-    "llm_summary": "探讨AI在中小企业管理中的应用潜力。",
-    "llm_tags": [
-      "AI应用",
-      "商业管理",
-      "MIT Tech Review"
-    ],
-    "llm_reason": "内容涉及AI在商业流程中的应用，但信息密度较低，缺乏具体技术细节，仅适合作为泛读素材。",
-    "score": 5.8
-  },
-  {
-    "id": "d4a7d061f055",
-    "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
-    "summary": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand.",
-    "url": "https://openai.com/index/travelers",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-06-02T12:00:00+00:00",
-    "llm_score": 6,
-    "llm_summary": "Travelers利用OpenAI推出全国性AI理赔助手，提供全天候客服。",
-    "llm_tags": [
-      "企业应用",
-      "案例分析",
-      "LLM",
-      "客服机器人"
-    ],
-    "llm_reason": "该内容展示了LLM在大型企业中的实际落地场景，对了解AI商业应用有参考价值；但属于偏营销的客户案例，缺乏底层技术细节，技术信息密度一般。",
-    "score": 6
-  },
-  {
-    "id": "2d21c6771add",
-    "title": "Rehumanizing global health care with agentic AI",
-    "summary": "The global health care sector is under increasing strain.&#160; Decades of chronic underinvestment and constraints in recruitment have coincided with a surge in demand for services for aging populations. Gaps in provision are already taking a toll, with fragmented access to care and high rates of stress and burnout among staff. And it’s getting worse.&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/02/1137827/rehumanizing-global-health-care-with-agentic-ai/",
-    "source": "MIT Tech Review AI",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-02T11:23:34+00:00",
-    "llm_score": 7,
-    "llm_summary": "探讨 AI 代理如何重塑全球医疗体系。",
-    "llm_tags": [
-      "AI应用",
-      "医疗健康",
-      "前沿趋势"
-    ],
-    "llm_reason": "内容涉及 AI 在医疗领域的具体应用场景，具有前沿性和一定的实用性，但摘要截断导致信息密度和可读性受限。",
-    "score": 7
-  },
-  {
-    "id": "9f17ec9ebf91",
-    "title": "Soul-AILab/SoulX-Transcriber ⭐126",
-    "summary": "An end-to-end framework for multi-speaker transcription that jointly models who spoke, when, and what.",
-    "url": "https://github.com/Soul-AILab/SoulX-Transcriber",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-02T05:08:08Z",
-    "stars": 126,
-    "language": "Python",
-    "llm_score": 8,
-    "llm_summary": "开源多说话人语音转写框架，联合建模说话人、时间和内容。",
-    "llm_tags": [
-      "开源项目",
-      "语音识别",
-      "多说话人"
-    ],
-    "llm_reason": "内容涉及具体的开源项目，信息密度高，对学习 ASR 和多说话人建模有实际参考价值。",
     "score": 8
   }
 ]
