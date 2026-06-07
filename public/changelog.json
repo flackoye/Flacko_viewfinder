@@ -1,11 +1,21 @@
 {
   "announcement": {
-    "message": "评分系统重构：4 维 AND 门 → 2 维 OR 门，让LLM的筛选更合理！",
-    "type": "success",
+    "message": "笔记系统下线，站点方向调整：聚焦 AI 热点 + 项目探索！",
+    "type": "info",
     "date": "2026-06-07",
     "dismissible": true
   },
   "entries": [
+    {
+      "version": "v2.2.0",
+      "date": "2026-06-07",
+      "title": "站点方向调整：笔记系统下线",
+      "changes": [
+        { "type": "removal", "description": "移除笔记系统（页面、组件、附件服务、样式）" },
+        { "type": "improvement", "description": "导航栏精简，首页入口改为「AI 热点」" },
+        { "type": "improvement", "description": "站点定位聚焦为：AI 热点聚合 + 开源项目探索" }
+      ]
+    },
     {
       "version": "v2.1.8",
       "date": "2026-06-07",

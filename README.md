@@ -24,7 +24,6 @@ src/
 │   ├── page.tsx                # 首页（每日一言）
 │   ├── about/page.tsx          # 关于我
 │   ├── changelog/page.tsx      # 更新日志（读 changelog.json → ChangelogView）
-│   ├── notes/page.tsx          # 笔记（待建设）
 │   ├── projects/page.tsx       # 项目展示（待建设）
 │   ├── trending/page.tsx       # AI 热点（读 trending.json → TimelineView）
 │   └── globals.css             # 全局样式 + 玻璃拟态设计系统

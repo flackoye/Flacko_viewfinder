@@ -92,8 +92,8 @@ export default function HomeContent({ initialQuote }: { initialQuote: Quote }) {
 
           {/* 导航按钮 */}
           <div className="flex items-center justify-center gap-4 mt-10">
-            <Link href="/notes" className="glass-btn px-6 py-3 font-medium hover-lift">
-              浏览笔记
+            <Link href="/trending" className="glass-btn px-6 py-3 font-medium hover-lift">
+              AI 热点
             </Link>
             <Link href="/changelog" className="glass-btn-outline px-6 py-3 font-medium hover-lift">
               日志公告

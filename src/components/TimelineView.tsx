@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MessageSquare, FileText, ArrowUpRight, Star, Code2, Globe, Flame, Sparkles, Trophy } from 'lucide-react';
 
 export interface TrendingItem {
@@ -56,8 +56,35 @@ function formatDateKey(date: Date): string {
 
 const MEDALS = ['🥇', '🥈', '🥉'];
 
+/** 根据当前时间计算下次更新时间（CI cron: UTC 0:00 / 12:00 → 北京时间 08:00 / 20:00） */
+function getNextUpdateTime(): string {
+  const now = new Date();
+  const utcHour = now.getUTCHours();
+  const target = new Date(now);
+
+  if (utcHour < 12) {
+    target.setUTCHours(12, 0, 0, 0);
+  } else {
+    target.setUTCDate(target.getUTCDate() + 1);
+    target.setUTCHours(0, 0, 0, 0);
+  }
+
+  const h = target.getHours().toString().padStart(2, '0');
+  const m = target.getMinutes().toString().padStart(2, '0');
+  const isToday = target.toDateString() === now.toDateString();
+
+  return `${isToday ? '今天' : '明天'} ${h}:${m}`;
+}
+
 export default function TimelineView({ items }: { items: TrendingItem[] }) {
   const [activeTab, setActiveTab] = useState<'all' | 'today'>('all');
+  const [nextUpdate, setNextUpdate] = useState('');
+
+  useEffect(() => {
+    setNextUpdate(getNextUpdateTime());
+    const timer = setInterval(() => setNextUpdate(getNextUpdateTime()), 60000);
+    return () => clearInterval(timer);
+  }, []);
 
   // 判断是否为今天
   const todayKey = formatDateKey(new Date());
@@ -99,13 +126,15 @@ export default function TimelineView({ items }: { items: TrendingItem[] }) {
   return (
     <div className="max-w-3xl mx-auto px-6 py-12">
       {/* 标题 */}
-      <div className="mb-8">
-        <h1 className="text-4xl font-bold mb-3">
+      <div className="mb-8 flex items-end justify-between gap-4">
+        <h1 className="text-4xl font-bold">
           <span className="gradient-text">AI 热点</span>
         </h1>
-        <p className="text-text-muted">
-          LLM 筛选 · 每 12 小时更新 · {uniqueSourceCount} 源聚合 · 保留最近 5 天
-        </p>
+        {nextUpdate && (
+          <span className="text-sm text-text-muted whitespace-nowrap">
+            下次更新：{nextUpdate}
+          </span>
+        )}
       </div>
 
       {/* ========== 统计卡片 ========== */}
