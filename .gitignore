@@ -1,38 +1,43 @@
-# build output
-dist/
+# dependencies
+node_modules/
 
 # next.js build
 .next/
-
-# dependencies
-node_modules/
+dist/
 
 # logs
 npm-debug.log*
 
 # environment variables
 .env
+.env.local
 .env.production
+.env.*.local
 
 # macOS
 .DS_Store
 
 # IDE
 .idea/
-
-# VSCode — 只跟踪共享配置，忽略个人设置
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
 
-# Astro (legacy)
-.astro/
-
-# Python virtual environment
+# Python
 .venv/
+__pycache__/
+*.pyc
 
-# Local proxy script (everyone has different proxy settings)
+# TypeScript build info
+tsconfig.tsbuildinfo
+
+# Local personal scripts
 proxy-push.bat
+scripts/stats_monitor.py
 
-# Claude Code
+# Claude Code session data
 .claude/
+
+# Runtime data (CI auto-updates)
+# Note: trending.json is NOT ignored — CI needs to commit it
+public/trending_stats.json
