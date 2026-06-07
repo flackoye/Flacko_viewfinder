@@ -45,6 +45,7 @@ jobs:
           ARXIV_UTILITY_THRESHOLD: "70"
           ARXIV_COMPOSITE_THRESHOLD: "65"
           ARXIV_MAX_ITEMS_PER_SOURCE: "100"
+          ARXIV_MAX_AFTER_COARSE: "20"
         run: python scripts/fetch_trending.py
 
       - name: Commit changes

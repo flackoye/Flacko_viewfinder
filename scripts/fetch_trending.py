@@ -71,6 +71,7 @@ ARXIV_FRONTIER_THRESHOLD = int(_env("ARXIV_FRONTIER_THRESHOLD", "70"))
 ARXIV_UTILITY_THRESHOLD = int(_env("ARXIV_UTILITY_THRESHOLD", "70"))
 ARXIV_COMPOSITE_THRESHOLD = int(_env("ARXIV_COMPOSITE_THRESHOLD", "65"))
 ARXIV_MAX_ITEMS_PER_SOURCE = int(_env("ARXIV_MAX_ITEMS_PER_SOURCE", "100"))
+ARXIV_MAX_AFTER_COARSE = int(_env("ARXIV_MAX_AFTER_COARSE", "20"))  # 粗筛后上限，保护 API 额度
 
 # --- LLM ---
 GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7-flash")
@@ -448,7 +449,14 @@ async def fetch_arxiv() -> list[dict]:
             except Exception as e:
                 print(f"  ⚠ {source['name']}: {e}")
 
-    print(f"  📄 ArXiv 粗筛后合计: {len(all_items)} items")
+    # 粗筛后上限保护：按时间倒序截断，只保留最新的
+    if len(all_items) > ARXIV_MAX_AFTER_COARSE:
+        all_items.sort(key=lambda x: x.get("timestamp", ""), reverse=True)
+        dropped = len(all_items) - ARXIV_MAX_AFTER_COARSE
+        all_items = all_items[:ARXIV_MAX_AFTER_COARSE]
+        print(f"  ✂️ 粗筛后截断: 保留 {ARXIV_MAX_AFTER_COARSE} 条，丢弃 {dropped} 条")
+
+    print(f"  📄 ArXiv 最终送筛: {len(all_items)} items")
     return all_items
 
 
