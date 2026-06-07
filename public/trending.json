@@ -1,5 +1,100 @@
 [
   {
+    "id": "563cff98010d",
+    "title": "dvlt.cu: inference engine written from scratch in CUDA/C++ for NVIDIA's DVLT 3D transformer model",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tyu79c/dvltcu_inference_engine_written_from_scratch_in/\"> <img alt=\"dvlt.cu: inference engine written from scratch in CUDA/C++ f",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyu79c/dvltcu_inference_engine_written_from_scratch_in/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T22:04:08+00:00",
+    "frontier": 85,
+    "signal": 88,
+    "score": 86,
+    "llm_summary": "为DVLT 3D Transformer模型从零编写CUDA推理引擎",
+    "llm_tags": [
+      "3D Transformer",
+      "CUDA",
+      "推理引擎",
+      "本地部署"
+    ]
+  },
+  {
+    "id": "2b2f16eaf29d",
+    "title": "Z.ai, we need Air! GLM GGUF wen?",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>First we never saw an upgraded Air model after 4.5. Then GLM 4.7 Turbo was great, but quickly surpassed for coding. Now GLM 5.1 is a coding beast, but too huge for mo",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyresc/zai_we_need_air_glm_gguf_wen/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T20:06:46+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "用户呼吁 Z.ai 发布轻量级 GLM 模型",
+    "llm_tags": [
+      "GLM",
+      "量化",
+      "本地部署",
+      "模型评测"
+    ]
+  },
+  {
+    "id": "e24421291b9d",
+    "title": "120 tok/s on 12GB VRAM with Gemma 4 12B QAT MTP",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Google just released the QAT (Quantization-Aware Training) variant of their Gemma 4 models, including 12B, so it was only natural for me to benchmark it on my 12GB GP",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1typjmc/120_toks_on_12gb_vram_with_gemma_4_12b_qat_mtp/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T18:53:19+00:00",
+    "frontier": 85,
+    "signal": 78,
+    "score": 82,
+    "llm_summary": "Gemini 4 QAT 量化模型实测性能",
+    "llm_tags": [
+      "量化",
+      "推理",
+      "性能优化",
+      "Gemma"
+    ]
+  },
+  {
+    "id": "69e6ab806784",
+    "title": "KV cache quant benchmarks: KVarN 6-bit matches q8_0, 4-bit matches q5_0. Massive!",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>TL;DR Based on long context KLD benchmarks, KVarN appears to be</strong> <strong><em>just better</em></strong> <strong>than usual llama.cpp KV cache quants. A",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyockn/kv_cache_quant_benchmarks_kvarn_6bit_matches_q8_0/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T18:06:48+00:00",
+    "frontier": 85,
+    "signal": 88,
+    "score": 86,
+    "llm_summary": "KVarN 6-bit量化性能媲美q8_0，4-bit接近q5_0",
+    "llm_tags": [
+      "KV Cache",
+      "量化",
+      "推理加速",
+      "LLM"
+    ]
+  },
+  {
+    "id": "d10f3c3dc955",
+    "title": "Gemma 4 QAT Unquantized Heretic is here",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tynv0p/gemma_4_qat_unquantized_heretic_is_here/\"> <img alt=\"Gemma 4 QAT Unquantized Heretic is here\" src=\"https://external-previ",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tynv0p/gemma_4_qat_unquantized_heretic_is_here/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-06T17:48:23+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 79,
+    "llm_summary": "Gemma 4 QAT 无量化版本发布",
+    "llm_tags": [
+      "量化",
+      "Gemma 4",
+      "本地部署",
+      "模型优化"
+    ]
+  },
+  {
     "id": "4de8359fb3ed",
     "title": "Job Searcher",
     "summary": "",
@@ -240,6 +335,27 @@
     "score": 8.5
   },
   {
+    "id": "4b01b89184a4",
+    "title": "FerroxLabs/wayland ⭐119",
+    "summary": "Wayland - The AI Agent That Perceives. Reasons. Acts. Evolves.",
+    "url": "https://github.com/FerroxLabs/wayland",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-05T17:38:22Z",
+    "stars": 119,
+    "language": "TypeScript",
+    "frontier": 85,
+    "signal": 75,
+    "score": 81,
+    "llm_summary": "基于 Wayland 的自主 AI 智能体",
+    "llm_tags": [
+      "智能体",
+      "Wayland",
+      "感知",
+      "自主"
+    ]
+  },
+  {
     "id": "d48b3c6ade6e",
     "title": "melojuve31-source/kahoottoolsai-desktop-app ⭐75",
     "summary": "Simple and clean standalone desktop application for KahootToolsAi on Windows PC. Easily manage quizzes, study smarter, and generate educational insights with AI assistance.",
@@ -461,6 +577,27 @@
     ],
     "llm_reason": "内容涉及 OpenAI API 的使用规范与代码数据集构建，对开发者具有实际参考价值，信息密度较高。",
     "score": 7.5
+  },
+  {
+    "id": "2161a42b960c",
+    "title": "zengxiao-he/tessera ⭐56",
+    "summary": "From teacher to tiles — a from-scratch LLM distillation & serving engine: custom Triton/CUDA kernels, FSDP distillation, paged-KV continuous batching, speculative decoding, a Rust gateway, a JAX oracl",
+    "url": "https://github.com/zengxiao-he/tessera",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-05T05:02:09Z",
+    "stars": 56,
+    "language": "Python",
+    "frontier": 85,
+    "signal": 88,
+    "score": 86,
+    "llm_summary": "从零构建LLM蒸馏与推理引擎，集成CUDA内核与连续批处理",
+    "llm_tags": [
+      "LLM推理",
+      "模型蒸馏",
+      "CUDA内核",
+      "推理加速"
+    ]
   },
   {
     "id": "d6bfbb06c608",
@@ -1089,6 +1226,27 @@
     "score": 7.8
   },
   {
+    "id": "e750511fbee3",
+    "title": "Ricar66/omnistack-agent ⭐44",
+    "summary": "Platform-agnostic AI agent: one Full-Stack Software Engineer brain, compiled into ready-to-paste adapters for ChatGPT, Claude, Copilot, Gemini & Cursor. Zero-dependency, MIT.",
+    "url": "https://github.com/Ricar66/omnistack-agent",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-03T18:25:02Z",
+    "stars": 44,
+    "language": "JavaScript",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "零依赖全栈AI代理，适配多主流IDE",
+    "llm_tags": [
+      "AI代理",
+      "全栈开发",
+      "IDE插件",
+      "零依赖"
+    ]
+  },
+  {
     "id": "d3886421a90c",
     "title": "How virtual power plants could provide energy for data centers",
     "summary": "Would you take a payment to ramp down your electricity use? Would it change anything if you were doing so to help power a local data center? Google just signed a new deal to help pay for a virtual power plant (VPP) in the largest power grid in the US. The agreement is with Voltus,&#8230;",
@@ -1671,66 +1829,5 @@
     ],
     "llm_reason": "内容涉及具体的开源项目，信息密度高，对学习 ASR 和多说话人建模有实际参考价值。",
     "score": 8
-  },
-  {
-    "id": "7bfbf14108b0",
-    "title": "Somnusochi/VLM-AutoYOLO ⭐65",
-    "summary": "AI Auto Annotation & YOLO Training Pipeline, End-to-end object detection auto-labeling and YOLO training platform. VLM-powered annotation with NVIDIA LocateAnything-3B, manual refinement, one-click YO",
-    "url": "https://github.com/Somnusochi/VLM-AutoYOLO",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-02T03:55:53Z",
-    "stars": 65,
-    "language": "Python",
-    "frontier": 75,
-    "signal": 85,
-    "score": 79,
-    "llm_summary": "基于VLM的端到端目标检测自动标注与训练平台",
-    "llm_tags": [
-      "目标检测",
-      "自动标注",
-      "VLM",
-      "YOLO"
-    ]
-  },
-  {
-    "id": "ec83f57dc9fd",
-    "title": "jd-opensource/JoyAI-Echo ⭐233",
-    "summary": "JoyAI-Echo: Pushing the Frontier of Long Audio-Visual Generation",
-    "url": "https://github.com/jd-opensource/JoyAI-Echo",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-02T03:25:51Z",
-    "stars": 233,
-    "language": "Python",
-    "llm_score": 9,
-    "llm_summary": "开源长音频视觉生成模型，探索前沿多模态技术。",
-    "llm_tags": [
-      "开源项目",
-      "多模态",
-      "长音频"
-    ],
-    "llm_reason": "内容涉及长音频视觉生成这一前沿多模态方向，GitHub Star 数量高，具有很高的技术参考价值和实用性。",
-    "score": 9
-  },
-  {
-    "id": "04b56e1b73b3",
-    "title": "zonghaoyuan/infiplot ⭐119",
-    "summary": "InfiPlot is the world's first interactive plot game that AI generates all text and images in real-time. InfiPlot是全球首个由 AI 实时生成全部图文内容的交互式剧情游戏",
-    "url": "https://github.com/zonghaoyuan/infiplot",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-02T02:49:30Z",
-    "stars": 119,
-    "language": "TypeScript",
-    "llm_score": 7,
-    "llm_summary": "AI实时生成图文的交互式剧情游戏Demo",
-    "llm_tags": [
-      "AI应用",
-      "交互式体验",
-      "GitHub"
-    ],
-    "llm_reason": "展示了AI在实时生成图文内容方面的前沿应用潜力，具有很高的技术演示和参考价值。",
-    "score": 7
   }
 ]
