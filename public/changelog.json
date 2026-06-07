@@ -1,11 +1,22 @@
 {
   "announcement": {
-    "message": "笔记系统下线！",
-    "type": "info",
-    "date": "2026-06-07",
+    "message": "🧭 万象索骥上线！帮你找到最适合的 AI 开源项目",
+    "type": "feature",
+    "date": "2026-06-08",
     "dismissible": true
   },
   "entries": [
+    {
+      "version": "v2.3.0",
+      "date": "2026-06-08",
+      "title": "万象索骥上线：RAG + 苏格拉底式引导",
+      "changes": [
+        { "type": "feature", "description": "新增 AI 项目导航页面，苏格拉底式引导对话帮你找到最适合的 AI 开源项目" },
+        { "type": "feature", "description": "RAG 检索：GitHub 150+ 高星项目 README 切块 + 智谱 Embedding 向量化 + Top-K 余弦检索" },
+        { "type": "feature", "description": "流式对话：SSE 实时输出 + Phase 进度追踪 + 追问建议 + 项目卡片推荐" },
+        { "type": "feature", "description": "Phase 文档式 UI：探索方向 → 细化需求 → 项目推荐，三阶段递进" }
+      ]
+    },
     {
       "version": "v2.2.0",
       "date": "2026-06-07",

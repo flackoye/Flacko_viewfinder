@@ -41,6 +41,22 @@ Python 管道 (scripts/fetch_trending.py)
 - `/changelog` 页面用 `ChangelogView` 渲染时间线
 - 用户关闭公告后 localStorage 记住日期，不再显示
 
+### AI 项目导航 —「万象索骥」（RAG + 双模式）
+```
+线下 Python 管道：
+  GitHub Search API (7 分类, 每类 ~15 个高星项目)
+  → 拉 README → Markdown 感知切块 (~1500 字符/块)
+  → 智谱 Embedding-3 (512 维) → public/project_embeddings.json
+  → 项目元数据 → public/projects.json
+
+线上 Next.js 多页面架构：
+  /projects          → 落地页（数据概览 + 分类分布 + 管道图 + 模式选择）
+  /projects/explore  → 引导模式（Socratic 表格交互 + Klein Blue 选项）
+  /projects/assistant → 助手模式（自由对话）
+  POST /api/projects → mode=guided|assistant + category 过滤
+  → SSE 流式输出 (chunk/options/suggestions/projects/done)
+```
+
 ### 前端设计系统
 - 玻璃拟态（glassmorphism）：`.glass`、`.glass-btn`、`.glass-nav` 等 CSS 类在 `globals.css`
 - 暗色主题为主，CSS 变量控制主题色
@@ -55,7 +71,9 @@ Python 管道 (scripts/fetch_trending.py)
 | 热点 | `/trending` | ✅ 完成 | 时间线 + 统计卡片 + 来源标签 |
 | 更新日志 | `/changelog` | ✅ 完成 | 版本时间线 + 顶部公告 |
 | 关于 | `/about` | ✅ 完成 | 个人信息 + 技术栈 + 收藏网址 |
-| 项目 | `/projects` | 🔲 空壳 | 待接入 GitHub API / RAG 项目展示 |
+| 项目落地页 | `/projects` | ✅ 完成 | 万象索骥 — 数据概览 + 分类分布 + 模式选择 |
+| 引导探索 | `/projects/explore` | ✅ 完成 | Socratic 表格交互 + Klein Blue 选项 + 项目推荐 |
+| 自由对话 | `/projects/assistant` | ✅ 完成 | 直接聊天 + RAG 检索 + 项目卡片 |
 
 ## 关键文件速查
 
@@ -66,6 +84,13 @@ Python 管道 (scripts/fetch_trending.py)
 | 改管道配置 | `.env`（本地）, `.github/workflows/trending.yml`（CI） |
 | 加公告/更新日志 | `public/changelog.json` |
 | 改热点 UI | `src/components/TimelineView.tsx` |
+| 改项目落地页 | `src/components/ProjectLanding.tsx` |
+| 改引导探索 | `src/components/GuidedExplore.tsx` + `src/components/OptionTable.tsx` |
+| 改自由对话 | `src/components/AssistantChat.tsx` |
+| 改 RAG 检索/Prompt | `src/lib/rag.ts` → `buildGuidedPrompt()`, `buildAssistantPrompt()`, `retrieveTopK()` |
+| 改项目 API | `src/app/api/projects/route.ts` |
+| 改分类定义 | `src/lib/categories.ts` |
+| 重建 RAG 索引 | `scripts/build_rag_index.py` → 输出 `public/project_embeddings.json` |
 | 改全局样式 | `src/app/globals.css` |
 | 改导航 | `src/components/Navbar.tsx` |
 | 改主题系统 | `src/components/Customizer.tsx` + `src/lib/settings.ts` |
@@ -75,12 +100,15 @@ Python 管道 (scripts/fetch_trending.py)
 ```bash
 npm install && npm run dev                    # Next.js 开发服务器
 .venv/Scripts/python.exe scripts/fetch_trending.py  # 手动跑热点管道
+PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py  # 重建项目索引
 ```
 
 ## 注意事项
 
-- AGENTS.md 里有 Next.js 16 breaking changes 警告：写代码前先读 `node_modules/next/dist/docs/`
-- `.env` 里有 ZHIPU_API_KEY，不要泄露
+- Next.js 16 有 breaking changes：写代码前先读 `node_modules/next/dist/docs/`
+- `.env` 里有 ZHIPU_API_KEY 和 GITHUB_TOKEN，不要泄露
 - `public/trending.json` 和 `public/changelog.json` 是运行时数据，CI 会自动更新
-- 前端 `page.tsx` 用 `fs.readFileSync` 读 JSON（SSR），不是客户端 fetch
+- `public/projects.json` (~110KB) 和 `public/project_embeddings.json` (~40MB) 是 RAG 索引数据
+- 前端 SSR 页面用 `fs.readFileSync` 读 JSON；API Route 用模块级缓存避免重复加载
 - 旧的 `src/lib/trending.ts` 前端实时抓取方案已废弃并清除
+- 项目导航 API Route (`/api/projects`) 使用 SSE 流式输出，模块级缓存 embedding 索引

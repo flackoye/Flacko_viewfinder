@@ -54,7 +54,9 @@ export default function Navbar() {
         {/* 右侧导航 */}
         <div className="hidden md:flex items-center gap-1">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const isActive = item.href === '/projects'
+              ? pathname === '/projects' || pathname.startsWith('/projects/')
+              : pathname === item.href;
             return (
               <Link
                 key={item.name}
@@ -104,7 +106,9 @@ export default function Navbar() {
         >
           <div className="px-6 py-4 space-y-1">
             {navItems.map((item) => {
-              const isActive = pathname === item.href;
+              const isActive = item.href === '/projects'
+                ? pathname === '/projects' || pathname.startsWith('/projects/')
+                : pathname === item.href;
               return (
                 <Link
                   key={item.name}

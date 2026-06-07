@@ -7,6 +7,7 @@ import { RefreshCw } from 'lucide-react';
 import { fetchQuote, type Quote } from '@/lib/quotes';
 import { useSettings } from '@/components/SettingsProvider';
 import PetCharacter from '@/components/PetCharacter';
+import Customizer from '@/components/Customizer';
 
 export default function HomeContent({ initialQuote }: { initialQuote: Quote }) {
   const [quote, setQuote] = useState(initialQuote);
@@ -30,6 +31,9 @@ export default function HomeContent({ initialQuote }: { initialQuote: Quote }) {
     <>
       {/* ========== 小宠物 ========== */}
       <PetCharacter />
+
+      {/* ========== 背景设置（仅主页） ========== */}
+      <Customizer />
 
       {/* ========== Hero 区域：动态背景 + 每日一言 ========== */}
       <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">

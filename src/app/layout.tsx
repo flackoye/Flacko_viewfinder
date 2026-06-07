@@ -6,7 +6,6 @@ import path from "path";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Customizer from "@/components/Customizer";
 import { SettingsProvider } from "@/components/SettingsProvider";
 import AnnouncementBanner from "@/components/AnnouncementBanner";
 
@@ -59,7 +58,6 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
-          <Customizer />
         </SettingsProvider>
         <Analytics />
       </body>

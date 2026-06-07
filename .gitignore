@@ -41,3 +41,6 @@ scripts/stats_monitor.py
 # Runtime data (CI auto-updates)
 # Note: trending.json is NOT ignored — CI needs to commit it
 public/trending_stats.json
+
+# RAG embedding index (39MB, too large for git, rebuild locally)
+public/project_embeddings.json

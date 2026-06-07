@@ -15,6 +15,9 @@
   --color-text-dim: #6b7280;
   --color-border: rgba(255, 255, 255, 0.1);
   --color-border-light: rgba(255, 255, 255, 0.16);
+  --color-klein: #2979E6;
+  --color-klein-light: #5BA3F5;
+  --color-klein-dim: #1E60D1;
   --font-sans: var(--font-inter), var(--font-noto-sans-sc), system-ui, sans-serif;
   --animate-pulse-slow: pulse-slow 3s ease-in-out infinite;
 }
@@ -439,4 +442,167 @@ input:focus {
       )
       scale(0.3);
   }
+}
+
+/* ========== 项目导航聊天样式 ========== */
+
+/* 流式光标 */
+.typing-cursor::after {
+  content: '▍';
+  color: var(--color-accent);
+  animation: blink 0.8s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* 消息滑入 */
+.chat-msg-enter {
+  animation: chatMsgIn 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes chatMsgIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 三点 thinking 脉动 */
+.thinking-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  animation: thinkingPulse 1.2s ease-in-out infinite;
+}
+
+@keyframes thinkingPulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.4); }
+}
+
+/* 横向滚动隐藏滚动条 */
+.chips-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.chips-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* ========== 万象索骥专用样式 ========== */
+
+/* Klein Blue 渐变文字 */
+.klein-gradient-text {
+  background: linear-gradient(135deg, #5BA3F5 0%, var(--color-klein) 50%, #818CF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gemini 星标动画 */
+.gemini-star {
+  animation: geminiGlow 3s ease-in-out infinite;
+}
+
+@keyframes geminiGlow {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(102, 126, 234, 0.4)); }
+  50% { filter: drop-shadow(0 0 20px rgba(102, 126, 234, 0.7)); }
+}
+
+/* 选项行 */
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  color: inherit;
+}
+
+.option-row:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.option-row.selected {
+  background: rgba(0, 47, 167, 0.08);
+  border-color: rgba(0, 47, 167, 0.3);
+}
+
+/* Klein Blue 选中按钮 */
+.option-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  flex-shrink: 0;
+}
+
+.option-btn.selected {
+  background: var(--color-klein);
+  border-color: var(--color-klein);
+  box-shadow: 0 0 16px rgba(0, 47, 167, 0.35);
+}
+
+.option-btn.selected::after {
+  content: '✓';
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* 分类分布条 */
+.category-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--color-klein), var(--color-klein-light));
+  transition: width 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* 管道步骤 */
+.pipeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.pipeline-step-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.pipeline-step:hover .pipeline-step-icon {
+  background: rgba(0, 47, 167, 0.15);
+  border-color: rgba(0, 47, 167, 0.3);
 }
