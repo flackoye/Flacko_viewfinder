@@ -19,8 +19,8 @@ export default function ChatMessage({
   if (message.role === 'user') {
     return (
       <div className="flex items-start gap-2 py-2 chat-msg-enter">
-        <span className="text-accent text-sm shrink-0 pt-0.5 font-bold">▸</span>
-        <span className="text-text text-sm leading-relaxed">{message.content}</span>
+        <span className="text-accent text-base shrink-0 pt-0.5 font-bold">▸</span>
+        <span className="text-text text-base leading-relaxed">{message.content}</span>
       </div>
     );
   }
@@ -30,7 +30,7 @@ export default function ChatMessage({
     return (
       <div className="py-2 chat-msg-enter">
         <div className="flex items-center gap-3">
-          <span className="text-sm text-red-400/80">{message.content}</span>
+          <span className="text-base text-red-400/80">{message.content}</span>
           <button
             onClick={onRetry}
             className="glass-btn-outline px-3 py-1.5 text-xs inline-flex items-center gap-1.5 hover-lift"
@@ -50,10 +50,10 @@ export default function ChatMessage({
     <div className="py-2 chat-msg-enter">
       {/* Markdown 正文 */}
       {displayContent && (
-        <div className="text-sm text-text-muted leading-relaxed prose prose-invert prose-sm max-w-none
+        <div className="text-base text-text-muted leading-relaxed prose prose-invert max-w-none
           prose-headings:text-text prose-headings:font-semibold
           prose-a:text-accent prose-a:no-underline hover:prose-a:underline
-          prose-code:text-accent/80 prose-code:bg-accent/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-xs prose-code:before:content-none prose-code:after:content-none
+          prose-code:text-accent/80 prose-code:bg-accent/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:before:content-none prose-code:after:content-none
           prose-pre:bg-bg-deep prose-pre:border prose-pre:border-border prose-pre:rounded-lg
           prose-strong:text-text
           prose-li:text-text-muted
