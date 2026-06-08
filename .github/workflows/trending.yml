@@ -30,8 +30,8 @@ jobs:
 
       - name: Fetch & filter trending
         env:
-          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
-          ZHIPU_MODEL: "glm-4.7-flash"
+          ZHIPU_TRENDING_API_KEY: ${{ secrets.ZHIPU_TRENDING_API_KEY }}
+          ZHIPU_MODEL: "glm-4.7"
           ZHIPU_TEMPERATURE: "0.1"
           ZHIPU_MAX_TOKENS: "512"
           FRONTIER_THRESHOLD: "80"
