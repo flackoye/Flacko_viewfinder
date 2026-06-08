@@ -102,6 +102,7 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
       const decoder = new TextDecoder();
       let buffer = '';
       let gotProjects = false;
+      let receivedContent = false;
 
       while (true) {
         const { done, value } = await reader.read();
@@ -117,6 +118,7 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
             const data = JSON.parse(trimmed.slice(5).trim());
             switch (data.type) {
               case 'chunk':
+                receivedContent = true;
                 setMessages(prev => {
                   const u = [...prev];
                   const l = u[u.length - 1];
@@ -151,6 +153,16 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
             }
           } catch { /* skip */ }
         }
+      }
+
+      // 空响应（GLM 限流/故障，流正常结束但无内容）→ 标记为失败，显示重试
+      if (!receivedContent) {
+        setMessages(prev => {
+          const u = [...prev];
+          const l = u[u.length - 1];
+          if (l?.role === 'assistant') u[u.length - 1] = { ...l, content: '⚠️ 未收到回复，请重试', failed: true };
+          return u;
+        });
       }
 
       if (!gotProjects) setRound(prev => prev + 1);

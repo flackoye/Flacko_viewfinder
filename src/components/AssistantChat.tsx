@@ -101,6 +101,7 @@ export default function AssistantChat() {
       const reader = res.body!.getReader();
       const decoder = new TextDecoder();
       let buffer = '';
+      let receivedContent = false;
 
       while (true) {
         const { done, value } = await reader.read();
@@ -117,6 +118,7 @@ export default function AssistantChat() {
             const data = JSON.parse(trimmed.slice(5).trim());
             switch (data.type) {
               case 'chunk':
+                receivedContent = true;
                 setMessages(prev => {
                   const updated = [...prev];
                   const last = updated[updated.length - 1];
@@ -150,6 +152,18 @@ export default function AssistantChat() {
             }
           } catch { /* skip */ }
         }
+      }
+
+      // 空响应（GLM 限流/故障，流正常结束但无内容）→ 标记为失败，显示重试
+      if (!receivedContent) {
+        setMessages(prev => {
+          const updated = [...prev];
+          const last = updated[updated.length - 1];
+          if (last?.role === 'assistant') {
+            updated[updated.length - 1] = { ...last, content: '⚠️ 未收到回复，请重试', failed: true };
+          }
+          return updated;
+        });
       }
     } catch (err) {
       if ((err as Error).name === 'AbortError') return;

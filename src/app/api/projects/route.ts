@@ -206,8 +206,13 @@ export async function POST(request: NextRequest) {
           }
 
           // 正常完成：后处理
-          finalizeStream(fullText, send);
-          send({ type: 'done' });
+          if (fullText.length === 0) {
+            // GLM 返回空响应（限流/故障），通知前端
+            send({ type: 'done', error: 'empty_response' });
+          } else {
+            finalizeStream(fullText, send);
+            send({ type: 'done' });
+          }
         } catch (err) {
           console.error('Stream error:', err);
           // 已有部分输出 → 保留给用户，执行后处理后正常结束
