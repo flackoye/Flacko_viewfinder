@@ -1,5 +1,60 @@
 [
   {
+    "id": "75ca665493b9",
+    "title": "Intresting! Gemini 3.1 has strongest world knowledge but still choose to be lazy",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u0bi8i/intresting_gemini_31_has_strongest_world/\"> <img alt=\"Intresting! Gemini 3.1 has strongest world knowledge but still cho",
+    "url": "https://www.reddit.com/r/singularity/comments/1u0bi8i/intresting_gemini_31_has_strongest_world/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T15:39:37+00:00",
+    "frontier": 75,
+    "signal": 45,
+    "score": 63,
+    "llm_summary": "社区讨论称Gemini 3.1知识库最强但存在懒惰问题",
+    "llm_tags": [
+      "Gemini",
+      "模型评测",
+      "推理能力"
+    ]
+  },
+  {
+    "id": "d57983146d0f",
+    "title": "If CoT was only a scaffold, does AGI require memory-native reasoning instead of visible thought traces?",
+    "summary": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Icy-Republic-8394\"> /u/Icy-Republic-8394 </a> <br /> <span><a href=\"/r/artificial/comments/1txp7ah/the_strange_thing_about_llm_reasoning_r",
+    "url": "https://www.reddit.com/r/singularity/comments/1u0bed2/if_cot_was_only_a_scaffold_does_agi_require/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T15:35:37+00:00",
+    "frontier": 85,
+    "signal": 60,
+    "score": 75,
+    "llm_summary": "探讨思维链仅是脚手架，AGI是否需原生记忆推理",
+    "llm_tags": [
+      "AGI",
+      "推理机制",
+      "思维链",
+      "系统架构"
+    ]
+  },
+  {
+    "id": "a6a48289f5c5",
+    "title": "Luce Spark: a 35B MoE on a 16 GB GPU, without the offload tax",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u0b3cu/luce_spark_a_35b_moe_on_a_16_gb_gpu_without_the/\"> <img alt=\"Luce Spark: a 35B MoE on a 16 GB GPU, without the offload ta",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0b3cu/luce_spark_a_35b_moe_on_a_16_gb_gpu_without_the/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T15:24:27+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "在16GB显存上运行35B MoE模型，消除卸载开销",
+    "llm_tags": [
+      "MoE",
+      "推理优化",
+      "本地部署"
+    ]
+  },
+  {
     "id": "246020684a8f",
     "title": "\"Chat is dead\": OpenAI preps overhaul of ChatGPT",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u09t2y/chat_is_dead_openai_preps_overhaul_of_chatgpt/\"> <img alt=\"&quot;Chat is dead&quot;: OpenAI preps overhaul of ChatGPT\" s",
@@ -289,6 +344,42 @@
       "智能体",
       "记忆机制",
       "长程任务"
+    ]
+  },
+  {
+    "id": "de0cae61d05a",
+    "title": "SafeGene: Reusable Adapters for Transferable Safety Alignment",
+    "summary": "arXiv:2606.06519v1 Announce Type: new  Abstract: Open-weight LLMs are increasingly fine-tuned into customized assistants, but downstream fine-tuning can weaken safety alignment and make models more vulnerable to malicious prompts, even when the training data is not intentionally harmful. This creates a recurring safety recovery problem as target models are repeatedly updated with new task data or user interactions. We propose SafeGene, a reusable safety-adapter module designed for cross-task reuse within each architecture-compatible model family. Rather than treating safety recovery as a model-specific repair step, SafeGene treats safety capability as an independent, reusable adapter representation decoupled from task-specific updates. This representation is obtained from aligned--degraded",
+    "url": "https://arxiv.org/abs/2606.06519",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-08T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 70,
+    "score": 68,
+    "llm_summary": "提出可复用的安全适配器，解决下游微调导致的安全对齐遗忘问题。",
+    "llm_tags": [
+      "大模型安全",
+      "参数高效微调",
+      "迁移学习"
+    ]
+  },
+  {
+    "id": "e77efb5fc36e",
+    "title": "Teaching the Way, Not the Answer: Privileged Tutoring Distillation for Multimodal Policy Optimization",
+    "summary": "arXiv:2606.07000v1 Announce Type: new  Abstract: Recent post-training methods, particularly Reinforcement Learning with Verifiable Rewards (RLVR), have significantly enhanced the reasoning ability of Large Vision-Language Models (LVLMs). However, the sparse nature of verifiable rewards provides little token-level supervision for failed rollouts, often leading to inefficient exploration in complex multimodal reasoning tasks. Although policy distillation can offer dense guidance, external teacher based methods introduce substantial computational overhead, while answer conditioned tuning methods may expose answer-level information and induce shortcut-like generation behavior. To address these limitations, we propose PTD-PO, a Privileged Tutoring Distillation Policy Optimization framework for ",
+    "url": "https://arxiv.org/abs/2606.07000",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-08T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 65,
+    "llm_summary": "提出特权导师蒸馏解决多模态策略优化中的稀疏奖励问题。",
+    "llm_tags": [
+      "多模态",
+      "强化学习",
+      "模型蒸馏"
     ]
   },
   {
