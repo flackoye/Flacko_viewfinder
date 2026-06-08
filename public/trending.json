@@ -1,5 +1,115 @@
 [
   {
+    "id": "8cce05306c2b",
+    "title": "[3090] Gemma4 QAT + MTP quick TPS numbers [TLDR 1.2-1.8x better]",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u08zhx/3090_gemma4_qat_mtp_quick_tps_numbers_tldr_1218x/\"> <img alt=\"[3090] Gemma4 QAT + MTP quick TPS numbers [TLDR 1.2-1.8x be",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u08zhx/3090_gemma4_qat_mtp_quick_tps_numbers_tldr_1218x/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T14:07:22+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "Gemma4开启QAT与MTP后，3090显卡推理速度提升1.2-1.8倍。",
+    "llm_tags": [
+      "推理加速",
+      "量化",
+      "Gemma"
+    ]
+  },
+  {
+    "id": "2f3e1b27feb5",
+    "title": "mtmd : add video input support by ngxson · Pull Request #24269 · ggml-org/llama.cpp",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u08j3q/mtmd_add_video_input_support_by_ngxson_pull/\"> <img alt=\"mtmd : add video input support by ngxson · Pull Request #24269 ·",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u08j3q/mtmd_add_video_input_support_by_ngxson_pull/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T13:51:20+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "llama.cpp 新增 PR 添加视频输入支持",
+    "llm_tags": [
+      "多模态",
+      "本地部署",
+      "llama.cpp"
+    ]
+  },
+  {
+    "id": "53b121ca3019",
+    "title": "Why I stopped using semantic embeddings for tool selection and switched back to BM25 [D]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>I've been building agents for about a year and recently shipped one for a client running ~140 MCP-exposed tools at peak. Along the way I made the canonical mistake. I",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1u07tlm/why_i_stopped_using_semantic_embeddings_for_tool/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T13:24:03+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "实战经验：在工具选择场景下BM25优于语义嵌入",
+    "llm_tags": [
+      "Agent",
+      "检索",
+      "BM25"
+    ]
+  },
+  {
+    "id": "61a50809ef5d",
+    "title": "The crash that vanished: control and emergence in a five-model economy",
+    "summary": "",
+    "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v3",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-08T13:10:48+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 79,
+    "llm_summary": "研究五模型经济中的控制与涌现现象，揭示多智能体系统崩溃机制。",
+    "llm_tags": [
+      "多智能体",
+      "涌现",
+      "模型经济",
+      "系统稳定性"
+    ]
+  },
+  {
+    "id": "6f681a87b6d8",
+    "title": "Jeff Bezos Is Funding a Wild Hunt for the Brain’s ‘Core Algorithm’",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u079tc/jeff_bezos_is_funding_a_wild_hunt_for_the_brains/\"> <img alt=\"Jeff Bezos Is Funding a Wild Hunt for the Brain’s ‘Core Al",
+    "url": "https://www.reddit.com/r/singularity/comments/1u079tc/jeff_bezos_is_funding_a_wild_hunt_for_the_brains/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T13:02:37+00:00",
+    "frontier": 85,
+    "signal": 65,
+    "score": 77,
+    "llm_summary": "贝索斯资助探索大脑核心算法，旨在揭示生物智能底层机制",
+    "llm_tags": [
+      "脑科学",
+      "神经科学",
+      "AGI",
+      "生物计算"
+    ]
+  },
+  {
+    "id": "5faef7fbeb56",
+    "title": "kv-cache : avoid kv cells copies by ggerganov · Pull Request #24277 · ggml-org/llama.cpp",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u06jel/kvcache_avoid_kv_cells_copies_by_ggerganov_pull/\"> <img alt=\"kv-cache : avoid kv cells copies by ggerganov · Pull Request",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u06jel/kvcache_avoid_kv_cells_copies_by_ggerganov_pull/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T12:31:33+00:00",
+    "frontier": 65,
+    "signal": 85,
+    "score": 73,
+    "llm_summary": "llama.cpp优化KV缓存，避免内存拷贝以提升推理性能",
+    "llm_tags": [
+      "推理优化",
+      "KV缓存",
+      "llama.cpp"
+    ]
+  },
+  {
     "id": "94c14217e647",
     "title": "Gemma4_31b_fp8 keeping up with Sonnet_4.6_medium in my harness.",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tzw207/gemma4_31b_fp8_keeping_up_with_sonnet_46_medium/\"> <img alt=\"Gemma4_31b_fp8 keeping up with Sonnet_4.6_medium in my harne",
@@ -16,6 +126,43 @@
       "FP8",
       "推理",
       "开源模型"
+    ]
+  },
+  {
+    "id": "58a7ad71c1bc",
+    "title": "ELI5: why is google paying so much more for spacex compute than anthropic?",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Anthropic paying $1.25b for 220k GPUs at Colossus 1 AND X GPUs at Colossus 2.</p> <p>Google paying $920m for 110k GPUs.</p> <p>Even if the $1.25B was just colossus 1,",
+    "url": "https://www.reddit.com/r/singularity/comments/1tzv0pd/eli5_why_is_google_paying_so_much_more_for_spacex/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T02:15:48+00:00",
+    "frontier": 60,
+    "signal": 65,
+    "score": 62,
+    "llm_summary": "对比谷歌与Anthropic租用SpaceX算力的成本差异",
+    "llm_tags": [
+      "算力租赁",
+      "基础设施",
+      "成本分析"
+    ]
+  },
+  {
+    "id": "19f48422907d",
+    "title": "The Open Source Community is backing OpenEnv for Agentic RL",
+    "summary": "",
+    "url": "https://huggingface.co/blog/openenv-agentic-rl",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-08T00:00:00+00:00",
+    "frontier": 75,
+    "signal": 78,
+    "score": 76,
+    "llm_summary": "开源社区支持OpenEnv，为智能体强化学习提供统一基准环境",
+    "llm_tags": [
+      "强化学习",
+      "智能体",
+      "开源生态",
+      "基准测试"
     ]
   },
   {
@@ -110,6 +257,24 @@
       "开源模型",
       "多模态",
       "推理能力"
+    ]
+  },
+  {
+    "id": "31cdb1c497ec",
+    "title": "Minecraft Gamer(Gemini Omni Flash)",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1tzfdw5/minecraft_gamergemini_omni_flash/\"> <img alt=\"Minecraft Gamer(Gemini Omni Flash)\" src=\"https://external-preview.redd.it/",
+    "url": "https://www.reddit.com/r/singularity/comments/1tzfdw5/minecraft_gamergemini_omni_flash/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-07T15:37:30+00:00",
+    "frontier": 75,
+    "signal": 45,
+    "score": 63,
+    "llm_summary": "Gemini Omni Flash 模型演示 Minecraft 游戏操作能力",
+    "llm_tags": [
+      "多模态",
+      "Gemini",
+      "Agent"
     ]
   },
   {
@@ -1648,277 +1813,5 @@
     ],
     "llm_reason": "内容涉及谷歌与虚拟电厂的合作，展示了AI基础设施与能源管理的结合，具有一定的行业参考价值，但技术深度较浅。",
     "score": 6.5
-  },
-  {
-    "id": "63f915e0cfae",
-    "title": "razr001/align-dev ⭐41",
-    "summary": "AlignDev helps AI-assisted frontend teams generate shared coding standards and SKILL.md so Claude Code, Cursor, Copilot, and other agents write consistently.",
-    "url": "https://github.com/razr001/align-dev",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T14:19:33Z",
-    "stars": 41,
-    "language": "TypeScript",
-    "llm_score": 7,
-    "llm_summary": "AlignDev助力前端团队生成共享编码规范，提升AI编程助手代码一致性。",
-    "llm_tags": [
-      "AI辅助编程",
-      "Cursor",
-      "Claude Code",
-      "前端开发"
-    ],
-    "llm_reason": "该项目紧贴当前AI辅助编程（Cursor/Claude Code）的开发趋势，对计算机学生的实际工程开发具有较高实用价值，能帮助规范AI生成的代码，信息明确且无营销水分。",
-    "score": 7
-  },
-  {
-    "id": "cab74e5e7139",
-    "title": "Introducing new capabilities to GPT-Rosalind",
-    "summary": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
-    "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-06-03T13:15:00+00:00",
-    "llm_score": 8,
-    "llm_summary": "GPT-Rosalind增强生物推理与实验能力，助力生命科学研究。",
-    "llm_tags": [
-      "OpenAI",
-      "生命科学",
-      "多模态/工具"
-    ],
-    "llm_reason": "内容涉及 OpenAI 的新模型 GPT-Rosalind 及其在生命科学领域的具体应用，具有前沿性和较高的信息密度，对计算机专业学生了解 AI 在垂直领域的落地有参考价值。",
-    "score": 8
-  },
-  {
-    "id": "2565b1dae8bc",
-    "title": "Direct Preference Optimization Beyond Chatbots",
-    "summary": "",
-    "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-03T12:55:11+00:00",
-    "llm_score": 8,
-    "llm_summary": "深入解析 DPO 算法在非对话场景的应用。",
-    "llm_tags": [
-      "DPO",
-      "RLHF",
-      "Hugging Face"
-    ],
-    "llm_reason": "Hugging Face 官方博客，内容基于论文，技术深度高，适合进阶学习。",
-    "score": 8
-  },
-  {
-    "id": "d601d92da7ad",
-    "title": "The Download: Trump’s new AI order, and smart glasses for warfare",
-    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. 5 key points in Trump&#8217;s new AI order Less than two weeks after scrapping an executive order on AI, President Donald Trump signed a new one on Tuesday. Promising to promote&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/03/1138322/the-download-trump-ai-order-smart-glasses-warfare/",
-    "source": "MIT Tech Review AI",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-03T12:10:00+00:00",
-    "llm_score": 7,
-    "llm_summary": "特朗普新AI行政令与军事智能眼镜，涵盖政策与硬件前沿动态。",
-    "llm_tags": [
-      "政策",
-      "前沿动态",
-      "硬件"
-    ],
-    "llm_reason": "内容涉及最新的AI政策动向（特朗普新行政令）及硬件应用（智能眼镜），信息密度较高，符合计算机专业学生关注行业趋势的需求。",
-    "score": 7
-  },
-  {
-    "id": "b01da35aef9f",
-    "title": "The Download: Trump’s new AI order, and smart glasses for warfare",
-    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. 5 key points in Trump&#8217;s new AI order Less than two weeks after scrapping an executive order on AI, President Donald Trump signed a new one on Tuesday. Promising to promote&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/03/1138322/the-download-trump-ai-order-smart-glasses-warfare/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-03T12:10:00+00:00",
-    "llm_score": 6.3,
-    "llm_summary": "特朗普新AI行政令与智能眼镜军事应用",
-    "llm_tags": [
-      "政策",
-      "军事",
-      "新闻"
-    ],
-    "llm_reason": "内容涉及特朗普新AI行政令，具有时效性，但摘要信息密度较低，且偏向宏观新闻而非技术细节，对计算机专业学生的技术学习参考价值有限。",
-    "score": 6.3
-  },
-  {
-    "id": "058eb0420ca2",
-    "title": "ferdinandobons/AWSBedrockAgentCoreSkill ⭐34",
-    "summary": "Authoritative, source-cited Claude Code plugin/skill that lets a coding agent autonomously build production-grade AI agents on AWS (Strands Agents, Amazon Bedrock, Bedrock AgentCore) with official bes",
-    "url": "https://github.com/ferdinandobons/AWSBedrockAgentCoreSkill",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T12:07:17Z",
-    "stars": 34,
-    "language": "Python",
-    "llm_score": 7.8,
-    "llm_summary": "Claude 插件，用于自动化构建 AWS Bedrock 代理。",
-    "llm_tags": [
-      "GitHub",
-      "AWS Bedrock",
-      "Agent",
-      "Claude Code"
-    ],
-    "llm_reason": "涉及最新的 AgentCore 技术栈，具有高实用性和信息密度，适合计算机专业学生参考。",
-    "score": 7.8
-  },
-  {
-    "id": "ca098c700197",
-    "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
-    "summary": "See how Wasmer used Codex with GPT-5.5 to build a Node.js runtime for the edge, accelerating development 10x to 20x and shipping in weeks instead of months.",
-    "url": "https://openai.com/index/wasmer",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-06-03T12:00:00+00:00",
-    "llm_score": 7,
-    "llm_summary": "Wasmer结合Codex与GPT-5.5构建边缘Node.js运行时，大幅提升开发效率。",
-    "llm_tags": [
-      "AI辅助编程",
-      "Codex",
-      "边缘计算",
-      "Node.js",
-      "Wasmer"
-    ],
-    "llm_reason": "内容展示了LLM在实际工程中的落地案例，对计算机专业学生了解AI辅助开发极具参考价值；但偏向商业PR，技术细节密度一般，且包含疑似虚构的模型版本（GPT-5.5）。",
-    "score": 7
-  },
-  {
-    "id": "7402b3fd6862",
-    "title": "AI272/speaker ⭐42",
-    "summary": "Speaker is a Codex skill project for academic presentations: read real.pptx, combine text extraction, PPTX structure parsing, page-by-page rendering, OCR, and visual review to generate page-by-page sp",
-    "url": "https://github.com/AI272/speaker",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T11:33:33Z",
-    "stars": 42,
-    "language": "Python",
-    "llm_score": 6.5,
-    "llm_summary": "基于 Codex 的学术演示文稿自动生成工具",
-    "llm_tags": [
-      "GitHub",
-      "LLM应用",
-      "PPT生成"
-    ],
-    "llm_reason": "内容展示了 LLM 在特定垂直场景（学术演示）下的落地应用，结合了 OCR 和文档解析技术，具有一定的技术参考价值。",
-    "score": 6.5
-  },
-  {
-    "id": "a8b1e0e9c715",
-    "title": "A blueprint for democratic governance of frontier AI",
-    "summary": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security.",
-    "url": "https://openai.com/index/frontier-safety-blueprint",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-06-03T10:00:00+00:00",
-    "llm_score": 6,
-    "llm_summary": "OpenAI提出前沿AI的美国治理蓝图，聚焦安全与国安。",
-    "llm_tags": [
-      "AI政策",
-      "AI治理",
-      "OpenAI",
-      "前沿AI"
-    ],
-    "llm_reason": "该内容主要涉及AI政策与监管，虽非硬核技术，但有助于CS学生了解前沿AI的社会与政策约束，具备宏观参考价值。",
-    "score": 6
-  },
-  {
-    "id": "ecd22c71eeba",
-    "title": "OpenAI public policy agenda",
-    "summary": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society.",
-    "url": "https://openai.com/index/public-policy-agenda",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-06-03T10:00:00+00:00",
-    "llm_score": 6,
-    "llm_summary": "OpenAI阐述AI公共政策议程，涵盖安全与全球标准。",
-    "llm_tags": [
-      "OpenAI",
-      "Policy",
-      "Safety"
-    ],
-    "llm_reason": "内容涉及OpenAI的政策方向，对理解行业宏观趋势有一定参考价值，但作为技术学习资料，信息密度较低，偏向行业观察而非技术细节。",
-    "score": 6
-  },
-  {
-    "id": "e78232ff6757",
-    "title": "Happy-Chen-CH/text_classification ⭐21",
-    "summary": "This is a text classification project based on the \"Category News\" feature of Toutiao. Initially, we used the random forest algorithm, then upgraded to FastText, and finally built a new text classific",
-    "url": "https://github.com/Happy-Chen-CH/text_classification",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T07:39:51Z",
-    "stars": 21,
-    "language": "Python",
-    "llm_score": 4.5,
-    "llm_summary": "基于头条新闻的文本分类项目，算法迭代过程。",
-    "llm_tags": [
-      "GitHub",
-      "文本分类",
-      "算法实践"
-    ],
-    "llm_reason": "内容展示了从随机森林到FastText的算法迭代过程，具有一定的技术参考价值，但信息密度较低且较为陈旧。",
-    "score": 4.5
-  },
-  {
-    "id": "33bca4328249",
-    "title": "gaoweiblue-source/tob-llm-paradigm-collection ⭐21",
-    "summary": "",
-    "url": "https://github.com/gaoweiblue-source/tob-llm-paradigm-collection",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T07:11:44Z",
-    "stars": 21,
-    "language": "TypeScript",
-    "llm_score": 8.5,
-    "llm_summary": "GitHub 仓库，整理 TOB LLM 领域技术范式与最佳实践。",
-    "llm_tags": [
-      "GitHub",
-      "LLM",
-      "TOB",
-      "技术栈"
-    ],
-    "llm_reason": "针对 TOB（面向企业）场景的 LLM 技术范式集合，对计算机专业学生理解实际落地场景具有较高参考价值。",
-    "score": 8.5
-  },
-  {
-    "id": "236efe333d94",
-    "title": "Lsq128/MiraFrame ⭐22",
-    "summary": "MiraFrame 是一个面向 AI 漫剧创作的全栈 Agent 项目。它不是简单调用一次大模型，而是把“故事大纲 → 角色设定 → 分镜脚本 → 角色图 → 镜头素材 → 导出”拆成可观察、可重试、可人工反馈的创作流水线。这个项目特别适合正在从前端转向 AI Agent / AI 应用工程的同学",
-    "url": "https://github.com/Lsq128/MiraFrame",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T07:09:57Z",
-    "stars": 22,
-    "language": "TypeScript",
-    "llm_score": 7.5,
-    "llm_summary": "全栈AI漫剧创作Agent流水线项目",
-    "llm_tags": [
-      "Agent",
-      "全栈",
-      "AI应用"
-    ],
-    "llm_reason": "内容展示了AI Agent在复杂工作流中的应用，对AI应用工程方向的学习者具有较高参考价值。",
-    "score": 7.5
-  },
-  {
-    "id": "98140b25dbaf",
-    "title": "XiNian-dada/Fuck_My_Shit_Mountain ⭐30",
-    "summary": "An evidence-based AI code audit skill. Professional output. Zero emotional bullshit.",
-    "url": "https://github.com/XiNian-dada/Fuck_My_Shit_Mountain",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T06:57:37Z",
-    "stars": 30,
-    "language": "HTML",
-    "llm_score": 7.5,
-    "llm_summary": "基于证据的AI代码审计技能分享。",
-    "llm_tags": [
-      "代码审计",
-      "实战技巧",
-      "GitHub"
-    ],
-    "llm_reason": "内容涉及AI代码审计这一具体且实用的技能，信息密度较高，符合计算机专业学生的需求。",
-    "score": 7.5
   }
 ]
