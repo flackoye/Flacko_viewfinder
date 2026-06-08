@@ -6,6 +6,15 @@ import { ArrowLeft, Send, Compass } from 'lucide-react';
 import type { ChatMessage as ChatMessageType } from '@/lib/project-types';
 import ChatMessage from '@/components/ChatMessage';
 
+/** 根据错误信息分类，返回用户友好的提示 */
+function classifyError(err: unknown): string {
+  const msg = (err as Error).message || '';
+  if (msg.includes('服务繁忙') || msg.includes('访问量过大')) return '⚠️ 服务繁忙，请稍后重试';
+  if (msg.includes('超时')) return '⚠️ 请求超时，请重试';
+  if (msg.includes('网络') || msg.includes('Failed') || msg.includes('fetch')) return '⚠️ 网络连接失败，请检查网络后重试';
+  return `⚠️ ${msg || '请求失败，请重试'}`;
+}
+
 const INITIAL_SUGGESTIONS = [
   '🤖 推荐一些热门的 AI Agent 框架',
   '🔍 RAG 和向量数据库怎么选',
@@ -149,7 +158,7 @@ export default function AssistantChat() {
         const updated = [...prev];
         const last = updated[updated.length - 1];
         if (last?.role === 'assistant') {
-          updated[updated.length - 1] = { ...last, content: `⚠️ ${(err as Error).message || '网络请求失败，请点击重新发送。'}`, failed: true };
+          updated[updated.length - 1] = { ...last, content: classifyError(err), failed: true };
         }
         return updated;
       });
@@ -216,7 +225,7 @@ export default function AssistantChat() {
               const prevUserMsg = messages[idx - 1];
               setMessages(prev => prev.slice(0, idx - 1));
               if (prevUserMsg?.role === 'user') {
-                setTimeout(() => sendMessage(prevUserMsg.content), 50);
+                setTimeout(() => sendMessage(prevUserMsg.content), 1500);
               }
             } : undefined}
           />

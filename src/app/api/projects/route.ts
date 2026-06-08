@@ -8,6 +8,7 @@ import {
   parseOptions,
   parseSuggestions,
   parseProjectRefs,
+  fetchWithRetry,
 } from '@/lib/rag';
 
 const ZHIPU_API_BASE = 'https://open.bigmodel.cn/api/paas/v4';
@@ -92,9 +93,9 @@ export async function POST(request: NextRequest) {
       return new Response(JSON.stringify({ error: 'API 未配置' }), { status: 502 });
     }
 
-    let glmRes: Response;
-    try {
-      glmRes = await fetch(`${ZHIPU_API_BASE}/chat/completions`, {
+    const glmRes = await fetchWithRetry(
+      `${ZHIPU_API_BASE}/chat/completions`,
+      {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -107,25 +108,10 @@ export async function POST(request: NextRequest) {
           temperature: 0.7,
           max_tokens: mode === 'guided' ? 1500 : 1024,
         }),
-      });
-    } catch (err) {
-      console.error('GLM fetch failed, retrying...', err);
-      // 重试一次
-      glmRes = await fetch(`${ZHIPU_API_BASE}/chat/completions`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`,
-        },
-        body: JSON.stringify({
-          model: process.env.ZHIPU_MODEL || 'glm-4.7-flash',
-          messages: [{ role: 'user', content: prompt }],
-          stream: true,
-          temperature: 0.7,
-          max_tokens: mode === 'guided' ? 1500 : 1024,
-        }),
-      });
-    }
+      },
+      3,     // 最多重试 3 次（共 4 次尝试）
+      1000,  // 基础延迟 1s → 1s, 2s, 4s
+    );
 
     if (!glmRes.ok) {
       const errText = await glmRes.text();
@@ -135,12 +121,50 @@ export async function POST(request: NextRequest) {
         const errJson = JSON.parse(errText);
         if (errJson.error?.message) detail = errJson.error.message;
       } catch { /* keep default */ }
+      if (glmRes.status === 429) {
+        detail = '服务繁忙，请稍后重试';
+      } else if (glmRes.status === 408 || glmRes.status === 504) {
+        detail = 'AI 服务响应超时，请重试';
+      }
       return new Response(JSON.stringify({ error: detail }), { status: 502 });
     }
 
     // SSE 流
     const encoder = new TextEncoder();
     let fullText = '';
+
+    // 后处理：解析选项 / 建议 / 项目引用（正常完成和流中断共用）
+    const finalizeStream = (text: string, send: (data: object) => void) => {
+      const options = parseOptions(text);
+      if (options.length > 0) send({ type: 'options', items: options });
+
+      const suggestions = parseSuggestions(text);
+      if (suggestions.length > 0) send({ type: 'suggestions', items: suggestions });
+
+      let projectRefs = parseProjectRefs(text);
+      if (projectRefs.length === 0) {
+        const textLower = text.toLowerCase();
+        const topChunkOwners = [...new Set((topChunks as { repo_full_name: string }[]).map(c => c.repo_full_name))];
+        projectRefs = topChunkOwners.filter(name =>
+          textLower.includes(name.toLowerCase()),
+        );
+        if (projectRefs.length === 0) {
+          const allProjects = projects as Project[];
+          projectRefs = allProjects
+            .map(p => p.full_name)
+            .filter(name => textLower.includes(name.toLowerCase()));
+        }
+      }
+      if (projectRefs.length > 0) {
+        const matchedProjects = projectRefs
+          .map((ref: string) => (projects as Project[]).find(p =>
+            p.full_name === ref || p.full_name.toLowerCase() === ref.toLowerCase(),
+          ))
+          .filter((p): p is Project => p !== undefined);
+        const uniqueProjects = [...new Map(matchedProjects.map(p => [p.id, p])).values()];
+        if (uniqueProjects.length > 0) send({ type: 'projects', projects: uniqueProjects });
+      }
+    };
 
     const stream = new ReadableStream({
       async start(controller) {
@@ -181,55 +205,18 @@ export async function POST(request: NextRequest) {
             }
           }
 
-          // 解析结构化选项（引导模式）
-          const options = parseOptions(fullText);
-          if (options.length > 0) {
-            send({ type: 'options', items: options });
-          }
-
-          // 解析追问建议
-          const suggestions = parseSuggestions(fullText);
-          if (suggestions.length > 0) {
-            send({ type: 'suggestions', items: suggestions });
-          }
-
-          // 解析项目引用 → 查找完整数据
-          let projectRefs = parseProjectRefs(fullText);
-
-          // Fallback: LLM 可能没用 <project> 标签，从文本中匹配已知项目名
-          if (projectRefs.length === 0) {
-            const textLower = fullText.toLowerCase();
-            const topChunkOwners = [...new Set((topChunks as { repo_full_name: string }[]).map(c => c.repo_full_name))];
-            // 优先匹配检索到的 chunk 中的项目
-            projectRefs = topChunkOwners.filter(name =>
-              textLower.includes(name.toLowerCase()),
-            );
-            // 如果还不够，扩展到全库匹配
-            if (projectRefs.length === 0) {
-              const allProjects = projects as Project[];
-              projectRefs = allProjects
-                .map(p => p.full_name)
-                .filter(name => textLower.includes(name.toLowerCase()));
-            }
-          }
-
-          if (projectRefs.length > 0) {
-            const matchedProjects = projectRefs
-              .map((ref: string) => (projects as Project[]).find(p =>
-                p.full_name === ref || p.full_name.toLowerCase() === ref.toLowerCase(),
-              ))
-              .filter((p): p is Project => p !== undefined);
-
-            const uniqueProjects = [...new Map(matchedProjects.map(p => [p.id, p])).values()];
-            if (uniqueProjects.length > 0) {
-              send({ type: 'projects', projects: uniqueProjects });
-            }
-          }
-
+          // 正常完成：后处理
+          finalizeStream(fullText, send);
           send({ type: 'done' });
         } catch (err) {
           console.error('Stream error:', err);
-          send({ type: 'done', error: 'Stream interrupted' });
+          // 已有部分输出 → 保留给用户，执行后处理后正常结束
+          if (fullText.length > 0) {
+            finalizeStream(fullText, send);
+            send({ type: 'done' });
+          } else {
+            send({ type: 'done', error: 'Stream interrupted' });
+          }
         } finally {
           controller.close();
         }

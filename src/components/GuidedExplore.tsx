@@ -5,6 +5,15 @@ import Link from 'next/link';
 import { ArrowLeft, Send } from 'lucide-react';
 import type { ChatMessage as ChatMessageType, CategoryInfo } from '@/lib/project-types';
 import ChatMessage from '@/components/ChatMessage';
+
+/** 根据错误信息分类，返回用户友好的提示 */
+function classifyError(err: unknown): string {
+  const msg = (err as Error).message || '';
+  if (msg.includes('服务繁忙') || msg.includes('访问量过大')) return '⚠️ 服务繁忙，请稍后重试';
+  if (msg.includes('超时')) return '⚠️ 请求超时，请重试';
+  if (msg.includes('网络') || msg.includes('Failed') || msg.includes('fetch')) return '⚠️ 网络连接失败，请检查网络后重试';
+  return `⚠️ ${msg || '请求失败，请重试'}`;
+}
 import OptionTable from '@/components/OptionTable';
 
 interface GuidedExploreProps {
@@ -150,7 +159,7 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
       setMessages(prev => {
         const u = [...prev];
         const l = u[u.length - 1];
-        if (l?.role === 'assistant') u[u.length - 1] = { ...l, content: `⚠️ ${(err as Error).message || '网络请求失败，请点击重新发送。'}`, failed: true };
+        if (l?.role === 'assistant') u[u.length - 1] = { ...l, content: classifyError(err), failed: true };
         return u;
       });
     } finally {
@@ -269,7 +278,7 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
               const prevUserMsg = messages[idx - 1];
               setMessages(prev => prev.slice(0, idx - 1));
               if (prevUserMsg?.role === 'user') {
-                setTimeout(() => handleSend(prevUserMsg.content), 50);
+                setTimeout(() => handleSend(prevUserMsg.content), 1500);
               }
             } : undefined}
           />

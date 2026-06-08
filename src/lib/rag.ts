@@ -4,18 +4,30 @@ const ZHIPU_API_BASE = 'https://open.bigmodel.cn/api/paas/v4';
 
 // ─── Embedding ───
 
-/** 带重试的 fetch 封装 */
-async function fetchWithRetry(url: string, init: RequestInit, retries = 2): Promise<Response> {
-  for (let attempt = 0; attempt <= retries; attempt++) {
+/** 带指数退避重试的 fetch 封装（429/5xx 感知） */
+export async function fetchWithRetry(
+  url: string, init: RequestInit,
+  maxRetries = 2, baseDelay = 500,
+): Promise<Response> {
+  let lastError: unknown;
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
     try {
-      return await fetch(url, init);
+      const res = await fetch(url, init);
+      // 429 限流或 5xx 服务端错误 → 重试
+      if ((res.status === 429 || res.status >= 500) && attempt < maxRetries) {
+        const delay = baseDelay * Math.pow(2, attempt);
+        await new Promise(r => setTimeout(r, delay));
+        continue;
+      }
+      return res;
     } catch (err) {
-      if (attempt === retries) throw err;
-      // 指数退避: 500ms, 1s
-      await new Promise(r => setTimeout(r, 500 * (attempt + 1)));
+      lastError = err;
+      if (attempt < maxRetries) {
+        await new Promise(r => setTimeout(r, baseDelay * Math.pow(2, attempt)));
+      }
     }
   }
-  throw new Error('unreachable');
+  throw lastError;
 }
 
 /** 调用 ZhipuAI Embedding API 向量化查询 */
