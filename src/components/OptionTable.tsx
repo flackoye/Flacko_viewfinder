@@ -2,6 +2,7 @@
 
 export interface OptionItem {
   label: string;
+  value?: string;  // 选中时返回的值，不提供则用 label
   description?: string;
   emoji?: string;
   badge?: string;
@@ -21,11 +22,12 @@ export default function OptionTable({
   return (
     <div className="space-y-2">
       {options.map((opt) => {
-        const isSelected = selectedValue === opt.label;
+        const val = opt.value ?? opt.label;
+        const isSelected = selectedValue === val;
         return (
           <button
             key={opt.label}
-            onClick={() => onSelect(opt.label)}
+            onClick={() => onSelect(val)}
             className={`option-row group ${isSelected ? 'selected' : ''}`}
           >
             {/* Klein Blue 选中按钮 */}

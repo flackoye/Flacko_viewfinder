@@ -41,20 +41,28 @@ Python 管道 (scripts/fetch_trending.py)
 - `/changelog` 页面用 `ChangelogView` 渲染时间线
 - 用户关闭公告后 localStorage 记住日期，不再显示
 
-### AI 项目导航 —「万象索骥」（RAG + 双模式）
+### AI 项目导航 —「万象索骥」（RAG + Supabase pgvector + 双模式）
 ```
 线下 Python 管道：
   GitHub Search API (7 分类, 每类 ~15 个高星项目)
   → 拉 README → Markdown 感知切块 (~1500 字符/块)
-  → 智谱 Embedding-3 (512 维) → public/project_embeddings.json
-  → 项目元数据 → public/projects.json
+  → 智谱 Embedding-3 (512 维) → 直写 Supabase pgvector
+  → 项目元数据 → Supabase projects 表
 
 线上 Next.js 多页面架构：
   /projects          → 落地页（数据概览 + 分类分布 + 管道图 + 模式选择）
   /projects/explore  → 引导模式（Socratic 表格交互 + Klein Blue 选项）
   /projects/assistant → 助手模式（自由对话）
   POST /api/projects → mode=guided|assistant + category 过滤
+    → embedQuery() 向量化用户提问
+    → Supabase RPC match_chunks() 返回 Top-K 相关片段
+    → 片段拼入 Prompt → GLM 流式生成
   → SSE 流式输出 (chunk/options/suggestions/projects/done)
+
+Supabase 表结构：
+  projects          — 项目元数据（id, full_name, stars, category, ...）
+  embedding_chunks  — 向量索引（id, text, embedding vector(512), category）
+  match_chunks()    — RPC 函数，HNSW 索引 + 余弦距离 Top-K
 ```
 
 ### 前端设计系统
@@ -87,10 +95,12 @@ Python 管道 (scripts/fetch_trending.py)
 | 改项目落地页 | `src/components/ProjectLanding.tsx` |
 | 改引导探索 | `src/components/GuidedExplore.tsx` + `src/components/OptionTable.tsx` |
 | 改自由对话 | `src/components/AssistantChat.tsx` |
-| 改 RAG 检索/Prompt | `src/lib/rag.ts` → `buildGuidedPrompt()`, `buildAssistantPrompt()`, `retrieveTopK()` |
-| 改项目 API | `src/app/api/projects/route.ts` |
+| 改 RAG 检索/Prompt | `src/lib/rag.ts` → `buildGuidedPrompt()`, `buildAssistantPrompt()`, `embedQuery()` |
+| 改项目 API | `src/app/api/projects/route.ts`（Supabase RPC 调用） |
+| 改 Supabase 配置 | `src/lib/supabase.ts`（客户端单例） |
 | 改分类定义 | `src/lib/categories.ts` |
-| 重建 RAG 索引 | `scripts/build_rag_index.py` → 输出 `public/project_embeddings.json` |
+| 重建 RAG 索引 | `scripts/build_rag_index.py` → 直写 Supabase |
+| 改 Supabase 表结构 | `scripts/supabase_init.sql`（建表 + 索引 + RPC） |
 | 改全局样式 | `src/app/globals.css` |
 | 改导航 | `src/components/Navbar.tsx` |
 | 改主题系统 | `src/components/Customizer.tsx` + `src/lib/settings.ts` |
@@ -106,9 +116,12 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py  #
 ## 注意事项
 
 - Next.js 16 有 breaking changes：写代码前先读 `node_modules/next/dist/docs/`
-- `.env` 里有 ZHIPU_API_KEY 和 GITHUB_TOKEN，不要泄露
+- `.env` 里有 ZHIPU_API_KEY、GITHUB_TOKEN、SUPABASE_URL、SUPABASE_SERVICE_KEY，不要泄露
 - `public/trending.json` 和 `public/changelog.json` 是运行时数据，CI 会自动更新
-- `public/projects.json` (~110KB) 和 `public/project_embeddings.json` (~40MB) 是 RAG 索引数据
-- 前端 SSR 页面用 `fs.readFileSync` 读 JSON；API Route 用模块级缓存避免重复加载
-- 旧的 `src/lib/trending.ts` 前端实时抓取方案已废弃并清除
-- 项目导航 API Route (`/api/projects`) 使用 SSE 流式输出，模块级缓存 embedding 索引
+- RAG 数据存储在 Supabase pgvector（`projects` + `embedding_chunks` 表），不再依赖本地 JSON
+- `public/projects.json` 仅作本地开发参考，线上从 Supabase 读取
+- `public/project_embeddings.json` 已从 git 移除（39MB），过渡期脚本仍会导出但不提交
+- SSR 页面通过 `supabase.ts` 客户端查询数据库，不再使用 `fs.readFileSync`
+- 项目导航 API Route (`/api/projects`) 使用 SSE 流式输出，Supabase RPC `match_chunks()` 做向量检索
+- OptionTable 组件支持 `value` 字段（数据库用 name 如 "Agent"，前端显示 label 如 "AI Agent"）
+- Vercel 和 GitHub Actions 都需要配置 `SUPABASE_URL` 和 `SUPABASE_SERVICE_KEY` 环境变量

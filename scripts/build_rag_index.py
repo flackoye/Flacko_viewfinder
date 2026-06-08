@@ -1,11 +1,11 @@
 """
 RAG 索引构建脚本
 ================
-从 GitHub 拉取高星 AI 项目 → 切块 → Embedding → 导出 JSON
+从 GitHub 拉取高星 AI 项目 → 切块 → Embedding → 写入 Supabase
 
 输出:
-  public/projects.json          — 项目元数据（静态展示 + 卡片）
-  public/project_embeddings.json — 向量索引（RAG 检索用）
+  Supabase projects 表        — 项目元数据（静态展示 + 卡片）
+  Supabase embedding_chunks 表 — 向量索引（RAG 检索用）
 
 用法:
   python scripts/build_rag_index.py
@@ -44,6 +44,9 @@ load_env()
 API_KEY = os.environ.get("ZHIPU_API_KEY", "").strip('"').strip("'")
 EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "embedding-3")
 EMBEDDING_DIMENSIONS = int(os.environ.get("EMBEDDING_DIMENSIONS", "512"))
+
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "").strip('"').strip("'")
+SUPABASE_SERVICE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "").strip('"').strip("'")
 
 PUBLIC_DIR = Path(__file__).parent.parent / "public"
 PROJECTS_FILE = PUBLIC_DIR / "projects.json"
@@ -214,6 +217,79 @@ async def embed_all_chunks(chunks: list[dict]) -> list[dict]:
 
 # ========== 导出 ==========
 
+def upload_to_supabase(repos: list[dict], embedded_chunks: list[dict]) -> None:
+    """上传项目和 chunks 到 Supabase（全量替换）"""
+    from supabase import create_client
+
+    if not SUPABASE_URL or not SUPABASE_SERVICE_KEY:
+        print("⚠️ SUPABASE_URL 或 SUPABASE_SERVICE_KEY 未配置，跳过 Supabase 上传")
+        return
+
+    supabase = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
+
+    # Step A: 构建项目行
+    project_rows = []
+    for repo in repos:
+        project_rows.append({
+            "id": hashlib.md5(repo["full_name"].encode()).hexdigest()[:12],
+            "full_name": repo["full_name"],
+            "name": repo["name"],
+            "description": repo.get("description") or "",
+            "html_url": repo["html_url"],
+            "stars": repo["stars"],
+            "language": repo.get("language"),
+            "topics": repo.get("topics", []),
+            "category": repo["category"],
+            "updated_at": repo.get("updated_at", ""),
+        })
+
+    # Step B: 构建 chunk 行（去重，12 位 hex ID 可能碰撞）
+    chunk_rows = []
+    seen_ids = set()
+    for c in embedded_chunks:
+        base_id = c["id"]
+        dedup_idx = 0
+        while c["id"] in seen_ids:
+            # 碰撞时追加后缀，直到唯一
+            dedup_idx += 1
+            c["id"] = hashlib.md5(
+                f"{base_id}:{dedup_idx}".encode()
+            ).hexdigest()[:12]
+        seen_ids.add(c["id"])
+        chunk_rows.append({
+            "id": c["id"],
+            "repo_full_name": c["repo_full_name"],
+            "category": c["category"],
+            "section_title": c["section_title"],
+            "chunk_index": c["chunk_index"],
+            "text": c["text"],
+            "embedding": c["embedding"],
+        })
+
+    # Step C: 清空旧数据
+    print("  🗑️ 清空旧数据...")
+    supabase.table("embedding_chunks").delete().neq("id", "___never_match___").execute()
+    supabase.table("projects").delete().neq("id", "___never_match___").execute()
+
+    # Step D: 分批插入项目（每批 50）
+    print(f"  📤 上传 {len(project_rows)} 个项目...")
+    for i in range(0, len(project_rows), 50):
+        batch = project_rows[i:i + 50]
+        supabase.table("projects").insert(batch).execute()
+
+    # Step E: 分批插入 chunks（每批 50，约 150KB/批）
+    print(f"  📤 上传 {len(chunk_rows)} 个文本块...")
+    inserted = 0
+    for i in range(0, len(chunk_rows), 50):
+        batch = chunk_rows[i:i + 50]
+        supabase.table("embedding_chunks").insert(batch).execute()
+        inserted += len(batch)
+        if inserted % 500 == 0 or inserted == len(chunk_rows):
+            print(f"    进度: {inserted}/{len(chunk_rows)}")
+
+    print(f"  ✅ Supabase 上传完成: {len(project_rows)} 项目, {len(chunk_rows)} 块")
+
+
 def export_projects_json(repos: list[dict]) -> None:
     """导出项目元数据"""
     projects = []
@@ -298,9 +374,13 @@ async def main():
         return
 
     # Step 4: 导出
-    print(f"\n💾 Step 4: 导出 JSON...")
+    print(f"\n💾 Step 4: 导出数据...")
     export_projects_json(repos)
     export_embeddings_json(embedded_chunks)
+
+    # Step 5: 上传到 Supabase
+    print(f"\n☁️ Step 5: 上传到 Supabase...")
+    upload_to_supabase(repos, embedded_chunks)
 
     # 统计
     print(f"\n{'=' * 60}")

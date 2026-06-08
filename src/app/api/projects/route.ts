@@ -1,10 +1,8 @@
 import { NextRequest } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-import type { Project, EmbeddingIndex, ChatMessage } from '@/lib/project-types';
+import type { Project, ChatMessage } from '@/lib/project-types';
+import { supabase } from '@/lib/supabase';
 import {
   embedQuery,
-  retrieveTopK,
   buildGuidedPrompt,
   buildAssistantPrompt,
   parseOptions,
@@ -13,32 +11,6 @@ import {
 } from '@/lib/rag';
 
 const ZHIPU_API_BASE = 'https://open.bigmodel.cn/api/paas/v4';
-
-// 模块级缓存 — 冷启动加载一次，后续复用
-let cachedIndex: EmbeddingIndex | null = null;
-let cachedProjects: Project[] | null = null;
-
-function loadEmbeddingIndex(): EmbeddingIndex {
-  if (!cachedIndex) {
-    const raw = fs.readFileSync(
-      path.join(process.cwd(), 'public', 'project_embeddings.json'),
-      'utf-8',
-    );
-    cachedIndex = JSON.parse(raw);
-  }
-  return cachedIndex!;
-}
-
-function loadProjects(): Project[] {
-  if (!cachedProjects) {
-    const raw = fs.readFileSync(
-      path.join(process.cwd(), 'public', 'projects.json'),
-      'utf-8',
-    );
-    cachedProjects = JSON.parse(raw);
-  }
-  return cachedProjects!;
-}
 
 export async function POST(request: NextRequest) {
   try {
@@ -59,24 +31,42 @@ export async function POST(request: NextRequest) {
       return new Response(JSON.stringify({ error: '问题不能为空' }), { status: 400 });
     }
 
-    // 加载数据
-    const index = loadEmbeddingIndex();
-    const projects = loadProjects();
-
-    if (!index.chunks.length) {
-      return new Response(JSON.stringify({ error: '项目数据暂未就绪' }), { status: 503 });
-    }
-
     // 向量化查询
     const queryVec = await embedQuery(question.trim());
 
-    // 检索 Top-K（支持分类过滤）
-    const topChunks = retrieveTopK(queryVec, index, 5, category);
+    // Supabase 向量检索
+    const { data: topChunks, error: rpcError } = await supabase.rpc(
+      'match_chunks',
+      {
+        query_embedding: queryVec,
+        match_count: 5,
+        filter_category: category || null,
+      },
+    );
+
+    if (rpcError) {
+      console.error('Supabase RPC error:', rpcError);
+      return new Response(JSON.stringify({ error: `检索失败: ${rpcError.message}` }), { status: 503 });
+    }
+
+    if (!topChunks || topChunks.length === 0) {
+      return new Response(JSON.stringify({ error: '项目数据暂未就绪' }), { status: 503 });
+    }
+
+    // 加载项目元数据（用于 Prompt 构建 + 项目卡片匹配）
+    const { data: projects, error: projError } = await supabase
+      .from('projects')
+      .select('*');
+
+    if (projError || !projects) {
+      console.error('Supabase projects error:', projError?.message);
+      return new Response(JSON.stringify({ error: '项目数据暂未就绪' }), { status: 503 });
+    }
 
     // 根据 mode 选择 Prompt
     const prompt = mode === 'guided'
-      ? buildGuidedPrompt(history, question.trim(), topChunks, projects, category)
-      : buildAssistantPrompt(history, question.trim(), topChunks, projects);
+      ? buildGuidedPrompt(history, question.trim(), topChunks, projects as Project[], category)
+      : buildAssistantPrompt(history, question.trim(), topChunks, projects as Project[]);
 
     // 流式调用 GLM
     const apiKey = process.env.ZHIPU_API_KEY;
@@ -191,14 +181,15 @@ export async function POST(request: NextRequest) {
           // Fallback: LLM 可能没用 <project> 标签，从文本中匹配已知项目名
           if (projectRefs.length === 0) {
             const textLower = fullText.toLowerCase();
-            const topChunkOwners = [...new Set(topChunks.map(c => c.repo_full_name))];
+            const topChunkOwners = [...new Set((topChunks as { repo_full_name: string }[]).map(c => c.repo_full_name))];
             // 优先匹配检索到的 chunk 中的项目
             projectRefs = topChunkOwners.filter(name =>
               textLower.includes(name.toLowerCase()),
             );
             // 如果还不够，扩展到全库匹配
             if (projectRefs.length === 0) {
-              projectRefs = projects
+              const allProjects = projects as Project[];
+              projectRefs = allProjects
                 .map(p => p.full_name)
                 .filter(name => textLower.includes(name.toLowerCase()));
             }
@@ -206,7 +197,7 @@ export async function POST(request: NextRequest) {
 
           if (projectRefs.length > 0) {
             const matchedProjects = projectRefs
-              .map(ref => projects.find(p =>
+              .map((ref: string) => (projects as Project[]).find(p =>
                 p.full_name === ref || p.full_name.toLowerCase() === ref.toLowerCase(),
               ))
               .filter((p): p is Project => p !== undefined);

@@ -1,42 +1,8 @@
-import type { EmbeddingIndex, EmbeddingChunk, ChatMessage, Project } from './project-types';
+import type { EmbeddingChunk, ChatMessage, Project } from './project-types';
 
 const ZHIPU_API_BASE = 'https://open.bigmodel.cn/api/paas/v4';
 
-// ─── 向量检索 ───
-
-/** 余弦相似度 */
-export function cosineSimilarity(a: number[], b: number[]): number {
-  if (a.length !== b.length || a.length === 0) return 0;
-  let dot = 0, normA = 0, normB = 0;
-  for (let i = 0; i < a.length; i++) {
-    dot += a[i] * b[i];
-    normA += a[i] * a[i];
-    normB += b[i] * b[i];
-  }
-  const denom = Math.sqrt(normA) * Math.sqrt(normB);
-  return denom === 0 ? 0 : dot / denom;
-}
-
-/** 检索 Top-K 最相似 chunk */
-export function retrieveTopK(
-  queryVec: number[],
-  index: EmbeddingIndex,
-  k = 5,
-  category?: string,
-): (EmbeddingChunk & { score: number })[] {
-  const candidates = category
-    ? index.chunks.filter(c => c.category === category)
-    : index.chunks;
-
-  const scored = candidates.map(chunk => ({
-    ...chunk,
-    score: cosineSimilarity(queryVec, chunk.embedding),
-  }));
-
-  return scored
-    .sort((a, b) => b.score - a.score)
-    .slice(0, k);
-}
+// ─── Embedding ───
 
 /** 带重试的 fetch 封装 */
 async function fetchWithRetry(url: string, init: RequestInit, retries = 2): Promise<Response> {

@@ -180,6 +180,7 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
   // 分类表格
   const categoryOptions = categories.map(c => ({
     label: c.label,
+    value: c.name,
     description: c.description,
     emoji: c.emoji,
     badge: `${c.projectCount} 项目`,

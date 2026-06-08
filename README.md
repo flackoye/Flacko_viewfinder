@@ -12,8 +12,9 @@
 | 样式 | Tailwind CSS v4（暗色主题 + 玻璃拟态） |
 | 部署 | Vercel（GitHub main 分支自动构建） |
 | 数据管道 | Python（异步爬取 + LLM 评分 + RAG 索引构建） |
+| 向量数据库 | Supabase pgvector（HNSW 索引 + RPC 向量检索） |
 | LLM | 智谱 GLM-4.7-Flash（评分/对话）、Embedding-3（512 维向量） |
-| CI/CD | GitHub Actions（每 12h 更新热点数据） |
+| CI/CD | GitHub Actions（每 12h 更新热点数据 + RAG 索引） |
 
 ## 功能模块
 
@@ -32,7 +33,7 @@
 - 项目以可视化卡片展示（stars、语言、分类、topics）
 - SSE 流式输出 + 实时打字效果
 
-线下管道：GitHub Search API → README 切块 → 智谱 Embedding-3 → 40MB 向量索引
+线下管道：GitHub Search API → README 切块 → 智谱 Embedding-3 → Supabase pgvector 向量索引
 
 ### 📝 其他页面
 
@@ -48,22 +49,24 @@
 ┌───────────────── 线下管道 ─────────────────┐
 │  scripts/fetch_trending.py                  │
 │    7 源并发爬取 → 去重 → LLM 评分 → JSON    │
+│    → CI commit & push → Vercel 自动部署     │
 │                                             │
 │  scripts/build_rag_index.py                 │
 │    GitHub Search → README → 切块 → Embedding│
-│    → public/project_embeddings.json (40MB)  │
-│    → public/projects.json (110KB)           │
+│    → 直写 Supabase pgvector（无需 git push） │
 └──────────────────┬──────────────────────────┘
-                   │ CI 每 12h 自动 commit & push
-                   ▼
-┌───────────────── Vercel ───────────────────┐
-│  Next.js 16 SSR                             │
-│    ├─ fs.readFileSync → 页面数据            │
-│    ├─ API Route (/api/projects)             │
-│    │    模块级缓存 Embedding 索引            │
-│    │    → 余弦相似度 Top-K → GLM 流式生成   │
-│    └─ SSE → 前端实时渲染                    │
-└────────────────────────────────────────────┘
+                   │
+    ┌──────────────┼──────────────────┐
+    ▼                                 ▼
+┌────────── Supabase ─────────┐  ┌─────────── Vercel ───────────┐
+│  projects 表（项目元数据）    │  │  Next.js 16 SSR               │
+│  embedding_chunks 表         │  │    ├─ Supabase 查询 → 页面数据│
+│    (512 维向量 + HNSW 索引)  │  │    ├─ API Route (/api/projects)│
+│  match_chunks() RPC          │  │    │    → embedQuery()        │
+│    → 余弦距离 Top-K 检索     │  │    │    → RPC match_chunks()  │
+└─────────────────────────────┘  │    │    → GLM 流式生成        │
+                                 │    └─ SSE → 前端实时渲染      │
+                                 └───────────────────────────────┘
 ```
 
 ## 项目结构
@@ -72,11 +75,11 @@
 ├── public/
 │   ├── trending.json              # 热点数据（CI 自动更新）
 │   ├── changelog.json             # 更新公告/日志
-│   ├── projects.json              # 项目元数据
-│   └── project_embeddings.json    # RAG 向量索引
+│   └── projects.json              # 项目元数据（本地参考）
 ├── scripts/
 │   ├── fetch_trending.py          # 热点爬取 + LLM 评分管道
-│   ├── build_rag_index.py         # RAG 索引构建（Embedding）
+│   ├── build_rag_index.py         # RAG 索引构建 → Supabase
+│   ├── supabase_init.sql          # Supabase 建表 + 索引 + RPC
 │   └── github_search.py           # GitHub 项目搜索
 ├── src/
 │   ├── app/
@@ -103,12 +106,14 @@
 │   │   ├── StarfieldBackground.tsx # 星空/极光背景
 │   │   └── Customizer.tsx         # 首页背景自定义
 │   └── lib/
-│       ├── rag.ts                 # RAG 核心（检索 + Prompt + 标签解析）
+│       ├── rag.ts                 # RAG 核心（Embedding + Prompt + 标签解析）
+│       ├── supabase.ts            # Supabase 客户端单例
 │       ├── categories.ts          # 项目分类定义
 │       ├── project-types.ts       # TypeScript 类型
 │       └── settings.ts            # 主题设置
 ├── .github/workflows/
-│   └── trending.yml               # GitHub Actions 定时任务
+│   ├── trending.yml               # 热点数据定时更新
+│   └── build-rag-index.yml        # RAG 索引定时重建（直写 Supabase）
 ├── CLAUDE.md                       # Claude Code 项目上下文
 └── README.md
 ```
@@ -132,6 +137,8 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py
 |------|------|
 | `ZHIPU_API_KEY` | 智谱 AI API 密钥（评分 + 对话 + Embedding） |
 | `GITHUB_TOKEN` | GitHub Personal Access Token（项目搜索） |
+| `SUPABASE_URL` | Supabase 项目 URL |
+| `SUPABASE_SERVICE_KEY` | Supabase Service Role Key（读写 pgvector） |
 
 ## 路线图
 
@@ -143,6 +150,7 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py
 - [x] 首页：每日一言 + 星空/极光交互背景
 - [x] 全自动 CI/CD：GitHub Actions 每 12h 更新热点
 - [x] API 重试机制：指数退避 + 前端重试按钮
+- [x] RAG 存储迁移：本地 39MB JSON → Supabase pgvector（HNSW 索引 + RPC 检索）
 
 ### 进行中 / 计划中 🚧
 

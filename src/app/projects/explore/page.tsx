@@ -1,16 +1,14 @@
-import fs from 'fs';
-import path from 'path';
 import type { Project } from '@/lib/project-types';
 import { CATEGORIES } from '@/lib/categories';
+import { supabase } from '@/lib/supabase';
 import GuidedExplore from '@/components/GuidedExplore';
 import ExplorePageClient from './ExplorePageClient';
 
 export default async function ExplorePage() {
   let projects: Project[] = [];
   try {
-    projects = JSON.parse(
-      fs.readFileSync(path.join(process.cwd(), 'public', 'projects.json'), 'utf-8'),
-    );
+    const { data } = await supabase.from('projects').select('*');
+    if (data) projects = data as Project[];
   } catch { /* empty */ }
 
   // 计算分类统计

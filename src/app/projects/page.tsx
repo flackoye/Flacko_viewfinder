@@ -1,7 +1,6 @@
-import fs from 'fs';
-import path from 'path';
 import type { Project } from '@/lib/project-types';
 import { CATEGORIES } from '@/lib/categories';
+import { supabase } from '@/lib/supabase';
 import ProjectLanding from '@/components/ProjectLanding';
 
 export default async function ProjectsPage() {
@@ -10,19 +9,26 @@ export default async function ProjectsPage() {
   let embeddingMeta = { model: 'embedding-3', dimension: 512, total_chunks: 0, generated_at: '' };
 
   try {
-    projects = JSON.parse(
-      fs.readFileSync(path.join(process.cwd(), 'public', 'projects.json'), 'utf-8'),
-    );
+    const { data } = await supabase.from('projects').select('*');
+    if (data) projects = data as Project[];
   } catch { /* empty */ }
 
-  // 轻量提取 embedding metadata（不 parse 整个 40MB 文件）
+  // 获取 embedding metadata
   try {
-    const raw = fs.readFileSync(
-      path.join(process.cwd(), 'public', 'project_embeddings.json'),
-      'utf-8',
-    );
-    const metaMatch = raw.match(/"metadata"\s*:\s*(\{[^}]+\})/);
-    if (metaMatch) embeddingMeta = JSON.parse(metaMatch[1]);
+    const { count } = await supabase
+      .from('embedding_chunks')
+      .select('*', { count: 'exact', head: true });
+    embeddingMeta.total_chunks = count || 0;
+    // generated_at 取最新 chunk 的 created_at
+    if (count && count > 0) {
+      const { data: latestChunk } = await supabase
+        .from('embedding_chunks')
+        .select('created_at')
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .single();
+      if (latestChunk) embeddingMeta.generated_at = latestChunk.created_at;
+    }
   } catch { /* empty */ }
 
   // 计算分类统计
