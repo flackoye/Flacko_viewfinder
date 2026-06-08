@@ -1,5 +1,118 @@
 [
   {
+    "id": "94c14217e647",
+    "title": "Gemma4_31b_fp8 keeping up with Sonnet_4.6_medium in my harness.",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tzw207/gemma4_31b_fp8_keeping_up_with_sonnet_46_medium/\"> <img alt=\"Gemma4_31b_fp8 keeping up with Sonnet_4.6_medium in my harne",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzw207/gemma4_31b_fp8_keeping_up_with_sonnet_46_medium/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T03:06:48+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 79,
+    "llm_summary": "FP8 Gemma4 31B 性能对标 Sonnet 4.6 Medium",
+    "llm_tags": [
+      "量化",
+      "FP8",
+      "推理",
+      "开源模型"
+    ]
+  },
+  {
+    "id": "46d2ccc090fc",
+    "title": "Amazing Digital Dentures (a failed project)",
+    "summary": "",
+    "url": "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-07T19:44:27+00:00",
+    "frontier": 45,
+    "signal": 88,
+    "score": 62,
+    "llm_summary": "分享失败项目，复盘数字义齿开发历程",
+    "llm_tags": [
+      "数字医疗",
+      "失败复盘",
+      "工程实践"
+    ]
+  },
+  {
+    "id": "8e53ed6e37e6",
+    "title": "Dimensiontashop/Claude-Mythos-AI-App ⭐77",
+    "summary": "Claude Mythos AI Anthropic App desktop free pro opus frontend client API wrapper Claude 3.5 Sonnet Opus LLM chatbot roleplay jailbreak uncensored character prompt templates",
+    "url": "https://github.com/Dimensiontashop/Claude-Mythos-AI-App",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-07T16:39:25Z",
+    "stars": 77,
+    "language": null,
+    "frontier": 60,
+    "signal": 85,
+    "score": 70,
+    "llm_summary": "Claude 3.5 Sonnet 前端客户端，支持角色扮演与提示词模板",
+    "llm_tags": [
+      "Claude",
+      "前端",
+      "客户端",
+      "角色扮演"
+    ]
+  },
+  {
+    "id": "503353ee440d",
+    "title": "Control a 3D avatar with language instead of buttons",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tzgn87/control_a_3d_avatar_with_language_instead_of/\"> <img alt=\"Control a 3D avatar with language instead of buttons\" src=\"http",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzgn87/control_a_3d_avatar_with_language_instead_of/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-07T16:25:28+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "利用语言模型控制3D虚拟形象",
+    "llm_tags": [
+      "3D交互",
+      "多模态",
+      "本地部署"
+    ]
+  },
+  {
+    "id": "5eac515f866d",
+    "title": "GMKtec Crams OCuLink, Wi-Fi 7 and Dual PCIe 4.0 Into the EVO-X3, With a 192GB Ryzen AI MAX+ 495 Monster Following Later This Year",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tzgafl/gmktec_crams_oculink_wifi_7_and_dual_pcie_40_into/\"> <img alt=\"GMKtec Crams OCuLink, Wi-Fi 7 and Dual PCIe 4.0 Into the E",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzgafl/gmktec_crams_oculink_wifi_7_and_dual_pcie_40_into/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-07T16:12:12+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "迷你主机集成OCuLink与Wi-Fi 7",
+    "llm_tags": [
+      "迷你主机",
+      "OCuLink",
+      "Wi-Fi 7",
+      "本地部署"
+    ]
+  },
+  {
+    "id": "ca7c82db7c6d",
+    "title": "Guys, it just happened",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tzfr6z/guys_it_just_happened/\"> <img alt=\"Guys, it just happened\" src=\"https://preview.redd.it/pk38butytv5h1.jpeg?width=640&amp;",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzfr6z/guys_it_just_happened/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-07T15:51:52+00:00",
+    "frontier": 85,
+    "signal": 75,
+    "score": 81,
+    "llm_summary": "开源社区发布首个原生多模态推理模型",
+    "llm_tags": [
+      "开源模型",
+      "多模态",
+      "推理能力"
+    ]
+  },
+  {
     "id": "69574b3afcda",
     "title": "llama.cpp Gemma4 MTP support merged!",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tzbcyp/llamacpp_gemma4_mtp_support_merged/\"> <img alt=\"llama.cpp Gemma4 MTP support merged!\" src=\"https://external-preview.redd.",
@@ -15,6 +128,25 @@
       "本地部署",
       "模型量化",
       "推理加速"
+    ]
+  },
+  {
+    "id": "0b2d23720ff2",
+    "title": "I got tired of Al making stuff up about my PDFs, so I built something that actually cites its sources",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>so i kept using chatgpt to ask questions about my pdfs and notes, and half the time i couldn't tell if it actually read the doc or just made something up that sounded",
+    "url": "https://www.reddit.com/r/artificial/comments/1tzaylp/i_got_tired_of_al_making_stuff_up_about_my_pdfs/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-07T12:34:45+00:00",
+    "frontier": 45,
+    "signal": 85,
+    "score": 61,
+    "llm_summary": "开源工具解决 PDF 引用幻觉问题",
+    "llm_tags": [
+      "RAG",
+      "PDF",
+      "开源",
+      "工具"
     ]
   },
   {
@@ -1788,106 +1920,5 @@
     ],
     "llm_reason": "内容涉及AI代码审计这一具体且实用的技能，信息密度较高，符合计算机专业学生的需求。",
     "score": 7.5
-  },
-  {
-    "id": "ed5e7da22466",
-    "title": "K-Dense-AI/scientific-agents ⭐34",
-    "summary": "Expert-thinking AGENTS.md profiles that teach AI agents to reason like senior scientists and engineers.",
-    "url": "https://github.com/K-Dense-AI/scientific-agents",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T02:43:24Z",
-    "stars": 34,
-    "language": null,
-    "llm_score": 7.5,
-    "llm_summary": "GitHub项目：教授AI代理像资深科学家一样推理。",
-    "llm_tags": [
-      "GitHub",
-      "Agent",
-      "Reasoning"
-    ],
-    "llm_reason": "内容涉及AI代理推理能力的提升，具有前沿性和较高的信息密度，适合计算机专业学生参考。",
-    "score": 7.5
-  },
-  {
-    "id": "f0b2c0343879",
-    "title": "Adding MCP Tools to Reachy Mini",
-    "summary": "",
-    "url": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-03T00:00:00+00:00",
-    "llm_score": 8,
-    "llm_summary": "介绍如何为Reachy Mini机器人添加MCP工具。",
-    "llm_tags": [
-      "MCP",
-      "具身智能",
-      "Hugging Face",
-      "AI Agent"
-    ],
-    "llm_reason": "MCP（模型上下文协议）是近期LLM Agent生态的重要前沿技术。结合机器人硬件的实操教程对计算机专业学生理解Agent工具调用和具身智能具有极高的实用性和信息密度。",
-    "score": 8
-  },
-  {
-    "id": "00a0271e1ce4",
-    "title": "zaydmulani09/mnemo ⭐78",
-    "summary": "Local-first AI memory layer for any LLM. Persistent knowledge graph, entity extraction, semantic retrieval. Works with Ollama, OpenAI, Anthropic, or any OpenAI-compatible backend.",
-    "url": "https://github.com/zaydmulani09/mnemo",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-02T23:15:18Z",
-    "stars": 78,
-    "language": "Rust",
-    "llm_score": 8,
-    "llm_summary": "开源的本地优先LLM记忆层，支持持久化知识图谱与多后端。",
-    "llm_tags": [
-      "LLM",
-      "记忆机制",
-      "知识图谱",
-      "开源项目"
-    ],
-    "llm_reason": "该项目提供了实用的本地知识图谱和实体提取功能，对CS学生理解并构建LLM记忆层（RAG进阶）具有极高的代码参考价值，且支持本地部署，信息密度高。",
-    "score": 8
-  },
-  {
-    "id": "9e17090abb74",
-    "title": "CWS6206/Lucerne-Geo-AI-Searching ⭐68",
-    "summary": "Lucerne Geo-AI-Searching ist eine Applikation, die Standort- und Grundstücksanalysen im Kanton Luzern mithilfe von offiziellen Geodaten (WFS / ÖREB) und Künstlicher Intelligenz (AI) automatisiert.",
-    "url": "https://github.com/CWS6206/Lucerne-Geo-AI-Searching",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-02T17:44:56Z",
-    "stars": 68,
-    "language": "JavaScript",
-    "llm_score": 7,
-    "llm_summary": "基于AI的瑞士卢塞恩地区地块分析应用。",
-    "llm_tags": [
-      "GitHub",
-      "GeoAI",
-      "应用案例"
-    ],
-    "llm_reason": "展示了 GeoAI 在地理空间数据处理中的实际落地应用，包含 WFS 和 ÖREB 数据源，对理解 AI 在特定垂直领域的应用有一定参考价值。",
-    "score": 7
-  },
-  {
-    "id": "78dfd37231b3",
-    "title": "anvia-hq/lexa ⭐52",
-    "summary": "Lexa - Fast local code intelligence for humans and AI agents. Lexa turns a codebase into a portable, queryable graph so every tool can work from the same stable view of the project.",
-    "url": "https://github.com/anvia-hq/lexa",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-02T16:58:00Z",
-    "stars": 52,
-    "language": "Rust",
-    "llm_score": 8,
-    "llm_summary": "Lexa：将代码库转为可查询图，为AI提供本地代码智能。",
-    "llm_tags": [
-      "代码智能",
-      "GraphRAG",
-      "AI Agent",
-      "开发工具"
-    ],
-    "llm_reason": "该开源工具展示了如何利用图结构为AI Agent提供代码上下文，对CS学生理解LLM在代码工程中的应用及RAG技术具有极高的前沿性和实用参考价值。",
-    "score": 8
   }
 ]
