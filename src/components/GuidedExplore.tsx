@@ -83,7 +83,11 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
         body: JSON.stringify({ question, history, mode: 'guided', category }),
         signal: abortRef.current.signal,
       });
-      if (!res.ok) throw new Error(`API error: ${res.status}`);
+      if (!res.ok) {
+        let detail = `服务错误 (${res.status})`;
+        try { const j = await res.json(); if (j.error) detail = j.error; } catch { /* keep default */ }
+        throw new Error(detail);
+      }
 
       const reader = res.body!.getReader();
       const decoder = new TextDecoder();
@@ -146,7 +150,7 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
       setMessages(prev => {
         const u = [...prev];
         const l = u[u.length - 1];
-        if (l?.role === 'assistant') u[u.length - 1] = { ...l, content: '⚠️ 网络请求失败，请点击重新发送。', failed: true };
+        if (l?.role === 'assistant') u[u.length - 1] = { ...l, content: `⚠️ ${(err as Error).message || '网络请求失败，请点击重新发送。'}`, failed: true };
         return u;
       });
     } finally {

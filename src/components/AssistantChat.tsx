@@ -83,7 +83,11 @@ export default function AssistantChat() {
         signal: abortRef.current.signal,
       });
 
-      if (!res.ok) throw new Error(`API error: ${res.status}`);
+      if (!res.ok) {
+        let detail = `服务错误 (${res.status})`;
+        try { const j = await res.json(); if (j.error) detail = j.error; } catch { /* keep default */ }
+        throw new Error(detail);
+      }
 
       const reader = res.body!.getReader();
       const decoder = new TextDecoder();
@@ -145,7 +149,7 @@ export default function AssistantChat() {
         const updated = [...prev];
         const last = updated[updated.length - 1];
         if (last?.role === 'assistant') {
-          updated[updated.length - 1] = { ...last, content: '⚠️ 网络请求失败，请点击重新发送。', failed: true };
+          updated[updated.length - 1] = { ...last, content: `⚠️ ${(err as Error).message || '网络请求失败，请点击重新发送。'}`, failed: true };
         }
         return updated;
       });
