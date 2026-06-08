@@ -12,6 +12,24 @@ import {
 
 const ZHIPU_API_BASE = 'https://open.bigmodel.cn/api/paas/v4';
 
+export async function GET() {
+  try {
+    const { data, error } = await supabase.from('projects').select('id', { count: 'exact', head: true });
+    const { count } = await supabase.from('embedding_chunks').select('*', { count: 'exact', head: true });
+    if (error) return Response.json({ ok: false, step: 'projects query', error: error.message });
+    return Response.json({
+      ok: true,
+      projects: data?.length ?? 0,
+      chunks: count ?? 0,
+      supabaseUrl: process.env.SUPABASE_URL ? '✅ set' : '❌ missing',
+      supabaseKey: process.env.SUPABASE_SERVICE_KEY ? '✅ set' : '❌ missing',
+      zhipuKey: process.env.ZHIPU_API_KEY ? '✅ set' : '❌ missing',
+    });
+  } catch (err) {
+    return Response.json({ ok: false, error: String(err) });
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
