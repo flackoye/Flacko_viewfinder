@@ -102,7 +102,7 @@ export async function POST(request: NextRequest) {
           'Authorization': `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
-          model: process.env.ZHIPU_MODEL || 'glm-4.7-flash',
+          model: process.env.ZHIPU_MODEL || 'glm-5.1',
           messages: [{ role: 'user', content: prompt }],
           stream: true,
           temperature: 0.7,
