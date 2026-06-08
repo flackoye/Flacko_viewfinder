@@ -107,7 +107,7 @@
 | 框架 | Next.js 16 + React 19 + TypeScript |
 | 样式 | Tailwind CSS v4 — 暗色主题 + 玻璃拟态设计系统 |
 | 向量数据库 | Supabase pgvector — HNSW 索引 + RPC 检索 |
-| LLM | 智谱 GLM-4.7-Flash（评分 / 对话）+ Embedding-3（512d 向量） |
+| LLM | 智谱 GLM-4.7（评分 / 对话）+ Embedding-3（512d 向量） |
 | 数据管道 | Python 异步爬取 + LLM 评分 + RAG 索引 |
 | 部署 | Vercel（main 分支自动构建）|
 | CI/CD | GitHub Actions（每 12h 热点更新 + RAG 索引重建）|
@@ -118,7 +118,7 @@
 # 前端
 npm install && npm run dev
 
-# 热点管道（需 ZHIPU_API_KEY）
+# 热点管道（需 ZHIPU_TRENDING_API_KEY）
 .venv/Scripts/python.exe scripts/fetch_trending.py
 
 # 重建 RAG 索引（需 ZHIPU_API_KEY + GITHUB_TOKEN + SUPABASE_*）
@@ -129,11 +129,13 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py
 
 | 变量 | 用途 | 必需 |
 |------|------|:---:|
-| `ZHIPU_API_KEY` | 智谱 AI（评分 / 对话 / Embedding）| ✅ |
+| `ZHIPU_API_KEY` | Embedding 专用（用户提问向量化 + 索引构建）| ✅ |
+| `ZHIPU_RAG_API_KEY` | RAG 推理专用（GLM 对话生成，glm-4.7）| ✅ |
+| `ZHIPU_TRENDING_API_KEY` | 热点评分专用（GLM 筛选评分，glm-4.7）| ✅ |
 | `GITHUB_TOKEN` | GitHub API（项目搜索）| ✅ |
 | `SUPABASE_URL` | Supabase 项目 URL | ✅ |
 | `SUPABASE_SERVICE_KEY` | Supabase Service Role Key | ✅ |
-| `ZHIPU_MODEL` | 自定义模型名（默认 `glm-4.7-flash`）| 可选 |
+| `ZHIPU_MODEL` | 自定义模型名（默认 `glm-4.7`）| 可选 |
 
 ## 📋 路线图
 

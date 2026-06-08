@@ -116,7 +116,8 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py  #
 ## 注意事项
 
 - Next.js 16 有 breaking changes：写代码前先读 `node_modules/next/dist/docs/`
-- `.env` 里有 ZHIPU_API_KEY、GITHUB_TOKEN、SUPABASE_URL、SUPABASE_SERVICE_KEY，不要泄露
+- `.env` 里有 ZHIPU_API_KEY、ZHIPU_RAG_API_KEY、ZHIPU_TRENDING_API_KEY、GITHUB_TOKEN、SUPABASE_URL、SUPABASE_SERVICE_KEY，不要泄露
+- API Key 职责分离：`ZHIPU_API_KEY` 仅用于 Embedding，`ZHIPU_RAG_API_KEY` 用于 RAG 对话，`ZHIPU_TRENDING_API_KEY` 用于热点评分
 - `public/trending.json` 和 `public/changelog.json` 是运行时数据，CI 会自动更新
 - RAG 数据存储在 Supabase pgvector（`projects` + `embedding_chunks` 表），不再依赖本地 JSON
 - `public/projects.json` 仅作本地开发参考，线上从 Supabase 读取

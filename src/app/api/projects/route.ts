@@ -24,7 +24,7 @@ export async function GET() {
       chunks: chunkCount ?? 0,
       supabaseUrl: process.env.SUPABASE_URL ? '✅ set' : '❌ missing',
       supabaseKey: process.env.SUPABASE_SERVICE_KEY ? '✅ set' : '❌ missing',
-      zhipuKey: process.env.ZHIPU_API_KEY ? '✅ set' : '❌ missing',
+      zhipuKey: process.env.ZHIPU_RAG_API_KEY ? '✅ set' : '❌ missing',
     });
   } catch (err) {
     return Response.json({ ok: false, error: String(err) });
@@ -88,7 +88,7 @@ export async function POST(request: NextRequest) {
       : buildAssistantPrompt(history, question.trim(), topChunks, projects as Project[]);
 
     // 流式调用 GLM
-    const apiKey = process.env.ZHIPU_API_KEY;
+    const apiKey = process.env.ZHIPU_RAG_API_KEY;
     if (!apiKey) {
       return new Response(JSON.stringify({ error: 'API 未配置' }), { status: 502 });
     }
@@ -102,7 +102,7 @@ export async function POST(request: NextRequest) {
           'Authorization': `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
-          model: process.env.ZHIPU_MODEL || 'glm-5.1',
+          model: process.env.ZHIPU_MODEL || 'glm-4.7',
           messages: [{ role: 'user', content: prompt }],
           stream: true,
           temperature: 0.7,

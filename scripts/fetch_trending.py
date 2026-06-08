@@ -74,7 +74,7 @@ ARXIV_MAX_ITEMS_PER_SOURCE = int(_env("ARXIV_MAX_ITEMS_PER_SOURCE", "100"))
 ARXIV_MAX_AFTER_COARSE = int(_env("ARXIV_MAX_AFTER_COARSE", "20"))  # 粗筛后上限，保护 API 额度
 
 # --- LLM ---
-GLM_MODEL = _env("ZHIPU_MODEL", "glm-5.1")
+GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7")
 GLM_TEMPERATURE = float(_env("ZHIPU_TEMPERATURE", "0.1"))
 GLM_MAX_TOKENS = int(_env("ZHIPU_MAX_TOKENS", "512"))
 LLM_CONCURRENCY = 3  # 降低并发避免 429
@@ -845,9 +845,9 @@ async def main():
     print(f"   数据源: {len(RSS_SOURCES)} RSS + GitHub + HN + {len(REDDIT_RSS_SOURCES)} Reddit + {len(ARXIV_SOURCES)} ArXiv")
     print("=" * 50)
 
-    api_key = _env("ZHIPU_API_KEY")
+    api_key = _env("ZHIPU_TRENDING_API_KEY")
     if not api_key:
-        print("❌ 请设置 ZHIPU_API_KEY")
+        print("❌ 请设置 ZHIPU_TRENDING_API_KEY")
         sys.exit(1)
 
     client = ZhipuAiClient(api_key=api_key)
