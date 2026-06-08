@@ -137,8 +137,8 @@ REDDIT_RSS_SOURCES = [
 ]
 
 ARXIV_SOURCES = [
-    {"name": "ArXiv cs.AI", "url": "http://export.arxiv.org/rss/cs.AI", "category": "cs.AI"},
-    {"name": "ArXiv cs.CL", "url": "http://export.arxiv.org/rss/cs.CL", "category": "cs.CL"},
+    {"name": "ArXiv cs.AI", "url": "https://export.arxiv.org/rss/cs.AI", "category": "cs.AI"},
+    {"name": "ArXiv cs.CL", "url": "https://export.arxiv.org/rss/cs.CL", "category": "cs.CL"},
 ]
 
 
@@ -398,7 +398,7 @@ async def fetch_hackernews() -> list[dict]:
 async def fetch_arxiv() -> list[dict]:
     """抓取 ArXiv RSS（cs.AI + cs.CL），带粗筛"""
     all_items = []
-    async with httpx.AsyncClient(timeout=30) as client:
+    async with httpx.AsyncClient(timeout=30, follow_redirects=True) as client:
         for source in ARXIV_SOURCES:
             try:
                 resp = await client.get(source["url"])
