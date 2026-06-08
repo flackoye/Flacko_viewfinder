@@ -14,13 +14,13 @@ const ZHIPU_API_BASE = 'https://open.bigmodel.cn/api/paas/v4';
 
 export async function GET() {
   try {
-    const { data, error } = await supabase.from('projects').select('id', { count: 'exact', head: true });
-    const { count } = await supabase.from('embedding_chunks').select('*', { count: 'exact', head: true });
-    if (error) return Response.json({ ok: false, step: 'projects query', error: error.message });
+    const { count: projCount, error: projError } = await supabase.from('projects').select('*', { count: 'exact', head: true });
+    const { count: chunkCount, error: chunkError } = await supabase.from('embedding_chunks').select('*', { count: 'exact', head: true });
+    if (projError || chunkError) return Response.json({ ok: false, projError: projError?.message, chunkError: chunkError?.message });
     return Response.json({
       ok: true,
-      projects: data?.length ?? 0,
-      chunks: count ?? 0,
+      projects: projCount ?? 0,
+      chunks: chunkCount ?? 0,
       supabaseUrl: process.env.SUPABASE_URL ? '✅ set' : '❌ missing',
       supabaseKey: process.env.SUPABASE_SERVICE_KEY ? '✅ set' : '❌ missing',
       zhipuKey: process.env.ZHIPU_API_KEY ? '✅ set' : '❌ missing',
