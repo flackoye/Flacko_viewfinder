@@ -1,5 +1,94 @@
 [
   {
+    "id": "4d4fb055a79b",
+    "title": "2X tk/s (from 19.4 -> 38.1 tk/s on 1 x MI50) Playing with a hypothesis like speculative decoding.. but instead of an additional side model, exploiting that I can run multiple computations side-by-side AS IF I had Qwen3.6-27B loaded twice in memory - small quants don't use all the available compute.",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u0rk0o/2x_tks_from_194_381_tks_on_1_x_mi50_playing_with/\"> <img alt=\"2X tk/s (from 19.4 -&gt; 38.1 tk/s on 1 x MI50) Playing wit",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0rk0o/2x_tks_from_194_381_tks_on_1_x_mi50_playing_with/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T01:50:07+00:00",
+    "frontier": 65,
+    "signal": 60,
+    "score": 63,
+    "llm_summary": "利用闲置算力并行计算实现推测解码，推理速度翻倍",
+    "llm_tags": [
+      "推理加速",
+      "推测解码",
+      "量化模型"
+    ]
+  },
+  {
+    "id": "284b54cfa366",
+    "title": "I fine-tuned Parakeet 0.6B for medical ASR — open weights, local Mac/CUDA/CPU",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u0q5h9/i_finetuned_parakeet_06b_for_medical_asr_open/\"> <img alt=\"I fine-tuned Parakeet 0.6B for medical ASR — open weights, loc",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0q5h9/i_finetuned_parakeet_06b_for_medical_asr_open/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T00:45:44+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "开源医疗领域微调的Parakeet 0.6B语音识别模型",
+    "llm_tags": [
+      "语音识别",
+      "医疗AI",
+      "模型微调"
+    ]
+  },
+  {
+    "id": "acce1d797a9b",
+    "title": "Claude Fable 5 spotted on Azure and the backend, likely the public-facing version of Claude Mythos 5",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u0pvvr/claude_fable_5_spotted_on_azure_and_the_backend/\"> <img alt=\"Claude Fable 5 spotted on Azure and the backend, likely the",
+    "url": "https://www.reddit.com/r/singularity/comments/1u0pvvr/claude_fable_5_spotted_on_azure_and_the_backend/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T00:33:33+00:00",
+    "frontier": 85,
+    "signal": 45,
+    "score": 69,
+    "llm_summary": "Claude Fable 5现身Azure，疑为Mythos 5公开版",
+    "llm_tags": [
+      "大模型",
+      "Anthropic",
+      "模型泄露"
+    ]
+  },
+  {
+    "id": "e3dd72d36e9d",
+    "title": "FrontierCode: a coding eval that raises the bar for difficulty & quality.",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u0k192/frontiercode_a_coding_eval_that_raises_the_bar/\"> <img alt=\"FrontierCode: a coding eval that raises the bar for difficul",
+    "url": "https://www.reddit.com/r/singularity/comments/1u0k192/frontiercode_a_coding_eval_that_raises_the_bar/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T20:37:03+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "发布高难度代码评测基准FrontierCode，提升评估质量。",
+    "llm_tags": [
+      "代码评测",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "fca1d9ca5b84",
+    "title": "Xiaomi just claimed 1,000+ tps on a 1T model using a standard 8-GPU server",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Just saw Xiaomi MiMo announce <strong>MiMo-V2.5-Pro UltraSpeed</strong>, claiming they broke the <strong>1,000 tokens/sec output barrier on a 1 trillion parameter MoE",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0buhm/xiaomi_just_claimed_1000_tps_on_a_1t_model_using/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-08T15:51:46+00:00",
+    "frontier": 75,
+    "signal": 50,
+    "score": 65,
+    "llm_summary": "小米宣称在单机8卡实现万亿MoE模型千tokens推理",
+    "llm_tags": [
+      "推理加速",
+      "MoE",
+      "小米"
+    ]
+  },
+  {
     "id": "75ca665493b9",
     "title": "Intresting! Gemini 3.1 has strongest world knowledge but still choose to be lazy",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u0bi8i/intresting_gemini_31_has_strongest_world/\"> <img alt=\"Intresting! Gemini 3.1 has strongest world knowledge but still cho",
@@ -380,6 +469,24 @@
       "多模态",
       "强化学习",
       "模型蒸馏"
+    ]
+  },
+  {
+    "id": "4f828e3ae6a7",
+    "title": "Exploring Agentic Tool-Calling Decisions via Uncertainty-Aligned Reinforcement Learning",
+    "summary": "arXiv:2606.06976v1 Announce Type: new  Abstract: Large language model (LLM)-based agents often make suboptimal tool-use decisions, including unsupported tool invocation and hallucinated direct responses, which may accumulate errors throughout multi-step interactions. Existing approaches mainly improve these behaviors through inference-time correction or coarse-grained reward signals based on decision outcomes and structured checklists, leaving the uncertainty characteristics of agent decisions underexplored. We observe that decision-oriented reinforcement learning tends to weaken the uncertainty separation between correct and incorrect actions, resulting in overconfident mistakes and weaker exploration signals. Therefore, we propose TRUST, which incorporates uncertainty quantification into",
+    "url": "https://arxiv.org/abs/2606.06976",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-08T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 65,
+    "score": 68,
+    "llm_summary": "提出不确定性对齐强化学习优化智能体工具调用决策。",
+    "llm_tags": [
+      "智能体",
+      "强化学习",
+      "工具调用"
     ]
   },
   {
@@ -1933,179 +2040,5 @@
     ],
     "llm_reason": "内容聚焦LLM系统架构核心模式，信息密度高且实用性强，适合计算机专业学生深入理解技术细节。",
     "score": 8.7
-  },
-  {
-    "id": "952330dc05d5",
-    "title": "techjarves/Local-AI-Image-Generator ⭐117",
-    "summary": "A fully self-contained, offline AI image generation studio for Windows. Runs Stable Diffusion (Safetensors/GGUF) locally with zero manual setup. Auto-configures CUDA for Nvidia GPUs and Vulkan for AMD",
-    "url": "https://github.com/techjarves/Local-AI-Image-Generator",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T03:45:01Z",
-    "stars": 117,
-    "language": "JavaScript",
-    "frontier": 45,
-    "signal": 82,
-    "score": 60,
-    "llm_summary": "零配置本地AI绘图工作室",
-    "llm_tags": [
-      "本地部署",
-      "Stable Diffusion",
-      "Windows工具"
-    ]
-  },
-  {
-    "id": "75cbc7993bec",
-    "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
-    "summary": "",
-    "url": "https://huggingface.co/blog/hf-cli-for-agents",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-04T00:00:00+00:00",
-    "llm_score": 8,
-    "llm_summary": "Hugging Face CLI 代理化设计解析，提升开发者效率。",
-    "llm_tags": [
-      "Hugging Face",
-      "CLI",
-      "Agent",
-      "工程实践"
-    ],
-    "llm_reason": "内容涉及 Hugging Face 生态的核心工具设计，探讨如何将 CLI 优化为 Agent 友好模式，对计算机专业学生理解 AI 工具链和工程化实践具有较高参考价值。",
-    "score": 8
-  },
-  {
-    "id": "1190e9e2de10",
-    "title": "Biodefense in the Intelligence Age",
-    "summary": "An action plan for AI-powered biological resilience",
-    "url": "https://openai.com/index/biodefense-in-the-intelligence-age",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-06-04T00:00:00+00:00",
-    "llm_score": 8.5,
-    "llm_summary": "OpenAI关于AI赋能生物防御的战略计划。",
-    "llm_tags": [
-      "OpenAI",
-      "生物安全",
-      "战略规划"
-    ],
-    "llm_reason": "虽然是博客文章，但涉及前沿的AI与生物安全交叉领域，具有很高的信息密度和战略参考价值。",
-    "score": 8.5
-  },
-  {
-    "id": "e00e0f465009",
-    "title": "yuyu667yyy-byte/llamacore ⭐17",
-    "summary": " Full-featured desktop client for llama.cpp. Chat with local GGUF models, manage llama-server processes, convert Hugging Face models, monitor training, and build multi-step AI workflows. Electron + Re",
-    "url": "https://github.com/yuyu667yyy-byte/llamacore",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T23:24:01Z",
-    "stars": 17,
-    "language": "TypeScript",
-    "llm_score": 8.2,
-    "llm_summary": "功能全面的本地 LLM 桌面客户端，支持模型管理与工作流构建。",
-    "llm_tags": [
-      "本地部署",
-      "桌面应用",
-      "工具"
-    ],
-    "llm_reason": "内容涉及 llama.cpp 的桌面客户端，具有实用价值，信息密度高，适合开发者使用。",
-    "score": 8.2
-  },
-  {
-    "id": "fc16b2f18213",
-    "title": "cybergoldsmithview/Topaz-Video-AI-crack ⭐24",
-    "summary": "About Topaz Video AI - AI-powered video upscaling, deinterlacing, and frame interpolation. Comprehensive guide with setup instructions, feature highlights",
-    "url": "https://github.com/cybergoldsmithview/Topaz-Video-AI-crack",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T22:10:47Z",
-    "stars": 24,
-    "language": null,
-    "llm_score": 4.5,
-    "llm_summary": "Topaz Video AI 功能介绍与安装指南",
-    "llm_tags": [
-      "视频处理",
-      "工具指南"
-    ],
-    "llm_reason": "内容介绍了 Topaz Video AI 的功能，但标题包含 'crack'（破解），属于灰色地带，且摘要未提及具体技术细节，信息密度较低。",
-    "score": 4.5
-  },
-  {
-    "id": "6918ef2b60f8",
-    "title": "tastyeffectco/sandboxes ⭐381",
-    "summary": "Self-hosted dev sandboxes with preview URLs. One command. No Kubernetes, perfect for coding agents and Saas factories",
-    "url": "https://github.com/tastyeffectco/sandboxes",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T18:55:02Z",
-    "stars": 381,
-    "language": "Go",
-    "llm_score": 7.8,
-    "llm_summary": "自托管开发沙箱，支持预览URL，适合编程代理和SaaS工厂。",
-    "llm_tags": [
-      "GitHub",
-      "开发工具",
-      "沙箱",
-      "Self-hosted"
-    ],
-    "llm_reason": "内容涉及实用的开发工具，信息密度高，对学习 AI Agent 开发和部署具有实际参考价值。",
-    "score": 7.8
-  },
-  {
-    "id": "e750511fbee3",
-    "title": "Ricar66/omnistack-agent ⭐44",
-    "summary": "Platform-agnostic AI agent: one Full-Stack Software Engineer brain, compiled into ready-to-paste adapters for ChatGPT, Claude, Copilot, Gemini & Cursor. Zero-dependency, MIT.",
-    "url": "https://github.com/Ricar66/omnistack-agent",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-03T18:25:02Z",
-    "stars": 44,
-    "language": "JavaScript",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "零依赖全栈AI代理，适配多主流IDE",
-    "llm_tags": [
-      "AI代理",
-      "全栈开发",
-      "IDE插件",
-      "零依赖"
-    ]
-  },
-  {
-    "id": "d3886421a90c",
-    "title": "How virtual power plants could provide energy for data centers",
-    "summary": "Would you take a payment to ramp down your electricity use? Would it change anything if you were doing so to help power a local data center? Google just signed a new deal to help pay for a virtual power plant (VPP) in the largest power grid in the US. The agreement is with Voltus,&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/03/1138350/virtual-power-plants-data-centers/",
-    "source": "MIT Tech Review AI",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-03T16:51:38+00:00",
-    "llm_score": 6,
-    "llm_summary": "谷歌与Voltus合作，利用虚拟电厂为数据中心提供能源。",
-    "llm_tags": [
-      "能源",
-      "数据中心",
-      "虚拟电厂"
-    ],
-    "llm_reason": "内容涉及AI基础设施与能源管理的结合，具有行业参考价值，但作为技术学习资料，其技术深度和前沿性一般。",
-    "score": 6
-  },
-  {
-    "id": "372581ecc666",
-    "title": "How virtual power plants could provide energy for data centers",
-    "summary": "Would you take a payment to ramp down your electricity use? Would it change anything if you were doing so to help power a local data center? Google just signed a new deal to help pay for a virtual power plant (VPP) in the largest power grid in the US. The agreement is with Voltus,&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/03/1138350/virtual-power-plants-data-centers/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-03T16:51:38+00:00",
-    "llm_score": 6.5,
-    "llm_summary": "谷歌与Voltus合作利用虚拟电厂为数据中心供电，探讨能源与AI的协同。",
-    "llm_tags": [
-      "能源",
-      "数据中心",
-      "虚拟电厂"
-    ],
-    "llm_reason": "内容涉及谷歌与虚拟电厂的合作，展示了AI基础设施与能源管理的结合，具有一定的行业参考价值，但技术深度较浅。",
-    "score": 6.5
   }
 ]
