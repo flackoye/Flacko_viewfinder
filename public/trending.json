@@ -1,5 +1,300 @@
 [
   {
+    "id": "f83d7f9dd098",
+    "title": "Apple announced new on device inference engine for Apple Silicon",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>This news seem to have flown under the radar. Apple announced CoreAI on WWDC which is basically a future replacement for CoreML and an alternative to MLX/llama.cpp/to",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1516w/apple_announced_new_on_device_inference_engine/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T13:29:13+00:00",
+    "frontier": 75,
+    "signal": 45,
+    "score": 63,
+    "llm_summary": "苹果发布CoreAI端侧推理引擎，将替代CoreML",
+    "llm_tags": [
+      "端侧推理",
+      "苹果",
+      "CoreAI"
+    ]
+  },
+  {
+    "id": "f404301a50ac",
+    "title": "I put together a Rust-native, CPU-only implementation of LFM2.5-8B-A1B",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u14kte/i_put_together_a_rustnative_cpuonly/\"> <img alt=\"I put together a Rust-native, CPU-only implementation of LFM2.5-8B-A1B\" ",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u14kte/i_put_together_a_rustnative_cpuonly/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T13:11:08+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "开源LFM2.5-8B-A1B的Rust原生CPU推理实现",
+    "llm_tags": [
+      "Rust",
+      "推理引擎",
+      "CPU推理",
+      "开源项目"
+    ]
+  },
+  {
+    "id": "ebd550442293",
+    "title": "Jetson Orin NX Build for Hermes Agent + Benchmarking",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u11wvo/jetson_orin_nx_build_for_hermes_agent_benchmarking/\"> <img alt=\"Jetson Orin NX Build for Hermes Agent + Benchmarking\" src",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u11wvo/jetson_orin_nx_build_for_hermes_agent_benchmarking/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T11:10:02+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "分享Jetson Orin NX部署Hermes Agent方案及基准测试数据",
+    "llm_tags": [
+      "边缘计算",
+      "模型部署",
+      "硬件评测"
+    ]
+  },
+  {
+    "id": "32c5fbdae789",
+    "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
+    "summary": "",
+    "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-09T10:46:19+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "演示Agent串联两个Spaces构建3D巴黎画廊的完整流程",
+    "llm_tags": [
+      "AI Agent",
+      "3D生成",
+      "Hugging Face"
+    ]
+  },
+  {
+    "id": "aced6e93ce52",
+    "title": "David Sinclair plans to test whole-body rejuvenation drugs in the XPrize competition",
+    "summary": "The outspoken longevity scientist David Sinclair has been predicting that one day, you’ll go to the doctor and get a prescription that will make you 10 years younger. Now MIT Technology Review has learned that he has plans to launch human tests of an oral &#8220;reprogramming&#8221; drug as part of a $101 million competition organized&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/09/1138545/david-sinclair-plans-to-test-whole-body-rejuvenation-drugs-in-the-xprize-competition/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-09T10:00:00+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "David Sinclair 计划在 XPrize 竞赛中测试全身重编程药物",
+    "llm_tags": [
+      "生物计算",
+      "抗衰老",
+      "重编程"
+    ]
+  },
+  {
+    "id": "4a384a749cff",
+    "title": "Anthropic may release mythos as early as tomorrow",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u0uz92/anthropic_may_release_mythos_as_early_as_tomorrow/\"> <img alt=\"Anthropic may release mythos as early as tomorrow\" src=\"h",
+    "url": "https://www.reddit.com/r/singularity/comments/1u0uz92/anthropic_may_release_mythos_as_early_as_tomorrow/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T04:35:42+00:00",
+    "frontier": 75,
+    "signal": 40,
+    "score": 61,
+    "llm_summary": "传闻Anthropic将发布新模型Mythos，性能或超GPT-4o。",
+    "llm_tags": [
+      "大模型",
+      "Anthropic",
+      "模型发布"
+    ]
+  },
+  {
+    "id": "c5de89d44292",
+    "title": "PathoSage: Towards Multi-Source Evidence Adjudication in Pathology via Experience-Aware Agentic Workflow",
+    "summary": "arXiv:2606.07549v1 Announce Type: new  Abstract: Recent advances in Multimodal Large Language Models (MLLMs) and agent workflows have shown strong promise for computational pathology, yet reliable patch-level reasoning remains challenging. End-to-end pathology MLLMs often hallucinate morphological features, while recent agentic systems usually merge tool outputs and retrieved knowledge into a shared context, making decisions vulnerable to conflicting evidence and context contamination. We propose PathoSage, a three-stage framework that explicitly separates knowledge retrieval, evidence collection, and evidence adjudication for patch-level pathology multimodal reasoning. Its core component, Structured Evidence Deliberation, independently evaluates heterogeneous evidence from tools, performs",
+    "url": "https://arxiv.org/abs/2606.07549",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-09T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出经验感知代理工作流，解决病理学多源证据冲突问题。",
+    "llm_tags": [
+      "病理学",
+      "多模态",
+      "Agent工作流",
+      "证据裁决"
+    ]
+  },
+  {
+    "id": "4e9c2292f120",
+    "title": "OmniMem: Perturbation-aware Memory Compression for Streaming Audio-Visual LLMs",
+    "summary": "arXiv:2606.07577v1 Announce Type: new  Abstract: Audio-visual large language models (LLMs) hold strong promise for long-form video understanding, yet their long-video inference is fundamentally limited by the linear growth of video tokens and key-value (KV) caches. We present OmniMem, a memory-efficient streaming framework designed specifically for audio-visual LLMs. Unlike existing compression methods that treat all tokens uniformly, OmniMem introduces a modality-aware memory allocation strategy that separately manages visual and audio contexts, addressing the severe token imbalance between the two modalities. OmniMem further preserves informative and non-redundant KV states through perturbation-aware memory selection, enabling compact memory without sacrificing long-range understanding. ",
+    "url": "https://arxiv.org/abs/2606.07577",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-09T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "OmniMem通过模态感知策略压缩KV缓存，优化音视频大模型长视频推理效率。",
+    "llm_tags": [
+      "多模态",
+      "KV缓存",
+      "推理优化",
+      "流式处理"
+    ]
+  },
+  {
+    "id": "b980456e365f",
+    "title": "Syll: Open-Source Personal Automation with Cross-Surface Execution",
+    "summary": "arXiv:2606.07594v1 Announce Type: new  Abstract: Personal AI agents must increasingly operate across APIs, shells, web surfaces, and desktop GUIs, yet many systems remain tuned to a single interface and offer limited support for user teaching and auditability. We present Syll, an open-source, self-hosted multimodal agent harness that unifies MCP/API tools, CLI execution, and visual GUI control in a modular runtime, enabling agents to coordinate computer use across heterogeneous interfaces while streamlining how users and agents exchange information. At the core of Syll is a bidirectional user-agent interaction layer: users teach procedures through direct demonstration, which Syll compiles into reusable skills; agent execution is translated back into multimodal evidence -- logs, keyframes, ",
+    "url": "https://arxiv.org/abs/2606.07594",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-09T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 88,
+    "score": 80,
+    "llm_summary": "开源跨界面智能体框架，统一API、CLI与GUI控制",
+    "llm_tags": [
+      "智能体",
+      "跨平台",
+      "🔧 已开源",
+      "GUI控制"
+    ]
+  },
+  {
+    "id": "bf9217dd327f",
+    "title": "Why Limit the Residual Stream to Layers and Not Tokens? Persistent Memory for Continuous Latent Reasoning",
+    "summary": "arXiv:2606.07720v1 Announce Type: new  Abstract: Large language models (LLMs) have demonstrated remarkable reasoning abilities on mathematical and multi-hop planning tasks. The CoCoNuT (Chain of Continuous Thought) paradigm~\\cite{hao2024coconut} extends this by enabling models to reason in latent space, exploring multiple reasoning paths simultaneously rather than committing to a single chain early on. However, we identify a limitation we term the \\textbf{concept bottleneck}. At each reasoning pass, intermediate hidden states are overwritten, causing the model to lose critical facts computed in earlier steps as reasoning depth increases. We observe this empirically. On HotpotQA, vanilla CoCoNuT (10.4\\% EM) fails to improve over the CoT baseline (11.0\\% EM), and performance degrades with cu",
+    "url": "https://arxiv.org/abs/2606.07720",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-09T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出跨Token残差流机制，解决CoCoNuT范式中的概念瓶颈问题。",
+    "llm_tags": [
+      "🔧 已开源",
+      "推理机制",
+      "模型架构",
+      "CoCoNuT"
+    ]
+  },
+  {
+    "id": "ecc01b4118f0",
+    "title": "Beyond Goodhart's Law: A Dynamic Benchmark for Evaluating Compliance in Multi-Agent Systems",
+    "summary": "arXiv:2606.07805v1 Announce Type: new  Abstract: The rapid evolution of Large Language Models (LLMs) from passive assistants to autonomous, execution-capable agents has introduced critical operational risks. Most current evaluation frameworks neglect procedural compliance, leading to ''Machiavellian'' behaviors where agents strategically violate safety rules to maximize rewards - a direct manifestation of Goodhart's Law. To address this blind spot, we introduce MAC-Bench, a dynamic, adversarial benchmark designed to evaluate the procedural alignment of multi-agent systems under realistic pressure. We propose the SERV(Seed - Evolve - Refine - Verify) pipeline, an ``Agent-as-a-Benchmark'' paradigm that transforms unstructured legal texts into executable, contamination-free scenarios. By synt",
+    "url": "https://arxiv.org/abs/2606.07805",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-09T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出MAC-Bench动态基准，解决多智能体系统中的程序合规性与古德哈特定律问题。",
+    "llm_tags": [
+      "智能体安全",
+      "评估基准",
+      "多智能体"
+    ]
+  },
+  {
+    "id": "912a37ac8c5a",
+    "title": "Where Instruction Hierarchy Breaks: Diagnosing and Repairing Failures in Reasoning Language Models",
+    "summary": "arXiv:2606.07808v1 Announce Type: new  Abstract: Reasoning language models deployed in agentic workflows must follow an instruction hierarchy: when instructions from different sources conflict, the model should obey the highest-privilege applicable instruction. Existing benchmarks largely measure this behavior end-to-end, asking whether the final response is compliant. However, a non-compliant response can arise from several distinct failures: the model may fail to identify the relevant instructions in context, fail to resolve conflicts among identified instructions, or correctly resolve the conflict in its reasoning while still producing a violating response. We introduce a white-box diagnostic framework that localizes instruction hierarchy failures into instruction identification, confli",
+    "url": "https://arxiv.org/abs/2606.07808",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-09T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "诊断并修复推理模型在指令层级冲突下的失败模式",
+    "llm_tags": [
+      "指令层级",
+      "模型安全",
+      "推理模型",
+      "鲁棒性"
+    ]
+  },
+  {
+    "id": "25c71ce41479",
+    "title": "Scaling Participation in Modular AI Systems",
+    "summary": "arXiv:2606.07812v1 Announce Type: new  Abstract: Humanity is a mosaic of multifaceted talents and needs, and any truly intelligent AI must reflect that richness. Yet the LLMs used by all are built by the few -- a centralized market of monolithic AI models structurally ill-suited to capture the diversity of human knowledge, reasoning, and values. Here we introduce scaling participation, a new paradigm in which modular AI systems are built from the bottom up through the contributions of diverse stakeholders. Participants contribute small models trained on their own interests and priorities; these models then collaborate in modular frameworks as compositional AI systems. Participatory AI systems outperform monolithic LLMs by up to 15.4% across 15 tasks, such as reasoning and factuality, surpa",
+    "url": "https://arxiv.org/abs/2606.07812",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-09T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "提出模块化AI系统新范式，通过众包贡献构建多样化智能。",
+    "llm_tags": [
+      "模块化AI",
+      "众包",
+      "系统架构",
+      "新范式"
+    ]
+  },
+  {
+    "id": "ac68bdf3baf7",
+    "title": "Safety is Contextual, LLM-Judges Are Not: Navigating the Rigid Priors of Evaluators",
+    "summary": "arXiv:2606.07874v1 Announce Type: new  Abstract: LLMs-as-judges are the only way to evaluate safety at scale. Despite their importance, LLM-judges themselves are rarely evaluated beyond human agreement in simple, static benchmarks. We therefore investigate two under-explored but crucial properties of LLMs-as-judges: their susceptibility to relying on in context-information, and their steerability to differing safety definitions, which may not align with their internal safety priors. We evaluate the safety judging abilities of many generalist LLMs and safety-specific judges, and investigate the impact of task demonstrations, novel in-context information, and changing safety definitions. We find that while LLM-judges can learn from new information, they are broadly unlikely to adjust their e",
+    "url": "https://arxiv.org/abs/2606.07874",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-09T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "揭示LLM评测器过度依赖内部先验，缺乏上下文适应性",
+    "llm_tags": [
+      "模型评测",
+      "安全对齐",
+      "LLM评测器"
+    ]
+  },
+  {
+    "id": "35228bb0b342",
+    "title": "Contract2Tool: Learning Preconditions and Effects for Reliable Tool-Augmented LLM Agents",
+    "summary": "arXiv:2606.07904v1 Announce Type: new  Abstract: Tool-augmented large language model agents increasingly rely on external APIs, but standard tool schemas describe how to call a tool, not when the tool is causally appropriate or what task state it produces. Causal tool filtering addresses this gap by using lightweight contracts that specify each tool's preconditions, effects, risk level, and cost. However, manually writing and maintaining such contracts does not scale to large or changing tool ecosystems. We introduce Contract2Tool, a framework for inferring tool contracts from metadata, schemas, documentation, and execution traces. Contract2Tool converts observable tool evidence into normalized symbolic contracts that can be evaluated intrinsically and deployed inside downstream causal too",
+    "url": "https://arxiv.org/abs/2606.07904",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-09T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出通过学习工具的前置条件和效果来增强LLM智能体的可靠性。",
+    "llm_tags": [
+      "智能体",
+      "工具调用",
+      "因果推理"
+    ]
+  },
+  {
+    "id": "c1e77226fe5d",
+    "title": "The CIFAR Synthetic Evidence Corpus for Detecting AI-Generated Evidence",
+    "summary": "arXiv:2606.07916v1 Announce Type: new  Abstract: The growing ability of generative models to produce realistic documents poses a direct challenge to evidentiary workflows in the justice system and the courts, where decisions increasingly depend on the authenticity of evidence such as receipts, communications, and administrative records. Unlike social media or academic settings, evidentiary documents are often only subtly altered, with small, localized edits that preserve overall plausibility while changing legal meaning. Yet progress on automated detection remains limited, largely due to the absence of suitable training and evaluation data especially suited for the justice system requirements. Existing resources are either focused on photos of human faces or natural scenery or on narrowly ",
+    "url": "https://arxiv.org/abs/2606.07916",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-09T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "发布CIFAR合成证据语料库，用于检测司法文档中的AI生成内容。",
+    "llm_tags": [
+      "数据集",
+      "取证",
+      "文档检测"
+    ]
+  },
+  {
     "id": "4d4fb055a79b",
     "title": "2X tk/s (from 19.4 -> 38.1 tk/s on 1 x MI50) Playing with a hypothesis like speculative decoding.. but instead of an additional side model, exploiting that I can run multiple computations side-by-side AS IF I had Qwen3.6-27B loaded twice in memory - small quants don't use all the available compute.",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u0rk0o/2x_tks_from_194_381_tks_on_1_x_mi50_playing_with/\"> <img alt=\"2X tk/s (from 19.4 -&gt; 38.1 tk/s on 1 x MI50) Playing wit",
@@ -287,6 +582,27 @@
       "推理优化",
       "KV缓存",
       "llama.cpp"
+    ]
+  },
+  {
+    "id": "769a6284327d",
+    "title": "apple/coreai-models ⭐229",
+    "summary": "Model export recipes, Python primitives, and Swift runtime utilities for on-device AI",
+    "url": "https://github.com/apple/coreai-models",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-08T04:32:27Z",
+    "stars": 229,
+    "language": "Python",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "苹果开源端侧AI模型导出方案及Swift运行时工具",
+    "llm_tags": [
+      "端侧AI",
+      "模型部署",
+      "工具链",
+      "Apple"
     ]
   },
   {
@@ -1300,6 +1616,26 @@
     "score": 7.8
   },
   {
+    "id": "ec07019ed47d",
+    "title": "Zafer-Liu/Agent_Manager ⭐136",
+    "summary": "A cross-platform desktop application for managing AI Agents and MCP Servers. 一款用于管理AI智能体与MCP服务器的跨平台桌面应用程序。",
+    "url": "https://github.com/Zafer-Liu/Agent_Manager",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-05T13:16:55Z",
+    "stars": 136,
+    "language": "TypeScript",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "跨平台桌面应用，用于管理AI智能体与MCP服务器",
+    "llm_tags": [
+      "Agent管理",
+      "MCP",
+      "桌面应用"
+    ]
+  },
+  {
     "id": "c0eae8f91b08",
     "title": "Benchmark: ONNX Runtime vs HF Transformers vs GGUF for Parakeet TDT 0.6B on CPU-only hardware [D]",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p>Sharing a small CPU inference benchmark for nvidia/parakeet-tdt-0.6b-v3 that turned up a result I didn't expect going in.</p> <p><strong>Setup:</strong> 2 x86-64 vCPU",
@@ -1720,325 +2056,5 @@
     ],
     "llm_reason": "内容具体，提供了 Rust 实现的 CLI 工具，涵盖了字幕处理的完整流程，对计算机专业学生具有实用参考价值。",
     "score": 8
-  },
-  {
-    "id": "c707b2a72eec",
-    "title": "KVarN: new KV-cache quant from Huawei. 3–5× KV cache compression with actual speed-up instead of slow-down, and unlike TurboQuant it holds up on reasoning (Apache 2.0, vLLM single flag)",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1twptw2/kvarn_new_kvcache_quant_from_huawei_35_kv_cache/\"> <img alt=\"KVarN: new KV-cache quant from Huawei. 3–5× KV cache compres",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1twptw2/kvarn_new_kvcache_quant_from_huawei_35_kv_cache/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-04T14:47:10+00:00",
-    "llm_score": 8.2,
-    "llm_summary": "华为KVarN：3-5倍KV缓存压缩，推理性能提升。",
-    "llm_tags": [
-      "KV Cache",
-      "量化",
-      "推理加速",
-      "华为"
-    ],
-    "llm_reason": "涉及最新的 KV Cache 量化技术，针对推理场景有显著的实际性能提升，信息密度高，适合计算机专业学生参考。",
-    "score": 8.2
-  },
-  {
-    "id": "9d85a08515bb",
-    "title": "myccarl/ai-shortVideo-pipeline ⭐54",
-    "summary": "End-to-end AI short-video production pipeline. FastAPI orchestration + Spring Boot gateway with multi-model failover, circuit breaker, metering, and full-stack observability. AI quality gating: prompt",
-    "url": "https://github.com/myccarl/ai-shortVideo-pipeline",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T13:49:51Z",
-    "stars": 54,
-    "language": "Python",
-    "frontier": 75,
-    "signal": 85,
-    "score": 79,
-    "llm_summary": "开源端到端短视频生产流水线，含多模型容错与质量门控",
-    "llm_tags": [
-      "短视频",
-      "微服务",
-      "容错机制",
-      "质量门控"
-    ]
-  },
-  {
-    "id": "e42cec4394cc",
-    "title": "Forlives/cloudsight-ai ⭐56",
-    "summary": "云鉴 CloudSight AI — dual-engine IoT encrypted-traffic threat detection (showcase: full UI + demo backend + bilingual docs)",
-    "url": "https://github.com/Forlives/cloudsight-ai",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T13:28:34Z",
-    "stars": 56,
-    "language": null,
-    "llm_score": 7.2,
-    "llm_summary": "基于双引擎的 IoT 流量威胁检测项目，含完整 UI 与后端。",
-    "llm_tags": [
-      "IoT",
-      "Security",
-      "Showcase"
-    ],
-    "llm_reason": "内容展示了完整的 IoT 安全检测系统，包含前端 UI 和后端实现，对计算机专业学生理解系统架构和实际应用有一定参考价值。",
-    "score": 7.2
-  },
-  {
-    "id": "18b085efbb18",
-    "title": "KVarN: Variance-Normalized KV-Cache Quantization [R]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Excited to share some of my own work here :) </p> <p><strong>KVarN</strong> is our new KV-Cache quantization method. In very brief, we combine Hadamard rotations with",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1twnj5r/kvarn_variancenormalized_kvcache_quantization_r/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-04T13:21:59+00:00",
-    "llm_score": 8.5,
-    "llm_summary": "KVarN：结合 Hadamard 旋转的 KV-Cache 量化新方法",
-    "llm_tags": [
-      "量化",
-      "KV-Cache",
-      "前沿论文"
-    ],
-    "llm_reason": "内容涉及最新的 KV-Cache 量化技术，信息密度高，具有很高的学术和工程参考价值。",
-    "score": 8.5
-  },
-  {
-    "id": "8f7e162bbf56",
-    "title": "How to Fine-Tune Nemotron 3.5 ASR for Your Language, Domain, or Accent",
-    "summary": "",
-    "url": "https://huggingface.co/blog/nvidia/fine-tuning-nemotron-35-asr",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-04T12:59:35+00:00",
-    "llm_score": 8,
-    "llm_summary": "介绍如何微调 Nemotron 3.5 ASR 模型以适应特定语言和领域。",
-    "llm_tags": [
-      "微调",
-      "ASR",
-      "Nemotron"
-    ],
-    "llm_reason": "内容针对具体的开源模型（Nemotron 3.5）提供了微调教程，具有很高的技术实用性和前沿性，适合计算机专业学生参考。",
-    "score": 8
-  },
-  {
-    "id": "17a6d4be08e8",
-    "title": "On-policy distillation: one of the hottest terms on PapersWithCode [R]",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1twmhud/onpolicy_distillation_one_of_the_hottest_terms_on/\"> <img alt=\"On-policy distillation: one of the hottest terms on P",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1twmhud/onpolicy_distillation_one_of_the_hottest_terms_on/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-04T12:40:48+00:00",
-    "llm_score": 6.8,
-    "llm_summary": "讨论强化学习中的 On-policy Distillation 热度与趋势。",
-    "llm_tags": [
-      "强化学习",
-      "蒸馏",
-      "趋势"
-    ],
-    "llm_reason": "内容涉及强化学习中的热门概念 On-policy distillation，具有一定的技术讨论价值，但摘要截断且信息密度一般。",
-    "score": 6.8
-  },
-  {
-    "id": "7cadff6dce8b",
-    "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
-    "summary": "",
-    "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-04T12:24:58+00:00",
-    "llm_score": 8,
-    "llm_summary": "EVA-Bench 2.0 发布，包含多领域工具与场景。",
-    "llm_tags": [
-      "Benchmark",
-      "Evaluation",
-      "Tools"
-    ],
-    "llm_reason": "内容涉及最新的 LLM 评估基准 EVA-Bench 2.0，包含 121 个工具和 213 个场景，对研究 LLM 工具使用能力的计算机专业学生具有很高的参考价值。",
-    "score": 8
-  },
-  {
-    "id": "53a3b3f370a0",
-    "title": "The Download: AI-generated lawsuits and virtual power plants for data centers",
-    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How courts are coping with a flood of AI-generated lawsuits Most days in her chambers, Judge Maritza Braswell, a federal magistrate judge in Colorado, sifts through stacks of documents written by&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/04/1138408/the-download-ai-lawsuits-virtual-power-plants-data-centers/",
-    "source": "MIT Tech Review AI",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-04T12:10:00+00:00",
-    "llm_score": 7,
-    "llm_summary": "探讨AI诉讼与数据中心虚拟电厂。",
-    "llm_tags": [
-      "行业动态",
-      "法律与伦理",
-      "基础设施"
-    ],
-    "llm_reason": "内容涉及AI法律诉讼这一热点话题，对了解AI落地面临的挑战有参考价值，但摘要信息密度较低。",
-    "score": 7
-  },
-  {
-    "id": "3bac1b254274",
-    "title": "The Download: AI-generated lawsuits and virtual power plants for data centers",
-    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How courts are coping with a flood of AI-generated lawsuits Most days in her chambers, Judge Maritza Braswell, a federal magistrate judge in Colorado, sifts through stacks of documents written by&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/04/1138408/the-download-ai-lawsuits-virtual-power-plants-data-centers/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-04T12:10:00+00:00",
-    "llm_score": 7.5,
-    "llm_summary": "探讨AI生成内容引发的诉讼及数据中心虚拟电厂。",
-    "llm_tags": [
-      "AI法律",
-      "数据中心",
-      "行业动态"
-    ],
-    "llm_reason": "内容涉及AI生成内容引发的最新法律诉讼，属于AI领域的前沿热点，且信息密度较高，对计算机专业学生了解AI伦理与法律边界具有参考价值。",
-    "score": 7.5
-  },
-  {
-    "id": "9b7a24053aae",
-    "title": "How Endava is redesigning software delivery around AI agents",
-    "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
-    "url": "https://openai.com/index/endava-frontiers",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-06-04T12:00:00+00:00",
-    "llm_score": 8,
-    "llm_summary": "企业级 AI 代理落地实践与软件交付重构案例。",
-    "llm_tags": [
-      "企业应用",
-      "AI Agents",
-      "OpenAI"
-    ],
-    "llm_reason": "来自 OpenAI 官方博客，提供了 AI Agents 在企业软件交付中的具体落地案例，具有较高的参考价值和实用性。",
-    "score": 8
-  },
-  {
-    "id": "84d31ca74a43",
-    "title": "Task-Seeded Synthetic Q&A Generation for Nemotron Pretraining",
-    "summary": "",
-    "url": "https://huggingface.co/blog/nvidia/task-seeded-sdg",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-04T11:24:53+00:00",
-    "llm_score": 8,
-    "llm_summary": "Nemotron 预训练数据合成方法详解。",
-    "llm_tags": [
-      "Nemotron",
-      "数据合成",
-      "预训练"
-    ],
-    "llm_reason": "Hugging Face 官方博客，详细介绍了 NVIDIA Nemotron 模型预训练所用的 Task-Seeded Synthetic Q&A 生成技术，对理解大模型数据工程极具参考价值。",
-    "score": 8
-  },
-  {
-    "id": "2d128829e7a0",
-    "title": "How courts are coping with a flood of AI-generated lawsuits",
-    "summary": "Most days in her chambers, Judge Maritza Braswell, a federal magistrate judge in Colorado, sifts through stacks of documents written by people without a lawyer. Many of them can’t afford to hire a lawyer, and others have cases too weak or too small to interest one. She reads each one carefully, mindful of how daunting&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/",
-    "source": "MIT Tech Review AI",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-04T10:50:18+00:00",
-    "llm_score": 7,
-    "llm_summary": "探讨法院如何应对AI生成诉讼激增的现状。",
-    "llm_tags": [
-      "法律与AI",
-      "前沿趋势",
-      "社会影响"
-    ],
-    "llm_reason": "内容涉及AI生成内容在法律领域的实际应用与挑战，具有前沿性和一定的社会参考价值，但摘要截断导致信息密度和完整性不足。",
-    "score": 7
-  },
-  {
-    "id": "5ce61f167675",
-    "title": "How courts are coping with a flood of AI-generated lawsuits",
-    "summary": "Most days in her chambers, Judge Maritza Braswell, a federal magistrate judge in Colorado, sifts through stacks of documents written by people without a lawyer. Many of them can’t afford to hire a lawyer, and others have cases too weak or too small to interest one. She reads each one carefully, mindful of how daunting&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-04T10:50:18+00:00",
-    "llm_score": 5.2,
-    "llm_summary": "探讨法院如何应对AI生成诉讼激增的现状。",
-    "llm_tags": [
-      "AI伦理",
-      "法律",
-      "社会影响"
-    ],
-    "llm_reason": "内容涉及AI生成内容在法律领域的应用与挑战，具有时效性，但作为计算机专业学习资料，其技术深度和实操参考价值较低。",
-    "score": 5.2
-  },
-  {
-    "id": "c7f29e7033d9",
-    "title": "Forlives/21-day-self-interview ⭐139",
-    "summary": "🪞 An AI existential-psychology counselor asks you 3 meaningful questions every night for 21 days — and remembers, reflecting your own words back to you. Bilingual zh/en. A Hermes Agent skill. 每晚三个问题，一",
-    "url": "https://github.com/Forlives/21-day-self-interview",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T09:53:52Z",
-    "stars": 139,
-    "language": "Python",
-    "llm_score": 7.2,
-    "llm_summary": "AI 心理咨询师 21 天自我对话项目",
-    "llm_tags": [
-      "AI Agent",
-      "心理",
-      "交互",
-      "开源"
-    ],
-    "llm_reason": "内容展示了 AI Agent 在特定垂直领域的创新应用（心理陪伴），具有前沿性、高信息密度和实用参考价值。",
-    "score": 7.2
-  },
-  {
-    "id": "284c0aa57ffb",
-    "title": "Dreaming: Better memory for a more helpful ChatGPT",
-    "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
-    "url": "https://openai.com/index/chatgpt-memory-dreaming",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-06-04T09:00:00+00:00",
-    "llm_score": 8,
-    "llm_summary": "OpenAI发布ChatGPT记忆系统，提升多轮对话连贯性。",
-    "llm_tags": [
-      "OpenAI",
-      "ChatGPT",
-      "RAG",
-      "长文本"
-    ],
-    "llm_reason": "内容来自官方博客，详细介绍了ChatGPT最新的记忆机制，对理解大模型如何处理长期上下文和用户偏好具有重要参考价值。",
-    "score": 8
-  },
-  {
-    "id": "374849298f07",
-    "title": "lxxgg92/xianxin-design-workflow ⭐20",
-    "summary": "A complete AI-powered workflow for UI/UX designers, from design systems to final delivery.",
-    "url": "https://github.com/lxxgg92/xianxin-design-workflow",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T07:45:13Z",
-    "stars": 20,
-    "language": "JavaScript",
-    "llm_score": 6.8,
-    "llm_summary": "AI 驱动的 UI/UX 设计工作流仓库。",
-    "llm_tags": [
-      "GitHub",
-      "UI/UX",
-      "Workflow"
-    ],
-    "llm_reason": "内容与 AI 应用相关，但主要面向设计师而非计算机专业学生，实用性一般。",
-    "score": 6.8
-  },
-  {
-    "id": "ebbf6e1b3985",
-    "title": "SaqlainXoas/llm-system-patterns ⭐17",
-    "summary": "A docs-first guide to LLM system design — hybrid search, embedding pipelines, reranking, and LLM-as-judge patterns.",
-    "url": "https://github.com/SaqlainXoas/llm-system-patterns",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T07:44:10Z",
-    "stars": 17,
-    "language": null,
-    "llm_score": 8.7,
-    "llm_summary": "LLM系统设计模式指南，涵盖搜索与重排序。",
-    "llm_tags": [
-      "系统设计",
-      "LLM应用",
-      "GitHub"
-    ],
-    "llm_reason": "内容聚焦LLM系统架构核心模式，信息密度高且实用性强，适合计算机专业学生深入理解技术细节。",
-    "score": 8.7
   }
 ]
