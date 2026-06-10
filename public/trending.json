@@ -1,5 +1,335 @@
 [
   {
+    "id": "c58882352327",
+    "title": "Fully autonomous AI-controlled drones have killed human soldiers for the first time",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u259si/fully_autonomous_aicontrolled_drones_have_killed/\"> <img alt=\"Fully autonomous AI-controlled drones have killed human sol",
+    "url": "https://www.reddit.com/r/artificial/comments/1u259si/fully_autonomous_aicontrolled_drones_have_killed/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T15:21:41+00:00",
+    "frontier": 75,
+    "signal": 40,
+    "score": 61,
+    "llm_summary": "全自主AI无人机首次在实战中击杀人类士兵",
+    "llm_tags": [
+      "军事AI",
+      "自主系统",
+      "无人机"
+    ]
+  },
+  {
+    "id": "d6cf84577b37",
+    "title": "[R] AI Agent Security: The Complete Guide to Threats, Defenses, and the Future of Autonomous AI Safety [R]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>This is a comprehensive living reference guide to AI agent security — synthesizing 18 articles from The Agent Report covering the 75-day period (April–June 2026) when",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1u242n9/r_ai_agent_security_the_complete_guide_to_threats/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T14:38:46+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "AI Agent安全综合指南，涵盖威胁防御与未来安全方向",
+    "llm_tags": [
+      "AI安全",
+      "Agent",
+      "防御机制"
+    ]
+  },
+  {
+    "id": "42f28dc4c133",
+    "title": "We have a new SimpleBench king",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u22k1p/we_have_a_new_simplebench_king/\"> <img alt=\"We have a new SimpleBench king\" src=\"https://preview.redd.it/12u7mlk9lg6h1.p",
+    "url": "https://www.reddit.com/r/singularity/comments/1u22k1p/we_have_a_new_simplebench_king/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T13:41:15+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "新模型登顶SimpleBench基准测试，展示强推理能力",
+    "llm_tags": [
+      "基准测试",
+      "大模型",
+      "推理"
+    ]
+  },
+  {
+    "id": "cd3acecf4e01",
+    "title": "Pokémon Go data ‘exploited to develop navigation’ for military drones",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u21qcb/pokémon_go_data_exploited_to_develop_navigation/\"> <img alt=\"Pokémon Go data ‘exploited to develop navigation’ for milita",
+    "url": "https://www.reddit.com/r/artificial/comments/1u21qcb/pokémon_go_data_exploited_to_develop_navigation/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T13:08:10+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "利用游戏数据训练无人机导航，展示数据复用潜力",
+    "llm_tags": [
+      "无人机",
+      "数据集",
+      "计算机视觉"
+    ]
+  },
+  {
+    "id": "60997d7b5d0f",
+    "title": "MooreThreads/MusaCoder-27B • Huggingface",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1zjw0/moorethreadsmusacoder27b_huggingface/\"> <img alt=\"MooreThreads/MusaCoder-27B • Huggingface\" src=\"https://external-preview",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1zjw0/moorethreadsmusacoder27b_huggingface/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T11:32:16+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "摩尔线程发布27B代码模型，支持国产GPU推理",
+    "llm_tags": [
+      "国产算力",
+      "代码模型",
+      "开源模型"
+    ]
+  },
+  {
+    "id": "cfc0d8faa4c7",
+    "title": "Cohere released North Mini Code: It's first Open-Source Agentic Coding Model",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1za0m/cohere_released_north_mini_code_its_first/\"> <img alt=\"Cohere released North Mini Code: It's first Open-Source Agentic Co",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1za0m/cohere_released_north_mini_code_its_first/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T11:18:53+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "Cohere发布首个开源智能体代码模型North Mini Code",
+    "llm_tags": [
+      "代码模型",
+      "开源",
+      "Agent"
+    ]
+  },
+  {
+    "id": "2a2a32264013",
+    "title": "Claude Fable 5 pricing is $50/Million tokens… are we reaching enterprise-only AI?",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/ChatGPT/comments/1u1woil/claude_fable_5_pricing_is_50million_tokens_are_we/\"> <img alt=\"Claude Fable 5 pricing is $50/Million tokens… are we reaching",
+    "url": "https://www.reddit.com/r/ChatGPT/comments/1u1woil/claude_fable_5_pricing_is_50million_tokens_are_we/",
+    "source": "r/ChatGPT",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T08:56:01+00:00",
+    "frontier": 85,
+    "signal": 60,
+    "score": 75,
+    "llm_summary": "Claude Fable 5 定价曝光，每百万 tokens 50 美元引发讨论",
+    "llm_tags": [
+      "大模型",
+      "定价策略",
+      "Claude"
+    ]
+  },
+  {
+    "id": "f0a0162bafc8",
+    "title": "Business World Model",
+    "summary": "arXiv:2606.10044v1 Announce Type: new  Abstract: Businesses are increasingly adopting AI-enabled tools to improve productivity, reduce costs, and enhance products and services. However, the transformative potential of AI extends beyond automating predefined tasks: it lies in enabling intelligent systems to plan, optimize, and execute business initiatives from high-level strategic objectives. This paper introduces the concept and architecture of a business world model (BWM), a world model specialized for business and organizational environments. Inspired by world models in artificial intelligence, cognitive science, and control theory, a BWM encodes business states, dynamics, constraints, objectives, and feasible action space to support autonomous decision-making. We propose a business-sema",
+    "url": "https://arxiv.org/abs/2606.10044",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-10T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 65,
+    "llm_summary": "提出商业世界模型概念，架构用于高层战略规划与执行。",
+    "llm_tags": [
+      "世界模型",
+      "智能体",
+      "战略规划",
+      "架构设计"
+    ]
+  },
+  {
+    "id": "9f18eed77474",
+    "title": "Deployment-Time Memorization in Foundation-Model Agents",
+    "summary": "arXiv:2606.10062v1 Announce Type: new  Abstract: Foundation-model agents are increasingly long-lived systems that remember users across interactions, making memorization an explicit deployment-time function rather than solely a property of model weights. Existing work addresses parametric memorization or audits fixed memory configurations, but does not characterize how memory-design choices jointly shape personalization utility, extraction risk, and deletion fidelity. We study this surface as deployment-time memorization, formulating agent memory as a privacy-utility frontier measured by Personalization Recall (PR) and Adversarial Extraction Rate (AER), and sweeping three memory-design knobs: summarization aggressiveness, retrieval breadth (k), and deletion mode. We further introduce the F",
+    "url": "https://arxiv.org/abs/2606.10062",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-10T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "探讨基础模型智能体部署时的记忆机制设计权衡",
+    "llm_tags": [
+      "智能体",
+      "隐私安全",
+      "记忆机制"
+    ]
+  },
+  {
+    "id": "46b63bda9690",
+    "title": "Less Context, Better Agents: Efficient Context Engineering for Long-Horizon Tool-Using LLM Agents",
+    "summary": "arXiv:2606.10209v1 Announce Type: new  Abstract: Large language models deployed as autonomous agents for enterprise workflows face a key challenge: verbose tool responses from enterprise systems can cause context overflow, stale-state errors, and high inference cost. We study this problem in automated expense itemization in Microsoft Dynamics 365 Finance and Operations using Model Context Protocol tools. We evaluate four GPT-5 configurations on a 50-task hotel expense benchmark: no user model, full conversation history, context pruned to the last 5 tool call/response pairs, and pruning with automated summarization. Results are averaged across 5 independent runs, with the user model held constant for the context-engineering comparison. The no-user-model baseline achieves only 8.0% complete ",
+    "url": "https://arxiv.org/abs/2606.10209",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-10T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出上下文工程方法解决长周期Agent工具响应冗余问题",
+    "llm_tags": [
+      "Agent",
+      "上下文优化",
+      "RAG",
+      "企业应用"
+    ]
+  },
+  {
+    "id": "4805191e9241",
+    "title": "RealMath-Eval: Why SOTA Judges Struggle with Real Human Reasoning",
+    "summary": "arXiv:2606.10254v1 Announce Type: new  Abstract: While Large Language Models (LLMs) have achieved near-perfect performance in \\emph{solving} high-school mathematics, their ability to \\emph{evaluate} the diverse reasoning processes of real human students remains under-examined. To bridge this gap, we introduce \\textbf{RealMath-Eval}, a rigorously annotated benchmark of 224 real-world exam responses from high schools. Our initial evaluation reveals that even state-of-the-art LLM judges struggle significantly on this task, exhibiting a high Mean Squared Error ($\\sim$2.96) against expert human grading. To probe a plausible explanation, we contrast this performance with a control setting where the same judges evaluate synthetic LLM-generated solutions. We identify a stark ``Evaluation Gap'': ju",
+    "url": "https://arxiv.org/abs/2606.10254",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-10T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "发布真实高中数学答题数据集，揭示SOTA模型评估人类推理的不足。",
+    "llm_tags": [
+      "评估基准",
+      "数学推理",
+      "LLM评测"
+    ]
+  },
+  {
+    "id": "b83d5214f181",
+    "title": "Supervised Fine-tuning with Synthetic Rationale Data Hurts Real-World Disease Prediction",
+    "summary": "arXiv:2606.10279v1 Announce Type: new  Abstract: Supervised fine-tuning with synthetic rationale data is widely assumed to improve language model performance on clinical prediction tasks by teaching models not just what to predict but why. We test this assumption on five-year Alzheimer's disease and related dementias (ADRD) prediction from longitudinal health histories. Across a large-scale controlled experiment of 504 configurations, we find that rationale-based SFT consistently and substantially hurts prediction performance relative to label-only fine-tuning. The degradation persists across model families and data scales, and is not resolved by using a reasoning-oriented base model. Crucially, the failure is not explained by poor rationale quality: human expert annotation confirms that t",
+    "url": "https://arxiv.org/abs/2606.10279",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-10T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "大规模实验揭示合成推理数据微调损害临床预测性能",
+    "llm_tags": [
+      "医疗AI",
+      "大模型微调",
+      "数据合成",
+      "负向结果"
+    ]
+  },
+  {
+    "id": "608c9a483a22",
+    "title": "From Context-Aware to Conflict-Aware: Generalizing Contrastive Decoding for Knowledge Conflict in LLMs",
+    "summary": "arXiv:2606.10298v1 Announce Type: new  Abstract: When large language models generate from retrieved or augmented contexts, conflicts between external context and parametric priors remain a central reliability bottleneck. Existing contrastive decoding methods follow a \\emph{context-aware} paradigm that unilaterally amplifies context over parametric priors, overwriting correct priors when the context is erroneous. We generalize this to the \\textbf{conflict-aware} paradigm that dynamically allocates authority between prior and context based on conflict signals, rather than presupposing context trustworthiness. We show that the affine combination of prior and context logits yields a \\textbf{power family} with an inherent \\textbf{regime asymmetry}: extrapolation amplifies errors unboundedly whe",
+    "url": "https://arxiv.org/abs/2606.10298",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-10T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 80,
+    "score": 78,
+    "llm_summary": "提出冲突感知解码范式，动态解决LLM检索与参数知识冲突。",
+    "llm_tags": [
+      "🔧 已开源",
+      "RAG",
+      "解码策略",
+      "幻觉消除"
+    ]
+  },
+  {
+    "id": "f1cfa2ae9df0",
+    "title": "Self-Distillation Policy Optimization via Visual Feedback: Bridging Code and Visual Artifacts",
+    "summary": "arXiv:2606.10334v1 Announce Type: new  Abstract: Code-generating large language models (LLMs) increasingly produce visual artifacts such as charts, web pages, and slides by writing programs that are executed by non-differentiable renderers, committing to code before observing the render. As a result, otherwise executable code often yields artifacts with visually salient defects, including overlapping elements, clipped text, broken alignment, low contrast, and overflow. We study visual-feedback self-distillation for code-generated visual artifacts. We propose Visual-SDPO, a self-distillation policy-optimization framework that treats rendered visual feedback as privileged context for a weight-sharing teacher and distills this feedback into a coding student. To make supervision spatially targ",
+    "url": "https://arxiv.org/abs/2606.10334",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-10T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出视觉反馈自蒸馏策略，优化代码生成视觉缺陷。",
+    "llm_tags": [
+      "代码生成",
+      "视觉反馈",
+      "强化学习"
+    ]
+  },
+  {
+    "id": "a3c5d5364ae9",
+    "title": "Reasoning or Memorization? Direction-Aware Diversity Exploration in LLM Reinforcement Learning",
+    "summary": "arXiv:2606.10346v1 Announce Type: new  Abstract: Reinforcement learning has become a key paradigm for eliciting reasoning abilities in large language models, where exploration is crucial for discovering effective solution trajectories. Existing exploration methods typically encourage diversity in semantic or gradient spaces, without distinguishing what drives this diversity. A trajectory may appear novel because it follows a new reasoning process, or because it varies memorized patterns and shortcuts. Rewarding both cases equally may steer exploration toward memorization rather than genuine reasoning improvement. In this paper, we propose DiRL, a Direction-Aware Reinforcement Learning framework that anchors exploration to an internal reasoning-memorization direction of the policy. Specific",
+    "url": "https://arxiv.org/abs/2606.10346",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-10T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "提出方向感知多样性探索，区分LLM推理与记忆机制。",
+    "llm_tags": [
+      "强化学习",
+      "推理机制",
+      "探索策略"
+    ]
+  },
+  {
+    "id": "fab5fa383fc2",
+    "title": "Beyond Static Evaluation: Co-Evolutionary Mechanisms for LLM-Driven Strategy Evolution in Adversarial Games",
+    "summary": "arXiv:2606.10389v1 Announce Type: new  Abstract: Recent advances in LLM-driven code evolution have enabled automated discovery by iteratively generating and improving programs. However, applying these methods to adversarial multi-agent games introduces a fundamental challenge: the evaluation landscape shifts as strategies improve, causing fixed evaluators to become unreliable and evolution to stagnate. We propose three mechanisms to address this challenge: evaluator co-evolution, which incorporates discovered champions into the opponent pool; hierarchical deep evaluation, which replaces noisy few-game scores with statistically reliable assessments; and weakness pressure, which dynamically up-weights the most difficult opponents to break through plateaus. We implement these mechanisms withi",
+    "url": "https://arxiv.org/abs/2606.10389",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-10T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出对抗博弈中LLM策略与评估器协同进化机制",
+    "llm_tags": [
+      "多智能体",
+      "博弈论",
+      "🔧 已开源",
+      "代码进化"
+    ]
+  },
+  {
+    "id": "711deb784023",
+    "title": "Instruction Finetuning DeepSeek-R1-8B Model Using LoRA and NEFTune",
+    "summary": "arXiv:2606.10392v1 Announce Type: new  Abstract: Financial named-entity recognition (NER) is essential for translating unstructured financial reports and news into structured knowledge graphs. However, general-purpose large language models (LLMs) often misclassify financial entities or ignore domain-specific patterns. This paper investigates the use of DeepSeek-R1-8B, a recent open-source large language model, combined with Low-Rank Adaptation (LoRA) and Noisy Embedding Fine-Tuning (NEFTune) for financial NER. Each annotated sentence in our corpus of 1693 samples is converted into an instruction-input-output triple. We insert lightweight LoRA matrices into the Transformer layers and apply NEFTune to improve generalisation by adding uniform noise to embedding vectors during training. Experi",
+    "url": "https://arxiv.org/abs/2606.10392",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-10T04:00:00+00:00",
+    "frontier": 45,
+    "signal": 75,
+    "score": 60,
+    "llm_summary": "结合LoRA与NEFTune微调DeepSeek-R1用于金融NER",
+    "llm_tags": [
+      "🔧 已开源",
+      "金融NER",
+      "LoRA",
+      "DeepSeek"
+    ]
+  },
+  {
+    "id": "1537febc644a",
+    "title": "STAGE-Claw: Automated State-based Agent Benchmarking for Realistic Scenarios",
+    "summary": "arXiv:2606.10394v1 Announce Type: new  Abstract: Large language models are increasingly used to power personal agents for everyday applications, but evaluating these agents remains a challenge. Existing benchmarks still rely on sandboxed artifacts, static task design, and coarse scoring, which hinder scalability and limit progress toward reliable personal-agent evaluation. This paper introduces STAGE-Claw, an automated framework for building and evaluating realistic personal-agent scenarios in state-based personal-computing environments. Given a task hint, STAGE-Claw automatically creates and validates a realistic benchmark task with its environment, task prompts, ground truth, and related verification programs. Agents are then evaluated in realistic operating environments, where performan",
+    "url": "https://arxiv.org/abs/2606.10394",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-10T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出基于状态的自动化框架，构建真实场景评估个人智能体。",
+    "llm_tags": [
+      "智能体",
+      "评估基准",
+      "自动化测试"
+    ]
+  },
+  {
     "id": "2b0835bafbf9",
     "title": "RFE‑Core2 — Current Understanding (June 9th 2026) [R]",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>“Why the system feels rigid, why downstream fixes didn’t move the needle, and what actually matters.”</strong></p> <p>This is the clearest picture after the f",
@@ -286,6 +616,27 @@
       "生物计算",
       "抗衰老",
       "重编程"
+    ]
+  },
+  {
+    "id": "8190f40deba9",
+    "title": "superagents-lab/xcode27-skills ⭐60",
+    "summary": "Apple's official Agent Skills exported from Xcode 27 — SwiftUI, UIKit modernization, Swift Testing, C bounds-safety, and security hardening for AI coding agents.",
+    "url": "https://github.com/superagents-lab/xcode27-skills",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-09T08:15:52Z",
+    "stars": 60,
+    "language": "Python",
+    "frontier": 75,
+    "signal": 85,
+    "score": 79,
+    "llm_summary": "苹果开源Xcode 27 Agent技能集，含SwiftUI与安全加固数据",
+    "llm_tags": [
+      "AI Agent",
+      "Swift",
+      "代码生成",
+      "数据集"
     ]
   },
   {
@@ -839,6 +1190,26 @@
       "视频翻译",
       "本地部署",
       "语音识别"
+    ]
+  },
+  {
+    "id": "68984464bdb7",
+    "title": "agentic-in/inferoa ⭐59",
+    "summary": "Inference-native Tokenmaxxing Agent Harness for Loop Engineering",
+    "url": "https://github.com/agentic-in/inferoa",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-08T06:29:56Z",
+    "stars": 59,
+    "language": "TypeScript",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "面向推理优化的原生Agent工程框架，支持循环工程",
+    "llm_tags": [
+      "Agent",
+      "推理优化",
+      "开源工具"
     ]
   },
   {
@@ -1855,251 +2226,5 @@
     ],
     "llm_reason": "内容涉及Gemma 4的最新量化技术，具有前沿性，但作为Reddit帖子，信息密度和可读性受限于社区讨论形式，且摘要不完整。",
     "score": 6.8
-  },
-  {
-    "id": "3c53aa6688ad",
-    "title": "Unsloth just dropped MTP GGUF weights for Gemma 4!",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>It appears like Unsloth pushed MTP GGUF weights (Q8, F16, BF16) for 31B, 26B-A4B, 12B.</p> <p><a href=\"https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/tree/main/MT",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txnhqp/unsloth_just_dropped_mtp_gguf_weights_for_gemma_4/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T15:02:57+00:00",
-    "llm_score": 7.5,
-    "llm_summary": "Unsloth发布Gemma 4的MTP GGUF量化权重。",
-    "llm_tags": [
-      "Gemma 4",
-      "GGUF",
-      "量化",
-      "本地部署"
-    ],
-    "llm_reason": "涉及最新的Gemma 4模型和GGUF格式，对本地部署和量化研究有较高实用价值，信息密度较高。",
-    "score": 7.5
-  },
-  {
-    "id": "729d9c5b9655",
-    "title": "How do you identify researchers who are good? [D]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>About 10 years ago, I got into the basics of ML (like regression, KNN's, LVQ's) and read a few papers before taking a break a few years back.</p> <p>It feels like now",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1txlxm6/how_do_you_identify_researchers_who_are_good_d/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T14:04:59+00:00",
-    "llm_score": 5.5,
-    "llm_summary": "讨论如何识别优秀AI研究员，内容不完整。",
-    "llm_tags": [
-      "社区讨论",
-      "职业发展"
-    ],
-    "llm_reason": "内容涉及AI研究员的识别标准，但摘要截断且缺乏实质性技术细节，信息密度较低。",
-    "score": 5.5
-  },
-  {
-    "id": "5d17d348dccc",
-    "title": "I implemented KVarN in my llama.cpp fork and ran KLD benchmarks. It's promising!",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Saw this post here yesterday: <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1twptw2/kvarn_new_kvcache_quant_from_huawei_35_kv_cache/\">KVarN: new KV-cache quan",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txlhxu/i_implemented_kvarn_in_my_llamacpp_fork_and_ran/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T13:48:37+00:00",
-    "llm_score": 7.8,
-    "llm_summary": "本地LLM社区实测KVarN量化技术，性能表现积极。",
-    "llm_tags": [
-      "量化",
-      "KV Cache",
-      "llama.cpp",
-      "性能优化"
-    ],
-    "llm_reason": "内容涉及华为最新的 KV Cache 量化技术 KVarN，属于前沿技术；作者在 llama.cpp 框架下进行了实际基准测试，信息密度高，对学习 LLM 推理优化有参考价值。",
-    "score": 7.8
-  },
-  {
-    "id": "ec07019ed47d",
-    "title": "Zafer-Liu/Agent_Manager ⭐136",
-    "summary": "A cross-platform desktop application for managing AI Agents and MCP Servers. 一款用于管理AI智能体与MCP服务器的跨平台桌面应用程序。",
-    "url": "https://github.com/Zafer-Liu/Agent_Manager",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-05T13:16:55Z",
-    "stars": 136,
-    "language": "TypeScript",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "跨平台桌面应用，用于管理AI智能体与MCP服务器",
-    "llm_tags": [
-      "Agent管理",
-      "MCP",
-      "桌面应用"
-    ]
-  },
-  {
-    "id": "c0eae8f91b08",
-    "title": "Benchmark: ONNX Runtime vs HF Transformers vs GGUF for Parakeet TDT 0.6B on CPU-only hardware [D]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Sharing a small CPU inference benchmark for nvidia/parakeet-tdt-0.6b-v3 that turned up a result I didn't expect going in.</p> <p><strong>Setup:</strong> 2 x86-64 vCPU",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1txkbsf/benchmark_onnx_runtime_vs_hf_transformers_vs_gguf/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T13:01:08+00:00",
-    "llm_score": 8.2,
-    "llm_summary": "CPU推理性能基准测试，对比三种主流框架。",
-    "llm_tags": [
-      "Benchmark",
-      "Inference",
-      "CPU",
-      "Parakeet"
-    ],
-    "llm_reason": "内容提供了具体的模型（Parakeet TDT 0.6B）在CPU环境下的性能对比数据，信息密度高，对实际部署和选型有直接参考价值。",
-    "score": 8.2
-  },
-  {
-    "id": "8ba2fe76ac77",
-    "title": "An autonomous research agent was the #1 contributor in OpenAI's Hiring Competition Parameter Golf (by merged records)[R]",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1txka8q/an_autonomous_research_agent_was_the_1/\"> <img alt=\"An autonomous research agent was the #1 contributor in OpenAI's ",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1txka8q/an_autonomous_research_agent_was_the_1/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T12:59:36+00:00",
-    "llm_score": 6.5,
-    "llm_summary": "AI代理在招聘竞赛中表现优异，展示技术潜力。",
-    "llm_tags": [
-      "AI Agent",
-      "OpenAI",
-      "Research"
-    ],
-    "llm_reason": "内容展示了AI代理在真实场景（招聘竞赛）中的能力，具有前沿性和一定的实用性，但作为Reddit帖子，信息密度和可读性相对一般。",
-    "score": 6.5
-  },
-  {
-    "id": "2816a3adce31",
-    "title": "The Download: AI hacking beyond Mythos, and chatbots’ impact on our brains",
-    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The Meta hack shows there’s more to AI security than Mythos On Monday, reports emerged that attackers had used Meta’s AI customer support agent to steal Instagram accounts. Their approach was&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/05/1138452/the-download-ai-hacking-mythos-chatbots-brain-impacts/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-05T12:10:00+00:00",
-    "llm_score": 6.8,
-    "llm_summary": "Meta AI 安全漏洞与 AI 对大脑影响，内容相关但深度一般。",
-    "llm_tags": [
-      "AI安全",
-      "Meta",
-      "神经科学"
-    ],
-    "llm_reason": "内容涉及 Meta AI 安全漏洞和 AI 对大脑的影响，与 AI/LLM 学习者相关。但摘要信息密度较低，且属于大众科技新闻，缺乏深度技术细节。",
-    "score": 6.8
-  },
-  {
-    "id": "e9995dc9740c",
-    "title": "Are AI chatbots making us lose control of our brains?",
-    "summary": "This week I’ve been at SXSW London. There’s been music, film, and a lot—and I mean a lot—of talk about AI. I also had the opportunity to sit down with Gloria Mark, a psychologist at the University of California, Irvine, who has spent the last 30 years studying how people interact with digital technologies. Early&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/05/1138427/are-ai-chatbots-making-us-lose-control-of-our-brains/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-05T09:00:00+00:00",
-    "llm_score": 6.5,
-    "llm_summary": "MIT采访心理学家探讨AI对人类注意力的潜在影响。",
-    "llm_tags": [
-      "心理学",
-      "注意力机制",
-      "MIT"
-    ],
-    "llm_reason": "内容涉及AI对人类认知和注意力的潜在影响，具有前沿性和一定的实用性，但摘要信息密度较低，仅展示了开头部分。",
-    "score": 6.5
-  },
-  {
-    "id": "4959b79e9ee2",
-    "title": "The Meta hack shows there’s more to AI security than Mythos",
-    "summary": "On June 5, 404 Media reported that attackers had been using Meta’s AI customer support agent to steal Instagram accounts. Their approach was simple: They asked the agent to link the accounts to email addresses that they controlled, and the agent complied. One attacker broke into the dormant Obama White House account and made pro-Iran&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-05T09:00:00+00:00",
-    "llm_score": 7.5,
-    "llm_summary": "Meta AI客服漏洞被利用窃取账号，揭示安全新风险。",
-    "llm_tags": [
-      "AI安全",
-      "漏洞利用",
-      "Meta"
-    ],
-    "llm_reason": "内容涉及具体的AI安全漏洞案例，具有前沿性和较高的信息密度，对理解LLM安全风险很有价值。",
-    "score": 7.5
-  },
-  {
-    "id": "9e5bb5982780",
-    "title": "CWS6206/ai-coding-starter-kit ⭐251",
-    "summary": "Kuratierte Agent Skills, Checklisten, Templates und Leitfäden für Schweizer Entwicklungsteams – direkt aus meinen Blog-Artikeln destilliert.",
-    "url": "https://github.com/CWS6206/ai-coding-starter-kit",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-05T08:46:35Z",
-    "stars": 251,
-    "language": null,
-    "llm_score": 6.2,
-    "llm_summary": "瑞士开发团队的 AI 编程工具精选集。",
-    "llm_tags": [
-      "GitHub",
-      "AI 工具",
-      "资源集合"
-    ],
-    "llm_reason": "内容与 AI 编程工具相关，但摘要信息密度较低，缺乏具体技术细节，实用性一般。",
-    "score": 6.2
-  },
-  {
-    "id": "4d101a3ff4bd",
-    "title": "Forsy-AI/forsy-trace-skill ⭐100",
-    "summary": "Open skill for capturing AI agent work as structured traces.",
-    "url": "https://github.com/Forsy-AI/forsy-trace-skill",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-05T08:31:53Z",
-    "stars": 100,
-    "language": "Python",
-    "frontier": 95,
-    "signal": 90,
-    "score": 93,
-    "llm_summary": "开源技能用于结构化捕获 AI Agent 工作流",
-    "llm_tags": [
-      "Agent",
-      "可观测性",
-      "开源"
-    ]
-  },
-  {
-    "id": "2f179ae337cf",
-    "title": "Is it allowed to use OpenAI API outputs to create a silver code dataset or benchmark for a specific Python library? [d]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hello everyone,</p> <p>Is it allowed to use OpenAI API outputs to create a silver code dataset or benchmark for a specific Python library?</p> <p>I am working on a pr",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1txc6qd/is_it_allowed_to_use_openai_api_outputs_to_create/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T05:52:32+00:00",
-    "llm_score": 7.5,
-    "llm_summary": "探讨使用 OpenAI 输出构建代码数据集的合规性。",
-    "llm_tags": [
-      "OpenAI",
-      "Code",
-      "Ethics",
-      "Dataset"
-    ],
-    "llm_reason": "内容涉及 OpenAI API 的使用规范与代码数据集构建，对开发者具有实际参考价值，信息密度较高。",
-    "score": 7.5
-  },
-  {
-    "id": "2161a42b960c",
-    "title": "zengxiao-he/tessera ⭐56",
-    "summary": "From teacher to tiles — a from-scratch LLM distillation & serving engine: custom Triton/CUDA kernels, FSDP distillation, paged-KV continuous batching, speculative decoding, a Rust gateway, a JAX oracl",
-    "url": "https://github.com/zengxiao-he/tessera",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-05T05:02:09Z",
-    "stars": 56,
-    "language": "Python",
-    "frontier": 85,
-    "signal": 88,
-    "score": 86,
-    "llm_summary": "从零构建LLM蒸馏与推理引擎，集成CUDA内核与连续批处理",
-    "llm_tags": [
-      "LLM推理",
-      "模型蒸馏",
-      "CUDA内核",
-      "推理加速"
-    ]
   }
 ]
