@@ -1,5 +1,203 @@
 [
   {
+    "id": "2b0835bafbf9",
+    "title": "RFE‑Core2 — Current Understanding (June 9th 2026) [R]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>“Why the system feels rigid, why downstream fixes didn’t move the needle, and what actually matters.”</strong></p> <p>This is the clearest picture after the f",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1u1pweh/rfecore2_current_understanding_june_9th_2026_r/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T02:49:53+00:00",
+    "frontier": 85,
+    "signal": 75,
+    "score": 81,
+    "llm_summary": "深入解析RFE-Core2系统僵化原因及下游修复失效的根源",
+    "llm_tags": [
+      "系统架构",
+      "模型优化",
+      "技术复盘"
+    ]
+  },
+  {
+    "id": "206483cd95ad",
+    "title": "Releasing Apodex-1.0 Smol Models (0.8B, 2B, 4B Open-Weights) optimized for Agentic Verification + AgentHarness Evals",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1p2me/releasing_apodex10_smol_models_08b_2b_4b/\"> <img alt=\"Releasing Apodex-1.0 Smol Models (0.8B, 2B, 4B Open-Weights) optimi",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1p2me/releasing_apodex10_smol_models_08b_2b_4b/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T02:11:47+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "发布针对Agent验证优化的0.8B至4B小模型及AgentHarness评估框架",
+    "llm_tags": [
+      "小模型",
+      "Agent",
+      "评估框架",
+      "开源权重"
+    ]
+  },
+  {
+    "id": "0b7b7952815c",
+    "title": "Can a machine think without language?",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Yann LeCun bet a billion dollars that it can. He left Meta arguing today’s chatbots are a dead end, and that real intelligence comes from “world models,” systems that",
+    "url": "https://www.reddit.com/r/artificial/comments/1u1i3ih/can_a_machine_think_without_language/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T21:14:52+00:00",
+    "frontier": 75,
+    "signal": 45,
+    "score": 63,
+    "llm_summary": "LeCun认为语言非智能核心，主张世界模型架构",
+    "llm_tags": [
+      "世界模型",
+      "架构争议",
+      "Meta"
+    ]
+  },
+  {
+    "id": "09cf11fd97a4",
+    "title": "Matt Shumer: \"Fable has solved 3D worldbuilding... utterly insane. This is all completely custom-built ThreeJs, running in the browser.\"",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u1hmk6/matt_shumer_fable_has_solved_3d_worldbuilding/\"> <img alt=\"Matt Shumer: &quot;Fable has solved 3D worldbuilding... utter",
+    "url": "https://www.reddit.com/r/singularity/comments/1u1hmk6/matt_shumer_fable_has_solved_3d_worldbuilding/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T20:57:47+00:00",
+    "frontier": 75,
+    "signal": 45,
+    "score": 63,
+    "llm_summary": "Fable展示基于Three.js的浏览器端3D世界构建技术",
+    "llm_tags": [
+      "3D生成",
+      "WebGL",
+      "渲染引擎"
+    ]
+  },
+  {
+    "id": "8ff52085c6d3",
+    "title": "It's over. Claude Fable 5 one-shots horror game live",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u1h7de/its_over_claude_fable_5_oneshots_horror_game_live/\"> <img alt=\"It's over. Claude Fable 5 one-shots horror game live\" src",
+    "url": "https://www.reddit.com/r/singularity/comments/1u1h7de/its_over_claude_fable_5_oneshots_horror_game_live/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T20:42:11+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "Claude Fable 5 实时演示单次生成的恐怖游戏",
+    "llm_tags": [
+      "实时生成",
+      "游戏AI",
+      "Claude"
+    ]
+  },
+  {
+    "id": "64fc140d5995",
+    "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
+    "summary": "",
+    "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-09T19:38:28+00:00",
+    "frontier": 65,
+    "signal": 82,
+    "score": 72,
+    "llm_summary": "评估前沿ASR模型在语码转换语音上的双语处理能力",
+    "llm_tags": [
+      "语音识别",
+      "多模态",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "05b81f928471",
+    "title": "AI Epistemic Risks: Emerging Mechanisms & Evidence [R]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>How will AI affect our ability to think and judge for ourselves?</strong></p> <p>Our new paper co-authored by 30 experts explores <strong>epistemic risks</str",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1u1ew6q/ai_epistemic_risks_emerging_mechanisms_evidence_r/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T19:18:47+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "30位专家联合论文探讨AI对人类认知判断的风险",
+    "llm_tags": [
+      "AI安全",
+      "认知风险",
+      "理论研究"
+    ]
+  },
+  {
+    "id": "42983993c056",
+    "title": "Claude Fable & Mythos released by Anthropic",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u1e9e4/claude_fable_mythos_released_by_anthropic/\"> <img alt=\"Claude Fable &amp; Mythos released by Anthropic\" src=\"https://exte",
+    "url": "https://www.reddit.com/r/artificial/comments/1u1e9e4/claude_fable_mythos_released_by_anthropic/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T18:56:40+00:00",
+    "frontier": 75,
+    "signal": 40,
+    "score": 61,
+    "llm_summary": "Anthropic 发布 Claude Fable 与 Mythos 模型",
+    "llm_tags": [
+      "大模型",
+      "Anthropic",
+      "模型发布"
+    ]
+  },
+  {
+    "id": "905b57a5eab0",
+    "title": "zai-org/SCAIL-2 · Hugging Face",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1dw38/zaiorgscail2_hugging_face/\"> <img alt=\"zai-org/SCAIL-2 · Hugging Face\" src=\"https://external-preview.redd.it/VZ-tlN2Mkq7o",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1dw38/zaiorgscail2_hugging_face/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T18:43:26+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "zai-org发布SCAIL-2模型，社区讨论其性能与本地部署效果。",
+    "llm_tags": [
+      "开源模型",
+      "LLM",
+      "本地部署"
+    ]
+  },
+  {
+    "id": "f1bb1d780a72",
+    "title": "Releasing Cohere North Mini Code",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1ci1r/releasing_cohere_north_mini_code/\"> <img alt=\"Releasing Cohere North Mini Code\" src=\"https://external-preview.redd.it/djN",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1ci1r/releasing_cohere_north_mini_code/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-09T17:54:36+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "Cohere 发布 North Mini Code 小型代码模型",
+    "llm_tags": [
+      "代码模型",
+      "模型发布"
+    ]
+  },
+  {
+    "id": "49e881077b80",
+    "title": "Introducing North Mini Code: Cohere’s First Model For Developers",
+    "summary": "",
+    "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-09T15:56:23+00:00",
+    "frontier": 65,
+    "signal": 60,
+    "score": 63,
+    "llm_summary": "Cohere发布首款面向开发者的轻量级代码模型",
+    "llm_tags": [
+      "代码模型",
+      "Cohere",
+      "小模型"
+    ]
+  },
+  {
     "id": "f83d7f9dd098",
     "title": "Apple announced new on device inference engine for Apple Silicon",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p>This news seem to have flown under the radar. Apple announced CoreAI on WWDC which is basically a future replacement for CoreML and an alternative to MLX/llama.cpp/to",
@@ -295,6 +493,25 @@
     ]
   },
   {
+    "id": "aa8f923499b3",
+    "title": "A case study of evaluating AI agents on a neuroscience data-to-discovery pipeline",
+    "summary": "arXiv:2606.07718v1 Announce Type: new  Abstract: Agentic AI tools offer a promising path to automating software development bottlenecks in scientific research pipelines, particularly for stages that take domain experts days to months to build, where scientists care about correctness and robustness, not implementation details. We present an empirical study of general-purpose coding agents on a fly optogenetics data-to-discovery pipeline. We assess agents on tasks substantially larger than existing benchmarks, datasets orders of magnitude bigger, and evaluation criteria grounded in domain expert standards. We show that agents can solve several individual pipeline stages, suggesting stage-level automation is tractable. By analyzing agents' code iterations, we show that they struggle most when",
+    "url": "https://arxiv.org/abs/2606.07718",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-09T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "评估通用编码代理在神经科学数据发现流程中的实证研究。",
+    "llm_tags": [
+      "AI代理",
+      "科学计算",
+      "自动化",
+      "代码生成"
+    ]
+  },
+  {
     "id": "4d4fb055a79b",
     "title": "2X tk/s (from 19.4 -> 38.1 tk/s on 1 x MI50) Playing with a hypothesis like speculative decoding.. but instead of an additional side model, exploiting that I can run multiple computations side-by-side AS IF I had Qwen3.6-27B loaded twice in memory - small quants don't use all the available compute.",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u0rk0o/2x_tks_from_194_381_tks_on_1_x_mi50_playing_with/\"> <img alt=\"2X tk/s (from 19.4 -&gt; 38.1 tk/s on 1 x MI50) Playing wit",
@@ -381,6 +598,26 @@
       "推理加速",
       "MoE",
       "小米"
+    ]
+  },
+  {
+    "id": "9f0140890d22",
+    "title": "g69995865146/paint-ai-3d ⭐75",
+    "summary": "A professional-grade AI-powered 3D painting system with advanced brushstrokes, layers, and materials. Perfect for artists, designers, and digital creators seeking high-quality 3D art creation.",
+    "url": "https://github.com/g69995865146/paint-ai-3d",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-08T15:41:23Z",
+    "stars": 75,
+    "language": null,
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "开源AI驱动的专业级3D绘画系统，支持笔刷与材质",
+    "llm_tags": [
+      "3D生成",
+      "图像编辑",
+      "开源项目"
     ]
   },
   {
@@ -582,6 +819,26 @@
       "推理优化",
       "KV缓存",
       "llama.cpp"
+    ]
+  },
+  {
+    "id": "685de83c1551",
+    "title": "xiaohuailabs/xiaohu-video-translate ⭐361",
+    "summary": "对 AI 说一句话，把外语视频自动配上中文字幕 —— 下载/转写/翻译/润色/烧录一条龙，全程本地，转写零 API 费",
+    "url": "https://github.com/xiaohuailabs/xiaohu-video-translate",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-08T09:55:55Z",
+    "stars": 361,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "本地化视频翻译工具，集成转写翻译润色烧录，零API成本",
+    "llm_tags": [
+      "视频翻译",
+      "本地部署",
+      "语音识别"
     ]
   },
   {
@@ -1045,6 +1302,45 @@
       "大模型评测",
       "性能对比",
       "Gemini"
+    ]
+  },
+  {
+    "id": "12d11d0af1c8",
+    "title": "emollick/concord ⭐71",
+    "summary": "Instrument-grade qualitative text analysis: AI-coded corpora, gold calibration, DSL/PPI-corrected statistics, Evidence Ladder",
+    "url": "https://github.com/emollick/concord",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-07T04:13:41Z",
+    "stars": 71,
+    "language": "JavaScript",
+    "frontier": 65,
+    "signal": 85,
+    "score": 73,
+    "llm_summary": "基于AI的定性文本分析工具，支持语料编码与统计校准",
+    "llm_tags": [
+      "文本分析",
+      "社会科学",
+      "开源工具"
+    ]
+  },
+  {
+    "id": "0c1b473a1f26",
+    "title": "RainyMarks/DeepX ⭐54",
+    "summary": "An AI agent workspace",
+    "url": "https://github.com/RainyMarks/DeepX",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-07T02:30:08Z",
+    "stars": 54,
+    "language": "Rust",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "开源的AI Agent工作区项目",
+    "llm_tags": [
+      "AI Agent",
+      "开源项目"
     ]
   },
   {
@@ -1805,256 +2101,5 @@
       "CUDA内核",
       "推理加速"
     ]
-  },
-  {
-    "id": "d6bfbb06c608",
-    "title": "Finally finished my LLM server: EPYC 9575F, 4× RTX 3090 (96GB VRAM), 768GB ECC RAM",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tx9tf2/finally_finished_my_llm_server_epyc_9575f_4_rtx/\"> <img alt=\"Finally finished my LLM server: EPYC 9575F, 4× RTX 3090 (96G",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tx9tf2/finally_finished_my_llm_server_epyc_9575f_4_rtx/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T03:49:25+00:00",
-    "llm_score": 7.8,
-    "llm_summary": "分享本地大模型服务器硬件配置与搭建经验。",
-    "llm_tags": [
-      "硬件",
-      "本地部署",
-      "LLM"
-    ],
-    "llm_reason": "内容涉及具体的本地 LLM 硬件配置（EPYC + RTX 3090），对有志于进行本地部署的学生具有很高的参考价值和实用性。",
-    "score": 7.8
-  },
-  {
-    "id": "f52c71ba4b07",
-    "title": "Hi Reddit, I posted my Build Your Own LLM workshop to Youtube (GPT2 & Qwen3.6 style)",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tx7gzu/hi_reddit_i_posted_my_build_your_own_llm_workshop/\"> <img alt=\"Hi Reddit, I posted my Build Your Own LLM workshop to Yout",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tx7gzu/hi_reddit_i_posted_my_build_your_own_llm_workshop/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T01:58:22+00:00",
-    "llm_score": 7.8,
-    "llm_summary": "分享在 YouTube 上构建 LLM 的工作坊教程。",
-    "llm_tags": [
-      "教程",
-      "实战",
-      "LLM"
-    ],
-    "llm_reason": "内容涉及构建 LLM 的实战教程，具有较好的实用性和信息密度，适合计算机专业学生参考。",
-    "score": 7.8
-  },
-  {
-    "id": "f0cdedc5474e",
-    "title": "veryyoldman/undress-ai-image-video-generator ⭐125",
-    "summary": "AI tool for generating uncensored images and videos",
-    "url": "https://github.com/veryyoldman/undress-ai-image-video-generator",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-05T00:25:02Z",
-    "stars": 125,
-    "language": "Python",
-    "llm_score": 5.2,
-    "llm_summary": "GitHub开源AI工具，生成无限制图像视频。",
-    "llm_tags": [
-      "GitHub",
-      "AI工具",
-      "图像生成"
-    ],
-    "llm_reason": "内容涉及AI图像视频生成，但属于灰色地带工具，缺乏技术深度和前沿性，实用性较低。",
-    "score": 5.2
-  },
-  {
-    "id": "84a2c10b9db2",
-    "title": "ninoxAI/nightwatch ⭐67",
-    "summary": "Open-source, local-first, read-only AI SRE: clusters alert storms, investigates root cause over your live systems, proposes human-gated fixes.",
-    "url": "https://github.com/ninoxAI/nightwatch",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T20:50:18Z",
-    "stars": 67,
-    "language": "Python",
-    "frontier": 65,
-    "signal": 60,
-    "score": 63,
-    "llm_summary": "开源本地优先的只读AI SRE，聚合告警并定位根因。",
-    "llm_tags": [
-      "AIOps",
-      "SRE",
-      "故障诊断",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "4fbbda36dfe4",
-    "title": "louisfb01/start-ai-engineering ⭐62",
-    "summary": "A complete guide to start and improve in AI engineering in 2026 without ANY background in the field and stay up-to-date with the latest news and state-of-the-art techniques!",
-    "url": "https://github.com/louisfb01/start-ai-engineering",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T20:14:21Z",
-    "stars": 62,
-    "language": null,
-    "llm_score": 7.2,
-    "llm_summary": "零基础AI工程入门指南，涵盖2026年前沿技术。",
-    "llm_tags": [
-      "GitHub",
-      "入门指南",
-      "AI工程"
-    ],
-    "llm_reason": "内容针对零基础学习者，强调2026年最新技术，具有明确的实用价值和较高的信息密度。",
-    "score": 7.2
-  },
-  {
-    "id": "f112a58c769e",
-    "title": "You guys were right - Qwen 3.6 35B IS good...and KV Cache DOES matter.",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>WARNING:</strong> <em>I'm speed typing this, no time to organizea/format, so if short paragraph chunks bother you, just keep it moving.</em></p> <p><strong>CO",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1twyoqe/you_guys_were_right_qwen_36_35b_is_goodand_kv/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-04T19:57:06+00:00",
-    "llm_score": 7.2,
-    "llm_summary": "实测Qwen 3.6 35B性能，验证KV Cache重要性。",
-    "llm_tags": [
-      "Qwen",
-      "模型评测",
-      "KV Cache"
-    ],
-    "llm_reason": "内容涉及最新的Qwen 3.6模型及KV Cache技术细节，具有实际参考价值，信息密度较高。",
-    "score": 7.2
-  },
-  {
-    "id": "30584144b6b6",
-    "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
-    "summary": "",
-    "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-04T18:57:45+00:00",
-    "llm_score": 6.5,
-    "llm_summary": "NVIDIA发布企业级多模态内容安全模型。",
-    "llm_tags": [
-      "NVIDIA",
-      "内容安全",
-      "企业级"
-    ],
-    "llm_reason": "内容涉及 NVIDIA 的新模型发布，具有前沿性，但摘要信息密度较低，缺乏具体技术细节。",
-    "score": 6.5
-  },
-  {
-    "id": "ebef419416de",
-    "title": "How do ML researchers actually use AI tools to improve their writing? [D]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>As an ML researcher, how do you use AI tools in your daily work? Do you mostly use them to clean up grammar and wording, or also to rewrite, structure, or draft techn",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1twtpmb/how_do_ml_researchers_actually_use_ai_tools_to/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-04T17:02:53+00:00",
-    "llm_score": 7.5,
-    "llm_summary": "探讨 ML 研究者如何利用 AI 工具辅助写作与科研流程。",
-    "llm_tags": [
-      "科研工具",
-      "写作辅助",
-      "社区讨论"
-    ],
-    "llm_reason": "内容针对 ML 研究者群体，讨论了 AI 在科研写作中的实际应用场景，具有较高的实用性和信息密度。",
-    "score": 7.5
-  },
-  {
-    "id": "e6461a7e5333",
-    "title": "Sapphiretrudirect/free-claude-code-ai-desktop-app-492 ⭐72",
-    "summary": "claude code ai free desktop app  api cli open source opencode aider gemini alternative download github local llm ollama setup guide tutorial api  2026",
-    "url": "https://github.com/Sapphiretrudirect/free-claude-code-ai-desktop-app-492",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T16:57:10Z",
-    "stars": 72,
-    "language": "C#",
-    "llm_score": 7,
-    "llm_summary": "Claude Code 桌面端开源替代方案教程。",
-    "llm_tags": [
-      "开源",
-      "桌面应用",
-      "Claude",
-      "教程"
-    ],
-    "llm_reason": "内容涉及开源桌面应用和本地 LLM 集成，对有特定开发需求的学生具有实用参考价值。",
-    "score": 7
-  },
-  {
-    "id": "686deb138b13",
-    "title": "VergeWarlord/KeyType-134 ⭐72",
-    "summary": "An open-source Cotypist with macOS system wide AI autocomplete",
-    "url": "https://github.com/VergeWarlord/KeyType-134",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T16:13:44Z",
-    "stars": 72,
-    "language": "Swift",
-    "llm_score": 7,
-    "llm_summary": "开源 macOS 系统级 AI 自动补全工具。",
-    "llm_tags": [
-      "macOS",
-      "AI工具",
-      "开源"
-    ],
-    "llm_reason": "涉及 AI 辅助编程工具，具有实际参考价值，但技术深度和前沿性一般。",
-    "score": 7
-  },
-  {
-    "id": "93a10828a004",
-    "title": "PostStokerStride/llm-intern-skill-232 ⭐73",
-    "summary": "LLM internship resume and job-search Codex Skill: resume polish, JD tailoring, evidence guard, interview grilling, and Project Scout for LLM/RAG/Agent roles. 大模型实习简历与求职工具箱。",
-    "url": "https://github.com/PostStokerStride/llm-intern-skill-232",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T15:59:59Z",
-    "stars": 73,
-    "language": "Markdown",
-    "llm_score": 8,
-    "llm_summary": "LLM求职简历优化与面试准备工具箱。",
-    "llm_tags": [
-      "GitHub",
-      "求职",
-      "简历优化"
-    ],
-    "llm_reason": "针对LLM/Agent岗位的求职实战工具，包含简历润色、JD匹配等实用技能，信息密度高，对CS学生求职有直接帮助。",
-    "score": 8
-  },
-  {
-    "id": "db1a1e774aca",
-    "title": "Nvidia's been paying shills on LinkedIn",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1twrvts/nvidias_been_paying_shills_on_linkedin/\"> <img alt=\"Nvidia's been paying shills on LinkedIn\" src=\"https://preview.redd.it",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1twrvts/nvidias_been_paying_shills_on_linkedin/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-04T15:59:37+00:00",
-    "llm_score": 4.5,
-    "llm_summary": "讨论 Nvidia 在 LinkedIn 的营销行为，非技术性讨论。",
-    "llm_tags": [
-      "Industry",
-      "Marketing",
-      "Discussion"
-    ],
-    "llm_reason": "内容主要讨论 Nvidia 的公关策略而非技术细节，信息密度低，对学习 AI 技术的实际参考价值有限。",
-    "score": 4.5
-  },
-  {
-    "id": "97356d354e72",
-    "title": "Sandfomodulator/subforge-177 ⭐72",
-    "summary": "Rust CLI for AI subtitle workflows: transcribe, segment, translate, evaluate, and burn or mux subtitles.",
-    "url": "https://github.com/Sandfomodulator/subforge-177",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-04T15:30:53Z",
-    "stars": 72,
-    "language": "Rust",
-    "llm_score": 8,
-    "llm_summary": "Rust CLI 工具，用于 AI 字幕工作流处理。",
-    "llm_tags": [
-      "Rust",
-      "CLI",
-      "Subtitle",
-      "Workflow"
-    ],
-    "llm_reason": "内容具体，提供了 Rust 实现的 CLI 工具，涵盖了字幕处理的完整流程，对计算机专业学生具有实用参考价值。",
-    "score": 8
   }
 ]
