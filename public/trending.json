@@ -1,5 +1,112 @@
 [
   {
+    "id": "b7bd93b45845",
+    "title": "DiffusionGemma under real workloads feels very different from benchmark demos",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u30dhr/diffusiongemma_under_real_workloads_feels_very/\"> <img alt=\"DiffusionGemma under real workloads feels very different from",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u30dhr/diffusiongemma_under_real_workloads_feels_very/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-11T14:18:24+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "实测DiffusionGemma在真实负载下表现与基准演示差异大",
+    "llm_tags": [
+      "扩散模型",
+      "模型评测",
+      "开源模型"
+    ]
+  },
+  {
+    "id": "5ae6fadd8201",
+    "title": "As we know Minimax M3 is just going to be open sourced in few days and because of that I was surfing on internet searching for its scores and I found out pretty interesting results. Is Minimax M3 really that good in agentic stuff and in coding? Is it better than older gpt models?",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u2zfqs/as_we_know_minimax_m3_is_just_going_to_be_open/\"> <img alt=\"As we know Minimax M3 is just going to be open sourced in few",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2zfqs/as_we_know_minimax_m3_is_just_going_to_be_open/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-11T13:41:47+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "社区讨论Minimax M3开源前的基准测试表现及代码能力",
+    "llm_tags": [
+      "开源模型",
+      "基准测试",
+      "代码能力"
+    ]
+  },
+  {
+    "id": "163a75539f59",
+    "title": "We captured the network traffic of ChatGPT, Gemini and DeepSeek to see how each defines a \"source\" — they're three completely different mechanisms",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Disclosure upfront: I'm the founder of an AI-visibility company, so this research scratches our own itch. Our domain was excluded from all counts before analysis. Not",
+    "url": "https://www.reddit.com/r/artificial/comments/1u2xdmg/we_captured_the_network_traffic_of_chatgpt_gemini/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-11T12:15:02+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "对比ChatGPT、Gemini和DeepSeek的网络流量，揭示三者定义“来源”的机制差异。",
+    "llm_tags": [
+      "网络分析",
+      "RAG",
+      "LLM架构"
+    ]
+  },
+  {
+    "id": "c7a4b3de732e",
+    "title": "Google DeepMind is worried about what happens when millions of agents start to interact",
+    "summary": "Google DeepMind is funding research into the potential dangers of situations where millions of different AI agents interact with each other online. According to Rohin Shah, who directs the company’s AGI safety and alignment research, the mass-market arrival of agents that can carry out tasks without human oversight and follow instructions given to them by other&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-11T11:00:45+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "DeepMind研究数百万AI智能体交互带来的潜在风险",
+    "llm_tags": [
+      "AI安全",
+      "智能体",
+      "多智能体"
+    ]
+  },
+  {
+    "id": "e4b6ac0aab2d",
+    "title": "Minimax M3 open weights release planned for Friday",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u2uje1/minimax_m3_open_weights_release_planned_for_friday/\"> <img alt=\"Minimax M3 open weights release planned for Friday\" src=\"",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2uje1/minimax_m3_open_weights_release_planned_for_friday/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-11T09:49:07+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "Minimax M3 模型计划周五开源权重",
+    "llm_tags": [
+      "开源模型",
+      "Minimax"
+    ]
+  },
+  {
+    "id": "3d00aa6f1dc7",
+    "title": "fableExpectations",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u2q07k/fableexpectations/\"> <img alt=\"fableExpectations\" src=\"https://preview.redd.it/2o426zap9l6h1.png?width=140&amp;height=105",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2q07k/fableexpectations/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-11T05:25:00+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "社区分享 fableExpectations 项目，展示本地模型推理效果。",
+    "llm_tags": [
+      "本地模型",
+      "推理",
+      "社区项目"
+    ]
+  },
+  {
     "id": "f0dd0772ba55",
     "title": "AMD's Lemonade SDK for local AI adds NVIDIA CUDA support",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u2ojv1/amds_lemonade_sdk_for_local_ai_adds_nvidia_cuda/\"> <img alt=\"AMD's Lemonade SDK for local AI adds NVIDIA CUDA support\" sr",
@@ -239,6 +346,24 @@
       "硬件架构",
       "AMD",
       "显存技术"
+    ]
+  },
+  {
+    "id": "1a652beabf96",
+    "title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
+    "summary": "",
+    "url": "https://huggingface.co/blog/torch-mlp-fusion",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-11T00:00:00+00:00",
+    "frontier": 45,
+    "signal": 92,
+    "score": 64,
+    "llm_summary": "详解PyTorch性能分析，展示从Linear到融合MLP的优化过程。",
+    "llm_tags": [
+      "PyTorch",
+      "性能优化",
+      "算子融合"
     ]
   },
   {
@@ -1676,6 +1801,26 @@
     ]
   },
   {
+    "id": "d612e554f905",
+    "title": "AIScientists-Dev/Caliper ⭐96",
+    "summary": "An AI research analyst that knows when to trust itself — a calibrated, risk-controlled, tool-using agent for science.",
+    "url": "https://github.com/AIScientists-Dev/Caliper",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-08T04:10:16Z",
+    "stars": 96,
+    "language": "HTML",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "具备风险控制能力的科研智能体，解决AI自我信任校准问题",
+    "llm_tags": [
+      "AI智能体",
+      "科研工具",
+      "校准机制"
+    ]
+  },
+  {
     "id": "8caeab5d97cd",
     "title": "DiBS: Diffusion-Informed Branch Selection",
     "summary": "arXiv:2606.06518v1 Announce Type: new  Abstract: Sudoku is a representative constraint satisfaction problem that requires global structural reasoning under strict discrete constraints. The existing works of solving Sudoku mainly focus on two dominant approaches, i.e., traditional heuristic and deep learning solver. However, they suffer from two complementary limitations: learning-based solvers lack hard correctness guarantees, while complete symbolic solvers are still prone to long-tail search. To address these shortcomings, we propose a novel diffusion model-guided approach, termed as DiBS, for the branch selection search process. Specifically, DiBS keeps the symbolic solver complete and uses the diffusion model as a branch-ordering guide. The core method is ranking candidate values under",
@@ -2369,153 +2514,5 @@
       "代码模型",
       "本地部署"
     ]
-  },
-  {
-    "id": "4de8359fb3ed",
-    "title": "Job Searcher",
-    "summary": "",
-    "url": "https://huggingface.co/blog/build-small-hackathon/job-search-blog",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-06T15:36:51+00:00",
-    "frontier": 40,
-    "signal": 85,
-    "score": 58,
-    "llm_summary": "开源求职助手，支持多模态简历解析",
-    "llm_tags": [
-      "RAG",
-      "多模态",
-      "简历解析",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "97e475396b38",
-    "title": "MoQ GGUFs and GSQ: Low-Bit GGUFs Are About to Get Much Better",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tyjkfh/moq_ggufs_and_gsq_lowbit_ggufs_are_about_to_get/\"> <img alt=\"MoQ GGUFs and GSQ: Low-Bit GGUFs Are About to Get Much Bette",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyjkfh/moq_ggufs_and_gsq_lowbit_ggufs_are_about_to_get/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T15:01:41+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 79,
-    "llm_summary": "MoQ与GSQ新量化方案提升低比特GGUF模型质量",
-    "llm_tags": [
-      "量化",
-      "GGUF",
-      "模型压缩",
-      "推理加速"
-    ]
-  },
-  {
-    "id": "bbf6bed01c25",
-    "title": "Gemma 4 QAT Q4_0 Bench on Strix Halo",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><h1>Gemma 4 QAT Q4_0 Bench on Strix Halo</h1> <p>These are Google's official Gemma 4 QAT Q4_0 GGUF models, served locally through llama.cpp Vulkan/RADV on a Strix Halo A",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyilv7/gemma_4_qat_q4_0_bench_on_strix_halo/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T14:22:55+00:00",
-    "frontier": 45,
-    "signal": 85,
-    "score": 61,
-    "llm_summary": "Gemma 4 QAT Q4_0 在 Strix Halo 上的本地性能基准测试",
-    "llm_tags": [
-      "量化",
-      "本地部署",
-      "基准测试",
-      "Gemma"
-    ]
-  },
-  {
-    "id": "c88dbe7a27cf",
-    "title": "Domino: Decoupling Causal Modeling from Autoregressive Drafting in Speculative Decoding",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tyfqmp/domino_decoupling_causal_modeling_from/\"> <img alt=\"Domino: Decoupling Causal Modeling from Autoregressive Drafting in Sp",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyfqmp/domino_decoupling_causal_modeling_from/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T12:16:45+00:00",
-    "llm_score": 8.5,
-    "llm_summary": "Domino 探索推测解码中因果建模与自回归草稿的解耦。",
-    "llm_tags": [
-      "推测解码",
-      "推理优化",
-      "架构创新"
-    ],
-    "llm_reason": "内容涉及推测解码这一前沿优化方向，提出了新颖的解耦架构，具有较高的技术深度和实用参考价值。",
-    "score": 8.5
-  },
-  {
-    "id": "9d50ff7ba60d",
-    "title": "Using FC26 to simulate the world cup ? [D]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>maybe this should be asked in the Fc26 game subreddit but not sure. Anyway I just saw a video of someone predicting the winner of the world cup using the simulate mat",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1tybqrx/using_fc26_to_simulate_the_world_cup_d/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T08:34:37+00:00",
-    "llm_score": 4.5,
-    "llm_summary": "用FC26模拟世界杯结果，非AI技术讨论。",
-    "llm_tags": [
-      "非AI",
-      "游戏",
-      "低价值"
-    ],
-    "llm_reason": "内容讨论的是足球游戏模拟而非AI/LLM技术，与学习目标无关。",
-    "score": 4.5
-  },
-  {
-    "id": "58c70de2c737",
-    "title": "Qwen3.6-35B-A3B-Uncensored-Claude-4.6-Genesis-APEX-GGUF",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>Here model:</strong> <a href=\"https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Claude-4.6-Genesis-APEX-GGUF\">https://huggingface.co/LuffyTheFox/Q",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyb6u7/qwen3635ba3buncensoredclaude46genesisapexgguf/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T08:01:32+00:00",
-    "llm_score": 4.8,
-    "llm_summary": "模型混叠与GGUF量化文件分享，非前沿技术。",
-    "llm_tags": [
-      "模型分享",
-      "GGUF",
-      "模型混叠"
-    ],
-    "llm_reason": "内容为特定模型变体的GGUF文件分享，缺乏技术深度，属于社区资源而非前沿技术或深度教程。",
-    "score": 4.8
-  },
-  {
-    "id": "57de7c31370b",
-    "title": "DeepSeek V4 Flash is amazing! (WIP llama.cpp PR #24162)",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>In case you're not aware already, the DeepSeek V4 series is finally getting supported on llama.cpp <a href=\"https://github.com/ggml-org/llama.cpp/pull/24162\">with thi",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyb3np/deepseek_v4_flash_is_amazing_wip_llamacpp_pr_24162/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T07:56:42+00:00",
-    "llm_score": 7.8,
-    "llm_summary": "llama.cpp 支持最新 DeepSeek V4 模型，性能优化显著。",
-    "llm_tags": [
-      "DeepSeek",
-      "llama.cpp",
-      "本地部署",
-      "模型量化"
-    ],
-    "llm_reason": "内容涉及最新的 DeepSeek V4 模型在 llama.cpp 上的集成与优化，对关注本地部署和模型性能的学生具有很高的实用性和前沿性。",
-    "score": 7.8
-  },
-  {
-    "id": "f2ffefa134c1",
-    "title": "AA comparison of the latest local models",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tya05j/aa_comparison_of_the_latest_local_models/\"> <img alt=\"AA comparison of the latest local models\" src=\"https://preview.redd",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tya05j/aa_comparison_of_the_latest_local_models/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T06:53:46+00:00",
-    "llm_score": 7.5,
-    "llm_summary": "Reddit讨论最新本地模型对比，含图表。",
-    "llm_tags": [
-      "本地模型",
-      "模型对比",
-      "社区讨论"
-    ],
-    "llm_reason": "内容涉及最新的本地大模型对比，具有实用参考价值，信息密度较高，适合计算机专业学生了解当前技术栈。",
-    "score": 7.5
   }
 ]
