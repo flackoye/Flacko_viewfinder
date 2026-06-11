@@ -1,5 +1,391 @@
 [
   {
+    "id": "f0dd0772ba55",
+    "title": "AMD's Lemonade SDK for local AI adds NVIDIA CUDA support",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u2ojv1/amds_lemonade_sdk_for_local_ai_adds_nvidia_cuda/\"> <img alt=\"AMD's Lemonade SDK for local AI adds NVIDIA CUDA support\" sr",
+    "url": "https://www.reddit.com/r/artificial/comments/1u2ojv1/amds_lemonade_sdk_for_local_ai_adds_nvidia_cuda/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-11T04:10:02+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "AMD Lemonade SDK 新增支持 NVIDIA CUDA，实现跨平台推理。",
+    "llm_tags": [
+      "AMD",
+      "SDK",
+      "推理",
+      "CUDA"
+    ]
+  },
+  {
+    "id": "730a6672db68",
+    "title": "Can AI Agents Synthesize Scientific Conclusions?",
+    "summary": "arXiv:2606.11337v1 Announce Type: new  Abstract: Scientific AI agents increasingly retrieve evidence, reason across sources, and synthesize conclusions used in consequential decisions. Yet, their ability to do so in high-stakes domains such as health remains unclear. We introduce SciConBench, a large-scale live benchmark of 9.11K questions and expert-written conclusions from systematic reviews to evaluate open-domain scientific conclusion synthesis. The benchmark draws on an expert-validated automated evaluation pipeline that decomposes conclusions into atomic facts and measures correctness and comprehensiveness via factual precision and recall. To mitigate data leakage, we further introduce SciConHarness, a clean-room evaluation harness that equips agents with controlled web interaction t",
+    "url": "https://arxiv.org/abs/2606.11337",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-11T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "构建科学结论合成基准，评估AI在高风险领域的推理能力",
+    "llm_tags": [
+      "AI Agent",
+      "基准测试",
+      "科学推理",
+      "医疗AI"
+    ]
+  },
+  {
+    "id": "d347d0730b93",
+    "title": "Knowing When to Ask: Self-Gated Clarification for Hierarchical Language Agents",
+    "summary": "arXiv:2606.11349v1 Announce Type: new  Abstract: In hierarchical reasoning, failures often originate at intermediate decision points where the agent commits to a wrong branch without recognizing that it lacks critical information. Rather than treating clarification as an external uncertainty trigger, we propose ACTION-RATING, a formulation that places it inside the agent's action space on a shared ordinal scale with navigation, so that asking competes directly with acting at every decision point and help-seeking becomes observable at intermediate states. Two structurally distinct information-seeking modes emerge from the agent's own ratings: mandatory (no viable branch) and opportunistic (residual uncertainty despite a leading candidate). On Harmonized Tariff Schedule classification (30,00",
+    "url": "https://arxiv.org/abs/2606.11349",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-11T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出将澄清机制集成到动作空间，提升分层智能体决策准确性。",
+    "llm_tags": [
+      "智能体",
+      "决策机制",
+      "分层推理"
+    ]
+  },
+  {
+    "id": "5317ef85ba9e",
+    "title": "Forecasting Future Behavior as a Learning Task",
+    "summary": "arXiv:2606.11445v1 Announce Type: new  Abstract: Trust in an AI system is often anchored by explanations of how it works, which one then uses to forecast its behavior on new inputs. For large reasoning models (LRMs), this conventional route is particularly difficult to follow: explanation methods for single token generations do not naturally generalize to long trajectories, and the trajectories themselves are often not faithful when read as natural language. We propose an alternative that bypasses the explanation step: treat behavior forecasting as a learnable task and train Behavior Forecasters that operates on a single reasoning trajectory to make the same forecasts one would typically seek from an explanation. The forecaster's training data is obtained by querying the LRM with no human ",
+    "url": "https://arxiv.org/abs/2606.11445",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-11T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出通过预测行为而非解释来建立对大推理模型的信任",
+    "llm_tags": [
+      "模型评估",
+      "可解释性",
+      "推理模型"
+    ]
+  },
+  {
+    "id": "dd2032dd0d24",
+    "title": "MoCA-Agent: A Market-of-Claims Code Agent for Financial and Numerical Reasoning",
+    "summary": "arXiv:2606.11537v1 Announce Type: new  Abstract: Financial and tabular question answering requires more than fluent reasoning: answers must be grounded in the exact facts, formulas, units, signs, and scales that support them. A single misread cell or incorrect operation can silently produce a plausible but wrong result. We introduce \\textsc{MOCA-Agent}, a market-of-claims code agent that replaces free-form multi-agent debate with claim-level verification. The system decomposes each question into typed atomic claims, asks specialist trader agents to buy or sell those claims, clears their orders into confidence-weighted accept/reject decisions, and synthesizes an executable Python program from market-supported evidence. A code-aware verifier then checks the program for execution, structural ",
+    "url": "https://arxiv.org/abs/2606.11537",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-11T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "提出基于声明市场的代码代理，解决金融数值推理中的精确性问题。",
+    "llm_tags": [
+      "智能体",
+      "金融推理",
+      "🔧 已开源",
+      "表格QA"
+    ]
+  },
+  {
+    "id": "69a55ae58bb8",
+    "title": "SkillJuror: Measuring How Agent Skill Organization Changes Runtime Behavior",
+    "summary": "arXiv:2606.11543v1 Announce Type: new  Abstract: Agent Skills augment large language model (LLM) agents with procedural knowledge at inference time, but current benchmarks rarely distinguish what a Skill says from how it is organized. We study this distinction through Progressive Disclosure, where a concise root file points agents to supporting resources on demand, and compare it with a normalized flat baseline. We present SkillJuror, a framework for evaluating Skill writing paradigms through semantically controlled variants, matched multi-trial evaluations, and trajectory evidence while holding task knowledge fixed. In an 82-task SkillsBench study, Progressive Disclosure changes runtime behavior before aggregate outcomes: distinct Skill resources touched per trajectory rise from 1.18 to 3",
+    "url": "https://arxiv.org/abs/2606.11543",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-11T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出评估Agent技能组织方式的框架，对比渐进式与扁平化结构。",
+    "llm_tags": [
+      "Agent",
+      "评估框架",
+      "🔧 已开源",
+      "LLM"
+    ]
+  },
+  {
+    "id": "5760582b7898",
+    "title": "TouchThinker: Scaling Tactile Commonsense Reasoning to the Open World with Large-scale Data and Action-aware Representation",
+    "summary": "arXiv:2606.11637v1 Announce Type: new  Abstract: Touch is a key modality for embodied agents to understand the physical world. Although recent work has incorporated tactile signals into language systems for tactile commonsense reasoning, scaling such systems to realistic open-world settings remains challenging due to two key bottlenecks: (1) current tactile reasoning datasets remain limited in format and scale, providing insufficient supervision for reasoning from tactile observations to physical commonsense and hindering the learning of transferable tactile commonsense; (2) Tactile signals are inherently redundant and action-specific, yet existing methods often overlook these properties, resulting in inefficient representations with limited semantic expressiveness. To address these limita",
+    "url": "https://arxiv.org/abs/2606.11637",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-11T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 80,
+    "score": 78,
+    "llm_summary": "构建大规模触觉数据集，提出动作感知表征以提升开放世界触觉推理能力。",
+    "llm_tags": [
+      "触觉感知",
+      "具身智能",
+      "🔧 已开源",
+      "多模态推理"
+    ]
+  },
+  {
+    "id": "ead1dc5aa469",
+    "title": "TreeSeeker: Tree-Structured Trial, Error, and Return in Deep Search",
+    "summary": "arXiv:2606.11662v1 Announce Type: new  Abstract: Deep search requires agents to answer complex questions through multi-step web search, browsing, evidence comparison, and synthesis. A central challenge is deciding how to search when several directions look plausible but only some will later lead to reliable evidence. If an agent greedily follows the current best-looking direction, it may keep extending a weak continuation. If it explores without discipline, it may waste budget on disconnected trials. We propose TreeSeeker, an inference-time framework for controlled trial-and-error in deep search. TreeSeeker organizes search as branch-and-return search over tree-structured states, where each branch is a tentative direction for a sub-goal. At each round, TreeSearch reads all sub-goal trees, ",
+    "url": "https://arxiv.org/abs/2606.11662",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-11T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "提出树结构试错机制优化深度搜索路径决策，已开源。",
+    "llm_tags": [
+      "智能体",
+      "深度搜索",
+      "🔧 已开源",
+      "决策算法"
+    ]
+  },
+  {
+    "id": "d59f6dd570aa",
+    "title": "Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents",
+    "summary": "arXiv:2606.11680v1 Announce Type: new  Abstract: Large language model (LLM) agents struggle with long-horizon tasks due to their inherent statelessness, requiring all task-relevant information to be encoded in growing input contexts. The resulting degraded reasoning quality, increased inference cost, and higher latency necessitate efficient working memory mechanisms. However, existing approaches either rely on lossy compression or similarity-based retrieval, which often fail to capture temporal structure and causal dependencies required for multi-step agentic tasks. In this work, we present HORMA, a Hierarchical Organize-and-Retrieve Memory Agent that organizes experience into a file-system-like hierarchical structure, where summarized entities are linked to the corresponding raw trajector",
+    "url": "https://arxiv.org/abs/2606.11680",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-11T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "提出分层记忆导航机制，解决长时任务中的上下文膨胀与检索效率问题。",
+    "llm_tags": [
+      "智能体",
+      "长时记忆",
+      "RAG",
+      "推理优化"
+    ]
+  },
+  {
+    "id": "03a8884c424d",
+    "title": "Mind the Perspective: Let's Reason Recursively for Theory of Mind",
+    "summary": "arXiv:2606.11724v1 Announce Type: new  Abstract: Theory of Mind (ToM) reasoning requires inferring agents' beliefs from partial and asymmetric observations, which remains an open challenge for LLMs. Existing prompting-based approaches improve ToM reasoning through observable-event filtering or temporal belief chains, without explicitly modeling nested beliefs. We introduce RecToM, an inference-time framework for ToM reasoning that models nested beliefs via recursive perspective construction. RecToM constructs each character perspective from the preceding character perspective along the character chain specified by the question, reducing higher-order belief questions to actual-world questions within the final constructed perspective. We further provide a KD45 analysis showing that RecToM's ",
+    "url": "https://arxiv.org/abs/2606.11724",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-11T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出递归视角构建框架RecToM，显式建模嵌套信念以提升大模型心智推理能力。",
+    "llm_tags": [
+      "心智推理",
+      "递归推理",
+      "LLM推理",
+      "推理框架"
+    ]
+  },
+  {
+    "id": "6d5c3284c15f",
+    "title": "SVoT: State-aware Visualization-of-Thought for Spatial Reasoning via Reinforcement Learning",
+    "summary": "arXiv:2606.11770v1 Announce Type: new  Abstract: Spatial reasoning remains a challenge for Multimodal Large Language Models (MLLMs), as it requires reliable multi-hop inference over both intermediate states and state transitions. Current studies often leave intermediate states unverified and treat state transitions as implicit processes, which limits reliability in multi-hop spatial reasoning. To address this, we propose State-aware Visualization-of-Thought (SVoT), a reinforcement learning framework that generates interleaved, verifiable intermediate states and visualizations. SVoT integrates transition reasoning chains into the generation processes, enabling the model to verify action preconditions and effects through interleaved textual and visual reasoning. We train SVoT via Group Relat",
+    "url": "https://arxiv.org/abs/2606.11770",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-11T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 55,
+    "score": 64,
+    "llm_summary": "提出SVoT框架，利用强化学习可视化思维状态以提升多模态空间推理能力。",
+    "llm_tags": [
+      "多模态",
+      "空间推理",
+      "强化学习"
+    ]
+  },
+  {
+    "id": "528b8a372ce2",
+    "title": "nvidia/diffusiongemma-26B-A4B-it-NVFP4 · Hugging Face",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u2np0a/nvidiadiffusiongemma26ba4bitnvfp4_hugging_face/\"> <img alt=\"nvidia/diffusiongemma-26B-A4B-it-NVFP4 · Hugging Face\" src=\"h",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2np0a/nvidiadiffusiongemma26ba4bitnvfp4_hugging_face/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-11T03:28:47+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "英伟达发布26B扩散模型，支持NVFP4量化",
+    "llm_tags": [
+      "扩散模型",
+      "量化",
+      "英伟达"
+    ]
+  },
+  {
+    "id": "8ec2b0a678d7",
+    "title": "AMD touts the unified memory architecture",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p><a href=\"https://wccftech.com/amd-unified-memory-architectures-open-up-a-world-of-possibilities-shape-product-roadmaps/\">https://wccftech.com/amd-unified-memory-archi",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2l25d/amd_touts_the_unified_memory_architecture/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-11T01:25:22+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "AMD探讨统一内存架构优势，规划未来产品路线图",
+    "llm_tags": [
+      "硬件架构",
+      "AMD",
+      "显存技术"
+    ]
+  },
+  {
+    "id": "37458e5f360d",
+    "title": "Claude Fable 5's security guardrails can be bypassed with a fake homework assignment",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u2cwfz/claude_fable_5s_security_guardrails_can_be/\"> <img alt=\"Claude Fable 5's security guardrails can be bypassed with a fake ",
+    "url": "https://www.reddit.com/r/artificial/comments/1u2cwfz/claude_fable_5s_security_guardrails_can_be/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T19:51:28+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "发现利用虚假作业提示词可绕过Claude安全护栏",
+    "llm_tags": [
+      "提示词注入",
+      "安全对齐",
+      "越狱"
+    ]
+  },
+  {
+    "id": "29c9c4ef592b",
+    "title": "Dario Amodei — Policy on the AI Exponential",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u2ch83/dario_amodei_policy_on_the_ai_exponential/\"> <img alt=\"Dario Amodei — Policy on the AI Exponential\" src=\"https://external",
+    "url": "https://www.reddit.com/r/artificial/comments/1u2ch83/dario_amodei_policy_on_the_ai_exponential/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T19:36:05+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "Anthropic CEO阐述AI指数级增长下的政策立场与监管思考",
+    "llm_tags": [
+      "AI政策",
+      "行业观点",
+      "模型缩放"
+    ]
+  },
+  {
+    "id": "42abf7dc3fa4",
+    "title": "Routing LLMs by task verifiability: a small experiment (n=120, 3 models) inspired by Karpathy's framework [D]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Full disclosure: this is directional, not a paper. n=120 tasks, one internal evaluator, not peer reviewed. I work at an LLM infrastructure company. This experiment wa",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1u2c04u/routing_llms_by_task_verifiability_a_small/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T19:18:55+00:00",
+    "frontier": 65,
+    "signal": 72,
+    "score": 68,
+    "llm_summary": "基于任务可验证性路由LLM的小规模实验，对比3模型表现。",
+    "llm_tags": [
+      "模型路由",
+      "评估方法",
+      "LLM"
+    ]
+  },
+  {
+    "id": "efef73888f78",
+    "title": "Remove padding and multiple D2D copies for MTP by gaugarg-nv · Pull Request #24086 · ggml-org/llama.cpp",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u2a1tb/remove_padding_and_multiple_d2d_copies_for_mtp_by/\"> <img alt=\"Remove padding and multiple D2D copies for MTP by gaugarg-",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2a1tb/remove_padding_and_multiple_d2d_copies_for_mtp_by/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T18:09:02+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "llama.cpp优化MTP推理，移除填充和多余D2D拷贝",
+    "llm_tags": [
+      "推理优化",
+      "llama.cpp",
+      "内存管理"
+    ]
+  },
+  {
+    "id": "0a6faa0fdd94",
+    "title": "I ran Fable 5 for half day and the guardrails are the real story",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Anthropic dropped Fable 5 and I immediately swapped it into our dev stack. We route everything through a single endpoint on zenmux, so the actual switch was changing ",
+    "url": "https://www.reddit.com/r/artificial/comments/1u28c7d/i_ran_fable_5_for_half_day_and_the_guardrails_are/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T17:09:49+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "实测Anthropic Fable 5，重点在于其安全护栏的显著提升。",
+    "llm_tags": [
+      "模型评测",
+      "安全护栏",
+      "Anthropic"
+    ]
+  },
+  {
+    "id": "76d5b146e367",
+    "title": "FlashMemory-DeepSeek-V4: Lightning Index Ultra-Long Context via Lookahead Sparse Attention",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u277fg/flashmemorydeepseekv4_lightning_index_ultralong/\"> <img alt=\"FlashMemory-DeepSeek-V4: Lightning Index Ultra-Long Context ",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u277fg/flashmemorydeepseekv4_lightning_index_ultralong/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T16:30:20+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "DeepSeek V4利用前瞻稀疏注意力实现超长上下文",
+    "llm_tags": [
+      "稀疏注意力",
+      "长上下文",
+      "DeepSeek"
+    ]
+  },
+  {
+    "id": "b9dcaacf2352",
+    "title": "DiffusionGemma: 4x faster text generation",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u26s8n/diffusiongemma_4x_faster_text_generation/\"> <img alt=\"DiffusionGemma: 4x faster text generation\" src=\"https://external-pr",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u26s8n/diffusiongemma_4x_faster_text_generation/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T16:15:16+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "DiffusionGemma利用扩散模型加速文本生成，速度提升4倍",
+    "llm_tags": [
+      "扩散模型",
+      "文本生成",
+      "推理加速"
+    ]
+  },
+  {
+    "id": "947e005cfda6",
+    "title": "DiffusionGemma: The Developer Guide- Google Developers Blog",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u26oyp/diffusiongemma_the_developer_guide_google/\"> <img alt=\"DiffusionGemma: The Developer Guide- Google Developers Blog\" src=\"",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u26oyp/diffusiongemma_the_developer_guide_google/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T16:12:11+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "谷歌发布DiffusionGemma开发者指南，结合扩散模型与Gemma",
+    "llm_tags": [
+      "扩散模型",
+      "Gemma",
+      "图像生成"
+    ]
+  },
+  {
     "id": "c58882352327",
     "title": "Fully autonomous AI-controlled drones have killed human soldiers for the first time",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u259si/fully_autonomous_aicontrolled_drones_have_killed/\"> <img alt=\"Fully autonomous AI-controlled drones have killed human sol",
@@ -123,6 +509,24 @@
       "大模型",
       "定价策略",
       "Claude"
+    ]
+  },
+  {
+    "id": "77bc008b868d",
+    "title": "Anthropic is intentionally nerfing Fable when asked to develop other LLMs",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/\"> <img alt=\"Anthropic is intentionally nerfing Fable when asked to develop",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-10T04:36:49+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "Anthropic 被指在生成其他 LLM 代码时故意削弱 Fable",
+    "llm_tags": [
+      "模型安全",
+      "代码生成",
+      "Anthropic"
     ]
   },
   {
@@ -565,6 +969,24 @@
     ]
   },
   {
+    "id": "9b0100a40dde",
+    "title": "How engineers at Nextdoor use Codex to build without limits",
+    "summary": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.",
+    "url": "https://openai.com/index/nextdoor",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-09T12:00:00+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "Nextdoor 工程师利用 Codex 处理跨平台构建及疑难问题排查。",
+    "llm_tags": [
+      "代码生成",
+      "工程实践",
+      "OpenAI"
+    ]
+  },
+  {
     "id": "ebd550442293",
     "title": "Jetson Orin NX Build for Hermes Agent + Benchmarking",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u11wvo/jetson_orin_nx_build_for_hermes_agent_benchmarking/\"> <img alt=\"Jetson Orin NX Build for Hermes Agent + Benchmarking\" src",
@@ -637,6 +1059,26 @@
       "Swift",
       "代码生成",
       "数据集"
+    ]
+  },
+  {
+    "id": "38b9e565154e",
+    "title": "cobusgreyling/loop-engineering ⭐60",
+    "summary": "Practical reference and patterns for loop engineering,  designing systems that prompt and orchestrate AI coding agents (inspired by Addy Osmani and Boris Cherny / Anthropic)",
+    "url": "https://github.com/cobusgreyling/loop-engineering",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-09T06:28:20Z",
+    "stars": 60,
+    "language": "JavaScript",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "AI 编程智能体编排与循环工程模式参考实现",
+    "llm_tags": [
+      "智能体",
+      "编排",
+      "工程模式"
     ]
   },
   {
@@ -2075,156 +2517,5 @@
     ],
     "llm_reason": "内容涉及最新的本地大模型对比，具有实用参考价值，信息密度较高，适合计算机专业学生了解当前技术栈。",
     "score": 7.5
-  },
-  {
-    "id": "b2b15bbf92de",
-    "title": "Building a Custom Drones MuJoCo Environment [P]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hi all, Lately I have been working on creating a package for Multi Agent RL based drone environments with different objectives, all bundled into a single GitHub repos",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1ty60zo/building_a_custom_drones_mujoco_environment_p/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T03:24:43+00:00",
-    "llm_score": 6.8,
-    "llm_summary": "分享多智能体无人机强化学习环境构建经验",
-    "llm_tags": [
-      "RL",
-      "Drone",
-      "Environment"
-    ],
-    "llm_reason": "内容涉及多智能体强化学习与无人机环境构建，具有技术参考价值，但信息密度较低，仅展示了初步想法。",
-    "score": 6.8
-  },
-  {
-    "id": "476038c24b13",
-    "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
-    "summary": "",
-    "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-05T22:18:46+00:00",
-    "llm_score": 8.5,
-    "llm_summary": "3B模型实现多智能体经济系统，极具工程参考价值。",
-    "llm_tags": [
-      "多智能体",
-      "模型部署",
-      "工程实践"
-    ],
-    "llm_reason": "内容展示了在极小参数量（3B）上实现复杂多智能体交互系统的工程能力，结合了前沿的 LLM Agent 应用场景，信息密度高且实用性强。",
-    "score": 8.5
-  },
-  {
-    "id": "243afa77b33c",
-    "title": "OpenLumara - A different kind of AI agent, written from scratch, not vibecoded. Extremely token-efficient, super small system prompt, made for local models. Everything is modular.",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1txxgpq/openlumara_a_different_kind_of_ai_agent_written/\"> <img alt=\"OpenLumara - A different kind of AI agent, written from scra",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txxgpq/openlumara_a_different_kind_of_ai_agent_written/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T21:05:08+00:00",
-    "llm_score": 7.8,
-    "llm_summary": "开源本地模型专用的高效AI智能体框架。",
-    "llm_tags": [
-      "开源",
-      "本地部署",
-      "Agent",
-      "效率优化"
-    ],
-    "llm_reason": "针对本地模型优化的轻量级 Agent 框架，技术细节具体，对学习 LLM 应用开发有实际参考价值。",
-    "score": 7.8
-  },
-  {
-    "id": "188f70aef85e",
-    "title": "dots.tts 2B🎙️ SOTA TTS from RedNote",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1txwbge/dotstts_2b_sota_tts_from_rednote/\"> <img alt=\"dots.tts 2B🎙️ SOTA TTS from RedNote\" src=\"https://preview.redd.it/m196z979w",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txwbge/dotstts_2b_sota_tts_from_rednote/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T20:21:33+00:00",
-    "llm_score": 7.2,
-    "llm_summary": "RedNote开源2B参数TTS模型，SOTA性能。",
-    "llm_tags": [
-      "TTS",
-      "开源模型",
-      "语音合成"
-    ],
-    "llm_reason": "内容涉及最新的开源TTS模型（dots.tts 2B），具有前沿性和较高的实用性，适合计算机专业学生参考。",
-    "score": 7.2
-  },
-  {
-    "id": "5b709453bcba",
-    "title": "TinyTPU: SystemVerilog systolic array compiled to WASM, running live in browser - RTL golden-verified against numpy [P]",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1txvvo4/tinytpu_systemverilog_systolic_array_compiled_to/\"> <img alt=\"TinyTPU: SystemVerilog systolic array compiled to WASM",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1txvvo4/tinytpu_systemverilog_systolic_array_compiled_to/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T20:05:17+00:00",
-    "llm_score": 8.5,
-    "llm_summary": "SystemVerilog TPU 硬件在浏览器中运行，验证了软硬件协同设计。",
-    "llm_tags": [
-      "硬件加速",
-      "SystemVerilog",
-      "WASM",
-      "TPU"
-    ],
-    "llm_reason": "内容展示了将 SystemVerilog 硬件逻辑编译为 WebAssembly 在浏览器运行，涉及前沿的软硬件协同编译技术，信息密度高且具有极高的工程参考价值。",
-    "score": 8.5
-  },
-  {
-    "id": "4b01b89184a4",
-    "title": "FerroxLabs/wayland ⭐119",
-    "summary": "Wayland - The AI Agent That Perceives. Reasons. Acts. Evolves.",
-    "url": "https://github.com/FerroxLabs/wayland",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-05T17:38:22Z",
-    "stars": 119,
-    "language": "TypeScript",
-    "frontier": 85,
-    "signal": 75,
-    "score": 81,
-    "llm_summary": "基于 Wayland 的自主 AI 智能体",
-    "llm_tags": [
-      "智能体",
-      "Wayland",
-      "感知",
-      "自主"
-    ]
-  },
-  {
-    "id": "d48b3c6ade6e",
-    "title": "melojuve31-source/kahoottoolsai-desktop-app ⭐75",
-    "summary": "Simple and clean standalone desktop application for KahootToolsAi on Windows PC. Easily manage quizzes, study smarter, and generate educational insights with AI assistance.",
-    "url": "https://github.com/melojuve31-source/kahoottoolsai-desktop-app",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-05T16:53:08Z",
-    "stars": 75,
-    "language": "C++",
-    "llm_score": 6.5,
-    "llm_summary": "Windows端Kahoot工具的AI桌面应用",
-    "llm_tags": [
-      "Desktop App",
-      "GitHub",
-      "Educational Tools"
-    ],
-    "llm_reason": "内容展示了基于AI的桌面应用开发，具有一定实用性，但属于特定垂直领域的工具，非通用AI技术前沿。",
-    "score": 6.5
-  },
-  {
-    "id": "20c3454082ef",
-    "title": "Gemma 4 with quantization-aware training",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1txpeo0/gemma_4_with_quantizationaware_training/\"> <img alt=\"Gemma 4 with quantization-aware training\" src=\"https://external-prev",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1txpeo0/gemma_4_with_quantizationaware_training/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-05T16:11:21+00:00",
-    "llm_score": 6.8,
-    "llm_summary": "讨论Gemma 4量化训练的社区帖子。",
-    "llm_tags": [
-      "Gemma 4",
-      "量化训练",
-      "社区讨论"
-    ],
-    "llm_reason": "内容涉及Gemma 4的最新量化技术，具有前沿性，但作为Reddit帖子，信息密度和可读性受限于社区讨论形式，且摘要不完整。",
-    "score": 6.8
   }
 ]
