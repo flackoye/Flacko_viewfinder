@@ -1,5 +1,114 @@
 [
   {
+    "id": "5049351b4c3c",
+    "title": "MiniMaxAI/MiniMax-M3 · Hugging Face",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3wagy/minimaxaiminimaxm3_hugging_face/\"> <img alt=\"MiniMaxAI/MiniMax-M3 · Hugging Face\" src=\"https://external-preview.redd.it/U",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3wagy/minimaxaiminimaxm3_hugging_face/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-12T14:07:04+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "MiniMax发布M3模型，支持原生语音和文本多模态",
+    "llm_tags": [
+      "多模态",
+      "语音合成",
+      "开源模型"
+    ]
+  },
+  {
+    "id": "3de2397d13bc",
+    "title": "Open Dungeon: local roleplay with Gemma 4 QAT + inline Uncen-FLUX images, running at full 256K context under 8GB RAM (OS)",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3uw8e/open_dungeon_local_roleplay_with_gemma_4_qat/\"> <img alt=\"Open Dungeon: local roleplay with Gemma 4 QAT + inline Uncen-FL",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3uw8e/open_dungeon_local_roleplay_with_gemma_4_qat/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-12T13:11:59+00:00",
+    "frontier": 75,
+    "signal": 78,
+    "score": 76,
+    "llm_summary": "Gemma 4 QAT 结合 FLUX 图像，8G 内存跑 256K 上下文",
+    "llm_tags": [
+      "端侧模型",
+      "量化推理",
+      "多模态",
+      "长文本"
+    ]
+  },
+  {
+    "id": "a4755cfc741b",
+    "title": "moonshotai/Kimi-K2.7-Code · Hugging Face",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3rdk9/moonshotaikimik27code_hugging_face/\"> <img alt=\"moonshotai/Kimi-K2.7-Code · Hugging Face\" src=\"https://external-preview.r",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3rdk9/moonshotaikimik27code_hugging_face/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-12T10:22:07+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "Moonshot发布Kimi-K2.7-Code代码模型，支持长上下文",
+    "llm_tags": [
+      "代码模型",
+      "开源模型",
+      "长上下文"
+    ]
+  },
+  {
+    "id": "aac7cdd1fbe2",
+    "title": "Huawei Released openPangu 2.0 (Will open source on June 30)",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3q1j9/huawei_released_openpangu_20_will_open_source_on/\"> <img alt=\"Huawei Released openPangu 2.0 (Will open source on June 30)",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3q1j9/huawei_released_openpangu_20_will_open_source_on/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-12T09:05:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "华为发布盘古2.0，宣布将于6月30日开源",
+    "llm_tags": [
+      "开源模型",
+      "盘古大模型",
+      "华为"
+    ]
+  },
+  {
+    "id": "3292b2a97a0c",
+    "title": "Why “reprogramming” is the buzziest approach to reversing aging right now",
+    "summary": "Earlier this week, Life Biosciences, a biotech company focused on reversing age-related diseases, announced that it had dosed its first volunteer. A person with glaucoma has had an experimental treatment injected straight into their eyeball. The idea is to try to treat the disease—which can cause vision loss—by regenerating healthy nerves in the eye. But&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/12/1138829/reprogramming-buzziest-approach-reversing-aging-right-now/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-12T09:00:00+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "Life Biosciences启动青光眼重编程疗法临床试验",
+    "llm_tags": [
+      "生物计算",
+      "基因治疗",
+      "抗衰老"
+    ]
+  },
+  {
+    "id": "7e105b1bcfba",
+    "title": "EAGLE3 has landed in llama.cpp",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3on4u/eagle3_has_landed_in_llamacpp/\"> <img alt=\"EAGLE3 has landed in llama.cpp\" src=\"https://external-preview.redd.it/zRu_wUfy",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3on4u/eagle3_has_landed_in_llamacpp/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-12T07:40:50+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "EAGLE3 推理加速技术已集成至 llama.cpp",
+    "llm_tags": [
+      "推理加速",
+      "llama.cpp",
+      "EAGLE"
+    ]
+  },
+  {
     "id": "2b9e30e89fce",
     "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
     "summary": "arXiv:2606.12451v1 Announce Type: new  Abstract: Large language models deployed as agents over large tool catalogs face a critical tool-retrieval bottleneck. As embedding-based retrieval approaches rely on compact encoders that may under-capture specialized tool semantics, parametric tool retrieval addresses this by encoding each tool as a virtual token appended to the LLM vocabulary, fine-tuned in two stages (memorization then retrieval SFT) to use the LLM as a retriever, achieving strong performance on standard ToolBench retrieval benchmarks. Yet these benchmarks use verbose, fully-specified queries, and their evaluation applies constrained decoding that restricts outputs to valid token paths, neither reveals whether the model actually understands its tools. We introduce \\textbf{ToolSens",
@@ -225,6 +334,25 @@
     ]
   },
   {
+    "id": "db3ccdc908b6",
+    "title": "Strategic Decision Support for AI Agents",
+    "summary": "arXiv:2606.12587v1 Announce Type: new  Abstract: Traditionally, decision support studies how humans use machine learning models to make better decisions. In modern agentic systems, this division of roles is increasingly reversed: AI agents act on behalf of users, while humans and tools becomes support mechanisms around them. This role reversal brings reliability concerns to the forefront, since agentic errors can be consequential and agent behavior must remain aligned with human goals and constraints. Departing from the classical view of decision support, we revisit its two basic principles, the cost--value tradeoff of seeking support and the role of uncertainty quantification, in a setting where AI agents are the central actors. We propose a framework for strategic decision support for AI",
+    "url": "https://arxiv.org/abs/2606.12587",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "探讨AI代理决策支持中的角色反转与可靠性挑战",
+    "llm_tags": [
+      "智能体",
+      "决策支持",
+      "可靠性",
+      "人机协作"
+    ]
+  },
+  {
     "id": "9720ea694470",
     "title": "Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31B QAT Uncensored Heretics!",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3flg9/gemma_4_quadruple_release_12b_12b_qat_26ba4b_qat/\"> <img alt=\"Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31",
@@ -347,6 +475,26 @@
     "llm_tags": [
       "开源模型",
       "Minimax"
+    ]
+  },
+  {
+    "id": "2fc6afb6e5ed",
+    "title": "recursive-org/first-steps-toward-automated-ai-research ⭐75",
+    "summary": "Research artifacts from Recursive's automated AI research system",
+    "url": "https://github.com/recursive-org/first-steps-toward-automated-ai-research",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-11T07:53:35Z",
+    "stars": 75,
+    "language": "Python",
+    "frontier": 85,
+    "signal": 60,
+    "score": 75,
+    "llm_summary": "Recursive发布自动化AI研究系统的开源代码与实验产物",
+    "llm_tags": [
+      "AI智能体",
+      "自动化研究",
+      "开源"
     ]
   },
   {
@@ -2505,80 +2653,6 @@
       "多模态",
       "Gemini",
       "Agent"
-    ]
-  },
-  {
-    "id": "69574b3afcda",
-    "title": "llama.cpp Gemma4 MTP support merged!",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tzbcyp/llamacpp_gemma4_mtp_support_merged/\"> <img alt=\"llama.cpp Gemma4 MTP support merged!\" src=\"https://external-preview.redd.",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzbcyp/llamacpp_gemma4_mtp_support_merged/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-07T12:53:17+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 71,
-    "llm_summary": "llama.cpp 合并 Gemma4 MTP 支持",
-    "llm_tags": [
-      "本地部署",
-      "模型量化",
-      "推理加速"
-    ]
-  },
-  {
-    "id": "0b2d23720ff2",
-    "title": "I got tired of Al making stuff up about my PDFs, so I built something that actually cites its sources",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>so i kept using chatgpt to ask questions about my pdfs and notes, and half the time i couldn't tell if it actually read the doc or just made something up that sounded",
-    "url": "https://www.reddit.com/r/artificial/comments/1tzaylp/i_got_tired_of_al_making_stuff_up_about_my_pdfs/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-07T12:34:45+00:00",
-    "frontier": 45,
-    "signal": 85,
-    "score": 61,
-    "llm_summary": "开源工具解决 PDF 引用幻觉问题",
-    "llm_tags": [
-      "RAG",
-      "PDF",
-      "开源",
-      "工具"
-    ]
-  },
-  {
-    "id": "0232093bcb65",
-    "title": "Qwen 3.6 27B KV cache quant benchmarks: 75 pairs, q8/q6/q5/q4, KVarN, Turbo/TCQ",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tza4ji/qwen_36_27b_kv_cache_quant_benchmarks_75_pairs/\"> <img alt=\"Qwen 3.6 27B KV cache quant benchmarks: 75 pairs, q8/q6/q5/q4",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tza4ji/qwen_36_27b_kv_cache_quant_benchmarks_75_pairs/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-07T11:54:15+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 79,
-    "llm_summary": "Qwen 3.6 27B KV Cache 多档量化性能实测",
-    "llm_tags": [
-      "量化",
-      "KV Cache",
-      "性能测试",
-      "Qwen"
-    ]
-  },
-  {
-    "id": "9c60d22529f3",
-    "title": "Artificial Analysis | Google's Go To Website for Benchmaxxing | Gemini 3.1 Pro is nowhere near Opus 4.7 in real life use",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1tz9ug9/artificial_analysis_googles_go_to_website_for/\"> <img alt=\"Artificial Analysis | Google's Go To Website for Benchmaxxing",
-    "url": "https://www.reddit.com/r/singularity/comments/1tz9ug9/artificial_analysis_googles_go_to_website_for/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-07T11:39:40+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 79,
-    "llm_summary": "Gemini 3.1 Pro 实测性能不及 Opus 4.7",
-    "llm_tags": [
-      "大模型评测",
-      "性能对比",
-      "Gemini"
     ]
   }
 ]
