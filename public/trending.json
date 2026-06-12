@@ -1,5 +1,266 @@
 [
   {
+    "id": "2b9e30e89fce",
+    "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
+    "summary": "arXiv:2606.12451v1 Announce Type: new  Abstract: Large language models deployed as agents over large tool catalogs face a critical tool-retrieval bottleneck. As embedding-based retrieval approaches rely on compact encoders that may under-capture specialized tool semantics, parametric tool retrieval addresses this by encoding each tool as a virtual token appended to the LLM vocabulary, fine-tuned in two stages (memorization then retrieval SFT) to use the LLM as a retriever, achieving strong performance on standard ToolBench retrieval benchmarks. Yet these benchmarks use verbose, fully-specified queries, and their evaluation applies constrained decoding that restricts outputs to valid token paths, neither reveals whether the model actually understands its tools. We introduce \\textbf{ToolSens",
+    "url": "https://arxiv.org/abs/2606.12451",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "提出参数化工具检索框架，解决LLM代理的工具检索瓶颈。",
+    "llm_tags": [
+      "🔧 已开源",
+      "LLM Agent",
+      "工具检索",
+      "RAG"
+    ]
+  },
+  {
+    "id": "5badd12d743e",
+    "title": "Arbor: Tree Search as a Cognition Layer for Autonomous Agents",
+    "summary": "arXiv:2606.12563v1 Announce Type: new  Abstract: Arbor is a multi-agent framework that introduces structured tree search as a cognition layer for autonomous agents operating in large, stateful action spaces. Prior autonomous optimization systems operate on isolated targets with stateless evaluation. Arbor instead maintains an explicit search tree of scored hypotheses that serves as the shared working memory across agents, evolving with every measurement, treating failures as diagnostic signal that reshapes subsequent exploration, and expanding as prior successes shift the bottleneck distribution.   We validate Arbor on full-stack LLM inference optimization, a domain where achieving peak performance has historically required coordinated effort from engineering teams across the application, ",
+    "url": "https://arxiv.org/abs/2606.12563",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "引入树搜索作为认知层，处理大规模有状态动作空间的多智能体框架。",
+    "llm_tags": [
+      "智能体",
+      "树搜索",
+      "多智能体",
+      "强化学习"
+    ]
+  },
+  {
+    "id": "69572ba77312",
+    "title": "Pythagoras-Prover: Advancing Efficient Formal Proving via Augmented Lean Formalisation",
+    "summary": "arXiv:2606.12594v1 Announce Type: new  Abstract: Modern Lean theorem provers achieve strong performance only with substantial training and inference compute, driven in part by scarce verified proof data and the long reasoning traces of formal proof search, making both supervised fine-tuning (SFT) and sampling expensive. We introduce Pythagoras-Prover, a compute-efficient open-source family of Lean theorem provers built for practical compute budgets. The family spans two generation paradigms: autoregressive models at 4B and 32B parameters, and a first proof-of-concept diffusion-based prover (4B) that iteratively refines Lean proofs at inference time. For training efficiency, we build a Lean-verified corpus stratified into easy, medium, and hard problems for curriculum SFT, so models acquire",
+    "url": "https://arxiv.org/abs/2606.12594",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "面向有限算力的Lean定理证明器，提升推理效率并开源。",
+    "llm_tags": [
+      "定理证明",
+      "🔧 已开源",
+      "大模型推理",
+      "Lean语言"
+    ]
+  },
+  {
+    "id": "7a97256c1a16",
+    "title": "PersonaDrive: Human-Style Retrieval-Augmented VLA Agents for Closed-Loop Driving Simulation",
+    "summary": "arXiv:2606.12616v1 Announce Type: new  Abstract: Closed-loop driving simulators typically populate their environments with non-ego traffic agents that behave largely the same way, produced either by rule-based traffic managers or by learned models trained toward a single behavioral mode. Recent work introduces style variation through post-hoc labels on observational data or LLM-inferred reward weights, but these signals act as proxies for what a style should reward rather than demonstrations of humans explicitly asked to drive in that style. We introduce PersonaDrive, a pipeline that conditions a vision-language-action (VLA) driving agent on retrieved demonstrations from a style-instructed human driving dataset, in which participants drive CARLA leaderboard routes under aggressive, neutral",
+    "url": "https://arxiv.org/abs/2606.12616",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "引入检索增强机制，为自动驾驶模拟器生成多样化拟人化驾驶风格。",
+    "llm_tags": [
+      "自动驾驶",
+      "VLA模型",
+      "RAG",
+      "仿真模拟"
+    ]
+  },
+  {
+    "id": "4329398d5fc9",
+    "title": "Evoflux: Inference-Time Evolution of Executable Tool Workflows for Compact Agents",
+    "summary": "arXiv:2606.12674v1 Announce Type: new  Abstract: Compact language models (LMs) reduce cost, latency, and deployment risk for tool agents. Yet MCP-style tool use requires more than isolated function calling: an agent must discover tools from live catalogs, satisfy schemas, preserve dependencies across intermediate outputs, and ground final responses in executed evidence. Small planners often generate plausible workflow graphs that fail under tool resolution, parameter validation, dependency tracking, or execution. We argue that this failure mode is poorly handled by small-corpus distillation. A few hundred teacher traces can teach workflow format, but rarely cover the recovery behavior needed to repair failed plans over changing tool catalogs. We introduce Evoflux, an inference-time evoluti",
+    "url": "https://arxiv.org/abs/2606.12674",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "提出推理时演化工作流，提升紧凑模型工具调用能力",
+    "llm_tags": [
+      "智能体",
+      "工具调用",
+      "小模型",
+      "工作流"
+    ]
+  },
+  {
+    "id": "9fdeb9b90f65",
+    "title": "From AGI to ASI",
+    "summary": "arXiv:2606.12683v1 Announce Type: new  Abstract: Over the last decade, building human-level artificial general intelligence has moved from far-fetched speculation to being a concrete next-decade target for many of the largest AI organisations. Achieving this goal would have profound and far-reaching impacts on human society, which raises many complex questions for the decade ahead. This report investigates how AI itself might continue to develop in a post-AGI world along the continuum of machine intelligence. The endpoint of this continuum, Universal AI, is theoretically well understood, which provides some formal grounding for the main focus of this report: the transition from human-level AGI to artificial general superintelligence, which, intuitively, can be understood as a system that i",
+    "url": "https://arxiv.org/abs/2606.12683",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "探讨AGI向ASI演进路径及社会影响的深度报告",
+    "llm_tags": [
+      "AGI",
+      "ASI",
+      "AI安全",
+      "未来预测"
+    ]
+  },
+  {
+    "id": "136dcffe0173",
+    "title": "Deployment-Centered Evaluation: Predicting Query-Level Rejection Risk in a Clinical LLM System",
+    "summary": "arXiv:2606.12702v1 Announce Type: new  Abstract: Large language models (LLMs) are increasingly integrated into clinical systems, making it essential to evaluate the real-world utility of these systems. However, static benchmarks tend to measure correctness rather than user acceptance, aggregate performance across queries, and require densely annotated datasets -- leading to major blind spots for evaluating clinical systems. In this work, we perform a deployment-centered evaluation of an LLM system embedded within electronic health records at an academic medical center, where user feedback is sparse but closely reflects the deployment conditions. Specifically, we train a pre-response classifier that estimates the risk that a future interaction will result in the user rejecting the LLM respo",
+    "url": "https://arxiv.org/abs/2606.12702",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出预测临床LLM查询级拒绝风险的部署评估方法。",
+    "llm_tags": [
+      "医疗AI",
+      "风险评估",
+      "LLM评估"
+    ]
+  },
+  {
+    "id": "5dfa8325cac7",
+    "title": "The Theory of Mind Utility: Formal Specification of a Mentalizing Mechanism",
+    "summary": "arXiv:2606.12721v1 Announce Type: new  Abstract: Inferring others' beliefs requires more than reading surface signals; it requires tracking who told them what, in what order, and how credibly. The Theory of Mind Utility (ToM-U) formalizes this epistemic state inference problem at the computational level of analysis, specifying what mentalizing computes and why without commitment to algorithmic or neural implementation. ToM-U achieves this by constructing Local Epistemic World Models (LEWMs) -- directed typed graphs that represent agents, state nodes, and the epistemic relationships among them -- and evaluating discrete candidate LEWMs against observed behavior until one achieves sufficient confidence. Five formal definitions specify the LEWM structure, agent node properties including order",
+    "url": "https://arxiv.org/abs/2606.12721",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 45,
+    "score": 60,
+    "llm_summary": "提出心智理论效用框架，形式化定义信念推断的计算问题。",
+    "llm_tags": [
+      "心智理论",
+      "认知建模",
+      "形式化方法"
+    ]
+  },
+  {
+    "id": "83979ba59f1b",
+    "title": "Benchmarking AI Agents for Addressing Scientific Challenges Across Scales",
+    "summary": "arXiv:2606.12736v1 Announce Type: new  Abstract: AI agents are increasingly being developed to accelerate scientific discovery, yet their practical capabilities in real research settings remain poorly understood. Existing benchmarks for AI agents rarely capture the complexity, heterogeneity, and extended reasoning required by scientific work, whereas benchmarks for scientific tasks often reduce research to static, direct problems and provide limited support for interactive evaluation. Here, we introduce SciAgentArena, a systematic benchmark for evaluating AI agents in real-world scientific research scenarios drawn from emerging needs across multiple domains. SciAgentArena comprises approximately 200 tasks with stepwise verification and an interactive, agent-agnostic environment for assessi",
+    "url": "https://arxiv.org/abs/2606.12736",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出跨尺度科学挑战基准，评估AI智能体复杂推理能力。",
+    "llm_tags": [
+      "AI智能体",
+      "科学计算",
+      "基准测试",
+      "评估方法"
+    ]
+  },
+  {
+    "id": "22ced9c33879",
+    "title": "A Tutorial on World Models and Physical AI",
+    "summary": "arXiv:2606.12783v1 Announce Type: new  Abstract: World modeling is emerging as a central principle for building intelligent systems capable of prediction, reasoning, and decision making. A central distinction can be drawn between explicit world models, which learn structured dynamics for rollout-based reasoning and planning, and implicit world models, which encode predictive structure within scalable learned representations. These complementary paradigms provide a foundation for physical AI in domains such as robotics and autonomous driving, enabling intelligence beyond reactive control under real-world constraints. Recent foundation models further suggest a pathway toward unified systems integrating perception, prediction, and action. Despite rapid progress, major challenges remain in hie",
+    "url": "https://arxiv.org/abs/2606.12783",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "综述显式与隐式世界模型，探讨物理AI基础",
+    "llm_tags": [
+      "世界模型",
+      "物理AI",
+      "综述"
+    ]
+  },
+  {
+    "id": "0a4b83ebd01b",
+    "title": "The Containment Gap: How Deployed Agentic AI Frameworks Fail Public-Facing Safety Requirements",
+    "summary": "arXiv:2606.12797v1 Announce Type: new  Abstract: Agentic large language model systems that autonomously invoke tools, maintain persistent memory, and execute multi-step plans are increasingly deployed in public-facing domains, including government services, healthcare triage, and financial advising. We ask whether the frameworks used to build these systems provide architectural-level structural safety guarantees. Applying six containment principles derived from a compositional model of agentic architectures, we audit three dominant frameworks (LangChain, AutoGPT, and OpenAI Agents SDK) and find no native compliance in any of them. Memory integrity, a defense against one of the most prevalent vulnerability classes, is not observed in any of the three evaluated frameworks. We validate these ",
+    "url": "https://arxiv.org/abs/2606.12797",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "揭示智能体框架在公共安全架构层面的缺陷与风险。",
+    "llm_tags": [
+      "AI安全",
+      "智能体",
+      "系统架构",
+      "风险评估"
+    ]
+  },
+  {
+    "id": "a6692ffde5c6",
+    "title": "MLUBench: A Benchmark for Lifelong Unlearning Evaluation in MLLMs",
+    "summary": "arXiv:2606.12809v1 Announce Type: new  Abstract: Multimodal large language models (MLLMs) are trained on massive multimodal data, making data unlearning increasingly important as data owners may request the removal of specific content. In practice, these requests often arrive sequentially over time, giving rise to the challenging problem of MLLM Lifelong Unlearning. However, most existing benchmarks are limited in scale and scope, failing to capture the complexities of MLLM lifelong unlearning. To fill this gap, we introduce the MLUBench, a large-scale and comprehensive benchmark featuring 127 entities across 9 classes under lifelong unlearning requests. We perform extensive experiments using MLUBench and reveal that existing unlearning methods suffer from severe, cumulative degradation. M",
+    "url": "https://arxiv.org/abs/2606.12809",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-12T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "首个多模态大模型终身遗忘评估基准，填补领域空白。",
+    "llm_tags": [
+      "🔧 已开源",
+      "模型安全",
+      "基准测试",
+      "多模态"
+    ]
+  },
+  {
+    "id": "9720ea694470",
+    "title": "Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31B QAT Uncensored Heretics!",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3flg9/gemma_4_quadruple_release_12b_12b_qat_26ba4b_qat/\"> <img alt=\"Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3flg9/gemma_4_quadruple_release_12b_12b_qat_26ba4b_qat/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-11T23:58:58+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "社区发布Gemma 4多版本模型，含12B及QAT量化变体",
+    "llm_tags": [
+      "开源模型",
+      "量化技术",
+      "Gemma"
+    ]
+  },
+  {
+    "id": "cc062a58f80a",
+    "title": "[Talk] Text Diffusion — Google DeepMind's Brendan O’Donoghue",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3f9hs/talk_text_diffusion_google_deepminds_brendan/\"> <img alt=\"[Talk] Text Diffusion — Google DeepMind's Brendan O’Donoghue\" s",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3f9hs/talk_text_diffusion_google_deepminds_brendan/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-11T23:43:20+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "探讨文本扩散模型技术细节与优势",
+    "llm_tags": [
+      "扩散模型",
+      "NLP",
+      "DeepMind"
+    ]
+  },
+  {
     "id": "b7bd93b45845",
     "title": "DiffusionGemma under real workloads feels very different from benchmark demos",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u30dhr/diffusiongemma_under_real_workloads_feels_very/\"> <img alt=\"DiffusionGemma under real workloads feels very different from",
@@ -367,6 +628,24 @@
     ]
   },
   {
+    "id": "ada6f2ea0907",
+    "title": "OpenAI to acquire Ona",
+    "summary": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows.",
+    "url": "https://openai.com/index/openai-to-acquire-ona",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-11T00:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "OpenAI收购Ona以扩展Codex，支持企业级长时运行AI智能体。",
+    "llm_tags": [
+      "智能体",
+      "代码生成",
+      "企业应用"
+    ]
+  },
+  {
     "id": "37458e5f360d",
     "title": "Claude Fable 5's security guardrails can be bypassed with a fake homework assignment",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u2cwfz/claude_fable_5s_security_guardrails_can_be/\"> <img alt=\"Claude Fable 5's security guardrails can be bypassed with a fake ",
@@ -565,6 +844,26 @@
     ]
   },
   {
+    "id": "21c5a149d92f",
+    "title": "SkyBlue997/enableMacosAI ⭐195",
+    "summary": "国行 Mac 一键开启完整 Apple 智能(端侧 + Private Cloud Compute 云端)· macOS 27 / Apple Silicon",
+    "url": "https://github.com/SkyBlue997/enableMacosAI",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-10T13:23:39Z",
+    "stars": 195,
+    "language": "Shell",
+    "frontier": 60,
+    "signal": 75,
+    "score": 66,
+    "llm_summary": "国行Mac一键解锁完整Apple智能功能，支持端侧与云端",
+    "llm_tags": [
+      "Apple Intelligence",
+      "macOS",
+      "工具脚本"
+    ]
+  },
+  {
     "id": "cd3acecf4e01",
     "title": "Pokémon Go data ‘exploited to develop navigation’ for military drones",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u21qcb/pokémon_go_data_exploited_to_develop_navigation/\"> <img alt=\"Pokémon Go data ‘exploited to develop navigation’ for milita",
@@ -580,6 +879,26 @@
       "无人机",
       "数据集",
       "计算机视觉"
+    ]
+  },
+  {
+    "id": "301feb3ffd35",
+    "title": "vinayaklatthe/microsoft-security-skills ⭐62",
+    "summary": "Curated Microsoft Security skills for AI agents - Defender, Sentinel, Entra, Purview, Intune, Security Copilot",
+    "url": "https://github.com/vinayaklatthe/microsoft-security-skills",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-10T11:39:11Z",
+    "stars": 62,
+    "language": "JavaScript",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "整理微软安全技能知识库，赋能AI智能体操作安全产品。",
+    "llm_tags": [
+      "AI智能体",
+      "安全运维",
+      "知识库"
     ]
   },
   {
@@ -2260,259 +2579,6 @@
       "大模型评测",
       "性能对比",
       "Gemini"
-    ]
-  },
-  {
-    "id": "12d11d0af1c8",
-    "title": "emollick/concord ⭐71",
-    "summary": "Instrument-grade qualitative text analysis: AI-coded corpora, gold calibration, DSL/PPI-corrected statistics, Evidence Ladder",
-    "url": "https://github.com/emollick/concord",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-07T04:13:41Z",
-    "stars": 71,
-    "language": "JavaScript",
-    "frontier": 65,
-    "signal": 85,
-    "score": 73,
-    "llm_summary": "基于AI的定性文本分析工具，支持语料编码与统计校准",
-    "llm_tags": [
-      "文本分析",
-      "社会科学",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "0c1b473a1f26",
-    "title": "RainyMarks/DeepX ⭐54",
-    "summary": "An AI agent workspace",
-    "url": "https://github.com/RainyMarks/DeepX",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-07T02:30:08Z",
-    "stars": 54,
-    "language": "Rust",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "开源的AI Agent工作区项目",
-    "llm_tags": [
-      "AI Agent",
-      "开源项目"
-    ]
-  },
-  {
-    "id": "15b4a1a91a00",
-    "title": "JimLiu/baoyu-design ⭐194",
-    "summary": "Run Claude Design locally as an Agent Skill — Cursor, Claude Code & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML, without claude.ai/design. Best with Opus 4",
-    "url": "https://github.com/JimLiu/baoyu-design",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-07T01:16:18Z",
-    "stars": 194,
-    "language": "JavaScript",
-    "frontier": 85,
-    "signal": 88,
-    "score": 86,
-    "llm_summary": "Claude Design 本地化运行工具，支持生成完整 UI 原型",
-    "llm_tags": [
-      "本地运行",
-      "UI 原型",
-      "Claude",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "563cff98010d",
-    "title": "dvlt.cu: inference engine written from scratch in CUDA/C++ for NVIDIA's DVLT 3D transformer model",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tyu79c/dvltcu_inference_engine_written_from_scratch_in/\"> <img alt=\"dvlt.cu: inference engine written from scratch in CUDA/C++ f",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyu79c/dvltcu_inference_engine_written_from_scratch_in/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T22:04:08+00:00",
-    "frontier": 85,
-    "signal": 88,
-    "score": 86,
-    "llm_summary": "为DVLT 3D Transformer模型从零编写CUDA推理引擎",
-    "llm_tags": [
-      "3D Transformer",
-      "CUDA",
-      "推理引擎",
-      "本地部署"
-    ]
-  },
-  {
-    "id": "2b2f16eaf29d",
-    "title": "Z.ai, we need Air! GLM GGUF wen?",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>First we never saw an upgraded Air model after 4.5. Then GLM 4.7 Turbo was great, but quickly surpassed for coding. Now GLM 5.1 is a coding beast, but too huge for mo",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyresc/zai_we_need_air_glm_gguf_wen/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T20:06:46+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 67,
-    "llm_summary": "用户呼吁 Z.ai 发布轻量级 GLM 模型",
-    "llm_tags": [
-      "GLM",
-      "量化",
-      "本地部署",
-      "模型评测"
-    ]
-  },
-  {
-    "id": "e24421291b9d",
-    "title": "120 tok/s on 12GB VRAM with Gemma 4 12B QAT MTP",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Google just released the QAT (Quantization-Aware Training) variant of their Gemma 4 models, including 12B, so it was only natural for me to benchmark it on my 12GB GP",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1typjmc/120_toks_on_12gb_vram_with_gemma_4_12b_qat_mtp/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T18:53:19+00:00",
-    "frontier": 85,
-    "signal": 78,
-    "score": 82,
-    "llm_summary": "Gemini 4 QAT 量化模型实测性能",
-    "llm_tags": [
-      "量化",
-      "推理",
-      "性能优化",
-      "Gemma"
-    ]
-  },
-  {
-    "id": "d1b8c62589b1",
-    "title": "trueugenee/ai-linux-webapp-wrapper ⭐72",
-    "summary": "",
-    "url": "https://github.com/trueugenee/ai-linux-webapp-wrapper",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-06T18:46:01Z",
-    "stars": 72,
-    "language": "JavaScript",
-    "frontier": 85,
-    "signal": 88,
-    "score": 86,
-    "llm_summary": "开源 AI Linux Web 应用封装器，支持多模型接入",
-    "llm_tags": [
-      "AI应用",
-      "Linux",
-      "Web封装",
-      "开源"
-    ]
-  },
-  {
-    "id": "69e6ab806784",
-    "title": "KV cache quant benchmarks: KVarN 6-bit matches q8_0, 4-bit matches q5_0. Massive!",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>TL;DR Based on long context KLD benchmarks, KVarN appears to be</strong> <strong><em>just better</em></strong> <strong>than usual llama.cpp KV cache quants. A",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tyockn/kv_cache_quant_benchmarks_kvarn_6bit_matches_q8_0/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T18:06:48+00:00",
-    "frontier": 85,
-    "signal": 88,
-    "score": 86,
-    "llm_summary": "KVarN 6-bit量化性能媲美q8_0，4-bit接近q5_0",
-    "llm_tags": [
-      "KV Cache",
-      "量化",
-      "推理加速",
-      "LLM"
-    ]
-  },
-  {
-    "id": "d10f3c3dc955",
-    "title": "Gemma 4 QAT Unquantized Heretic is here",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tynv0p/gemma_4_qat_unquantized_heretic_is_here/\"> <img alt=\"Gemma 4 QAT Unquantized Heretic is here\" src=\"https://external-previ",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tynv0p/gemma_4_qat_unquantized_heretic_is_here/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T17:48:23+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 79,
-    "llm_summary": "Gemma 4 QAT 无量化版本发布",
-    "llm_tags": [
-      "量化",
-      "Gemma 4",
-      "本地部署",
-      "模型优化"
-    ]
-  },
-  {
-    "id": "f392ccdfe0d0",
-    "title": "Anthropic-Claude-Mythos/Claude-Mythos-AI-App ⭐49",
-    "summary": "Claude Mythos AI Anthropic App desktop  free  pro opus  frontend client API wrapper Claude 3.5 Sonnet Opus LLM chatbot roleplay jailbreak uncensored character prompt templates",
-    "url": "https://github.com/Anthropic-Claude-Mythos/Claude-Mythos-AI-App",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-06T17:35:13Z",
-    "stars": 49,
-    "language": "C#",
-    "frontier": 75,
-    "signal": 85,
-    "score": 79,
-    "llm_summary": "Claude 3.5 Sonnet 前端客户端，支持角色扮演与提示词模板",
-    "llm_tags": [
-      "Claude",
-      "前端",
-      "客户端",
-      "角色扮演"
-    ]
-  },
-  {
-    "id": "2280278a9832",
-    "title": "amElnagdy/guard-skills ⭐70",
-    "summary": "Guard skills for coding agents, quality gates that catch AI-generated failure modes in code, tests, and docs",
-    "url": "https://github.com/amElnagdy/guard-skills",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-06T16:59:27Z",
-    "stars": 70,
-    "language": null,
-    "frontier": 65,
-    "signal": 85,
-    "score": 73,
-    "llm_summary": "开源代码代理质量门禁工具",
-    "llm_tags": [
-      "代码代理",
-      "质量门禁",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "54035e4a2993",
-    "title": "UBTech teases the faces of their 'emotional' humanoid robot couple, ahead of their June 30 debut",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1tym7i2/ubtech_teases_the_faces_of_their_emotional/\"> <img alt=\"UBTech teases the faces of their 'emotional' humanoid robot coup",
-    "url": "https://www.reddit.com/r/singularity/comments/1tym7i2/ubtech_teases_the_faces_of_their_emotional/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T16:44:53+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 67,
-    "llm_summary": "优必选发布情感人形机器人情侣",
-    "llm_tags": [
-      "人形机器人",
-      "情感计算",
-      "具身智能"
-    ]
-  },
-  {
-    "id": "2311e8717e2c",
-    "title": "Cohere's unreleased coding model (early access for localllama)",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tylzy2/coheres_unreleased_coding_model_early_access_for/\"> <img alt=\"Cohere's unreleased coding model (early access for locallla",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tylzy2/coheres_unreleased_coding_model_early_access_for/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-06T16:36:41+00:00",
-    "frontier": 85,
-    "signal": 75,
-    "score": 81,
-    "llm_summary": "Cohere 代码模型内测，支持本地部署",
-    "llm_tags": [
-      "Cohere",
-      "代码模型",
-      "本地部署"
     ]
   }
 ]
