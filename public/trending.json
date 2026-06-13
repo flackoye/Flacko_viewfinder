@@ -1,5 +1,42 @@
 [
   {
+    "id": "66a50a20162e",
+    "title": "Continual learning in mid-2026. A map of everyone trying to crack it: memory layers, \"dreaming\" agents, and the Post-Transformer models that learn inside the network",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Llion Jones said “2026 is the continual learning year” in the recent Post-Transformer debate. Sutton/Silver call the next phase the &quot;era of experience”.<br /> Wh",
+    "url": "https://www.reddit.com/r/artificial/comments/1u40uys/continual_learning_in_mid2026_a_map_of_everyone/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-12T16:52:04+00:00",
+    "frontier": 85,
+    "signal": 75,
+    "score": 81,
+    "llm_summary": "汇总2026年持续学习技术路线，涵盖记忆层、后Transformer架构等方案",
+    "llm_tags": [
+      "持续学习",
+      "后Transformer",
+      "智能体",
+      "记忆机制"
+    ]
+  },
+  {
+    "id": "1498a600343e",
+    "title": "olmo-eval: An evaluation workbench for the model development loop",
+    "summary": "",
+    "url": "https://huggingface.co/blog/allenai/olmo-eval",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-12T15:56:10+00:00",
+    "frontier": 55,
+    "signal": 85,
+    "score": 67,
+    "llm_summary": "Hugging Face 推出 OLMo 评估工作台，集成开发循环",
+    "llm_tags": [
+      "模型评估",
+      "开发工具",
+      "OLMo"
+    ]
+  },
+  {
     "id": "5049351b4c3c",
     "title": "MiniMaxAI/MiniMax-M3 · Hugging Face",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3wagy/minimaxaiminimaxm3_hugging_face/\"> <img alt=\"MiniMaxAI/MiniMax-M3 · Hugging Face\" src=\"https://external-preview.redd.it/U",
@@ -350,6 +387,24 @@
       "决策支持",
       "可靠性",
       "人机协作"
+    ]
+  },
+  {
+    "id": "706ea3c2867e",
+    "title": "Google's Genie 3 turns a text prompt into a playable open world you can explore. It's rough now. Future of games, or a tech demo?",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u3jlw6/googles_genie_3_turns_a_text_prompt_into_a/\"> <img alt=\"Google's Genie 3 turns a text prompt into a playable open world y",
+    "url": "https://www.reddit.com/r/artificial/comments/1u3jlw6/googles_genie_3_turns_a_text_prompt_into_a/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-12T03:07:41+00:00",
+    "frontier": 85,
+    "signal": 45,
+    "score": 69,
+    "llm_summary": "谷歌Genie 3可将文本生成可玩开放世界，目前仍显粗糙。",
+    "llm_tags": [
+      "生成式AI",
+      "游戏开发",
+      "世界模型"
     ]
   },
   {
@@ -1363,6 +1418,26 @@
     ]
   },
   {
+    "id": "1808cd2d2826",
+    "title": "alchaincyf/fanbox ⭐218",
+    "summary": "vibe coding 的驾驶舱：左边文件，右边/下边终端，中间看清每一次改动。 / The cockpit for vibe coding: browse files on the left, command agents on the right, watch every change in between.",
+    "url": "https://github.com/alchaincyf/fanbox",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-10T01:01:42Z",
+    "stars": 218,
+    "language": "JavaScript",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "Vibe coding 驾驶舱工具，集成文件浏览与终端交互。",
+    "llm_tags": [
+      "AI编程",
+      "开发工具",
+      "交互界面"
+    ]
+  },
+  {
     "id": "0b7b7952815c",
     "title": "Can a machine think without language?",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p>Yann LeCun bet a billion dollars that it can. He left Meta arguing today’s chatbots are a dead end, and that real intelligence comes from “world models,” systems that",
@@ -2285,374 +2360,6 @@
       "AI智能体",
       "科研工具",
       "校准机制"
-    ]
-  },
-  {
-    "id": "8caeab5d97cd",
-    "title": "DiBS: Diffusion-Informed Branch Selection",
-    "summary": "arXiv:2606.06518v1 Announce Type: new  Abstract: Sudoku is a representative constraint satisfaction problem that requires global structural reasoning under strict discrete constraints. The existing works of solving Sudoku mainly focus on two dominant approaches, i.e., traditional heuristic and deep learning solver. However, they suffer from two complementary limitations: learning-based solvers lack hard correctness guarantees, while complete symbolic solvers are still prone to long-tail search. To address these shortcomings, we propose a novel diffusion model-guided approach, termed as DiBS, for the branch selection search process. Specifically, DiBS keeps the symbolic solver complete and uses the diffusion model as a branch-ordering guide. The core method is ranking candidate values under",
-    "url": "https://arxiv.org/abs/2606.06518",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-08T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "结合扩散模型与符号求解，提升数独等约束问题的推理效率",
-    "llm_tags": [
-      "🔧 已开源",
-      "扩散模型",
-      "符号求解",
-      "约束满足"
-    ]
-  },
-  {
-    "id": "675613188562",
-    "title": "Lean4Agent: Formal Modeling and Verification for Agent Workflow and Trajectory",
-    "summary": "arXiv:2606.06523v1 Announce Type: new  Abstract: Equipping Large Language Models (LLMs) to execute reliable multi-step workflows has become a central challenge in artificial intelligence. Despite recent advances in LLMs' agentic capabilities, most agent systems still lack formal methods for specifying, verifying, and debugging their workflow and execution trajectories. This challenge mirrors a long-standing problem in mathematics, where the ambiguity of natural languages (NLs) motivates the development of formal languages (FLs). Inspired by this paradigm, we propose **Lean4Agent**, to the best of our knowledge, the first framework that uses Lean4, a dependent-type FL to model and verify agent behavior. **Lean4Agent** launches **FormalAgentLib**, an extensible Lean4 library for formally mod",
-    "url": "https://arxiv.org/abs/2606.06523",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-08T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 65,
-    "llm_summary": "提出用Lean4形式化验证Agent工作流与轨迹，提升可靠性。",
-    "llm_tags": [
-      "智能体",
-      "形式化验证",
-      "可靠性"
-    ]
-  },
-  {
-    "id": "732a13815261",
-    "title": "CrowdMath: A Dataset of Crowdsourced Mathematical Research Discussions",
-    "summary": "arXiv:2606.06526v1 Announce Type: new  Abstract: Large language models have made substantial progress on mathematical reasoning, but existing benchmarks typically evaluate well-specified problems with final answers, step-by-step solutions, or complete proofs. They do not capture collaborative open-problem solving: a setting in which participants propose partial arguments, identify gaps or errors in prior steps, repair flawed reasoning, and gradually synthesize incremental contributions into a proof. We introduce CrowdMath, a dataset of 164 expert-annotated progress chains from the MIT PRIMES--Art of Problem Solving (AoPS) CrowdMath program (2016-2025), a collaborative research initiative whose discussions have led to peer-reviewed publications. Each chain traces a multi-participant forum d",
-    "url": "https://arxiv.org/abs/2606.06526",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-08T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "首个众包数学研究讨论数据集，填补协作推理空白。",
-    "llm_tags": [
-      "数据集",
-      "数学推理",
-      "协作AI"
-    ]
-  },
-  {
-    "id": "284cca93cd0c",
-    "title": "Attack Selection in Agentic AI Control Evaluations Meaningfully Decreases Safety",
-    "summary": "arXiv:2606.06529v1 Announce Type: new  Abstract: An attacker that strategically chooses when to attack is much harder to catch than one that attacks indiscriminately. AI control is a safety framework for deploying capable but untrusted AI agents under the oversight of a weaker, trusted monitor and a limited human audit budget. Control evaluations stress-test these protocols by pitting a red-team attack policy against the blue-team monitor, but current evaluations typically assume attackers that do not strategically select when to attack. We study this capability, attack selection, in agentic settings by decomposing attack decisions into a start policy, which decides when an attacker should attack, and a stop policy, which decides when an attacker should abort an ongoing attack. Across two ",
-    "url": "https://arxiv.org/abs/2606.06529",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-08T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出策略性攻击选择机制，显著降低AI控制评估的安全性。",
-    "llm_tags": [
-      "AI安全",
-      "红蓝对抗",
-      "智能体控制"
-    ]
-  },
-  {
-    "id": "af42bfea9185",
-    "title": "Position: Don't Just \"Fix it in Post\": A Science of AI Must Study Training Dynamics",
-    "summary": "arXiv:2606.06533v1 Announce Type: new  Abstract: What would it mean to have a scientific understanding of AI? Models are not static objects: they are snapshots of time-evolving processes shaped by data, objectives, architectures, and optimization dynamics. Yet much of AI research treats models as fixed artifacts, analyzing behaviors after training rather than asking why they emerge. This position paper argues that a science of AI must move beyond post-hoc fixes and study the training dynamics that produce model behavior. Such a science should support progressively stronger forms of understanding: predicting outcomes from early training signals, intervening when trajectories go wrong, and ultimately designing training procedures that more reliably produce desired properties. Scaling laws ha",
-    "url": "https://arxiv.org/abs/2606.06533",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-08T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "主张AI科学应超越事后分析，深入研究训练动态过程。",
-    "llm_tags": [
-      "训练动态",
-      "AI科学",
-      "观点论文"
-    ]
-  },
-  {
-    "id": "5562192f722e",
-    "title": "AEGIS: A Backup Reflex for Physical AI",
-    "summary": "arXiv:2606.06660v1 Announce Type: new  Abstract: Long-horizon robot manipulation tends to fail gradually: one bad step degrades the state, and the policy spirals into a basin from which it cannot recover. The failure is often visible before it happens. We introduce AEGIS (Activation-probe Early-warning, Gated Inference Switching), a selective escalation method that uses a lightweight probe on a weak policy's frozen activations to detect high-risk steps while there is still time to act. When the probe flags a step, control switches to a stronger separate policy, but only for the steps that need it. On LIBERO-Spatial, AEGIS recovers 10.1% of the trajectories the weak policy alone loses, versus 4.6% for budget-matched blind escalation and 5.1% for a random-trigger placebo. These gains are sig",
-    "url": "https://arxiv.org/abs/2606.06660",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-08T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出AEGIS机制，通过探测弱策略激活信号提前预警并切换策略，防止机器人长时任务失败。",
-    "llm_tags": [
-      "机器人",
-      "策略切换",
-      "故障检测"
-    ]
-  },
-  {
-    "id": "6cac60a9e6b9",
-    "title": "OpenSkill: Open-World Self-Evolution for LLM Agents",
-    "summary": "arXiv:2606.06741v1 Announce Type: new  Abstract: Self-evolving agents requires adaptation after deployment, but existing approaches assume a usable learning loop, such as curated skills, successful trajectories, or verifier signals. Real open-world deployments may provide none of these, offering only a task prompt. In this work, we study open-world self-evolution, where an agent must build both its skills and its own verification signals from scratch, using open-world resources but no target-task supervision. We propose OpenSkill, a framework that bootstraps this loop: it acquires grounded knowledge and verification anchors from documentation, repositories, and the web, synthesizes them into transferable skills, and refines those skills against self-built virtual tasks grounded in the anch",
-    "url": "https://arxiv.org/abs/2606.06741",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-08T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "探索LLM智能体在开放世界中从零构建技能与验证信号的自进化机制。",
-    "llm_tags": [
-      "智能体",
-      "自进化",
-      "开放世界",
-      "强化学习"
-    ]
-  },
-  {
-    "id": "f41af589f965",
-    "title": "AdMem: Advanced Memory for Task-solving Agents",
-    "summary": "arXiv:2606.06787v1 Announce Type: new  Abstract: Large Language Models (LLMs) show promise as tool-using agents but remain limited in long-horizon tasks that require remembering, organizing, and reusing knowledge. Prior memory approaches aim to resolve the situation, but mainly focus on storing factual information. Recent work on procedural memory improves task reuse, yet often reduces to replaying past successes without addressing failure cases or online scalability. We introduce a unified and automatic memory framework that integrates semantic, episodic, and procedural memory in a bi-level design combining short-term and long-term stores. A multi-agent architecture with actor, memory, and critic agents enables automatic memory generation, reward annotation, and adaptive retrieval. Long-t",
-    "url": "https://arxiv.org/abs/2606.06787",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-08T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "提出统一记忆机制，解决智能体长程任务中的知识组织与复用问题。",
-    "llm_tags": [
-      "智能体",
-      "记忆机制",
-      "长程任务"
-    ]
-  },
-  {
-    "id": "de0cae61d05a",
-    "title": "SafeGene: Reusable Adapters for Transferable Safety Alignment",
-    "summary": "arXiv:2606.06519v1 Announce Type: new  Abstract: Open-weight LLMs are increasingly fine-tuned into customized assistants, but downstream fine-tuning can weaken safety alignment and make models more vulnerable to malicious prompts, even when the training data is not intentionally harmful. This creates a recurring safety recovery problem as target models are repeatedly updated with new task data or user interactions. We propose SafeGene, a reusable safety-adapter module designed for cross-task reuse within each architecture-compatible model family. Rather than treating safety recovery as a model-specific repair step, SafeGene treats safety capability as an independent, reusable adapter representation decoupled from task-specific updates. This representation is obtained from aligned--degraded",
-    "url": "https://arxiv.org/abs/2606.06519",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-08T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 70,
-    "score": 68,
-    "llm_summary": "提出可复用的安全适配器，解决下游微调导致的安全对齐遗忘问题。",
-    "llm_tags": [
-      "大模型安全",
-      "参数高效微调",
-      "迁移学习"
-    ]
-  },
-  {
-    "id": "e77efb5fc36e",
-    "title": "Teaching the Way, Not the Answer: Privileged Tutoring Distillation for Multimodal Policy Optimization",
-    "summary": "arXiv:2606.07000v1 Announce Type: new  Abstract: Recent post-training methods, particularly Reinforcement Learning with Verifiable Rewards (RLVR), have significantly enhanced the reasoning ability of Large Vision-Language Models (LVLMs). However, the sparse nature of verifiable rewards provides little token-level supervision for failed rollouts, often leading to inefficient exploration in complex multimodal reasoning tasks. Although policy distillation can offer dense guidance, external teacher based methods introduce substantial computational overhead, while answer conditioned tuning methods may expose answer-level information and induce shortcut-like generation behavior. To address these limitations, we propose PTD-PO, a Privileged Tutoring Distillation Policy Optimization framework for ",
-    "url": "https://arxiv.org/abs/2606.07000",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-08T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 65,
-    "llm_summary": "提出特权导师蒸馏解决多模态策略优化中的稀疏奖励问题。",
-    "llm_tags": [
-      "多模态",
-      "强化学习",
-      "模型蒸馏"
-    ]
-  },
-  {
-    "id": "4f828e3ae6a7",
-    "title": "Exploring Agentic Tool-Calling Decisions via Uncertainty-Aligned Reinforcement Learning",
-    "summary": "arXiv:2606.06976v1 Announce Type: new  Abstract: Large language model (LLM)-based agents often make suboptimal tool-use decisions, including unsupported tool invocation and hallucinated direct responses, which may accumulate errors throughout multi-step interactions. Existing approaches mainly improve these behaviors through inference-time correction or coarse-grained reward signals based on decision outcomes and structured checklists, leaving the uncertainty characteristics of agent decisions underexplored. We observe that decision-oriented reinforcement learning tends to weaken the uncertainty separation between correct and incorrect actions, resulting in overconfident mistakes and weaker exploration signals. Therefore, we propose TRUST, which incorporates uncertainty quantification into",
-    "url": "https://arxiv.org/abs/2606.06976",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-08T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 65,
-    "score": 68,
-    "llm_summary": "提出不确定性对齐强化学习优化智能体工具调用决策。",
-    "llm_tags": [
-      "智能体",
-      "强化学习",
-      "工具调用"
-    ]
-  },
-  {
-    "id": "94c14217e647",
-    "title": "Gemma4_31b_fp8 keeping up with Sonnet_4.6_medium in my harness.",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tzw207/gemma4_31b_fp8_keeping_up_with_sonnet_46_medium/\"> <img alt=\"Gemma4_31b_fp8 keeping up with Sonnet_4.6_medium in my harne",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzw207/gemma4_31b_fp8_keeping_up_with_sonnet_46_medium/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T03:06:48+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 79,
-    "llm_summary": "FP8 Gemma4 31B 性能对标 Sonnet 4.6 Medium",
-    "llm_tags": [
-      "量化",
-      "FP8",
-      "推理",
-      "开源模型"
-    ]
-  },
-  {
-    "id": "58a7ad71c1bc",
-    "title": "ELI5: why is google paying so much more for spacex compute than anthropic?",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Anthropic paying $1.25b for 220k GPUs at Colossus 1 AND X GPUs at Colossus 2.</p> <p>Google paying $920m for 110k GPUs.</p> <p>Even if the $1.25B was just colossus 1,",
-    "url": "https://www.reddit.com/r/singularity/comments/1tzv0pd/eli5_why_is_google_paying_so_much_more_for_spacex/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T02:15:48+00:00",
-    "frontier": 60,
-    "signal": 65,
-    "score": 62,
-    "llm_summary": "对比谷歌与Anthropic租用SpaceX算力的成本差异",
-    "llm_tags": [
-      "算力租赁",
-      "基础设施",
-      "成本分析"
-    ]
-  },
-  {
-    "id": "19f48422907d",
-    "title": "The Open Source Community is backing OpenEnv for Agentic RL",
-    "summary": "",
-    "url": "https://huggingface.co/blog/openenv-agentic-rl",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-08T00:00:00+00:00",
-    "frontier": 75,
-    "signal": 78,
-    "score": 76,
-    "llm_summary": "开源社区支持OpenEnv，为智能体强化学习提供统一基准环境",
-    "llm_tags": [
-      "强化学习",
-      "智能体",
-      "开源生态",
-      "基准测试"
-    ]
-  },
-  {
-    "id": "46d2ccc090fc",
-    "title": "Amazing Digital Dentures (a failed project)",
-    "summary": "",
-    "url": "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-07T19:44:27+00:00",
-    "frontier": 45,
-    "signal": 88,
-    "score": 62,
-    "llm_summary": "分享失败项目，复盘数字义齿开发历程",
-    "llm_tags": [
-      "数字医疗",
-      "失败复盘",
-      "工程实践"
-    ]
-  },
-  {
-    "id": "8e53ed6e37e6",
-    "title": "Dimensiontashop/Claude-Mythos-AI-App ⭐77",
-    "summary": "Claude Mythos AI Anthropic App desktop free pro opus frontend client API wrapper Claude 3.5 Sonnet Opus LLM chatbot roleplay jailbreak uncensored character prompt templates",
-    "url": "https://github.com/Dimensiontashop/Claude-Mythos-AI-App",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-07T16:39:25Z",
-    "stars": 77,
-    "language": null,
-    "frontier": 60,
-    "signal": 85,
-    "score": 70,
-    "llm_summary": "Claude 3.5 Sonnet 前端客户端，支持角色扮演与提示词模板",
-    "llm_tags": [
-      "Claude",
-      "前端",
-      "客户端",
-      "角色扮演"
-    ]
-  },
-  {
-    "id": "503353ee440d",
-    "title": "Control a 3D avatar with language instead of buttons",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tzgn87/control_a_3d_avatar_with_language_instead_of/\"> <img alt=\"Control a 3D avatar with language instead of buttons\" src=\"http",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzgn87/control_a_3d_avatar_with_language_instead_of/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-07T16:25:28+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "利用语言模型控制3D虚拟形象",
-    "llm_tags": [
-      "3D交互",
-      "多模态",
-      "本地部署"
-    ]
-  },
-  {
-    "id": "5eac515f866d",
-    "title": "GMKtec Crams OCuLink, Wi-Fi 7 and Dual PCIe 4.0 Into the EVO-X3, With a 192GB Ryzen AI MAX+ 495 Monster Following Later This Year",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tzgafl/gmktec_crams_oculink_wifi_7_and_dual_pcie_40_into/\"> <img alt=\"GMKtec Crams OCuLink, Wi-Fi 7 and Dual PCIe 4.0 Into the E",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzgafl/gmktec_crams_oculink_wifi_7_and_dual_pcie_40_into/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-07T16:12:12+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "迷你主机集成OCuLink与Wi-Fi 7",
-    "llm_tags": [
-      "迷你主机",
-      "OCuLink",
-      "Wi-Fi 7",
-      "本地部署"
-    ]
-  },
-  {
-    "id": "ca7c82db7c6d",
-    "title": "Guys, it just happened",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1tzfr6z/guys_it_just_happened/\"> <img alt=\"Guys, it just happened\" src=\"https://preview.redd.it/pk38butytv5h1.jpeg?width=640&amp;",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tzfr6z/guys_it_just_happened/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-07T15:51:52+00:00",
-    "frontier": 85,
-    "signal": 75,
-    "score": 81,
-    "llm_summary": "开源社区发布首个原生多模态推理模型",
-    "llm_tags": [
-      "开源模型",
-      "多模态",
-      "推理能力"
-    ]
-  },
-  {
-    "id": "31cdb1c497ec",
-    "title": "Minecraft Gamer(Gemini Omni Flash)",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1tzfdw5/minecraft_gamergemini_omni_flash/\"> <img alt=\"Minecraft Gamer(Gemini Omni Flash)\" src=\"https://external-preview.redd.it/",
-    "url": "https://www.reddit.com/r/singularity/comments/1tzfdw5/minecraft_gamergemini_omni_flash/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-07T15:37:30+00:00",
-    "frontier": 75,
-    "signal": 45,
-    "score": 63,
-    "llm_summary": "Gemini Omni Flash 模型演示 Minecraft 游戏操作能力",
-    "llm_tags": [
-      "多模态",
-      "Gemini",
-      "Agent"
     ]
   }
 ]
