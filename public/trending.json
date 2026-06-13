@@ -1,5 +1,59 @@
 [
   {
+    "id": "206bb6e2fc50",
+    "title": "GLM 5.2 is deployed in GLM Coding Plan. API and MIT weights in a week. Voting and benchmarks on X.",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u4nmpl/glm_52_is_deployed_in_glm_coding_plan_api_and_mit/\"> <img alt=\"GLM 5.2 is deployed in GLM Coding Plan. API and MIT weight",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4nmpl/glm_52_is_deployed_in_glm_coding_plan_api_and_mit/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-13T10:40:25+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "GLM 5.2上线Coding Plan，API与MIT权重即将发布",
+    "llm_tags": [
+      "GLM",
+      "开源模型",
+      "代码生成"
+    ]
+  },
+  {
+    "id": "58f728f91296",
+    "title": "GLM-5.2 next week, open weight, MIT",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u4je3d/glm52_next_week_open_weight_mit/\"> <img alt=\"GLM-5.2 next week, open weight, MIT\" src=\"https://preview.redd.it/13wyn4zguz",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4je3d/glm52_next_week_open_weight_mit/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-13T06:26:31+00:00",
+    "frontier": 75,
+    "signal": 45,
+    "score": 63,
+    "llm_summary": "智谱GLM-5.2下周发布，将开源权重并采用MIT协议",
+    "llm_tags": [
+      "开源模型",
+      "GLM",
+      "智谱AI"
+    ]
+  },
+  {
+    "id": "2c18f452ad49",
+    "title": "Diffusion Gemma is 4x faster, but makes 6x more mistakes!",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u4bne8/diffusion_gemma_is_4x_faster_but_makes_6x_more/\"> <img alt=\"Diffusion Gemma is 4x faster, but makes 6x more mistakes!\" sr",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4bne8/diffusion_gemma_is_4x_faster_but_makes_6x_more/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-12T23:54:33+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "Diffusion Gemma 推理速度提升4倍但错误率增加6倍",
+    "llm_tags": [
+      "扩散模型",
+      "推理加速",
+      "模型评估"
+    ]
+  },
+  {
     "id": "66a50a20162e",
     "title": "Continual learning in mid-2026. A map of everyone trying to crack it: memory layers, \"dreaming\" agents, and the Post-Transformer models that learn inside the network",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p>Llion Jones said “2026 is the continual learning year” in the recent Post-Transformer debate. Sutton/Silver call the next phase the &quot;era of experience”.<br /> Wh",
@@ -2169,197 +2223,6 @@
       "推理加速",
       "量化",
       "Gemma"
-    ]
-  },
-  {
-    "id": "2f3e1b27feb5",
-    "title": "mtmd : add video input support by ngxson · Pull Request #24269 · ggml-org/llama.cpp",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u08j3q/mtmd_add_video_input_support_by_ngxson_pull/\"> <img alt=\"mtmd : add video input support by ngxson · Pull Request #24269 ·",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u08j3q/mtmd_add_video_input_support_by_ngxson_pull/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T13:51:20+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "llama.cpp 新增 PR 添加视频输入支持",
-    "llm_tags": [
-      "多模态",
-      "本地部署",
-      "llama.cpp"
-    ]
-  },
-  {
-    "id": "701bde7a53ef",
-    "title": "Gemma 4 Chat Template now has preserve thinking",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u084qi/gemma_4_chat_template_now_has_preserve_thinking/\"> <img alt=\"Gemma 4 Chat Template now has preserve thinking\" src=\"https:",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u084qi/gemma_4_chat_template_now_has_preserve_thinking/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T13:35:56+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "Gemma 4 聊天模板新增 preserve thinking 功能",
-    "llm_tags": [
-      "Gemma",
-      "推理模型",
-      "模板"
-    ]
-  },
-  {
-    "id": "53b121ca3019",
-    "title": "Why I stopped using semantic embeddings for tool selection and switched back to BM25 [D]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>I've been building agents for about a year and recently shipped one for a client running ~140 MCP-exposed tools at peak. Along the way I made the canonical mistake. I",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1u07tlm/why_i_stopped_using_semantic_embeddings_for_tool/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T13:24:03+00:00",
-    "frontier": 55,
-    "signal": 75,
-    "score": 63,
-    "llm_summary": "实战经验：在工具选择场景下BM25优于语义嵌入",
-    "llm_tags": [
-      "Agent",
-      "检索",
-      "BM25"
-    ]
-  },
-  {
-    "id": "61a50809ef5d",
-    "title": "The crash that vanished: control and emergence in a five-model economy",
-    "summary": "",
-    "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v3",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-08T13:10:48+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 79,
-    "llm_summary": "研究五模型经济中的控制与涌现现象，揭示多智能体系统崩溃机制。",
-    "llm_tags": [
-      "多智能体",
-      "涌现",
-      "模型经济",
-      "系统稳定性"
-    ]
-  },
-  {
-    "id": "6f681a87b6d8",
-    "title": "Jeff Bezos Is Funding a Wild Hunt for the Brain’s ‘Core Algorithm’",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u079tc/jeff_bezos_is_funding_a_wild_hunt_for_the_brains/\"> <img alt=\"Jeff Bezos Is Funding a Wild Hunt for the Brain’s ‘Core Al",
-    "url": "https://www.reddit.com/r/singularity/comments/1u079tc/jeff_bezos_is_funding_a_wild_hunt_for_the_brains/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T13:02:37+00:00",
-    "frontier": 85,
-    "signal": 65,
-    "score": 77,
-    "llm_summary": "贝索斯资助探索大脑核心算法，旨在揭示生物智能底层机制",
-    "llm_tags": [
-      "脑科学",
-      "神经科学",
-      "AGI",
-      "生物计算"
-    ]
-  },
-  {
-    "id": "5faef7fbeb56",
-    "title": "kv-cache : avoid kv cells copies by ggerganov · Pull Request #24277 · ggml-org/llama.cpp",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u06jel/kvcache_avoid_kv_cells_copies_by_ggerganov_pull/\"> <img alt=\"kv-cache : avoid kv cells copies by ggerganov · Pull Request",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u06jel/kvcache_avoid_kv_cells_copies_by_ggerganov_pull/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T12:31:33+00:00",
-    "frontier": 65,
-    "signal": 85,
-    "score": 73,
-    "llm_summary": "llama.cpp优化KV缓存，避免内存拷贝以提升推理性能",
-    "llm_tags": [
-      "推理优化",
-      "KV缓存",
-      "llama.cpp"
-    ]
-  },
-  {
-    "id": "685de83c1551",
-    "title": "xiaohuailabs/xiaohu-video-translate ⭐361",
-    "summary": "对 AI 说一句话，把外语视频自动配上中文字幕 —— 下载/转写/翻译/润色/烧录一条龙，全程本地，转写零 API 费",
-    "url": "https://github.com/xiaohuailabs/xiaohu-video-translate",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-08T09:55:55Z",
-    "stars": 361,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 75,
-    "score": 63,
-    "llm_summary": "本地化视频翻译工具，集成转写翻译润色烧录，零API成本",
-    "llm_tags": [
-      "视频翻译",
-      "本地部署",
-      "语音识别"
-    ]
-  },
-  {
-    "id": "68984464bdb7",
-    "title": "agentic-in/inferoa ⭐59",
-    "summary": "Inference-native Tokenmaxxing Agent Harness for Loop Engineering",
-    "url": "https://github.com/agentic-in/inferoa",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-08T06:29:56Z",
-    "stars": 59,
-    "language": "TypeScript",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "面向推理优化的原生Agent工程框架，支持循环工程",
-    "llm_tags": [
-      "Agent",
-      "推理优化",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "769a6284327d",
-    "title": "apple/coreai-models ⭐229",
-    "summary": "Model export recipes, Python primitives, and Swift runtime utilities for on-device AI",
-    "url": "https://github.com/apple/coreai-models",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-08T04:32:27Z",
-    "stars": 229,
-    "language": "Python",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "苹果开源端侧AI模型导出方案及Swift运行时工具",
-    "llm_tags": [
-      "端侧AI",
-      "模型部署",
-      "工具链",
-      "Apple"
-    ]
-  },
-  {
-    "id": "d612e554f905",
-    "title": "AIScientists-Dev/Caliper ⭐96",
-    "summary": "An AI research analyst that knows when to trust itself — a calibrated, risk-controlled, tool-using agent for science.",
-    "url": "https://github.com/AIScientists-Dev/Caliper",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-08T04:10:16Z",
-    "stars": 96,
-    "language": "HTML",
-    "frontier": 75,
-    "signal": 65,
-    "score": 71,
-    "llm_summary": "具备风险控制能力的科研智能体，解决AI自我信任校准问题",
-    "llm_tags": [
-      "AI智能体",
-      "科研工具",
-      "校准机制"
     ]
   }
 ]
