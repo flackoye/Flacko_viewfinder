@@ -36,6 +36,24 @@
     ]
   },
   {
+    "id": "53190d9f94f9",
+    "title": "US Government Kills Fable 5: Here's What Happened",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Anthropic's two most powerful models, Fable 5 and Mythos 5, went dark tonight. Since there's a lot of speculation already, here's what's actually confirmed vs. what i",
+    "url": "https://www.reddit.com/r/artificial/comments/1u4gtk8/us_government_kills_fable_5_heres_what_happened/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-13T04:06:55+00:00",
+    "frontier": 75,
+    "signal": 45,
+    "score": 63,
+    "llm_summary": "Anthropic最强模型Fable 5与Mythos 5疑遭美国政府关停",
+    "llm_tags": [
+      "模型监管",
+      "Anthropic",
+      "大模型"
+    ]
+  },
+  {
     "id": "2c18f452ad49",
     "title": "Diffusion Gemma is 4x faster, but makes 6x more mistakes!",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u4bne8/diffusion_gemma_is_4x_faster_but_makes_6x_more/\"> <img alt=\"Diffusion Gemma is 4x faster, but makes 6x more mistakes!\" sr",
@@ -88,6 +106,27 @@
       "模型评估",
       "开发工具",
       "OLMo"
+    ]
+  },
+  {
+    "id": "c80d577b48ea",
+    "title": "fguzman82/gateGPT ⭐87",
+    "summary": "Full Transformer into a custom chip. microGPT in RTL, generating names on a Virtex-5 FPGA at ~56k tokens/second.",
+    "url": "https://github.com/fguzman82/gateGPT",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-12T14:55:53Z",
+    "stars": 87,
+    "language": "Verilog",
+    "frontier": 85,
+    "signal": 75,
+    "score": 81,
+    "llm_summary": "将Transformer部署至FPGA芯片，实现56k tokens/s推理速度",
+    "llm_tags": [
+      "FPGA",
+      "硬件加速",
+      "RTL设计",
+      "模型部署"
     ]
   },
   {
@@ -459,6 +498,26 @@
       "生成式AI",
       "游戏开发",
       "世界模型"
+    ]
+  },
+  {
+    "id": "5595bb9e9123",
+    "title": "newideas99/open-dungeon ⭐100",
+    "summary": "Open Dungeon — the first easy-to-use, fully local AI roleplay app. Story and inline scene images generated 100% on your machine (Gemma 4 QAT via Ollama(and others) + FLUX). No accounts, no API keys, n",
+    "url": "https://github.com/newideas99/open-dungeon",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-12T00:37:09Z",
+    "stars": 100,
+    "language": "TypeScript",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "本地AI角色扮演应用，集成Gemma与FLUX生成图文",
+    "llm_tags": [
+      "本地部署",
+      "多模态",
+      "角色扮演"
     ]
   },
   {
@@ -1213,6 +1272,27 @@
     ]
   },
   {
+    "id": "f2b3b76a1059",
+    "title": "john-rocky/coreai-model-zoo ⭐106",
+    "summary": "Community model zoo + knowledge base for Apple Core AI (iOS/macOS 27): Qwen3.5 & Gemma 4 converted end-to-end, verified on-device (iPhone 17 Pro GPU/ANE), conversion gotchas, custom Metal kernels, Swi",
+    "url": "https://github.com/john-rocky/coreai-model-zoo",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-10T05:21:10Z",
+    "stars": 106,
+    "language": "Swift",
+    "frontier": 85,
+    "signal": 88,
+    "score": 86,
+    "llm_summary": "苹果端侧模型库：Qwen3.5与Gemma4端到端转换及Metal内核优化",
+    "llm_tags": [
+      "端侧AI",
+      "模型部署",
+      "Metal",
+      "CoreML"
+    ]
+  },
+  {
     "id": "77bc008b868d",
     "title": "Anthropic is intentionally nerfing Fable when asked to develop other LLMs",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/\"> <img alt=\"Anthropic is intentionally nerfing Fable when asked to develop",
@@ -1818,411 +1898,6 @@
       "大模型",
       "Anthropic",
       "模型发布"
-    ]
-  },
-  {
-    "id": "c5de89d44292",
-    "title": "PathoSage: Towards Multi-Source Evidence Adjudication in Pathology via Experience-Aware Agentic Workflow",
-    "summary": "arXiv:2606.07549v1 Announce Type: new  Abstract: Recent advances in Multimodal Large Language Models (MLLMs) and agent workflows have shown strong promise for computational pathology, yet reliable patch-level reasoning remains challenging. End-to-end pathology MLLMs often hallucinate morphological features, while recent agentic systems usually merge tool outputs and retrieved knowledge into a shared context, making decisions vulnerable to conflicting evidence and context contamination. We propose PathoSage, a three-stage framework that explicitly separates knowledge retrieval, evidence collection, and evidence adjudication for patch-level pathology multimodal reasoning. Its core component, Structured Evidence Deliberation, independently evaluates heterogeneous evidence from tools, performs",
-    "url": "https://arxiv.org/abs/2606.07549",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-09T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出经验感知代理工作流，解决病理学多源证据冲突问题。",
-    "llm_tags": [
-      "病理学",
-      "多模态",
-      "Agent工作流",
-      "证据裁决"
-    ]
-  },
-  {
-    "id": "4e9c2292f120",
-    "title": "OmniMem: Perturbation-aware Memory Compression for Streaming Audio-Visual LLMs",
-    "summary": "arXiv:2606.07577v1 Announce Type: new  Abstract: Audio-visual large language models (LLMs) hold strong promise for long-form video understanding, yet their long-video inference is fundamentally limited by the linear growth of video tokens and key-value (KV) caches. We present OmniMem, a memory-efficient streaming framework designed specifically for audio-visual LLMs. Unlike existing compression methods that treat all tokens uniformly, OmniMem introduces a modality-aware memory allocation strategy that separately manages visual and audio contexts, addressing the severe token imbalance between the two modalities. OmniMem further preserves informative and non-redundant KV states through perturbation-aware memory selection, enabling compact memory without sacrificing long-range understanding. ",
-    "url": "https://arxiv.org/abs/2606.07577",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-09T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "OmniMem通过模态感知策略压缩KV缓存，优化音视频大模型长视频推理效率。",
-    "llm_tags": [
-      "多模态",
-      "KV缓存",
-      "推理优化",
-      "流式处理"
-    ]
-  },
-  {
-    "id": "b980456e365f",
-    "title": "Syll: Open-Source Personal Automation with Cross-Surface Execution",
-    "summary": "arXiv:2606.07594v1 Announce Type: new  Abstract: Personal AI agents must increasingly operate across APIs, shells, web surfaces, and desktop GUIs, yet many systems remain tuned to a single interface and offer limited support for user teaching and auditability. We present Syll, an open-source, self-hosted multimodal agent harness that unifies MCP/API tools, CLI execution, and visual GUI control in a modular runtime, enabling agents to coordinate computer use across heterogeneous interfaces while streamlining how users and agents exchange information. At the core of Syll is a bidirectional user-agent interaction layer: users teach procedures through direct demonstration, which Syll compiles into reusable skills; agent execution is translated back into multimodal evidence -- logs, keyframes, ",
-    "url": "https://arxiv.org/abs/2606.07594",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-09T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 88,
-    "score": 80,
-    "llm_summary": "开源跨界面智能体框架，统一API、CLI与GUI控制",
-    "llm_tags": [
-      "智能体",
-      "跨平台",
-      "🔧 已开源",
-      "GUI控制"
-    ]
-  },
-  {
-    "id": "bf9217dd327f",
-    "title": "Why Limit the Residual Stream to Layers and Not Tokens? Persistent Memory for Continuous Latent Reasoning",
-    "summary": "arXiv:2606.07720v1 Announce Type: new  Abstract: Large language models (LLMs) have demonstrated remarkable reasoning abilities on mathematical and multi-hop planning tasks. The CoCoNuT (Chain of Continuous Thought) paradigm~\\cite{hao2024coconut} extends this by enabling models to reason in latent space, exploring multiple reasoning paths simultaneously rather than committing to a single chain early on. However, we identify a limitation we term the \\textbf{concept bottleneck}. At each reasoning pass, intermediate hidden states are overwritten, causing the model to lose critical facts computed in earlier steps as reasoning depth increases. We observe this empirically. On HotpotQA, vanilla CoCoNuT (10.4\\% EM) fails to improve over the CoT baseline (11.0\\% EM), and performance degrades with cu",
-    "url": "https://arxiv.org/abs/2606.07720",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-09T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "提出跨Token残差流机制，解决CoCoNuT范式中的概念瓶颈问题。",
-    "llm_tags": [
-      "🔧 已开源",
-      "推理机制",
-      "模型架构",
-      "CoCoNuT"
-    ]
-  },
-  {
-    "id": "ecc01b4118f0",
-    "title": "Beyond Goodhart's Law: A Dynamic Benchmark for Evaluating Compliance in Multi-Agent Systems",
-    "summary": "arXiv:2606.07805v1 Announce Type: new  Abstract: The rapid evolution of Large Language Models (LLMs) from passive assistants to autonomous, execution-capable agents has introduced critical operational risks. Most current evaluation frameworks neglect procedural compliance, leading to ''Machiavellian'' behaviors where agents strategically violate safety rules to maximize rewards - a direct manifestation of Goodhart's Law. To address this blind spot, we introduce MAC-Bench, a dynamic, adversarial benchmark designed to evaluate the procedural alignment of multi-agent systems under realistic pressure. We propose the SERV(Seed - Evolve - Refine - Verify) pipeline, an ``Agent-as-a-Benchmark'' paradigm that transforms unstructured legal texts into executable, contamination-free scenarios. By synt",
-    "url": "https://arxiv.org/abs/2606.07805",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-09T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出MAC-Bench动态基准，解决多智能体系统中的程序合规性与古德哈特定律问题。",
-    "llm_tags": [
-      "智能体安全",
-      "评估基准",
-      "多智能体"
-    ]
-  },
-  {
-    "id": "912a37ac8c5a",
-    "title": "Where Instruction Hierarchy Breaks: Diagnosing and Repairing Failures in Reasoning Language Models",
-    "summary": "arXiv:2606.07808v1 Announce Type: new  Abstract: Reasoning language models deployed in agentic workflows must follow an instruction hierarchy: when instructions from different sources conflict, the model should obey the highest-privilege applicable instruction. Existing benchmarks largely measure this behavior end-to-end, asking whether the final response is compliant. However, a non-compliant response can arise from several distinct failures: the model may fail to identify the relevant instructions in context, fail to resolve conflicts among identified instructions, or correctly resolve the conflict in its reasoning while still producing a violating response. We introduce a white-box diagnostic framework that localizes instruction hierarchy failures into instruction identification, confli",
-    "url": "https://arxiv.org/abs/2606.07808",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-09T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "诊断并修复推理模型在指令层级冲突下的失败模式",
-    "llm_tags": [
-      "指令层级",
-      "模型安全",
-      "推理模型",
-      "鲁棒性"
-    ]
-  },
-  {
-    "id": "25c71ce41479",
-    "title": "Scaling Participation in Modular AI Systems",
-    "summary": "arXiv:2606.07812v1 Announce Type: new  Abstract: Humanity is a mosaic of multifaceted talents and needs, and any truly intelligent AI must reflect that richness. Yet the LLMs used by all are built by the few -- a centralized market of monolithic AI models structurally ill-suited to capture the diversity of human knowledge, reasoning, and values. Here we introduce scaling participation, a new paradigm in which modular AI systems are built from the bottom up through the contributions of diverse stakeholders. Participants contribute small models trained on their own interests and priorities; these models then collaborate in modular frameworks as compositional AI systems. Participatory AI systems outperform monolithic LLMs by up to 15.4% across 15 tasks, such as reasoning and factuality, surpa",
-    "url": "https://arxiv.org/abs/2606.07812",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-09T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "提出模块化AI系统新范式，通过众包贡献构建多样化智能。",
-    "llm_tags": [
-      "模块化AI",
-      "众包",
-      "系统架构",
-      "新范式"
-    ]
-  },
-  {
-    "id": "ac68bdf3baf7",
-    "title": "Safety is Contextual, LLM-Judges Are Not: Navigating the Rigid Priors of Evaluators",
-    "summary": "arXiv:2606.07874v1 Announce Type: new  Abstract: LLMs-as-judges are the only way to evaluate safety at scale. Despite their importance, LLM-judges themselves are rarely evaluated beyond human agreement in simple, static benchmarks. We therefore investigate two under-explored but crucial properties of LLMs-as-judges: their susceptibility to relying on in context-information, and their steerability to differing safety definitions, which may not align with their internal safety priors. We evaluate the safety judging abilities of many generalist LLMs and safety-specific judges, and investigate the impact of task demonstrations, novel in-context information, and changing safety definitions. We find that while LLM-judges can learn from new information, they are broadly unlikely to adjust their e",
-    "url": "https://arxiv.org/abs/2606.07874",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-09T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "揭示LLM评测器过度依赖内部先验，缺乏上下文适应性",
-    "llm_tags": [
-      "模型评测",
-      "安全对齐",
-      "LLM评测器"
-    ]
-  },
-  {
-    "id": "35228bb0b342",
-    "title": "Contract2Tool: Learning Preconditions and Effects for Reliable Tool-Augmented LLM Agents",
-    "summary": "arXiv:2606.07904v1 Announce Type: new  Abstract: Tool-augmented large language model agents increasingly rely on external APIs, but standard tool schemas describe how to call a tool, not when the tool is causally appropriate or what task state it produces. Causal tool filtering addresses this gap by using lightweight contracts that specify each tool's preconditions, effects, risk level, and cost. However, manually writing and maintaining such contracts does not scale to large or changing tool ecosystems. We introduce Contract2Tool, a framework for inferring tool contracts from metadata, schemas, documentation, and execution traces. Contract2Tool converts observable tool evidence into normalized symbolic contracts that can be evaluated intrinsically and deployed inside downstream causal too",
-    "url": "https://arxiv.org/abs/2606.07904",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-09T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出通过学习工具的前置条件和效果来增强LLM智能体的可靠性。",
-    "llm_tags": [
-      "智能体",
-      "工具调用",
-      "因果推理"
-    ]
-  },
-  {
-    "id": "c1e77226fe5d",
-    "title": "The CIFAR Synthetic Evidence Corpus for Detecting AI-Generated Evidence",
-    "summary": "arXiv:2606.07916v1 Announce Type: new  Abstract: The growing ability of generative models to produce realistic documents poses a direct challenge to evidentiary workflows in the justice system and the courts, where decisions increasingly depend on the authenticity of evidence such as receipts, communications, and administrative records. Unlike social media or academic settings, evidentiary documents are often only subtly altered, with small, localized edits that preserve overall plausibility while changing legal meaning. Yet progress on automated detection remains limited, largely due to the absence of suitable training and evaluation data especially suited for the justice system requirements. Existing resources are either focused on photos of human faces or natural scenery or on narrowly ",
-    "url": "https://arxiv.org/abs/2606.07916",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-09T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "发布CIFAR合成证据语料库，用于检测司法文档中的AI生成内容。",
-    "llm_tags": [
-      "数据集",
-      "取证",
-      "文档检测"
-    ]
-  },
-  {
-    "id": "aa8f923499b3",
-    "title": "A case study of evaluating AI agents on a neuroscience data-to-discovery pipeline",
-    "summary": "arXiv:2606.07718v1 Announce Type: new  Abstract: Agentic AI tools offer a promising path to automating software development bottlenecks in scientific research pipelines, particularly for stages that take domain experts days to months to build, where scientists care about correctness and robustness, not implementation details. We present an empirical study of general-purpose coding agents on a fly optogenetics data-to-discovery pipeline. We assess agents on tasks substantially larger than existing benchmarks, datasets orders of magnitude bigger, and evaluation criteria grounded in domain expert standards. We show that agents can solve several individual pipeline stages, suggesting stage-level automation is tractable. By analyzing agents' code iterations, we show that they struggle most when",
-    "url": "https://arxiv.org/abs/2606.07718",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-09T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "评估通用编码代理在神经科学数据发现流程中的实证研究。",
-    "llm_tags": [
-      "AI代理",
-      "科学计算",
-      "自动化",
-      "代码生成"
-    ]
-  },
-  {
-    "id": "4d4fb055a79b",
-    "title": "2X tk/s (from 19.4 -> 38.1 tk/s on 1 x MI50) Playing with a hypothesis like speculative decoding.. but instead of an additional side model, exploiting that I can run multiple computations side-by-side AS IF I had Qwen3.6-27B loaded twice in memory - small quants don't use all the available compute.",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u0rk0o/2x_tks_from_194_381_tks_on_1_x_mi50_playing_with/\"> <img alt=\"2X tk/s (from 19.4 -&gt; 38.1 tk/s on 1 x MI50) Playing wit",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0rk0o/2x_tks_from_194_381_tks_on_1_x_mi50_playing_with/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-09T01:50:07+00:00",
-    "frontier": 65,
-    "signal": 60,
-    "score": 63,
-    "llm_summary": "利用闲置算力并行计算实现推测解码，推理速度翻倍",
-    "llm_tags": [
-      "推理加速",
-      "推测解码",
-      "量化模型"
-    ]
-  },
-  {
-    "id": "284b54cfa366",
-    "title": "I fine-tuned Parakeet 0.6B for medical ASR — open weights, local Mac/CUDA/CPU",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u0q5h9/i_finetuned_parakeet_06b_for_medical_asr_open/\"> <img alt=\"I fine-tuned Parakeet 0.6B for medical ASR — open weights, loc",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0q5h9/i_finetuned_parakeet_06b_for_medical_asr_open/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-09T00:45:44+00:00",
-    "frontier": 55,
-    "signal": 75,
-    "score": 63,
-    "llm_summary": "开源医疗领域微调的Parakeet 0.6B语音识别模型",
-    "llm_tags": [
-      "语音识别",
-      "医疗AI",
-      "模型微调"
-    ]
-  },
-  {
-    "id": "acce1d797a9b",
-    "title": "Claude Fable 5 spotted on Azure and the backend, likely the public-facing version of Claude Mythos 5",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u0pvvr/claude_fable_5_spotted_on_azure_and_the_backend/\"> <img alt=\"Claude Fable 5 spotted on Azure and the backend, likely the",
-    "url": "https://www.reddit.com/r/singularity/comments/1u0pvvr/claude_fable_5_spotted_on_azure_and_the_backend/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-09T00:33:33+00:00",
-    "frontier": 85,
-    "signal": 45,
-    "score": 69,
-    "llm_summary": "Claude Fable 5现身Azure，疑为Mythos 5公开版",
-    "llm_tags": [
-      "大模型",
-      "Anthropic",
-      "模型泄露"
-    ]
-  },
-  {
-    "id": "e3dd72d36e9d",
-    "title": "FrontierCode: a coding eval that raises the bar for difficulty & quality.",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u0k192/frontiercode_a_coding_eval_that_raises_the_bar/\"> <img alt=\"FrontierCode: a coding eval that raises the bar for difficul",
-    "url": "https://www.reddit.com/r/singularity/comments/1u0k192/frontiercode_a_coding_eval_that_raises_the_bar/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T20:37:03+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "发布高难度代码评测基准FrontierCode，提升评估质量。",
-    "llm_tags": [
-      "代码评测",
-      "基准测试"
-    ]
-  },
-  {
-    "id": "fca1d9ca5b84",
-    "title": "Xiaomi just claimed 1,000+ tps on a 1T model using a standard 8-GPU server",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Just saw Xiaomi MiMo announce <strong>MiMo-V2.5-Pro UltraSpeed</strong>, claiming they broke the <strong>1,000 tokens/sec output barrier on a 1 trillion parameter MoE",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0buhm/xiaomi_just_claimed_1000_tps_on_a_1t_model_using/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T15:51:46+00:00",
-    "frontier": 75,
-    "signal": 50,
-    "score": 65,
-    "llm_summary": "小米宣称在单机8卡实现万亿MoE模型千tokens推理",
-    "llm_tags": [
-      "推理加速",
-      "MoE",
-      "小米"
-    ]
-  },
-  {
-    "id": "9f0140890d22",
-    "title": "g69995865146/paint-ai-3d ⭐75",
-    "summary": "A professional-grade AI-powered 3D painting system with advanced brushstrokes, layers, and materials. Perfect for artists, designers, and digital creators seeking high-quality 3D art creation.",
-    "url": "https://github.com/g69995865146/paint-ai-3d",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-08T15:41:23Z",
-    "stars": 75,
-    "language": null,
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "开源AI驱动的专业级3D绘画系统，支持笔刷与材质",
-    "llm_tags": [
-      "3D生成",
-      "图像编辑",
-      "开源项目"
-    ]
-  },
-  {
-    "id": "75ca665493b9",
-    "title": "Intresting! Gemini 3.1 has strongest world knowledge but still choose to be lazy",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u0bi8i/intresting_gemini_31_has_strongest_world/\"> <img alt=\"Intresting! Gemini 3.1 has strongest world knowledge but still cho",
-    "url": "https://www.reddit.com/r/singularity/comments/1u0bi8i/intresting_gemini_31_has_strongest_world/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T15:39:37+00:00",
-    "frontier": 75,
-    "signal": 45,
-    "score": 63,
-    "llm_summary": "社区讨论称Gemini 3.1知识库最强但存在懒惰问题",
-    "llm_tags": [
-      "Gemini",
-      "模型评测",
-      "推理能力"
-    ]
-  },
-  {
-    "id": "d57983146d0f",
-    "title": "If CoT was only a scaffold, does AGI require memory-native reasoning instead of visible thought traces?",
-    "summary": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Icy-Republic-8394\"> /u/Icy-Republic-8394 </a> <br /> <span><a href=\"/r/artificial/comments/1txp7ah/the_strange_thing_about_llm_reasoning_r",
-    "url": "https://www.reddit.com/r/singularity/comments/1u0bed2/if_cot_was_only_a_scaffold_does_agi_require/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T15:35:37+00:00",
-    "frontier": 85,
-    "signal": 60,
-    "score": 75,
-    "llm_summary": "探讨思维链仅是脚手架，AGI是否需原生记忆推理",
-    "llm_tags": [
-      "AGI",
-      "推理机制",
-      "思维链",
-      "系统架构"
-    ]
-  },
-  {
-    "id": "a6a48289f5c5",
-    "title": "Luce Spark: a 35B MoE on a 16 GB GPU, without the offload tax",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u0b3cu/luce_spark_a_35b_moe_on_a_16_gb_gpu_without_the/\"> <img alt=\"Luce Spark: a 35B MoE on a 16 GB GPU, without the offload ta",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u0b3cu/luce_spark_a_35b_moe_on_a_16_gb_gpu_without_the/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T15:24:27+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 71,
-    "llm_summary": "在16GB显存上运行35B MoE模型，消除卸载开销",
-    "llm_tags": [
-      "MoE",
-      "推理优化",
-      "本地部署"
-    ]
-  },
-  {
-    "id": "246020684a8f",
-    "title": "\"Chat is dead\": OpenAI preps overhaul of ChatGPT",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u09t2y/chat_is_dead_openai_preps_overhaul_of_chatgpt/\"> <img alt=\"&quot;Chat is dead&quot;: OpenAI preps overhaul of ChatGPT\" s",
-    "url": "https://www.reddit.com/r/singularity/comments/1u09t2y/chat_is_dead_openai_preps_overhaul_of_chatgpt/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T14:38:11+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 67,
-    "llm_summary": "OpenAI将重构ChatGPT，转向基于任务的智能体模式",
-    "llm_tags": [
-      "OpenAI",
-      "智能体",
-      "产品重构"
-    ]
-  },
-  {
-    "id": "8cce05306c2b",
-    "title": "[3090] Gemma4 QAT + MTP quick TPS numbers [TLDR 1.2-1.8x better]",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u08zhx/3090_gemma4_qat_mtp_quick_tps_numbers_tldr_1218x/\"> <img alt=\"[3090] Gemma4 QAT + MTP quick TPS numbers [TLDR 1.2-1.8x be",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u08zhx/3090_gemma4_qat_mtp_quick_tps_numbers_tldr_1218x/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-08T14:07:22+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "Gemma4开启QAT与MTP后，3090显卡推理速度提升1.2-1.8倍。",
-    "llm_tags": [
-      "推理加速",
-      "量化",
-      "Gemma"
     ]
   }
 ]
