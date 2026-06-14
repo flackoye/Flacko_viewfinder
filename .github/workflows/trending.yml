@@ -10,7 +10,7 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     permissions:
       contents: write
 
@@ -46,6 +46,7 @@ jobs:
           ARXIV_COMPOSITE_THRESHOLD: "65"
           ARXIV_MAX_ITEMS_PER_SOURCE: "100"
           ARXIV_MAX_AFTER_COARSE: "20"
+          LLM_REQUEST_INTERVAL: "6"
         run: python scripts/fetch_trending.py
 
       - name: Commit changes

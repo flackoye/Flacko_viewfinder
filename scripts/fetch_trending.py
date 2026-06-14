@@ -73,13 +73,20 @@ ARXIV_COMPOSITE_THRESHOLD = int(_env("ARXIV_COMPOSITE_THRESHOLD", "65"))
 ARXIV_MAX_ITEMS_PER_SOURCE = int(_env("ARXIV_MAX_ITEMS_PER_SOURCE", "100"))
 ARXIV_MAX_AFTER_COARSE = int(_env("ARXIV_MAX_AFTER_COARSE", "20"))  # 粗筛后上限，保护 API 额度
 
+# --- 开源项目专用（GitHub 抓的是近 5 天高星新仓库，质量有底，门槛放宽）---
+OPENSOURCE_FRONTIER_THRESHOLD = int(_env("OPENSOURCE_FRONTIER_THRESHOLD", "60"))
+OPENSOURCE_SIGNAL_THRESHOLD = int(_env("OPENSOURCE_SIGNAL_THRESHOLD", "60"))
+OPENSOURCE_COMPOSITE_THRESHOLD = int(_env("OPENSOURCE_COMPOSITE_THRESHOLD", "50"))
+OPENSOURCE_HIGH_STAR_STARS = int(_env("OPENSOURCE_HIGH_STAR_STARS", "500"))  # 达此 stars 综合线再降 10
+
 # --- LLM ---
 GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7")
 GLM_TEMPERATURE = float(_env("ZHIPU_TEMPERATURE", "0.1"))
 GLM_MAX_TOKENS = int(_env("ZHIPU_MAX_TOKENS", "512"))
-LLM_CONCURRENCY = 3  # 降低并发避免 429
-LLM_RETRY_MAX = 3       # 429 最大重试次数
-LLM_RETRY_BASE = 3.0    # 重试基础等待（秒）
+LLM_CONCURRENCY = 1     # 串行,避免密集请求触发账户级 RPM 限制(code 1302)
+LLM_RETRY_MAX = 4        # 429 最大重试次数
+LLM_RETRY_BASE = 15.0    # 重试基础等待(秒),拉长到跨过 RPM 窗口
+LLM_REQUEST_INTERVAL = float(_env("LLM_REQUEST_INTERVAL", "6"))  # 每次请求间隔秒数
 
 # --- 爬取 ---
 RSS_ITEMS_PER_SOURCE = int(_env("RSS_ITEMS_PER_SOURCE", "8"))
@@ -118,6 +125,26 @@ def should_accept_arxiv(frontier: int, utility: int, has_code: bool = False) -> 
     if has_code and composite >= 55:
         return True
     return False
+
+
+def should_accept_opensource(frontier: int, signal: int, stars: int = 0) -> bool:
+    """开源项目专用门（GitHub Trending 用）
+    GitHub 抓的是近 5 天内创建、按 stars 排序的 top20 新仓库，本身已是高星新项目，
+    且天然可访问代码/可复现，比资讯/论文门槛应更宽松。
+    通过条件（任一满足即可）：
+    - 前沿性 >= 60（新工具/新模型/新范式）
+    - 信息含量 >= 60（有代码、可落地，即便 description 简短）
+    - 加权综合 >= 50（高星项目 stars 越多门槛越低）
+    """
+    if frontier < 20 and signal < 20:
+        return False
+    if frontier >= OPENSOURCE_FRONTIER_THRESHOLD or signal >= OPENSOURCE_SIGNAL_THRESHOLD:
+        return True
+    composite = frontier * 0.5 + signal * 0.5
+    threshold = OPENSOURCE_COMPOSITE_THRESHOLD
+    if stars >= OPENSOURCE_HIGH_STAR_STARS:
+        threshold -= 10  # 高星项目再降一档
+    return composite >= threshold
 
 
 # ========== 数据源定义 ==========
@@ -705,6 +732,9 @@ async def run_llm_pass_async(
 
     async def process(i: int, item: dict):
         async with semaphore:
+            # 请求间隔(避免密集请求触发账户级 RPM 限制)
+            if i > 0:
+                await asyncio.sleep(LLM_REQUEST_INTERVAL)
             if mode == "arxiv":
                 arxiv_prompt, user_msg = _build_user_msg_arxiv(item)
                 result = await asyncio.to_thread(
@@ -720,7 +750,12 @@ async def run_llm_pass_async(
                     _llm_filter_sync, client, item, SYSTEM_PROMPT, user_msg
                 )
                 if result:
-                    if not should_accept(result["frontier"], result["signal"]):
+                    if item.get("source_type") == "open_source":
+                        if not should_accept_opensource(
+                            result["frontier"], result["signal"], item.get("stars", 0)
+                        ):
+                            result = None
+                    elif not should_accept(result["frontier"], result["signal"]):
                         result = None
             return i, item, result
 
