@@ -72,6 +72,26 @@
     ]
   },
   {
+    "id": "dea0ab225975",
+    "title": "orange2ai/renwei-writing ⭐552",
+    "summary": "人味儿写作 · An AI agent skill: edit people's words without erasing the person behind them",
+    "url": "https://github.com/orange2ai/renwei-writing",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-12T21:45:48Z",
+    "stars": 552,
+    "language": null,
+    "frontier": 45,
+    "signal": 60,
+    "score": 51,
+    "llm_summary": "开源AI智能体，旨在保留个人风格的文本润色工具",
+    "llm_tags": [
+      "智能体",
+      "文本润色",
+      "开源"
+    ]
+  },
+  {
     "id": "66a50a20162e",
     "title": "Continual learning in mid-2026. A map of everyone trying to crack it: memory layers, \"dreaming\" agents, and the Post-Transformer models that learn inside the network",
     "summary": "<!-- SC_OFF --><div class=\"md\"><p>Llion Jones said “2026 is the continual learning year” in the recent Post-Transformer debate. Sutton/Silver call the next phase the &quot;era of experience”.<br /> Wh",
@@ -167,6 +187,45 @@
     ]
   },
   {
+    "id": "97f59673cedb",
+    "title": "buynao/aipath ⭐171",
+    "summary": "Interactive AI General Education Course — 30 Lessons, Zero Math",
+    "url": "https://github.com/buynao/aipath",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-12T10:58:35Z",
+    "stars": 171,
+    "language": "JavaScript",
+    "frontier": 35,
+    "signal": 60,
+    "score": 45,
+    "llm_summary": "零数学基础的AI通识互动课程，包含30个课时。",
+    "llm_tags": [
+      "AI教育",
+      "开源项目"
+    ]
+  },
+  {
+    "id": "80f741a4e53e",
+    "title": "bingook/bingo ⭐128",
+    "summary": "Bingo - AI-powered Red Team Terminal (DeepSeek/Claude/GPT/GLM)",
+    "url": "https://github.com/bingook/bingo",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-12T10:26:39Z",
+    "stars": 128,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 65,
+    "score": 59,
+    "llm_summary": "集成大模型的AI红队终端工具，支持多模型交互",
+    "llm_tags": [
+      "安全工具",
+      "LLM应用",
+      "终端"
+    ]
+  },
+  {
     "id": "a4755cfc741b",
     "title": "moonshotai/Kimi-K2.7-Code · Hugging Face",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3rdk9/moonshotaikimik27code_hugging_face/\"> <img alt=\"moonshotai/Kimi-K2.7-Code · Hugging Face\" src=\"https://external-preview.r",
@@ -221,6 +280,26 @@
     ]
   },
   {
+    "id": "a92cee4c594a",
+    "title": "Nanako0129/coralline ⭐194",
+    "summary": "🪸 Powerlevel10k-inspired statusline for Claude Code — paste one prompt and your AI interviews you, then installs it",
+    "url": "https://github.com/Nanako0129/coralline",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-12T07:44:56Z",
+    "stars": 194,
+    "language": "Shell",
+    "frontier": 45,
+    "signal": 60,
+    "score": 51,
+    "llm_summary": "受Powerlevel10k启发的Claude Code状态栏配置工具",
+    "llm_tags": [
+      "CLI工具",
+      "状态栏",
+      "Claude"
+    ]
+  },
+  {
     "id": "7e105b1bcfba",
     "title": "EAGLE3 has landed in llama.cpp",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3on4u/eagle3_has_landed_in_llamacpp/\"> <img alt=\"EAGLE3 has landed in llama.cpp\" src=\"https://external-preview.redd.it/zRu_wUfy",
@@ -236,6 +315,26 @@
       "推理加速",
       "llama.cpp",
       "EAGLE"
+    ]
+  },
+  {
+    "id": "6d9588338fc0",
+    "title": "nolangz/pixel2motion ⭐276",
+    "summary": "AI logo animation skill: turn raster logos into smooth SVG animation, animated HTML demos, GIF/video previews, and motion QA evidence.",
+    "url": "https://github.com/nolangz/pixel2motion",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-12T04:25:17Z",
+    "stars": 276,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 65,
+    "score": 59,
+    "llm_summary": "开源项目，将栅格Logo转换为SVG动画及视频预览。",
+    "llm_tags": [
+      "生成式动画",
+      "SVG",
+      "图像处理"
     ]
   },
   {
@@ -501,6 +600,26 @@
     ]
   },
   {
+    "id": "11f4870fbec7",
+    "title": "joeseesun/qiaomu-ai-prd ⭐125",
+    "summary": "Turn one-line product ideas into AI-implementable PRDs with speed-read cards, constraint layers, overdelivery ideas, metrics, and acceptance scripts.",
+    "url": "https://github.com/joeseesun/qiaomu-ai-prd",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-12T02:38:55Z",
+    "stars": 125,
+    "language": "Python",
+    "frontier": 45,
+    "signal": 65,
+    "score": 53,
+    "llm_summary": "开源工具，利用AI将单行产品创意转化为结构化PRD文档。",
+    "llm_tags": [
+      "Prompt工程",
+      "产品管理",
+      "自动化"
+    ]
+  },
+  {
     "id": "5595bb9e9123",
     "title": "newideas99/open-dungeon ⭐100",
     "summary": "Open Dungeon — the first easy-to-use, fully local AI roleplay app. Story and inline scene images generated 100% on your machine (Gemma 4 QAT via Ollama(and others) + FLUX). No accounts, no API keys, n",
@@ -557,6 +676,26 @@
     ]
   },
   {
+    "id": "a89b0d74f3f8",
+    "title": "itsinseong/value-for-fable ⭐175",
+    "summary": "Opus에 근접한 품질을 Sonnet 단가에 — 가성비 AI 운영 모델을 직접 구축한 Claude Code 프로젝트",
+    "url": "https://github.com/itsinseong/value-for-fable",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-11T19:54:14Z",
+    "stars": 175,
+    "language": "Python",
+    "frontier": 45,
+    "signal": 60,
+    "score": 51,
+    "llm_summary": "开源项目，声称以低成本构建接近Opus质量的模型",
+    "llm_tags": [
+      "模型微调",
+      "开源项目",
+      "成本优化"
+    ]
+  },
+  {
     "id": "b7bd93b45845",
     "title": "DiffusionGemma under real workloads feels very different from benchmark demos",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u30dhr/diffusiongemma_under_real_workloads_feels_very/\"> <img alt=\"DiffusionGemma under real workloads feels very different from",
@@ -590,6 +729,26 @@
       "开源模型",
       "基准测试",
       "代码能力"
+    ]
+  },
+  {
+    "id": "108bc2164e86",
+    "title": "omnigent-ai/omnigent ⭐1042",
+    "summary": "A meta-harness for all your AI agents.  Omnigent provides a common layer over Claude Code, Codex, Pi, and the agents you write yourself: swap or combine harnesses without rewriting, keep them in check",
+    "url": "https://github.com/omnigent-ai/omnigent",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-11T12:18:13Z",
+    "stars": 1042,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 65,
+    "score": 59,
+    "llm_summary": "统一管理 Claude Code 等多种 AI Agent 的元框架",
+    "llm_tags": [
+      "Agent框架",
+      "开发工具",
+      "开源"
     ]
   },
   {
@@ -681,6 +840,26 @@
       "本地模型",
       "推理",
       "社区项目"
+    ]
+  },
+  {
+    "id": "d7403e7a39af",
+    "title": "taisly/agent ⭐180",
+    "summary": "Taisly Agent Kit: SDK, CLI, examples, and docs for AI agents that publish videos through Taisly.",
+    "url": "https://github.com/taisly/agent",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-11T04:33:30Z",
+    "stars": 180,
+    "language": "JavaScript",
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "Taisly Agent Kit：用于通过Taisly发布视频的AI代理SDK及工具。",
+    "llm_tags": [
+      "AI代理",
+      "视频生成",
+      "SDK"
     ]
   },
   {
@@ -959,6 +1138,26 @@
       "智能体",
       "代码生成",
       "企业应用"
+    ]
+  },
+  {
+    "id": "a789c2979c27",
+    "title": "orange2ai/orange-line-illustration ⭐135",
+    "summary": "🍊 New Yorker-style minimalist editorial illustration skill for AI agents — one idea, one accent, lots of silence. Free for open-source use; commercial license for closed-source.",
+    "url": "https://github.com/orange2ai/orange-line-illustration",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-10T23:58:59Z",
+    "stars": 135,
+    "language": null,
+    "frontier": 45,
+    "signal": 60,
+    "score": 51,
+    "llm_summary": "开源AI插画生成模型，主打极简主义《纽约客》风格。",
+    "llm_tags": [
+      "图像生成",
+      "开源模型",
+      "风格化"
     ]
   },
   {
@@ -1695,41 +1894,6 @@
       "开源模型",
       "LLM",
       "本地部署"
-    ]
-  },
-  {
-    "id": "f1bb1d780a72",
-    "title": "Releasing Cohere North Mini Code",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1ci1r/releasing_cohere_north_mini_code/\"> <img alt=\"Releasing Cohere North Mini Code\" src=\"https://external-preview.redd.it/djN",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1ci1r/releasing_cohere_north_mini_code/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-09T17:54:36+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "Cohere 发布 North Mini Code 小型代码模型",
-    "llm_tags": [
-      "代码模型",
-      "模型发布"
-    ]
-  },
-  {
-    "id": "49e881077b80",
-    "title": "Introducing North Mini Code: Cohere’s First Model For Developers",
-    "summary": "",
-    "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-09T15:56:23+00:00",
-    "frontier": 65,
-    "signal": 60,
-    "score": 63,
-    "llm_summary": "Cohere发布首款面向开发者的轻量级代码模型",
-    "llm_tags": [
-      "代码模型",
-      "Cohere",
-      "小模型"
     ]
   }
 ]
