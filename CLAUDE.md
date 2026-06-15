@@ -15,17 +15,28 @@
 ### 热点数据流
 ```
 Python 管道 (scripts/fetch_trending.py)
-  → 7 数据源并发爬取 (RSS + GitHub API + HN + Reddit)
+  → 12 数据源并发爬取 (RSS×3 + GitHub API + HN + Reddit×5 + ArXiv×2)
   → 去重 vs 已有数据 (public/trending.json)
-  → GLM-4.7-Flash 双维度评分 (前沿性 + 信息含量, 0-100)
-  → OR 门筛选 (任一维度 ≥ 80 直接入选, 否则综合 ≥ 60)
+  → GLM-4.7 双维度评分 (前沿性 + 信息含量, 0-100)
+  → 三套 OR 门筛选:
+      · 通用: 任一维 ≥ 80 入选, 否则 前沿×0.6+信息×0.4 ≥ 60
+      · ArXiv: 任一维 ≥ 70 入选, 否则 综合 ≥ 65 (有开源代码可降至 55)
+      · 开源: 任一维 ≥ 60 入选, 否则 综合 ≥ 50 (高星再降一档)
+  → 串行评分 + 6s 间隔 (控制账户级 RPM 限速, code 1302)
   → 写入 public/trending.json
   → GitHub Actions 每 12h 自动运行, commit & push
   → Vercel 检测变更后自动部署
   → Next.js SSR 读 JSON → TimelineView 客户端渲染
 ```
 
-### 评分系统 (OR 门, 2026-06-07 重构)
+### GitHub 源抓取策略（2026-06-15 改进）
+- **初筛 query**：`LLM OR GPT OR transformer created:>7天前`，按 stars 降序取 top20
+  - 实测去掉宽泛的 "AI" 后召回总量 ~11.4万 → ~1.5万，避免 "AI" 全文匹配把蹭热度的写作/插画/statusline 项目捞进来
+  - ⚠️ GitHub Search API 限制：`topic:` 等 qualifier 不能用 OR 连接、最多 5 个 AND/OR，故只能用关键词 OR，topic 仅作 AND 收紧
+- **timestamp 语义**：GitHub 条目用**抓取时间**而非仓库 `created_at`，让它与 ArXiv/Reddit 一样出现在时间线最新分组（仓库创建时间 + 搜索索引延迟会让 GitHub 系统性沉底）；真实创建时间存 `created_at` 字段备查
+- **保留窗口**：`MAX_AGE_DAYS=7`（2026-06-15 从 5 天放宽到 7 天）
+
+### 评分系统 (三套 OR 门, 2026-06-07 重构, 2026-06-15 开源门 + GitHub 初筛改进)
 - **前沿性** (0-100)：内容涉及的技术有多前沿？90+=行业里程碑, 70+=重要进展, 50+=常规动态
 - **信息含量** (0-100)：包含多少实质信息？90+=含代码/数据, 70+=2-3个信息点, 50+=1个信息点
 - **入选逻辑** (`should_accept` 函数):
@@ -34,6 +45,11 @@ Python 管道 (scripts/fetch_trending.py)
   - 否则 → 加权综合 前沿×0.6 + 信息×0.4 ≥ 60 入选
 - **Prompt 要点**：5 级锚定 + 3 个 few-shot 示例，约束 LLM 评分漂移
 - **保底机制**：已移除多轮降门槛，改为软监控（不足时只打警告）
+- **开源项目专用门** (`should_accept_opensource`): GitHub Trending 高星新仓库门槛放宽
+  - 任一维 ≥ 60 → 入选（高星新仓库天然可访问代码，信息含量应更高）
+  - 加权综合 前沿×0.5+信息×0.5 ≥ 50 → 入选
+  - stars ≥ 500 时综合线降至 40
+- **LLM 速率控制**: 串行评分（`LLM_CONCURRENCY=1`）+ 请求间隔（`LLM_REQUEST_INTERVAL=6s`），避免触发智谱账户级 RPM 限速（code 1302）。429 退避拉长到 15/30/45/60s 跨过窗口。⚠️ RPM 是账户级共享，Key 分离不隔离速率。
 
 ### 更新公告系统
 - `public/changelog.json` 包含 `announcement`（顶部横幅）和 `entries`（更新日志）
@@ -87,7 +103,7 @@ Supabase 表结构：
 
 | 需求 | 文件 |
 |------|------|
-| 改评分逻辑 | `scripts/fetch_trending.py` → `should_accept()`, `SYSTEM_PROMPT` |
+| 改评分逻辑 | `scripts/fetch_trending.py` → `should_accept()`, `should_accept_opensource()`, `should_accept_arxiv()` |
 | 改 LLM Prompt | `scripts/fetch_trending.py` → `SYSTEM_PROMPT` |
 | 改管道配置 | `.env`（本地）, `.github/workflows/trending.yml`（CI） |
 | 加公告/更新日志 | `public/changelog.json` |
@@ -117,7 +133,8 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py  #
 
 - Next.js 16 有 breaking changes：写代码前先读 `node_modules/next/dist/docs/`
 - `.env` 里有 ZHIPU_API_KEY、ZHIPU_RAG_API_KEY、ZHIPU_TRENDING_API_KEY、GITHUB_TOKEN、SUPABASE_URL、SUPABASE_SERVICE_KEY，不要泄露
-- API Key 职责分离：`ZHIPU_API_KEY` 仅用于 Embedding，`ZHIPU_RAG_API_KEY` 用于 RAG 对话，`ZHIPU_TRENDING_API_KEY` 用于热点评分
+- API Key 职责分离：`ZHIPU_API_KEY` 仅用于 Embedding，`ZHIPU_RAG_API_KEY` 用于 RAG 对话，`ZHIPU_TRENDING_API_KEY` 用于热点评分。⚠️ 三把 key 共享账户级 RPM 限速（code 1302），Key 分离不能隔离速率限制
+- 热点管道 LLM 评分采用串行 + 请求间隔（`LLM_CONCURRENCY=1`, `LLM_REQUEST_INTERVAL=6s`），避免触发智谱账户级 RPM 限速
 - `public/trending.json` 和 `public/changelog.json` 是运行时数据，CI 会自动更新
 - RAG 数据存储在 Supabase pgvector（`projects` + `embedding_chunks` 表），不再依赖本地 JSON
 - `public/projects.json` 仅作本地开发参考，线上从 Supabase 读取
@@ -126,3 +143,4 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py  #
 - 项目导航 API Route (`/api/projects`) 使用 SSE 流式输出，Supabase RPC `match_chunks()` 做向量检索
 - OptionTable 组件支持 `value` 字段（数据库用 name 如 "Agent"，前端显示 label 如 "AI Agent"）
 - Vercel 和 GitHub Actions 都需要配置 `SUPABASE_URL` 和 `SUPABASE_SERVICE_KEY` 环境变量
+- 📌 **改完代码必须同步更新文档**（CLAUDE.md / README.md / changelog.json），保持文档与代码一致，主动做不等提醒

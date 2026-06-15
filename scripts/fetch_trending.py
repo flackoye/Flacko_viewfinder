@@ -61,7 +61,7 @@ OUTPUT_FILE = Path(__file__).parent.parent / "public" / "trending.json"
 STATS_FILE = Path(__file__).parent.parent / "public" / "trending_stats.json"
 
 # --- 通用 ---
-MAX_AGE_DAYS = int(_env("MAX_AGE_DAYS", "5"))
+MAX_AGE_DAYS = int(_env("MAX_AGE_DAYS", "7"))
 FRONTIER_THRESHOLD = int(_env("FRONTIER_THRESHOLD", "80"))
 SIGNAL_THRESHOLD = int(_env("SIGNAL_THRESHOLD", "80"))
 COMPOSITE_THRESHOLD = int(_env("COMPOSITE_THRESHOLD", "60"))
@@ -73,7 +73,7 @@ ARXIV_COMPOSITE_THRESHOLD = int(_env("ARXIV_COMPOSITE_THRESHOLD", "65"))
 ARXIV_MAX_ITEMS_PER_SOURCE = int(_env("ARXIV_MAX_ITEMS_PER_SOURCE", "100"))
 ARXIV_MAX_AFTER_COARSE = int(_env("ARXIV_MAX_AFTER_COARSE", "20"))  # 粗筛后上限，保护 API 额度
 
-# --- 开源项目专用（GitHub 抓的是近 5 天高星新仓库，质量有底，门槛放宽）---
+# --- 开源项目专用（GitHub 抓的是近 7 天高星新仓库，质量有底，门槛放宽）---
 OPENSOURCE_FRONTIER_THRESHOLD = int(_env("OPENSOURCE_FRONTIER_THRESHOLD", "60"))
 OPENSOURCE_SIGNAL_THRESHOLD = int(_env("OPENSOURCE_SIGNAL_THRESHOLD", "60"))
 OPENSOURCE_COMPOSITE_THRESHOLD = int(_env("OPENSOURCE_COMPOSITE_THRESHOLD", "50"))
@@ -129,7 +129,7 @@ def should_accept_arxiv(frontier: int, utility: int, has_code: bool = False) -> 
 
 def should_accept_opensource(frontier: int, signal: int, stars: int = 0) -> bool:
     """开源项目专用门（GitHub Trending 用）
-    GitHub 抓的是近 5 天内创建、按 stars 排序的 top20 新仓库，本身已是高星新项目，
+    GitHub 抓的是近 7 天内创建、按 stars 排序的 top20 新仓库，本身已是高星新项目，
     且天然可访问代码/可复现，比资讯/论文门槛应更宽松。
     通过条件（任一满足即可）：
     - 前沿性 >= 60（新工具/新模型/新范式）
@@ -347,15 +347,22 @@ async def fetch_reddit_rss() -> list[dict]:
 
 
 async def fetch_github_trending() -> list[dict]:
-    """GitHub AI 相关 trending 仓库"""
+    """GitHub AI 相关 trending 仓库
+
+    query 用 LLM/GPT/transformer 精准关键词：实测去掉宽泛的 "AI" 后 total_count
+    从 ~11.4万 降到 ~1.5万，避免 "AI" 全文匹配把蹭热度的写作/插画/statusline 项目
+    捞进来。GitHub Search 限制：topic: 等 qualifier 不能用 OR 连接、最多 5 个
+    AND/OR，故只能用关键词 OR，topic 仅作 AND 收紧。
+    """
     items = []
+    fetched_at = datetime.now(timezone.utc).isoformat()
     try:
         since = (datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)).strftime("%Y-%m-%d")
         async with httpx.AsyncClient(timeout=HTTP_TIMEOUT) as client:
             resp = await client.get(
                 "https://api.github.com/search/repositories",
                 params={
-                    "q": f"AI OR LLM OR transformer created:>{since}",
+                    "q": f"LLM OR GPT OR transformer created:>{since}",
                     "sort": "stars",
                     "order": "desc",
                     "per_page": 20,
@@ -371,7 +378,10 @@ async def fetch_github_trending() -> list[dict]:
                 "url": repo["html_url"],
                 "source": "GitHub",
                 "source_type": "open_source",
-                "timestamp": repo.get("created_at", datetime.now(timezone.utc).isoformat()),
+                # timestamp 用抓取时间而非仓库 created_at：让 GitHub 与 ArXiv/Reddit 一样
+                # 出现在时间线最新分组，避免因仓库创建时间 + 搜索索引延迟而系统性沉底
+                "timestamp": fetched_at,
+                "created_at": repo.get("created_at"),
                 "stars": repo["stargazers_count"],
                 "language": repo.get("language"),
             })

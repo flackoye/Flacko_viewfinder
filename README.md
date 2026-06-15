@@ -22,7 +22,7 @@
 
 ### 🔥 AI 热点追踪
 
-自动聚合 **7 个数据源**（GitHub Trending · Hacker News · Reddit · ArXiv · RSS 等），LLM 双维度评分（前沿性 × 信息含量），OR 门筛选，时间线式展示。GitHub Actions 每 12 小时全自动运行——爬取、评分、去重、部署，零人工干预。
+自动聚合 **12 个数据源**（GitHub Trending · Hacker News · Reddit ×5 · ArXiv ×2 · RSS ×3），LLM 双维度评分（前沿性 × 信息含量），三套 OR 门筛选（通用 / 学术论文 / 开源项目），串行限速避免 API 限流，时间线式展示。GitHub Actions 每 12 小时全自动运行——爬取、评分、去重、部署，零人工干预。
 
 ### 🧭 万象索骥 — AI 项目导航
 
@@ -99,6 +99,46 @@
 
 </details>
 
+---
+
+## 技术实现详解
+
+### 🔥 AI 热点自动追踪
+
+**设计逻辑**：多源并发爬取 → 去重 → LLM 双维度评分（前沿性 + 信息含量）→ 分类型 OR 门筛选 → JSON 落地，CI 定时全链路自动化。
+
+**技术要点**：
+- 12 源异步爬取（GitHub / HN / Reddit×5 / ArXiv×2 / RSS×3），ArXiv 用关键词白名单 + 领域黑名单两阶段粗筛，淘汰 ~70% 无关论文后再送 LLM
+- GitHub 初筛用精准关键词 `LLM OR GPT OR transformer`（避开宽泛的 "AI"，召回从 ~11万 降到 ~1.5万），条目 timestamp 取抓取时间而非仓库创建时间，保证在时间线与资讯同步出现
+- GLM-4.7 评分，5 级锚定 + few-shot 约束漂移；三套 OR 门（通用 ≥80/80/60、ArXiv ≥70/70/65、开源 ≥60/60/50）适配不同内容特征
+- 串行评分 + 6s 间隔控制账户级 RPM，429 退避 15→60s
+
+**待改进**：无评分质量监控（漂移不可见）；GitHub 高星项目仍可能被 LLM 主观评分误杀（stars 未进 prompt）；单 LLM 评分无交叉验证
+
+### 🧭 万象索骥 — RAG 项目导航
+
+**设计逻辑**：离线构建向量索引（README 切块 → Embedding → pgvector），在线检索 Top-K 片段注入 Prompt，SSE 流式输出，支持引导 / 助手双模式。
+
+**技术要点**：
+- Embedding-3 (512d) + Supabase pgvector HNSW 索引，余弦距离 Top-5 检索
+- SSE 多类型事件流（chunk / options / suggestions / projects / done），Prompt 用 `<project>` 标签触发前端卡片渲染
+- 429/5xx 指数退避 + 流中断保护，已有文本保留展示
+
+**待改进**：索引覆盖面有限（仅 ~100 项目）；无增量更新机制，每次全量重建；对话无记忆持久化
+
+### 🎨 前端
+
+**设计逻辑**：Next.js 16 App Router + Tailwind v4，暗色玻璃拟态风格，CSS 变量驱动主题，用户可通过 Customizer 调整背景和透明度。
+
+**技术要点**：
+- Tailwind v4 `@theme inline` 定义设计 Token，玻璃拟态 `backdrop-filter: blur(16px) saturate(1.2)`
+- SettingsProvider (React Context) + localStorage 持久化用户配置
+- 首页 SSR 获取每日一言，Canvas 星空 / 极光交互背景
+
+**待改进**：移动端未适配；无亮色主题；无无障碍（a11y）支持
+
+---
+
 ## 技术栈
 
 | 层 | 技术 |
@@ -173,6 +213,8 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py
 - [x] RAG 存储迁移：本地 39MB JSON → Supabase pgvector
 - [x] API 稳定性：429 限流感知 + 指数退避重试 + 流中断保护 + 空响应兜底
 - [x] API Key 职责分离：Embedding / RAG / Trending 三份独立 Key
+- [x] LLM 评分降速 + 开源门槛放宽：串行限速控制 RPM + GitHub 高星仓库专用宽松门
+- [x] GitHub 源优化：精准 query（去 "AI" 避宽泛匹配）+ timestamp 改抓取时间（解决时间线沉底）+ 保留窗口 5→7 天
 
 ### 进行中 / 计划中 🚧
 

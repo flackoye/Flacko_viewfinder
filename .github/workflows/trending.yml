@@ -37,7 +37,7 @@ jobs:
           FRONTIER_THRESHOLD: "80"
           SIGNAL_THRESHOLD: "80"
           COMPOSITE_THRESHOLD: "60"
-          MAX_AGE_DAYS: "5"
+          MAX_AGE_DAYS: "7"
           RSS_ITEMS_PER_SOURCE: "5"
           HTTP_TIMEOUT: "15"
           MIN_ITEMS_PER_UPDATE: "8"
