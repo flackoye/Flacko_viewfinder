@@ -1,5 +1,23 @@
 [
   {
+    "id": "9fd50e5e1073",
+    "title": "Nobody’s talking about the real precedent in the Fable 5 ban: a nationality-based access rule that geography literally can’t enforce",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>TL;DR: Last Friday the US government ordered Anthropic to block all “foreign nationals” — including non-citizens inside the US — from using its new Fable 5 and Mythos",
+    "url": "https://www.reddit.com/r/artificial/comments/1u6lqp6/nobodys_talking_about_the_real_precedent_in_the/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-15T16:36:13+00:00",
+    "frontier": 65,
+    "signal": 60,
+    "score": 63,
+    "llm_summary": "美政府要求Anthropic禁止非美公民使用Fable 5",
+    "llm_tags": [
+      "AI监管",
+      "地缘政治",
+      "Anthropic"
+    ]
+  },
+  {
     "id": "aca91bcb4f1b",
     "title": "DanMcInerney/architect-loop ⭐434",
     "summary": "Claude Fable 5 as architect, GPT-5.5 Codex as builder, the repo as memory - a research-backed Claude Code skill for the cross-vendor agent loop",
@@ -522,6 +540,24 @@
       "表格嵌入",
       "超维计算",
       "结构化查询"
+    ]
+  },
+  {
+    "id": "742e5464964d",
+    "title": "A Multi-Agent AI System for Automated High School Transcript Processing: Collaborative Document Analysis at Scale",
+    "summary": "arXiv:2606.13916v1 Announce Type: new  Abstract: Each year, college admissions offices face an overwhelming challenge: processing millions of high school transcripts, each with unique formats, grading systems, and layouts. This manual process creates operational bottlenecks that delay admissions decisions and consume valuable resources. We present a transformative solution through a multi-agent AI system where specialized agents collaborate to automatically process diverse transcript formats through intelligent coordination and communication. Our multi-agent architecture consists of three specialized agents-a Pattern Recognition Agent for format-specific parsing, a Semantic Analysis Agent for natural language understanding, and a Vision Intelligence Agent for multimodal document analysis-c",
+    "url": "https://arxiv.org/abs/2606.13916",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 65,
+    "llm_summary": "多智能体协作系统，自动化处理多样化高中成绩单。",
+    "llm_tags": [
+      "多智能体",
+      "文档处理",
+      "自动化"
     ]
   },
   {
