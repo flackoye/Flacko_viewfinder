@@ -1,5 +1,175 @@
 [
   {
+    "id": "7942ec4a824e",
+    "title": "Orchestra-o1: Omnimodal Agent Orchestration",
+    "summary": "arXiv:2606.13707v1 Announce Type: new  Abstract: The recent success of agent swarms has shifted the paradigm of large language model (LLM)-based agents from single-agent workflows to multi-agent systems, highlighting the importance of agent orchestration for task decomposition and collaboration. However, existing orchestration frameworks are limited to a narrow set of modalities and struggle to generalize to more complex settings where heterogeneous modalities coexist and interact. This limitation becomes particularly pronounced in omnimodal scenarios, where tasks require the unified understanding and coordination of diverse inputs such as text, image, audio, and video. In this work, we propose Orchestra-o1, an omnimodal agent orchestration framework designed to support efficient agent col",
+    "url": "https://arxiv.org/abs/2606.13707",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出全模态智能体编排框架，支持多模态协作与任务分解。",
+    "llm_tags": [
+      "多智能体",
+      "多模态",
+      "🔧 已开源",
+      "智能体编排"
+    ]
+  },
+  {
+    "id": "8887d4e13037",
+    "title": "YeasierAgent: Agentic Social Sandbox as a Canvas for Intent-Driven Creation of Platform-Agnostic Symbiotic Agent-Native Applications",
+    "summary": "arXiv:2606.13722v1 Announce Type: new  Abstract: This paper introduces YeasierAgent, an application-building paradigm based on symbiotic agents, narrative worlds, and scene-aware interaction. It challenges the conventional device-coupled model of software by redefining applications as collaborative spaces among users, agents, and worlds. We present a system architecture that achieves two primary contributions: (1) enabling the rapid, cross-platform construction of agent-native applications by utilizing platform-agnostic interactive units (agents, scenes, dialogue) rather than fixed graphical layouts; and (2) unifying the emotional companionship and practical tool execution attributes of intelligent agents within a single experiential sandbox. By integrating automated generation, user-creat",
+    "url": "https://arxiv.org/abs/2606.13722",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 65,
+    "llm_summary": "提出基于共生代理的应用构建范式，支持跨平台快速构建代理原生应用。",
+    "llm_tags": [
+      "智能体",
+      "系统架构",
+      "跨平台"
+    ]
+  },
+  {
+    "id": "25692eb6eab9",
+    "title": "TwinBI: An Agentic Digital Twin for Efficient Augmented Interactions with Business Intelligence Dashboards",
+    "summary": "arXiv:2606.13731v1 Announce Type: new  Abstract: Business intelligence (BI) increasingly combines dashboard interaction with LLM-based assistance, but these two modes often fall out of sync during multi-step analysis. As users switch between direct dashboard manipulation and natural-language queries, it becomes difficult to preserve a consistent analytical state across filters, hierarchies, metrics, and chart context. We present TwinBI, an agentic digital-twin framework that couples an LLM-based agent system with an executable BI dashboard state. TwinBI unifies conversational interaction, dashboard manipulation, semantic grounding, and provenance tracking through a shared analytical state reconstructed from a unified interaction log. It also exposes artifacts such as schema views, SQL, log",
+    "url": "https://arxiv.org/abs/2606.13731",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "提出TwinBI框架，解决BI仪表板与LLM交互状态同步问题。",
+    "llm_tags": [
+      "🔧 已开源",
+      "智能体",
+      "商业智能",
+      "人机交互"
+    ]
+  },
+  {
+    "id": "413574c8418d",
+    "title": "MA-ProofBench: A Two-Tiered Evaluation of LLMs for Theorem Proving in Mathematical Analysis",
+    "summary": "arXiv:2606.13782v1 Announce Type: new  Abstract: Large Language Models (LLMs) have made notable progress in automated theorem proving, yet existing formal benchmarks remain limited in both mathematical coverage and difficulty. Most are concentrated in areas that are easier to formalize, such as algebra and elementary number theory, and provide limited coverage of subfields that require deeper reasoning, including mathematical analysis. To address this gap, we introduce MA-ProofBench, to the best of our knowledge, the first formal theorem-proving benchmark dedicated to Mathematical Analysis. The benchmark contains 200 formalized theorems covering 6 core topics and 27 subcategories, including measure and integration theory, complex analysis, and functional analysis. The problems are divided ",
+    "url": "https://arxiv.org/abs/2606.13782",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出数学分析定理证明基准，填补高难度推理评估空白。",
+    "llm_tags": [
+      "定理证明",
+      "数学分析",
+      "LLM评估",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "8095dc921e06",
+    "title": "Poker Arena: Multi-Axis Profiling of Strategic Reasoning and Memory in LLMs",
+    "summary": "arXiv:2606.13815v1 Announce Type: new  Abstract: Strategic reasoning under uncertainty underpins consequential decisions in negotiation, finance, and policy, but prevailing game-play benchmarks collapse heterogeneous reasoning dimensions into a single scalar, leaving the capability structure of frontier LLMs unexamined. We introduce Poker Arena, a no-limit Texas Hold'em tournament platform that couples a three-layer memory architecture (within-hand, session, and cross-session) with a nine-axis cognitive profile decomposing strategic reasoning into interpretable dimensions such as bet-sizing calibration and positional awareness. We evaluate seven frontier models across 50 sessions of 1,000 hands and a controlled memory ablation; tournament chips and aggregate axis score order the field diff",
+    "url": "https://arxiv.org/abs/2606.13815",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出扑克竞技场平台，多维度评估大模型策略推理与记忆能力。",
+    "llm_tags": [
+      "策略推理",
+      "博弈论",
+      "评估基准",
+      "长记忆"
+    ]
+  },
+  {
+    "id": "3ff41dc4ffb2",
+    "title": "Adversarial Concept Search: Predicting Compositional Errors From Feature Geometry",
+    "summary": "arXiv:2606.13934v1 Announce Type: new  Abstract: Humans cannot always intuit what scenarios are most challenging to LLMs. Hoping to capture challenging edge cases, developers either design problems to be difficult for humans or curate extensive benchmarks. What if we could instead anticipate which scenarios a model will fail on? In this paper, we use an LLM's representational geometry to predict which concept combinations it will fail on. We attribute this compositional failure to interference between salient features. In tasks that require systematic composition - toy programmatic settings, multihop reasoning, multilingual factual recall - we find that when a pair of concepts is encoded near-orthogonally, the model reliably composes them. When their linear encodings are close, producing i",
+    "url": "https://arxiv.org/abs/2606.13934",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "利用表征几何预测组合错误，无需人工设计难题。",
+    "llm_tags": [
+      "表征学习",
+      "组合泛化",
+      "对抗攻击",
+      "模型评估"
+    ]
+  },
+  {
+    "id": "879132821a89",
+    "title": "Applicability Condition Extraction for Therapeutic Drug-Disease Relations",
+    "summary": "arXiv:2606.14031v1 Announce Type: new  Abstract: Identifying conditions that a certain drug takes therapeutic effect on a target disease is crucial for clinical decision-making support. However, most existing biomedical information extraction methods have focused on identifying only relations between drugs and diseases, while largely overlooking the context-specific conditions where such relations can apply. To address this problem, we introduce the task of applicability condition extraction for therapeutic drug--disease relations from biomedical research literature. We create the first dataset that has manually annotated triples of drugs, diseases, and applicability conditions on biomedical paper abstracts with 1,119 drug-disease pairs. Using this dataset, we systematically evaluate the p",
+    "url": "https://arxiv.org/abs/2606.14031",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出药物-疾病关系的适用性条件提取任务并开源。",
+    "llm_tags": [
+      "信息抽取",
+      "生物医药",
+      "🔧 已开源",
+      "NLP"
+    ]
+  },
+  {
+    "id": "ba5fa894b379",
+    "title": "the US just made frontier ai a controlled export, like nvidia chips",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>the us government just told Anthropic to cut off its two most powerful models from every foreign national on earth, inside or outside america. Anthropic couldn't clea",
+    "url": "https://www.reddit.com/r/artificial/comments/1u64nok/the_us_just_made_frontier_ai_a_controlled_export/",
+    "source": "r/artificial",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-15T03:04:03+00:00",
+    "frontier": 85,
+    "signal": 65,
+    "score": 77,
+    "llm_summary": "美政府将前沿AI列为出口管制，Anthropic被要求限制外国人访问",
+    "llm_tags": [
+      "AI监管",
+      "地缘政治",
+      "出口管制"
+    ]
+  },
+  {
+    "id": "4e31dee96b71",
+    "title": "gykim80/perfectpixel-studio ⭐107",
+    "summary": "AI-powered animation sprite studio — generate character sprite sheets with 8 directions and 100+ actions from a single text prompt (Wails + Go + React)",
+    "url": "https://github.com/gykim80/perfectpixel-studio",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-14T04:23:45Z",
+    "stars": 107,
+    "language": "Go",
+    "frontier": 65,
+    "signal": 70,
+    "score": 67,
+    "llm_summary": "基于文本提示生成8方向百种动作的角色精灵图工具",
+    "llm_tags": [
+      "AIGC",
+      "游戏开发",
+      "图像生成"
+    ]
+  },
+  {
     "id": "206bb6e2fc50",
     "title": "GLM 5.2 is deployed in GLM Coding Plan. API and MIT weights in a week. Voting and benchmarks on X.",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u4nmpl/glm_52_is_deployed_in_glm_coding_plan_api_and_mit/\"> <img alt=\"GLM 5.2 is deployed in GLM Coding Plan. API and MIT weight",
@@ -15,6 +185,26 @@
       "GLM",
       "开源模型",
       "代码生成"
+    ]
+  },
+  {
+    "id": "7145386b4d2c",
+    "title": "sgup/ai ⭐95",
+    "summary": "Notes and operating profiles for working with AI coding agents.",
+    "url": "https://github.com/sgup/ai",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-13T09:43:34Z",
+    "stars": 95,
+    "language": null,
+    "frontier": 45,
+    "signal": 75,
+    "score": 57,
+    "llm_summary": "AI 编程代理的工作笔记与操作配置文件集合",
+    "llm_tags": [
+      "AI编程",
+      "开源",
+      "配置文件"
     ]
   },
   {
@@ -51,6 +241,26 @@
       "模型监管",
       "Anthropic",
       "大模型"
+    ]
+  },
+  {
+    "id": "0e49f582dcf8",
+    "title": "eli-labz/Third-Eye ⭐287",
+    "summary": "A production-grade OSINT platform that provides situational awareness across multiple intelligence domains.",
+    "url": "https://github.com/eli-labz/Third-Eye",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-13T03:15:46Z",
+    "stars": 287,
+    "language": "TypeScript",
+    "frontier": 45,
+    "signal": 60,
+    "score": 51,
+    "llm_summary": "开源生产级OSINT平台，支持多领域情报态势感知",
+    "llm_tags": [
+      "OSINT",
+      "开源工具",
+      "情报分析"
     ]
   },
   {
@@ -108,6 +318,26 @@
       "后Transformer",
       "智能体",
       "记忆机制"
+    ]
+  },
+  {
+    "id": "0ed0410ee678",
+    "title": "tmchow/illo-skill ⭐108",
+    "summary": "illo — an AI agent skill that turns ideas and articles into original print-style editorial illustrations, starring a recurring mascot. Ten bundled looks, custom characters, OpenRouter-powered.",
+    "url": "https://github.com/tmchow/illo-skill",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-12T16:03:22Z",
+    "stars": 108,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 65,
+    "score": 59,
+    "llm_summary": "基于OpenRouter的AI Agent，可将文章转为带吉祥物的社论插画。",
+    "llm_tags": [
+      "AI Agent",
+      "图像生成",
+      "开源项目"
     ]
   },
   {
@@ -335,6 +565,26 @@
       "生成式动画",
       "SVG",
       "图像处理"
+    ]
+  },
+  {
+    "id": "10968b485566",
+    "title": "liuluhaixiu/DaVinci-AutoEdit-Agent ⭐99",
+    "summary": "AI自动剪辑的“第一次接触”，一款基于davinci mcp的全自动自媒体视频剪辑skill",
+    "url": "https://github.com/liuluhaixiu/DaVinci-AutoEdit-Agent",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-12T04:02:06Z",
+    "stars": 99,
+    "language": "Python",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "基于DaVinci MCP的全自动自媒体视频剪辑工具",
+    "llm_tags": [
+      "视频生成",
+      "MCP",
+      "自动化"
     ]
   },
   {
@@ -785,6 +1035,26 @@
       "AI安全",
       "智能体",
       "多智能体"
+    ]
+  },
+  {
+    "id": "578f65f68fdf",
+    "title": "TestSprite/testsprite-cli ⭐176",
+    "summary": "Official TestSprite CLI — AI-powered automated testing from your terminal",
+    "url": "https://github.com/TestSprite/testsprite-cli",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-11T10:44:15Z",
+    "stars": 176,
+    "language": "TypeScript",
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "TestSprite CLI发布，支持终端运行AI自动化测试。",
+    "llm_tags": [
+      "自动化测试",
+      "CLI工具",
+      "AI应用"
     ]
   },
   {
@@ -1489,411 +1759,6 @@
       "模型部署",
       "Metal",
       "CoreML"
-    ]
-  },
-  {
-    "id": "77bc008b868d",
-    "title": "Anthropic is intentionally nerfing Fable when asked to develop other LLMs",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/\"> <img alt=\"Anthropic is intentionally nerfing Fable when asked to develop",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1s2oz/anthropic_is_intentionally_nerfing_fable_when/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T04:36:49+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "Anthropic 被指在生成其他 LLM 代码时故意削弱 Fable",
-    "llm_tags": [
-      "模型安全",
-      "代码生成",
-      "Anthropic"
-    ]
-  },
-  {
-    "id": "f0a0162bafc8",
-    "title": "Business World Model",
-    "summary": "arXiv:2606.10044v1 Announce Type: new  Abstract: Businesses are increasingly adopting AI-enabled tools to improve productivity, reduce costs, and enhance products and services. However, the transformative potential of AI extends beyond automating predefined tasks: it lies in enabling intelligent systems to plan, optimize, and execute business initiatives from high-level strategic objectives. This paper introduces the concept and architecture of a business world model (BWM), a world model specialized for business and organizational environments. Inspired by world models in artificial intelligence, cognitive science, and control theory, a BWM encodes business states, dynamics, constraints, objectives, and feasible action space to support autonomous decision-making. We propose a business-sema",
-    "url": "https://arxiv.org/abs/2606.10044",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-10T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 65,
-    "llm_summary": "提出商业世界模型概念，架构用于高层战略规划与执行。",
-    "llm_tags": [
-      "世界模型",
-      "智能体",
-      "战略规划",
-      "架构设计"
-    ]
-  },
-  {
-    "id": "9f18eed77474",
-    "title": "Deployment-Time Memorization in Foundation-Model Agents",
-    "summary": "arXiv:2606.10062v1 Announce Type: new  Abstract: Foundation-model agents are increasingly long-lived systems that remember users across interactions, making memorization an explicit deployment-time function rather than solely a property of model weights. Existing work addresses parametric memorization or audits fixed memory configurations, but does not characterize how memory-design choices jointly shape personalization utility, extraction risk, and deletion fidelity. We study this surface as deployment-time memorization, formulating agent memory as a privacy-utility frontier measured by Personalization Recall (PR) and Adversarial Extraction Rate (AER), and sweeping three memory-design knobs: summarization aggressiveness, retrieval breadth (k), and deletion mode. We further introduce the F",
-    "url": "https://arxiv.org/abs/2606.10062",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-10T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "探讨基础模型智能体部署时的记忆机制设计权衡",
-    "llm_tags": [
-      "智能体",
-      "隐私安全",
-      "记忆机制"
-    ]
-  },
-  {
-    "id": "46b63bda9690",
-    "title": "Less Context, Better Agents: Efficient Context Engineering for Long-Horizon Tool-Using LLM Agents",
-    "summary": "arXiv:2606.10209v1 Announce Type: new  Abstract: Large language models deployed as autonomous agents for enterprise workflows face a key challenge: verbose tool responses from enterprise systems can cause context overflow, stale-state errors, and high inference cost. We study this problem in automated expense itemization in Microsoft Dynamics 365 Finance and Operations using Model Context Protocol tools. We evaluate four GPT-5 configurations on a 50-task hotel expense benchmark: no user model, full conversation history, context pruned to the last 5 tool call/response pairs, and pruning with automated summarization. Results are averaged across 5 independent runs, with the user model held constant for the context-engineering comparison. The no-user-model baseline achieves only 8.0% complete ",
-    "url": "https://arxiv.org/abs/2606.10209",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-10T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出上下文工程方法解决长周期Agent工具响应冗余问题",
-    "llm_tags": [
-      "Agent",
-      "上下文优化",
-      "RAG",
-      "企业应用"
-    ]
-  },
-  {
-    "id": "4805191e9241",
-    "title": "RealMath-Eval: Why SOTA Judges Struggle with Real Human Reasoning",
-    "summary": "arXiv:2606.10254v1 Announce Type: new  Abstract: While Large Language Models (LLMs) have achieved near-perfect performance in \\emph{solving} high-school mathematics, their ability to \\emph{evaluate} the diverse reasoning processes of real human students remains under-examined. To bridge this gap, we introduce \\textbf{RealMath-Eval}, a rigorously annotated benchmark of 224 real-world exam responses from high schools. Our initial evaluation reveals that even state-of-the-art LLM judges struggle significantly on this task, exhibiting a high Mean Squared Error ($\\sim$2.96) against expert human grading. To probe a plausible explanation, we contrast this performance with a control setting where the same judges evaluate synthetic LLM-generated solutions. We identify a stark ``Evaluation Gap'': ju",
-    "url": "https://arxiv.org/abs/2606.10254",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-10T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "发布真实高中数学答题数据集，揭示SOTA模型评估人类推理的不足。",
-    "llm_tags": [
-      "评估基准",
-      "数学推理",
-      "LLM评测"
-    ]
-  },
-  {
-    "id": "b83d5214f181",
-    "title": "Supervised Fine-tuning with Synthetic Rationale Data Hurts Real-World Disease Prediction",
-    "summary": "arXiv:2606.10279v1 Announce Type: new  Abstract: Supervised fine-tuning with synthetic rationale data is widely assumed to improve language model performance on clinical prediction tasks by teaching models not just what to predict but why. We test this assumption on five-year Alzheimer's disease and related dementias (ADRD) prediction from longitudinal health histories. Across a large-scale controlled experiment of 504 configurations, we find that rationale-based SFT consistently and substantially hurts prediction performance relative to label-only fine-tuning. The degradation persists across model families and data scales, and is not resolved by using a reasoning-oriented base model. Crucially, the failure is not explained by poor rationale quality: human expert annotation confirms that t",
-    "url": "https://arxiv.org/abs/2606.10279",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-10T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "大规模实验揭示合成推理数据微调损害临床预测性能",
-    "llm_tags": [
-      "医疗AI",
-      "大模型微调",
-      "数据合成",
-      "负向结果"
-    ]
-  },
-  {
-    "id": "608c9a483a22",
-    "title": "From Context-Aware to Conflict-Aware: Generalizing Contrastive Decoding for Knowledge Conflict in LLMs",
-    "summary": "arXiv:2606.10298v1 Announce Type: new  Abstract: When large language models generate from retrieved or augmented contexts, conflicts between external context and parametric priors remain a central reliability bottleneck. Existing contrastive decoding methods follow a \\emph{context-aware} paradigm that unilaterally amplifies context over parametric priors, overwriting correct priors when the context is erroneous. We generalize this to the \\textbf{conflict-aware} paradigm that dynamically allocates authority between prior and context based on conflict signals, rather than presupposing context trustworthiness. We show that the affine combination of prior and context logits yields a \\textbf{power family} with an inherent \\textbf{regime asymmetry}: extrapolation amplifies errors unboundedly whe",
-    "url": "https://arxiv.org/abs/2606.10298",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-10T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 80,
-    "score": 78,
-    "llm_summary": "提出冲突感知解码范式，动态解决LLM检索与参数知识冲突。",
-    "llm_tags": [
-      "🔧 已开源",
-      "RAG",
-      "解码策略",
-      "幻觉消除"
-    ]
-  },
-  {
-    "id": "f1cfa2ae9df0",
-    "title": "Self-Distillation Policy Optimization via Visual Feedback: Bridging Code and Visual Artifacts",
-    "summary": "arXiv:2606.10334v1 Announce Type: new  Abstract: Code-generating large language models (LLMs) increasingly produce visual artifacts such as charts, web pages, and slides by writing programs that are executed by non-differentiable renderers, committing to code before observing the render. As a result, otherwise executable code often yields artifacts with visually salient defects, including overlapping elements, clipped text, broken alignment, low contrast, and overflow. We study visual-feedback self-distillation for code-generated visual artifacts. We propose Visual-SDPO, a self-distillation policy-optimization framework that treats rendered visual feedback as privileged context for a weight-sharing teacher and distills this feedback into a coding student. To make supervision spatially targ",
-    "url": "https://arxiv.org/abs/2606.10334",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-10T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出视觉反馈自蒸馏策略，优化代码生成视觉缺陷。",
-    "llm_tags": [
-      "代码生成",
-      "视觉反馈",
-      "强化学习"
-    ]
-  },
-  {
-    "id": "a3c5d5364ae9",
-    "title": "Reasoning or Memorization? Direction-Aware Diversity Exploration in LLM Reinforcement Learning",
-    "summary": "arXiv:2606.10346v1 Announce Type: new  Abstract: Reinforcement learning has become a key paradigm for eliciting reasoning abilities in large language models, where exploration is crucial for discovering effective solution trajectories. Existing exploration methods typically encourage diversity in semantic or gradient spaces, without distinguishing what drives this diversity. A trajectory may appear novel because it follows a new reasoning process, or because it varies memorized patterns and shortcuts. Rewarding both cases equally may steer exploration toward memorization rather than genuine reasoning improvement. In this paper, we propose DiRL, a Direction-Aware Reinforcement Learning framework that anchors exploration to an internal reasoning-memorization direction of the policy. Specific",
-    "url": "https://arxiv.org/abs/2606.10346",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-10T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "提出方向感知多样性探索，区分LLM推理与记忆机制。",
-    "llm_tags": [
-      "强化学习",
-      "推理机制",
-      "探索策略"
-    ]
-  },
-  {
-    "id": "fab5fa383fc2",
-    "title": "Beyond Static Evaluation: Co-Evolutionary Mechanisms for LLM-Driven Strategy Evolution in Adversarial Games",
-    "summary": "arXiv:2606.10389v1 Announce Type: new  Abstract: Recent advances in LLM-driven code evolution have enabled automated discovery by iteratively generating and improving programs. However, applying these methods to adversarial multi-agent games introduces a fundamental challenge: the evaluation landscape shifts as strategies improve, causing fixed evaluators to become unreliable and evolution to stagnate. We propose three mechanisms to address this challenge: evaluator co-evolution, which incorporates discovered champions into the opponent pool; hierarchical deep evaluation, which replaces noisy few-game scores with statistically reliable assessments; and weakness pressure, which dynamically up-weights the most difficult opponents to break through plateaus. We implement these mechanisms withi",
-    "url": "https://arxiv.org/abs/2606.10389",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-10T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "提出对抗博弈中LLM策略与评估器协同进化机制",
-    "llm_tags": [
-      "多智能体",
-      "博弈论",
-      "🔧 已开源",
-      "代码进化"
-    ]
-  },
-  {
-    "id": "711deb784023",
-    "title": "Instruction Finetuning DeepSeek-R1-8B Model Using LoRA and NEFTune",
-    "summary": "arXiv:2606.10392v1 Announce Type: new  Abstract: Financial named-entity recognition (NER) is essential for translating unstructured financial reports and news into structured knowledge graphs. However, general-purpose large language models (LLMs) often misclassify financial entities or ignore domain-specific patterns. This paper investigates the use of DeepSeek-R1-8B, a recent open-source large language model, combined with Low-Rank Adaptation (LoRA) and Noisy Embedding Fine-Tuning (NEFTune) for financial NER. Each annotated sentence in our corpus of 1693 samples is converted into an instruction-input-output triple. We insert lightweight LoRA matrices into the Transformer layers and apply NEFTune to improve generalisation by adding uniform noise to embedding vectors during training. Experi",
-    "url": "https://arxiv.org/abs/2606.10392",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-10T04:00:00+00:00",
-    "frontier": 45,
-    "signal": 75,
-    "score": 60,
-    "llm_summary": "结合LoRA与NEFTune微调DeepSeek-R1用于金融NER",
-    "llm_tags": [
-      "🔧 已开源",
-      "金融NER",
-      "LoRA",
-      "DeepSeek"
-    ]
-  },
-  {
-    "id": "1537febc644a",
-    "title": "STAGE-Claw: Automated State-based Agent Benchmarking for Realistic Scenarios",
-    "summary": "arXiv:2606.10394v1 Announce Type: new  Abstract: Large language models are increasingly used to power personal agents for everyday applications, but evaluating these agents remains a challenge. Existing benchmarks still rely on sandboxed artifacts, static task design, and coarse scoring, which hinder scalability and limit progress toward reliable personal-agent evaluation. This paper introduces STAGE-Claw, an automated framework for building and evaluating realistic personal-agent scenarios in state-based personal-computing environments. Given a task hint, STAGE-Claw automatically creates and validates a realistic benchmark task with its environment, task prompts, ground truth, and related verification programs. Agents are then evaluated in realistic operating environments, where performan",
-    "url": "https://arxiv.org/abs/2606.10394",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-10T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出基于状态的自动化框架，构建真实场景评估个人智能体。",
-    "llm_tags": [
-      "智能体",
-      "评估基准",
-      "自动化测试"
-    ]
-  },
-  {
-    "id": "2b0835bafbf9",
-    "title": "RFE‑Core2 — Current Understanding (June 9th 2026) [R]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>“Why the system feels rigid, why downstream fixes didn’t move the needle, and what actually matters.”</strong></p> <p>This is the clearest picture after the f",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1u1pweh/rfecore2_current_understanding_june_9th_2026_r/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T02:49:53+00:00",
-    "frontier": 85,
-    "signal": 75,
-    "score": 81,
-    "llm_summary": "深入解析RFE-Core2系统僵化原因及下游修复失效的根源",
-    "llm_tags": [
-      "系统架构",
-      "模型优化",
-      "技术复盘"
-    ]
-  },
-  {
-    "id": "206483cd95ad",
-    "title": "Releasing Apodex-1.0 Smol Models (0.8B, 2B, 4B Open-Weights) optimized for Agentic Verification + AgentHarness Evals",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1p2me/releasing_apodex10_smol_models_08b_2b_4b/\"> <img alt=\"Releasing Apodex-1.0 Smol Models (0.8B, 2B, 4B Open-Weights) optimi",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1p2me/releasing_apodex10_smol_models_08b_2b_4b/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T02:11:47+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "发布针对Agent验证优化的0.8B至4B小模型及AgentHarness评估框架",
-    "llm_tags": [
-      "小模型",
-      "Agent",
-      "评估框架",
-      "开源权重"
-    ]
-  },
-  {
-    "id": "1808cd2d2826",
-    "title": "alchaincyf/fanbox ⭐218",
-    "summary": "vibe coding 的驾驶舱：左边文件，右边/下边终端，中间看清每一次改动。 / The cockpit for vibe coding: browse files on the left, command agents on the right, watch every change in between.",
-    "url": "https://github.com/alchaincyf/fanbox",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-10T01:01:42Z",
-    "stars": 218,
-    "language": "JavaScript",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "Vibe coding 驾驶舱工具，集成文件浏览与终端交互。",
-    "llm_tags": [
-      "AI编程",
-      "开发工具",
-      "交互界面"
-    ]
-  },
-  {
-    "id": "0b7b7952815c",
-    "title": "Can a machine think without language?",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Yann LeCun bet a billion dollars that it can. He left Meta arguing today’s chatbots are a dead end, and that real intelligence comes from “world models,” systems that",
-    "url": "https://www.reddit.com/r/artificial/comments/1u1i3ih/can_a_machine_think_without_language/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-09T21:14:52+00:00",
-    "frontier": 75,
-    "signal": 45,
-    "score": 63,
-    "llm_summary": "LeCun认为语言非智能核心，主张世界模型架构",
-    "llm_tags": [
-      "世界模型",
-      "架构争议",
-      "Meta"
-    ]
-  },
-  {
-    "id": "09cf11fd97a4",
-    "title": "Matt Shumer: \"Fable has solved 3D worldbuilding... utterly insane. This is all completely custom-built ThreeJs, running in the browser.\"",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u1hmk6/matt_shumer_fable_has_solved_3d_worldbuilding/\"> <img alt=\"Matt Shumer: &quot;Fable has solved 3D worldbuilding... utter",
-    "url": "https://www.reddit.com/r/singularity/comments/1u1hmk6/matt_shumer_fable_has_solved_3d_worldbuilding/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-09T20:57:47+00:00",
-    "frontier": 75,
-    "signal": 45,
-    "score": 63,
-    "llm_summary": "Fable展示基于Three.js的浏览器端3D世界构建技术",
-    "llm_tags": [
-      "3D生成",
-      "WebGL",
-      "渲染引擎"
-    ]
-  },
-  {
-    "id": "8ff52085c6d3",
-    "title": "It's over. Claude Fable 5 one-shots horror game live",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u1h7de/its_over_claude_fable_5_oneshots_horror_game_live/\"> <img alt=\"It's over. Claude Fable 5 one-shots horror game live\" src",
-    "url": "https://www.reddit.com/r/singularity/comments/1u1h7de/its_over_claude_fable_5_oneshots_horror_game_live/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-09T20:42:11+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "Claude Fable 5 实时演示单次生成的恐怖游戏",
-    "llm_tags": [
-      "实时生成",
-      "游戏AI",
-      "Claude"
-    ]
-  },
-  {
-    "id": "64fc140d5995",
-    "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
-    "summary": "",
-    "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-09T19:38:28+00:00",
-    "frontier": 65,
-    "signal": 82,
-    "score": 72,
-    "llm_summary": "评估前沿ASR模型在语码转换语音上的双语处理能力",
-    "llm_tags": [
-      "语音识别",
-      "多模态",
-      "基准测试"
-    ]
-  },
-  {
-    "id": "05b81f928471",
-    "title": "AI Epistemic Risks: Emerging Mechanisms & Evidence [R]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p><strong>How will AI affect our ability to think and judge for ourselves?</strong></p> <p>Our new paper co-authored by 30 experts explores <strong>epistemic risks</str",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1u1ew6q/ai_epistemic_risks_emerging_mechanisms_evidence_r/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-09T19:18:47+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "30位专家联合论文探讨AI对人类认知判断的风险",
-    "llm_tags": [
-      "AI安全",
-      "认知风险",
-      "理论研究"
-    ]
-  },
-  {
-    "id": "42983993c056",
-    "title": "Claude Fable & Mythos released by Anthropic",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u1e9e4/claude_fable_mythos_released_by_anthropic/\"> <img alt=\"Claude Fable &amp; Mythos released by Anthropic\" src=\"https://exte",
-    "url": "https://www.reddit.com/r/artificial/comments/1u1e9e4/claude_fable_mythos_released_by_anthropic/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-09T18:56:40+00:00",
-    "frontier": 75,
-    "signal": 40,
-    "score": 61,
-    "llm_summary": "Anthropic 发布 Claude Fable 与 Mythos 模型",
-    "llm_tags": [
-      "大模型",
-      "Anthropic",
-      "模型发布"
-    ]
-  },
-  {
-    "id": "905b57a5eab0",
-    "title": "zai-org/SCAIL-2 · Hugging Face",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1dw38/zaiorgscail2_hugging_face/\"> <img alt=\"zai-org/SCAIL-2 · Hugging Face\" src=\"https://external-preview.redd.it/VZ-tlN2Mkq7o",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1dw38/zaiorgscail2_hugging_face/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-09T18:43:26+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "zai-org发布SCAIL-2模型，社区讨论其性能与本地部署效果。",
-    "llm_tags": [
-      "开源模型",
-      "LLM",
-      "本地部署"
     ]
   }
 ]
