@@ -49,6 +49,7 @@ Python 管道 (scripts/fetch_trending.py)
   - 任一维 ≥ 60 → 入选（高星新仓库天然可访问代码，信息含量应更高）
   - 加权综合 前沿×0.5+信息×0.5 ≥ 50 → 入选
   - stars ≥ 500 时综合线降至 40
+  - ⭐ stars ≥ 200 直通入选（绕过 LLM）：LLM 评分看不到 stars，高星新仓库常被主观误杀（如 ⭐1w+ 的 ponytail 连续被砍），用绝对社区热度兜底。常量 `OPENSOURCE_STAR_FAST_PATH`
 - **LLM 速率控制**: 串行评分（`LLM_CONCURRENCY=1`）+ 请求间隔（`LLM_REQUEST_INTERVAL=6s`），避免触发智谱账户级 RPM 限速（code 1302）。429 退避拉长到 15/30/45/60s 跨过窗口。⚠️ RPM 是账户级共享，Key 分离不隔离速率。
 
 ### 更新公告系统

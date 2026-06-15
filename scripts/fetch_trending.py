@@ -17,6 +17,7 @@ v3 变更：
 
 import asyncio
 import json
+import math
 import os
 import re
 import sys
@@ -78,6 +79,7 @@ OPENSOURCE_FRONTIER_THRESHOLD = int(_env("OPENSOURCE_FRONTIER_THRESHOLD", "60"))
 OPENSOURCE_SIGNAL_THRESHOLD = int(_env("OPENSOURCE_SIGNAL_THRESHOLD", "60"))
 OPENSOURCE_COMPOSITE_THRESHOLD = int(_env("OPENSOURCE_COMPOSITE_THRESHOLD", "50"))
 OPENSOURCE_HIGH_STAR_STARS = int(_env("OPENSOURCE_HIGH_STAR_STARS", "500"))  # 达此 stars 综合线再降 10
+OPENSOURCE_STAR_FAST_PATH = int(_env("OPENSOURCE_STAR_FAST_PATH", "200"))  # stars ≥ 此值的 GitHub 仓库绕过 LLM 直接入选（LLM 看不到 stars，高星项目常被主观误杀）
 
 # --- LLM ---
 GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7")
@@ -745,6 +747,20 @@ async def run_llm_pass_async(
             # 请求间隔(避免密集请求触发账户级 RPM 限制)
             if i > 0:
                 await asyncio.sleep(LLM_REQUEST_INTERVAL)
+            # 高星 GitHub 直通车：stars 达标则绕过 LLM 直接入选
+            # LLM 评分看不到 stars，高星新仓库常被主观误杀（如 ⭐1w+ 的 ponytail 连续被砍）
+            if (mode == "regular"
+                    and item.get("source_type") == "open_source"
+                    and item.get("stars", 0) >= OPENSOURCE_STAR_FAST_PATH):
+                stars = item["stars"]
+                composite = min(int(50 + math.log10(max(stars, 10)) * 12), 90)
+                result = {
+                    "frontier": composite,
+                    "signal": composite,
+                    "llm_summary": f"⭐{stars} 高星新仓库，社区热度达标直通入选",
+                    "llm_tags": ["⭐高星直通"],
+                }
+                return i, item, result
             if mode == "arxiv":
                 arxiv_prompt, user_msg = _build_user_msg_arxiv(item)
                 result = await asyncio.to_thread(
