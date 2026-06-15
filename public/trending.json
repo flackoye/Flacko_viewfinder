@@ -1,5 +1,362 @@
 [
   {
+    "id": "aca91bcb4f1b",
+    "title": "DanMcInerney/architect-loop ⭐434",
+    "summary": "Claude Fable 5 as architect, GPT-5.5 Codex as builder, the repo as memory - a research-backed Claude Code skill for the cross-vendor agent loop",
+    "url": "https://github.com/DanMcInerney/architect-loop",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-12T01:54:12Z",
+    "stars": 434,
+    "language": "HTML",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "跨厂商智能体循环方案，Claude架构GPT构建，仓库即记忆",
+    "llm_tags": [
+      "智能体",
+      "多模型协作",
+      "代码生成"
+    ]
+  },
+  {
+    "id": "a50ae2bf78e1",
+    "title": "jmmy9609-design/gpt-pp ⭐397",
+    "summary": "",
+    "url": "https://github.com/jmmy9609-design/gpt-pp",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-09T11:05:36Z",
+    "stars": 397,
+    "language": "Python",
+    "frontier": 35,
+    "signal": 60,
+    "score": 45,
+    "llm_summary": "开源项目，实现基于GPT的提示词预处理或优化方案",
+    "llm_tags": [
+      "提示工程",
+      "开源工具",
+      "LLM"
+    ]
+  },
+  {
+    "id": "c439964b740d",
+    "title": "duolahypercho/fusion-fable ⭐284",
+    "summary": "Fuse two frontier models into one Fable-tier answer: Opus 4.8 drafts, a second model (Opus 4.8 or GPT-5.5 via codex) checks, Opus fuses. A Claude Code skill.",
+    "url": "https://github.com/duolahypercho/fusion-fable",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-13T23:24:39Z",
+    "stars": 284,
+    "language": "Shell",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "融合Opus与GPT-5.5进行草稿校验与答案合成的开源方案",
+    "llm_tags": [
+      "模型融合",
+      "推理优化",
+      "Claude"
+    ]
+  },
+  {
+    "id": "38b9e565154e",
+    "title": "cobusgreyling/loop-engineering ⭐246",
+    "summary": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, ",
+    "url": "https://github.com/cobusgreyling/loop-engineering",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-09T06:28:20Z",
+    "stars": 246,
+    "language": "JavaScript",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "提供AI编码智能体循环工程模式、启动器及CLI工具",
+    "llm_tags": [
+      "智能体",
+      "开发工具",
+      "编排模式"
+    ]
+  },
+  {
+    "id": "450e3ed38c67",
+    "title": "hvardhan878/ghostwork ⭐123",
+    "summary": "Your personal AI worker. Watches your screen, learns your workflows, automates the repetitive parts. Built on Screenpipe. All local, no cloud, no setup. It gets better every day without you doing anyt",
+    "url": "https://github.com/hvardhan878/ghostwork",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-09T13:34:34Z",
+    "stars": 123,
+    "language": "TypeScript",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "基于Screenpipe的本地AI工作流自动化工具，可学习并重复操作",
+    "llm_tags": [
+      "自动化",
+      "本地部署",
+      "RPA"
+    ]
+  },
+  {
+    "id": "ed1b290f95a4",
+    "title": "Jeidoban/Ironsmith ⭐121",
+    "summary": "Create personal Mac apps instantly with on-device and cloud LLMs",
+    "url": "https://github.com/Jeidoban/Ironsmith",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-14T00:11:35Z",
+    "stars": 121,
+    "language": "Swift",
+    "frontier": 55,
+    "signal": 65,
+    "score": 59,
+    "llm_summary": "结合本地与云端大模型快速构建个人Mac应用的开源工具",
+    "llm_tags": [
+      "LLM应用",
+      "开发工具",
+      "MacOS"
+    ]
+  },
+  {
+    "id": "712fde919626",
+    "title": "keyuchen21/agentic-engineering-handbook ⭐68",
+    "summary": "The definitive OpenAI, Claude, MCP, Harness, Evals, and Production Agent Systems learning roadmap.",
+    "url": "https://github.com/keyuchen21/agentic-engineering-handbook",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-09T15:25:00Z",
+    "stars": 68,
+    "language": "Python",
+    "frontier": 65,
+    "signal": 85,
+    "score": 73,
+    "llm_summary": "OpenAI与Claude智能体系统及生产化工程学习路线图",
+    "llm_tags": [
+      "智能体",
+      "工程化",
+      "OpenAI",
+      "Claude"
+    ]
+  },
+  {
+    "id": "0910e493aeaf",
+    "title": "zmustafa/AzureSupportAgent ⭐66",
+    "summary": "AI-driven Azure operations workbench. Chat with your tenant, investigate incidents with a team of specialist AI agents, and assess, monitor & remediate your cloud — runs in your own subscription. One-",
+    "url": "https://github.com/zmustafa/AzureSupportAgent",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-12T22:45:03Z",
+    "stars": 66,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 65,
+    "score": 59,
+    "llm_summary": "基于多智能体的Azure运维工作台，支持租户对话与故障排查。",
+    "llm_tags": [
+      "多智能体",
+      "云运维",
+      "Azure"
+    ]
+  },
+  {
+    "id": "68bb9035cdd1",
+    "title": "nelsonwerd/idea-to-ship-skills ⭐55",
+    "summary": "Composable Agent Skills (Claude + OpenAI Codex) for taking an idea from fuzzy → validated → sequenced build → shipped — a manual tier (ideate, deep-dive, prompt-pack) and an autonomous tier (autopilot",
+    "url": "https://github.com/nelsonwerd/idea-to-ship-skills",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-09T18:15:03Z",
+    "stars": 55,
+    "language": "Shell",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "开源可组合Agent技能库，实现从创意到验证构建发布的全流程自动化。",
+    "llm_tags": [
+      "Agent",
+      "工作流",
+      "开源"
+    ]
+  },
+  {
+    "id": "8b5b1144bb95",
+    "title": "001TMF/harness-forge ⭐49",
+    "summary": "Turn Claude Code into its own Meta-Harness — a skill that evolves the scaffolding around a fixed model (memory, retrieval, context, prompts) via a native propose→score→Pareto loop. Native reimplementa",
+    "url": "https://github.com/001TMF/harness-forge",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-14T00:36:07Z",
+    "stars": 49,
+    "language": "Python",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "将Claude Code转化为自进化的元框架，通过原生Pareto循环优化模型脚手架。",
+    "llm_tags": [
+      "Agent",
+      "Claude",
+      "模型优化",
+      "开源"
+    ]
+  },
+  {
+    "id": "852319d3b15c",
+    "title": "zhouwei713/fpv-immersive-video-prompting ⭐48",
+    "summary": "Route-first FPV AI video prompting skill for Seedance, Kling, Runway, Veo, GPT Image asset packs, numbered stops, and red-line path control.",
+    "url": "https://github.com/zhouwei713/fpv-immersive-video-prompting",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-09T15:55:23Z",
+    "stars": 48,
+    "language": null,
+    "frontier": 65,
+    "signal": 60,
+    "score": 63,
+    "llm_summary": "开源FPV视频提示词生成工具，支持多模型路径控制",
+    "llm_tags": [
+      "视频生成",
+      "提示词工程",
+      "开源工具"
+    ]
+  },
+  {
+    "id": "261b925ea014",
+    "title": "desktop-hermes/hermes-agent-desktop ⭐44",
+    "summary": "Hermes Desktop github nous research hermes ai  agent local ai ollama github download open source pc windows app installation setup workspace llm models runtime",
+    "url": "https://github.com/desktop-hermes/hermes-agent-desktop",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-11T17:34:17Z",
+    "stars": 44,
+    "language": "TypeScript",
+    "frontier": 45,
+    "signal": 60,
+    "score": 51,
+    "llm_summary": "Nous Research推出的本地AI Agent桌面应用，支持Ollama",
+    "llm_tags": [
+      "AI Agent",
+      "本地部署",
+      "Ollama",
+      "桌面应用"
+    ]
+  },
+  {
+    "id": "eb65d0276edc",
+    "title": "SihyeonJeon/why-was-fable-banned ⭐43",
+    "summary": "Spec-first, evidence-gated engineering-procedure enforcement for AI coding agents (Claude Code + Codex). The agent can't edit until it writes a passing spec.",
+    "url": "https://github.com/SihyeonJeon/why-was-fable-banned",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-13T15:54:14Z",
+    "stars": 43,
+    "language": "Python",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "基于规范优先和证据门控的AI代码代理工程流程",
+    "llm_tags": [
+      "AI代理",
+      "代码生成",
+      "工程流程"
+    ]
+  },
+  {
+    "id": "2f878fbe99ff",
+    "title": "DragonMeow1012/DragonMeow-MangaTranslator ⭐43",
+    "summary": "漫畫圖片一鍵翻譯：偵測→OCR→LLM翻譯→抹字→嵌字，內建 localhost 網頁端，解壓即用。支援 Gemini/ChatGPT/Claude/Grok/DeepSeek 等多家 API。",
+    "url": "https://github.com/DragonMeow1012/DragonMeow-MangaTranslator",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-11T12:02:29Z",
+    "stars": 43,
+    "language": "Python",
+    "frontier": 45,
+    "signal": 75,
+    "score": 57,
+    "llm_summary": "集成多模型API的漫画翻译工具，支持全流程本地化处理。",
+    "llm_tags": [
+      "OCR",
+      "多模态",
+      "开源工具"
+    ]
+  },
+  {
+    "id": "3a11cae6e645",
+    "title": "Berliwu/world-cup-2026-match-prediction-engine ⭐42",
+    "summary": "world cup 2026 match prediction agent with LLM model typescript based",
+    "url": "https://github.com/Berliwu/world-cup-2026-match-prediction-engine",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-09T14:28:45Z",
+    "stars": 42,
+    "language": "Shell",
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "基于TypeScript和LLM的2026世界杯比赛预测开源项目",
+    "llm_tags": [
+      "LLM应用",
+      "预测模型",
+      "开源项目"
+    ]
+  },
+  {
+    "id": "0c7cc27d0248",
+    "title": "manticore-projects/aurscan ⭐42",
+    "summary": "Automatically scan AUR packages for malware before installing using Claude LLM",
+    "url": "https://github.com/manticore-projects/aurscan",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-15T16:04:53.720363+00:00",
+    "created_at": "2026-06-13T02:59:22Z",
+    "stars": 42,
+    "language": "Go",
+    "frontier": 55,
+    "signal": 60,
+    "score": 57,
+    "llm_summary": "利用Claude LLM自动扫描AUR软件包恶意代码的开源工具",
+    "llm_tags": [
+      "LLM应用",
+      "安全扫描",
+      "开源工具"
+    ]
+  },
+  {
+    "id": "dc1d5f6f44cb",
+    "title": "This man with ALS is “the first power user” of a brain implant that lets him speak",
+    "summary": "Casey Harrell has had a set of electrodes embedded in his brain for almost three years. Harrell, who has amyotrophic lateral sclerosis (ALS) and is paralyzed, first used his brain-computer interface (BCI) to “speak” sentences with the help of a research team in 2023. Since then, Harrell has clocked thousands of hours of use. He&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/15/1138953/man-als-first-power-user-brain-implant-speak-bci/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-15T15:12:28+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "ALS患者长期植入脑机接口实现语音交流，验证技术稳定性",
+    "llm_tags": [
+      "脑机接口",
+      "医疗AI",
+      "神经解码"
+    ]
+  },
+  {
     "id": "7942ec4a824e",
     "title": "Orchestra-o1: Omnimodal Agent Orchestration",
     "summary": "arXiv:2606.13707v1 Announce Type: new  Abstract: The recent success of agent swarms has shifted the paradigm of large language model (LLM)-based agents from single-agent workflows to multi-agent systems, highlighting the importance of agent orchestration for task decomposition and collaboration. However, existing orchestration frameworks are limited to a narrow set of modalities and struggle to generalize to more complex settings where heterogeneous modalities coexist and interact. This limitation becomes particularly pronounced in omnimodal scenarios, where tasks require the unified understanding and coordination of diverse inputs such as text, image, audio, and video. In this work, we propose Orchestra-o1, an omnimodal agent orchestration framework designed to support efficient agent col",
@@ -129,6 +486,42 @@
       "生物医药",
       "🔧 已开源",
       "NLP"
+    ]
+  },
+  {
+    "id": "b6215237672f",
+    "title": "WorkBench Revisited: Workplace Agents Two Years On",
+    "summary": "arXiv:2606.13715v1 Announce Type: new  Abstract: The best agent on WorkBench in March 2024, GPT-4, completed 43% of tasks and took an unintended harmful action, such as emailing the wrong person, on 26% of them. We re-visit the benchmark in June 2026 and find that the best agent to date, Claude Opus 4.8, completes 89% and takes an unintended harmful action on 2.5%. Aside from this considerable progress in frontier agent performance, three things stand out. First, capability and safety go together on WorkBench rather than trade off, so the models that finish the most tasks also do the least unintended damage. Second, while several classes of error have been totally eliminated, frontier models still make some basic mistakes that occasionally result in irreversible harm, such as sending an em",
+    "url": "https://arxiv.org/abs/2606.13715",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "回顾WorkBench基准，两年后智能体任务完成率升至89%，安全性显著提升。",
+    "llm_tags": [
+      "智能体",
+      "基准测试",
+      "AI安全"
+    ]
+  },
+  {
+    "id": "54616005dc5d",
+    "title": "Hyperdimensional computing for structured querying on tabular data embeddings",
+    "summary": "arXiv:2606.13871v1 Announce Type: new  Abstract: Tabular data embeddings have become a cornerstone of data profiling and data integration pipelines, enabling tasks such as entity annotation and resolution; schema matching; column type detection; and table search, among others. Existing approaches embed rows, columns, or entire tables into a vector space and rely on nearest-neighbor search to retrieve candidate matches. A fundamental limitation of current embedding methods is the lack of interpretable similarity scores: the concrete similarity value between a query and its nearest neighbour carries no intrinsic meaning, making it impossible to determine whether that neighbour is a true match or simply the least-dissimilar item in a corpus that contains no valid answer. This inability to set",
+    "url": "https://arxiv.org/abs/2606.13871",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "提出超维计算实现表格嵌入的结构化查询，解决可解释性问题",
+    "llm_tags": [
+      "表格嵌入",
+      "超维计算",
+      "结构化查询"
     ]
   },
   {
@@ -1759,6 +2152,25 @@
       "模型部署",
       "Metal",
       "CoreML"
+    ]
+  },
+  {
+    "id": "32c5fbdae789",
+    "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
+    "summary": "",
+    "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-09T10:46:19+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "演示Agent串联两个Spaces自动构建3D巴黎画廊的实践",
+    "llm_tags": [
+      "AI Agent",
+      "3D生成",
+      "Hugging Face",
+      "工作流"
     ]
   }
 ]
