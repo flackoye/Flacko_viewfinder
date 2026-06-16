@@ -1,5 +1,148 @@
 [
   {
+    "id": "ac8a1da9f17b",
+    "title": "Ishannaik/agent-sweep ⭐37",
+    "summary": "Find and redact secrets in AI coding agent histories (Claude Code, and more).",
+    "url": "https://github.com/Ishannaik/agent-sweep",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-16T01:13:25.813562+00:00",
+    "created_at": "2026-06-11T06:27:24Z",
+    "stars": 37,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "开源工具，用于扫描并脱敏AI编程代理历史记录中的敏感信息。",
+    "llm_tags": [
+      "安全",
+      "隐私保护",
+      "开源工具"
+    ]
+  },
+  {
+    "id": "f4a12a15ec02",
+    "title": "spacepirate15/quantum-free-router ⭐36",
+    "summary": "Zero-cost LLM routing across free-tier model APIs with Bifrost, certification scripts, and agent-ready fallback chains",
+    "url": "https://github.com/spacepirate15/quantum-free-router",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-16T01:13:25.813562+00:00",
+    "created_at": "2026-06-10T08:43:00Z",
+    "stars": 36,
+    "language": "Shell",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "开源免费LLM路由器，支持多模型API调用与降级策略",
+    "llm_tags": [
+      "模型路由",
+      "开源工具",
+      "API集成"
+    ]
+  },
+  {
+    "id": "f5a5183f8b2b",
+    "title": "Goekdeniz-Guelmez/MLX-LoRA-Studio ⭐36",
+    "summary": "A native Mac App for LLM fine-tuning on Apple Silicon — fully on-device, fully open source.",
+    "url": "https://github.com/Goekdeniz-Guelmez/MLX-LoRA-Studio",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-16T01:13:25.813562+00:00",
+    "created_at": "2026-06-11T19:34:33Z",
+    "stars": 36,
+    "language": null,
+    "frontier": 55,
+    "signal": 65,
+    "score": 59,
+    "llm_summary": "基于MLX的Mac端LLM微调原生应用，支持全本地开源。",
+    "llm_tags": [
+      "LLM微调",
+      "MLX",
+      "Apple Silicon",
+      "开源工具"
+    ]
+  },
+  {
+    "id": "9cfd06bd019d",
+    "title": "jaimeirazabal1/rag-architectures ⭐35",
+    "summary": "Sistema RAG con 6 arquitecturas implementadas como microservicios independientes en FastAPI + Docker: Naïve RAG, Advanced RAG, Modular RAG, GraphRAG, Agentic RAG y Hybrid RAG. Cada una incluye embeddi",
+    "url": "https://github.com/jaimeirazabal1/rag-architectures",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-16T01:13:25.813562+00:00",
+    "created_at": "2026-06-11T10:13:14Z",
+    "stars": 35,
+    "language": "Python",
+    "frontier": 65,
+    "signal": 85,
+    "score": 73,
+    "llm_summary": "集成6种RAG架构的FastAPI微服务实现方案",
+    "llm_tags": [
+      "RAG",
+      "微服务",
+      "FastAPI",
+      "GraphRAG"
+    ]
+  },
+  {
+    "id": "018ea69393c8",
+    "title": "coinluu/resume-jd-optimizer-cn ⭐34",
+    "summary": "JD-driven Chinese resume optimization skill for China job seekers. 解析岗位 JD、诊断简历缺口、生成真实可信的中文定制简历、ATS 纯文本版和面试追问。",
+    "url": "https://github.com/coinluu/resume-jd-optimizer-cn",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-16T01:13:25.813562+00:00",
+    "created_at": "2026-06-11T17:09:29Z",
+    "stars": 34,
+    "language": null,
+    "frontier": 45,
+    "signal": 65,
+    "score": 53,
+    "llm_summary": "基于JD解析的中文简历优化工具，支持缺口诊断与面试追问生成。",
+    "llm_tags": [
+      "RAG",
+      "简历优化",
+      "LLM应用"
+    ]
+  },
+  {
+    "id": "88ff9b12659f",
+    "title": "Cleo: trying to fit full analyst behavior in a 2B model [P]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hello all! </p> <p>Half of all industrial &quot;chatbots&quot; are just text-to-SQL models in a trenchcoat (and the other half RAG!). I wanted to explore just how sma",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1u6udpb/cleo_trying_to_fit_full_analyst_behavior_in_a_2b/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-15T21:43:10+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "探索用20亿参数模型实现完整分析师行为",
+    "llm_tags": [
+      "小模型",
+      "Text-to-SQL",
+      "Agent"
+    ]
+  },
+  {
+    "id": "01a45741d2d2",
+    "title": "Open weights are not enough: we need open training frameworks for research and better algorithms [P]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Open weights are important and critical, but they are not enough by themselves.</p> <p>If we want open ML and AI research to move forward, we also need open training ",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1u6p7k3/open_weights_are_not_enough_we_need_open_training/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-15T18:37:51+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "呼吁开放训练框架以推动算法研究，认为仅开放权重不足",
+    "llm_tags": [
+      "开源生态",
+      "训练框架",
+      "算法研究"
+    ]
+  },
+  {
     "id": "f93f47da99e7",
     "title": "DietrichGebert/ponytail ⭐14086",
     "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
@@ -577,6 +720,342 @@
       "多智能体",
       "文档处理",
       "自动化"
+    ]
+  },
+  {
+    "id": "c733d3dd27fb",
+    "title": "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
+    "summary": "arXiv:2606.14697v1 Announce Type: cross  Abstract: Building trustworthy medical multimodal large language models (MLLMs) is critical for reliable clinical decision support. Existing medical hallucination benchmarks mainly focus on data collection, but often ignore where hallucinations originate within the reasoning process. We find that hallucination sources vary across samples: errors may arise from visual misrecognition, incorrect medical knowledge recall, or flawed reasoning integration. To enable source-level hallucination diagnosis, we introduce ClinHallu, a benchmark for stage-wise hallucination diagnosis in medical MLLM reasoning. ClinHallu contains 7,031 validated instances, where each instance is augmented with a structured reasoning trace decomposed into Visual Recognition, Knowl",
+    "url": "https://arxiv.org/abs/2606.14697",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 88,
+    "score": 82,
+    "llm_summary": "首个诊断医疗多模态大模型推理阶段幻觉的基准",
+    "llm_tags": [
+      "医疗AI",
+      "幻觉检测",
+      "🔧 已开源",
+      "多模态"
+    ]
+  },
+  {
+    "id": "546d74da41f1",
+    "title": "Can Post-Training Turn LLMs into Good Medical Coders? An Empirical Study of Generative ICD Coding",
+    "summary": "arXiv:2606.13940v1 Announce Type: new  Abstract: Automated International Classification of Diseases (ICD) coding is a core medical-coding task for billing, epidemiology, and clinical decision support. Generative large language models (LLMs) are often reported as weak medical coders, but this finding mainly comes from inference-time settings such as prompting, retrieval, reranking, or tool use, leaving the role of task-specific post-training underexplored. We present a controlled empirical study of post-training for generative ICD coding, comparing discriminative baselines with LLM coders across prompting, supervised fine-tuning, and reinforcement learning under a common protocol and metric set. To our knowledge, this is the first study to evaluate RL-based post-training for generative LLM ",
+    "url": "https://arxiv.org/abs/2606.13940",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "实证研究探索任务特定后训练能否提升LLM医疗编码能力。",
+    "llm_tags": [
+      "医疗编码",
+      "后训练",
+      "🔧 已开源",
+      "LLM评估"
+    ]
+  },
+  {
+    "id": "4ecd8bb6e487",
+    "title": "STREAM: Multi-Tier LLM Inference Middleware with Dual-Channel HPC Token Streaming",
+    "summary": "arXiv:2606.13968v1 Announce Type: cross  Abstract: Researchers and practitioners working with large language models face a fragmented landscape: local models are free and private but hardware limits the model size and context windows a researcher can use; institutional HPC centers offer powerful GPU resources at no marginal cost and keep data within institutional boundaries, but operate behind firewalls and are designed for batch jobs rather than interactive use; commercial cloud APIs provide frontier-model quality on demand but impose significant cost and data retention policies unsuitable for sensitive research data. No existing system unifies all three. STREAM (Smart Tiered Routing Engine for AI Models) addresses this gap with four contributions: (1) a three-tier routing architecture co",
+    "url": "https://arxiv.org/abs/2606.13968",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出双层HPC令牌流中间件，解决机构HPC集群交互式推理延迟问题。",
+    "llm_tags": [
+      "推理加速",
+      "HPC",
+      "中间件",
+      "系统架构"
+    ]
+  },
+  {
+    "id": "b8fca1c8f3d0",
+    "title": "FactoryLLM: A Safe and Open-Source AI Playground for Evaluating LLMs in Smart Factories",
+    "summary": "arXiv:2606.14119v1 Announce Type: new  Abstract: Fault diagnostics and recovery in smart factories is challenging because critical information is dispersed across manuals of multiple machines which are interconnected through the manufacturing process. Large Language Models (LLMs) can provide a promising approach. In this paper, we propose FactoryLLM, a safe and open-source AI playground designed for evaluating different LLM-based retrieval-augmented generation (RAG) models by analysing documents from multiple machines across the manufacturing process. FactoryLLM enables the user to configure the LLM, and assess performance when reasoning over multiple documents, through a dual evaluation setup using both RAGAS and NVIDIA's LLM-as-a-Judge metrics. FactoryLLM is safe because it allows users ",
+    "url": "https://arxiv.org/abs/2606.14119",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 65,
+    "llm_summary": "提出开源评估平台FactoryLLM，用于测试智能工厂RAG模型。",
+    "llm_tags": [
+      "RAG",
+      "工业AI",
+      "🔧 已开源",
+      "评估平台"
+    ]
+  },
+  {
+    "id": "87f1762fdbc8",
+    "title": "AFFORDANCE20Q: Evaluating Affordance Reasoning from Physical Properties",
+    "summary": "arXiv:2606.14240v1 Announce Type: new  Abstract: Affordance reasoning, the inference of an object's action possibilities from its physical properties (e.g., shape and material), is fundamental to human physical understanding and increasingly critical for Large Language Models (LLMs). However, existing affordance benchmarks largely expose explicit object identities in the evaluation setup, allowing models to rely on memorized object-affordance mappings rather than reasoning over physical properties. To address this gap, we introduce Affordance20Q, a novel affordance reasoning benchmark formulated as a 20-Questions game without exposing the object's identity. In each game, the model identifies a hidden object's affordance from a candidate set by asking yes/no questions about its physical pro",
+    "url": "https://arxiv.org/abs/2606.14240",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出基于物理属性而非物体身份的供体推理基准，评估LLM物理理解能力。",
+    "llm_tags": [
+      "🔧 已开源",
+      "具身智能",
+      "基准测试",
+      "推理评估"
+    ]
+  },
+  {
+    "id": "c3b994821e19",
+    "title": "From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI",
+    "summary": "arXiv:2606.14502v1 Announce Type: new  Abstract: Large Language Models (LLMs) are undergoing a fundamental transformation from conversational generators into integrated AI systems capable of reasoning, action, memory, and self-improvement. We conceptualize this transition as a shift from Chatbot to Digital Colleague: from conversational answers to persistent work. We organize this transition along two tightly coupled dimensions. First, at the cognitive core level, LLMs are advancing from Chatbot-era \"fast thinking\" systems driven by next-token prediction toward Thinking LLMs that leverage inference-time computation, Chain-of-Thought reasoning, reflection, process supervision, and reinforcement learning to support more deliberate and reliable cognition. Second, at the tool-augmented task ex",
+    "url": "https://arxiv.org/abs/2606.14502",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "提出从聊天机器人到数字同事的范式转变，定义持久自主AI框架。",
+    "llm_tags": [
+      "智能体",
+      "系统架构",
+      "范式演进"
+    ]
+  },
+  {
+    "id": "39ac20e8d336",
+    "title": "VHDLSuite: Unified Pipeline for LLM VHDL Generation with Data Synthesis and Evaluation",
+    "summary": "arXiv:2606.13735v1 Announce Type: cross  Abstract: Large Language Models (LLM) have shown impressive capabilities in Register Transfer Level (RTL) code generation, particularly for Verilog. However, evaluating their performance with other Hardware Description Languages (HDL), especially VHDL, remains limited although its distinct language characteristics, such as stricter semantic rules, introduce evaluation considerations that differ from Verilog. This lack of coverage restricts fully understanding of how well current models generalize across hardware design languages with differing structures and semantics. To address this gap, we introduce VHDLSuite, a benchmark-centered infrastructure for scalable VHDL generation evaluation, integrating automated benchmark synthesis, executable validat",
+    "url": "https://arxiv.org/abs/2606.13735",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出LLM生成VHDL的统一流水线，含数据合成与评估。",
+    "llm_tags": [
+      "硬件设计",
+      "VHDL",
+      "🔧 已开源",
+      "代码生成"
+    ]
+  },
+  {
+    "id": "b95d6a70ecec",
+    "title": "SEVRA-BENCH: Social Engineering of Vulnerabilities in Review Agents",
+    "summary": "arXiv:2606.13757v1 Announce Type: cross  Abstract: Large language model (LLM) reviewers are increasingly used in pull-request (PR) workflows, where their approvals help decide which code is merged into a repository. This raises a question that benchmarks for static vulnerability detection or code generation do not address: can an automated reviewer reject a malicious contribution when the attacker controls both the code change and the accompanying PR text? We introduce SEVRA-BENCH (Social Engineering of Vulnerabilities in Review Agents), a benchmark that measures how often an automated reviewer approves such adversarial pull requests. Each malicious PR in SEVRA-BENCH is built from a real project commit that previously fixed a vulnerability listed in the Common Vulnerabilities and Exposures",
+    "url": "https://arxiv.org/abs/2606.13757",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "首个针对代码审查Agent的社会工程攻击基准，含开源数据集。",
+    "llm_tags": [
+      "🔧 已开源",
+      "LLM安全",
+      "代码审查",
+      "红队测试"
+    ]
+  },
+  {
+    "id": "b44e49608907",
+    "title": "Orchestra-o1: Omnimodal Agent Orchestration",
+    "summary": "arXiv:2606.13707v1 Announce Type: cross  Abstract: The recent success of agent swarms has shifted the paradigm of large language model (LLM)-based agents from single-agent workflows to multi-agent systems, highlighting the importance of agent orchestration for task decomposition and collaboration. However, existing orchestration frameworks are limited to a narrow set of modalities and struggle to generalize to more complex settings where heterogeneous modalities coexist and interact. This limitation becomes particularly pronounced in omnimodal scenarios, where tasks require the unified understanding and coordination of diverse inputs such as text, image, audio, and video. In this work, we propose Orchestra-o1, an omnimodal agent orchestration framework designed to support efficient agent c",
+    "url": "https://arxiv.org/abs/2606.13707",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 80,
+    "score": 78,
+    "llm_summary": "提出全模态智能体编排框架，支持异构模态协作。",
+    "llm_tags": [
+      "多智能体",
+      "全模态",
+      "🔧 已开源",
+      "智能体编排"
+    ]
+  },
+  {
+    "id": "710a137016c5",
+    "title": "CuMA: Aligning LLMs with Sparse Cultural Values via Demographic-Aware Mixture of Adapters",
+    "summary": "arXiv:2601.04885v3 Announce Type: replace  Abstract: As Large Language Models (LLMs) serve a global audience, alignment must transition from enforcing universal consensus to respecting cultural pluralism. We demonstrate that dense models, when forced to fit conflicting value distributions, suffer from \\textbf{Mean Collapse}, converging to a generic average that fails to represent diverse groups. We attribute this to \\textbf{Cultural Sparsity}, where gradient interference prevents dense parameters from spanning distinct cultural modes. To resolve this, we propose \\textbf{\\textsc{CuMA}} (\\textbf{Cu}ltural \\textbf{M}ixture of \\textbf{A}dapters), a framework that frames alignment as a \\textbf{conditional capacity separation} problem. By incorporating demographic-aware routing, \\textsc{CuMA} in",
+    "url": "https://arxiv.org/abs/2601.04885",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出人口感知混合适配器解决LLM文化对齐中的均值坍塌问题。",
+    "llm_tags": [
+      "🔧 已开源",
+      "模型对齐",
+      "文化适配",
+      "MoE架构"
+    ]
+  },
+  {
+    "id": "01d4cdfff8a6",
+    "title": "The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation",
+    "summary": "arXiv:2606.13685v1 Announce Type: cross  Abstract: LLM-as-a-Judge is now widely used to rank model outputs, train reward models, and populate public leaderboards, but its run-to-run reliability remains under-characterized. We study repeated identical evaluations on 29 tasks spanning 10 categories using two OpenAI judge models (GPT-4o-mini and GPT-4.1-mini), with 50 pairwise trials and 50 pointwise trials per question, supplemented by temperature and prompt-sensitivity ablations. Across judges, pairwise preferences flip on average 13.6% of the time, with 28% of questions exceeding a 20% flip rate and one question reaching 56%. GPT-4o-mini also exhibits a significant first-position bias (72% A-majority, p = 0.024). At the same time, mean pointwise score gaps are small (0.19--0.36 on a 10-poi",
+    "url": "https://arxiv.org/abs/2606.13685",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "揭示LLM评测中的随机性与偏差，强调可靠性问题",
+    "llm_tags": [
+      "模型评估",
+      "可靠性分析",
+      "LLM评测"
+    ]
+  },
+  {
+    "id": "a604fcd6e58a",
+    "title": "The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation",
+    "summary": "arXiv:2606.13685v1 Announce Type: new  Abstract: LLM-as-a-Judge is now widely used to rank model outputs, train reward models, and populate public leaderboards, but its run-to-run reliability remains under-characterized. We study repeated identical evaluations on 29 tasks spanning 10 categories using two OpenAI judge models (GPT-4o-mini and GPT-4.1-mini), with 50 pairwise trials and 50 pointwise trials per question, supplemented by temperature and prompt-sensitivity ablations. Across judges, pairwise preferences flip on average 13.6% of the time, with 28% of questions exceeding a 20% flip rate and one question reaching 56%. GPT-4o-mini also exhibits a significant first-position bias (72% A-majority, p = 0.024). At the same time, mean pointwise score gaps are small (0.19--0.36 on a 10-point",
+    "url": "https://arxiv.org/abs/2606.13685",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 85,
+    "score": 75,
+    "llm_summary": "揭示LLM评测中的随机性与偏差，强调可靠性问题",
+    "llm_tags": [
+      "模型评估",
+      "可靠性",
+      "偏差分析"
+    ]
+  },
+  {
+    "id": "92c4bbd2bbe2",
+    "title": "Which Models Perform Better in Inheritance Reasoning?",
+    "summary": "arXiv:2606.13751v1 Announce Type: new  Abstract: This paper presents the participation of team PSL in the QIAS 2026 Shared Task on Arabic Islamic inheritance reasoning. The task evaluates the ability of large language models to solve inheritance cases that require legal interpretation, multi-step reasoning, and precise numerical computation. We compare \\textit{commercial} and \\textit{open-source} models under a unified prompting strategy to assess their effectiveness in structured legal reasoning with minimal task-specific adaptation. \\\\ Our results show a clear gap in reliability between the two model families. Commercial models demonstrate stronger performance in identifying eligible heirs, applying exclusion rules, and maintaining consistency across reasoning steps. In contrast, open-so",
+    "url": "https://arxiv.org/abs/2606.13751",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 45,
+    "signal": 75,
+    "score": 60,
+    "llm_summary": "对比开源与商业模型在伊斯兰遗产法推理任务上的表现",
+    "llm_tags": [
+      "🔧 已开源",
+      "法律推理",
+      "LLM评估",
+      "阿拉伯语"
+    ]
+  },
+  {
+    "id": "e085ad6e3751",
+    "title": "MET-Bench: Multimodal Entity Tracking for Evaluating the Limitations of Vision-Language and Reasoning Models",
+    "summary": "arXiv:2502.10886v3 Announce Type: replace  Abstract: Entity state tracking is a necessary component of world modeling that requires maintaining coherent representations of entities over time. Previous work has benchmarked entity tracking performance in purely text-based tasks. We introduce MET-Bench, a multimodal entity tracking benchmark designed to evaluate the ability of vision-language models to track entity states across modalities. Using three domains, we assess how effectively current models integrate textual and image-based state updates. Our findings reveal a significant performance gap between text-based and image-based entity tracking. We empirically show this discrepancy primarily stems from deficits in visual reasoning rather than perception. We further show that explicit text",
+    "url": "https://arxiv.org/abs/2502.10886",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出多模态实体跟踪基准，评估视觉语言模型跨模态推理能力。",
+    "llm_tags": [
+      "多模态",
+      "基准测试",
+      "🔧 已开源",
+      "实体跟踪"
+    ]
+  },
+  {
+    "id": "60fd6be55bc2",
+    "title": "C2-Faith: Benchmarking LLM Judges for Causal and Coverage Faithfulness in Chain-of-Thought Reasoning",
+    "summary": "arXiv:2603.05167v2 Announce Type: replace  Abstract: Large language models (LLMs) are increasingly used as judges of chain-of-thought (CoT) reasoning, yet it remains unclear whether they can reliably assess process faithfulness rather than merely answer plausibility. We introduce C2-Faith, a benchmark built from PRM800K that explicitly decomposes faithfulness into two complementary dimensions: causality (whether each step logically follows from prior context) and coverage (whether essential intermediate inferences are present). Using controlled perturbations, we construct examples with known causal error positions by replacing a single step with a logically inconsistent variant, and with controlled coverage deletions at varying rates, enabling direct measurement against reference labels. W",
+    "url": "https://arxiv.org/abs/2603.05167",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出C2-Faith基准，从因果性和覆盖度评估LLM对思维链推理的评判能力。",
+    "llm_tags": [
+      "评估基准",
+      "思维链",
+      "模型评测"
+    ]
+  },
+  {
+    "id": "e9c20e7b0e9f",
+    "title": "GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge",
+    "summary": "arXiv:2606.14470v1 Announce Type: new  Abstract: Large language model (LLM) reasoning is ephemeral: chains of thought vanish with the context window, pruned search branches leave no record, and memory buffers cannot be diffed, merged, or audited. Every other complex software process (code, infrastructure, data, experiments) is version-controlled; reasoning is not. We introduce GitOfThoughts, which stores an agent's reasoning tree as a git repository: every scored thought is a commit, scores are notes, outcomes are tags, and retrieval is \"git log\" over the agent's own history. This makes reasoning replayable, auditable, and mergeable across agents at near-zero engineering cost.   We then ask the harder question: does memory, in any substrate, actually improve accuracy? Across five substrate",
+    "url": "https://arxiv.org/abs/2606.14470",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "引入Git版本控制机制管理LLM推理树，支持回溯与合并。",
+    "llm_tags": [
+      "智能体",
+      "推理框架",
+      "版本控制"
+    ]
+  },
+  {
+    "id": "4f22e0722429",
+    "title": "Mirage Probes: How Vision Models Fake Visual Understanding",
+    "summary": "arXiv:2606.13870v1 Announce Type: cross  Abstract: Vision-language models (VLMs) can answer image-based questions confidently, and often correctly, even when no image is provided. This mirage behavior inflates benchmark scores without reflecting visual grounding. Prior work treats this as a single failure mode. We argue it is two. Using Mirage Probes, a contrastive probing framework that pairs paraphrased question variants with matched mirage and non-mirage labels on the same image, we show that mirage behavior is linearly decodable from internal activations across residual stream, MLP, post-attention, and attention-head sites in two open-source VLMs. We demonstrate that a Naive Bayes text baseline cannot recover this signal, ruling out surface lexical confounds. Cross-benchmark separabili",
+    "url": "https://arxiv.org/abs/2606.13870",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "揭示视觉语言模型在无图时仍能作答的虚假理解现象并提出检测框架。",
+    "llm_tags": [
+      "多模态",
+      "模型评估",
+      "🔧 已开源",
+      "幻觉检测"
+    ]
+  },
+  {
+    "id": "b8aa6f0964e9",
+    "title": "Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling",
+    "summary": "arXiv:2606.14047v1 Announce Type: cross  Abstract: Long-context language modeling requires not only extending context windows but maintaining coherent understanding of entity states and relationships across thousands of tokens -- a challenge that semantic similarity alone cannot address. KGERMAR addresses this by constructing dynamic, context-specific knowledge graphs from input text during inference, enabling domain-adaptive retrieval that leverages both semantic similarity and explicit entity relationships. The framework performs real-time entity and relation extraction to build contextual knowledge graphs, then integrates graph-structural embeddings with textual semantics through a multi-component memory architecture. Three memory banks -- contextual, semantic, and structural -- are mai",
+    "url": "https://arxiv.org/abs/2606.14047",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-15T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "结合动态知识图谱与检索增强的长上下文建模方法",
+    "llm_tags": [
+      "RAG",
+      "长上下文",
+      "知识图谱"
     ]
   },
   {
