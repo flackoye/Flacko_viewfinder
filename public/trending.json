@@ -1,5 +1,83 @@
 [
   {
+    "id": "5cb23789ab42",
+    "title": "ExtarDev/WorpGPT-Latest-2026 ⭐71",
+    "summary": "A comprehensive Red Teaming framework for testing Large Language Model (LLM) robustness against adversarial prompt engineering and jailbreak vectors.",
+    "url": "https://github.com/ExtarDev/WorpGPT-Latest-2026",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-16T16:59:35.674832+00:00",
+    "created_at": "2026-06-15T14:07:39Z",
+    "stars": 71,
+    "language": "C#",
+    "frontier": 55,
+    "signal": 60,
+    "score": 57,
+    "llm_summary": "开源LLM红队测试框架，用于对抗性提示和越狱测试",
+    "llm_tags": [
+      "LLM安全",
+      "红队测试",
+      "越狱防御"
+    ]
+  },
+  {
+    "id": "2767ff125e12",
+    "title": "vstorm-co/agentcanvas ⭐47",
+    "summary": "Visualize Pydantic AI agent workflows from Logfire traces as an interactive HTML diagram — tools, nested sub-agents, tokens and exact cost.",
+    "url": "https://github.com/vstorm-co/agentcanvas",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-16T16:59:35.674832+00:00",
+    "created_at": "2026-06-12T10:31:06Z",
+    "stars": 47,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "可视化 Pydantic Agent 工作流，展示工具调用与成本",
+    "llm_tags": [
+      "Agent",
+      "可视化",
+      "调试工具"
+    ]
+  },
+  {
+    "id": "70c840bcc8ae",
+    "title": "Subquadratic AI introduces SubQ-1.1-Small, a new model using Smart Sparse Attention",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u7g3wp/subquadratic_ai_introduces_subq11small_a_new/\"> <img alt=\"Subquadratic AI introduces SubQ-1.1-Small, a new model using S",
+    "url": "https://www.reddit.com/r/singularity/comments/1u7g3wp/subquadratic_ai_introduces_subq11small_a_new/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-16T15:04:48+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "Subquadratic AI发布SubQ-1.1-Small模型，采用智能稀疏注意力机制",
+    "llm_tags": [
+      "稀疏注意力",
+      "模型架构",
+      "开源模型"
+    ]
+  },
+  {
+    "id": "c50bc62a6578",
+    "title": "World-first: First human receives therapy to make cells young again (reverse-aging)",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Historic milestone for longevity research. Scientists have treated the first human with a cellular reprogramming therapy designed to rejuvenate aging cells.</p> <p>Bo",
+    "url": "https://www.reddit.com/r/singularity/comments/1u7ac4e/worldfirst_first_human_receives_therapy_to_make/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-16T11:02:00+00:00",
+    "frontier": 85,
+    "signal": 45,
+    "score": 69,
+    "llm_summary": "首例人体细胞重编程抗衰老疗法完成给药",
+    "llm_tags": [
+      "生物计算",
+      "抗衰老",
+      "重编程"
+    ]
+  },
+  {
     "id": "0622a4e5578f",
     "title": "THU-Team-Eureka/EurekAgent ⭐48",
     "summary": "An autonomous research system for metric-driven tasks, built with Claude Code. Define the problem and metric. Get breakthrough results.",
@@ -502,6 +580,24 @@
       "开源生态",
       "训练框架",
       "算法研究"
+    ]
+  },
+  {
+    "id": "1bdbfafb79da",
+    "title": "AGIBOT A3 is now autonomously playing table tennis against humans at the BAAI 2026 conference",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u6nlk7/agibot_a3_is_now_autonomously_playing_table/\"> <img alt=\"AGIBOT A3 is now autonomously playing table tennis against huma",
+    "url": "https://www.reddit.com/r/singularity/comments/1u6nlk7/agibot_a3_is_now_autonomously_playing_table/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-15T17:41:53+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "AGIBOT A3机器人实现人机乒乓球对战，展示运动控制能力。",
+    "llm_tags": [
+      "具身智能",
+      "运动控制",
+      "机器人"
     ]
   },
   {
@@ -3048,25 +3144,6 @@
       "模型部署",
       "Metal",
       "CoreML"
-    ]
-  },
-  {
-    "id": "32c5fbdae789",
-    "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
-    "summary": "",
-    "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-09T10:46:19+00:00",
-    "frontier": 55,
-    "signal": 75,
-    "score": 63,
-    "llm_summary": "演示Agent串联两个Spaces自动构建3D巴黎画廊的实践",
-    "llm_tags": [
-      "AI Agent",
-      "3D生成",
-      "Hugging Face",
-      "工作流"
     ]
   }
 ]
