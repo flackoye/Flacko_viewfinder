@@ -256,6 +256,26 @@ def coarse_filter_arxiv(title: str, abstract: str) -> bool:
     return ai_hits >= 1 and blocked_hits < ai_hits
 
 
+def coarse_rank_arxiv(title: str, summary: str, pre: dict) -> int:
+    """粗筛选品排序分：分越高越可能是精品，用于送筛截断（替代纯按时间）
+
+    本地实测发现：纯按时间截断会让送筛质量随抓取时刻随机波动（CI 曾 0/10 通过，
+    本地同一批逻辑却能 6/12 通过）——因为"最新 20 篇"有时恰好都是中庸论文。
+    改为按质量相关性排序：
+    - AI 关键词命中数（相关性，命中越多越聚焦 AI 核心）
+    - has_code：+3（开源代码→实用性有保障，本地实测有代码论文通过率高）
+    - lab_match：+4（顶级实验室→前沿性有保障）
+    同分再按时间倒序保证新鲜度。
+    """
+    text = (title + " " + summary).lower()
+    score = sum(1 for kw in AI_KEYWORDS if kw in text)
+    if pre.get("has_code"):
+        score += 3
+    if pre.get("lab_match"):
+        score += 4
+    return score
+
+
 def pre_score_paper(title: str, abstract: str, authors: str) -> dict:
     """代码层预筛选，结果注入 LLM Prompt"""
     return {
@@ -397,14 +417,20 @@ async def fetch_hackernews() -> list[dict]:
     """HackerNews AI 相关热门帖子"""
     items = []
     try:
+        # algolia 全文搜索：多词 query 默认 AND（"AI LLM GPT transformer" 要求全含→0 条），
+        # 用 optionalWords 把所有词设为可选即得 OR 语义。切勿用字面 "OR" 或带空格短语
+        # （"machine learning" 会被当整体）。points>5 + 服务端 created_at_i 时间过滤，
+        # 让 algolia 直接返回近 N 天高赞故事——此前 query 写法错误导致 HN 一直 0 items。
+        cutoff_ts = int((datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)).timestamp())
         async with httpx.AsyncClient(timeout=HTTP_TIMEOUT) as client:
             resp = await client.get(
                 "https://hn.algolia.com/api/v1/search",
                 params={
-                    "query": "AI OR LLM OR GPT OR transformer OR machine learning",
+                    "query": "AI LLM GPT transformer",
                     "tags": "story",
                     "hitsPerPage": 15,
-                    "numericFilters": "points>10",
+                    "numericFilters": f"points>5,created_at_i>{cutoff_ts}",
+                    "optionalWords": "AI LLM GPT transformer",
                 },
             )
         data = resp.json()
@@ -488,12 +514,15 @@ async def fetch_arxiv() -> list[dict]:
             except Exception as e:
                 print(f"  ⚠ {source['name']}: {e}")
 
-    # 粗筛后上限保护：按时间倒序截断，只保留最新的
+    # 粗筛后选品：按质量相关性排序（关键词命中 + has_code + lab_match），同分按时间，
+    # 取 top N 送筛——替代纯按时间，避免抓取时刻恰好都是中庸论文导致 0 通过。
+    for item in all_items:
+        item["_rank"] = coarse_rank_arxiv(item["title"], item["summary"], item["_pre_score"])
+    all_items.sort(key=lambda x: (x["_rank"], x.get("timestamp", "")), reverse=True)
     if len(all_items) > ARXIV_MAX_AFTER_COARSE:
-        all_items.sort(key=lambda x: x.get("timestamp", ""), reverse=True)
         dropped = len(all_items) - ARXIV_MAX_AFTER_COARSE
         all_items = all_items[:ARXIV_MAX_AFTER_COARSE]
-        print(f"  ✂️ 粗筛后截断: 保留 {ARXIV_MAX_AFTER_COARSE} 条，丢弃 {dropped} 条")
+        print(f"  ✂️ 选品截断: 保留 {ARXIV_MAX_AFTER_COARSE} 条（按质量相关性排序），丢弃 {dropped} 条")
 
     print(f"  📄 ArXiv 最终送筛: {len(all_items)} items")
     return all_items
@@ -760,7 +789,7 @@ async def run_llm_pass_async(
                     "llm_summary": f"⭐{stars} 高星新仓库，社区热度达标直通入选",
                     "llm_tags": ["⭐高星直通"],
                 }
-                return i, item, result
+                return i, item, result, True
             if mode == "arxiv":
                 arxiv_prompt, user_msg = _build_user_msg_arxiv(item)
                 result = await asyncio.to_thread(
@@ -768,8 +797,9 @@ async def run_llm_pass_async(
                 )
                 if result:
                     has_code = item.get("_pre_score", {}).get("has_code", False)
-                    if not should_accept_arxiv(result["frontier"], result["signal"], has_code):
-                        result = None
+                    accepted = should_accept_arxiv(result["frontier"], result["signal"], has_code)
+                    return i, item, result, accepted
+                return i, item, None, False
             else:
                 user_msg = _build_user_msg_regular(item)
                 result = await asyncio.to_thread(
@@ -777,22 +807,22 @@ async def run_llm_pass_async(
                 )
                 if result:
                     if item.get("source_type") == "open_source":
-                        if not should_accept_opensource(
+                        accepted = should_accept_opensource(
                             result["frontier"], result["signal"], item.get("stars", 0)
-                        ):
-                            result = None
-                    elif not should_accept(result["frontier"], result["signal"]):
-                        result = None
-            return i, item, result
+                        )
+                    else:
+                        accepted = should_accept(result["frontier"], result["signal"])
+                    return i, item, result, accepted
+                return i, item, None, False
 
     print(f"  🤖 筛选 {len(items)} 条 [{mode}]（并发={LLM_CONCURRENCY}）...")
     tasks = [process(i, item) for i, item in enumerate(items)]
     results = await asyncio.gather(*tasks)
 
     passed, rejected = [], []
-    for i, item, result in sorted(results, key=lambda x: x[0]):
-        if result:
-            # 计算综合分
+    for i, item, result, accepted in sorted(results, key=lambda x: x[0]):
+        if result and accepted:
+            # 通过：计算综合分并入库
             if mode == "arxiv":
                 composite = round(result["frontier"] * 0.5 + result["signal"] * 0.5)
                 has_code = item.get("_pre_score", {}).get("has_code", False)
@@ -811,13 +841,22 @@ async def run_llm_pass_async(
             # 清理内部字段
             item.pop("_authors", None)
             item.pop("_pre_score", None)
+            item.pop("_rank", None)
             passed.append(item)
             print(f"    ✅ [{i+1}] F{result['frontier']} S{result['signal']} → {composite} | {result.get('llm_summary', '')}")
         else:
             item.pop("_authors", None)
             item.pop("_pre_score", None)
+            item.pop("_rank", None)
             rejected.append(item)
-            print(f"    ❌ [{i+1}] {item['title'][:40]}...")
+            # ❌ 也打印分数（F/S/综合），让淘汰原因可见——此前 ❌ 黑箱导致无法诊断 0/N 问题
+            if result:
+                composite = (round(result["frontier"] * 0.5 + result["signal"] * 0.5)
+                             if mode == "arxiv"
+                             else round(result["frontier"] * 0.6 + result["signal"] * 0.4))
+                print(f"    ❌ [{i+1}] F{result['frontier']} S{result['signal']} → {composite} | {item['title'][:40]}")
+            else:
+                print(f"    ❌ [{i+1}] (LLM无返回) | {item['title'][:40]}")
 
     return passed, rejected
 

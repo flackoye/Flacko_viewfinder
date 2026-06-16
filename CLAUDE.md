@@ -51,6 +51,8 @@ Python 管道 (scripts/fetch_trending.py)
   - stars ≥ 500 时综合线降至 40
   - ⭐ stars ≥ 200 直通入选（绕过 LLM）：LLM 评分看不到 stars，高星新仓库常被主观误杀（如 ⭐1w+ 的 ponytail 连续被砍），用绝对社区热度兜底。常量 `OPENSOURCE_STAR_FAST_PATH`
 - **LLM 速率控制**: 串行评分（`LLM_CONCURRENCY=1`）+ 请求间隔（`LLM_REQUEST_INTERVAL=6s`），避免触发智谱账户级 RPM 限速（code 1302）。429 退避拉长到 15/30/45/60s 跨过窗口。⚠️ RPM 是账户级共享，Key 分离不隔离速率。
+- **ArXiv 选品** (`coarse_rank_arxiv`): 粗筛通过 ~185 篇后，按**质量相关性**排序（关键词命中数 + has_code×3 + lab_match×4）取 top 20 送筛，而非纯按时间。本地诊断证实：纯按时间会让送筛质量随抓取时刻随机波动（CI 曾连续 0/10，同一套逻辑本地却 6/12 通过——因为"最新 20 篇"有时恰好都是中庸论文）。改为质量排序后 top20 稳定含 12/20 有代码、4/20 顶级实验室。
+- **❌ 可观测**: 淘汰条目也打印 `F/S/综合` 分数，让 0/N 异常可诊断（此前 ❌ 黑箱，无法判断是门槛太高、prompt 过严还是选品差）。
 
 ### 更新公告系统
 - `public/changelog.json` 包含 `announcement`（顶部横幅）和 `entries`（更新日志）
@@ -145,3 +147,4 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py  #
 - OptionTable 组件支持 `value` 字段（数据库用 name 如 "Agent"，前端显示 label 如 "AI Agent"）
 - Vercel 和 GitHub Actions 都需要配置 `SUPABASE_URL` 和 `SUPABASE_SERVICE_KEY` 环境变量
 - 📌 **改完代码必须同步更新文档**（CLAUDE.md / README.md / changelog.json），保持文档与代码一致，主动做不等提醒
+- HackerNews 源用 algolia API（`hn.algolia.com`）：**多词 query 默认 AND**，必须配 `optionalWords`（同值）才得 OR，否则 4 词 query 返回 0；`points>5` + `created_at_i>N天前` 服务端过滤。历史曾因 query 写法错误导致 HN 长期 0 items

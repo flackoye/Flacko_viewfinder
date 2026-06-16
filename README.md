@@ -108,7 +108,7 @@
 **设计逻辑**：多源并发爬取 → 去重 → LLM 双维度评分（前沿性 + 信息含量）→ 分类型 OR 门筛选 → JSON 落地，CI 定时全链路自动化。
 
 **技术要点**：
-- 12 源异步爬取（GitHub / HN / Reddit×5 / ArXiv×2 / RSS×3），ArXiv 用关键词白名单 + 领域黑名单两阶段粗筛，淘汰 ~70% 无关论文后再送 LLM
+- 12 源异步爬取（GitHub / HN / Reddit×5 / ArXiv×2 / RSS×3），ArXiv 两阶段粗筛（关键词白名单 + 黑名单淘汰 ~70%）后按质量相关性选品（关键词命中 + has_code + 顶级实验室）排序取 top 20 送 LLM，避免纯按时间导致送筛质量随抓取时刻随机波动
 - GitHub 初筛用精准关键词 `LLM OR GPT OR transformer`（避开宽泛的 "AI"，召回从 ~11万 降到 ~1.5万），条目 timestamp 取抓取时间而非仓库创建时间，保证在时间线与资讯同步出现
 - GitHub 高星仓库（⭐≥200）绕过 LLM 直接入选——LLM 评分看不到 stars，用绝对社区热度兜底，避免爆款被主观误杀
 - GLM-4.7 评分，5 级锚定 + few-shot 约束漂移；三套 OR 门（通用 ≥80/80/60、ArXiv ≥70/70/65、开源 ≥60/60/50）适配不同内容特征
@@ -216,6 +216,7 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py
 - [x] API Key 职责分离：Embedding / RAG / Trending 三份独立 Key
 - [x] LLM 评分降速 + 开源门槛放宽：串行限速控制 RPM + GitHub 高星仓库专用宽松门
 - [x] GitHub 源优化：精准 query（去 "AI" 避宽泛匹配）+ timestamp 改抓取时间（解决时间线沉底）+ 保留窗口 5→7 天
+- [x] 筛选可观测性 + ArXiv 选品：淘汰条目打印 F/S 分数（告别黑箱）+ 粗筛按质量相关性选品（根治 CI 偶发 0 通过）
 
 ### 进行中 / 计划中 🚧
 
