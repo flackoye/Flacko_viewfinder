@@ -16,6 +16,7 @@ v3 变更：
 """
 
 import asyncio
+import html
 import json
 import math
 import os
@@ -80,6 +81,7 @@ OPENSOURCE_SIGNAL_THRESHOLD = int(_env("OPENSOURCE_SIGNAL_THRESHOLD", "60"))
 OPENSOURCE_COMPOSITE_THRESHOLD = int(_env("OPENSOURCE_COMPOSITE_THRESHOLD", "50"))
 OPENSOURCE_HIGH_STAR_STARS = int(_env("OPENSOURCE_HIGH_STAR_STARS", "500"))  # 达此 stars 综合线再降 10
 OPENSOURCE_STAR_FAST_PATH = int(_env("OPENSOURCE_STAR_FAST_PATH", "200"))  # stars ≥ 此值的 GitHub 仓库绕过 LLM 直接入选（LLM 看不到 stars，高星项目常被主观误杀）
+HN_HIGH_POINTS_FAST_PATH = int(_env("HN_HIGH_POINTS_FAST_PATH", "100"))  # HN points ≥ 此值绕过 LLM 直接入选（外链热点帖 story_text 永远空，LLM 评不出）
 
 # --- LLM ---
 GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7")
@@ -445,14 +447,22 @@ async def fetch_hackernews() -> list[dict]:
                 ts = datetime.now(timezone.utc)
             if ts < datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS):
                 continue
+            # story_text：站内帖(Show HN/Ask HN)有正文，外链热点帖为空（正文在外部网站）
+            story = re.sub(r"<[^>]+>", " ", html.unescape(hit.get("story_text") or "")).strip()
+            if story:
+                summary = f"HN ⭐{hit.get('points', 0)} {hit.get('num_comments', 0)}评 | {story[:300]}"
+            else:
+                summary = f"HN 热度: {hit.get('points', 0)} 点赞, {hit.get('num_comments', 0)} 评论（外链帖无正文）"
             items.append({
                 "id": make_id(title + "HN"),
                 "title": title,
-                "summary": f"HN 热度: {hit.get('points', 0)} 点赞, {hit.get('num_comments', 0)} 评论",
+                "summary": summary,
                 "url": hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID', '')}",
                 "source": "HackerNews",
                 "source_type": "tech_community",
                 "timestamp": ts.isoformat(),
+                "points": hit.get("points", 0),
+                "num_comments": hit.get("num_comments", 0),
             })
     except Exception as e:
         print(f"  ⚠ HackerNews: {e}")
@@ -788,6 +798,20 @@ async def run_llm_pass_async(
                     "signal": composite,
                     "llm_summary": f"⭐{stars} 高星新仓库，社区热度达标直通入选",
                     "llm_tags": ["⭐高星直通"],
+                }
+                return i, item, result, True
+            # HN 高赞直通：外链热点帖 story_text 永远为空（正文在外部网站），LLM 评不出信息
+            # 含量；用绝对热度兜底（与 GitHub 高星直通同思路）
+            if (mode == "regular"
+                    and item.get("source_type") == "tech_community"
+                    and item.get("points", 0) >= HN_HIGH_POINTS_FAST_PATH):
+                points = item["points"]
+                composite = min(int(50 + math.log10(max(points, 10)) * 10), 90)
+                result = {
+                    "frontier": composite,
+                    "signal": composite,
+                    "llm_summary": f"🔥 HN {points}赞 {item.get('num_comments', 0)}评，高赞热点直通入选",
+                    "llm_tags": ["🔥HN高赞"],
                 }
                 return i, item, result, True
             if mode == "arxiv":

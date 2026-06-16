@@ -50,6 +50,7 @@ Python 管道 (scripts/fetch_trending.py)
   - 加权综合 前沿×0.5+信息×0.5 ≥ 50 → 入选
   - stars ≥ 500 时综合线降至 40
   - ⭐ stars ≥ 200 直通入选（绕过 LLM）：LLM 评分看不到 stars，高星新仓库常被主观误杀（如 ⭐1w+ 的 ponytail 连续被砍），用绝对社区热度兜底。常量 `OPENSOURCE_STAR_FAST_PATH`
+  - 🔥 HN points ≥ 100 直通入选（绕过 LLM）：外链热点帖 `story_text` 永远为空（正文在外部网站），LLM 评不出信息含量，用热度兜底。常量 `HN_HIGH_POINTS_FAST_PATH`
 - **LLM 速率控制**: 串行评分（`LLM_CONCURRENCY=1`）+ 请求间隔（`LLM_REQUEST_INTERVAL=6s`），避免触发智谱账户级 RPM 限速（code 1302）。429 退避拉长到 15/30/45/60s 跨过窗口。⚠️ RPM 是账户级共享，Key 分离不隔离速率。
 - **ArXiv 选品** (`coarse_rank_arxiv`): 粗筛通过 ~185 篇后，按**质量相关性**排序（关键词命中数 + has_code×3 + lab_match×4）取 top 20 送筛，而非纯按时间。本地诊断证实：纯按时间会让送筛质量随抓取时刻随机波动（CI 曾连续 0/10，同一套逻辑本地却 6/12 通过——因为"最新 20 篇"有时恰好都是中庸论文）。改为质量排序后 top20 稳定含 12/20 有代码、4/20 顶级实验室。
 - **❌ 可观测**: 淘汰条目也打印 `F/S/综合` 分数，让 0/N 异常可诊断（此前 ❌ 黑箱，无法判断是门槛太高、prompt 过严还是选品差）。

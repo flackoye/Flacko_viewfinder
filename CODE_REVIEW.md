@@ -5,6 +5,8 @@
 
 | 日期 | 对象 | 思路（为什么改） | 解决办法 |
 |------|------|------------------|---------|
+| 2026-06-16 | HN 高赞直通 (`HN_HIGH_POINTS_FAST_PATH`) | 外链高赞热点（"Open source AI must win"1585赞、"AI agent bankrupted"1460赞）`story_text` 永远为空（正文在外部网站），LLM 评不出信息含量被砍——最值钱的热点流失 | `points ≥ 100` 的 HN 帖绕过 LLM 直通入选，score 按 `log10(points)` 映射（100→70，1万→90）。与 GitHub 高星直通同思路：高赞本身是强社区信号 |
+| 2026-06-16 | `fetch_hackernews` summary | HN 喂给 LLM 的 summary 只有"热度 X 点赞"，白白浪费 algolia 返回的 `story_text` 字段（Show HN/Ask HN 站内帖有正文） | summary 改用 `story_text`（去 HTML 标签 + unescape），站内帖带正文；外链帖（story_text 空）标注"外链帖无正文"。注：外链高赞热点正文在外部网站，story_text 永远为空，需另作处理 |
 | 2026-06-16 | `fetch_hackernews` | HN 一直 `🔶 0 items`，两个叠加 bug：① query 带字面 "OR"+空格短语（"machine learning"）algolia 不认；② **algolia 多词 query 默认 AND**，`AI LLM GPT transformer` 4 词要求全含直接返回 0 条。返回的老帖全被本地 7 天窗口过滤光 | query 改 `AI LLM GPT transformer` + `optionalWords` 同值（多词默认 AND，optionalWords 才得 OR 语义）；points `>10`→`>5`；加服务端 `created_at_i>N天前` 时间约束。实测 0→15 条近 7 天高赞 |
 | 2026-06-16 | ArXiv 选品 (`coarse_rank_arxiv`) | CI 偶发 `0/10` 通过，本地同一套逻辑却 `6/12`。诊断发现 `fetch_arxiv` 粗筛后**纯按时间**截断 top20——"最新 20 篇"质量随抓取时刻随机波动，有时恰好都是 60 分中庸论文 | 新增 `coarse_rank_arxiv`：按 `关键词命中 + has_code×3 + lab_match×4` 排序取 top20，精品优先。top20 有代码从 ~0 提升到 12/20、顶级实验室 4/20 |
 | 2026-06-16 | `run_llm_pass_async`（可观测性） | 淘汰条目（❌）不打印分数，导致 `0/N` 这类异常无法诊断——此前黑箱，调门槛/prompt 全靠猜 | `process()` 返回 `accepted` 标记，❌ 行也打印 `F/S/综合` 分数；LLM 无返回时标 `(LLM无返回)` |
