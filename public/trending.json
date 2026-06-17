@@ -1,5 +1,385 @@
 [
   {
+    "id": "17f367df265d",
+    "title": "kingofdwarfs/DeepFake-AI-RealTime ⭐74",
+    "summary": "An advanced, LLM-powered toolkit providing comprehensive capabilities for ethical synthetic media detection, analysis, and responsible content generation.",
+    "url": "https://github.com/kingofdwarfs/DeepFake-AI-RealTime",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-17T04:22:00.943872+00:00",
+    "created_at": "2026-06-15T13:21:41Z",
+    "stars": 74,
+    "language": "C#",
+    "frontier": 55,
+    "signal": 45,
+    "score": 51,
+    "llm_summary": "LLM驱动的实时DeepFake检测与内容生成工具包",
+    "llm_tags": [
+      "DeepFake",
+      "内容生成",
+      "检测"
+    ]
+  },
+  {
+    "id": "e83dc99ce453",
+    "title": "cha0upup/LeoAI ⭐70",
+    "summary": "AI 驱动的后渗透综合管理平台，深度集成 LLM Agent，开箱即用。",
+    "url": "https://github.com/cha0upup/LeoAI",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-17T04:22:00.943872+00:00",
+    "created_at": "2026-06-12T06:48:10Z",
+    "stars": 70,
+    "language": "Java",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "集成LLM Agent的后渗透综合管理平台",
+    "llm_tags": [
+      "LLM Agent",
+      "安全工具",
+      "开源项目"
+    ]
+  },
+  {
+    "id": "747c0aff7410",
+    "title": "MedicalAgentsBench for Complex Medical Reasoning: Comparing Internalized Reasoning Models versus Externalized Agent-based Frameworks",
+    "summary": "arXiv:2503.07459v3 Announce Type: replace  Abstract: Complex medical reasoning requires integrating heterogeneous clinical evidence across multiple inference steps. Large language models (LLMs) now approach this through two routes: internalized reasoning and externalized agent scaffolding (frameworks that decompose problems collaboratively amongst multiple LLMs). To determine whether these routes are exclusive or complementary, we introduce MedicalAgentsBench, a filtered benchmark of 862 complex clinical questions drawn from the union of eight medical datasets via difficulty-aware curation and contamination screening. Evaluating three internalized reasoning models (DeepSeek-R1, o1-mini, and o3-mini), seven base models, and nine externalized agent-based methods, we find that internalized an",
+    "url": "https://arxiv.org/abs/2503.07459",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "构建复杂医疗推理基准，对比LLM内在推理与Agent框架性能。",
+    "llm_tags": [
+      "医疗AI",
+      "Agent框架",
+      "基准测试",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "f5b056b05775",
+    "title": "From Brewing to Resolution: Tracing the Internal Lifecycle of Code Reasoning in LLMs",
+    "summary": "arXiv:2606.17648v1 Announce Type: new  Abstract: Standard accuracy metrics cannot explain why LLMs handle variable tracking but fail on semantically equivalent loops. We study an internal lifecycle of code reasoning in which models first brew the answer, making it linearly recoverable many layers before it becomes self-decodable, and then diverge into one of four resolution outcomes: Resolved, Overprocessed, Misresolved, or Unresolved. Understanding this lifecycle matters because similar task accuracies can mask fundamentally different failure modes that surface-level evaluation cannot detect. We introduce a dual diagnostic framework pairing layer-wise linear probing with Context-Stripped Decoding (CSD) and apply it to six code-reasoning task families across 16 models spanning Qwen, Llama,",
+    "url": "https://arxiv.org/abs/2606.17648",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 72,
+    "score": 74,
+    "llm_summary": "揭示LLM代码推理内部生命周期，定义四种解析结局。",
+    "llm_tags": [
+      "🔧 已开源",
+      "代码推理",
+      "可解释性",
+      "LLM"
+    ]
+  },
+  {
+    "id": "ccf907e2e72f",
+    "title": "DecoSearch: Complexity-Aware Routing and Plan-Level Repair for Text-to-SQL",
+    "summary": "arXiv:2606.17821v1 Announce Type: new  Abstract: Large Language Models (LLMs) have demonstrated remarkable capabilities in translating natural language to SQL, yet existing methods still falter on complex queries requiring multi-step, data-aware reasoning. We introduce DecoSearch, a training-free framework that addresses this by routing each query to the appropriate level of reasoning effort. A lightweight Schema Selector first prunes the full database schema to the relevant tables and columns. An LLM Judger then decides whether the question requires decomposition: straightforward questions follow a direct generation path and complex ones are escalated to a Directed Acyclic Graph (DAG) of atomic sub-questions, each solved by a targeted SQL generation step. A RAG component grounds the decom",
+    "url": "https://arxiv.org/abs/2606.17821",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 72,
+    "score": 68,
+    "llm_summary": "训练无关的Text-to-SQL框架，通过路由与模式选择提升复杂查询能力。",
+    "llm_tags": [
+      "Text-to-SQL",
+      "推理路由",
+      "模式选择",
+      "训练无关"
+    ]
+  },
+  {
+    "id": "72151a0ff1be",
+    "title": "RepSelect: Robust LLM Unlearning via Representation Selectivity",
+    "summary": "arXiv:2606.17168v1 Announce Type: new  Abstract: Making large language models (LLMs) deeply forget specific knowledge and values without sacrificing general capabilities remains a central challenge in unlearning. However, current methods are easily reversed by fine-tuning or few-shot prompting, suggesting their forgetting is only shallow. We identify the root cause. Existing methods target representations shared with both the retain set and the subspace recovered by a fine-tuning attacker, making unlearning both disruptive to general capabilities and easy to reverse. We propose RepSelect (Representation Selectivity), isolates forget-set-specific representations by collapsing top principal components of weight gradients before each update, leaving general capabilities intact while limiting ",
+    "url": "https://arxiv.org/abs/2606.17168",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出表征选择性方法，解决大模型遗忘易被微调逆转的难题。",
+    "llm_tags": [
+      "模型安全",
+      "机器遗忘",
+      "大模型"
+    ]
+  },
+  {
+    "id": "c89d453a9032",
+    "title": "Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search",
+    "summary": "arXiv:2606.17209v1 Announce Type: new  Abstract: Test-time scaling for agentic search typically increases depth (i.e., more turns and tokens per trajectory) or breadth (i.e., more parallel rollouts). Here we focus on breadth scaling, showing that standard parallel sampling yields diminishing returns, tracing this to query redundancy at the first turn. When models issue similar first queries across rollouts, the threads retrieve overlapping evidence, and subsequent turns are conditioned on this shared retrieval. We address this limitation with DivInit, a training-free intervention at the first turn. Rather than sampling k independent first queries, DivInit draws n candidates from a single call, picks k < n diverse seeds, and runs them as parallel trajectories. Across five open-weight models",
+    "url": "https://arxiv.org/abs/2606.17209",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "提出多样化查询初始化解决智能体搜索冗余问题",
+    "llm_tags": [
+      "智能体",
+      "搜索算法",
+      "🔧 已开源",
+      "推理优化"
+    ]
+  },
+  {
+    "id": "b80c82b70b62",
+    "title": "The Stanford EDGAR Filings Dataset: Reconstructing U.S. Corporate and Financial Disclosures into Layout-Faithful and Token-Efficient Pretraining Data",
+    "summary": "arXiv:2606.18192v1 Announce Type: new  Abstract: As high-quality public web corpora become increasingly exhausted, clean long-context documents have become a scarce and expensive source of training data for large language models (LLMs). Existing long-context corpora are often proprietary and costly to acquire, synthetically generated, or concentrated in narrow domains such as programming. We introduce the Stanford EDGAR Filings Dataset (SEFD), an open reconstruction of SEC filings into layout-faithful MultiMarkdown for financial language modeling and evaluation. SEFD makes audited financial statements, risk disclosures, ownership reports, accounting notes, and market-moving event filings usable as long-context pretraining data and as a basis for financial reasoning, forecasting, compliance",
+    "url": "https://arxiv.org/abs/2606.18192",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "开源长上下文金融数据集，重构SEC文档布局与Token效率",
+    "llm_tags": [
+      "数据集",
+      "金融NLP",
+      "长上下文",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "b5121f106e0a",
+    "title": "A Red-Team Study of Anthropic Fable 5 & Opus 4.8 Models",
+    "summary": "arXiv:2606.18193v1 Announce Type: cross  Abstract: We evaluate the adversarial robustness of two frontier large language models (LLMs) developed by Anthropic, Fable 5 and Opus 4.8, against four families of automated jailbreak attack across 7 826 harmful intents spanning a ten-category harm taxonomy. Using the HackAgent red-teaming framework, hundreds of thousands of adversarial attempts were generated and every apparent success was independently re-adjudicated by a panel of three judge models (majority vote). Both models resist the majority of attacks, but the residual surface is larger than aggregate framing suggests: it is dominated by adaptive iterative attacks, while static obfuscation is near-fully neutralised. The strongest adaptive search (tree-of-attacks) breaks Opus 4.8 on 11.5% o",
+    "url": "https://arxiv.org/abs/2606.18193",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "针对Anthropic模型进行大规模红队测试与对抗性鲁棒性评估",
+    "llm_tags": [
+      "大模型安全",
+      "红队测试",
+      "对抗攻击",
+      "鲁棒性评估"
+    ]
+  },
+  {
+    "id": "bd4d4594c2d6",
+    "title": "ALAS: An Automatic Latent Alignment Score for Audio Language Models",
+    "summary": "arXiv:2505.19937v3 Announce Type: replace  Abstract: Large Language Models (LLMs) are extended into Speech-LLMs, and the quality of the audio--text alignment they learn affects most downstream Spoken Language Understanding (SLU) behavior. Yet despite a growth of fusion strategies, there is no standard way to measure how well a Speech-LLM internally binds audio frames to text tokens. We introduce ALAS (Automatic Latent Alignment Score), a model and task-agnostic metric that probes the LLM's per-layer hidden states, scoring the cross-modal cosine similarity between audio and text representations against a Whisper-derived reference. ALAS needs only a frozen forward pass and an off-the-shelf ASR reference, with no training or fitted classifier, and is calibrated to an interpretable uniform bas",
+    "url": "https://arxiv.org/abs/2505.19937",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出通用指标ALAS，评估语音语言模型音文对齐质量。",
+    "llm_tags": [
+      "语音语言模型",
+      "评估指标",
+      "🔧 已开源",
+      "多模态对齐"
+    ]
+  },
+  {
+    "id": "712c5787a8a1",
+    "title": "Adaptive Activation Steering for Efficient LLM Reasoning via Closed-Loop PID Control",
+    "summary": "arXiv:2506.18831v3 Announce Type: replace  Abstract: Reasoning LLMs trained with long chain-of-thought often overthink: they spend tokens on redundant reflection and transitions that inflate cost without improving accuracy. Static activation steering (e.g.\\ SEAL) suppresses such content with a fixed vector, but applies the same strength regardless of how redundant the current chunk actually is. We describe PID-steering, a training-free, decoding-time method that modulates the steering strength with a PID controller driven by a lightweight chunk-level redundancy classifier. On a subset of GSM8K with DeepSeek-R1-Distill-Qwen-1.5B, the method improves accuracy from 85.7\\% to 89.6\\% (+3.9 pp) while cutting average output length from 1026 to 790 tokens ($-$23\\%). We report it as a small-scale p",
+    "url": "https://arxiv.org/abs/2506.18831",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 65,
+    "score": 68,
+    "llm_summary": "引入PID控制机制动态调整激活强度，抑制LLM推理中的冗余思考。",
+    "llm_tags": [
+      "推理加速",
+      "激活引导",
+      "控制论",
+      "训练无关"
+    ]
+  },
+  {
+    "id": "dc77d2721e47",
+    "title": "Your AI Travel Agent Would Book You a Bullfight: An Agentic Benchmark for Implicit Animal Welfare in Frontier AI Models",
+    "summary": "arXiv:2606.18142v1 Announce Type: new  Abstract: AI agents are moving from advisors to actors, booking travel, planning menus, and running procurement on behalf of users. Existing benchmarks for AI and animal welfare evaluate model text responses to question-answer prompts, leaving open whether the welfare reasoning surfaced in those responses transfers to agentic deployment where the model must take actions with tools. We introduce TAC (Travel Agent Compassion), the first agentic benchmark measuring whether AI agents avoid options involving animal exploitation when acting on behalf of users. TAC presents an AI agent with twelve hand-authored travel booking scenarios across six categories of animal exploitation, augmented to forty-eight samples to control for price, rating, and position co",
+    "url": "https://arxiv.org/abs/2606.18142",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "首个评估AI智能体动物福利推理的基准TAC",
+    "llm_tags": [
+      "智能体",
+      "基准测试",
+      "安全评估",
+      "伦理"
+    ]
+  },
+  {
+    "id": "e6446e577a0e",
+    "title": "Pulling The REINS: Training-Free Safety Alignment of Video Diffusion Models via Representation Steering",
+    "summary": "arXiv:2606.17257v1 Announce Type: cross  Abstract: Open-weight video diffusion models can generate photorealistic unsafe content, from violence to misinformation, yet existing defenses either require expensive safety fine-tuning that degrades general capability, or apply external filters that are trivially bypassed by adversarial prompts. We present REINS (REpresentation-space INference-time Safety steering), a training-free method that aligns video diffusion models at inference time by steering their internal representations toward safe generation. Our key finding is that safety-relevant structure is linearly encoded in the hidden-state activations of video diffusion transformers, and a single direction, discovered via Supervised PCA on binary safety labels, suffices to separate safe from",
+    "url": "https://arxiv.org/abs/2606.17257",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出无需训练的推理时表征引导方法，实现视频扩散模型的安全对齐。",
+    "llm_tags": [
+      "视频生成",
+      "安全对齐",
+      "推理干预"
+    ]
+  },
+  {
+    "id": "c1eec81cacd7",
+    "title": "Not Truly Multilingual: Script Consistency as a Missing Dimension in VLM Evaluation",
+    "summary": "arXiv:2606.17188v1 Announce Type: cross  Abstract: Current multilingual evaluations for Vision-Language Models (VLMs) assume a one-to-one mapping between language and orthography, overlooking billions of users of multi-script languages. We introduce PuMVR (Punjabi Multimodal Visual Reasoning), a benchmark of 1,000 strictly parallel image-text instances across Punjabi's three active scripts: Gurmukhi, Shahmukhi, and Roman. Evaluating 10 state-of-the-art VLMs, we expose a substantial and systematic Script Gap. Models frequently solve visual tasks in one script while failing identical tasks in another, with accuracy deltas reaching 16%. Crucially, visual input boosts absolute performance uniformly yet does not close the orthographic gap. Furthermore, cross-script in-context transfer is highly",
+    "url": "https://arxiv.org/abs/2606.17188",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出多脚本基准PuMVR，揭示VLM在多文字语言上的评估盲区。",
+    "llm_tags": [
+      "🔧 已开源",
+      "多模态",
+      "基准测试",
+      "多语言"
+    ]
+  },
+  {
+    "id": "8bd945a88bd2",
+    "title": "Your AI Travel Agent Would Book You a Bullfight: An Agentic Benchmark for Implicit Animal Welfare in Frontier AI Models",
+    "summary": "arXiv:2606.18142v1 Announce Type: cross  Abstract: AI agents are moving from advisors to actors, booking travel, planning menus, and running procurement on behalf of users. Existing benchmarks for AI and animal welfare evaluate model text responses to question-answer prompts, leaving open whether the welfare reasoning surfaced in those responses transfers to agentic deployment where the model must take actions with tools. We introduce TAC (Travel Agent Compassion), the first agentic benchmark measuring whether AI agents avoid options involving animal exploitation when acting on behalf of users. TAC presents an AI agent with twelve hand-authored travel booking scenarios across six categories of animal exploitation, augmented to forty-eight samples to control for price, rating, and position ",
+    "url": "https://arxiv.org/abs/2606.18142",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "首个评估AI智能体在动物福利方面推理能力的基准测试。",
+    "llm_tags": [
+      "智能体",
+      "基准测试",
+      "AI伦理",
+      "安全评估"
+    ]
+  },
+  {
+    "id": "51299604e404",
+    "title": "LLM-as-Judge in Education: A Curriculum-Grounded Marking Pipeline",
+    "summary": "arXiv:2606.17507v1 Announce Type: new  Abstract: Generative AI and large language models (LLMs) are increasingly applied to question generation and automated assessment. However, deploying LLMs in preparation for high-stakes exams requires more than prompt engineering; it demands software pipelines that systematically ground model outputs in authorised curriculum artefacts and marking guidelines issued by education authorities. This paper presents a curriculum-grounded, configurable LLM-as-Judge pipeline for question-level marking, co-developed with an industrial partner, to support exam preparation for university admission. The pipeline identifies the relevant topics, subtopics, and cognitive demand of a question, and assembles verifiable and authorised context to support LLM judgement. C",
+    "url": "https://arxiv.org/abs/2606.17507",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出基于课程大纲的LLM自动评分流水线，提升教育评估准确性。",
+    "llm_tags": [
+      "教育评估",
+      "RAG",
+      "LLM应用",
+      "流水线"
+    ]
+  },
+  {
+    "id": "b7bfb2b13960",
+    "title": "FinAcumen: Financial Multimodal Reasoning via Self-Evolving Experience Memory Harness",
+    "summary": "arXiv:2606.17642v1 Announce Type: new  Abstract: Financial multimodal reasoning requires agents to coordinate numerical computation, retrieval, visual interpretation, and temporal grounding across heterogeneous evidence sources. Existing tool-augmented agents improve execution fidelity, yet remain largely stateless across episodes, repeatedly rediscovering reasoning strategies and failure patterns. In high-stakes financial settings, this leads to unreliable tool routing, noisy retrieval, and hallucination-prone reasoning. We present FinAcumen, a financial reasoning agent framework centered on selective experience memory for tool-augmented multimodal reasoning. FinAcumen accumulates financially grounded reasoning experience from prior trajectories, distilling successful strategies and failu",
+    "url": "https://arxiv.org/abs/2606.17642",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出自演化经验记忆机制，提升金融多模态推理的可靠性",
+    "llm_tags": [
+      "多模态",
+      "智能体",
+      "金融",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "6cfb358bdaca",
+    "title": "LongWebBench: Evaluating Structural and Functional Webpage Generation in Long-Horizon Settings",
+    "summary": "arXiv:2606.17727v1 Announce Type: new  Abstract: Recent vision-language models (VLMs) have shown promising progress in generating webpages from visual inputs, yet existing evaluations mainly focus on short, single-screen, and largely static webpages. We introduce LongWebBench, a benchmark for evaluating long-horizon webpage generation from both structural and functional perspectives. LongWebBench contains 490 real-world long webpages for structural fidelity evaluation and 507 goal-oriented interaction tasks over 129 webpages for functional evaluation. It employs two complementary protocols: a multi-dimensional VLM-based metric for assessing long-range structural coherence, and a DOM-augmented agent-based pipeline for end-to-end functional verification. We further examine the automatic eval",
+    "url": "https://arxiv.org/abs/2606.17727",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-17T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出长视界网页生成基准，评估结构与功能性。",
+    "llm_tags": [
+      "多模态",
+      "基准测试",
+      "网页生成",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "30f040171c1a",
+    "title": "OpenAI plans to release GPT-Bidi-1, its next-generation voice model",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Bidi as Bidirectional, a model designed to listen and speak at once, absorb interruptions, and adjust mid-sentence rather than freezing the moment a user says &quot;m",
+    "url": "https://www.reddit.com/r/singularity/comments/1u7z681/openai_plans_to_release_gptbidi1_its/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-17T03:39:52+00:00",
+    "frontier": 85,
+    "signal": 45,
+    "score": 69,
+    "llm_summary": "OpenAI计划发布支持全双工对话和实时打断的语音模型GPT-Bidi-1",
+    "llm_tags": [
+      "语音模型",
+      "实时交互",
+      "OpenAI"
+    ]
+  },
+  {
+    "id": "fe84e7f0691e",
+    "title": "Z.ai releases GLM 5.2 model: Long Horizon tasks and open weights",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u7l9yu/zai_releases_glm_52_model_long_horizon_tasks_and/\"> <img alt=\"Z.ai releases GLM 5.2 model: Long Horizon tasks and open w",
+    "url": "https://www.reddit.com/r/singularity/comments/1u7l9yu/zai_releases_glm_52_model_long_horizon_tasks_and/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-16T18:08:48+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "Z.ai发布GLM 5.2模型，支持长时任务并开源权重",
+    "llm_tags": [
+      "开源模型",
+      "长上下文",
+      "GLM"
+    ]
+  },
+  {
     "id": "5cb23789ab42",
     "title": "ExtarDev/WorpGPT-Latest-2026 ⭐71",
     "summary": "A comprehensive Red Teaming framework for testing Large Language Model (LLM) robustness against adversarial prompt engineering and jailbreak vectors.",
@@ -57,6 +437,23 @@
       "稀疏注意力",
       "模型架构",
       "开源模型"
+    ]
+  },
+  {
+    "id": "468ce11d8ca5",
+    "title": "The Download: the first brain implant power user and South Korea’s AI obsession",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. This man with ALS is the first “power user” of a brain implant that lets him speak Casey Harrell has had a set of electrodes embedded in his brain for almost&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/16/1139010/the-download-brain-implant-power-user-bci-south-korea-ai-obsession/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-16T12:10:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "首位脑机接口重度用户通过植入电极恢复语音能力",
+    "llm_tags": [
+      "脑机接口",
+      "医疗AI"
     ]
   },
   {
@@ -544,6 +941,24 @@
       "RAG",
       "简历优化",
       "LLM应用"
+    ]
+  },
+  {
+    "id": "40a6b4c3ba30",
+    "title": "Predicting model behavior before release by simulating deployment",
+    "summary": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy.",
+    "url": "https://openai.com/index/deployment-simulation",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-16T00:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "OpenAI提出部署模拟法，利用真实对话数据预测模型行为以提升安全性。",
+    "llm_tags": [
+      "模型评估",
+      "AI安全",
+      "红队测试"
     ]
   },
   {
