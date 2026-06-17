@@ -1,5 +1,96 @@
 [
   {
+    "id": "ad8b1b83f52f",
+    "title": "MolmoMotion: Language-guided 3D motion forecasting",
+    "summary": "",
+    "url": "https://huggingface.co/blog/allenai/molmomotion",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-17T15:26:44+00:00",
+    "frontier": 75,
+    "signal": 78,
+    "score": 76,
+    "llm_summary": "MolmoMotion：基于语言引导的3D运动预测模型",
+    "llm_tags": [
+      "多模态",
+      "3D视觉",
+      "运动预测"
+    ]
+  },
+  {
+    "id": "8e02f1b14458",
+    "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
+    "summary": "",
+    "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-17T10:18:05+00:00",
+    "frontier": 75,
+    "signal": 80,
+    "score": 77,
+    "llm_summary": "HF发布Strands Agents与LeRobot，连接模型库与机器人硬件。",
+    "llm_tags": [
+      "机器人",
+      "LeRobot",
+      "智能体",
+      "开源"
+    ]
+  },
+  {
+    "id": "161891337ab4",
+    "title": "GLM-5.2: Built for Long-Horizon Tasks",
+    "summary": "",
+    "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-17T09:01:25+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "GLM-5.2发布，专为长上下文任务优化，提升长程推理能力",
+    "llm_tags": [
+      "大语言模型",
+      "长上下文",
+      "推理"
+    ]
+  },
+  {
+    "id": "c72ddb035d6e",
+    "title": "Next-Latent Prediction Transformers [R]",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1u84mio/nextlatent_prediction_transformers_r/\"> <img alt=\"Next-Latent Prediction Transformers [R]\" src=\"https://preview.redd",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1u84mio/nextlatent_prediction_transformers_r/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-17T08:44:28+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 79,
+    "llm_summary": "提出Next-Latent预测Transformer，探索新架构范式",
+    "llm_tags": [
+      "模型架构",
+      "Transformer",
+      "自监督学习"
+    ]
+  },
+  {
+    "id": "9371d65d0e02",
+    "title": "What is Speculative Decoding? (trending on paperswithco.de) [R]",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1u83kzt/what_is_speculative_decoding_trending_on/\"> <img alt=\"What is Speculative Decoding? (trending on paperswithco.de) [R",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1u83kzt/what_is_speculative_decoding_trending_on/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-17T07:41:34+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "社区讨论推测解码技术原理，解析其加速机制与效果",
+    "llm_tags": [
+      "推理加速",
+      "LLM",
+      "采样算法"
+    ]
+  },
+  {
     "id": "17f367df265d",
     "title": "kingofdwarfs/DeepFake-AI-RealTime ⭐74",
     "summary": "An advanced, LLM-powered toolkit providing comprehensive capabilities for ethical synthetic media detection, analysis, and responsible content generation.",
@@ -3372,193 +3463,6 @@
       "扩散模型",
       "Gemma",
       "图像生成"
-    ]
-  },
-  {
-    "id": "c58882352327",
-    "title": "Fully autonomous AI-controlled drones have killed human soldiers for the first time",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u259si/fully_autonomous_aicontrolled_drones_have_killed/\"> <img alt=\"Fully autonomous AI-controlled drones have killed human sol",
-    "url": "https://www.reddit.com/r/artificial/comments/1u259si/fully_autonomous_aicontrolled_drones_have_killed/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T15:21:41+00:00",
-    "frontier": 75,
-    "signal": 40,
-    "score": 61,
-    "llm_summary": "全自主AI无人机首次在实战中击杀人类士兵",
-    "llm_tags": [
-      "军事AI",
-      "自主系统",
-      "无人机"
-    ]
-  },
-  {
-    "id": "d6cf84577b37",
-    "title": "[R] AI Agent Security: The Complete Guide to Threats, Defenses, and the Future of Autonomous AI Safety [R]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>This is a comprehensive living reference guide to AI agent security — synthesizing 18 articles from The Agent Report covering the 75-day period (April–June 2026) when",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1u242n9/r_ai_agent_security_the_complete_guide_to_threats/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T14:38:46+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "AI Agent安全综合指南，涵盖威胁防御与未来安全方向",
-    "llm_tags": [
-      "AI安全",
-      "Agent",
-      "防御机制"
-    ]
-  },
-  {
-    "id": "42f28dc4c133",
-    "title": "We have a new SimpleBench king",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u22k1p/we_have_a_new_simplebench_king/\"> <img alt=\"We have a new SimpleBench king\" src=\"https://preview.redd.it/12u7mlk9lg6h1.p",
-    "url": "https://www.reddit.com/r/singularity/comments/1u22k1p/we_have_a_new_simplebench_king/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T13:41:15+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 67,
-    "llm_summary": "新模型登顶SimpleBench基准测试，展示强推理能力",
-    "llm_tags": [
-      "基准测试",
-      "大模型",
-      "推理"
-    ]
-  },
-  {
-    "id": "21c5a149d92f",
-    "title": "SkyBlue997/enableMacosAI ⭐195",
-    "summary": "国行 Mac 一键开启完整 Apple 智能(端侧 + Private Cloud Compute 云端)· macOS 27 / Apple Silicon",
-    "url": "https://github.com/SkyBlue997/enableMacosAI",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-10T13:23:39Z",
-    "stars": 195,
-    "language": "Shell",
-    "frontier": 60,
-    "signal": 75,
-    "score": 66,
-    "llm_summary": "国行Mac一键解锁完整Apple智能功能，支持端侧与云端",
-    "llm_tags": [
-      "Apple Intelligence",
-      "macOS",
-      "工具脚本"
-    ]
-  },
-  {
-    "id": "cd3acecf4e01",
-    "title": "Pokémon Go data ‘exploited to develop navigation’ for military drones",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u21qcb/pokémon_go_data_exploited_to_develop_navigation/\"> <img alt=\"Pokémon Go data ‘exploited to develop navigation’ for milita",
-    "url": "https://www.reddit.com/r/artificial/comments/1u21qcb/pokémon_go_data_exploited_to_develop_navigation/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T13:08:10+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "利用游戏数据训练无人机导航，展示数据复用潜力",
-    "llm_tags": [
-      "无人机",
-      "数据集",
-      "计算机视觉"
-    ]
-  },
-  {
-    "id": "301feb3ffd35",
-    "title": "vinayaklatthe/microsoft-security-skills ⭐62",
-    "summary": "Curated Microsoft Security skills for AI agents - Defender, Sentinel, Entra, Purview, Intune, Security Copilot",
-    "url": "https://github.com/vinayaklatthe/microsoft-security-skills",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-10T11:39:11Z",
-    "stars": 62,
-    "language": "JavaScript",
-    "frontier": 55,
-    "signal": 75,
-    "score": 63,
-    "llm_summary": "整理微软安全技能知识库，赋能AI智能体操作安全产品。",
-    "llm_tags": [
-      "AI智能体",
-      "安全运维",
-      "知识库"
-    ]
-  },
-  {
-    "id": "60997d7b5d0f",
-    "title": "MooreThreads/MusaCoder-27B • Huggingface",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1zjw0/moorethreadsmusacoder27b_huggingface/\"> <img alt=\"MooreThreads/MusaCoder-27B • Huggingface\" src=\"https://external-preview",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1zjw0/moorethreadsmusacoder27b_huggingface/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T11:32:16+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "摩尔线程发布27B代码模型，支持国产GPU推理",
-    "llm_tags": [
-      "国产算力",
-      "代码模型",
-      "开源模型"
-    ]
-  },
-  {
-    "id": "cfc0d8faa4c7",
-    "title": "Cohere released North Mini Code: It's first Open-Source Agentic Coding Model",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u1za0m/cohere_released_north_mini_code_its_first/\"> <img alt=\"Cohere released North Mini Code: It's first Open-Source Agentic Co",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u1za0m/cohere_released_north_mini_code_its_first/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T11:18:53+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "Cohere发布首个开源智能体代码模型North Mini Code",
-    "llm_tags": [
-      "代码模型",
-      "开源",
-      "Agent"
-    ]
-  },
-  {
-    "id": "2a2a32264013",
-    "title": "Claude Fable 5 pricing is $50/Million tokens… are we reaching enterprise-only AI?",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/ChatGPT/comments/1u1woil/claude_fable_5_pricing_is_50million_tokens_are_we/\"> <img alt=\"Claude Fable 5 pricing is $50/Million tokens… are we reaching",
-    "url": "https://www.reddit.com/r/ChatGPT/comments/1u1woil/claude_fable_5_pricing_is_50million_tokens_are_we/",
-    "source": "r/ChatGPT",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T08:56:01+00:00",
-    "frontier": 85,
-    "signal": 60,
-    "score": 75,
-    "llm_summary": "Claude Fable 5 定价曝光，每百万 tokens 50 美元引发讨论",
-    "llm_tags": [
-      "大模型",
-      "定价策略",
-      "Claude"
-    ]
-  },
-  {
-    "id": "f2b3b76a1059",
-    "title": "john-rocky/coreai-model-zoo ⭐106",
-    "summary": "Community model zoo + knowledge base for Apple Core AI (iOS/macOS 27): Qwen3.5 & Gemma 4 converted end-to-end, verified on-device (iPhone 17 Pro GPU/ANE), conversion gotchas, custom Metal kernels, Swi",
-    "url": "https://github.com/john-rocky/coreai-model-zoo",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-10T05:21:10Z",
-    "stars": 106,
-    "language": "Swift",
-    "frontier": 85,
-    "signal": 88,
-    "score": 86,
-    "llm_summary": "苹果端侧模型库：Qwen3.5与Gemma4端到端转换及Metal内核优化",
-    "llm_tags": [
-      "端侧AI",
-      "模型部署",
-      "Metal",
-      "CoreML"
     ]
   }
 ]
