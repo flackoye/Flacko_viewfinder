@@ -1,5 +1,86 @@
 [
   {
+    "id": "281c0e08d056",
+    "title": "Happy-Chen-CH/Educational_RAG_System ⭐75",
+    "summary": "面向教育场景的RAG智能问答系统，融合关键词匹配与语义检索双引擎，融合MySQL和RAG技术，先经过MySQL数据库的检索(还融合了Redis辅助储存和搜索)，若无符合条件答案，则进入RAG系统，RAG知识库中的知识储存在Milvus向量数据库中",
+    "url": "https://github.com/Happy-Chen-CH/Educational_RAG_System",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-18T15:31:17.401499+00:00",
+    "created_at": "2026-06-15T11:50:53Z",
+    "stars": 75,
+    "language": "Python",
+    "frontier": 45,
+    "signal": 65,
+    "score": 53,
+    "llm_summary": "教育场景RAG系统，结合MySQL/Redis与Milvus向量库实现双引擎检索。",
+    "llm_tags": [
+      "RAG",
+      "向量数据库",
+      "混合检索"
+    ]
+  },
+  {
+    "id": "5c9cba1c46df",
+    "title": "agiwhitelist/tokdiet ⭐60",
+    "summary": "Local streaming reverse proxy between AI coding agents (Claude Code, Cursor, Codex) and model APIs (Anthropic, OpenAI, Gemini, MiniMax). Meters every token + USD cost, compacts bloated context to cut ",
+    "url": "https://github.com/agiwhitelist/tokdiet",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-18T15:31:17.401499+00:00",
+    "created_at": "2026-06-16T17:26:01Z",
+    "stars": 60,
+    "language": "TypeScript",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "AI编码代理与模型API间的本地代理，支持计费与上下文压缩。",
+    "llm_tags": [
+      "代理工具",
+      "成本优化",
+      "上下文压缩"
+    ]
+  },
+  {
+    "id": "f866c1f5a650",
+    "title": "Renaissance-Mind/DrawAI ⭐56",
+    "summary": "Make raster image ediatble. 将生成图像（如GPT-Image-2或Nano Banana）或截图变为可编辑的格式，实现高质量PPT、论文图直出。",
+    "url": "https://github.com/Renaissance-Mind/DrawAI",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-18T15:31:17.401499+00:00",
+    "created_at": "2026-06-15T19:45:41Z",
+    "stars": 56,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 45,
+    "score": 51,
+    "llm_summary": "将生成图像或截图转为可编辑格式，直出高质量图表",
+    "llm_tags": [
+      "图像编辑",
+      "矢量转换",
+      "开源工具"
+    ]
+  },
+  {
+    "id": "490ab669f10a",
+    "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+    "summary": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases.",
+    "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-18T08:00:00+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "OpenAI推理模型辅助诊断儿童罕见遗传病，解决18例疑难病例。",
+    "llm_tags": [
+      "医疗AI",
+      "推理模型",
+      "罕见病"
+    ]
+  },
+  {
     "id": "efa3c365bd0e",
     "title": "dzcmemory-web/bazi-ziwei-skill ⭐177",
     "summary": "AI 八字 + 紫微斗数排盘与综合印证 Skill：算法精准排盘（不靠 LLM 猜），三种分析模式，一键生成水墨风 HTML 命盘海报。兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent。",
@@ -401,6 +482,44 @@
       "语音对齐",
       "🔧 已开源",
       "工具更新"
+    ]
+  },
+  {
+    "id": "7fab276b62eb",
+    "title": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
+    "summary": "",
+    "url": "https://huggingface.co/blog/peft-beyond-lora",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-18T00:00:00+00:00",
+    "frontier": 55,
+    "signal": 88,
+    "score": 68,
+    "llm_summary": "对比LoRA与全量微调及其他PEFT方法的性能差异与适用场景",
+    "llm_tags": [
+      "模型微调",
+      "PEFT",
+      "LoRA",
+      "LLM"
+    ]
+  },
+  {
+    "id": "0654db6f3792",
+    "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+    "summary": "",
+    "url": "https://huggingface.co/blog/is-it-agentic-enough",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-18T00:00:00+00:00",
+    "frontier": 65,
+    "signal": 85,
+    "score": 73,
+    "llm_summary": "介绍如何使用自定义工具评估开源模型的智能体能力",
+    "llm_tags": [
+      "智能体",
+      "模型评估",
+      "开源模型",
+      "工具调用"
     ]
   },
   {
@@ -3292,193 +3411,6 @@
       "模型微调",
       "开源项目",
       "成本优化"
-    ]
-  },
-  {
-    "id": "b7bd93b45845",
-    "title": "DiffusionGemma under real workloads feels very different from benchmark demos",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u30dhr/diffusiongemma_under_real_workloads_feels_very/\"> <img alt=\"DiffusionGemma under real workloads feels very different from",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u30dhr/diffusiongemma_under_real_workloads_feels_very/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-11T14:18:24+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "实测DiffusionGemma在真实负载下表现与基准演示差异大",
-    "llm_tags": [
-      "扩散模型",
-      "模型评测",
-      "开源模型"
-    ]
-  },
-  {
-    "id": "5ae6fadd8201",
-    "title": "As we know Minimax M3 is just going to be open sourced in few days and because of that I was surfing on internet searching for its scores and I found out pretty interesting results. Is Minimax M3 really that good in agentic stuff and in coding? Is it better than older gpt models?",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u2zfqs/as_we_know_minimax_m3_is_just_going_to_be_open/\"> <img alt=\"As we know Minimax M3 is just going to be open sourced in few",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2zfqs/as_we_know_minimax_m3_is_just_going_to_be_open/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-11T13:41:47+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 67,
-    "llm_summary": "社区讨论Minimax M3开源前的基准测试表现及代码能力",
-    "llm_tags": [
-      "开源模型",
-      "基准测试",
-      "代码能力"
-    ]
-  },
-  {
-    "id": "108bc2164e86",
-    "title": "omnigent-ai/omnigent ⭐1042",
-    "summary": "A meta-harness for all your AI agents.  Omnigent provides a common layer over Claude Code, Codex, Pi, and the agents you write yourself: swap or combine harnesses without rewriting, keep them in check",
-    "url": "https://github.com/omnigent-ai/omnigent",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-11T12:18:13Z",
-    "stars": 1042,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 65,
-    "score": 59,
-    "llm_summary": "统一管理 Claude Code 等多种 AI Agent 的元框架",
-    "llm_tags": [
-      "Agent框架",
-      "开发工具",
-      "开源"
-    ]
-  },
-  {
-    "id": "163a75539f59",
-    "title": "We captured the network traffic of ChatGPT, Gemini and DeepSeek to see how each defines a \"source\" — they're three completely different mechanisms",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Disclosure upfront: I'm the founder of an AI-visibility company, so this research scratches our own itch. Our domain was excluded from all counts before analysis. Not",
-    "url": "https://www.reddit.com/r/artificial/comments/1u2xdmg/we_captured_the_network_traffic_of_chatgpt_gemini/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-11T12:15:02+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "对比ChatGPT、Gemini和DeepSeek的网络流量，揭示三者定义“来源”的机制差异。",
-    "llm_tags": [
-      "网络分析",
-      "RAG",
-      "LLM架构"
-    ]
-  },
-  {
-    "id": "c7a4b3de732e",
-    "title": "Google DeepMind is worried about what happens when millions of agents start to interact",
-    "summary": "Google DeepMind is funding research into the potential dangers of situations where millions of different AI agents interact with each other online. According to Rohin Shah, who directs the company’s AGI safety and alignment research, the mass-market arrival of agents that can carry out tasks without human oversight and follow instructions given to them by other&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-11T11:00:45+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "DeepMind研究数百万AI智能体交互带来的潜在风险",
-    "llm_tags": [
-      "AI安全",
-      "智能体",
-      "多智能体"
-    ]
-  },
-  {
-    "id": "578f65f68fdf",
-    "title": "TestSprite/testsprite-cli ⭐176",
-    "summary": "Official TestSprite CLI — AI-powered automated testing from your terminal",
-    "url": "https://github.com/TestSprite/testsprite-cli",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-11T10:44:15Z",
-    "stars": 176,
-    "language": "TypeScript",
-    "frontier": 45,
-    "signal": 55,
-    "score": 49,
-    "llm_summary": "TestSprite CLI发布，支持终端运行AI自动化测试。",
-    "llm_tags": [
-      "自动化测试",
-      "CLI工具",
-      "AI应用"
-    ]
-  },
-  {
-    "id": "e4b6ac0aab2d",
-    "title": "Minimax M3 open weights release planned for Friday",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u2uje1/minimax_m3_open_weights_release_planned_for_friday/\"> <img alt=\"Minimax M3 open weights release planned for Friday\" src=\"",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2uje1/minimax_m3_open_weights_release_planned_for_friday/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-11T09:49:07+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 67,
-    "llm_summary": "Minimax M3 模型计划周五开源权重",
-    "llm_tags": [
-      "开源模型",
-      "Minimax"
-    ]
-  },
-  {
-    "id": "2fc6afb6e5ed",
-    "title": "recursive-org/first-steps-toward-automated-ai-research ⭐75",
-    "summary": "Research artifacts from Recursive's automated AI research system",
-    "url": "https://github.com/recursive-org/first-steps-toward-automated-ai-research",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-11T07:53:35Z",
-    "stars": 75,
-    "language": "Python",
-    "frontier": 85,
-    "signal": 60,
-    "score": 75,
-    "llm_summary": "Recursive发布自动化AI研究系统的开源代码与实验产物",
-    "llm_tags": [
-      "AI智能体",
-      "自动化研究",
-      "开源"
-    ]
-  },
-  {
-    "id": "3d00aa6f1dc7",
-    "title": "fableExpectations",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u2q07k/fableexpectations/\"> <img alt=\"fableExpectations\" src=\"https://preview.redd.it/2o426zap9l6h1.png?width=140&amp;height=105",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2q07k/fableexpectations/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-11T05:25:00+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "社区分享 fableExpectations 项目，展示本地模型推理效果。",
-    "llm_tags": [
-      "本地模型",
-      "推理",
-      "社区项目"
-    ]
-  },
-  {
-    "id": "d7403e7a39af",
-    "title": "taisly/agent ⭐180",
-    "summary": "Taisly Agent Kit: SDK, CLI, examples, and docs for AI agents that publish videos through Taisly.",
-    "url": "https://github.com/taisly/agent",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-11T04:33:30Z",
-    "stars": 180,
-    "language": "JavaScript",
-    "frontier": 45,
-    "signal": 55,
-    "score": 49,
-    "llm_summary": "Taisly Agent Kit：用于通过Taisly发布视频的AI代理SDK及工具。",
-    "llm_tags": [
-      "AI代理",
-      "视频生成",
-      "SDK"
     ]
   }
 ]
