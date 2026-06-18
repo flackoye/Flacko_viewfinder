@@ -1,5 +1,409 @@
 [
   {
+    "id": "efa3c365bd0e",
+    "title": "dzcmemory-web/bazi-ziwei-skill ⭐177",
+    "summary": "AI 八字 + 紫微斗数排盘与综合印证 Skill：算法精准排盘（不靠 LLM 猜），三种分析模式，一键生成水墨风 HTML 命盘海报。兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent。",
+    "url": "https://github.com/dzcmemory-web/bazi-ziwei-skill",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-18T04:14:46.648995+00:00",
+    "created_at": "2026-06-13T14:22:28Z",
+    "stars": 177,
+    "language": "TypeScript",
+    "frontier": 35,
+    "signal": 65,
+    "score": 47,
+    "llm_summary": "八字紫微斗数排盘Agent，算法精准排盘，支持生成水墨风海报。",
+    "llm_tags": [
+      "Agent",
+      "传统算法",
+      "垂直应用"
+    ]
+  },
+  {
+    "id": "1778e79b7af4",
+    "title": "JaydenTeoh/NextLat ⭐63",
+    "summary": "Codebase for \"Next-Latent Prediction Transformers Learn Compact World Models\"",
+    "url": "https://github.com/JaydenTeoh/NextLat",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-18T04:14:46.648995+00:00",
+    "created_at": "2026-06-12T02:13:24Z",
+    "stars": 63,
+    "language": "Python",
+    "frontier": 75,
+    "signal": 85,
+    "score": 79,
+    "llm_summary": "Next-Latent预测Transformer学习紧凑世界模型的开源代码",
+    "llm_tags": [
+      "世界模型",
+      "强化学习",
+      "Transformer",
+      "开源"
+    ]
+  },
+  {
+    "id": "4dfc5805888d",
+    "title": "AUNNURRAFIQ/synaptic-gpt-orchestrator ⭐50",
+    "summary": "Advanced ChatGPT UI & Prompt Tools for GPT-4 API Workflows in 2026",
+    "url": "https://github.com/AUNNURRAFIQ/synaptic-gpt-orchestrator",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-18T04:14:46.648995+00:00",
+    "created_at": "2026-06-15T07:37:50Z",
+    "stars": 50,
+    "language": "HTML",
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "基于GPT-4 API的高级UI与提示词编排工具",
+    "llm_tags": [
+      "GPT-4",
+      "API工具",
+      "UI开发"
+    ]
+  },
+  {
+    "id": "f046b0d776e8",
+    "title": "Code-Augur: Agentic Vulnerability Detection via Specification Inference",
+    "summary": "arXiv:2606.18619v1 Announce Type: cross  Abstract: The advent of agentic vulnerability detection is already becoming a watershed moment for software security. Audits conducted entirely by autonomous LLM agents are uncovering critical vulnerabilities in fundamental software underpinning digital society. Many of these vulnerabilities remained masked for years, surfacing only now with AI agents. Yet the reasoning behind these discoveries remains alarmingly opaque and unvalidated. What assumptions did the agent make about a function's inputs when it deemed that function to be secure? Failures in reasoning and incorrect assumptions can lead to missed vulnerabilities and reduce trust in agentic analysis.   We propose a security-specification-first paradigm that (1) exposes the agent's tacit assu",
+    "url": "https://arxiv.org/abs/2606.18619",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "基于规范推断的智能体漏洞检测，提升可解释性",
+    "llm_tags": [
+      "软件安全",
+      "智能体",
+      "🔧 已开源",
+      "漏洞检测"
+    ]
+  },
+  {
+    "id": "b272823ae338",
+    "title": "REVES: REvision and VErification--Augmented Training for Test-Time Scaling",
+    "summary": "arXiv:2606.18910v1 Announce Type: cross  Abstract: Test-time scaling via sequential revision has emerged as a powerful paradigm for enhancing Large Language Model (LLM) reasoning. However, standard post-training methods primarily optimize single-shot objectives, creating a fundamental misalignment with multi-step inference dynamics. While recent work treats this as multi-turn reinforcement learning (RL), conventional approaches optimize over the multi-step trajectories directly, failing to further exploit the high-quality mistakes in intermediate steps that model can learn from correcting them. We propose a two-stage iterative framework that alternates between online data/prompt augmentation and policy optimization. By converting the intermediate steps (``near-miss'' answers) in the succes",
+    "url": "https://arxiv.org/abs/2606.18910",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 80,
+    "score": 78,
+    "llm_summary": "提出修正与验证增强训练，解决测试时扩展与单轮训练目标错位问题。",
+    "llm_tags": [
+      "🔧 已开源",
+      "测试时扩展",
+      "强化学习",
+      "大模型推理"
+    ]
+  },
+  {
+    "id": "2b8d3f0f3e67",
+    "title": "Guava: An Effective and Universal Harness for Embodied Manipulation",
+    "summary": "arXiv:2606.18363v1 Announce Type: cross  Abstract: Language models trained on large-scale vision-language data have demonstrated strong potential for embodied agents. Harnessing models through embodied tools use offers a promising alternative to end-to-end vision-language-action systems by combining high-level reasoning with external modules for perception, planning, and control. However, it remains unclear what makes an effective harness for embodied manipulation, and to what extent such a harness can unlock embodied capabilities in a wide range of reasoning models. In this work, we present Guava, a harness framework for embodied tool use developed through systematic exploration of the design space of agent workflows, action spaces, and observation spaces. Our study identifies three key i",
+    "url": "https://arxiv.org/abs/2606.18363",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "提出具身操作通用框架Guava，结合高层推理与外部模块。",
+    "llm_tags": [
+      "具身智能",
+      "机器人操作",
+      "🔧 已开源",
+      "多模态"
+    ]
+  },
+  {
+    "id": "ed5ad139b73f",
+    "title": "Beyond Tokenization: Direct Timestep Embedding and Contrastive Alignment for Time-Series Question Answering",
+    "summary": "arXiv:2606.18986v1 Announce Type: new  Abstract: Recent advances in large language models (LLMs) have given rise to time-series question answering (TSQA), which formulates time-series analysis as natural-language question answering. However, directly feeding raw numerical series into LLMs suffers from a tokenization bottleneck: Byte Pair Encoding fragments continuous values into unstable tokens whose embeddings lack meaningful metric structure, resulting in the loss of magnitude, scale, and trend information. Prior methods use patch-based encoders that split the series into fixed windows, locking in one granularity that breaks patterns and hides exact timesteps, through a separate module that rarely transfers across datasets with different lengths or sampling rates. To address this challen",
+    "url": "https://arxiv.org/abs/2606.18986",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 80,
+    "score": 78,
+    "llm_summary": "提出直接时间步嵌入与对比对齐，解决时序问答中的分词瓶颈问题。",
+    "llm_tags": [
+      "时序问答",
+      "🔧 已开源",
+      "嵌入学习",
+      "LLM"
+    ]
+  },
+  {
+    "id": "22bf3dea0e49",
+    "title": "FutureOmni: Evaluating Future Forecasting from Omni-Modal Context for Multimodal LLMs",
+    "summary": "arXiv:2601.13836v2 Announce Type: replace  Abstract: Although Multimodal Large Language Models (MLLMs) demonstrate strong omni-modal perception, their ability to forecast future events from audio-visual cues remains largely unexplored, as existing benchmarks focus mainly on retrospective understanding. To bridge this gap, we introduce FutureOmni, the first benchmark designed to evaluate omni-modal future forecasting from audio-visual environments. The evaluated models are required to perform cross-modal causal and temporal reasoning, as well as effectively leverage internal knowledge to predict future events. FutureOmni is constructed via a scalable LLM-assisted, human-in-the-loop pipeline and contains 919 videos and 1,034 multiple-choice QA pairs across 8 primary domains. Evaluations on 1",
+    "url": "https://arxiv.org/abs/2601.13836",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 80,
+    "score": 78,
+    "llm_summary": "首个评估多模态大模型视听未来预测能力的基准",
+    "llm_tags": [
+      "多模态",
+      "未来预测",
+      "基准测试",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "cefab747bc73",
+    "title": "DSB: Dynamic Sliding Block Scheduling for Diffusion LLMs",
+    "summary": "arXiv:2602.05992v3 Announce Type: replace  Abstract: Diffusion large language models (dLLMs) have emerged as a promising alternative for text generation, distinguished by their native support for parallel decoding. In practice, block inference is crucial for avoiding order misalignment in global bidirectional decoding and improving output quality. However, the widely-used fixed, predefined block (naive) schedule is agnostic to semantic difficulty, making it a suboptimal strategy for both quality and efficiency: it can force premature commitments to uncertain positions while delaying easy positions near block boundaries. In this work, we analyze the limitations of naive block scheduling and disclose the importance of dynamically adapting the schedule to semantic difficulty for reliable and ",
+    "url": "https://arxiv.org/abs/2602.05992",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "提出动态滑动块调度策略，优化扩散LLM推理质量与效率。",
+    "llm_tags": [
+      "扩散模型",
+      "推理优化",
+      "🔧 已开源",
+      "调度策略"
+    ]
+  },
+  {
+    "id": "27fb1ac029cf",
+    "title": "Mitigating Anchoring Bias in LLM-Based Agents for Energy-Efficient 6G Autonomous Networks",
+    "summary": "arXiv:2606.18272v1 Announce Type: cross  Abstract: This paper presents an autonomous agentic resource negotiation framework designed to enable zero-touch network slicing in 6G architectures using Large Language Model (LLM) agents. While LLMs offer powerful reasoning capabilities, we demonstrate that such agents inherently suffer from anchoring bias, rigidly adhering to initial heuristic proposals and causing severe network over-provisioning. To systematically mitigate this cognitive bias, we propose a novel randomized anchoring strategy modeled via a Truncated 3-Parameter Weibull distribution. This mathematically bounded approach seamlessly integrates with burst-aware Digital Twins (DTs) employing Conditional Value at Risk (CVaR) to rigorously guarantee strict Service Level Agreement (SLA)",
+    "url": "https://arxiv.org/abs/2606.18272",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出缓解LLM智能体锚定偏差的框架，优化6G网络切片资源分配。",
+    "llm_tags": [
+      "6G网络",
+      "LLM智能体",
+      "资源分配",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "756212792add",
+    "title": "Attribution-Guided and Coverage-Maximized Pruning for Structural MoE Compression",
+    "summary": "arXiv:2606.18304v1 Announce Type: cross  Abstract: Mixture-of-Experts (MoE) models scale compute efficiently, yet remain expensive to deploy due to their substantial memory footprint and inference overhead. Prior compression methods mainly operate at the expert level, either removing entire experts or ranking experts by coarse-grained importance scores. However, such expert-wise decisions are often too coarse to capture fine-grained redundancy, leading to misallocated pruning budgets and limited compression. To address this problem, we observe that information within MoE experts is highly concentrated in a small subset of channels, leaving substantial redundancy even in experts deemed important. Based on this observation, we propose a structural pruning framework tailored for MoE models. O",
+    "url": "https://arxiv.org/abs/2606.18304",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出细粒度MoE剪枝方法，通过归因引导和覆盖最大化优化结构压缩。",
+    "llm_tags": [
+      "MoE",
+      "模型压缩",
+      "剪枝"
+    ]
+  },
+  {
+    "id": "3bcc015492d9",
+    "title": "SafeClawBench: Separating Semantic, Audit-Evidence, and Sandbox Harm in Tool-Using LLM Agents",
+    "summary": "arXiv:2606.18356v1 Announce Type: cross  Abstract: Tool-using language-model agents introduce security failures that go beyond unsafe text: they can disclose protected objects, write persistent memory, send messages, modify databases, or trigger harmful code and tool effects. Existing evaluations often collapse these stages into a single attack success rate, making it difficult to tell whether a model merely agreed with an attacker or actually produced observable harm. We introduce SafeClawBench, a staged benchmark for tool-using agent security with 600 controlled adversarial tasks across six attack families: direct and indirect prompt injection, tool-return injection, memory poisoning, memory extraction, and ambiguity-driven unsafe inference. SafeClawBench reports three separate endpoints",
+    "url": "https://arxiv.org/abs/2606.18356",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "提出工具型智能体安全基准，区分语义、证据与沙箱危害。",
+    "llm_tags": [
+      "🔧 已开源",
+      "AI安全",
+      "智能体",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "a3f20aff14c6",
+    "title": "Want Better Synthetic Data? Steer It: Activation Steering for Low-Resource Language Generation",
+    "summary": "arXiv:2606.18389v1 Announce Type: new  Abstract: Large language models (LLMs) have become an effective tool for synthetic data generation, including for low-resource languages, where generated data can improve downstream task performance. Current best-performing approaches typically rely on few-shot prompting with target-language examples, which increases inference costs and may reduce diversity through lexical anchoring. In this work, we investigate activation steering as an alternative for low-resource synthetic data generation. We study two steering strategies: Language Steering, which targets the linguistic identity of a language, and Quality Steering, which captures well-formedness by contrasting human-written and backtranslated text representations. We evaluate these methods across f",
+    "url": "https://arxiv.org/abs/2606.18389",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出激活引导技术生成低资源语言合成数据，降低推理成本。",
+    "llm_tags": [
+      "🔧 已开源",
+      "合成数据",
+      "激活引导",
+      "低资源语言"
+    ]
+  },
+  {
+    "id": "df498e4583a7",
+    "title": "Morpheus: A Morphology-Aware Neural Tokenizer and Word Embedder for Turkish",
+    "summary": "arXiv:2606.18717v1 Announce Type: new  Abstract: Turkish is agglutinative: meaning is carried by morphemes, yet the subword tokenizers that drive modern language models split words by corpus statistics, fragmenting semantically loaded suffixes and -- in the case of WordPiece and rule-based analyzers -- failing to decode their output back to the original text. This paper presents \\textbf{Morpheus}, a neural morpheme-boundary model for Turkish that is at once a lossless, morphology-aware tokenizer and a word-embedding producer. A differentiable Poisson-binomial dynamic program turns per-character boundary probabilities into soft morpheme memberships during training and exact segments at inference, with no string normalization, so $\\mathrm{decode}(\\mathrm{encode}(w)) = w$ holds by constructio",
+    "url": "https://arxiv.org/abs/2606.18717",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "针对土耳其语的无损形态感知神经分词器",
+    "llm_tags": [
+      "🔧 已开源",
+      "分词器",
+      "NLP",
+      "多语言"
+    ]
+  },
+  {
+    "id": "405bd2c6f339",
+    "title": "ScholarSum: Student-Teacher Abstractive Summarization via Knowledge Graph Reasoning and Reflective Refinement",
+    "summary": "arXiv:2606.18850v1 Announce Type: new  Abstract: Abstractive summarization plays a crucial role in enabling efficient understanding of scientific literature, yet it inherently demands both linguistic fluency and factual faithfulness. Existing approaches often fail to reconcile these two requirements. Extractive methods rely on rigid sentence splicing that disrupts macro-level logical coherence, while large language model (LLM)-based generative approaches, despite mastering linguistic fluency, exhibit limited factual consistency. In this work, we propose ScholarSum, a hierarchical reflective graph-based framework that emulates a student-teacher writing process for fluent and faithful scientific summarization. ScholarSum first organizes the document into a hierarchical knowledge graph by seg",
+    "url": "https://arxiv.org/abs/2606.18850",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "结合知识图谱推理与反思机制的科学文献摘要生成方法",
+    "llm_tags": [
+      "文本摘要",
+      "知识图谱",
+      "🔧 已开源",
+      "LLM"
+    ]
+  },
+  {
+    "id": "d885f58f2747",
+    "title": "SenFlow: Inter-Sentence Flow Modeling for AI-Generated Text Detection in Hybrid Documents",
+    "summary": "arXiv:2606.18946v1 Announce Type: new  Abstract: Sentence-level AI-generated text detection (S-AGTD) for hybrid documents, where humans and LLMs co-author one text, faces two gaps: existing methods classify each sentence in isolation, discarding inter-sentence dependencies, and existing benchmarks omit the newest generation of generators. We construct MOSAIC, a benchmark of 16,000 hybrid documents over PubMed and XSum, generated by DeepSeek-V3.2 and Kimi K2 under stringent quality controls including a perplexity-consistency filter absent from prior benchmarks. We recast S-AGTD as structured prediction over the document sentence sequence and instantiate it as SenFlow, integrating graph-based inter-sentence propagation with linear-chain CRF decoding in a single document-level pass over a sen",
+    "url": "https://arxiv.org/abs/2606.18946",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "构建混合文档基准，利用句间流建模检测AI生成文本。",
+    "llm_tags": [
+      "🔧 已开源",
+      "文本检测",
+      "基准测试",
+      "DeepSeek"
+    ]
+  },
+  {
+    "id": "8521dba26dd8",
+    "title": "Language Models as Interfaces, Not Oracles: A Hybrid LLM-ML System for Pediatric Appendicitis",
+    "summary": "arXiv:2606.19183v1 Announce Type: new  Abstract: Large language models (LLMs) can make clinical decision support more accessible by interpreting free-text documentation, but their direct use as diagnostic engines is limited by sensitivity to prompts, information order, and plausible but incorrect outputs. Structured machine-learning models offer more stable risk prediction, yet they require tabular inputs that are difficult to integrate with narrative clinical workflows. We present ClaMPAPP (Clinical Language-assisted Machine-learning Pipeline for Appendicitis), a hybrid system that uses an LLM as an interface rather than as the final decision-maker. ClaMPAPP extracts schema-constrained clinical features from note-like narratives, applies deterministic plausibility checks, and passes valid",
+    "url": "https://arxiv.org/abs/2606.19183",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出混合LLM-ML系统，结合文本理解与结构化预测提升儿科诊断稳定性。",
+    "llm_tags": [
+      "医疗AI",
+      "混合架构",
+      "🔧 已开源",
+      "风险预测"
+    ]
+  },
+  {
+    "id": "5edb5435fc40",
+    "title": "Steerable Cultural Preference Optimization of Reward Models",
+    "summary": "arXiv:2606.18606v1 Announce Type: cross  Abstract: It is essential for large language model (LLM) technology to serve many different cultural sub-communities in a manner that is acceptable to each community. However, research on LLM alignment has so far predominantly focused on predicting a unified response preference of annotators from certain regions. This paper aims to advance the development of alignment models with a more global outlook, that are able to accurately represent the preferences of subcommunities and do not exhibit excessive bias towards any of them. We focus on the development of reward models for this purpose and present a novel reward model training algorithm (SCPO) that can incorporate diverse cultural preferences in a balanced manner. Our method results in performance",
+    "url": "https://arxiv.org/abs/2606.18606",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出可转向的文化偏好优化方法，使模型适配不同文化社区。",
+    "llm_tags": [
+      "🔧 已开源",
+      "RLHF",
+      "对齐",
+      "文化适配"
+    ]
+  },
+  {
+    "id": "884cd352289c",
+    "title": "SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG",
+    "summary": "arXiv:2606.18381v1 Announce Type: new  Abstract: Retrieval-augmented generation (RAG) systems must balance retrieval granularity with contextual coherence, a challenge that existing methods address through LLM-guided chunking, single-level context expansion, or hierarchical summarization. These approaches variously depend on costly LLM calls during indexing or retrieval, limit context aggregation to a single granularity level, or introduce information loss through summarization. We present SproutRAG, an attention-guided hierarchical RAG framework that addresses this trade-off by organizing sentence-level chunks into progressively larger but semantically coherent units, using learned inter-sentence attention to construct a binary chunking tree. Unlike prior approaches that rely on external ",
+    "url": "https://arxiv.org/abs/2606.18381",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "提出渐进式嵌入与注意力引导树搜索，优化长文档RAG检索粒度与连贯性。",
+    "llm_tags": [
+      "RAG",
+      "长文档",
+      "🔧 已开源",
+      "检索优化"
+    ]
+  },
+  {
+    "id": "11122281a289",
+    "title": "JetFlow: Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting",
+    "summary": "arXiv:2606.18394v1 Announce Type: new  Abstract: Speculative decoding (SD) accelerates autoregressive Large Language Models (LLMs) by drafting multiple tokens and verifying them in parallel, but it faces a scaling limitation: increasing the draft budget improves speed only when acceptance remains high and drafting overhead stays low. This ceiling has been difficult to break because prior head-based SD methods face a causality-efficiency dilemma. Autoregressive drafters produce path-conditioned candidates that are effective for tree speculative decoding with higher acceptance length, but their drafting cost grows with tree depth. Bidirectional block-diffusion drafters generate all positions in one pass, but their branch-agnostic marginals can form individually plausible yet mutually inconsi",
+    "url": "https://arxiv.org/abs/2606.18394",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 85,
+    "score": 80,
+    "llm_summary": "提出并行树草稿技术，突破推测解码扩展瓶颈",
+    "llm_tags": [
+      "🔧 已开源",
+      "推理加速",
+      "LLM",
+      "推测解码"
+    ]
+  },
+  {
+    "id": "1e8925a58500",
+    "title": "Montreal Forced Aligner and the state of speech-to-text alignment in 2026",
+    "summary": "arXiv:2606.18466v1 Announce Type: new  Abstract: The Montreal Forced Aligner (MFA) was released in 2016 and has since become the most widely used tool for forced alignment in research and industry. In the decade since, MFA has undergone substantial development, including expanded coverage across more languages and dialects using larger open-source datasets, harmonized IPA dictionaries, model adaptation, cross-language phone remapping, and support utilities. This paper documents MFA 3.0's developments since version 1.0 and evaluates MFA's performance across English, Japanese, and Korean, benchmarked against classic and neural forced aligners. MFA 3.0 achieves state-of-the-art or near state-of-the-art performance across all four benchmark datasets with mean boundary errors below 15 ms. Adapt",
+    "url": "https://arxiv.org/abs/2606.18466",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-18T04:00:00+00:00",
+    "frontier": 45,
+    "signal": 85,
+    "score": 65,
+    "llm_summary": "MFA 3.0发布，支持更多语言及跨语言音素映射。",
+    "llm_tags": [
+      "语音对齐",
+      "🔧 已开源",
+      "工具更新"
+    ]
+  },
+  {
     "id": "ad8b1b83f52f",
     "title": "MolmoMotion: Language-guided 3D motion forecasting",
     "summary": "",
@@ -34,6 +438,24 @@
       "LeRobot",
       "智能体",
       "开源"
+    ]
+  },
+  {
+    "id": "4e8a10706aac",
+    "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
+    "summary": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research.",
+    "url": "https://openai.com/index/ai-chemist-improves-reaction",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-17T10:00:00+00:00",
+    "frontier": 85,
+    "signal": 65,
+    "score": 77,
+    "llm_summary": "OpenAI与Molecule.one利用GPT-5.4改进药物合成反应",
+    "llm_tags": [
+      "AI制药",
+      "自动化",
+      "GPT-5.4"
     ]
   },
   {
@@ -450,6 +872,42 @@
       "语音模型",
       "实时交互",
       "OpenAI"
+    ]
+  },
+  {
+    "id": "fc3b6282aae4",
+    "title": "Introducing LifeSciBench",
+    "summary": "Introducing LifeSciBench, an expert-authored, expert-reviewed benchmark for evaluating how AI systems handle real-world life science research tasks and decisions.",
+    "url": "https://openai.com/index/introducing-life-sci-bench",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-17T00:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "OpenAI发布专家评审的生命科学研究基准LifeSciBench",
+    "llm_tags": [
+      "基准测试",
+      "生命科学",
+      "模型评估"
+    ]
+  },
+  {
+    "id": "2aca0819ff77",
+    "title": "Agentic Resource Discovery: Let agents search",
+    "summary": "",
+    "url": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-17T00:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "介绍让智能体自主搜索和发现资源的方法与实现",
+    "llm_tags": [
+      "Agent",
+      "RAG",
+      "工具调用"
     ]
   },
   {
@@ -3021,448 +3479,6 @@
       "AI代理",
       "视频生成",
       "SDK"
-    ]
-  },
-  {
-    "id": "f0dd0772ba55",
-    "title": "AMD's Lemonade SDK for local AI adds NVIDIA CUDA support",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u2ojv1/amds_lemonade_sdk_for_local_ai_adds_nvidia_cuda/\"> <img alt=\"AMD's Lemonade SDK for local AI adds NVIDIA CUDA support\" sr",
-    "url": "https://www.reddit.com/r/artificial/comments/1u2ojv1/amds_lemonade_sdk_for_local_ai_adds_nvidia_cuda/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-11T04:10:02+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "AMD Lemonade SDK 新增支持 NVIDIA CUDA，实现跨平台推理。",
-    "llm_tags": [
-      "AMD",
-      "SDK",
-      "推理",
-      "CUDA"
-    ]
-  },
-  {
-    "id": "730a6672db68",
-    "title": "Can AI Agents Synthesize Scientific Conclusions?",
-    "summary": "arXiv:2606.11337v1 Announce Type: new  Abstract: Scientific AI agents increasingly retrieve evidence, reason across sources, and synthesize conclusions used in consequential decisions. Yet, their ability to do so in high-stakes domains such as health remains unclear. We introduce SciConBench, a large-scale live benchmark of 9.11K questions and expert-written conclusions from systematic reviews to evaluate open-domain scientific conclusion synthesis. The benchmark draws on an expert-validated automated evaluation pipeline that decomposes conclusions into atomic facts and measures correctness and comprehensiveness via factual precision and recall. To mitigate data leakage, we further introduce SciConHarness, a clean-room evaluation harness that equips agents with controlled web interaction t",
-    "url": "https://arxiv.org/abs/2606.11337",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-11T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "构建科学结论合成基准，评估AI在高风险领域的推理能力",
-    "llm_tags": [
-      "AI Agent",
-      "基准测试",
-      "科学推理",
-      "医疗AI"
-    ]
-  },
-  {
-    "id": "d347d0730b93",
-    "title": "Knowing When to Ask: Self-Gated Clarification for Hierarchical Language Agents",
-    "summary": "arXiv:2606.11349v1 Announce Type: new  Abstract: In hierarchical reasoning, failures often originate at intermediate decision points where the agent commits to a wrong branch without recognizing that it lacks critical information. Rather than treating clarification as an external uncertainty trigger, we propose ACTION-RATING, a formulation that places it inside the agent's action space on a shared ordinal scale with navigation, so that asking competes directly with acting at every decision point and help-seeking becomes observable at intermediate states. Two structurally distinct information-seeking modes emerge from the agent's own ratings: mandatory (no viable branch) and opportunistic (residual uncertainty despite a leading candidate). On Harmonized Tariff Schedule classification (30,00",
-    "url": "https://arxiv.org/abs/2606.11349",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-11T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出将澄清机制集成到动作空间，提升分层智能体决策准确性。",
-    "llm_tags": [
-      "智能体",
-      "决策机制",
-      "分层推理"
-    ]
-  },
-  {
-    "id": "5317ef85ba9e",
-    "title": "Forecasting Future Behavior as a Learning Task",
-    "summary": "arXiv:2606.11445v1 Announce Type: new  Abstract: Trust in an AI system is often anchored by explanations of how it works, which one then uses to forecast its behavior on new inputs. For large reasoning models (LRMs), this conventional route is particularly difficult to follow: explanation methods for single token generations do not naturally generalize to long trajectories, and the trajectories themselves are often not faithful when read as natural language. We propose an alternative that bypasses the explanation step: treat behavior forecasting as a learnable task and train Behavior Forecasters that operates on a single reasoning trajectory to make the same forecasts one would typically seek from an explanation. The forecaster's training data is obtained by querying the LRM with no human ",
-    "url": "https://arxiv.org/abs/2606.11445",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-11T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出通过预测行为而非解释来建立对大推理模型的信任",
-    "llm_tags": [
-      "模型评估",
-      "可解释性",
-      "推理模型"
-    ]
-  },
-  {
-    "id": "dd2032dd0d24",
-    "title": "MoCA-Agent: A Market-of-Claims Code Agent for Financial and Numerical Reasoning",
-    "summary": "arXiv:2606.11537v1 Announce Type: new  Abstract: Financial and tabular question answering requires more than fluent reasoning: answers must be grounded in the exact facts, formulas, units, signs, and scales that support them. A single misread cell or incorrect operation can silently produce a plausible but wrong result. We introduce \\textsc{MOCA-Agent}, a market-of-claims code agent that replaces free-form multi-agent debate with claim-level verification. The system decomposes each question into typed atomic claims, asks specialist trader agents to buy or sell those claims, clears their orders into confidence-weighted accept/reject decisions, and synthesizes an executable Python program from market-supported evidence. A code-aware verifier then checks the program for execution, structural ",
-    "url": "https://arxiv.org/abs/2606.11537",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-11T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 80,
-    "llm_summary": "提出基于声明市场的代码代理，解决金融数值推理中的精确性问题。",
-    "llm_tags": [
-      "智能体",
-      "金融推理",
-      "🔧 已开源",
-      "表格QA"
-    ]
-  },
-  {
-    "id": "69a55ae58bb8",
-    "title": "SkillJuror: Measuring How Agent Skill Organization Changes Runtime Behavior",
-    "summary": "arXiv:2606.11543v1 Announce Type: new  Abstract: Agent Skills augment large language model (LLM) agents with procedural knowledge at inference time, but current benchmarks rarely distinguish what a Skill says from how it is organized. We study this distinction through Progressive Disclosure, where a concise root file points agents to supporting resources on demand, and compare it with a normalized flat baseline. We present SkillJuror, a framework for evaluating Skill writing paradigms through semantically controlled variants, matched multi-trial evaluations, and trajectory evidence while holding task knowledge fixed. In an 82-task SkillsBench study, Progressive Disclosure changes runtime behavior before aggregate outcomes: distinct Skill resources touched per trajectory rise from 1.18 to 3",
-    "url": "https://arxiv.org/abs/2606.11543",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-11T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出评估Agent技能组织方式的框架，对比渐进式与扁平化结构。",
-    "llm_tags": [
-      "Agent",
-      "评估框架",
-      "🔧 已开源",
-      "LLM"
-    ]
-  },
-  {
-    "id": "5760582b7898",
-    "title": "TouchThinker: Scaling Tactile Commonsense Reasoning to the Open World with Large-scale Data and Action-aware Representation",
-    "summary": "arXiv:2606.11637v1 Announce Type: new  Abstract: Touch is a key modality for embodied agents to understand the physical world. Although recent work has incorporated tactile signals into language systems for tactile commonsense reasoning, scaling such systems to realistic open-world settings remains challenging due to two key bottlenecks: (1) current tactile reasoning datasets remain limited in format and scale, providing insufficient supervision for reasoning from tactile observations to physical commonsense and hindering the learning of transferable tactile commonsense; (2) Tactile signals are inherently redundant and action-specific, yet existing methods often overlook these properties, resulting in inefficient representations with limited semantic expressiveness. To address these limita",
-    "url": "https://arxiv.org/abs/2606.11637",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-11T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 80,
-    "score": 78,
-    "llm_summary": "构建大规模触觉数据集，提出动作感知表征以提升开放世界触觉推理能力。",
-    "llm_tags": [
-      "触觉感知",
-      "具身智能",
-      "🔧 已开源",
-      "多模态推理"
-    ]
-  },
-  {
-    "id": "ead1dc5aa469",
-    "title": "TreeSeeker: Tree-Structured Trial, Error, and Return in Deep Search",
-    "summary": "arXiv:2606.11662v1 Announce Type: new  Abstract: Deep search requires agents to answer complex questions through multi-step web search, browsing, evidence comparison, and synthesis. A central challenge is deciding how to search when several directions look plausible but only some will later lead to reliable evidence. If an agent greedily follows the current best-looking direction, it may keep extending a weak continuation. If it explores without discipline, it may waste budget on disconnected trials. We propose TreeSeeker, an inference-time framework for controlled trial-and-error in deep search. TreeSeeker organizes search as branch-and-return search over tree-structured states, where each branch is a tentative direction for a sub-goal. At each round, TreeSearch reads all sub-goal trees, ",
-    "url": "https://arxiv.org/abs/2606.11662",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-11T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 80,
-    "llm_summary": "提出树结构试错机制优化深度搜索路径决策，已开源。",
-    "llm_tags": [
-      "智能体",
-      "深度搜索",
-      "🔧 已开源",
-      "决策算法"
-    ]
-  },
-  {
-    "id": "d59f6dd570aa",
-    "title": "Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents",
-    "summary": "arXiv:2606.11680v1 Announce Type: new  Abstract: Large language model (LLM) agents struggle with long-horizon tasks due to their inherent statelessness, requiring all task-relevant information to be encoded in growing input contexts. The resulting degraded reasoning quality, increased inference cost, and higher latency necessitate efficient working memory mechanisms. However, existing approaches either rely on lossy compression or similarity-based retrieval, which often fail to capture temporal structure and causal dependencies required for multi-step agentic tasks. In this work, we present HORMA, a Hierarchical Organize-and-Retrieve Memory Agent that organizes experience into a file-system-like hierarchical structure, where summarized entities are linked to the corresponding raw trajector",
-    "url": "https://arxiv.org/abs/2606.11680",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-11T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "提出分层记忆导航机制，解决长时任务中的上下文膨胀与检索效率问题。",
-    "llm_tags": [
-      "智能体",
-      "长时记忆",
-      "RAG",
-      "推理优化"
-    ]
-  },
-  {
-    "id": "03a8884c424d",
-    "title": "Mind the Perspective: Let's Reason Recursively for Theory of Mind",
-    "summary": "arXiv:2606.11724v1 Announce Type: new  Abstract: Theory of Mind (ToM) reasoning requires inferring agents' beliefs from partial and asymmetric observations, which remains an open challenge for LLMs. Existing prompting-based approaches improve ToM reasoning through observable-event filtering or temporal belief chains, without explicitly modeling nested beliefs. We introduce RecToM, an inference-time framework for ToM reasoning that models nested beliefs via recursive perspective construction. RecToM constructs each character perspective from the preceding character perspective along the character chain specified by the question, reducing higher-order belief questions to actual-world questions within the final constructed perspective. We further provide a KD45 analysis showing that RecToM's ",
-    "url": "https://arxiv.org/abs/2606.11724",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-11T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出递归视角构建框架RecToM，显式建模嵌套信念以提升大模型心智推理能力。",
-    "llm_tags": [
-      "心智推理",
-      "递归推理",
-      "LLM推理",
-      "推理框架"
-    ]
-  },
-  {
-    "id": "6d5c3284c15f",
-    "title": "SVoT: State-aware Visualization-of-Thought for Spatial Reasoning via Reinforcement Learning",
-    "summary": "arXiv:2606.11770v1 Announce Type: new  Abstract: Spatial reasoning remains a challenge for Multimodal Large Language Models (MLLMs), as it requires reliable multi-hop inference over both intermediate states and state transitions. Current studies often leave intermediate states unverified and treat state transitions as implicit processes, which limits reliability in multi-hop spatial reasoning. To address this, we propose State-aware Visualization-of-Thought (SVoT), a reinforcement learning framework that generates interleaved, verifiable intermediate states and visualizations. SVoT integrates transition reasoning chains into the generation processes, enabling the model to verify action preconditions and effects through interleaved textual and visual reasoning. We train SVoT via Group Relat",
-    "url": "https://arxiv.org/abs/2606.11770",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-11T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 55,
-    "score": 64,
-    "llm_summary": "提出SVoT框架，利用强化学习可视化思维状态以提升多模态空间推理能力。",
-    "llm_tags": [
-      "多模态",
-      "空间推理",
-      "强化学习"
-    ]
-  },
-  {
-    "id": "528b8a372ce2",
-    "title": "nvidia/diffusiongemma-26B-A4B-it-NVFP4 · Hugging Face",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u2np0a/nvidiadiffusiongemma26ba4bitnvfp4_hugging_face/\"> <img alt=\"nvidia/diffusiongemma-26B-A4B-it-NVFP4 · Hugging Face\" src=\"h",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2np0a/nvidiadiffusiongemma26ba4bitnvfp4_hugging_face/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-11T03:28:47+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "英伟达发布26B扩散模型，支持NVFP4量化",
-    "llm_tags": [
-      "扩散模型",
-      "量化",
-      "英伟达"
-    ]
-  },
-  {
-    "id": "8ec2b0a678d7",
-    "title": "AMD touts the unified memory architecture",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p><a href=\"https://wccftech.com/amd-unified-memory-architectures-open-up-a-world-of-possibilities-shape-product-roadmaps/\">https://wccftech.com/amd-unified-memory-archi",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2l25d/amd_touts_the_unified_memory_architecture/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-11T01:25:22+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "AMD探讨统一内存架构优势，规划未来产品路线图",
-    "llm_tags": [
-      "硬件架构",
-      "AMD",
-      "显存技术"
-    ]
-  },
-  {
-    "id": "1a652beabf96",
-    "title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
-    "summary": "",
-    "url": "https://huggingface.co/blog/torch-mlp-fusion",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-11T00:00:00+00:00",
-    "frontier": 45,
-    "signal": 92,
-    "score": 64,
-    "llm_summary": "详解PyTorch性能分析，展示从Linear到融合MLP的优化过程。",
-    "llm_tags": [
-      "PyTorch",
-      "性能优化",
-      "算子融合"
-    ]
-  },
-  {
-    "id": "ada6f2ea0907",
-    "title": "OpenAI to acquire Ona",
-    "summary": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows.",
-    "url": "https://openai.com/index/openai-to-acquire-ona",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-06-11T00:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "OpenAI收购Ona以扩展Codex，支持企业级长时运行AI智能体。",
-    "llm_tags": [
-      "智能体",
-      "代码生成",
-      "企业应用"
-    ]
-  },
-  {
-    "id": "a789c2979c27",
-    "title": "orange2ai/orange-line-illustration ⭐135",
-    "summary": "🍊 New Yorker-style minimalist editorial illustration skill for AI agents — one idea, one accent, lots of silence. Free for open-source use; commercial license for closed-source.",
-    "url": "https://github.com/orange2ai/orange-line-illustration",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-10T23:58:59Z",
-    "stars": 135,
-    "language": null,
-    "frontier": 45,
-    "signal": 60,
-    "score": 51,
-    "llm_summary": "开源AI插画生成模型，主打极简主义《纽约客》风格。",
-    "llm_tags": [
-      "图像生成",
-      "开源模型",
-      "风格化"
-    ]
-  },
-  {
-    "id": "37458e5f360d",
-    "title": "Claude Fable 5's security guardrails can be bypassed with a fake homework assignment",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u2cwfz/claude_fable_5s_security_guardrails_can_be/\"> <img alt=\"Claude Fable 5's security guardrails can be bypassed with a fake ",
-    "url": "https://www.reddit.com/r/artificial/comments/1u2cwfz/claude_fable_5s_security_guardrails_can_be/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T19:51:28+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "发现利用虚假作业提示词可绕过Claude安全护栏",
-    "llm_tags": [
-      "提示词注入",
-      "安全对齐",
-      "越狱"
-    ]
-  },
-  {
-    "id": "29c9c4ef592b",
-    "title": "Dario Amodei — Policy on the AI Exponential",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u2ch83/dario_amodei_policy_on_the_ai_exponential/\"> <img alt=\"Dario Amodei — Policy on the AI Exponential\" src=\"https://external",
-    "url": "https://www.reddit.com/r/artificial/comments/1u2ch83/dario_amodei_policy_on_the_ai_exponential/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T19:36:05+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 71,
-    "llm_summary": "Anthropic CEO阐述AI指数级增长下的政策立场与监管思考",
-    "llm_tags": [
-      "AI政策",
-      "行业观点",
-      "模型缩放"
-    ]
-  },
-  {
-    "id": "42abf7dc3fa4",
-    "title": "Routing LLMs by task verifiability: a small experiment (n=120, 3 models) inspired by Karpathy's framework [D]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Full disclosure: this is directional, not a paper. n=120 tasks, one internal evaluator, not peer reviewed. I work at an LLM infrastructure company. This experiment wa",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1u2c04u/routing_llms_by_task_verifiability_a_small/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T19:18:55+00:00",
-    "frontier": 65,
-    "signal": 72,
-    "score": 68,
-    "llm_summary": "基于任务可验证性路由LLM的小规模实验，对比3模型表现。",
-    "llm_tags": [
-      "模型路由",
-      "评估方法",
-      "LLM"
-    ]
-  },
-  {
-    "id": "efef73888f78",
-    "title": "Remove padding and multiple D2D copies for MTP by gaugarg-nv · Pull Request #24086 · ggml-org/llama.cpp",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u2a1tb/remove_padding_and_multiple_d2d_copies_for_mtp_by/\"> <img alt=\"Remove padding and multiple D2D copies for MTP by gaugarg-",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u2a1tb/remove_padding_and_multiple_d2d_copies_for_mtp_by/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T18:09:02+00:00",
-    "frontier": 55,
-    "signal": 75,
-    "score": 63,
-    "llm_summary": "llama.cpp优化MTP推理，移除填充和多余D2D拷贝",
-    "llm_tags": [
-      "推理优化",
-      "llama.cpp",
-      "内存管理"
-    ]
-  },
-  {
-    "id": "0a6faa0fdd94",
-    "title": "I ran Fable 5 for half day and the guardrails are the real story",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Anthropic dropped Fable 5 and I immediately swapped it into our dev stack. We route everything through a single endpoint on zenmux, so the actual switch was changing ",
-    "url": "https://www.reddit.com/r/artificial/comments/1u28c7d/i_ran_fable_5_for_half_day_and_the_guardrails_are/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T17:09:49+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 67,
-    "llm_summary": "实测Anthropic Fable 5，重点在于其安全护栏的显著提升。",
-    "llm_tags": [
-      "模型评测",
-      "安全护栏",
-      "Anthropic"
-    ]
-  },
-  {
-    "id": "76d5b146e367",
-    "title": "FlashMemory-DeepSeek-V4: Lightning Index Ultra-Long Context via Lookahead Sparse Attention",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u277fg/flashmemorydeepseekv4_lightning_index_ultralong/\"> <img alt=\"FlashMemory-DeepSeek-V4: Lightning Index Ultra-Long Context ",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u277fg/flashmemorydeepseekv4_lightning_index_ultralong/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T16:30:20+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "DeepSeek V4利用前瞻稀疏注意力实现超长上下文",
-    "llm_tags": [
-      "稀疏注意力",
-      "长上下文",
-      "DeepSeek"
-    ]
-  },
-  {
-    "id": "b9dcaacf2352",
-    "title": "DiffusionGemma: 4x faster text generation",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u26s8n/diffusiongemma_4x_faster_text_generation/\"> <img alt=\"DiffusionGemma: 4x faster text generation\" src=\"https://external-pr",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u26s8n/diffusiongemma_4x_faster_text_generation/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T16:15:16+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 71,
-    "llm_summary": "DiffusionGemma利用扩散模型加速文本生成，速度提升4倍",
-    "llm_tags": [
-      "扩散模型",
-      "文本生成",
-      "推理加速"
-    ]
-  },
-  {
-    "id": "947e005cfda6",
-    "title": "DiffusionGemma: The Developer Guide- Google Developers Blog",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u26oyp/diffusiongemma_the_developer_guide_google/\"> <img alt=\"DiffusionGemma: The Developer Guide- Google Developers Blog\" src=\"",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u26oyp/diffusiongemma_the_developer_guide_google/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-10T16:12:11+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "谷歌发布DiffusionGemma开发者指南，结合扩散模型与Gemma",
-    "llm_tags": [
-      "扩散模型",
-      "Gemma",
-      "图像生成"
     ]
   }
 ]
