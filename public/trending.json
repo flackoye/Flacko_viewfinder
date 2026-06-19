@@ -1,5 +1,61 @@
 [
   {
+    "id": "f500807fe3ae",
+    "title": "haydenbleasel/batchwork ⭐48",
+    "summary": "Unified batch API for AI providers. Save up to 50% on LLM costs.",
+    "url": "https://github.com/haydenbleasel/batchwork",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-19T15:25:22.548680+00:00",
+    "created_at": "2026-06-14T20:18:56Z",
+    "stars": 48,
+    "language": "TypeScript",
+    "frontier": 45,
+    "signal": 65,
+    "score": 53,
+    "llm_summary": "统一多家AI厂商批处理API，声称可降低50%成本",
+    "llm_tags": [
+      "API聚合",
+      "成本优化",
+      "LLM"
+    ]
+  },
+  {
+    "id": "3370ec73429d",
+    "title": "The Download: AI bottleneck debates, and BCI trials take off",
+    "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. A startup claims it broke through a bottleneck that’s holding back LLMs AI startup Subquadratic came out of stealth last month with a huge claim: it had solved a mathematical bottleneck&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/19/1139327/the-download-llms-bottleneck-breakthrough-bci-trials-take-off/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-19T12:10:00+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "初创公司Subquadratic声称突破LLM推理瓶颈，脑机接口临床试验加速",
+    "llm_tags": [
+      "LLM推理",
+      "脑机接口"
+    ]
+  },
+  {
+    "id": "cc496a6a9593",
+    "title": "Brain-computer interface trials are taking off",
+    "summary": "This week, I covered the story of Casey Harrell—a man with ALS who is “the first power user” of a brain implant, according to the researchers who worked with him. Harrell is paralyzed and unable to speak coherently without the device. He has now spent almost three years using a brain-computer interface (BCI) that enables&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/19/1139270/brain-computer-interface-trials-are-taking-off/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-19T09:00:00+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "首位ALS患者长期使用脑机接口，实现语音交流",
+    "llm_tags": [
+      "脑机接口",
+      "医疗AI",
+      "神经科学"
+    ]
+  },
+  {
     "id": "c8d75b18e33a",
     "title": "leyten/shard ⭐73",
     "summary": "Pipeline-parallel LLM inference across GPUs on separate machines.",
@@ -304,6 +360,24 @@
       "社会偏见",
       "🔧 已开源",
       "基准测试"
+    ]
+  },
+  {
+    "id": "27d99b279cc5",
+    "title": "Uncertainty Decomposition for Clarification Seeking in LLM Agents",
+    "summary": "arXiv:2606.19559v1 Announce Type: cross  Abstract: Recent position papers argue that the classical aleatoric/epistemic uncertainty framework is insufficient for interactive large language model (LLM) agents and call for underspecification-aware, decomposed, and communicable uncertainty representations that can unlock new agent capabilities such as proactive clarification seeking and shared mental-model building. Practical deployment constraints -- black-box APIs, interactive latency budgets, and the absence of labeled trajectories -- rule out logprob-based, multi-sampling, and training-based methods, leaving prompt-based estimation as the most viable family for surfacing such signals at deployment time. We answer this call with a simple prompt-based decomposition that separates action conf",
+    "url": "https://arxiv.org/abs/2606.19559",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出LLM智能体不确定性分解框架，支持主动澄清与交互",
+    "llm_tags": [
+      "智能体",
+      "不确定性",
+      "交互式AI"
     ]
   },
   {
@@ -3203,195 +3277,6 @@
       "模型评估",
       "开发工具",
       "OLMo"
-    ]
-  },
-  {
-    "id": "c80d577b48ea",
-    "title": "fguzman82/gateGPT ⭐87",
-    "summary": "Full Transformer into a custom chip. microGPT in RTL, generating names on a Virtex-5 FPGA at ~56k tokens/second.",
-    "url": "https://github.com/fguzman82/gateGPT",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-12T14:55:53Z",
-    "stars": 87,
-    "language": "Verilog",
-    "frontier": 85,
-    "signal": 75,
-    "score": 81,
-    "llm_summary": "将Transformer部署至FPGA芯片，实现56k tokens/s推理速度",
-    "llm_tags": [
-      "FPGA",
-      "硬件加速",
-      "RTL设计",
-      "模型部署"
-    ]
-  },
-  {
-    "id": "5049351b4c3c",
-    "title": "MiniMaxAI/MiniMax-M3 · Hugging Face",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3wagy/minimaxaiminimaxm3_hugging_face/\"> <img alt=\"MiniMaxAI/MiniMax-M3 · Hugging Face\" src=\"https://external-preview.redd.it/U",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3wagy/minimaxaiminimaxm3_hugging_face/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-12T14:07:04+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "MiniMax发布M3模型，支持原生语音和文本多模态",
-    "llm_tags": [
-      "多模态",
-      "语音合成",
-      "开源模型"
-    ]
-  },
-  {
-    "id": "3de2397d13bc",
-    "title": "Open Dungeon: local roleplay with Gemma 4 QAT + inline Uncen-FLUX images, running at full 256K context under 8GB RAM (OS)",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3uw8e/open_dungeon_local_roleplay_with_gemma_4_qat/\"> <img alt=\"Open Dungeon: local roleplay with Gemma 4 QAT + inline Uncen-FL",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3uw8e/open_dungeon_local_roleplay_with_gemma_4_qat/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-12T13:11:59+00:00",
-    "frontier": 75,
-    "signal": 78,
-    "score": 76,
-    "llm_summary": "Gemma 4 QAT 结合 FLUX 图像，8G 内存跑 256K 上下文",
-    "llm_tags": [
-      "端侧模型",
-      "量化推理",
-      "多模态",
-      "长文本"
-    ]
-  },
-  {
-    "id": "97f59673cedb",
-    "title": "buynao/aipath ⭐171",
-    "summary": "Interactive AI General Education Course — 30 Lessons, Zero Math",
-    "url": "https://github.com/buynao/aipath",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-12T10:58:35Z",
-    "stars": 171,
-    "language": "JavaScript",
-    "frontier": 35,
-    "signal": 60,
-    "score": 45,
-    "llm_summary": "零数学基础的AI通识互动课程，包含30个课时。",
-    "llm_tags": [
-      "AI教育",
-      "开源项目"
-    ]
-  },
-  {
-    "id": "80f741a4e53e",
-    "title": "bingook/bingo ⭐128",
-    "summary": "Bingo - AI-powered Red Team Terminal (DeepSeek/Claude/GPT/GLM)",
-    "url": "https://github.com/bingook/bingo",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-12T10:26:39Z",
-    "stars": 128,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 65,
-    "score": 59,
-    "llm_summary": "集成大模型的AI红队终端工具，支持多模型交互",
-    "llm_tags": [
-      "安全工具",
-      "LLM应用",
-      "终端"
-    ]
-  },
-  {
-    "id": "a4755cfc741b",
-    "title": "moonshotai/Kimi-K2.7-Code · Hugging Face",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3rdk9/moonshotaikimik27code_hugging_face/\"> <img alt=\"moonshotai/Kimi-K2.7-Code · Hugging Face\" src=\"https://external-preview.r",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3rdk9/moonshotaikimik27code_hugging_face/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-12T10:22:07+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 71,
-    "llm_summary": "Moonshot发布Kimi-K2.7-Code代码模型，支持长上下文",
-    "llm_tags": [
-      "代码模型",
-      "开源模型",
-      "长上下文"
-    ]
-  },
-  {
-    "id": "aac7cdd1fbe2",
-    "title": "Huawei Released openPangu 2.0 (Will open source on June 30)",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3q1j9/huawei_released_openpangu_20_will_open_source_on/\"> <img alt=\"Huawei Released openPangu 2.0 (Will open source on June 30)",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3q1j9/huawei_released_openpangu_20_will_open_source_on/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-12T09:05:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "华为发布盘古2.0，宣布将于6月30日开源",
-    "llm_tags": [
-      "开源模型",
-      "盘古大模型",
-      "华为"
-    ]
-  },
-  {
-    "id": "3292b2a97a0c",
-    "title": "Why “reprogramming” is the buzziest approach to reversing aging right now",
-    "summary": "Earlier this week, Life Biosciences, a biotech company focused on reversing age-related diseases, announced that it had dosed its first volunteer. A person with glaucoma has had an experimental treatment injected straight into their eyeball. The idea is to try to treat the disease—which can cause vision loss—by regenerating healthy nerves in the eye. But&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/12/1138829/reprogramming-buzziest-approach-reversing-aging-right-now/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-12T09:00:00+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "Life Biosciences启动青光眼重编程疗法临床试验",
-    "llm_tags": [
-      "生物计算",
-      "基因治疗",
-      "抗衰老"
-    ]
-  },
-  {
-    "id": "a92cee4c594a",
-    "title": "Nanako0129/coralline ⭐194",
-    "summary": "🪸 Powerlevel10k-inspired statusline for Claude Code — paste one prompt and your AI interviews you, then installs it",
-    "url": "https://github.com/Nanako0129/coralline",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-12T07:44:56Z",
-    "stars": 194,
-    "language": "Shell",
-    "frontier": 45,
-    "signal": 60,
-    "score": 51,
-    "llm_summary": "受Powerlevel10k启发的Claude Code状态栏配置工具",
-    "llm_tags": [
-      "CLI工具",
-      "状态栏",
-      "Claude"
-    ]
-  },
-  {
-    "id": "7e105b1bcfba",
-    "title": "EAGLE3 has landed in llama.cpp",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3on4u/eagle3_has_landed_in_llamacpp/\"> <img alt=\"EAGLE3 has landed in llama.cpp\" src=\"https://external-preview.redd.it/zRu_wUfy",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3on4u/eagle3_has_landed_in_llamacpp/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-12T07:40:50+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "EAGLE3 推理加速技术已集成至 llama.cpp",
-    "llm_tags": [
-      "推理加速",
-      "llama.cpp",
-      "EAGLE"
     ]
   }
 ]
