@@ -1,5 +1,366 @@
 [
   {
+    "id": "c8d75b18e33a",
+    "title": "leyten/shard ⭐73",
+    "summary": "Pipeline-parallel LLM inference across GPUs on separate machines.",
+    "url": "https://github.com/leyten/shard",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-19T04:42:49.357108+00:00",
+    "created_at": "2026-06-15T21:31:07Z",
+    "stars": 73,
+    "language": "Python",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "跨多机GPU的流水线并行LLM推理开源方案",
+    "llm_tags": [
+      "推理加速",
+      "分布式",
+      "LLM"
+    ]
+  },
+  {
+    "id": "cd04178e164a",
+    "title": "lokikill123/codex-token-skills ⭐61",
+    "summary": "⚡ Cut 60-80% token cost for DeepSeek V4 Pro on Codex CLI. token-saver + memory skills with prefix-cache optimization.",
+    "url": "https://github.com/lokikill123/codex-token-skills",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-19T04:42:49.357108+00:00",
+    "created_at": "2026-06-15T11:57:30Z",
+    "stars": 61,
+    "language": null,
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "通过前缀缓存优化，大幅降低DeepSeek V4 Pro在Codex CLI上的Token成本。",
+    "llm_tags": [
+      "成本优化",
+      "缓存机制",
+      "CLI工具"
+    ]
+  },
+  {
+    "id": "14f95ed71d00",
+    "title": "wellwelwel/blue-spec ⭐50",
+    "summary": "🌊 Blue Spec is a toolkit for Security-Driven Hardening (SDH), a defensive workflow to help AI agents detect what a system does and harden the defenses that matter.",
+    "url": "https://github.com/wellwelwel/blue-spec",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-19T04:42:49.357108+00:00",
+    "created_at": "2026-06-17T21:19:02Z",
+    "stars": 50,
+    "language": "TypeScript",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "AI安全防御工具包，通过SDH工作流帮助智能体检测系统行为并加固防御。",
+    "llm_tags": [
+      "AI安全",
+      "防御加固",
+      "智能体"
+    ]
+  },
+  {
+    "id": "e3e737771067",
+    "title": "Benchmarking Agentic Review Systems",
+    "summary": "arXiv:2606.19749v1 Announce Type: new  Abstract: A new class of agentic review systems are emerging as a remedy to the pressure placed on peer review systems by AI-assisted research, but it is unclear how they should be evaluated. We evaluate two open-source systems (OpenAIReview and coarse), one proprietary system (Reviewer3), and a zero-shot baseline, across six LLMs spanning frontier and efficient models. First, we study whether AI reviews on ICLR/NeurIPS papers track with papers' quality as approximated by external signals such as citations and acceptance decisions. Every system performs above chance in pairwise accuracy, and the best is OpenAIReview + GPT-5.5 at 83.0%. Second, to test whether systems can catch errors with known ground truth, we construct a perturbation benchmark that ",
+    "url": "https://arxiv.org/abs/2606.19749",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 88,
+    "score": 76,
+    "llm_summary": "评估AI代理评审系统，对比开源与闭源模型在论文评审中的表现。",
+    "llm_tags": [
+      "🔧 已开源",
+      "大模型评估",
+      "智能体",
+      "自动化评审"
+    ]
+  },
+  {
+    "id": "a5730e3c2520",
+    "title": "Prompt, Plan, Extract: Zero-Shot Agentic LLMs Workflows for Lung Pathology Extraction from Clinical Narratives",
+    "summary": "arXiv:2606.19852v1 Announce Type: new  Abstract: Information extraction from pathology reports is essential for cancer staging, tumor registry population. Yet key data remains embedded in narrative reports, making manual extraction labor-intensive and error-prone. Traditional supervised Natural Language Processing pipelines address this through fully supervised Named Entity Recognition and Relation Extraction, but require expensive manual annotation and suffer cascading failures when upstream entities are missed. In this study, we developed a zero-shot, agentic workflow, and evaluated five open-source generative Large Language Models (LLMs) to populate 13 College of American Pathologists synoptic fields from lung resection pathology reports. We compared them against a state-of-the-art supe",
+    "url": "https://arxiv.org/abs/2606.19852",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出零样本Agent工作流，从临床叙述中提取肺部病理数据。",
+    "llm_tags": [
+      "🔧 已开源",
+      "医疗NLP",
+      "Agent工作流",
+      "信息抽取"
+    ]
+  },
+  {
+    "id": "0732a0692a4c",
+    "title": "PerceptionDLM: Parallel Region Perception with Multimodal Diffusion Language Models",
+    "summary": "arXiv:2606.19534v1 Announce Type: cross  Abstract: Multimodal large language models (MLLMs) have achieved remarkable progress in visual understanding tasks. However, most existing MLLMs rely on autoregressive generation, which limits their efficiency for perception tasks that require captioning multiple regions. In this work, we propose PerceptionDLM, a multimodal diffusion language model optimized for efficient parallel region perception. Built upon PerceptionDLM-Base, a strong foundational baseline that achieves state-of-the-art performance among open-source diffusion MLLMs, our architecture fully leverages the parallel decoding nature of DLMs. Specifically, we introduce efficient prompting and structured attention masking to enable simultaneous perception of multiple masked regions, all",
+    "url": "https://arxiv.org/abs/2606.19534",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出多模态扩散语言模型，实现高效的并行区域感知。",
+    "llm_tags": [
+      "多模态",
+      "扩散模型",
+      "🔧 已开源",
+      "视觉感知"
+    ]
+  },
+  {
+    "id": "379937ab1153",
+    "title": "Benchmarking Agentic Review Systems",
+    "summary": "arXiv:2606.19749v1 Announce Type: cross  Abstract: A new class of agentic review systems are emerging as a remedy to the pressure placed on peer review systems by AI-assisted research, but it is unclear how they should be evaluated. We evaluate two open-source systems (OpenAIReview and coarse), one proprietary system (Reviewer3), and a zero-shot baseline, across six LLMs spanning frontier and efficient models. First, we study whether AI reviews on ICLR/NeurIPS papers track with papers' quality as approximated by external signals such as citations and acceptance decisions. Every system performs above chance in pairwise accuracy, and the best is OpenAIReview + GPT-5.5 at 83.0%. Second, to test whether systems can catch errors with known ground truth, we construct a perturbation benchmark tha",
+    "url": "https://arxiv.org/abs/2606.19749",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 88,
+    "score": 76,
+    "llm_summary": "评估AI代理评审系统，对比多种模型与开源方案",
+    "llm_tags": [
+      "🔧 已开源",
+      "大模型评测",
+      "智能体",
+      "同行评审"
+    ]
+  },
+  {
+    "id": "a69189e5e841",
+    "title": "CombEval: A Framework for Evaluating Combinatorial Counting in Large Language Models",
+    "summary": "arXiv:2606.19788v1 Announce Type: new  Abstract: We present CombEval, a dynamic benchmark for evaluating combinatorial counting in large language models. CombEval represents each problem as a typed Cofola specification over entities, combinatorial objects, object dependencies, and constraints, enabling controlled generation of natural-language counting problems with exact solver-verified answers. Unlike static collections, CombEval supports systematic variation of object type, entity scale, constraint count, and reasoning depth. We evaluate 11 LLMs under direct and code-augmented settings and find that models remain brittle on ordered objects, indistinguishable elements, relatively positional constraints, and nested object dependencies. Error analysis further identifies failures in constra",
+    "url": "https://arxiv.org/abs/2606.19788",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 85,
+    "score": 75,
+    "llm_summary": "提出动态基准CombEval，评估大模型组合计数能力。",
+    "llm_tags": [
+      "🔧 已开源",
+      "大模型评估",
+      "组合数学",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "3142ec064211",
+    "title": "DynAMO:Dynamic Asset Management Orchestration via Topological Multi-Agent Scheduling",
+    "summary": "arXiv:2606.19382v1 Announce Type: cross  Abstract: While LLM-powered agents offer end-to-end automation for industrial asset lifecycles, real-world Industry 4.0 deployment is hindered by latency, concurrency instability, and safety risks. We present DynAMO (Dynamic Asset Management Orchestration), a deployment-ready engine using a Plan-then-Execute architecture to generate verifiable workflow graphs. DynAMO supports both SequentialWorkflow (topological execution) and ParallelWorkflow (dependency-aware concurrency). By dynamically identifying independent tasks, DynAMO preserves structural correctness and safety while significantly improving efficiency through controlled reasoning overlap.   Across six controlled experiments on the AssetOpsBench industrial benchmark, DynAMO demonstrates subs",
+    "url": "https://arxiv.org/abs/2606.19382",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出基于拓扑调度的多智能体编排引擎，解决工业部署中的并发与安全问题。",
+    "llm_tags": [
+      "智能体编排",
+      "工业4.0",
+      "工作流",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "fbc763f84d7b",
+    "title": "Your Mouse and Eyes Secretly Leak Your Preference: LLM Alignment using Implicit Feedback from Users",
+    "summary": "arXiv:2606.20482v1 Announce Type: new  Abstract: To align a Large Language Model (LLM), most existing methods collect explicit human feedback and train a reward model to predict the human preference based on the response text. These existing methods have two key limitations. First, the users rarely provide explicit feedback for LLM responses, which makes the high-quality preference annotation expensive to collect. Second, the methods do not leverage implicit human feedback, which has proven vital to the economic moats of Internet giants. To quantify the value of implicit feedback, we build a new dataset called IFLLM, which collects 1336 multi-turn questions from the 59 Mechanical Turk workers, their mouse trajectories, and eye gazing points to the LLMs' responses from their webcams. IFLLM ",
+    "url": "https://arxiv.org/abs/2606.20482",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 80,
+    "score": 78,
+    "llm_summary": "利用鼠标和眼动等隐式反馈对齐大语言模型，降低标注成本。",
+    "llm_tags": [
+      "🔧 已开源",
+      "RLHF",
+      "人机交互",
+      "隐式反馈"
+    ]
+  },
+  {
+    "id": "8a18df685f22",
+    "title": "Gender Bias in LLM Hiring Decisions: Evidence from a Japanese Context and Evaluation of Mitigation Strategies",
+    "summary": "arXiv:2606.18649v1 Announce Type: cross  Abstract: Large language models (LLMs) are increasingly deployed in hiring workflows, yet most research on gender bias in LLM hiring decisions has focused on English-language, Western-format resumes. This study examines whether pro-female gender bias extends to a Japanese corporate context and evaluates two practical mitigation strategies. Using a counterfactual resume design with 60 Japanese rirekisho-format resumes, 12 name pairs selected on linguistically grounded gender-signal criteria, and five state-of-the-art LLMs (Claude Sonnet 4.6, GPT-4o, DeepSeek-V3, Gemini 2.5 Flash, Llama 3.3 70B), we conducted 43,200 API calls across baseline, prompt instruction, and privacy filter conditions. A crossed random-effects linear mixed model confirms a sign",
+    "url": "https://arxiv.org/abs/2606.18649",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "研究LLM在日本招聘中的性别偏见及缓解策略",
+    "llm_tags": [
+      "偏见评估",
+      "招聘应用",
+      "日语模型"
+    ]
+  },
+  {
+    "id": "e8ceae2806db",
+    "title": "CombEval: A Framework for Evaluating Combinatorial Counting in Large Language Models",
+    "summary": "arXiv:2606.19788v1 Announce Type: cross  Abstract: We present CombEval, a dynamic benchmark for evaluating combinatorial counting in large language models. CombEval represents each problem as a typed Cofola specification over entities, combinatorial objects, object dependencies, and constraints, enabling controlled generation of natural-language counting problems with exact solver-verified answers. Unlike static collections, CombEval supports systematic variation of object type, entity scale, constraint count, and reasoning depth. We evaluate 11 LLMs under direct and code-augmented settings and find that models remain brittle on ordered objects, indistinguishable elements, relatively positional constraints, and nested object dependencies. Error analysis further identifies failures in const",
+    "url": "https://arxiv.org/abs/2606.19788",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 85,
+    "score": 75,
+    "llm_summary": "提出动态基准CombEval，评估大模型组合计数能力。",
+    "llm_tags": [
+      "🔧 已开源",
+      "大模型评估",
+      "组合数学",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "5b4c671358c5",
+    "title": "Analyzing the Narration Gap in LLM-Solver Loops",
+    "summary": "arXiv:2606.19588v1 Announce Type: new  Abstract: Formal tools such as SAT and SMT solvers are increasingly embedded in language model reasoning pipelines when a safety or security critical question can be formulated in logic. Unlike chain of thought whose steps are sampled from the model distribution without formal guarantee, a solver produces a sound and independently verifiable answer. However, the soundness guarantee can be lost in the interaction between the solver and the model. The hybrid pipeline has three components: formalizing the question, deciding it, and narrating the result. Prior work has studied the formalization and decision, but not narration, which is the step that turns a formal tool's output into the user answer. To fill the narration gap, we first model the LLM-solver",
+    "url": "https://arxiv.org/abs/2606.19588",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "分析LLM与形式化求解器交互中的逻辑一致性缺口",
+    "llm_tags": [
+      "形式化验证",
+      "逻辑推理",
+      "🔧 已开源",
+      "LLM安全"
+    ]
+  },
+  {
+    "id": "2fe597c03616",
+    "title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
+    "summary": "arXiv:2606.19348v1 Announce Type: cross  Abstract: We present a preview version of DeepSeek-V4 series, including two strong Mixture-of-Experts (MoE) language models -- DeepSeek-V4-Pro with 1.6T parameters (49B activated) and DeepSeek-V4-Flash with 284B parameters (13B activated) -- both supporting a context length of one million tokens. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: (1) a hybrid attention architecture that combines Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to improve long-context efficiency; (2) Manifold-Constrained Hyper-Connections (mHC) that enhance conventional residual connections; (3) and the Muon optimizer for faster convergence and greater training stability. We pre-train both models on more than",
+    "url": "https://arxiv.org/abs/2606.19348",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 92,
+    "signal": 65,
+    "score": 78,
+    "llm_summary": "DeepSeek-V4预览：支持百万上下文的MoE架构模型",
+    "llm_tags": [
+      "MoE架构",
+      "长上下文",
+      "大语言模型"
+    ]
+  },
+  {
+    "id": "9ee45702ee03",
+    "title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
+    "summary": "arXiv:2606.19348v1 Announce Type: new  Abstract: We present a preview version of DeepSeek-V4 series, including two strong Mixture-of-Experts (MoE) language models -- DeepSeek-V4-Pro with 1.6T parameters (49B activated) and DeepSeek-V4-Flash with 284B parameters (13B activated) -- both supporting a context length of one million tokens. DeepSeek-V4 series incorporate several key upgrades in architecture and optimization: (1) a hybrid attention architecture that combines Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA) to improve long-context efficiency; (2) Manifold-Constrained Hyper-Connections (mHC) that enhance conventional residual connections; (3) and the Muon optimizer for faster convergence and greater training stability. We pre-train both models on more than 3",
+    "url": "https://arxiv.org/abs/2606.19348",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 95,
+    "signal": 65,
+    "score": 80,
+    "llm_summary": "DeepSeek-V4预览版：支持百万上下文的高效MoE架构",
+    "llm_tags": [
+      "MoE架构",
+      "长上下文",
+      "大模型"
+    ]
+  },
+  {
+    "id": "5fa3de7e57b0",
+    "title": "StylisticBias: A Few Human Visual Cues Drive Most Social Biases in MLLMs",
+    "summary": "arXiv:2606.20527v1 Announce Type: new  Abstract: Multimodal large language models (MLLMs) are increasingly deployed in personally and societally consequential settings, yet the visual cues that shape how these models judge people remain poorly understood. Prior work often compares different (groups of) individuals, making it difficult to separate appearance effects from identity differences. We introduce StylisticBias, a controlled benchmark for evaluating attribute-level social bias in MLLMs. We generate 500 photorealistic base faces and create about 50 single-attribute variations per face, producing about 25K images. This design keeps identity fixed and changes one visual attribute at a time. It lets us measure how specific cues shift model judgments. We evaluate six MLLMs across 25 bina",
+    "url": "https://arxiv.org/abs/2606.20527",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出控制基准，揭示视觉风格线索驱动MLLM社会偏见。",
+    "llm_tags": [
+      "多模态模型",
+      "社会偏见",
+      "🔧 已开源",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "f9205e622b26",
+    "title": "GLM-5.2 now more than 10 points above Opus 4.8 in AA Coding Index",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u9nz7h/glm52_now_more_than_10_points_above_opus_48_in_aa/\"> <img alt=\"GLM-5.2 now more than 10 points above Opus 4.8 in AA Codi",
+    "url": "https://www.reddit.com/r/singularity/comments/1u9nz7h/glm52_now_more_than_10_points_above_opus_48_in_aa/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-19T01:05:51+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "GLM-5.2在AA编程指数中超越Opus 4.8超10分",
+    "llm_tags": [
+      "大模型",
+      "代码生成",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "56c59542be6d",
+    "title": "MosaicLeaks: Can your research agent keep a secret?",
+    "summary": "",
+    "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-18T18:13:13+00:00",
+    "frontier": 65,
+    "signal": 85,
+    "score": 73,
+    "llm_summary": "揭示研究代理泄露训练数据的风险，提出评估方法。",
+    "llm_tags": [
+      "模型安全",
+      "数据泄露",
+      "智能体"
+    ]
+  },
+  {
+    "id": "2360b9c29475",
+    "title": "The Midjourney scanner, explained: It uses 21 servers with 4 Petaflops of power, pulling your body at a rate of 4 cm per second, for one minute",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u9a1l4/the_midjourney_scanner_explained_it_uses_21/\"> <img alt=\"The Midjourney scanner, explained: It uses 21 servers with 4 Pe",
+    "url": "https://www.reddit.com/r/singularity/comments/1u9a1l4/the_midjourney_scanner_explained_it_uses_21/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-18T15:52:58+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "Midjourney 扫描仪硬件配置曝光：21 服务器 4 PFlops 算力",
+    "llm_tags": [
+      "3D重建",
+      "硬件配置",
+      "Midjourney"
+    ]
+  },
+  {
     "id": "281c0e08d056",
     "title": "Happy-Chen-CH/Educational_RAG_System ⭐75",
     "summary": "面向教育场景的RAG智能问答系统，融合关键词匹配与语义检索双引擎，融合MySQL和RAG技术，先经过MySQL数据库的检索(还融合了Redis辅助储存和搜索)，若无符合条件答案，则进入RAG系统，RAG知识库中的知识储存在Milvus向量数据库中",
@@ -60,6 +421,24 @@
       "图像编辑",
       "矢量转换",
       "开源工具"
+    ]
+  },
+  {
+    "id": "1949ecfaebd6",
+    "title": "Improving health intelligence in ChatGPT",
+    "summary": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations.",
+    "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-18T11:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "GPT-5.5增强医疗推理与沟通能力，引入医生评估机制",
+    "llm_tags": [
+      "医疗AI",
+      "模型评估",
+      "推理能力"
     ]
   },
   {
@@ -3013,404 +3392,6 @@
       "推理加速",
       "llama.cpp",
       "EAGLE"
-    ]
-  },
-  {
-    "id": "6d9588338fc0",
-    "title": "nolangz/pixel2motion ⭐276",
-    "summary": "AI logo animation skill: turn raster logos into smooth SVG animation, animated HTML demos, GIF/video previews, and motion QA evidence.",
-    "url": "https://github.com/nolangz/pixel2motion",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-12T04:25:17Z",
-    "stars": 276,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 65,
-    "score": 59,
-    "llm_summary": "开源项目，将栅格Logo转换为SVG动画及视频预览。",
-    "llm_tags": [
-      "生成式动画",
-      "SVG",
-      "图像处理"
-    ]
-  },
-  {
-    "id": "10968b485566",
-    "title": "liuluhaixiu/DaVinci-AutoEdit-Agent ⭐99",
-    "summary": "AI自动剪辑的“第一次接触”，一款基于davinci mcp的全自动自媒体视频剪辑skill",
-    "url": "https://github.com/liuluhaixiu/DaVinci-AutoEdit-Agent",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-12T04:02:06Z",
-    "stars": 99,
-    "language": "Python",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "基于DaVinci MCP的全自动自媒体视频剪辑工具",
-    "llm_tags": [
-      "视频生成",
-      "MCP",
-      "自动化"
-    ]
-  },
-  {
-    "id": "2b9e30e89fce",
-    "title": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
-    "summary": "arXiv:2606.12451v1 Announce Type: new  Abstract: Large language models deployed as agents over large tool catalogs face a critical tool-retrieval bottleneck. As embedding-based retrieval approaches rely on compact encoders that may under-capture specialized tool semantics, parametric tool retrieval addresses this by encoding each tool as a virtual token appended to the LLM vocabulary, fine-tuned in two stages (memorization then retrieval SFT) to use the LLM as a retriever, achieving strong performance on standard ToolBench retrieval benchmarks. Yet these benchmarks use verbose, fully-specified queries, and their evaluation applies constrained decoding that restricts outputs to valid token paths, neither reveals whether the model actually understands its tools. We introduce \\textbf{ToolSens",
-    "url": "https://arxiv.org/abs/2606.12451",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 80,
-    "llm_summary": "提出参数化工具检索框架，解决LLM代理的工具检索瓶颈。",
-    "llm_tags": [
-      "🔧 已开源",
-      "LLM Agent",
-      "工具检索",
-      "RAG"
-    ]
-  },
-  {
-    "id": "5badd12d743e",
-    "title": "Arbor: Tree Search as a Cognition Layer for Autonomous Agents",
-    "summary": "arXiv:2606.12563v1 Announce Type: new  Abstract: Arbor is a multi-agent framework that introduces structured tree search as a cognition layer for autonomous agents operating in large, stateful action spaces. Prior autonomous optimization systems operate on isolated targets with stateless evaluation. Arbor instead maintains an explicit search tree of scored hypotheses that serves as the shared working memory across agents, evolving with every measurement, treating failures as diagnostic signal that reshapes subsequent exploration, and expanding as prior successes shift the bottleneck distribution.   We validate Arbor on full-stack LLM inference optimization, a domain where achieving peak performance has historically required coordinated effort from engineering teams across the application, ",
-    "url": "https://arxiv.org/abs/2606.12563",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "引入树搜索作为认知层，处理大规模有状态动作空间的多智能体框架。",
-    "llm_tags": [
-      "智能体",
-      "树搜索",
-      "多智能体",
-      "强化学习"
-    ]
-  },
-  {
-    "id": "69572ba77312",
-    "title": "Pythagoras-Prover: Advancing Efficient Formal Proving via Augmented Lean Formalisation",
-    "summary": "arXiv:2606.12594v1 Announce Type: new  Abstract: Modern Lean theorem provers achieve strong performance only with substantial training and inference compute, driven in part by scarce verified proof data and the long reasoning traces of formal proof search, making both supervised fine-tuning (SFT) and sampling expensive. We introduce Pythagoras-Prover, a compute-efficient open-source family of Lean theorem provers built for practical compute budgets. The family spans two generation paradigms: autoregressive models at 4B and 32B parameters, and a first proof-of-concept diffusion-based prover (4B) that iteratively refines Lean proofs at inference time. For training efficiency, we build a Lean-verified corpus stratified into easy, medium, and hard problems for curriculum SFT, so models acquire",
-    "url": "https://arxiv.org/abs/2606.12594",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 80,
-    "llm_summary": "面向有限算力的Lean定理证明器，提升推理效率并开源。",
-    "llm_tags": [
-      "定理证明",
-      "🔧 已开源",
-      "大模型推理",
-      "Lean语言"
-    ]
-  },
-  {
-    "id": "7a97256c1a16",
-    "title": "PersonaDrive: Human-Style Retrieval-Augmented VLA Agents for Closed-Loop Driving Simulation",
-    "summary": "arXiv:2606.12616v1 Announce Type: new  Abstract: Closed-loop driving simulators typically populate their environments with non-ego traffic agents that behave largely the same way, produced either by rule-based traffic managers or by learned models trained toward a single behavioral mode. Recent work introduces style variation through post-hoc labels on observational data or LLM-inferred reward weights, but these signals act as proxies for what a style should reward rather than demonstrations of humans explicitly asked to drive in that style. We introduce PersonaDrive, a pipeline that conditions a vision-language-action (VLA) driving agent on retrieved demonstrations from a style-instructed human driving dataset, in which participants drive CARLA leaderboard routes under aggressive, neutral",
-    "url": "https://arxiv.org/abs/2606.12616",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "引入检索增强机制，为自动驾驶模拟器生成多样化拟人化驾驶风格。",
-    "llm_tags": [
-      "自动驾驶",
-      "VLA模型",
-      "RAG",
-      "仿真模拟"
-    ]
-  },
-  {
-    "id": "4329398d5fc9",
-    "title": "Evoflux: Inference-Time Evolution of Executable Tool Workflows for Compact Agents",
-    "summary": "arXiv:2606.12674v1 Announce Type: new  Abstract: Compact language models (LMs) reduce cost, latency, and deployment risk for tool agents. Yet MCP-style tool use requires more than isolated function calling: an agent must discover tools from live catalogs, satisfy schemas, preserve dependencies across intermediate outputs, and ground final responses in executed evidence. Small planners often generate plausible workflow graphs that fail under tool resolution, parameter validation, dependency tracking, or execution. We argue that this failure mode is poorly handled by small-corpus distillation. A few hundred teacher traces can teach workflow format, but rarely cover the recovery behavior needed to repair failed plans over changing tool catalogs. We introduce Evoflux, an inference-time evoluti",
-    "url": "https://arxiv.org/abs/2606.12674",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "提出推理时演化工作流，提升紧凑模型工具调用能力",
-    "llm_tags": [
-      "智能体",
-      "工具调用",
-      "小模型",
-      "工作流"
-    ]
-  },
-  {
-    "id": "9fdeb9b90f65",
-    "title": "From AGI to ASI",
-    "summary": "arXiv:2606.12683v1 Announce Type: new  Abstract: Over the last decade, building human-level artificial general intelligence has moved from far-fetched speculation to being a concrete next-decade target for many of the largest AI organisations. Achieving this goal would have profound and far-reaching impacts on human society, which raises many complex questions for the decade ahead. This report investigates how AI itself might continue to develop in a post-AGI world along the continuum of machine intelligence. The endpoint of this continuum, Universal AI, is theoretically well understood, which provides some formal grounding for the main focus of this report: the transition from human-level AGI to artificial general superintelligence, which, intuitively, can be understood as a system that i",
-    "url": "https://arxiv.org/abs/2606.12683",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "探讨AGI向ASI演进路径及社会影响的深度报告",
-    "llm_tags": [
-      "AGI",
-      "ASI",
-      "AI安全",
-      "未来预测"
-    ]
-  },
-  {
-    "id": "136dcffe0173",
-    "title": "Deployment-Centered Evaluation: Predicting Query-Level Rejection Risk in a Clinical LLM System",
-    "summary": "arXiv:2606.12702v1 Announce Type: new  Abstract: Large language models (LLMs) are increasingly integrated into clinical systems, making it essential to evaluate the real-world utility of these systems. However, static benchmarks tend to measure correctness rather than user acceptance, aggregate performance across queries, and require densely annotated datasets -- leading to major blind spots for evaluating clinical systems. In this work, we perform a deployment-centered evaluation of an LLM system embedded within electronic health records at an academic medical center, where user feedback is sparse but closely reflects the deployment conditions. Specifically, we train a pre-response classifier that estimates the risk that a future interaction will result in the user rejecting the LLM respo",
-    "url": "https://arxiv.org/abs/2606.12702",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出预测临床LLM查询级拒绝风险的部署评估方法。",
-    "llm_tags": [
-      "医疗AI",
-      "风险评估",
-      "LLM评估"
-    ]
-  },
-  {
-    "id": "5dfa8325cac7",
-    "title": "The Theory of Mind Utility: Formal Specification of a Mentalizing Mechanism",
-    "summary": "arXiv:2606.12721v1 Announce Type: new  Abstract: Inferring others' beliefs requires more than reading surface signals; it requires tracking who told them what, in what order, and how credibly. The Theory of Mind Utility (ToM-U) formalizes this epistemic state inference problem at the computational level of analysis, specifying what mentalizing computes and why without commitment to algorithmic or neural implementation. ToM-U achieves this by constructing Local Epistemic World Models (LEWMs) -- directed typed graphs that represent agents, state nodes, and the epistemic relationships among them -- and evaluating discrete candidate LEWMs against observed behavior until one achieves sufficient confidence. Five formal definitions specify the LEWM structure, agent node properties including order",
-    "url": "https://arxiv.org/abs/2606.12721",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 45,
-    "score": 60,
-    "llm_summary": "提出心智理论效用框架，形式化定义信念推断的计算问题。",
-    "llm_tags": [
-      "心智理论",
-      "认知建模",
-      "形式化方法"
-    ]
-  },
-  {
-    "id": "83979ba59f1b",
-    "title": "Benchmarking AI Agents for Addressing Scientific Challenges Across Scales",
-    "summary": "arXiv:2606.12736v1 Announce Type: new  Abstract: AI agents are increasingly being developed to accelerate scientific discovery, yet their practical capabilities in real research settings remain poorly understood. Existing benchmarks for AI agents rarely capture the complexity, heterogeneity, and extended reasoning required by scientific work, whereas benchmarks for scientific tasks often reduce research to static, direct problems and provide limited support for interactive evaluation. Here, we introduce SciAgentArena, a systematic benchmark for evaluating AI agents in real-world scientific research scenarios drawn from emerging needs across multiple domains. SciAgentArena comprises approximately 200 tasks with stepwise verification and an interactive, agent-agnostic environment for assessi",
-    "url": "https://arxiv.org/abs/2606.12736",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出跨尺度科学挑战基准，评估AI智能体复杂推理能力。",
-    "llm_tags": [
-      "AI智能体",
-      "科学计算",
-      "基准测试",
-      "评估方法"
-    ]
-  },
-  {
-    "id": "22ced9c33879",
-    "title": "A Tutorial on World Models and Physical AI",
-    "summary": "arXiv:2606.12783v1 Announce Type: new  Abstract: World modeling is emerging as a central principle for building intelligent systems capable of prediction, reasoning, and decision making. A central distinction can be drawn between explicit world models, which learn structured dynamics for rollout-based reasoning and planning, and implicit world models, which encode predictive structure within scalable learned representations. These complementary paradigms provide a foundation for physical AI in domains such as robotics and autonomous driving, enabling intelligence beyond reactive control under real-world constraints. Recent foundation models further suggest a pathway toward unified systems integrating perception, prediction, and action. Despite rapid progress, major challenges remain in hie",
-    "url": "https://arxiv.org/abs/2606.12783",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "综述显式与隐式世界模型，探讨物理AI基础",
-    "llm_tags": [
-      "世界模型",
-      "物理AI",
-      "综述"
-    ]
-  },
-  {
-    "id": "0a4b83ebd01b",
-    "title": "The Containment Gap: How Deployed Agentic AI Frameworks Fail Public-Facing Safety Requirements",
-    "summary": "arXiv:2606.12797v1 Announce Type: new  Abstract: Agentic large language model systems that autonomously invoke tools, maintain persistent memory, and execute multi-step plans are increasingly deployed in public-facing domains, including government services, healthcare triage, and financial advising. We ask whether the frameworks used to build these systems provide architectural-level structural safety guarantees. Applying six containment principles derived from a compositional model of agentic architectures, we audit three dominant frameworks (LangChain, AutoGPT, and OpenAI Agents SDK) and find no native compliance in any of them. Memory integrity, a defense against one of the most prevalent vulnerability classes, is not observed in any of the three evaluated frameworks. We validate these ",
-    "url": "https://arxiv.org/abs/2606.12797",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "揭示智能体框架在公共安全架构层面的缺陷与风险。",
-    "llm_tags": [
-      "AI安全",
-      "智能体",
-      "系统架构",
-      "风险评估"
-    ]
-  },
-  {
-    "id": "a6692ffde5c6",
-    "title": "MLUBench: A Benchmark for Lifelong Unlearning Evaluation in MLLMs",
-    "summary": "arXiv:2606.12809v1 Announce Type: new  Abstract: Multimodal large language models (MLLMs) are trained on massive multimodal data, making data unlearning increasingly important as data owners may request the removal of specific content. In practice, these requests often arrive sequentially over time, giving rise to the challenging problem of MLLM Lifelong Unlearning. However, most existing benchmarks are limited in scale and scope, failing to capture the complexities of MLLM lifelong unlearning. To fill this gap, we introduce the MLUBench, a large-scale and comprehensive benchmark featuring 127 entities across 9 classes under lifelong unlearning requests. We perform extensive experiments using MLUBench and reveal that existing unlearning methods suffer from severe, cumulative degradation. M",
-    "url": "https://arxiv.org/abs/2606.12809",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "首个多模态大模型终身遗忘评估基准，填补领域空白。",
-    "llm_tags": [
-      "🔧 已开源",
-      "模型安全",
-      "基准测试",
-      "多模态"
-    ]
-  },
-  {
-    "id": "db3ccdc908b6",
-    "title": "Strategic Decision Support for AI Agents",
-    "summary": "arXiv:2606.12587v1 Announce Type: new  Abstract: Traditionally, decision support studies how humans use machine learning models to make better decisions. In modern agentic systems, this division of roles is increasingly reversed: AI agents act on behalf of users, while humans and tools becomes support mechanisms around them. This role reversal brings reliability concerns to the forefront, since agentic errors can be consequential and agent behavior must remain aligned with human goals and constraints. Departing from the classical view of decision support, we revisit its two basic principles, the cost--value tradeoff of seeking support and the role of uncertainty quantification, in a setting where AI agents are the central actors. We propose a framework for strategic decision support for AI",
-    "url": "https://arxiv.org/abs/2606.12587",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-12T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "探讨AI代理决策支持中的角色反转与可靠性挑战",
-    "llm_tags": [
-      "智能体",
-      "决策支持",
-      "可靠性",
-      "人机协作"
-    ]
-  },
-  {
-    "id": "706ea3c2867e",
-    "title": "Google's Genie 3 turns a text prompt into a playable open world you can explore. It's rough now. Future of games, or a tech demo?",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/artificial/comments/1u3jlw6/googles_genie_3_turns_a_text_prompt_into_a/\"> <img alt=\"Google's Genie 3 turns a text prompt into a playable open world y",
-    "url": "https://www.reddit.com/r/artificial/comments/1u3jlw6/googles_genie_3_turns_a_text_prompt_into_a/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-12T03:07:41+00:00",
-    "frontier": 85,
-    "signal": 45,
-    "score": 69,
-    "llm_summary": "谷歌Genie 3可将文本生成可玩开放世界，目前仍显粗糙。",
-    "llm_tags": [
-      "生成式AI",
-      "游戏开发",
-      "世界模型"
-    ]
-  },
-  {
-    "id": "11f4870fbec7",
-    "title": "joeseesun/qiaomu-ai-prd ⭐125",
-    "summary": "Turn one-line product ideas into AI-implementable PRDs with speed-read cards, constraint layers, overdelivery ideas, metrics, and acceptance scripts.",
-    "url": "https://github.com/joeseesun/qiaomu-ai-prd",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-12T02:38:55Z",
-    "stars": 125,
-    "language": "Python",
-    "frontier": 45,
-    "signal": 65,
-    "score": 53,
-    "llm_summary": "开源工具，利用AI将单行产品创意转化为结构化PRD文档。",
-    "llm_tags": [
-      "Prompt工程",
-      "产品管理",
-      "自动化"
-    ]
-  },
-  {
-    "id": "5595bb9e9123",
-    "title": "newideas99/open-dungeon ⭐100",
-    "summary": "Open Dungeon — the first easy-to-use, fully local AI roleplay app. Story and inline scene images generated 100% on your machine (Gemma 4 QAT via Ollama(and others) + FLUX). No accounts, no API keys, n",
-    "url": "https://github.com/newideas99/open-dungeon",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-12T00:37:09Z",
-    "stars": 100,
-    "language": "TypeScript",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "本地AI角色扮演应用，集成Gemma与FLUX生成图文",
-    "llm_tags": [
-      "本地部署",
-      "多模态",
-      "角色扮演"
-    ]
-  },
-  {
-    "id": "9720ea694470",
-    "title": "Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31B QAT Uncensored Heretics!",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3flg9/gemma_4_quadruple_release_12b_12b_qat_26ba4b_qat/\"> <img alt=\"Gemma 4 Quadruple Release, 12B, 12B QAT, 26B-A4B QAT and 31",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3flg9/gemma_4_quadruple_release_12b_12b_qat_26ba4b_qat/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-11T23:58:58+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "社区发布Gemma 4多版本模型，含12B及QAT量化变体",
-    "llm_tags": [
-      "开源模型",
-      "量化技术",
-      "Gemma"
-    ]
-  },
-  {
-    "id": "cc062a58f80a",
-    "title": "[Talk] Text Diffusion — Google DeepMind's Brendan O’Donoghue",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u3f9hs/talk_text_diffusion_google_deepminds_brendan/\"> <img alt=\"[Talk] Text Diffusion — Google DeepMind's Brendan O’Donoghue\" s",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3f9hs/talk_text_diffusion_google_deepminds_brendan/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-11T23:43:20+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "探讨文本扩散模型技术细节与优势",
-    "llm_tags": [
-      "扩散模型",
-      "NLP",
-      "DeepMind"
-    ]
-  },
-  {
-    "id": "a89b0d74f3f8",
-    "title": "itsinseong/value-for-fable ⭐175",
-    "summary": "Opus에 근접한 품질을 Sonnet 단가에 — 가성비 AI 운영 모델을 직접 구축한 Claude Code 프로젝트",
-    "url": "https://github.com/itsinseong/value-for-fable",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-11T19:54:14Z",
-    "stars": 175,
-    "language": "Python",
-    "frontier": 45,
-    "signal": 60,
-    "score": 51,
-    "llm_summary": "开源项目，声称以低成本构建接近Opus质量的模型",
-    "llm_tags": [
-      "模型微调",
-      "开源项目",
-      "成本优化"
     ]
   }
 ]
