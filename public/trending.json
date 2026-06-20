@@ -1,5 +1,89 @@
 [
   {
+    "id": "e3ca9ebda83f",
+    "title": "asimons81/hermes-gpt ⭐51",
+    "summary": "",
+    "url": "https://github.com/asimons81/hermes-gpt",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-20T03:56:50.626876+00:00",
+    "created_at": "2026-06-18T02:54:54Z",
+    "stars": 51,
+    "language": "Python",
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "开源项目 Hermes-GPT，提供特定模型或微调方案。",
+    "llm_tags": [
+      "开源模型",
+      "微调"
+    ]
+  },
+  {
+    "id": "852cf1dd26c6",
+    "title": "m14r41/PentestingChecklist ⭐43",
+    "summary": "Comprehensive, data-driven security assessment checklists across 23 platforms web, API, mobile, cloud, Active Directory, Kubernetes, LLM, and more. Expandable hierarchy, global search, progress tracki",
+    "url": "https://github.com/m14r41/PentestingChecklist",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-20T03:56:50.626876+00:00",
+    "created_at": "2026-06-17T18:25:49Z",
+    "stars": 43,
+    "language": "TypeScript",
+    "frontier": 45,
+    "signal": 75,
+    "score": 57,
+    "llm_summary": "涵盖Web、API、LLM等23个平台的安全评估清单",
+    "llm_tags": [
+      "安全测试",
+      "LLM安全",
+      "渗透测试"
+    ]
+  },
+  {
+    "id": "540108e1cc40",
+    "title": "abdokhalil5555/AgenticDeFi-Trainer ⭐43",
+    "summary": "Autonomous AI Agent Swarm framework with x402 self-executing wallets. Empowers LLM-driven agents to trade, bridge, and manage crypto treasuries without human intervention. The ultimate Agentic DeFi to",
+    "url": "https://github.com/abdokhalil5555/AgenticDeFi-Trainer",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-20T03:56:50.626876+00:00",
+    "created_at": "2026-06-18T15:02:39Z",
+    "stars": 43,
+    "language": "Python",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "自主AI代理框架，集成402个自执行钱包，实现无干预DeFi交易与资金管理。",
+    "llm_tags": [
+      "智能体",
+      "DeFi",
+      "LLM应用",
+      "自动化"
+    ]
+  },
+  {
+    "id": "664081db5456",
+    "title": "xiaoguzuiniu/gpt-free-register ⭐42",
+    "summary": "纯协议层 ChatGPT 账号自动注册工具。不开浏览器、不用 selenium——直接用 curl_cffi 模拟 Chrome TLS 指纹打 HTTP 接口，单进程多线程并发，注册成功后自动跑 Codex OAuth 并落 CLIProxyAPI 兼容凭证。  提供 CLI 与 本地 WebUI 两种入口。",
+    "url": "https://github.com/xiaoguzuiniu/gpt-free-register",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-20T03:56:50.626876+00:00",
+    "created_at": "2026-06-16T08:19:10Z",
+    "stars": 42,
+    "language": "Python",
+    "frontier": 45,
+    "signal": 85,
+    "score": 61,
+    "llm_summary": "基于协议层的ChatGPT自动注册工具，模拟TLS指纹并发注册",
+    "llm_tags": [
+      "逆向工程",
+      "自动化",
+      "协议分析"
+    ]
+  },
+  {
     "id": "f500807fe3ae",
     "title": "haydenbleasel/batchwork ⭐48",
     "summary": "Unified batch API for AI providers. Save up to 50% on LLM costs.",
@@ -373,6 +457,24 @@
     "frontier": 75,
     "signal": 65,
     "score": 70,
+    "llm_summary": "提出LLM智能体不确定性分解框架，支持主动澄清与交互",
+    "llm_tags": [
+      "智能体",
+      "不确定性",
+      "交互式AI"
+    ]
+  },
+  {
+    "id": "bf1494c62f5b",
+    "title": "Uncertainty Decomposition for Clarification Seeking in LLM Agents",
+    "summary": "arXiv:2606.19559v1 Announce Type: new  Abstract: Recent position papers argue that the classical aleatoric/epistemic uncertainty framework is insufficient for interactive large language model (LLM) agents and call for underspecification-aware, decomposed, and communicable uncertainty representations that can unlock new agent capabilities such as proactive clarification seeking and shared mental-model building. Practical deployment constraints -- black-box APIs, interactive latency budgets, and the absence of labeled trajectories -- rule out logprob-based, multi-sampling, and training-based methods, leaving prompt-based estimation as the most viable family for surfacing such signals at deployment time. We answer this call with a simple prompt-based decomposition that separates action confid",
+    "url": "https://arxiv.org/abs/2606.19559",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-19T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
     "llm_summary": "提出LLM智能体不确定性分解框架，支持主动澄清与交互",
     "llm_tags": [
       "智能体",
@@ -3162,121 +3264,6 @@
       "模型监管",
       "Anthropic",
       "大模型"
-    ]
-  },
-  {
-    "id": "0e49f582dcf8",
-    "title": "eli-labz/Third-Eye ⭐287",
-    "summary": "A production-grade OSINT platform that provides situational awareness across multiple intelligence domains.",
-    "url": "https://github.com/eli-labz/Third-Eye",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-13T03:15:46Z",
-    "stars": 287,
-    "language": "TypeScript",
-    "frontier": 45,
-    "signal": 60,
-    "score": 51,
-    "llm_summary": "开源生产级OSINT平台，支持多领域情报态势感知",
-    "llm_tags": [
-      "OSINT",
-      "开源工具",
-      "情报分析"
-    ]
-  },
-  {
-    "id": "2c18f452ad49",
-    "title": "Diffusion Gemma is 4x faster, but makes 6x more mistakes!",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u4bne8/diffusion_gemma_is_4x_faster_but_makes_6x_more/\"> <img alt=\"Diffusion Gemma is 4x faster, but makes 6x more mistakes!\" sr",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4bne8/diffusion_gemma_is_4x_faster_but_makes_6x_more/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-12T23:54:33+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "Diffusion Gemma 推理速度提升4倍但错误率增加6倍",
-    "llm_tags": [
-      "扩散模型",
-      "推理加速",
-      "模型评估"
-    ]
-  },
-  {
-    "id": "dea0ab225975",
-    "title": "orange2ai/renwei-writing ⭐552",
-    "summary": "人味儿写作 · An AI agent skill: edit people's words without erasing the person behind them",
-    "url": "https://github.com/orange2ai/renwei-writing",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-12T21:45:48Z",
-    "stars": 552,
-    "language": null,
-    "frontier": 45,
-    "signal": 60,
-    "score": 51,
-    "llm_summary": "开源AI智能体，旨在保留个人风格的文本润色工具",
-    "llm_tags": [
-      "智能体",
-      "文本润色",
-      "开源"
-    ]
-  },
-  {
-    "id": "66a50a20162e",
-    "title": "Continual learning in mid-2026. A map of everyone trying to crack it: memory layers, \"dreaming\" agents, and the Post-Transformer models that learn inside the network",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Llion Jones said “2026 is the continual learning year” in the recent Post-Transformer debate. Sutton/Silver call the next phase the &quot;era of experience”.<br /> Wh",
-    "url": "https://www.reddit.com/r/artificial/comments/1u40uys/continual_learning_in_mid2026_a_map_of_everyone/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-12T16:52:04+00:00",
-    "frontier": 85,
-    "signal": 75,
-    "score": 81,
-    "llm_summary": "汇总2026年持续学习技术路线，涵盖记忆层、后Transformer架构等方案",
-    "llm_tags": [
-      "持续学习",
-      "后Transformer",
-      "智能体",
-      "记忆机制"
-    ]
-  },
-  {
-    "id": "0ed0410ee678",
-    "title": "tmchow/illo-skill ⭐108",
-    "summary": "illo — an AI agent skill that turns ideas and articles into original print-style editorial illustrations, starring a recurring mascot. Ten bundled looks, custom characters, OpenRouter-powered.",
-    "url": "https://github.com/tmchow/illo-skill",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-12T16:03:22Z",
-    "stars": 108,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 65,
-    "score": 59,
-    "llm_summary": "基于OpenRouter的AI Agent，可将文章转为带吉祥物的社论插画。",
-    "llm_tags": [
-      "AI Agent",
-      "图像生成",
-      "开源项目"
-    ]
-  },
-  {
-    "id": "1498a600343e",
-    "title": "olmo-eval: An evaluation workbench for the model development loop",
-    "summary": "",
-    "url": "https://huggingface.co/blog/allenai/olmo-eval",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-06-12T15:56:10+00:00",
-    "frontier": 55,
-    "signal": 85,
-    "score": 67,
-    "llm_summary": "Hugging Face 推出 OLMo 评估工作台，集成开发循环",
-    "llm_tags": [
-      "模型评估",
-      "开发工具",
-      "OLMo"
     ]
   }
 ]
