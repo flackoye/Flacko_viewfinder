@@ -1,5 +1,212 @@
 [
   {
+    "id": "ec8b02361352",
+    "title": "lucasfishh/vanta ⭐60",
+    "summary": "Autonomous LLM squads compete in a tactical strategy game with on-chain Solana stakes.",
+    "url": "https://github.com/lucasfishh/vanta",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-20T14:09:29.931600+00:00",
+    "created_at": "2026-06-19T16:43:05Z",
+    "stars": 60,
+    "language": "TypeScript",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "LLM智能体在链上策略游戏中进行自主博弈",
+    "llm_tags": [
+      "智能体",
+      "游戏AI",
+      "Solana"
+    ]
+  },
+  {
+    "id": "6d089744e32a",
+    "title": "Beyond Entropy: Learning from Token-Level Distributional Deviations for LLM Reasoning",
+    "summary": "arXiv:2606.19771v1 Announce Type: new  Abstract: Reinforcement Learning with Verifiable Rewards (RLVR) has significantly advanced Large Language Model (LLM) reasoning; however, it faces a fundamental optimization instability: uniform token updates precipitate entropy collapse, leading to premature convergence to suboptimal strategies, whereas excessive Shannon Entropy maximization can cause entropy explosion, driving blind exploration toward incoherent reasoning chains. To resolve this dichotomy, we introduce the Independent Combinatorial Tokens (ICT) framework, which shifts the optimization focus from scalar uncertainty to the distributional properties of token logits. By leveraging the Jensen-Shannon (JS) divergence between token logits distributions, ICT identifies tokens with distincti",
+    "url": "https://arxiv.org/abs/2606.19771",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-20T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出基于Token分布偏差的RLVR方法，解决LLM推理中的熵崩溃问题。",
+    "llm_tags": [
+      "强化学习",
+      "推理优化",
+      "LLM"
+    ]
+  },
+  {
+    "id": "875268833d1e",
+    "title": "Reward as An Agent for Embodied World Models",
+    "summary": "arXiv:2606.19990v1 Announce Type: new  Abstract: While RL has become a promising tool for refining world models, existing methods largely rely on conservative rollouts near the training distribution, limiting exploration, behavioral diversity, and richer dynamic discovery. In this work, we challenge this conservative paradigm. We argue that the core limitation is not exploration itself, but the lack of reliable verification strategies to support broader exploration. Without reliable verification, expanded exploration becomes highly susceptible to reward hacking, where policies exploit imperfect rewards without achieving genuine improvement. To evaluate this motivation, we instantiate our method in embodied world models, where physical plausibility, and task completion provide a rigorous te",
+    "url": "https://arxiv.org/abs/2606.19990",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-20T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出将奖励作为智能体验证具身世界模型，突破保守探索限制。",
+    "llm_tags": [
+      "具身智能",
+      "世界模型",
+      "强化学习",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "96a8555bf114",
+    "title": "Navigating Unreliable Parametric and Contextual Knowledge: Explicit Knowledge Conflict Resolution for LLM Inference",
+    "summary": "arXiv:2606.20245v1 Announce Type: new  Abstract: Large language models (LLMs) have achieved strong performance across a wide range of language-based tasks by leveraging both extensive parametric knowledge and in-context learning ability, enabling them to incorporate external information provided in the input prompt. However, the integration of external knowledge can introduce conflicts, not only between the model's internal parametric knowledge and the external information, but also among multiple pieces of external contexts. Existing approaches typically assume that either the model or the provided context is reliable, overlooking the possibility that both sources may contain errors, and avoid conflicts by privileging one source over the other, rather than actively resolving inconsistenci",
+    "url": "https://arxiv.org/abs/2606.20245",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-20T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出显式解决参数化与上下文知识冲突的方法，提升LLM推理可靠性。",
+    "llm_tags": [
+      "知识冲突",
+      "RAG",
+      "推理优化",
+      "可靠性"
+    ]
+  },
+  {
+    "id": "11fd7fff2ec9",
+    "title": "DeepSWIP: Quotient-WMC Counterfactuals for Neural Probabilistic Logic Programs",
+    "summary": "arXiv:2606.20526v1 Announce Type: new  Abstract: Neurosymbolic systems such as DeepProbLog combine neural perception with probabilistic logic, but standard inference is associational. Counterfactual reasoning additionally requires a causal semantics for interventions and evidence. We introduce DeepSWIP, a single-world counterfactual semantics for DeepProbLog programs. Using neural materialization, we reduce fixed-context neural predicates to ordinary ProbLog choices, apply Single World Intervention Programs (SWIPs), and compute counterfactuals by weighted model counting (WMC) over a single transformed program. Under finite grounding and unique-supported-model assumptions, DeepSWIP is exact relative to the learned materialized FCM. The standard quotient-WMC form of ProbLog conditionals iden",
+    "url": "https://arxiv.org/abs/2606.20526",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-20T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出神经概率逻辑程序的反事实推理语义DeepSWIP",
+    "llm_tags": [
+      "神经符号",
+      "反事实推理",
+      "🔧 已开源",
+      "逻辑编程"
+    ]
+  },
+  {
+    "id": "5d63a43e6ff2",
+    "title": "DeXposure-Claw: An Agentic System for DeFi Risk Supervision",
+    "summary": "arXiv:2606.19501v1 Announce Type: new  Abstract: Decentralized finance exposes supervisors to fast-moving, networked credit risks. General-purpose LLM agents fit this setting poorly: they over-read weak evidence and recommend high-stakes interventions, while existing evaluations offer no regulator-aligned way to measure the resulting false alarms. We introduce DeXposure-Claw, a forecast-grounded agentic supervision system that routes LLM decisions through structured evidence: (1) DeXposure-FM, a graph time-series foundation model, forecasts future exposure networks; (2) deterministic monitors and stress scenarios then turn those forecasts into typed alerts, attribution signals, and scenario evidence; and (3) data-health and confidence gates constrain escalation before DeXposure-Claw emits ",
+    "url": "https://arxiv.org/abs/2606.19501",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-20T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出基于预测的DeFi监管智能体系统，减少误报并开源。",
+    "llm_tags": [
+      "DeFi",
+      "智能体",
+      "风险监管",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "d63b931b755d",
+    "title": "ORAgentBench: Can LLM Agents Solve Challenging Operations Research Tasks End to End?",
+    "summary": "arXiv:2606.19787v1 Announce Type: new  Abstract: Large language models are increasingly deployed as autonomous agents for multi-step tasks in executable environments, yet their ability to perform realistic operations research (OR) work remains unclear. Existing OR evaluations often decouple modeling from solving, rely on pre-formalized or text-only instances, and rarely test the full workflow from operational artifacts to validated decisions. In this work, we introduce ORAgentBench, an execution-grounded benchmark for evaluating autonomous agents on challenging end-to-end operations research tasks. It contains 107 human-reviewed tasks across diverse operational scenarios, each packaged in an isolated environment with a natural-language brief, multi-file data, configuration artifacts, and a",
+    "url": "https://arxiv.org/abs/2606.19787",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-20T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出ORAgentBench基准，评估LLM智能体端到端解决运筹学任务的能力。",
+    "llm_tags": [
+      "智能体",
+      "运筹学",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "3fb4d38910ee",
+    "title": "A Systematic Evaluation of Black-Box Uncertainty Estimation Methods for Large Language Models",
+    "summary": "arXiv:2606.19868v1 Announce Type: new  Abstract: Although large language models (LLMs) have shown strong capabilities across a wide range of tasks, their outputs often remain unreliable and may contain hallucinations, making uncertainty estimation (UE) essential for building trustworthy LLMs. In practice, many mainstream LLMs are only accessible through restricted APIs, where internal signals such as logits and hidden states are unavailable, making black-box UE especially important. However, existing work on black-box UE for LLMs remains fragmented in methodology and lacks a unified empirical comparison. To address this gap, we present a systematic review of black-box UE methods and organize them into five categories: verbalization-based, sampling-based, explanation-based, multi-agent, and",
+    "url": "https://arxiv.org/abs/2606.19868",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-20T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "系统性评估大模型黑盒不确定性估计方法，提供基准数据。",
+    "llm_tags": [
+      "不确定性估计",
+      "黑盒评估",
+      "大模型",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "e2c7b4cd4fde",
+    "title": "Process-Verified Reinforcement Learning for Theorem Proving via Lean",
+    "summary": "arXiv:2606.20068v1 Announce Type: new  Abstract: While reinforcement learning from verifiable rewards (RLVR) typically has relied on a single binary verification signal, symbolic proof assistants in formal reasoning offer rich, fine-grained structured feedback. This gap between structured processes and unstructured rewards highlights the importance of feedback that is both dense and sound. In this work, we demonstrate that the Lean proof assistant itself can serve as a symbolic process oracle, supplying both outcome-level and fine-grained tactic-level verified feedback during training. Proof attempts are parsed into tactic sequences, and Lean's elaboration marks both locally sound steps and the earliest failing step, yielding dense, verifier-grounded credit signals rooted in type theory. W",
+    "url": "https://arxiv.org/abs/2606.20068",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-20T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "利用Lean证明助手作为过程预言机进行定理证明的强化学习",
+    "llm_tags": [
+      "定理证明",
+      "强化学习",
+      "形式化验证"
+    ]
+  },
+  {
+    "id": "0ae5e8272249",
+    "title": "Modularity-Free Conflict-Averse Training for Generalized PINNs",
+    "summary": "arXiv:2606.20156v1 Announce Type: new  Abstract: Physics-informed neural networks (PINNs) have become a powerful framework for solving PDEs by embedding physical laws into differentiable objectives. Despite their advances, training PINNs remains fragile: recent conflict-averse optimization schemes alleviate gradient interference between residual and boundary losses, but we show that their effectiveness deteriorates as model capacity increases. In this paper, we identify a capacity-induced failure mode, where overparameterized networks undergo functional modularity, self-partitioning into task-exclusive modules that suppress cross-objective interaction and hinder convergence toward Pareto-stationary points. To address this issue, we propose a novel framework, Modular-Sparsity Synchronizatio",
+    "url": "https://arxiv.org/abs/2606.20156",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-20T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出无模块化冲突规避训练，解决高容量PINNs训练失效问题。",
+    "llm_tags": [
+      "科学计算",
+      "PINNs",
+      "优化算法",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "24aa9f163cfd",
+    "title": "Deontic Policies for Runtime Governance of Agentic AI Systems",
+    "summary": "arXiv:2606.19464v1 Announce Type: new  Abstract: Autonomous agentic AI systems driven by Large Language Models (LLMs) introduce a new class of security, privacy, and compliance challenges: an agent that can invoke tools, manipulate data, install software, and coordinate with peer agents across organizational boundaries must be constrained not just by authentication and access control, but by the full structure of enterprise governance. This includes specifying what agents are permitted and prohibited from doing, what they areobliged to do after certain actions (e.g., notify the CISO), under what conditions a standing obligation may be waived, and which rules take precedence when policies conflict. This governance problem exceeds what current policy engines provide. Systems such as XACML, R",
+    "url": "https://arxiv.org/abs/2606.19464",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-06-20T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出道义策略框架，解决智能体运行时的安全与合规治理问题。",
+    "llm_tags": [
+      "智能体安全",
+      "系统治理",
+      "合规性"
+    ]
+  },
+  {
     "id": "e3ca9ebda83f",
     "title": "asimons81/hermes-gpt ⭐51",
     "summary": "",
@@ -3190,80 +3397,6 @@
       "AIGC",
       "游戏开发",
       "图像生成"
-    ]
-  },
-  {
-    "id": "206bb6e2fc50",
-    "title": "GLM 5.2 is deployed in GLM Coding Plan. API and MIT weights in a week. Voting and benchmarks on X.",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u4nmpl/glm_52_is_deployed_in_glm_coding_plan_api_and_mit/\"> <img alt=\"GLM 5.2 is deployed in GLM Coding Plan. API and MIT weight",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4nmpl/glm_52_is_deployed_in_glm_coding_plan_api_and_mit/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-13T10:40:25+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "GLM 5.2上线Coding Plan，API与MIT权重即将发布",
-    "llm_tags": [
-      "GLM",
-      "开源模型",
-      "代码生成"
-    ]
-  },
-  {
-    "id": "7145386b4d2c",
-    "title": "sgup/ai ⭐95",
-    "summary": "Notes and operating profiles for working with AI coding agents.",
-    "url": "https://github.com/sgup/ai",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-13T09:43:34Z",
-    "stars": 95,
-    "language": null,
-    "frontier": 45,
-    "signal": 75,
-    "score": 57,
-    "llm_summary": "AI 编程代理的工作笔记与操作配置文件集合",
-    "llm_tags": [
-      "AI编程",
-      "开源",
-      "配置文件"
-    ]
-  },
-  {
-    "id": "58f728f91296",
-    "title": "GLM-5.2 next week, open weight, MIT",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1u4je3d/glm52_next_week_open_weight_mit/\"> <img alt=\"GLM-5.2 next week, open weight, MIT\" src=\"https://preview.redd.it/13wyn4zguz",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u4je3d/glm52_next_week_open_weight_mit/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-13T06:26:31+00:00",
-    "frontier": 75,
-    "signal": 45,
-    "score": 63,
-    "llm_summary": "智谱GLM-5.2下周发布，将开源权重并采用MIT协议",
-    "llm_tags": [
-      "开源模型",
-      "GLM",
-      "智谱AI"
-    ]
-  },
-  {
-    "id": "53190d9f94f9",
-    "title": "US Government Kills Fable 5: Here's What Happened",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Anthropic's two most powerful models, Fable 5 and Mythos 5, went dark tonight. Since there's a lot of speculation already, here's what's actually confirmed vs. what i",
-    "url": "https://www.reddit.com/r/artificial/comments/1u4gtk8/us_government_kills_fable_5_heres_what_happened/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-13T04:06:55+00:00",
-    "frontier": 75,
-    "signal": 45,
-    "score": 63,
-    "llm_summary": "Anthropic最强模型Fable 5与Mythos 5疑遭美国政府关停",
-    "llm_tags": [
-      "模型监管",
-      "Anthropic",
-      "大模型"
     ]
   }
 ]
