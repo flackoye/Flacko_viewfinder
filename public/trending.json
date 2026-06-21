@@ -1,5 +1,26 @@
 [
   {
+    "id": "5a5e4f65e4e2",
+    "title": "Karovia/fullstack-ai-agent-roadmap ⭐60",
+    "summary": "🎯 从零基础到 AI Agent 全栈工程师 · 110 个详细教程 · 58 万字 · 400+ GitHub 项目精选 · Obsidian 友好 · 中文",
+    "url": "https://github.com/Karovia/fullstack-ai-agent-roadmap",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-21T14:16:52.873716+00:00",
+    "created_at": "2026-06-19T06:34:06Z",
+    "stars": 60,
+    "language": null,
+    "frontier": 45,
+    "signal": 85,
+    "score": 61,
+    "llm_summary": "AI Agent 全栈学习路线图，含海量精选项目与教程",
+    "llm_tags": [
+      "AI Agent",
+      "学习路线",
+      "资源整合"
+    ]
+  },
+  {
     "id": "885f7ad7c8fd",
     "title": "zyn26/minimax-m3-desktop-app-free-api ⭐74",
     "summary": "minimax m3 free model  ai model free  api  large language model llm 1m context window sparse attention msa architecture native multimodality computer use computer control autonomous coding assistant a",
@@ -483,6 +504,24 @@
     "llm_tags": [
       "LLM推理",
       "脑机接口"
+    ]
+  },
+  {
+    "id": "d696a168134c",
+    "title": "A startup claims it broke through a bottleneck that’s holding back LLMs",
+    "summary": "Miami-based AI startup Subquadratic came out of stealth mode last month with a huge claim. It announced that it had solved a mathematical bottleneck that had been holding back large language models for almost a decade. The details were thin, and many people were unconvinced. But Subquadratic has started to bring the receipts, sharing the&#8230;",
+    "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-06-19T10:40:24+00:00",
+    "frontier": 75,
+    "signal": 40,
+    "score": 61,
+    "llm_summary": "初创公司声称突破LLM数学瓶颈，但细节匮乏引发质疑",
+    "llm_tags": [
+      "模型架构",
+      "算法优化",
+      "长文本"
     ]
   },
   {
