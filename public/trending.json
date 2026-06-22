@@ -1,5 +1,138 @@
 [
   {
+    "id": "1e1b0e954bad",
+    "title": "psinetron/echoes-vault-opencode ⭐78",
+    "summary": "Persistent memory plugin for OpenCode. Obsidian-style knowledge base that survives across sessions",
+    "url": "https://github.com/psinetron/echoes-vault-opencode",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-22T17:02:12.132692+00:00",
+    "created_at": "2026-06-16T09:49:55Z",
+    "stars": 78,
+    "language": "TypeScript",
+    "frontier": 45,
+    "signal": 60,
+    "score": 51,
+    "llm_summary": "OpenCode的持久化记忆插件，支持跨会话的知识库存储。",
+    "llm_tags": [
+      "插件开发",
+      "知识库",
+      "持久化"
+    ]
+  },
+  {
+    "id": "66954a2ba9a3",
+    "title": "MADEVAL/MindFluence ⭐46",
+    "summary": "An AI prompt-skill that turns 20 cognitive biases into high-converting marketing copy. Includes playbooks for ads, landing pages, email sequences, social posts, webinars, and product launches. Languag",
+    "url": "https://github.com/MADEVAL/MindFluence",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-22T17:02:12.132692+00:00",
+    "created_at": "2026-06-18T15:28:21Z",
+    "stars": 46,
+    "language": null,
+    "frontier": 35,
+    "signal": 60,
+    "score": 45,
+    "llm_summary": "利用20种认知偏差生成营销文案的Prompt技能库",
+    "llm_tags": [
+      "提示词工程",
+      "营销文案",
+      "AIGC"
+    ]
+  },
+  {
+    "id": "afef3cd2a43d",
+    "title": "GLM5.2 @7tg on 4x3090 + 192GB on budget motherboard + cpu",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1ucknck/glm52_7tg_on_4x3090_192gb_on_budget_motherboard/\"> <img alt=\"GLM5.2 @7tg on 4x3090 + 192GB on budget motherboard + cpu\" s",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucknck/glm52_7tg_on_4x3090_192gb_on_budget_motherboard/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-22T13:30:17+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "分享在消费级硬件上低成本部署GLM5.2大模型的实战方案",
+    "llm_tags": [
+      "模型部署",
+      "硬件配置",
+      "GLM"
+    ]
+  },
+  {
+    "id": "05d1233eec3e",
+    "title": "PP-OCRv6 on Hugging Face: 50-Language OCR from 1.5M to 34.5M Parameters",
+    "summary": "",
+    "url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-06-22T13:18:56+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "飞桨发布PP-OCRv6，支持50种语言，提供1.5M至34.5M多尺寸模型",
+    "llm_tags": [
+      "OCR",
+      "飞桨",
+      "轻量模型",
+      "多语言"
+    ]
+  },
+  {
+    "id": "37d322cdab21",
+    "title": "Ling and Ring 2.6 Technical Report: Efficient and Instant Agentic Intelligence at Trillion-Parameter Scale",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1ucih9e/ling_and_ring_26_technical_report_efficient_and/\"> <img alt=\"Ling and Ring 2.6 Technical Report: Efficient and Instant Ag",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucih9e/ling_and_ring_26_technical_report_efficient_and/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-22T11:53:42+00:00",
+    "frontier": 75,
+    "signal": 72,
+    "score": 74,
+    "llm_summary": "Ling and Ring 2.6技术报告，万亿参数级高效智能体方案",
+    "llm_tags": [
+      "智能体",
+      "大模型",
+      "推理优化"
+    ]
+  },
+  {
+    "id": "55a2ebfdd693",
+    "title": "Gemma 4 QAT 31B responds better to KV cache quantization too",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1ucgrxh/gemma_4_qat_31b_responds_better_to_kv_cache/\"> <img alt=\"Gemma 4 QAT 31B responds better to KV cache quantization too\" sr",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ucgrxh/gemma_4_qat_31b_responds_better_to_kv_cache/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-22T10:23:18+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "Gemma 4 QAT 31B 模型在 KV Cache 量化下表现更佳",
+    "llm_tags": [
+      "模型量化",
+      "KV Cache",
+      "Gemma"
+    ]
+  },
+  {
+    "id": "a470f07e4e2d",
+    "title": "Daybreak: Tools for securing every organization in the world",
+    "summary": "OpenAI introduces new Daybreak tools, including Codex Security and GPT-5.5-Cyber, to help organizations find, validate, and patch vulnerabilities at scale.",
+    "url": "https://openai.com/index/daybreak-securing-the-world",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-06-22T10:00:00+00:00",
+    "frontier": 85,
+    "signal": 60,
+    "score": 75,
+    "llm_summary": "OpenAI推出Codex Security等工具，用于规模化漏洞发现与修复",
+    "llm_tags": [
+      "网络安全",
+      "代码审计",
+      "自动化运维"
+    ]
+  },
+  {
     "id": "bd8559ff4e88",
     "title": "sums001/Windows-Copilot-API ⭐140",
     "summary": "Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing.",
@@ -124,6 +257,42 @@
       "AI Agent",
       "桌面应用",
       "开源项目"
+    ]
+  },
+  {
+    "id": "830920195080",
+    "title": "GLM-5.2 is on DeepSWE",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1uc79ho/glm52_is_on_deepswe/\"> <img alt=\"GLM-5.2 is on DeepSWE\" src=\"https://preview.redd.it/8qaktqtjjq8h1.png?width=640&amp;crop",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uc79ho/glm52_is_on_deepswe/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-22T01:39:08+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "GLM-5.2 模型已上线 DeepSWE 代码评估基准",
+    "llm_tags": [
+      "GLM",
+      "代码模型",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "393375e20432",
+    "title": "Local LLM Inference Optimization: The Complete Guide",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1uc3wg9/local_llm_inference_optimization_the_complete/\"> <img alt=\"Local LLM Inference Optimization: The Complete Guide\" src=\"htt",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uc3wg9/local_llm_inference_optimization_the_complete/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-21T23:01:17+00:00",
+    "frontier": 45,
+    "signal": 88,
+    "score": 62,
+    "llm_summary": "本地大模型推理优化全指南，涵盖量化与加速技术",
+    "llm_tags": [
+      "模型推理",
+      "量化技术",
+      "性能优化"
     ]
   },
   {
@@ -2803,381 +2972,6 @@
     "llm_summary": "⭐14086 高星新仓库，社区热度达标直通入选",
     "llm_tags": [
       "⭐高星直通"
-    ]
-  },
-  {
-    "id": "9fd50e5e1073",
-    "title": "Nobody’s talking about the real precedent in the Fable 5 ban: a nationality-based access rule that geography literally can’t enforce",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>TL;DR: Last Friday the US government ordered Anthropic to block all “foreign nationals” — including non-citizens inside the US — from using its new Fable 5 and Mythos",
-    "url": "https://www.reddit.com/r/artificial/comments/1u6lqp6/nobodys_talking_about_the_real_precedent_in_the/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-15T16:36:13+00:00",
-    "frontier": 65,
-    "signal": 60,
-    "score": 63,
-    "llm_summary": "美政府要求Anthropic禁止非美公民使用Fable 5",
-    "llm_tags": [
-      "AI监管",
-      "地缘政治",
-      "Anthropic"
-    ]
-  },
-  {
-    "id": "aca91bcb4f1b",
-    "title": "DanMcInerney/architect-loop ⭐434",
-    "summary": "Claude Fable 5 as architect, GPT-5.5 Codex as builder, the repo as memory - a research-backed Claude Code skill for the cross-vendor agent loop",
-    "url": "https://github.com/DanMcInerney/architect-loop",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-12T01:54:12Z",
-    "stars": 434,
-    "language": "HTML",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "跨厂商智能体循环方案，Claude架构GPT构建，仓库即记忆",
-    "llm_tags": [
-      "智能体",
-      "多模型协作",
-      "代码生成"
-    ]
-  },
-  {
-    "id": "a50ae2bf78e1",
-    "title": "jmmy9609-design/gpt-pp ⭐397",
-    "summary": "",
-    "url": "https://github.com/jmmy9609-design/gpt-pp",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-09T11:05:36Z",
-    "stars": 397,
-    "language": "Python",
-    "frontier": 35,
-    "signal": 60,
-    "score": 45,
-    "llm_summary": "开源项目，实现基于GPT的提示词预处理或优化方案",
-    "llm_tags": [
-      "提示工程",
-      "开源工具",
-      "LLM"
-    ]
-  },
-  {
-    "id": "c439964b740d",
-    "title": "duolahypercho/fusion-fable ⭐284",
-    "summary": "Fuse two frontier models into one Fable-tier answer: Opus 4.8 drafts, a second model (Opus 4.8 or GPT-5.5 via codex) checks, Opus fuses. A Claude Code skill.",
-    "url": "https://github.com/duolahypercho/fusion-fable",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-13T23:24:39Z",
-    "stars": 284,
-    "language": "Shell",
-    "frontier": 75,
-    "signal": 65,
-    "score": 71,
-    "llm_summary": "融合Opus与GPT-5.5进行草稿校验与答案合成的开源方案",
-    "llm_tags": [
-      "模型融合",
-      "推理优化",
-      "Claude"
-    ]
-  },
-  {
-    "id": "38b9e565154e",
-    "title": "cobusgreyling/loop-engineering ⭐246",
-    "summary": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, ",
-    "url": "https://github.com/cobusgreyling/loop-engineering",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-09T06:28:20Z",
-    "stars": 246,
-    "language": "JavaScript",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "提供AI编码智能体循环工程模式、启动器及CLI工具",
-    "llm_tags": [
-      "智能体",
-      "开发工具",
-      "编排模式"
-    ]
-  },
-  {
-    "id": "450e3ed38c67",
-    "title": "hvardhan878/ghostwork ⭐123",
-    "summary": "Your personal AI worker. Watches your screen, learns your workflows, automates the repetitive parts. Built on Screenpipe. All local, no cloud, no setup. It gets better every day without you doing anyt",
-    "url": "https://github.com/hvardhan878/ghostwork",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-09T13:34:34Z",
-    "stars": 123,
-    "language": "TypeScript",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "基于Screenpipe的本地AI工作流自动化工具，可学习并重复操作",
-    "llm_tags": [
-      "自动化",
-      "本地部署",
-      "RPA"
-    ]
-  },
-  {
-    "id": "ed1b290f95a4",
-    "title": "Jeidoban/Ironsmith ⭐121",
-    "summary": "Create personal Mac apps instantly with on-device and cloud LLMs",
-    "url": "https://github.com/Jeidoban/Ironsmith",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-14T00:11:35Z",
-    "stars": 121,
-    "language": "Swift",
-    "frontier": 55,
-    "signal": 65,
-    "score": 59,
-    "llm_summary": "结合本地与云端大模型快速构建个人Mac应用的开源工具",
-    "llm_tags": [
-      "LLM应用",
-      "开发工具",
-      "MacOS"
-    ]
-  },
-  {
-    "id": "712fde919626",
-    "title": "keyuchen21/agentic-engineering-handbook ⭐68",
-    "summary": "The definitive OpenAI, Claude, MCP, Harness, Evals, and Production Agent Systems learning roadmap.",
-    "url": "https://github.com/keyuchen21/agentic-engineering-handbook",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-09T15:25:00Z",
-    "stars": 68,
-    "language": "Python",
-    "frontier": 65,
-    "signal": 85,
-    "score": 73,
-    "llm_summary": "OpenAI与Claude智能体系统及生产化工程学习路线图",
-    "llm_tags": [
-      "智能体",
-      "工程化",
-      "OpenAI",
-      "Claude"
-    ]
-  },
-  {
-    "id": "0910e493aeaf",
-    "title": "zmustafa/AzureSupportAgent ⭐66",
-    "summary": "AI-driven Azure operations workbench. Chat with your tenant, investigate incidents with a team of specialist AI agents, and assess, monitor & remediate your cloud — runs in your own subscription. One-",
-    "url": "https://github.com/zmustafa/AzureSupportAgent",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-12T22:45:03Z",
-    "stars": 66,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 65,
-    "score": 59,
-    "llm_summary": "基于多智能体的Azure运维工作台，支持租户对话与故障排查。",
-    "llm_tags": [
-      "多智能体",
-      "云运维",
-      "Azure"
-    ]
-  },
-  {
-    "id": "68bb9035cdd1",
-    "title": "nelsonwerd/idea-to-ship-skills ⭐55",
-    "summary": "Composable Agent Skills (Claude + OpenAI Codex) for taking an idea from fuzzy → validated → sequenced build → shipped — a manual tier (ideate, deep-dive, prompt-pack) and an autonomous tier (autopilot",
-    "url": "https://github.com/nelsonwerd/idea-to-ship-skills",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-09T18:15:03Z",
-    "stars": 55,
-    "language": "Shell",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "开源可组合Agent技能库，实现从创意到验证构建发布的全流程自动化。",
-    "llm_tags": [
-      "Agent",
-      "工作流",
-      "开源"
-    ]
-  },
-  {
-    "id": "8b5b1144bb95",
-    "title": "001TMF/harness-forge ⭐49",
-    "summary": "Turn Claude Code into its own Meta-Harness — a skill that evolves the scaffolding around a fixed model (memory, retrieval, context, prompts) via a native propose→score→Pareto loop. Native reimplementa",
-    "url": "https://github.com/001TMF/harness-forge",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-14T00:36:07Z",
-    "stars": 49,
-    "language": "Python",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "将Claude Code转化为自进化的元框架，通过原生Pareto循环优化模型脚手架。",
-    "llm_tags": [
-      "Agent",
-      "Claude",
-      "模型优化",
-      "开源"
-    ]
-  },
-  {
-    "id": "852319d3b15c",
-    "title": "zhouwei713/fpv-immersive-video-prompting ⭐48",
-    "summary": "Route-first FPV AI video prompting skill for Seedance, Kling, Runway, Veo, GPT Image asset packs, numbered stops, and red-line path control.",
-    "url": "https://github.com/zhouwei713/fpv-immersive-video-prompting",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-09T15:55:23Z",
-    "stars": 48,
-    "language": null,
-    "frontier": 65,
-    "signal": 60,
-    "score": 63,
-    "llm_summary": "开源FPV视频提示词生成工具，支持多模型路径控制",
-    "llm_tags": [
-      "视频生成",
-      "提示词工程",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "261b925ea014",
-    "title": "desktop-hermes/hermes-agent-desktop ⭐44",
-    "summary": "Hermes Desktop github nous research hermes ai  agent local ai ollama github download open source pc windows app installation setup workspace llm models runtime",
-    "url": "https://github.com/desktop-hermes/hermes-agent-desktop",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-11T17:34:17Z",
-    "stars": 44,
-    "language": "TypeScript",
-    "frontier": 45,
-    "signal": 60,
-    "score": 51,
-    "llm_summary": "Nous Research推出的本地AI Agent桌面应用，支持Ollama",
-    "llm_tags": [
-      "AI Agent",
-      "本地部署",
-      "Ollama",
-      "桌面应用"
-    ]
-  },
-  {
-    "id": "eb65d0276edc",
-    "title": "SihyeonJeon/why-was-fable-banned ⭐43",
-    "summary": "Spec-first, evidence-gated engineering-procedure enforcement for AI coding agents (Claude Code + Codex). The agent can't edit until it writes a passing spec.",
-    "url": "https://github.com/SihyeonJeon/why-was-fable-banned",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-13T15:54:14Z",
-    "stars": 43,
-    "language": "Python",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "基于规范优先和证据门控的AI代码代理工程流程",
-    "llm_tags": [
-      "AI代理",
-      "代码生成",
-      "工程流程"
-    ]
-  },
-  {
-    "id": "2f878fbe99ff",
-    "title": "DragonMeow1012/DragonMeow-MangaTranslator ⭐43",
-    "summary": "漫畫圖片一鍵翻譯：偵測→OCR→LLM翻譯→抹字→嵌字，內建 localhost 網頁端，解壓即用。支援 Gemini/ChatGPT/Claude/Grok/DeepSeek 等多家 API。",
-    "url": "https://github.com/DragonMeow1012/DragonMeow-MangaTranslator",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-11T12:02:29Z",
-    "stars": 43,
-    "language": "Python",
-    "frontier": 45,
-    "signal": 75,
-    "score": 57,
-    "llm_summary": "集成多模型API的漫画翻译工具，支持全流程本地化处理。",
-    "llm_tags": [
-      "OCR",
-      "多模态",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "3a11cae6e645",
-    "title": "Berliwu/world-cup-2026-match-prediction-engine ⭐42",
-    "summary": "world cup 2026 match prediction agent with LLM model typescript based",
-    "url": "https://github.com/Berliwu/world-cup-2026-match-prediction-engine",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-09T14:28:45Z",
-    "stars": 42,
-    "language": "Shell",
-    "frontier": 45,
-    "signal": 55,
-    "score": 49,
-    "llm_summary": "基于TypeScript和LLM的2026世界杯比赛预测开源项目",
-    "llm_tags": [
-      "LLM应用",
-      "预测模型",
-      "开源项目"
-    ]
-  },
-  {
-    "id": "0c7cc27d0248",
-    "title": "manticore-projects/aurscan ⭐42",
-    "summary": "Automatically scan AUR packages for malware before installing using Claude LLM",
-    "url": "https://github.com/manticore-projects/aurscan",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T16:04:53.720363+00:00",
-    "created_at": "2026-06-13T02:59:22Z",
-    "stars": 42,
-    "language": "Go",
-    "frontier": 55,
-    "signal": 60,
-    "score": 57,
-    "llm_summary": "利用Claude LLM自动扫描AUR软件包恶意代码的开源工具",
-    "llm_tags": [
-      "LLM应用",
-      "安全扫描",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "dc1d5f6f44cb",
-    "title": "This man with ALS is “the first power user” of a brain implant that lets him speak",
-    "summary": "Casey Harrell has had a set of electrodes embedded in his brain for almost three years. Harrell, who has amyotrophic lateral sclerosis (ALS) and is paralyzed, first used his brain-computer interface (BCI) to “speak” sentences with the help of a research team in 2023. Since then, Harrell has clocked thousands of hours of use. He&#8230;",
-    "url": "https://www.technologyreview.com/2026/06/15/1138953/man-als-first-power-user-brain-implant-speak-bci/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-06-15T15:12:28+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 71,
-    "llm_summary": "ALS患者长期植入脑机接口实现语音交流，验证技术稳定性",
-    "llm_tags": [
-      "脑机接口",
-      "医疗AI",
-      "神经解码"
     ]
   }
 ]
