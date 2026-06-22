@@ -1,5 +1,132 @@
 [
   {
+    "id": "bd8559ff4e88",
+    "title": "sums001/Windows-Copilot-API ⭐140",
+    "summary": "Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing.",
+    "url": "https://github.com/sums001/Windows-Copilot-API",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-22T04:43:28.634610+00:00",
+    "created_at": "2026-06-19T13:24:44Z",
+    "stars": 140,
+    "language": "Python",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "逆向工程Windows Copilot，提供免密钥的OpenAI兼容API接口",
+    "llm_tags": [
+      "逆向工程",
+      "API封装",
+      "Windows Copilot"
+    ]
+  },
+  {
+    "id": "810425136265",
+    "title": "raiyanyahya/recall ⭐131",
+    "summary": "Stop wasting tokens and re-explaining your project every session. Recall gives Claude Code durable memory — entirely offline.",
+    "url": "https://github.com/raiyanyahya/recall",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-22T04:43:28.634610+00:00",
+    "created_at": "2026-06-19T20:36:41Z",
+    "stars": 131,
+    "language": "Python",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "为Claude Code提供持久化离线记忆的开源工具",
+    "llm_tags": [
+      "AI开发工具",
+      "记忆机制",
+      "离线部署"
+    ]
+  },
+  {
+    "id": "6015a5078b86",
+    "title": "lidge-jun/opencodex ⭐76",
+    "summary": "Universal provider proxy for OpenAI Codex — use any LLM with Codex CLI, App, and SDK",
+    "url": "https://github.com/lidge-jun/opencodex",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-22T04:43:28.634610+00:00",
+    "created_at": "2026-06-18T23:03:18Z",
+    "stars": 76,
+    "language": "TypeScript",
+    "frontier": 45,
+    "signal": 65,
+    "score": 53,
+    "llm_summary": "通用代理工具，支持任意LLM接入OpenAI Codex生态",
+    "llm_tags": [
+      "模型兼容",
+      "开发工具",
+      "代理"
+    ]
+  },
+  {
+    "id": "11671b9aa6ad",
+    "title": "rzhub/GateMem ⭐63",
+    "summary": "GateMem: a benchmark and evaluation toolkit for memory governance in multi-principal shared-memory LLM agents.",
+    "url": "https://github.com/rzhub/GateMem",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-22T04:43:28.634610+00:00",
+    "created_at": "2026-06-16T10:03:13Z",
+    "stars": 63,
+    "language": "Python",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "多主体共享内存LLM智能体的内存治理基准测试工具包",
+    "llm_tags": [
+      "智能体",
+      "基准测试",
+      "内存管理",
+      "开源"
+    ]
+  },
+  {
+    "id": "0ee7fd3fc430",
+    "title": "HMDSimDev/heartmorrow ⭐54",
+    "summary": "LLM-powered dating simulator",
+    "url": "https://github.com/HMDSimDev/heartmorrow",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-22T04:43:28.634610+00:00",
+    "created_at": "2026-06-20T05:44:15Z",
+    "stars": 54,
+    "language": "TypeScript",
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "基于大语言模型的恋爱模拟器开源项目",
+    "llm_tags": [
+      "LLM应用",
+      "游戏开发",
+      "开源项目"
+    ]
+  },
+  {
+    "id": "8000bbd627f5",
+    "title": "liebaojun/MakoCode ⭐49",
+    "summary": "MakoCode — 茉子版 Agent | Galgame 风格桌面 AI Agent，零门槛体验 Agent 的乐趣",
+    "url": "https://github.com/liebaojun/MakoCode",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-22T04:43:28.634610+00:00",
+    "created_at": "2026-06-16T13:56:01Z",
+    "stars": 49,
+    "language": "HTML",
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "Galgame风格桌面AI Agent，提供零门槛交互体验",
+    "llm_tags": [
+      "AI Agent",
+      "桌面应用",
+      "开源项目"
+    ]
+  },
+  {
     "id": "5a5e4f65e4e2",
     "title": "Karovia/fullstack-ai-agent-roadmap ⭐60",
     "summary": "🎯 从零基础到 AI Agent 全栈工程师 · 110 个详细教程 · 58 万字 · 400+ GitHub 项目精选 · Obsidian 友好 · 中文",
@@ -18,6 +145,24 @@
       "AI Agent",
       "学习路线",
       "资源整合"
+    ]
+  },
+  {
+    "id": "ebf2a533358b",
+    "title": "The “dead internet theory” in action: In World of Warcraft, a server without humans has appeared - instead, 1,800 DeepSeek-based bots are playing there. The bots behave like regular players: they chat, level up characters, run dungeons, and even fight each other.",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/ChatGPT/comments/1ubl0gc/the_dead_internet_theory_in_action_in_world_of/\"> <img alt=\"The “dead internet theory” in action: In World of Warcraft, a se",
+    "url": "https://www.reddit.com/r/ChatGPT/comments/1ubl0gc/the_dead_internet_theory_in_action_in_world_of/",
+    "source": "r/ChatGPT",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-21T08:48:20+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "1800个DeepSeek机器人模拟玩家在魔兽世界服务器中自主运行",
+    "llm_tags": [
+      "智能体",
+      "游戏AI",
+      "DeepSeek"
     ]
   },
   {
@@ -3033,546 +3178,6 @@
       "脑机接口",
       "医疗AI",
       "神经解码"
-    ]
-  },
-  {
-    "id": "7942ec4a824e",
-    "title": "Orchestra-o1: Omnimodal Agent Orchestration",
-    "summary": "arXiv:2606.13707v1 Announce Type: new  Abstract: The recent success of agent swarms has shifted the paradigm of large language model (LLM)-based agents from single-agent workflows to multi-agent systems, highlighting the importance of agent orchestration for task decomposition and collaboration. However, existing orchestration frameworks are limited to a narrow set of modalities and struggle to generalize to more complex settings where heterogeneous modalities coexist and interact. This limitation becomes particularly pronounced in omnimodal scenarios, where tasks require the unified understanding and coordination of diverse inputs such as text, image, audio, and video. In this work, we propose Orchestra-o1, an omnimodal agent orchestration framework designed to support efficient agent col",
-    "url": "https://arxiv.org/abs/2606.13707",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "提出全模态智能体编排框架，支持多模态协作与任务分解。",
-    "llm_tags": [
-      "多智能体",
-      "多模态",
-      "🔧 已开源",
-      "智能体编排"
-    ]
-  },
-  {
-    "id": "8887d4e13037",
-    "title": "YeasierAgent: Agentic Social Sandbox as a Canvas for Intent-Driven Creation of Platform-Agnostic Symbiotic Agent-Native Applications",
-    "summary": "arXiv:2606.13722v1 Announce Type: new  Abstract: This paper introduces YeasierAgent, an application-building paradigm based on symbiotic agents, narrative worlds, and scene-aware interaction. It challenges the conventional device-coupled model of software by redefining applications as collaborative spaces among users, agents, and worlds. We present a system architecture that achieves two primary contributions: (1) enabling the rapid, cross-platform construction of agent-native applications by utilizing platform-agnostic interactive units (agents, scenes, dialogue) rather than fixed graphical layouts; and (2) unifying the emotional companionship and practical tool execution attributes of intelligent agents within a single experiential sandbox. By integrating automated generation, user-creat",
-    "url": "https://arxiv.org/abs/2606.13722",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 65,
-    "llm_summary": "提出基于共生代理的应用构建范式，支持跨平台快速构建代理原生应用。",
-    "llm_tags": [
-      "智能体",
-      "系统架构",
-      "跨平台"
-    ]
-  },
-  {
-    "id": "25692eb6eab9",
-    "title": "TwinBI: An Agentic Digital Twin for Efficient Augmented Interactions with Business Intelligence Dashboards",
-    "summary": "arXiv:2606.13731v1 Announce Type: new  Abstract: Business intelligence (BI) increasingly combines dashboard interaction with LLM-based assistance, but these two modes often fall out of sync during multi-step analysis. As users switch between direct dashboard manipulation and natural-language queries, it becomes difficult to preserve a consistent analytical state across filters, hierarchies, metrics, and chart context. We present TwinBI, an agentic digital-twin framework that couples an LLM-based agent system with an executable BI dashboard state. TwinBI unifies conversational interaction, dashboard manipulation, semantic grounding, and provenance tracking through a shared analytical state reconstructed from a unified interaction log. It also exposes artifacts such as schema views, SQL, log",
-    "url": "https://arxiv.org/abs/2606.13731",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 80,
-    "llm_summary": "提出TwinBI框架，解决BI仪表板与LLM交互状态同步问题。",
-    "llm_tags": [
-      "🔧 已开源",
-      "智能体",
-      "商业智能",
-      "人机交互"
-    ]
-  },
-  {
-    "id": "413574c8418d",
-    "title": "MA-ProofBench: A Two-Tiered Evaluation of LLMs for Theorem Proving in Mathematical Analysis",
-    "summary": "arXiv:2606.13782v1 Announce Type: new  Abstract: Large Language Models (LLMs) have made notable progress in automated theorem proving, yet existing formal benchmarks remain limited in both mathematical coverage and difficulty. Most are concentrated in areas that are easier to formalize, such as algebra and elementary number theory, and provide limited coverage of subfields that require deeper reasoning, including mathematical analysis. To address this gap, we introduce MA-ProofBench, to the best of our knowledge, the first formal theorem-proving benchmark dedicated to Mathematical Analysis. The benchmark contains 200 formalized theorems covering 6 core topics and 27 subcategories, including measure and integration theory, complex analysis, and functional analysis. The problems are divided ",
-    "url": "https://arxiv.org/abs/2606.13782",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出数学分析定理证明基准，填补高难度推理评估空白。",
-    "llm_tags": [
-      "定理证明",
-      "数学分析",
-      "LLM评估",
-      "基准测试"
-    ]
-  },
-  {
-    "id": "8095dc921e06",
-    "title": "Poker Arena: Multi-Axis Profiling of Strategic Reasoning and Memory in LLMs",
-    "summary": "arXiv:2606.13815v1 Announce Type: new  Abstract: Strategic reasoning under uncertainty underpins consequential decisions in negotiation, finance, and policy, but prevailing game-play benchmarks collapse heterogeneous reasoning dimensions into a single scalar, leaving the capability structure of frontier LLMs unexamined. We introduce Poker Arena, a no-limit Texas Hold'em tournament platform that couples a three-layer memory architecture (within-hand, session, and cross-session) with a nine-axis cognitive profile decomposing strategic reasoning into interpretable dimensions such as bet-sizing calibration and positional awareness. We evaluate seven frontier models across 50 sessions of 1,000 hands and a controlled memory ablation; tournament chips and aggregate axis score order the field diff",
-    "url": "https://arxiv.org/abs/2606.13815",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出扑克竞技场平台，多维度评估大模型策略推理与记忆能力。",
-    "llm_tags": [
-      "策略推理",
-      "博弈论",
-      "评估基准",
-      "长记忆"
-    ]
-  },
-  {
-    "id": "3ff41dc4ffb2",
-    "title": "Adversarial Concept Search: Predicting Compositional Errors From Feature Geometry",
-    "summary": "arXiv:2606.13934v1 Announce Type: new  Abstract: Humans cannot always intuit what scenarios are most challenging to LLMs. Hoping to capture challenging edge cases, developers either design problems to be difficult for humans or curate extensive benchmarks. What if we could instead anticipate which scenarios a model will fail on? In this paper, we use an LLM's representational geometry to predict which concept combinations it will fail on. We attribute this compositional failure to interference between salient features. In tasks that require systematic composition - toy programmatic settings, multihop reasoning, multilingual factual recall - we find that when a pair of concepts is encoded near-orthogonally, the model reliably composes them. When their linear encodings are close, producing i",
-    "url": "https://arxiv.org/abs/2606.13934",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "利用表征几何预测组合错误，无需人工设计难题。",
-    "llm_tags": [
-      "表征学习",
-      "组合泛化",
-      "对抗攻击",
-      "模型评估"
-    ]
-  },
-  {
-    "id": "879132821a89",
-    "title": "Applicability Condition Extraction for Therapeutic Drug-Disease Relations",
-    "summary": "arXiv:2606.14031v1 Announce Type: new  Abstract: Identifying conditions that a certain drug takes therapeutic effect on a target disease is crucial for clinical decision-making support. However, most existing biomedical information extraction methods have focused on identifying only relations between drugs and diseases, while largely overlooking the context-specific conditions where such relations can apply. To address this problem, we introduce the task of applicability condition extraction for therapeutic drug--disease relations from biomedical research literature. We create the first dataset that has manually annotated triples of drugs, diseases, and applicability conditions on biomedical paper abstracts with 1,119 drug-disease pairs. Using this dataset, we systematically evaluate the p",
-    "url": "https://arxiv.org/abs/2606.14031",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出药物-疾病关系的适用性条件提取任务并开源。",
-    "llm_tags": [
-      "信息抽取",
-      "生物医药",
-      "🔧 已开源",
-      "NLP"
-    ]
-  },
-  {
-    "id": "b6215237672f",
-    "title": "WorkBench Revisited: Workplace Agents Two Years On",
-    "summary": "arXiv:2606.13715v1 Announce Type: new  Abstract: The best agent on WorkBench in March 2024, GPT-4, completed 43% of tasks and took an unintended harmful action, such as emailing the wrong person, on 26% of them. We re-visit the benchmark in June 2026 and find that the best agent to date, Claude Opus 4.8, completes 89% and takes an unintended harmful action on 2.5%. Aside from this considerable progress in frontier agent performance, three things stand out. First, capability and safety go together on WorkBench rather than trade off, so the models that finish the most tasks also do the least unintended damage. Second, while several classes of error have been totally eliminated, frontier models still make some basic mistakes that occasionally result in irreversible harm, such as sending an em",
-    "url": "https://arxiv.org/abs/2606.13715",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "回顾WorkBench基准，两年后智能体任务完成率升至89%，安全性显著提升。",
-    "llm_tags": [
-      "智能体",
-      "基准测试",
-      "AI安全"
-    ]
-  },
-  {
-    "id": "54616005dc5d",
-    "title": "Hyperdimensional computing for structured querying on tabular data embeddings",
-    "summary": "arXiv:2606.13871v1 Announce Type: new  Abstract: Tabular data embeddings have become a cornerstone of data profiling and data integration pipelines, enabling tasks such as entity annotation and resolution; schema matching; column type detection; and table search, among others. Existing approaches embed rows, columns, or entire tables into a vector space and rely on nearest-neighbor search to retrieve candidate matches. A fundamental limitation of current embedding methods is the lack of interpretable similarity scores: the concrete similarity value between a query and its nearest neighbour carries no intrinsic meaning, making it impossible to determine whether that neighbour is a true match or simply the least-dissimilar item in a corpus that contains no valid answer. This inability to set",
-    "url": "https://arxiv.org/abs/2606.13871",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "提出超维计算实现表格嵌入的结构化查询，解决可解释性问题",
-    "llm_tags": [
-      "表格嵌入",
-      "超维计算",
-      "结构化查询"
-    ]
-  },
-  {
-    "id": "742e5464964d",
-    "title": "A Multi-Agent AI System for Automated High School Transcript Processing: Collaborative Document Analysis at Scale",
-    "summary": "arXiv:2606.13916v1 Announce Type: new  Abstract: Each year, college admissions offices face an overwhelming challenge: processing millions of high school transcripts, each with unique formats, grading systems, and layouts. This manual process creates operational bottlenecks that delay admissions decisions and consume valuable resources. We present a transformative solution through a multi-agent AI system where specialized agents collaborate to automatically process diverse transcript formats through intelligent coordination and communication. Our multi-agent architecture consists of three specialized agents-a Pattern Recognition Agent for format-specific parsing, a Semantic Analysis Agent for natural language understanding, and a Vision Intelligence Agent for multimodal document analysis-c",
-    "url": "https://arxiv.org/abs/2606.13916",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 55,
-    "signal": 75,
-    "score": 65,
-    "llm_summary": "多智能体协作系统，自动化处理多样化高中成绩单。",
-    "llm_tags": [
-      "多智能体",
-      "文档处理",
-      "自动化"
-    ]
-  },
-  {
-    "id": "c733d3dd27fb",
-    "title": "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
-    "summary": "arXiv:2606.14697v1 Announce Type: cross  Abstract: Building trustworthy medical multimodal large language models (MLLMs) is critical for reliable clinical decision support. Existing medical hallucination benchmarks mainly focus on data collection, but often ignore where hallucinations originate within the reasoning process. We find that hallucination sources vary across samples: errors may arise from visual misrecognition, incorrect medical knowledge recall, or flawed reasoning integration. To enable source-level hallucination diagnosis, we introduce ClinHallu, a benchmark for stage-wise hallucination diagnosis in medical MLLM reasoning. ClinHallu contains 7,031 validated instances, where each instance is augmented with a structured reasoning trace decomposed into Visual Recognition, Knowl",
-    "url": "https://arxiv.org/abs/2606.14697",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 88,
-    "score": 82,
-    "llm_summary": "首个诊断医疗多模态大模型推理阶段幻觉的基准",
-    "llm_tags": [
-      "医疗AI",
-      "幻觉检测",
-      "🔧 已开源",
-      "多模态"
-    ]
-  },
-  {
-    "id": "546d74da41f1",
-    "title": "Can Post-Training Turn LLMs into Good Medical Coders? An Empirical Study of Generative ICD Coding",
-    "summary": "arXiv:2606.13940v1 Announce Type: new  Abstract: Automated International Classification of Diseases (ICD) coding is a core medical-coding task for billing, epidemiology, and clinical decision support. Generative large language models (LLMs) are often reported as weak medical coders, but this finding mainly comes from inference-time settings such as prompting, retrieval, reranking, or tool use, leaving the role of task-specific post-training underexplored. We present a controlled empirical study of post-training for generative ICD coding, comparing discriminative baselines with LLM coders across prompting, supervised fine-tuning, and reinforcement learning under a common protocol and metric set. To our knowledge, this is the first study to evaluate RL-based post-training for generative LLM ",
-    "url": "https://arxiv.org/abs/2606.13940",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "实证研究探索任务特定后训练能否提升LLM医疗编码能力。",
-    "llm_tags": [
-      "医疗编码",
-      "后训练",
-      "🔧 已开源",
-      "LLM评估"
-    ]
-  },
-  {
-    "id": "4ecd8bb6e487",
-    "title": "STREAM: Multi-Tier LLM Inference Middleware with Dual-Channel HPC Token Streaming",
-    "summary": "arXiv:2606.13968v1 Announce Type: cross  Abstract: Researchers and practitioners working with large language models face a fragmented landscape: local models are free and private but hardware limits the model size and context windows a researcher can use; institutional HPC centers offer powerful GPU resources at no marginal cost and keep data within institutional boundaries, but operate behind firewalls and are designed for batch jobs rather than interactive use; commercial cloud APIs provide frontier-model quality on demand but impose significant cost and data retention policies unsuitable for sensitive research data. No existing system unifies all three. STREAM (Smart Tiered Routing Engine for AI Models) addresses this gap with four contributions: (1) a three-tier routing architecture co",
-    "url": "https://arxiv.org/abs/2606.13968",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出双层HPC令牌流中间件，解决机构HPC集群交互式推理延迟问题。",
-    "llm_tags": [
-      "推理加速",
-      "HPC",
-      "中间件",
-      "系统架构"
-    ]
-  },
-  {
-    "id": "b8fca1c8f3d0",
-    "title": "FactoryLLM: A Safe and Open-Source AI Playground for Evaluating LLMs in Smart Factories",
-    "summary": "arXiv:2606.14119v1 Announce Type: new  Abstract: Fault diagnostics and recovery in smart factories is challenging because critical information is dispersed across manuals of multiple machines which are interconnected through the manufacturing process. Large Language Models (LLMs) can provide a promising approach. In this paper, we propose FactoryLLM, a safe and open-source AI playground designed for evaluating different LLM-based retrieval-augmented generation (RAG) models by analysing documents from multiple machines across the manufacturing process. FactoryLLM enables the user to configure the LLM, and assess performance when reasoning over multiple documents, through a dual evaluation setup using both RAGAS and NVIDIA's LLM-as-a-Judge metrics. FactoryLLM is safe because it allows users ",
-    "url": "https://arxiv.org/abs/2606.14119",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 55,
-    "signal": 75,
-    "score": 65,
-    "llm_summary": "提出开源评估平台FactoryLLM，用于测试智能工厂RAG模型。",
-    "llm_tags": [
-      "RAG",
-      "工业AI",
-      "🔧 已开源",
-      "评估平台"
-    ]
-  },
-  {
-    "id": "87f1762fdbc8",
-    "title": "AFFORDANCE20Q: Evaluating Affordance Reasoning from Physical Properties",
-    "summary": "arXiv:2606.14240v1 Announce Type: new  Abstract: Affordance reasoning, the inference of an object's action possibilities from its physical properties (e.g., shape and material), is fundamental to human physical understanding and increasingly critical for Large Language Models (LLMs). However, existing affordance benchmarks largely expose explicit object identities in the evaluation setup, allowing models to rely on memorized object-affordance mappings rather than reasoning over physical properties. To address this gap, we introduce Affordance20Q, a novel affordance reasoning benchmark formulated as a 20-Questions game without exposing the object's identity. In each game, the model identifies a hidden object's affordance from a candidate set by asking yes/no questions about its physical pro",
-    "url": "https://arxiv.org/abs/2606.14240",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出基于物理属性而非物体身份的供体推理基准，评估LLM物理理解能力。",
-    "llm_tags": [
-      "🔧 已开源",
-      "具身智能",
-      "基准测试",
-      "推理评估"
-    ]
-  },
-  {
-    "id": "c3b994821e19",
-    "title": "From Chatbot to Digital Colleague: The Paradigm Shift Toward Persistent Autonomous AI",
-    "summary": "arXiv:2606.14502v1 Announce Type: new  Abstract: Large Language Models (LLMs) are undergoing a fundamental transformation from conversational generators into integrated AI systems capable of reasoning, action, memory, and self-improvement. We conceptualize this transition as a shift from Chatbot to Digital Colleague: from conversational answers to persistent work. We organize this transition along two tightly coupled dimensions. First, at the cognitive core level, LLMs are advancing from Chatbot-era \"fast thinking\" systems driven by next-token prediction toward Thinking LLMs that leverage inference-time computation, Chain-of-Thought reasoning, reflection, process supervision, and reinforcement learning to support more deliberate and reliable cognition. Second, at the tool-augmented task ex",
-    "url": "https://arxiv.org/abs/2606.14502",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "提出从聊天机器人到数字同事的范式转变，定义持久自主AI框架。",
-    "llm_tags": [
-      "智能体",
-      "系统架构",
-      "范式演进"
-    ]
-  },
-  {
-    "id": "39ac20e8d336",
-    "title": "VHDLSuite: Unified Pipeline for LLM VHDL Generation with Data Synthesis and Evaluation",
-    "summary": "arXiv:2606.13735v1 Announce Type: cross  Abstract: Large Language Models (LLM) have shown impressive capabilities in Register Transfer Level (RTL) code generation, particularly for Verilog. However, evaluating their performance with other Hardware Description Languages (HDL), especially VHDL, remains limited although its distinct language characteristics, such as stricter semantic rules, introduce evaluation considerations that differ from Verilog. This lack of coverage restricts fully understanding of how well current models generalize across hardware design languages with differing structures and semantics. To address this gap, we introduce VHDLSuite, a benchmark-centered infrastructure for scalable VHDL generation evaluation, integrating automated benchmark synthesis, executable validat",
-    "url": "https://arxiv.org/abs/2606.13735",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出LLM生成VHDL的统一流水线，含数据合成与评估。",
-    "llm_tags": [
-      "硬件设计",
-      "VHDL",
-      "🔧 已开源",
-      "代码生成"
-    ]
-  },
-  {
-    "id": "b95d6a70ecec",
-    "title": "SEVRA-BENCH: Social Engineering of Vulnerabilities in Review Agents",
-    "summary": "arXiv:2606.13757v1 Announce Type: cross  Abstract: Large language model (LLM) reviewers are increasingly used in pull-request (PR) workflows, where their approvals help decide which code is merged into a repository. This raises a question that benchmarks for static vulnerability detection or code generation do not address: can an automated reviewer reject a malicious contribution when the attacker controls both the code change and the accompanying PR text? We introduce SEVRA-BENCH (Social Engineering of Vulnerabilities in Review Agents), a benchmark that measures how often an automated reviewer approves such adversarial pull requests. Each malicious PR in SEVRA-BENCH is built from a real project commit that previously fixed a vulnerability listed in the Common Vulnerabilities and Exposures",
-    "url": "https://arxiv.org/abs/2606.13757",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 80,
-    "llm_summary": "首个针对代码审查Agent的社会工程攻击基准，含开源数据集。",
-    "llm_tags": [
-      "🔧 已开源",
-      "LLM安全",
-      "代码审查",
-      "红队测试"
-    ]
-  },
-  {
-    "id": "b44e49608907",
-    "title": "Orchestra-o1: Omnimodal Agent Orchestration",
-    "summary": "arXiv:2606.13707v1 Announce Type: cross  Abstract: The recent success of agent swarms has shifted the paradigm of large language model (LLM)-based agents from single-agent workflows to multi-agent systems, highlighting the importance of agent orchestration for task decomposition and collaboration. However, existing orchestration frameworks are limited to a narrow set of modalities and struggle to generalize to more complex settings where heterogeneous modalities coexist and interact. This limitation becomes particularly pronounced in omnimodal scenarios, where tasks require the unified understanding and coordination of diverse inputs such as text, image, audio, and video. In this work, we propose Orchestra-o1, an omnimodal agent orchestration framework designed to support efficient agent c",
-    "url": "https://arxiv.org/abs/2606.13707",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 80,
-    "score": 78,
-    "llm_summary": "提出全模态智能体编排框架，支持异构模态协作。",
-    "llm_tags": [
-      "多智能体",
-      "全模态",
-      "🔧 已开源",
-      "智能体编排"
-    ]
-  },
-  {
-    "id": "710a137016c5",
-    "title": "CuMA: Aligning LLMs with Sparse Cultural Values via Demographic-Aware Mixture of Adapters",
-    "summary": "arXiv:2601.04885v3 Announce Type: replace  Abstract: As Large Language Models (LLMs) serve a global audience, alignment must transition from enforcing universal consensus to respecting cultural pluralism. We demonstrate that dense models, when forced to fit conflicting value distributions, suffer from \\textbf{Mean Collapse}, converging to a generic average that fails to represent diverse groups. We attribute this to \\textbf{Cultural Sparsity}, where gradient interference prevents dense parameters from spanning distinct cultural modes. To resolve this, we propose \\textbf{\\textsc{CuMA}} (\\textbf{Cu}ltural \\textbf{M}ixture of \\textbf{A}dapters), a framework that frames alignment as a \\textbf{conditional capacity separation} problem. By incorporating demographic-aware routing, \\textsc{CuMA} in",
-    "url": "https://arxiv.org/abs/2601.04885",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "提出人口感知混合适配器解决LLM文化对齐中的均值坍塌问题。",
-    "llm_tags": [
-      "🔧 已开源",
-      "模型对齐",
-      "文化适配",
-      "MoE架构"
-    ]
-  },
-  {
-    "id": "01d4cdfff8a6",
-    "title": "The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation",
-    "summary": "arXiv:2606.13685v1 Announce Type: cross  Abstract: LLM-as-a-Judge is now widely used to rank model outputs, train reward models, and populate public leaderboards, but its run-to-run reliability remains under-characterized. We study repeated identical evaluations on 29 tasks spanning 10 categories using two OpenAI judge models (GPT-4o-mini and GPT-4.1-mini), with 50 pairwise trials and 50 pointwise trials per question, supplemented by temperature and prompt-sensitivity ablations. Across judges, pairwise preferences flip on average 13.6% of the time, with 28% of questions exceeding a 20% flip rate and one question reaching 56%. GPT-4o-mini also exhibits a significant first-position bias (72% A-majority, p = 0.024). At the same time, mean pointwise score gaps are small (0.19--0.36 on a 10-poi",
-    "url": "https://arxiv.org/abs/2606.13685",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "揭示LLM评测中的随机性与偏差，强调可靠性问题",
-    "llm_tags": [
-      "模型评估",
-      "可靠性分析",
-      "LLM评测"
-    ]
-  },
-  {
-    "id": "a604fcd6e58a",
-    "title": "The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation",
-    "summary": "arXiv:2606.13685v1 Announce Type: new  Abstract: LLM-as-a-Judge is now widely used to rank model outputs, train reward models, and populate public leaderboards, but its run-to-run reliability remains under-characterized. We study repeated identical evaluations on 29 tasks spanning 10 categories using two OpenAI judge models (GPT-4o-mini and GPT-4.1-mini), with 50 pairwise trials and 50 pointwise trials per question, supplemented by temperature and prompt-sensitivity ablations. Across judges, pairwise preferences flip on average 13.6% of the time, with 28% of questions exceeding a 20% flip rate and one question reaching 56%. GPT-4o-mini also exhibits a significant first-position bias (72% A-majority, p = 0.024). At the same time, mean pointwise score gaps are small (0.19--0.36 on a 10-point",
-    "url": "https://arxiv.org/abs/2606.13685",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 85,
-    "score": 75,
-    "llm_summary": "揭示LLM评测中的随机性与偏差，强调可靠性问题",
-    "llm_tags": [
-      "模型评估",
-      "可靠性",
-      "偏差分析"
-    ]
-  },
-  {
-    "id": "92c4bbd2bbe2",
-    "title": "Which Models Perform Better in Inheritance Reasoning?",
-    "summary": "arXiv:2606.13751v1 Announce Type: new  Abstract: This paper presents the participation of team PSL in the QIAS 2026 Shared Task on Arabic Islamic inheritance reasoning. The task evaluates the ability of large language models to solve inheritance cases that require legal interpretation, multi-step reasoning, and precise numerical computation. We compare \\textit{commercial} and \\textit{open-source} models under a unified prompting strategy to assess their effectiveness in structured legal reasoning with minimal task-specific adaptation. \\\\ Our results show a clear gap in reliability between the two model families. Commercial models demonstrate stronger performance in identifying eligible heirs, applying exclusion rules, and maintaining consistency across reasoning steps. In contrast, open-so",
-    "url": "https://arxiv.org/abs/2606.13751",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 45,
-    "signal": 75,
-    "score": 60,
-    "llm_summary": "对比开源与商业模型在伊斯兰遗产法推理任务上的表现",
-    "llm_tags": [
-      "🔧 已开源",
-      "法律推理",
-      "LLM评估",
-      "阿拉伯语"
-    ]
-  },
-  {
-    "id": "e085ad6e3751",
-    "title": "MET-Bench: Multimodal Entity Tracking for Evaluating the Limitations of Vision-Language and Reasoning Models",
-    "summary": "arXiv:2502.10886v3 Announce Type: replace  Abstract: Entity state tracking is a necessary component of world modeling that requires maintaining coherent representations of entities over time. Previous work has benchmarked entity tracking performance in purely text-based tasks. We introduce MET-Bench, a multimodal entity tracking benchmark designed to evaluate the ability of vision-language models to track entity states across modalities. Using three domains, we assess how effectively current models integrate textual and image-based state updates. Our findings reveal a significant performance gap between text-based and image-based entity tracking. We empirically show this discrepancy primarily stems from deficits in visual reasoning rather than perception. We further show that explicit text",
-    "url": "https://arxiv.org/abs/2502.10886",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出多模态实体跟踪基准，评估视觉语言模型跨模态推理能力。",
-    "llm_tags": [
-      "多模态",
-      "基准测试",
-      "🔧 已开源",
-      "实体跟踪"
-    ]
-  },
-  {
-    "id": "60fd6be55bc2",
-    "title": "C2-Faith: Benchmarking LLM Judges for Causal and Coverage Faithfulness in Chain-of-Thought Reasoning",
-    "summary": "arXiv:2603.05167v2 Announce Type: replace  Abstract: Large language models (LLMs) are increasingly used as judges of chain-of-thought (CoT) reasoning, yet it remains unclear whether they can reliably assess process faithfulness rather than merely answer plausibility. We introduce C2-Faith, a benchmark built from PRM800K that explicitly decomposes faithfulness into two complementary dimensions: causality (whether each step logically follows from prior context) and coverage (whether essential intermediate inferences are present). Using controlled perturbations, we construct examples with known causal error positions by replacing a single step with a logically inconsistent variant, and with controlled coverage deletions at varying rates, enabling direct measurement against reference labels. W",
-    "url": "https://arxiv.org/abs/2603.05167",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出C2-Faith基准，从因果性和覆盖度评估LLM对思维链推理的评判能力。",
-    "llm_tags": [
-      "评估基准",
-      "思维链",
-      "模型评测"
-    ]
-  },
-  {
-    "id": "e9c20e7b0e9f",
-    "title": "GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge",
-    "summary": "arXiv:2606.14470v1 Announce Type: new  Abstract: Large language model (LLM) reasoning is ephemeral: chains of thought vanish with the context window, pruned search branches leave no record, and memory buffers cannot be diffed, merged, or audited. Every other complex software process (code, infrastructure, data, experiments) is version-controlled; reasoning is not. We introduce GitOfThoughts, which stores an agent's reasoning tree as a git repository: every scored thought is a commit, scores are notes, outcomes are tags, and retrieval is \"git log\" over the agent's own history. This makes reasoning replayable, auditable, and mergeable across agents at near-zero engineering cost.   We then ask the harder question: does memory, in any substrate, actually improve accuracy? Across five substrate",
-    "url": "https://arxiv.org/abs/2606.14470",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "引入Git版本控制机制管理LLM推理树，支持回溯与合并。",
-    "llm_tags": [
-      "智能体",
-      "推理框架",
-      "版本控制"
-    ]
-  },
-  {
-    "id": "4f22e0722429",
-    "title": "Mirage Probes: How Vision Models Fake Visual Understanding",
-    "summary": "arXiv:2606.13870v1 Announce Type: cross  Abstract: Vision-language models (VLMs) can answer image-based questions confidently, and often correctly, even when no image is provided. This mirage behavior inflates benchmark scores without reflecting visual grounding. Prior work treats this as a single failure mode. We argue it is two. Using Mirage Probes, a contrastive probing framework that pairs paraphrased question variants with matched mirage and non-mirage labels on the same image, we show that mirage behavior is linearly decodable from internal activations across residual stream, MLP, post-attention, and attention-head sites in two open-source VLMs. We demonstrate that a Naive Bayes text baseline cannot recover this signal, ruling out surface lexical confounds. Cross-benchmark separabili",
-    "url": "https://arxiv.org/abs/2606.13870",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 85,
-    "score": 80,
-    "llm_summary": "揭示视觉语言模型在无图时仍能作答的虚假理解现象并提出检测框架。",
-    "llm_tags": [
-      "多模态",
-      "模型评估",
-      "🔧 已开源",
-      "幻觉检测"
-    ]
-  },
-  {
-    "id": "b8aa6f0964e9",
-    "title": "Knowledge Graph Enhanced Memory-Augmented Retrieval for Long Context Modeling",
-    "summary": "arXiv:2606.14047v1 Announce Type: cross  Abstract: Long-context language modeling requires not only extending context windows but maintaining coherent understanding of entity states and relationships across thousands of tokens -- a challenge that semantic similarity alone cannot address. KGERMAR addresses this by constructing dynamic, context-specific knowledge graphs from input text during inference, enabling domain-adaptive retrieval that leverages both semantic similarity and explicit entity relationships. The framework performs real-time entity and relation extraction to build contextual knowledge graphs, then integrates graph-structural embeddings with textual semantics through a multi-component memory architecture. Three memory banks -- contextual, semantic, and structural -- are mai",
-    "url": "https://arxiv.org/abs/2606.14047",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-06-15T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "结合动态知识图谱与检索增强的长上下文建模方法",
-    "llm_tags": [
-      "RAG",
-      "长上下文",
-      "知识图谱"
-    ]
-  },
-  {
-    "id": "ba5fa894b379",
-    "title": "the US just made frontier ai a controlled export, like nvidia chips",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>the us government just told Anthropic to cut off its two most powerful models from every foreign national on earth, inside or outside america. Anthropic couldn't clea",
-    "url": "https://www.reddit.com/r/artificial/comments/1u64nok/the_us_just_made_frontier_ai_a_controlled_export/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-15T03:04:03+00:00",
-    "frontier": 85,
-    "signal": 65,
-    "score": 77,
-    "llm_summary": "美政府将前沿AI列为出口管制，Anthropic被要求限制外国人访问",
-    "llm_tags": [
-      "AI监管",
-      "地缘政治",
-      "出口管制"
     ]
   }
 ]
