@@ -1,5 +1,112 @@
 [
   {
+    "id": "2941d8f2892a",
+    "title": "trotsky1997/OpenFugu ⭐62",
+    "summary": "Open reimplementation of Sakana Fugu — the 'one model to command them all' LLM orchestrator. Read → run → train → serve.",
+    "url": "https://github.com/trotsky1997/OpenFugu",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-23T03:49:32.503127+00:00",
+    "created_at": "2026-06-22T11:37:21Z",
+    "stars": 62,
+    "language": "Python",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "开源复现Sakana Fugu多模型编排器，支持读取、运行、训练和部署。",
+    "llm_tags": [
+      "模型编排",
+      "开源复现",
+      "LLM工具"
+    ]
+  },
+  {
+    "id": "8de42cb16771",
+    "title": "Simpl3x3/ESEILANE ⭐58",
+    "summary": "A super fast Graph Database uses GraphBLAS under the hood for its sparse adjacency matrix graph representation. Our goal is to provide the best Knowledge Graph for LLM (GraphRAG).",
+    "url": "https://github.com/Simpl3x3/ESEILANE",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-23T03:49:32.503127+00:00",
+    "created_at": "2026-06-22T18:23:16Z",
+    "stars": 58,
+    "language": "TypeScript",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "基于GraphBLAS的高性能图数据库，旨在为LLM提供GraphRAG支持",
+    "llm_tags": [
+      "图数据库",
+      "GraphRAG",
+      "GraphBLAS"
+    ]
+  },
+  {
+    "id": "5e9e6d72b8d6",
+    "title": "IACKuchau/AgenticDeFi-Trainer ⭐53",
+    "summary": "Autonomous AI Agent Swarm framework with x402 self-executing wallets. Empowers LLM-driven agents to trade, bridge, and manage crypto treasuries without human intervention. The ultimate Agentic DeFi to",
+    "url": "https://github.com/IACKuchau/AgenticDeFi-Trainer",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-23T03:49:32.503127+00:00",
+    "created_at": "2026-06-18T15:02:39Z",
+    "stars": 53,
+    "language": "Python",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "自主AI代理群框架，集成402个自执行钱包，实现无人工干预的DeFi交易与资产管理。",
+    "llm_tags": [
+      "智能体",
+      "DeFi",
+      "自动化",
+      "LLM应用"
+    ]
+  },
+  {
+    "id": "c841db0c742b",
+    "title": "begin0808/LiveCaption ⭐52",
+    "summary": " 即時影音雙語字幕翻譯系統。本機離線 AI 語音辨識與翻譯，支援 SenseVoice、Ollama 與 DeepSeek。 | Real-time tab audio bilingual subtitle translation system using local ASR (SenseVoice) and LLMs (Ollama / DeepSeek). 100% offline & pri",
+    "url": "https://github.com/begin0808/LiveCaption",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-23T03:49:32.503127+00:00",
+    "created_at": "2026-06-21T00:55:25Z",
+    "stars": 52,
+    "language": "HTML",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "本地实时双语字幕系统，集成SenseVoice与本地LLM",
+    "llm_tags": [
+      "语音识别",
+      "实时翻译",
+      "离线部署"
+    ]
+  },
+  {
+    "id": "88db3943cc66",
+    "title": "josevapriambudi111-cyber/AgenticDeFi-Trainer ⭐49",
+    "summary": "Autonomous AI Agent Swarm framework with x402 self-executing wallets. Empowers LLM-driven agents to trade, bridge, and manage crypto treasuries without human intervention. The ultimate Agentic DeFi to",
+    "url": "https://github.com/josevapriambudi111-cyber/AgenticDeFi-Trainer",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-06-23T03:49:32.503127+00:00",
+    "created_at": "2026-06-18T15:02:43Z",
+    "stars": 49,
+    "language": "Python",
+    "frontier": 75,
+    "signal": 65,
+    "score": 71,
+    "llm_summary": "基于LLM的自主DeFi智能体框架，支持多钱包交易与跨链资产管理",
+    "llm_tags": [
+      "智能体",
+      "DeFi",
+      "区块链",
+      "LLM应用"
+    ]
+  },
+  {
     "id": "1e1b0e954bad",
     "title": "psinetron/echoes-vault-opencode ⭐78",
     "summary": "Persistent memory plugin for OpenCode. Obsidian-style knowledge base that survives across sessions",
@@ -293,6 +400,24 @@
       "模型推理",
       "量化技术",
       "性能优化"
+    ]
+  },
+  {
+    "id": "328522a2fcc4",
+    "title": "An Update on Matrix Recurrent Units, an Attention Alternative [R]",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1ubz5o8/an_update_on_matrix_recurrent_units_an_attention/\"> <img alt=\"An Update on Matrix Recurrent Units, an Attention Alte",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1ubz5o8/an_update_on_matrix_recurrent_units_an_attention/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-06-21T19:39:44+00:00",
+    "frontier": 65,
+    "signal": 60,
+    "score": 63,
+    "llm_summary": "探讨矩阵循环单元作为注意力机制的替代方案",
+    "llm_tags": [
+      "模型架构",
+      "RNN",
+      "注意力机制"
     ]
   },
   {
@@ -2774,204 +2899,6 @@
       "安全对齐",
       "🔧 已开源",
       "社会伦理"
-    ]
-  },
-  {
-    "id": "ac8a1da9f17b",
-    "title": "Ishannaik/agent-sweep ⭐37",
-    "summary": "Find and redact secrets in AI coding agent histories (Claude Code, and more).",
-    "url": "https://github.com/Ishannaik/agent-sweep",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-16T01:13:25.813562+00:00",
-    "created_at": "2026-06-11T06:27:24Z",
-    "stars": 37,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 75,
-    "score": 63,
-    "llm_summary": "开源工具，用于扫描并脱敏AI编程代理历史记录中的敏感信息。",
-    "llm_tags": [
-      "安全",
-      "隐私保护",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "f4a12a15ec02",
-    "title": "spacepirate15/quantum-free-router ⭐36",
-    "summary": "Zero-cost LLM routing across free-tier model APIs with Bifrost, certification scripts, and agent-ready fallback chains",
-    "url": "https://github.com/spacepirate15/quantum-free-router",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-16T01:13:25.813562+00:00",
-    "created_at": "2026-06-10T08:43:00Z",
-    "stars": 36,
-    "language": "Shell",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "开源免费LLM路由器，支持多模型API调用与降级策略",
-    "llm_tags": [
-      "模型路由",
-      "开源工具",
-      "API集成"
-    ]
-  },
-  {
-    "id": "f5a5183f8b2b",
-    "title": "Goekdeniz-Guelmez/MLX-LoRA-Studio ⭐36",
-    "summary": "A native Mac App for LLM fine-tuning on Apple Silicon — fully on-device, fully open source.",
-    "url": "https://github.com/Goekdeniz-Guelmez/MLX-LoRA-Studio",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-16T01:13:25.813562+00:00",
-    "created_at": "2026-06-11T19:34:33Z",
-    "stars": 36,
-    "language": null,
-    "frontier": 55,
-    "signal": 65,
-    "score": 59,
-    "llm_summary": "基于MLX的Mac端LLM微调原生应用，支持全本地开源。",
-    "llm_tags": [
-      "LLM微调",
-      "MLX",
-      "Apple Silicon",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "9cfd06bd019d",
-    "title": "jaimeirazabal1/rag-architectures ⭐35",
-    "summary": "Sistema RAG con 6 arquitecturas implementadas como microservicios independientes en FastAPI + Docker: Naïve RAG, Advanced RAG, Modular RAG, GraphRAG, Agentic RAG y Hybrid RAG. Cada una incluye embeddi",
-    "url": "https://github.com/jaimeirazabal1/rag-architectures",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-16T01:13:25.813562+00:00",
-    "created_at": "2026-06-11T10:13:14Z",
-    "stars": 35,
-    "language": "Python",
-    "frontier": 65,
-    "signal": 85,
-    "score": 73,
-    "llm_summary": "集成6种RAG架构的FastAPI微服务实现方案",
-    "llm_tags": [
-      "RAG",
-      "微服务",
-      "FastAPI",
-      "GraphRAG"
-    ]
-  },
-  {
-    "id": "018ea69393c8",
-    "title": "coinluu/resume-jd-optimizer-cn ⭐34",
-    "summary": "JD-driven Chinese resume optimization skill for China job seekers. 解析岗位 JD、诊断简历缺口、生成真实可信的中文定制简历、ATS 纯文本版和面试追问。",
-    "url": "https://github.com/coinluu/resume-jd-optimizer-cn",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-16T01:13:25.813562+00:00",
-    "created_at": "2026-06-11T17:09:29Z",
-    "stars": 34,
-    "language": null,
-    "frontier": 45,
-    "signal": 65,
-    "score": 53,
-    "llm_summary": "基于JD解析的中文简历优化工具，支持缺口诊断与面试追问生成。",
-    "llm_tags": [
-      "RAG",
-      "简历优化",
-      "LLM应用"
-    ]
-  },
-  {
-    "id": "40a6b4c3ba30",
-    "title": "Predicting model behavior before release by simulating deployment",
-    "summary": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy.",
-    "url": "https://openai.com/index/deployment-simulation",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-06-16T00:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 71,
-    "llm_summary": "OpenAI提出部署模拟法，利用真实对话数据预测模型行为以提升安全性。",
-    "llm_tags": [
-      "模型评估",
-      "AI安全",
-      "红队测试"
-    ]
-  },
-  {
-    "id": "88ff9b12659f",
-    "title": "Cleo: trying to fit full analyst behavior in a 2B model [P]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Hello all! </p> <p>Half of all industrial &quot;chatbots&quot; are just text-to-SQL models in a trenchcoat (and the other half RAG!). I wanted to explore just how sma",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1u6udpb/cleo_trying_to_fit_full_analyst_behavior_in_a_2b/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-15T21:43:10+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "探索用20亿参数模型实现完整分析师行为",
-    "llm_tags": [
-      "小模型",
-      "Text-to-SQL",
-      "Agent"
-    ]
-  },
-  {
-    "id": "01a45741d2d2",
-    "title": "Open weights are not enough: we need open training frameworks for research and better algorithms [P]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Open weights are important and critical, but they are not enough by themselves.</p> <p>If we want open ML and AI research to move forward, we also need open training ",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1u6p7k3/open_weights_are_not_enough_we_need_open_training/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-15T18:37:51+00:00",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "呼吁开放训练框架以推动算法研究，认为仅开放权重不足",
-    "llm_tags": [
-      "开源生态",
-      "训练框架",
-      "算法研究"
-    ]
-  },
-  {
-    "id": "1bdbfafb79da",
-    "title": "AGIBOT A3 is now autonomously playing table tennis against humans at the BAAI 2026 conference",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1u6nlk7/agibot_a3_is_now_autonomously_playing_table/\"> <img alt=\"AGIBOT A3 is now autonomously playing table tennis against huma",
-    "url": "https://www.reddit.com/r/singularity/comments/1u6nlk7/agibot_a3_is_now_autonomously_playing_table/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-06-15T17:41:53+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 67,
-    "llm_summary": "AGIBOT A3机器人实现人机乒乓球对战，展示运动控制能力。",
-    "llm_tags": [
-      "具身智能",
-      "运动控制",
-      "机器人"
-    ]
-  },
-  {
-    "id": "f93f47da99e7",
-    "title": "DietrichGebert/ponytail ⭐14086",
-    "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-    "url": "https://github.com/DietrichGebert/ponytail",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-06-15T17:18:00.991317+00:00",
-    "created_at": "2026-06-12T00:52:37Z",
-    "stars": 14086,
-    "language": "JavaScript",
-    "frontier": 90,
-    "signal": 90,
-    "score": 90,
-    "llm_summary": "⭐14086 高星新仓库，社区热度达标直通入选",
-    "llm_tags": [
-      "⭐高星直通"
     ]
   }
 ]
