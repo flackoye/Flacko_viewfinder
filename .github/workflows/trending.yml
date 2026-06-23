@@ -2,8 +2,8 @@ name: Update AI Trending
 
 on:
   # 每 12 小时跑一次：UTC 0:00, 12:00
-  schedule:
-    - cron: "0 0,12 * * *"
+  # schedule:
+  #   - cron: "0 0,12 * * *"
   # 也支持手动触发
   workflow_dispatch:
 
