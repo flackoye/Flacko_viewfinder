@@ -362,6 +362,82 @@ input:focus {
   }
 }
 
+/* ========== 自定义鼠标光标 ========== */
+/* 仅桌面（fine pointer）隐藏原生光标，输入框还原文本光标 */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+  input,
+  textarea,
+  [contenteditable] {
+    cursor: text !important;
+  }
+}
+
+.cursor-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* 拖尾粒子（大小/颜色由 JS 控制） */
+.cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform, width, height, background;
+}
+
+/* 外层柔光晕（颜色由 JS 控制） */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: blur(4px);
+  pointer-events: none;
+  will-change: transform, background;
+}
+
+/* 内层细环（颜色/阴影由 JS 控制） */
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid hsl(170 90% 65%);
+  pointer-events: none;
+  will-change: transform, border-color, box-shadow;
+  transition: border-width 0.15s ease;
+}
+
+/* 点击涟漪（颜色由 JS 行内 style 控制） */
+.cursor-ripple {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -5px;
+  border-radius: 50%;
+  border: 2px solid hsl(170 90% 65% / 0.6);
+  pointer-events: none;
+  animation: cursor-ripple 0.6s ease-out forwards;
+}
+@keyframes cursor-ripple {
+  to {
+    transform: scale(12);
+    opacity: 0;
+    border-width: 0.5px;
+  }
+}
+
 /* ========== 技能分组样式 ========== */
 
 .skill-group-header {
@@ -441,6 +517,65 @@ input:focus {
         calc(sin(var(--angle)) * -40px)
       )
       scale(0.3);
+  }
+}
+
+/* 脚下金色光晕（地面投影，让阿岳"立"在页面上） */
+.pet-ground-glow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleX(1.4);
+  height: 18px;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(226, 182, 89, 0.35) 0%,
+    rgba(226, 182, 89, 0.12) 45%,
+    transparent 75%
+  );
+  filter: blur(6px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 进场音符：从头顶向上飘散 */
+.pet-enter-note {
+  position: absolute;
+  font-size: 18px;
+  pointer-events: none;
+  z-index: 5;
+  opacity: 0;
+  filter: drop-shadow(0 0 6px rgba(226, 182, 89, 0.5));
+  animation: pet-enter-note 1.6s cubic-bezier(0.2, 0.6, 0.3, 1) forwards;
+}
+@keyframes pet-enter-note {
+  0% { opacity: 0; transform: translateY(0) translateX(0) scale(0.6); }
+  20% { opacity: 1; transform: translateY(-10px) translateX(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-70px) translateX(14px) scale(0.8) rotate(12deg); }
+}
+
+/* 气泡话筒图标轻微浮动 */
+.pet-note-icon {
+  display: inline-block;
+  animation: pet-note-float 1.8s ease-in-out infinite;
+  font-size: 14px;
+}
+@keyframes pet-note-float {
+  0%, 100% { transform: translateY(0) rotate(-6deg); }
+  50% { transform: translateY(-2px) rotate(6deg); }
+}
+
+/* 阿岳气泡：桌面端/移动端彻底分开（不依赖 JS isMobile） */
+.pet-bubble {
+  width: 320px;            /* 桌面默认体面宽度 */
+  max-width: 460px;
+  white-space: normal;     /* 桌面一般单行，长歌词自然换行 */
+}
+@media (max-width: 768px) {
+  .pet-bubble {
+    width: fit-content;    /* 移动端贴合内容 */
+ max-width: min(300px, calc(100vw - 48px));
+    font-size: 14px;
   }
 }
 

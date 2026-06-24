@@ -5,6 +5,12 @@
 
 | 日期 | 对象 | 思路（为什么改） | 解决办法 |
 |------|------|------------------|---------|
+| 2026-06-25 | 换页 `ClothTransition` CSS 重构 | three.js 布料太重且效果不佳，换成纯 CSS `clip-path` 斜角揭布 | 两段式 cover(150ms)→peel(700ms)，`clip-path: polygon()` 从右下向左上收缩，`::after` 渐变阴影模拟布料折叠光影，cubic-bezier 带轻微回弹 |
+| 2026-06-25 | 光标 `CursorEffect` framer-motion 重构 | 手写 rAF lerp 拖尾方向反了、鬼畜；改 framer-motion 弹簧物理 | `useSpring` 弹簧链（5 点刚度递减），主环 stiffness 550 跟手，拖尾方向天然正确；HSL 色相按速度在 170↔320 插值，代替纯金色 |
+| 2026-06-25 | PetCharacter 气泡 CSS 响应式 | JS `isMobile` 逻辑不可靠，桌面端短歌词气泡窄 | 纯 CSS 媒体查询：桌面 `width:320px`，移动 `fit-content+maxWidth`，`@media(max-width:768px)` 分开控制 |
+| 2026-06-16 | 页面切换特效 `PageTransition` | 现有 `main.page-fade-in-enhanced` 因 layout 不 remount，路由切换实际不播动画 | 新建 overlay 组件监听 `usePathname`：毛玻璃层从底部滑上盖满(420ms)→向上揭开(480ms)；移除 main 旧动画类；纯 CSS keyframes 无需动画库 |
+| 2026-06-16 | 自定义鼠标 `CursorEffect` | 默认光标无特色，想加交互质感 | 新建全局组件：外层柔光晕(lerp 0.12)+内层细环(0.28)拖尾跟随；悬停交互元素磁吸放大 1.8 倍+高亮；点击涟漪扩散。`(pointer:fine)` 判定，移动端不渲染；`cursor:none` 并给输入框还原 `cursor:text` |
+| 2026-06-16 | `PetCharacter` 响应式 + 美化 | 移动端歌词气泡 `nowrap`+`max-content` 溢出屏幕；整体视觉可提升 | ① 去 nowrap 改 `fit-content`+`maxWidth:min(320px,calc(100vw-48px))`；② PET 尺寸按 `innerWidth<480` 响应式缩小；③ 气泡加浮动🎤图标；④ 首次进场探头+音符飘出；⑤ 脚下金色光晕。`layout.tsx` 加 `viewport` |
 | 2026-06-16 | HN 高赞直通 (`HN_HIGH_POINTS_FAST_PATH`) | 外链高赞热点（"Open source AI must win"1585赞、"AI agent bankrupted"1460赞）`story_text` 永远为空（正文在外部网站），LLM 评不出信息含量被砍——最值钱的热点流失 | `points ≥ 100` 的 HN 帖绕过 LLM 直通入选，score 按 `log10(points)` 映射（100→70，1万→90）。与 GitHub 高星直通同思路：高赞本身是强社区信号 |
 | 2026-06-16 | `fetch_hackernews` summary | HN 喂给 LLM 的 summary 只有"热度 X 点赞"，白白浪费 algolia 返回的 `story_text` 字段（Show HN/Ask HN 站内帖有正文） | summary 改用 `story_text`（去 HTML 标签 + unescape），站内帖带正文；外链帖（story_text 空）标注"外链帖无正文"。注：外链高赞热点正文在外部网站，story_text 永远为空，需另作处理 |
 | 2026-06-16 | `fetch_hackernews` | HN 一直 `🔶 0 items`，两个叠加 bug：① query 带字面 "OR"+空格短语（"machine learning"）algolia 不认；② **algolia 多词 query 默认 AND**，`AI LLM GPT transformer` 4 词要求全含直接返回 0 条。返回的老帖全被本地 7 天窗口过滤光 | query 改 `AI LLM GPT transformer` + `optionalWords` 同值（多词默认 AND，optionalWords 才得 OR 语义）；points `>10`→`>5`；加服务端 `created_at_i>N天前` 时间约束。实测 0→15 条近 7 天高赞 |

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Noto_Sans_SC, Dancing_Script } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import fs from "fs";
@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SettingsProvider } from "@/components/SettingsProvider";
 import AnnouncementBanner from "@/components/AnnouncementBanner";
+import CursorEffect from "@/components/CursorEffect";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,6 +29,11 @@ const dancingScript = Dancing_Script({
 export const metadata: Metadata = {
   title: "Flacko的取景框",
   // description: "个人知识库 — 学习、探索、创造",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -53,12 +59,13 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-bg text-text">
         <SettingsProvider>
           <Navbar />
-          <main className="flex-1 pt-16 page-fade-in-enhanced">
+          <main className="flex-1 pt-16">
             <AnnouncementBanner announcement={announcement} />
             {children}
           </main>
           <Footer />
         </SettingsProvider>
+        <CursorEffect />
         <Analytics />
       </body>
     </html>

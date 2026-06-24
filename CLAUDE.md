@@ -90,6 +90,9 @@ Supabase 表结构：
 - 暗色主题为主，CSS 变量控制主题色
 - `Customizer` 组件支持用户自定义背景图、亮度、卡片透明度
 - 设置通过 `SettingsProvider` (React Context) + localStorage 持久化
+- **自定义鼠标光标** (`CursorEffect`)：全局挂载，磁吸光环+涟漪点击，仅 `(pointer:fine)` 桌面启用，`globals.css` 的 `@media(pointer:fine){*{cursor:none}}` 配合（输入框还原 text）
+- **页面切换揭幕** (`PageTransition`)：监听 `usePathname`，毛玻璃从底滑上盖满→向上揭开。⚠️ `<main>` 在 layout 持久不 remount，路由切换动画必须用 overlay 组件而非 main 上的 class
+- **PetCharacter**（首页阿岳）：移动端 `<480px` 自动缩小；气泡 `fit-content`+`maxWidth:min(320px,calc(100vw-48px))`；含进场动画/脚下光晕/浮动话筒图标
 
 ## 页面状态
 
