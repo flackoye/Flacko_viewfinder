@@ -18,6 +18,7 @@ export default function SuggestedQuestions({
       {items.map((item, idx) => (
         <button
           key={idx}
+          type="button"
           onClick={() => onSelect(item)}
           className={`glass-btn-outline px-4 py-2.5 text-sm text-left transition-all hover-lift ${
             layout === 'grid' ? 'whitespace-normal' : 'whitespace-nowrap'

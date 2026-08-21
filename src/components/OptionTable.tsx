@@ -27,8 +27,10 @@ export default function OptionTable({
         return (
           <button
             key={opt.label}
+            type="button"
             onClick={() => onSelect(val)}
             className={`option-row group ${isSelected ? 'selected' : ''}`}
+            aria-pressed={isSelected}
           >
             {/* Klein Blue 选中按钮 */}
             <span className={`option-btn ${isSelected ? 'selected' : 'group-hover:border-white/30'}`} />

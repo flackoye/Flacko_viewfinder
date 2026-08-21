@@ -7,7 +7,7 @@
 CREATE EXTENSION IF NOT EXISTS vector;
 
 -- 2. 项目元数据表（替代 projects.json）
-CREATE TABLE projects (
+CREATE TABLE IF NOT EXISTS projects (
   id          TEXT PRIMARY KEY,
   full_name   TEXT NOT NULL UNIQUE,
   name        TEXT NOT NULL,
@@ -20,10 +20,10 @@ CREATE TABLE projects (
   updated_at  TEXT NOT NULL DEFAULT '',
   created_at  TIMESTAMPTZ DEFAULT now()
 );
-CREATE INDEX idx_projects_category ON projects (category);
+CREATE INDEX IF NOT EXISTS idx_projects_category ON projects (category);
 
 -- 3. Embedding chunks 表（替代 project_embeddings.json）
-CREATE TABLE embedding_chunks (
+CREATE TABLE IF NOT EXISTS embedding_chunks (
   id              TEXT PRIMARY KEY,
   repo_full_name  TEXT NOT NULL,
   category        TEXT NOT NULL,
@@ -33,11 +33,11 @@ CREATE TABLE embedding_chunks (
   embedding       vector(512) NOT NULL,
   created_at      TIMESTAMPTZ DEFAULT now()
 );
-CREATE INDEX idx_chunks_category ON embedding_chunks (category);
-CREATE INDEX idx_chunks_repo ON embedding_chunks (repo_full_name);
+CREATE INDEX IF NOT EXISTS idx_chunks_category ON embedding_chunks (category);
+CREATE INDEX IF NOT EXISTS idx_chunks_repo ON embedding_chunks (repo_full_name);
 
 -- 4. HNSW 索引（近似最近邻，余弦距离）
-CREATE INDEX idx_chunks_embedding_cosine ON embedding_chunks
+CREATE INDEX IF NOT EXISTS idx_chunks_embedding_cosine ON embedding_chunks
   USING hnsw (embedding vector_cosine_ops)
   WITH (m = 16, ef_construction = 64);
 
@@ -74,3 +74,7 @@ BEGIN
   LIMIT match_count;
 END;
 $$;
+
+-- 6. 线上访问只经过服务端 service_role 客户端；禁止 anon 直接读取原始语料。
+ALTER TABLE projects ENABLE ROW LEVEL SECURITY;
+ALTER TABLE embedding_chunks ENABLE ROW LEVEL SECURITY;

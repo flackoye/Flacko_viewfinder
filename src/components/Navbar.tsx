@@ -3,14 +3,15 @@
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { FolderGit2, Sparkles, User, Menu, X, Flame, ScrollText } from 'lucide-react';
+import { BookOpen, FolderGit2, Sparkles, User, Menu, X, Flame, ScrollText } from 'lucide-react';
 
 const navItems = [
   { name: '首页', href: '/', icon: Sparkles },
   { name: '热点', href: '/trending', icon: Flame },
   { name: '项目', href: '/projects', icon: FolderGit2 },
+  { name: '文章', href: '/records', icon: BookOpen },
   { name: '日志', href: '/changelog', icon: ScrollText },
-  { name: '关于', href: '/about', icon: User },
+  { name: '档案', href: '/about', icon: User },
 ];
 
 export default function Navbar() {
@@ -23,11 +24,6 @@ export default function Navbar() {
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  // 路由变化时关闭菜单
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [pathname]);
 
   const closeMobileMenu = useCallback(() => {
     // 延迟关闭，让 Link 的导航事件先完成
@@ -46,17 +42,18 @@ export default function Navbar() {
           <span className="font-[family-name:var(--font-dancing)] text-2xl md:text-3xl tracking-wider text-accent">
             Flacko
           </span>
-          <span className="site-subname text-xs md:text-sm tracking-widest">
-            的取景框
+          <span className="site-subname text-xs md:text-sm">
+            <span className="site-subname__particle">的</span>
+            <span className="site-subname__title">取景框</span>
           </span>
         </Link>
 
         {/* 右侧导航 */}
         <div className="hidden md:flex items-center gap-1">
           {navItems.map((item) => {
-            const isActive = item.href === '/projects'
-              ? pathname === '/projects' || pathname.startsWith('/projects/')
-              : pathname === item.href;
+            const isActive = item.href === '/'
+              ? pathname === '/'
+              : pathname === item.href || pathname.startsWith(`${item.href}/`);
             return (
               <Link
                 key={item.name}
@@ -66,6 +63,7 @@ export default function Navbar() {
                     ? 'text-accent bg-accent/10'
                     : 'text-text-muted hover:text-text hover:bg-white/5'
                 }`}
+                aria-current={isActive ? 'page' : undefined}
               >
                 <item.icon className={`w-4 h-4 transition-transform duration-200 group-hover:scale-110 ${isActive ? 'text-accent' : ''}`} />
                 {item.name}
@@ -106,9 +104,9 @@ export default function Navbar() {
         >
           <div className="px-6 py-4 space-y-1">
             {navItems.map((item) => {
-              const isActive = item.href === '/projects'
-                ? pathname === '/projects' || pathname.startsWith('/projects/')
-                : pathname === item.href;
+              const isActive = item.href === '/'
+                ? pathname === '/'
+                : pathname === item.href || pathname.startsWith(`${item.href}/`);
               return (
                 <Link
                   key={item.name}
@@ -119,6 +117,7 @@ export default function Navbar() {
                       : 'text-text-muted hover:text-text hover:bg-white/5'
                   }`}
                   onClick={closeMobileMenu}
+                  aria-current={isActive ? 'page' : undefined}
                 >
                   <item.icon className="w-4 h-4" />
                   {item.name}

@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import TimelineView from '@/components/TimelineView';
+import PageBackdrop from '@/components/PageBackdrop';
 
 export default async function TrendingPage() {
   // 从 public/trending.json 读取数据（由 Python 管道生成）
@@ -21,5 +22,12 @@ export default async function TrendingPage() {
       timestamp: new Date(item.timestamp as string),
     }));
 
-  return <TimelineView items={parsed} />;
+  return (
+    <div className="relative isolate min-h-[calc(100vh-10rem)] overflow-hidden">
+      <PageBackdrop variant="signals" />
+      <div className="relative z-10">
+        <TimelineView items={parsed} />
+      </div>
+    </div>
+  );
 }

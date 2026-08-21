@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { Metadata } from 'next';
 import ChangelogView from '@/components/ChangelogView';
+import PageBackdrop from '@/components/PageBackdrop';
 
 export const metadata: Metadata = {
   title: '更新日志 | Flacko的取景框',
@@ -21,8 +22,11 @@ export default function ChangelogPage() {
   }
 
   return (
-    <div className="page-fade-in">
-      <ChangelogView entries={entries} />
+    <div className="page-fade-in relative isolate min-h-[calc(100vh-10rem)] overflow-hidden">
+      <PageBackdrop variant="archive" />
+      <div className="relative z-10">
+        <ChangelogView entries={entries} />
+      </div>
     </div>
   );
 }

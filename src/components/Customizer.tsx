@@ -1,7 +1,18 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import { Settings, X, Upload, RotateCcw, Sun, Droplets, Layers } from 'lucide-react';
+import {
+  Settings,
+  X,
+  Upload,
+  RotateCcw,
+  Sun,
+  Droplets,
+  Layers,
+  Eye,
+  MoveHorizontal,
+  Maximize2,
+} from 'lucide-react';
 import { useSettings } from '@/components/SettingsProvider';
 import { defaultSettings, fileToDataUrl } from '@/lib/settings';
 
@@ -39,6 +50,7 @@ export default function Customizer() {
         onClick={() => setOpen(!open)}
         className="fixed bottom-6 right-6 z-[60] w-11 h-11 rounded-full glass flex items-center justify-center text-text-muted hover:text-accent transition-all duration-300 hover:scale-110"
         aria-label="自定义设置"
+        aria-expanded={open}
       >
         <Settings className={`w-5 h-5 transition-transform duration-500 ${open ? 'rotate-180' : ''}`} />
       </button>
@@ -56,6 +68,10 @@ export default function Customizer() {
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
         style={{ borderRadius: 0, borderLeft: '1px solid rgba(255,255,255,0.06)' }}
+        role="dialog"
+        aria-modal="true"
+        aria-label="主页外观设置"
+        aria-hidden={!open}
       >
         <div className="p-6">
           {/* 头部 */}
@@ -64,6 +80,7 @@ export default function Customizer() {
             <button
               onClick={() => setOpen(false)}
               className="p-1.5 rounded-lg hover:bg-white/5 text-text-muted hover:text-text transition-colors"
+              aria-label="关闭自定义面板"
             >
               <X className="w-4 h-4" />
             </button>
@@ -154,6 +171,79 @@ export default function Customizer() {
               onChange={(e) => handleUpdate({ cardGlass: Number(e.target.value) })}
               className="custom-slider w-full"
             />
+          </section>
+
+          <section className="mb-8 border-t border-white/[0.07] pt-7">
+            <h3 className="mb-5 text-xs font-medium tracking-[0.16em] text-text-dim">阿岳</h3>
+
+            <div className="mb-5 flex items-center justify-between gap-4">
+              <span className="flex items-center gap-2 text-sm font-medium text-text-muted">
+                <Eye className="h-4 w-4" />
+                显示阿岳
+              </span>
+              <button
+                type="button"
+                role="switch"
+                aria-checked={settings.petVisible}
+                onClick={() => handleUpdate({ petVisible: !settings.petVisible })}
+                className={`relative h-6 w-11 rounded-full border transition-colors ${
+                  settings.petVisible
+                    ? 'border-accent/40 bg-accent/25'
+                    : 'border-white/10 bg-white/[0.05]'
+                }`}
+              >
+                <span
+                  className={`absolute top-1/2 h-4 w-4 -translate-y-1/2 rounded-full transition-all ${
+                    settings.petVisible ? 'left-6 bg-accent' : 'left-1 bg-text-dim'
+                  }`}
+                />
+              </button>
+            </div>
+
+            <div className="mb-6 flex items-center justify-between gap-4">
+              <span className="flex items-center gap-2 text-sm font-medium text-text-muted">
+                <MoveHorizontal className="h-4 w-4" />
+                允许走动
+              </span>
+              <button
+                type="button"
+                role="switch"
+                aria-checked={settings.petRoaming}
+                onClick={() => handleUpdate({ petRoaming: !settings.petRoaming })}
+                className={`relative h-6 w-11 rounded-full border transition-colors ${
+                  settings.petRoaming
+                    ? 'border-accent/40 bg-accent/25'
+                    : 'border-white/10 bg-white/[0.05]'
+                }`}
+              >
+                <span
+                  className={`absolute top-1/2 h-4 w-4 -translate-y-1/2 rounded-full transition-all ${
+                    settings.petRoaming ? 'left-6 bg-accent' : 'left-1 bg-text-dim'
+                  }`}
+                />
+              </button>
+            </div>
+
+            <label className="mb-3 flex items-center justify-between text-sm font-medium text-text-muted">
+              <span className="flex items-center gap-2">
+                <Maximize2 className="h-4 w-4" />
+                显示大小
+              </span>
+              <span className="text-xs text-accent">{settings.petScale}%</span>
+            </label>
+            <input
+              type="range"
+              min={70}
+              max={140}
+              step={5}
+              value={settings.petScale}
+              onChange={(event) => handleUpdate({ petScale: Number(event.target.value) })}
+              className="custom-slider w-full"
+              aria-label="阿岳显示大小"
+            />
+            <p className="mt-2 text-xs leading-5 text-text-dim">
+              关闭走动后仍可直接拖动阿岳，位置会自动记住。
+            </p>
           </section>
 
           {/* 重置 */}

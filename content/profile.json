@@ -1,0 +1,84 @@
+{
+  "displayName": "Cuhk_Chasing",
+  "avatar": "/avatar.jpg",
+  "school": "CUMT",
+  "major": "CS",
+  "stage": "大三在读",
+  "intro": "",
+  "motto": "上坡要努力，下坡要开心",
+  "links": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/flackoye"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:08244498@cumt.edu.cn"
+    }
+  ],
+  "bookmarks": [
+    {
+      "label": "御舆",
+      "href": "https://lintsinghua.github.io/#preface",
+      "description": "Claude Code 架构深度剖析"
+    },
+    {
+      "label": "Tcamp",
+      "href": "https://tcamp.qq.com/",
+      "description": "腾讯青科实训营"
+    },
+    {
+      "label": "Interactive Machine Learning",
+      "href": "https://ai.richardxu.com/ml/#/",
+      "description": "来自香港浸会大学徐亦达教授的交互式学习网站"
+    },
+    {
+      "label": "Codex Reset",
+      "href": "https://codex-reset.com/zh/#tracker",
+      "description": "Codex善意重置追踪网站"
+    }
+  ],
+  "competitions": [
+    {
+      "title": "五一数学建模",
+      "date": "2025-05-01",
+      "award": "省级一等奖",
+      "image": "/profile/competitions/微信图片_20260821182742_58_50.jpg",
+      "draft": false
+    },
+    {
+      "title": "美国大学生数学建模竞赛",
+      "date": "2026-01-29",
+      "award": "Honorable Mention",
+      "image": "/profile/competitions/微信图片_20260821182747_61_50.jpg",
+      "draft": false
+    },
+    {
+      "title": "ASC超算赛",
+      "date": "2026-03-01",
+      "award": "The Second Class Prize",
+      "image": "/profile/competitions/微信图片_20260821182746_60_50.jpg",
+      "draft": false
+    },
+    {
+      "title": "CUHK暑期学校",
+      "date": "2026-07-21",
+      "image": "/profile/competitions/微信图片_20260821182744_59_50.jpg",
+      "draft": false
+    }
+  ],
+  "githubProjects": [
+    {
+      "name": "ReID_FBH",
+      "description": "对于两轮车重识别的研究与探索",
+      "href": "https://github.com/flackoye/ReID_FBH",
+      "draft": false
+    },
+    {
+      "name": "ai-learning-system",
+      "description": "基于多Agent编排的AI学习系统",
+      "href": "https://github.com/qiuyuan1111/ai-learning-system",
+      "draft": false
+    }
+  ]
+}

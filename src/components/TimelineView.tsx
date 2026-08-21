@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { MessageSquare, FileText, ArrowUpRight, Star, Code2, Globe, Flame, Sparkles, Trophy } from 'lucide-react';
 
 export interface TrendingItem {
@@ -32,6 +32,7 @@ const typeConfig: Record<string, { label: string; icon: typeof Globe; color: str
   tech_media: { label: '科技媒体', icon: MessageSquare, color: 'text-[#54a0ff]', dotColor: 'bg-[#54a0ff]' },
   tech_community: { label: '社区', icon: MessageSquare, color: 'text-[#ff6b6b]', dotColor: 'bg-[#ff6b6b]' },
   paper: { label: '论文', icon: FileText, color: 'text-[#5f27cd]', dotColor: 'bg-[#5f27cd]' },
+  academic_paper: { label: '论文', icon: FileText, color: 'text-[#8b5cf6]', dotColor: 'bg-[#8b5cf6]' },
   open_source: { label: '开源', icon: Star, color: 'text-[#2ecc71]', dotColor: 'bg-[#2ecc71]' },
   default: { label: '资讯', icon: ArrowUpRight, color: 'text-text-muted', dotColor: 'bg-text-muted' },
 };
@@ -56,35 +57,8 @@ function formatDateKey(date: Date): string {
 
 const MEDALS = ['🥇', '🥈', '🥉'];
 
-/** 根据当前时间计算下次更新时间（CI cron: UTC 0:00 / 12:00 → 北京时间 08:00 / 20:00） */
-function getNextUpdateTime(): string {
-  const now = new Date();
-  const utcHour = now.getUTCHours();
-  const target = new Date(now);
-
-  if (utcHour < 12) {
-    target.setUTCHours(12, 0, 0, 0);
-  } else {
-    target.setUTCDate(target.getUTCDate() + 1);
-    target.setUTCHours(0, 0, 0, 0);
-  }
-
-  const h = target.getHours().toString().padStart(2, '0');
-  const m = target.getMinutes().toString().padStart(2, '0');
-  const isToday = target.toDateString() === now.toDateString();
-
-  return `${isToday ? '今天' : '明天'} ${h}:${m}`;
-}
-
 export default function TimelineView({ items }: { items: TrendingItem[] }) {
   const [activeTab, setActiveTab] = useState<'all' | 'today'>('all');
-  const [nextUpdate, setNextUpdate] = useState('');
-
-  useEffect(() => {
-    setNextUpdate(getNextUpdateTime());
-    const timer = setInterval(() => setNextUpdate(getNextUpdateTime()), 60000);
-    return () => clearInterval(timer);
-  }, []);
 
   // 判断是否为今天
   const todayKey = formatDateKey(new Date());
@@ -130,11 +104,9 @@ export default function TimelineView({ items }: { items: TrendingItem[] }) {
         <h1 className="text-4xl font-bold">
           <span className="gradient-text">AI 热点</span>
         </h1>
-        {nextUpdate && (
-          <span className="text-sm text-text-muted whitespace-nowrap">
-            下次更新：{nextUpdate}
-          </span>
-        )}
+        <span className="text-sm text-text-muted whitespace-nowrap">
+          数据窗口：最近 7 天
+        </span>
       </div>
 
       {/* ========== 统计卡片 ========== */}
@@ -153,7 +125,7 @@ export default function TimelineView({ items }: { items: TrendingItem[] }) {
             <span className={activeTab === 'all' ? 'text-text' : ''}>全部热点</span>
           </div>
           <div className="text-5xl font-bold gradient-text leading-none">{items.length}</div>
-          <div className="text-xs text-text-dim mt-3">{uniqueSourceCount} 源聚合 · 保留 5 天</div>
+          <div className="text-xs text-text-dim mt-3">{uniqueSourceCount} 源聚合 · 保留 7 天</div>
         </button>
 
         {/* 今日热点 */}

@@ -42,6 +42,8 @@ export interface ChatMessage {
   timestamp: number;
 }
 
+export type ChatHistoryMessage = Pick<ChatMessage, 'role' | 'content'>;
+
 export interface CategoryInfo {
   name: string;
   emoji: string;
@@ -52,7 +54,7 @@ export interface CategoryInfo {
 
 export interface ProjectsRequestBody {
   question: string;
-  history: ChatMessage[];
+  history: ChatHistoryMessage[];
   mode?: 'guided' | 'assistant';
   category?: string;
 }

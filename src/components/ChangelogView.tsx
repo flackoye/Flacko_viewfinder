@@ -1,7 +1,7 @@
-import { Sparkles, Wrench, ArrowUpRight, FileText, History } from 'lucide-react';
+import { Sparkles, Wrench, ArrowUpRight, FileText, History, Trash2 } from 'lucide-react';
 
 export interface ChangelogChange {
-  type: 'feature' | 'fix' | 'improvement' | 'docs';
+  type: 'feature' | 'fix' | 'improvement' | 'docs' | 'removal';
   description: string;
 }
 
@@ -18,6 +18,7 @@ const changeConfig: Record<string, { label: string; icon: typeof Sparkles; color
   fix:         { label: '修复',   icon: Wrench,      color: 'text-[#54a0ff]' },
   improvement: { label: '优化',   icon: ArrowUpRight, color: 'text-[#2ecc71]' },
   docs:        { label: '文档',   icon: FileText,    color: 'text-text-muted' },
+  removal:     { label: '移除',   icon: Trash2,      color: 'text-[#ff6b6b]' },
 };
 
 function formatDate(dateStr: string): string {

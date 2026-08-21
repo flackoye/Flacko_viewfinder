@@ -1,7 +1,6 @@
 import type { Project } from '@/lib/project-types';
 import { CATEGORIES } from '@/lib/categories';
 import { supabase } from '@/lib/supabase';
-import GuidedExplore from '@/components/GuidedExplore';
 import ExplorePageClient from './ExplorePageClient';
 
 export default async function ExplorePage() {

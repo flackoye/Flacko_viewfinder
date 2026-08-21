@@ -5,7 +5,7 @@ import { FolderGit2, Layers, Database, Box, ArrowRight, Compass, MessageSquare, 
 import type { CategoryInfo } from '@/lib/project-types';
 import ScrollReveal from '@/components/ScrollReveal';
 import BackgroundCanvas, { BG_PRESETS } from '@/components/StarfieldBackground';
-import { useState, useEffect } from 'react';
+import { useProjectBackground } from '@/hooks/useProjectBackground';
 
 interface ProjectLandingProps {
   totalProjects: number;
@@ -50,18 +50,8 @@ export default function ProjectLanding({
   generatedAt,
   categories,
 }: ProjectLandingProps) {
-  const [bgIdx, setBgIdx] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('projects-bg');
-      return saved ? parseInt(saved, 10) : 0;
-    }
-    return 0;
-  });
+  const [bgIdx, setBgIdx] = useProjectBackground();
   const bgPreset = BG_PRESETS[bgIdx];
-
-  useEffect(() => {
-    localStorage.setItem('projects-bg', String(bgIdx));
-  }, [bgIdx]);
 
   const maxCount = Math.max(...categories.map(c => c.projectCount), 1);
   const stats = [

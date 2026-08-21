@@ -233,7 +233,7 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
       {/* 动态 Phase Tracker */}
       <div className="glass p-4 mb-6">
         <div className="flex items-center gap-1 flex-wrap">
-          {phases.filter(p => p.id <= Math.max(round + 1, 2)).map((phase, idx, arr) => (
+          {phases.filter(p => p.id <= Math.max(round + 1, 2)).map((phase, idx) => (
             <div key={phase.id} className="flex items-center gap-1.5">
               {idx > 0 && <div className="w-4 h-[2px] bg-border shrink-0" />}
               <div className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] transition-all duration-300 ${

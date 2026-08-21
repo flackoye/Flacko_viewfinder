@@ -1,15 +1,33 @@
 'use client';
 
 import { useState } from 'react';
-import Image from "next/image";
-import Link from "next/link";
-import { RefreshCw } from 'lucide-react';
+import Image from 'next/image';
+import { GraduationCap, MapPin, RefreshCw } from 'lucide-react';
 import { fetchQuote, type Quote } from '@/lib/quotes';
 import { useSettings } from '@/components/SettingsProvider';
 import PetCharacter from '@/components/PetCharacter';
 import Customizer from '@/components/Customizer';
+import CameraDirectoryDial from '@/components/CameraDirectoryDial';
+import SectionRail from '@/components/SectionRail';
+import WritingShowcase, { type HomeRecord } from '@/components/WritingShowcase';
 
-export default function HomeContent({ initialQuote }: { initialQuote: Quote }) {
+export type { HomeRecord } from '@/components/WritingShowcase';
+
+interface HomeContentProps {
+  initialQuote: Quote;
+  records: HomeRecord[];
+  profile: HomeProfile;
+}
+
+export interface HomeProfile {
+  displayName: string;
+  avatar: string;
+  school: string;
+  major: string;
+  stage: string;
+}
+
+export default function HomeContent({ initialQuote, records, profile }: HomeContentProps) {
   const [quote, setQuote] = useState(initialQuote);
   const [loading, setLoading] = useState(false);
   const { settings } = useSettings();
@@ -17,31 +35,32 @@ export default function HomeContent({ initialQuote }: { initialQuote: Quote }) {
   const handleNewQuote = async () => {
     setLoading(true);
     try {
-      const newQuote = await fetchQuote();
-      setQuote(newQuote);
+      setQuote(await fetchQuote());
     } finally {
       setLoading(false);
     }
   };
 
-  // 拼接出处文字
   const sourceText = [quote.author, quote.from].filter(Boolean).join(' / ');
+  const quoteLength = Array.from(quote.text).length;
+  const quoteTextClass = quoteLength > 90
+    ? 'text-sm leading-6 md:text-base md:leading-7'
+    : quoteLength > 52
+      ? 'text-base leading-7 md:text-lg md:leading-8'
+      : quoteLength > 28
+        ? 'text-lg leading-8 md:text-xl md:leading-9'
+        : 'text-xl leading-9 md:text-2xl md:leading-10';
 
   return (
     <>
-      {/* ========== 小宠物 ========== */}
       <PetCharacter />
-
-      {/* ========== 背景设置（仅主页） ========== */}
       <Customizer />
 
-      {/* ========== Hero 区域：动态背景 + 每日一言 ========== */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
-        {/* 背景图 — 所有参数由设置实时驱动 */}
+      <section className="home-portrait relative min-h-[calc(100svh-4rem)] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={settings.backgroundImage}
-            alt="背景"
+            alt="首页背景"
             fill
             className="object-cover"
             style={{
@@ -50,61 +69,69 @@ export default function HomeContent({ initialQuote }: { initialQuote: Quote }) {
             }}
             priority
           />
-          {/* 渐变遮罩 */}
           <div
-            className="absolute inset-0 bg-gradient-to-b from-bg to-bg"
-            style={{ opacity: settings.overlayOpacity / 100 }}
+            className="absolute inset-0 bg-black"
+            style={{ opacity: settings.overlayOpacity / 220 }}
           />
-          <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-bg to-transparent" />
+          <div className="home-portrait__scrim absolute inset-0" />
         </div>
 
-        {/* 内容 */}
-        <div className="relative z-10 text-center px-6 max-w-2xl">
-          {/* 每日一言标签 */}
-          <div
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm text-text-muted mb-8 hover-lift"
-            style={{
-              backdropFilter: `blur(${8 + settings.cardGlass / 5}px) saturate(1.2)`,
-              background: `rgba(255,255,255,${settings.cardGlass / 1200})`,
-            }}
-          >
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            每日一言
+        <div className="relative z-10 mx-auto grid min-h-[calc(100svh-4rem)] w-full max-w-7xl items-end gap-14 px-6 pb-16 pt-28 md:grid-cols-[minmax(0,0.9fr)_minmax(380px,1fr)] md:px-10 md:pb-20 lg:px-14">
+          <div className="max-w-2xl">
+            <div className="mb-7 flex items-center gap-4">
+              <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-1 ring-white/25 md:h-20 md:w-20">
+                <Image
+                  src={profile.avatar}
+                  alt={profile.displayName}
+                  fill
+                  sizes="80px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="flex flex-wrap gap-x-4 gap-y-2 text-xs text-white/[0.7] md:text-sm">
+                <span className="inline-flex items-center gap-1.5">
+                  <MapPin className="h-3.5 w-3.5" /> {profile.school} · {profile.major}
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <GraduationCap className="h-3.5 w-3.5" /> {profile.stage}
+                </span>
+              </div>
+            </div>
+
+            <h1 className="text-4xl font-semibold tracking-[-0.045em] text-white drop-shadow-lg sm:text-5xl md:text-7xl lg:text-8xl">
+              {profile.displayName}
+            </h1>
+
+            <CameraDirectoryDial />
           </div>
 
-          {/* 名言 */}
-          <blockquote className="mb-6">
-            <p className="text-2xl md:text-3xl font-medium leading-relaxed text-text/90 mb-4">
-              {quote.text}
-            </p>
-            {sourceText && (
-              <cite className="text-sm text-text-muted not-italic">
-                —— {sourceText}
-              </cite>
-            )}
-          </blockquote>
-
-          {/* 换一句 */}
-          <button
-            onClick={handleNewQuote}
-            disabled={loading}
-            className="glass-btn-outline px-4 py-2 text-sm inline-flex items-center gap-2 hover-lift disabled:opacity-50"
-          >
-            <RefreshCw className={`w-3.5 h-3.5 transition-transform duration-500 ${loading ? 'animate-spin' : ''}`} />
-            {loading ? '获取中...' : '换一句'}
-          </button>
-
-          {/* 导航按钮 */}
-          <div className="flex items-center justify-center gap-4 mt-10">
-            <Link href="/trending" className="glass-btn px-6 py-3 font-medium hover-lift">
-              AI 热点
-            </Link>
-            <Link href="/changelog" className="glass-btn-outline px-6 py-3 font-medium hover-lift">
-              日志公告
-            </Link>
-          </div>
+          <figure className="home-quote-caption self-end">
+            <div className="home-quote-caption__header">
+              <figcaption>每日一言</figcaption>
+              <button
+                onClick={handleNewQuote}
+                disabled={loading}
+                className="home-quote-caption__refresh"
+                aria-label="换一句每日一言"
+              >
+                <RefreshCw className={`h-3.5 w-3.5 ${loading ? 'animate-spin' : ''}`} />
+                {loading ? '获取中' : '换一句'}
+              </button>
+            </div>
+            <blockquote key={quote.text} className="home-quote-caption__body">
+              <span className="home-quote-caption__mark" aria-hidden>“</span>
+              <div className="min-w-0">
+                <p className={`home-quote-caption__text ${quoteTextClass}`}>{quote.text}</p>
+                {sourceText && <cite>— {sourceText}</cite>}
+              </div>
+            </blockquote>
+          </figure>
         </div>
       </section>
+
+      <WritingShowcase records={records} />
+      <SectionRail />
     </>
   );
 }

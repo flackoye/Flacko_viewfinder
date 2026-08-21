@@ -1,9 +1,17 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
 import Image from 'next/image';
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type KeyboardEvent,
+  type PointerEvent,
+} from 'react';
+import { useSettings } from '@/components/SettingsProvider';
 
-/** 🎵 台词 — 气泡自适应宽度，移动端允许换行 */
 const GREETING_FIRST = '大家好，我是阿岳 ✌️';
 const GREETING_SECOND = '山林老北来给你唱歌啦 🎤';
 const LYRICS_POOL = [
@@ -22,52 +30,159 @@ const LYRICS_POOL = [
 ];
 
 const VISIT_KEY = 'pet-visit-count';
+const POSITION_KEY = 'pet-position-x';
+const EDGE_PADDING = 12;
 
-type PetState = 'idle' | 'hover' | 'clicked';
+type PetAction = 'idle' | 'walking' | 'clicked' | 'dragging';
+type Facing = -1 | 1;
+
+interface DragSession {
+  pointerId: number;
+  startClientX: number;
+  startX: number;
+  moved: boolean;
+}
+
+const clamp = (value: number, min: number, max: number) =>
+  Math.min(Math.max(value, min), max);
 
 export default function PetCharacter() {
-  const [state, setState] = useState<PetState>('idle');
+  const { settings, update } = useSettings();
+  const [action, setAction] = useState<PetAction>('idle');
+  const [isHovered, setIsHovered] = useState(false);
   const [bubble, setBubble] = useState<string | null>(null);
   const [bubbleVisible, setBubbleVisible] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [entered, setEntered] = useState(false); // 首次进场动画
+  const [entered, setEntered] = useState(false);
+  const [positionX, setPositionX] = useState(EDGE_PADDING);
+  const [moveDuration, setMoveDuration] = useState(0);
+  const [facing, setFacing] = useState<Facing>(1);
+  const [lookX, setLookX] = useState(0);
+  const [lookRotation, setLookRotation] = useState(0);
+  const [viewportWidth, setViewportWidth] = useState(0);
+  const [reduceMotion, setReduceMotion] = useState(false);
 
-  const PET_WIDTH = isMobile ? 120 : 170;
-  const PET_HEIGHT = isMobile ? 170 : 240;
-
+  const shellRef = useRef<HTMLDivElement | null>(null);
+  const moverRef = useRef<HTMLDivElement | null>(null);
+  const positionRef = useRef(positionX);
+  const dragRef = useRef<DragSession | null>(null);
   const bubbleTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const actionTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastLyricIndex = useRef(-1);
+  const isHidden = !settings.petVisible;
 
-  useEffect(() => {
-    setMounted(true);
-    const checkMobile = () => setIsMobile(window.innerWidth < 480);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    // 首次进场：mounted 后短暂延迟触发探头动画
-    const enterTimer = setTimeout(() => setEntered(true), 120);
-    return () => {
-      window.removeEventListener('resize', checkMobile);
-      clearTimeout(enterTimer);
-    };
+  const getMaxPosition = useCallback(() => {
+    if (typeof window === 'undefined') return EDGE_PADDING;
+    const shellWidth = shellRef.current?.offsetWidth ?? 170;
+    return Math.max(EDGE_PADDING, window.innerWidth - shellWidth - EDGE_PADDING);
   }, []);
 
-  const bumpVisitCount = useCallback((): number => {
+  const clampPosition = useCallback(
+    (value: number) => clamp(value, EDGE_PADDING, getMaxPosition()),
+    [getMaxPosition],
+  );
+
+  const clearActionTimer = useCallback(() => {
+    if (!actionTimer.current) return;
+    clearTimeout(actionTimer.current);
+    actionTimer.current = null;
+  }, []);
+
+  useEffect(() => {
+    positionRef.current = positionX;
+  }, [positionX]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const updateMotionPreference = () => setReduceMotion(mediaQuery.matches);
+    const updateBounds = () => {
+      setViewportWidth(window.innerWidth);
+      setPositionX((current) => clampPosition(current));
+    };
+
+    const initialFrame = requestAnimationFrame(() => {
+      const savedPosition = Number.parseFloat(localStorage.getItem(POSITION_KEY) ?? '');
+      setPositionX(Number.isFinite(savedPosition) ? clampPosition(savedPosition) : EDGE_PADDING);
+      updateMotionPreference();
+      updateBounds();
+    });
+
+    mediaQuery.addEventListener('change', updateMotionPreference);
+    window.addEventListener('resize', updateBounds);
+    const enterTimer = setTimeout(() => setEntered(true), 120);
+
+    return () => {
+      clearTimeout(enterTimer);
+      cancelAnimationFrame(initialFrame);
+      mediaQuery.removeEventListener('change', updateMotionPreference);
+      window.removeEventListener('resize', updateBounds);
+    };
+  }, [clampPosition]);
+
+  useEffect(() => {
+    if (!entered || isHidden || !settings.petRoaming || reduceMotion || isHovered || action !== 'idle') return;
+
+    const roamTimer = setTimeout(() => {
+      const current = positionRef.current;
+      const maxPosition = getMaxPosition();
+      const availableWidth = maxPosition - EDGE_PADDING;
+      if (availableWidth < 120) return;
+
+      let direction: Facing;
+      if (current < EDGE_PADDING + availableWidth * 0.22) direction = 1;
+      else if (current > EDGE_PADDING + availableWidth * 0.78) direction = -1;
+      else direction = Math.random() > 0.5 ? 1 : -1;
+
+      const maxStride = Math.min(320, Math.max(120, availableWidth * 0.32));
+      const distance = 90 + Math.random() * Math.max(30, maxStride - 90);
+      const target = clampPosition(current + direction * distance);
+      const actualDistance = Math.abs(target - current);
+      if (actualDistance < 48) return;
+
+      const duration = clamp(actualDistance / 82, 1.2, 3.6);
+      setFacing(direction);
+      setMoveDuration(duration);
+      setPositionX(target);
+      setAction('walking');
+      clearActionTimer();
+      actionTimer.current = setTimeout(() => {
+        setAction('idle');
+        actionTimer.current = null;
+      }, duration * 1000);
+    }, 6000 + Math.random() * 5000);
+
+    return () => clearTimeout(roamTimer);
+  }, [action, clearActionTimer, clampPosition, entered, getMaxPosition, isHidden, isHovered, reduceMotion, settings.petRoaming]);
+
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => {
+      setPositionX((current) => clampPosition(current));
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [clampPosition, settings.petScale, viewportWidth]);
+
+  useEffect(() => {
+    return () => {
+      if (bubbleTimer.current) clearTimeout(bubbleTimer.current);
+      clearActionTimer();
+    };
+  }, [clearActionTimer]);
+
+  const bumpVisitCount = useCallback(() => {
     const raw = sessionStorage.getItem(VISIT_KEY);
-    const prev = raw ? parseInt(raw, 10) : 0;
-    const next = prev + 1;
+    const parsed = raw ? Number.parseInt(raw, 10) : 0;
+    const previous = Number.isFinite(parsed) ? parsed : 0;
+    const next = previous + 1;
     sessionStorage.setItem(VISIT_KEY, String(next));
     return next;
   }, []);
 
-  const getRandomLyric = useCallback((): string => {
-    let idx: number;
+  const getRandomLyric = useCallback(() => {
+    let index: number;
     do {
-      idx = Math.floor(Math.random() * LYRICS_POOL.length);
-    } while (idx === lastLyricIndex.current && LYRICS_POOL.length > 1);
-    lastLyricIndex.current = idx;
-    return LYRICS_POOL[idx];
+      index = Math.floor(Math.random() * LYRICS_POOL.length);
+    } while (index === lastLyricIndex.current && LYRICS_POOL.length > 1);
+    lastLyricIndex.current = index;
+    return LYRICS_POOL[index];
   }, []);
 
   const showBubble = useCallback((text: string) => {
@@ -78,198 +193,224 @@ export default function PetCharacter() {
   }, []);
 
   const handleClick = useCallback(() => {
-    setState('clicked');
-    const clickNum = bumpVisitCount();
-    if (clickNum === 1) showBubble(GREETING_FIRST);
-    else if (clickNum === 2) showBubble(GREETING_SECOND);
+    clearActionTimer();
+    setMoveDuration(0);
+    setAction('clicked');
+    const clickNumber = bumpVisitCount();
+    if (clickNumber === 1) showBubble(GREETING_FIRST);
+    else if (clickNumber === 2) showBubble(GREETING_SECOND);
     else showBubble(getRandomLyric());
-    setTimeout(() => setState(prev => (prev === 'clicked' ? 'idle' : prev)), 700);
-  }, [showBubble, bumpVisitCount, getRandomLyric]);
 
-  useEffect(() => {
-    return () => {
-      if (bubbleTimer.current) clearTimeout(bubbleTimer.current);
+    actionTimer.current = setTimeout(() => {
+      setAction('idle');
+      actionTimer.current = null;
+    }, 760);
+  }, [bumpVisitCount, clearActionTimer, getRandomLyric, showBubble]);
+
+  const freezeAtRenderedPosition = useCallback(() => {
+    const renderedLeft = moverRef.current?.getBoundingClientRect().left;
+    if (renderedLeft === undefined) return positionRef.current;
+    const frozenPosition = clampPosition(renderedLeft);
+    setMoveDuration(0);
+    setPositionX(frozenPosition);
+    positionRef.current = frozenPosition;
+    return frozenPosition;
+  }, [clampPosition]);
+
+  const handlePointerDown = (event: PointerEvent<HTMLDivElement>) => {
+    if (event.button !== 0 || (event.target as HTMLElement).closest('[data-close-btn]')) return;
+    clearActionTimer();
+    const startX = freezeAtRenderedPosition();
+    dragRef.current = {
+      pointerId: event.pointerId,
+      startClientX: event.clientX,
+      startX,
+      moved: false,
     };
-  }, []);
+    event.currentTarget.setPointerCapture(event.pointerId);
+    setAction('dragging');
+    setLookX(0);
+    setLookRotation(0);
+  };
 
-  if (!mounted) return null;
+  const handlePointerMove = (event: PointerEvent<HTMLDivElement>) => {
+    const drag = dragRef.current;
+    if (drag?.pointerId === event.pointerId) {
+      const delta = event.clientX - drag.startClientX;
+      if (Math.abs(delta) > 4) drag.moved = true;
+      if (!drag.moved) return;
+      setFacing(delta < 0 ? -1 : 1);
+      const nextPosition = clampPosition(drag.startX + delta);
+      positionRef.current = nextPosition;
+      setPositionX(nextPosition);
+      return;
+    }
 
-  const showClose = state === 'hover' || state === 'clicked';
-  // 首次进场前：藏在屏幕下方 + 左倾
-  const entering = !entered;
+    const bounds = event.currentTarget.getBoundingClientRect();
+    const ratio = clamp((event.clientX - (bounds.left + bounds.width / 2)) / (bounds.width / 2), -1, 1);
+    setLookX(ratio * 4);
+    setLookRotation(ratio * 1.8);
+  };
+
+  const finishPointerInteraction = (event: PointerEvent<HTMLDivElement>, cancelled = false) => {
+    const drag = dragRef.current;
+    if (!drag || drag.pointerId !== event.pointerId) return;
+
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    }
+    dragRef.current = null;
+
+    const bounds = event.currentTarget.getBoundingClientRect();
+    const pointerInside = event.pointerType !== 'touch'
+      && event.clientX >= bounds.left
+      && event.clientX <= bounds.right
+      && event.clientY >= bounds.top
+      && event.clientY <= bounds.bottom;
+    setIsHovered(pointerInside);
+    if (!pointerInside) {
+      setLookX(0);
+      setLookRotation(0);
+    }
+
+    if (drag.moved) {
+      const settledPosition = clampPosition(positionRef.current);
+      setPositionX(settledPosition);
+      localStorage.setItem(POSITION_KEY, String(Math.round(settledPosition)));
+      setAction('idle');
+    } else if (!cancelled) {
+      handleClick();
+    } else {
+      setAction('idle');
+    }
+  };
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    event.preventDefault();
+    handleClick();
+  };
+
+  const effectiveAction = action === 'walking' && !settings.petRoaming ? 'idle' : action;
+  const showClose = isHovered || effectiveAction === 'clicked' || effectiveAction === 'dragging';
+  const visualState = effectiveAction === 'idle' && isHovered ? 'curious' : effectiveAction;
+  const bubbleOnLeft = viewportWidth > 0 && positionX > viewportWidth * 0.58;
+  const compactPet = viewportWidth > 0 && viewportWidth < 480;
+  const normalizedScale = clamp(settings.petScale, 70, 140) / 100;
+  const petDimensions = {
+    '--pet-width': `${(compactPet ? 120 : 170) * normalizedScale}px`,
+    '--pet-height': `${(compactPet ? 170 : 240) * normalizedScale}px`,
+  } as CSSProperties;
 
   return (
     <>
-      {/* 隐藏后的恢复按钮 */}
       <button
-        onClick={() => setIsHidden(false)}
-        className="fixed z-[60] w-10 h-10 rounded-full flex items-center justify-center text-lg
-          hover:scale-110 active:scale-95 transition-all duration-300"
+        onClick={() => update({ petVisible: true })}
+        className="pet-summon fixed z-[60] flex h-10 w-10 items-center justify-center rounded-full text-lg"
         style={{
-          left: 32,
-          bottom: 32,
-          background: 'rgba(226, 182, 89, 0.12)',
-          backdropFilter: 'blur(12px)',
-          border: '1px solid rgba(226, 182, 89, 0.2)',
+          left: 24,
+          bottom: 24,
           opacity: isHidden ? 1 : 0,
           pointerEvents: isHidden ? 'auto' : 'none',
           transform: isHidden ? 'scale(1)' : 'scale(0.8)',
-          color: 'var(--color-accent)',
         }}
+        aria-label="召唤阿岳"
         title="召唤阿岳"
       >
         🎵
       </button>
 
-      {/* 外层 wrapper：比宠物大一圈，给关闭按钮留空间 */}
       <div
-        className="fixed z-50 select-none"
+        ref={moverRef}
+        className="pet-mover fixed bottom-0 left-0 z-50 select-none"
         style={{
-          left: 4,
-          bottom: 0,
-          width: PET_WIDTH + 24,
-          height: PET_HEIGHT + 24,
-          padding: 12,
-          cursor: 'pointer',
-          opacity: isHidden ? 0 : entering ? 0 : 1,
-          pointerEvents: isHidden ? 'none' : 'auto',
-          transform: isHidden
-            ? 'scale(0.5) translateY(20px)'
-            : entering
-              ? 'translateY(120%) rotate(-8deg)'
-              : 'translateY(0) rotate(0)',
-          transition: isHidden
-            ? 'opacity 0.4s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)'
-            : entered
-              ? 'opacity 0.4s ease, transform 0.9s cubic-bezier(0.34, 1.56, 0.64, 1)'
-              : 'none',
-        }}
-        onClick={(e) => {
-          if ((e.target as HTMLElement).closest('[data-close-btn]')) return;
-          handleClick();
-        }}
-        onMouseEnter={() => {
-          if (state !== 'clicked') setState('hover');
-        }}
-        onMouseLeave={() => {
-          if (state !== 'clicked') setState('idle');
+          ...petDimensions,
+          transform: `translate3d(${positionX}px, 0, 0)`,
+          transitionProperty: 'transform',
+          transitionDuration: effectiveAction === 'walking' ? `${moveDuration}s` : '0s',
+          transitionTimingFunction: 'linear',
+          pointerEvents: 'none',
         }}
       >
-        {/* ===== 脚下金色光晕（地面投影） ===== */}
         <div
-          className="pet-ground-glow"
+          ref={shellRef}
+          className={`pet-shell pet-shell--${visualState}`}
           style={{
-            opacity: state === 'clicked' ? 0.9 : state === 'hover' ? 0.7 : 0.5,
-            width: PET_WIDTH * 0.9,
-            bottom: 6,
-            transition: 'opacity 0.3s ease',
+            opacity: isHidden || !entered ? 0 : 1,
+            pointerEvents: isHidden ? 'none' : 'auto',
+            transform: isHidden
+              ? 'translateY(28px) scale(0.72)'
+              : entered
+                ? 'translateY(0) scale(1)'
+                : 'translateY(100%) scale(0.92)',
           }}
-        />
-
-        {/* ===== 进场音符（首次进场时从头顶飘出） ===== */}
-        {entered && (
-          <>
-            <span className="pet-enter-note" style={{ left: '40%', bottom: PET_HEIGHT * 0.8, animationDelay: '0ms' }}>🎵</span>
-            <span className="pet-enter-note" style={{ left: '55%', bottom: PET_HEIGHT * 0.85, animationDelay: '180ms' }}>🎶</span>
-            <span className="pet-enter-note" style={{ left: '48%', bottom: PET_HEIGHT * 0.78, animationDelay: '360ms' }}>🎵</span>
-          </>
-        )}
-
-        {/* ===== 说话气泡（右上角，桌面端体面宽度，移动端自适应换行） ===== */}
-        <div
-          className="pet-bubble absolute rounded-2xl px-5 py-3 text-[15px] font-medium leading-relaxed flex items-center gap-2"
-          style={{
-            left: PET_WIDTH * 0.55 + 12,
-            bottom: '88%',
-            opacity: bubbleVisible ? 1 : 0,
-            transform: bubbleVisible ? 'translateY(0) scale(1)' : 'translateY(8px) scale(0.92)',
-            transition: 'opacity 0.4s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
-            pointerEvents: 'none',
-            background: 'linear-gradient(135deg, rgba(226,182,89,0.14), rgba(255,255,255,0.07))',
-            backdropFilter: 'blur(20px) saturate(1.4)',
-            WebkitBackdropFilter: 'blur(20px) saturate(1.4)',
-            border: '1px solid rgba(226, 182, 89, 0.22)',
-            boxShadow: '0 8px 40px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.05) inset',
-            color: 'var(--color-text)',
+          role="button"
+          tabIndex={isHidden ? -1 : 0}
+          aria-label="阿岳。点击听他说话，拖动可以移动位置"
+          title="点击阿岳，或拖动他换个位置"
+          onKeyDown={handleKeyDown}
+          onPointerDown={handlePointerDown}
+          onPointerMove={handlePointerMove}
+          onPointerUp={(event) => finishPointerInteraction(event)}
+          onPointerCancel={(event) => finishPointerInteraction(event, true)}
+          onPointerEnter={() => setIsHovered(true)}
+          onPointerLeave={() => {
+            if (!dragRef.current) {
+              setIsHovered(false);
+              setLookX(0);
+              setLookRotation(0);
+            }
           }}
         >
-          <span className="pet-note-icon" aria-hidden>🎤</span>
-          <span>{bubble}</span>
           <div
-            className="absolute -left-[6px] bottom-3 w-3 h-3 rotate-45"
-            style={{
-              background: 'linear-gradient(135deg, rgba(226,182,89,0.14), rgba(255,255,255,0.07))',
-              borderLeft: '1px solid rgba(226, 182, 89, 0.22)',
-              borderBottom: '1px solid rgba(226, 182, 89, 0.22)',
+            className={`pet-bubble pet-bubble--${bubbleOnLeft ? 'left' : 'right'}`}
+            data-visible={bubbleVisible}
+            aria-live="polite"
+          >
+            <span className="pet-note-icon" aria-hidden>🎤</span>
+            <span>{bubble}</span>
+            <span className="pet-bubble__tail" aria-hidden />
+          </div>
+
+          <button
+            data-close-btn="true"
+            onClick={(event) => {
+              event.stopPropagation();
+              update({ petVisible: false });
+              setBubbleVisible(false);
+              clearActionTimer();
+              setAction('idle');
             }}
-          />
+            className="pet-close"
+            style={{
+              opacity: showClose ? 1 : 0,
+              pointerEvents: showClose ? 'auto' : 'none',
+            }}
+            aria-label="让阿岳休息"
+            title="让阿岳休息"
+          >
+            ✕
+          </button>
+
+          <div className={`pet-motion pet-motion--${visualState}`}>
+            <div
+              className="pet-gaze"
+              style={{ transform: `translateX(${lookX}px) rotate(${lookRotation}deg)` }}
+            >
+              <div className="pet-facing" style={{ transform: `scaleX(${facing})` }}>
+                <Image
+                  src="/pet-ayue.png"
+                  alt="阿岳"
+                  width={170}
+                  height={240}
+                  className="h-full w-full object-contain pointer-events-none"
+                  draggable={false}
+                  priority
+                />
+              </div>
+            </div>
+          </div>
         </div>
-
-        {/* ===== 关闭按钮 ===== */}
-        <button
-          data-close-btn="true"
-          onClick={(e) => {
-            e.stopPropagation();
-            setIsHidden(true);
-          }}
-          className="absolute top-1 left-1 w-7 h-7 rounded-full flex items-center justify-center
-            text-sm transition-all duration-200 hover:scale-125 active:scale-90 z-10"
-          style={{
-            opacity: showClose ? 1 : 0,
-            pointerEvents: showClose ? 'auto' : 'none',
-            background: 'rgba(18, 20, 28, 0.9)',
-            border: '1px solid rgba(255,255,255,0.15)',
-            color: 'var(--color-text-muted)',
-            backdropFilter: 'blur(8px)',
-          }}
-          title="让阿岳休息"
-        >
-          ✕
-        </button>
-
-        {/* ===== 宠物图片 ===== */}
-        <div
-          className="w-full h-full"
-          style={{
-            animation:
-              state === 'idle'
-                ? 'pet-idle 3s ease-in-out infinite'
-                : state === 'clicked'
-                  ? 'pet-jump 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)'
-                  : state === 'hover'
-                    ? 'pet-hover 1.2s ease-in-out infinite'
-                    : 'none',
-            filter:
-              state === 'hover'
-                ? 'brightness(1.08) drop-shadow(0 0 18px rgba(226,182,89,0.35))'
-                : state === 'clicked'
-                  ? 'brightness(1.15) drop-shadow(0 0 28px rgba(226,182,89,0.5))'
-                  : 'drop-shadow(0 6px 16px rgba(0,0,0,0.4))',
-            transition: 'filter 0.3s ease',
-          }}
-        >
-          <Image
-            src="/pet-ayue.png"
-            alt="阿岳"
-            width={PET_WIDTH}
-            height={PET_HEIGHT}
-            className="w-full h-full object-contain pointer-events-none"
-            draggable={false}
-            priority
-          />
-        </div>
-
-        {/* ===== 点击粒子效果 ===== */}
-        {state === 'clicked' && (
-          <>
-            <span className="pet-particle" style={{ '--delay': '0ms', '--angle': '30deg', left: '30%', top: '30%' } as React.CSSProperties} />
-            <span className="pet-particle" style={{ '--delay': '50ms', '--angle': '70deg', left: '50%', top: '20%' } as React.CSSProperties} />
-            <span className="pet-particle" style={{ '--delay': '100ms', '--angle': '120deg', left: '60%', top: '40%' } as React.CSSProperties} />
-            <span className="pet-particle" style={{ '--delay': '60ms', '--angle': '170deg', left: '70%', top: '30%' } as React.CSSProperties} />
-            <span className="pet-particle" style={{ '--delay': '30ms', '--angle': '220deg', left: '40%', top: '50%' } as React.CSSProperties} />
-            <span className="pet-particle" style={{ '--delay': '80ms', '--angle': '290deg', left: '55%', top: '45%' } as React.CSSProperties} />
-          </>
-        )}
       </div>
     </>
   );

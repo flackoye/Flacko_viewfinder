@@ -5,6 +5,10 @@
 
 | 日期 | 对象 | 思路（为什么改） | 解决办法 |
 |------|------|------------------|---------|
+| 2026-08-21 | 个人成长档案定位 + 首页/档案页 | 站点不应要求先凑项目或先定义技术方向；现有 AI 功能应成为成长过程中的阶段作品 | 首页改为成长档案入口；`/about` 增加求学、比赛、学习、科研四条内容轨道；保留 AI 热点和万象索骥入口 |
+| 2026-08-21 | `PageTransition` + `PageBackdrop` | 原转场组件为空，另有两套未挂载实现；内页背景同质化且与“取景框”命名缺乏联系 | 统一为光圈/对焦/扫描读数转场；热点、日志、档案使用独立语义背景；支持 `prefers-reduced-motion`；删除重复转场组件 |
+| 2026-08-21 | 项目 API、设置同步与工程规范 | 基线存在 8 个 ESLint 错误、5 个警告；API 缺少输入边界并全表读取项目 | 用 `useSyncExternalStore` 同步本地设置；校验问题/历史/模式/分类；只读取向量命中项目；补 RLS、环境变量和接口文档 |
+| 2026-08-21 | 字体加载 | `next/font/google` 在受限网络和离线构建中会直接导致生产构建失败 | 改用系统字体栈，保留中英文与手写体回退，不再让构建依赖 Google Fonts 网络 |
 | 2026-06-25 | 换页 `ClothTransition` CSS 重构 | three.js 布料太重且效果不佳，换成纯 CSS `clip-path` 斜角揭布 | 两段式 cover(150ms)→peel(700ms)，`clip-path: polygon()` 从右下向左上收缩，`::after` 渐变阴影模拟布料折叠光影，cubic-bezier 带轻微回弹 |
 | 2026-06-25 | 光标 `CursorEffect` framer-motion 重构 | 手写 rAF lerp 拖尾方向反了、鬼畜；改 framer-motion 弹簧物理 | `useSpring` 弹簧链（5 点刚度递减），主环 stiffness 550 跟手，拖尾方向天然正确；HSL 色相按速度在 170↔320 插值，代替纯金色 |
 | 2026-06-25 | PetCharacter 气泡 CSS 响应式 | JS `isMobile` 逻辑不可靠，桌面端短歌词气泡窄 | 纯 CSS 媒体查询：桌面 `width:320px`，移动 `fit-content+maxWidth`，`@media(max-width:768px)` 分开控制 |

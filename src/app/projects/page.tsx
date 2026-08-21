@@ -6,7 +6,7 @@ import ProjectLanding from '@/components/ProjectLanding';
 export default async function ProjectsPage() {
   // 加载项目数据
   let projects: Project[] = [];
-  let embeddingMeta = { model: 'embedding-3', dimension: 512, total_chunks: 0, generated_at: '' };
+  const embeddingMeta = { model: 'embedding-3', dimension: 512, total_chunks: 0, generated_at: '' };
 
   try {
     const { data } = await supabase.from('projects').select('*');

@@ -1,5 +1,6 @@
 import { NextRequest } from 'next/server';
-import type { Project, ChatMessage } from '@/lib/project-types';
+import type { Project, ChatHistoryMessage, ProjectsRequestBody } from '@/lib/project-types';
+import { CATEGORY_MAP } from '@/lib/categories';
 import { supabase } from '@/lib/supabase';
 import {
   embedQuery,
@@ -12,6 +13,31 @@ import {
 } from '@/lib/rag';
 
 const ZHIPU_API_BASE = 'https://open.bigmodel.cn/api/paas/v4';
+const MAX_QUESTION_LENGTH = 1000;
+const MAX_HISTORY_MESSAGES = 12;
+const MAX_HISTORY_MESSAGE_LENGTH = 2000;
+
+function errorResponse(error: string, status: number) {
+  return Response.json({ error }, { status });
+}
+
+function sanitizeHistory(value: unknown): ChatHistoryMessage[] {
+  if (!Array.isArray(value)) return [];
+
+  return value
+    .filter((message): message is Record<string, unknown> => (
+      typeof message === 'object' && message !== null
+    ))
+    .filter(message => (
+      (message.role === 'user' || message.role === 'assistant')
+      && typeof message.content === 'string'
+    ))
+    .slice(-MAX_HISTORY_MESSAGES)
+    .map(message => ({
+      role: message.role as ChatHistoryMessage['role'],
+      content: (message.content as string).slice(0, MAX_HISTORY_MESSAGE_LENGTH),
+    }));
+}
 
 export async function GET() {
   try {
@@ -33,22 +59,41 @@ export async function GET() {
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
+    let body: Partial<ProjectsRequestBody>;
+    try {
+      const parsedBody = await request.json() as unknown;
+      if (typeof parsedBody !== 'object' || parsedBody === null || Array.isArray(parsedBody)) {
+        return errorResponse('请求体必须是 JSON 对象', 400);
+      }
+      body = parsedBody as Partial<ProjectsRequestBody>;
+    } catch {
+      return errorResponse('请求体必须是合法 JSON', 400);
+    }
+
     const {
       question,
       history = [],
       mode = 'assistant',
       category,
-    } = body as {
-      question?: string;
-      history?: ChatMessage[];
-      mode?: 'guided' | 'assistant';
-      category?: string;
-    };
+    } = body;
 
     if (!question || typeof question !== 'string' || !question.trim()) {
-      return new Response(JSON.stringify({ error: '问题不能为空' }), { status: 400 });
+      return errorResponse('问题不能为空', 400);
     }
+    if (question.trim().length > MAX_QUESTION_LENGTH) {
+      return errorResponse(`问题不能超过 ${MAX_QUESTION_LENGTH} 个字符`, 400);
+    }
+    if (mode !== 'guided' && mode !== 'assistant') {
+      return errorResponse('mode 只能是 guided 或 assistant', 400);
+    }
+    if (category !== undefined && typeof category !== 'string') {
+      return errorResponse('category 必须是字符串', 400);
+    }
+    if (category && !CATEGORY_MAP[category]) {
+      return errorResponse('未知的项目分类', 400);
+    }
+
+    const safeHistory = sanitizeHistory(history);
 
     // 向量化查询
     const queryVec = await embedQuery(question.trim());
@@ -65,32 +110,36 @@ export async function POST(request: NextRequest) {
 
     if (rpcError) {
       console.error('Supabase RPC error:', rpcError);
-      return new Response(JSON.stringify({ error: `检索失败: ${rpcError.message}` }), { status: 503 });
+      return errorResponse('项目检索暂时不可用', 503);
     }
 
     if (!topChunks || topChunks.length === 0) {
-      return new Response(JSON.stringify({ error: '项目数据暂未就绪' }), { status: 503 });
+      return errorResponse('项目数据暂未就绪', 503);
     }
 
-    // 加载项目元数据（用于 Prompt 构建 + 项目卡片匹配）
+    // 只加载检索结果涉及的项目，避免每次对话全表扫描。
+    const matchedRepoNames = [...new Set(
+      (topChunks as { repo_full_name: string }[]).map(chunk => chunk.repo_full_name),
+    )];
     const { data: projects, error: projError } = await supabase
       .from('projects')
-      .select('*');
+      .select('*')
+      .in('full_name', matchedRepoNames);
 
     if (projError || !projects) {
       console.error('Supabase projects error:', projError?.message);
-      return new Response(JSON.stringify({ error: '项目数据暂未就绪' }), { status: 503 });
+      return errorResponse('项目数据暂未就绪', 503);
     }
 
     // 根据 mode 选择 Prompt
     const prompt = mode === 'guided'
-      ? buildGuidedPrompt(history, question.trim(), topChunks, projects as Project[], category)
-      : buildAssistantPrompt(history, question.trim(), topChunks, projects as Project[]);
+      ? buildGuidedPrompt(safeHistory, question.trim(), topChunks, projects as Project[], category)
+      : buildAssistantPrompt(safeHistory, question.trim(), topChunks, projects as Project[]);
 
     // 流式调用 GLM
     const apiKey = process.env.ZHIPU_RAG_API_KEY;
     if (!apiKey) {
-      return new Response(JSON.stringify({ error: 'API 未配置' }), { status: 502 });
+      return errorResponse('AI 服务未配置', 503);
     }
 
     const glmRes = await fetchWithRetry(
@@ -108,6 +157,7 @@ export async function POST(request: NextRequest) {
           temperature: 0.7,
           max_tokens: mode === 'guided' ? 1500 : 1024,
         }),
+        signal: request.signal,
       },
       3,     // 最多重试 3 次（共 4 次尝试）
       1000,  // 基础延迟 1s → 1s, 2s, 4s
@@ -126,7 +176,7 @@ export async function POST(request: NextRequest) {
       } else if (glmRes.status === 408 || glmRes.status === 504) {
         detail = 'AI 服务响应超时，请重试';
       }
-      return new Response(JSON.stringify({ error: detail }), { status: 502 });
+      return errorResponse(detail, 502);
     }
 
     // SSE 流
@@ -233,13 +283,14 @@ export async function POST(request: NextRequest) {
         'Content-Type': 'text/event-stream',
         'Cache-Control': 'no-cache',
         'Connection': 'keep-alive',
+        'X-Accel-Buffering': 'no',
       },
     });
   } catch (err) {
     console.error('API error:', err);
-    return new Response(
-      JSON.stringify({ error: '服务内部错误' }),
-      { status: 500 },
-    );
+    if ((err as Error).name === 'AbortError') {
+      return errorResponse('请求已取消', 499);
+    }
+    return errorResponse('服务内部错误', 500);
   }
 }

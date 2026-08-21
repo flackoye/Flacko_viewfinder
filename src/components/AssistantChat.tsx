@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowLeft, Send, Compass } from 'lucide-react';
 import type { ChatMessage as ChatMessageType } from '@/lib/project-types';
 import ChatMessage from '@/components/ChatMessage';
+import SuggestedQuestions from '@/components/SuggestedQuestions';
 
 /** 根据错误信息分类，返回用户友好的提示 */
 function classifyError(err: unknown): string {
@@ -254,6 +255,10 @@ export default function AssistantChat() {
           </div>
         )}
       </div>
+
+      {!isStreaming && messages.length > 0 && (
+        <SuggestedQuestions items={suggestions} onSelect={sendMessage} layout="grid" />
+      )}
 
       <form onSubmit={handleSubmit} className="glass p-2 flex items-center gap-2 mt-4">
         <input

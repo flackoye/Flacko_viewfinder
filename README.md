@@ -2,7 +2,7 @@
 
 # Flacko的取景框 🔭
 
-**个人 AI 知识站点 · 自动追踪热点 · RAG 智能推荐开源项目**
+**个人成长档案 · AI 热点追踪 · RAG 智能推荐开源项目**
 
 [🌐 在线访问](https://flackoye.bond) · [📦 源码](https://github.com/flackoye/Flacko_viewfinder)
 
@@ -20,9 +20,13 @@
 
 ## 它能做什么
 
+### 📷 个人成长档案
+
+以“取景框”为视觉线索，持续记录求学经历、比赛复盘、学习札记、科研手记和阶段作品。首页负责说明这个人和这段旅程，AI 功能作为已经做出来、仍在迭代的实验保留。
+
 ### 🔥 AI 热点追踪
 
-自动聚合 **12 个数据源**（GitHub Trending · Hacker News · Reddit ×5 · ArXiv ×2 · RSS ×3），LLM 双维度评分（前沿性 × 信息含量），三套 OR 门筛选（通用 / 学术论文 / 开源项目），串行限速避免 API 限流，时间线式展示。GitHub Actions 每 12 小时全自动运行——爬取、评分、去重、部署，零人工干预。
+聚合 **12 个数据源**（GitHub Trending · Hacker News · Reddit ×5 · ArXiv ×2 · RSS ×3），LLM 双维度评分（前沿性 × 信息含量），三套 OR 门筛选（通用 / 学术论文 / 开源项目），串行限速避免 API 限流，时间线式展示。工作流支持定时运行；当前仓库的 cron 暂停，使用手动触发更新。
 
 ### 🧭 万象索骥 — AI 项目导航
 
@@ -40,9 +44,11 @@
 
 | 页面 | 说明 |
 |------|------|
-| `/` | 每日一言 + 星空/极光可交互背景 |
-| `/changelog` | 版本时间线 + 顶部公告横幅 |
-| `/about` | 关于作者 |
+| `/` | 个人简介 + 每日一言 + 最近记录 + 可自定义照片背景 |
+| `/records` | 按写作时间展示全部 Markdown 记录 |
+| `/records/[...slug]` | 支持图片、公式、代码与表格的文章阅读页 |
+| `/about` | 个人资料 + 标记为精选的真实经历 |
+| `/changelog` | 站点版本时间线 |
 
 ## 架构
 
@@ -50,7 +56,7 @@
                     ┌────────── 线下管道 ──────────┐
                     │                               │
   fetch_trending.py │  7 源爬取 → LLM 评分 → JSON   │ build_rag_index.py
-  (每 12h, CI 定时)  │  → commit → Vercel 自动部署   │ (手动触发, 直写 Supabase)
+  (CI 手动/可开定时)  │  → commit → Vercel 自动部署   │ (手动触发, 直写 Supabase)
                     └────────────┬──────────────────┘
                                  │
         ┌────────────────────────┴────────────────────────┐
@@ -74,7 +80,8 @@
 <summary><b>📁 项目结构</b></summary>
 
 ```
-├── public/                          # 静态数据（CI 自动更新）
+├── content/                         # 个人档案配置 + Markdown 记录
+├── public/                          # 静态数据与记录图片
 ├── scripts/
 │   ├── fetch_trending.py            # 热点爬取 + LLM 评分管道
 │   ├── build_rag_index.py           # RAG 索引构建 → Supabase
@@ -85,7 +92,7 @@
 │   │   ├── page.tsx                 # 首页
 │   │   ├── layout.tsx               # 根布局
 │   │   ├── globals.css              # 玻璃拟态 + 暗色主题
-│   │   ├── trending/ changelog/ about/
+│   │   ├── trending/ changelog/ about/ records/
 │   │   ├── projects/                # 落地页 / 引导探索 / 自由对话
 │   │   └── api/projects/            # SSE 流式 API Route
 │   ├── components/                  # UI 组件（Navbar、Timeline、Chat、Card...）
@@ -126,7 +133,7 @@
 - SSE 多类型事件流（chunk / options / suggestions / projects / done），Prompt 用 `<project>` 标签触发前端卡片渲染
 - 429/5xx 指数退避 + 流中断保护，已有文本保留展示
 
-**待改进**：索引覆盖面有限（仅 ~100 项目）；无增量更新机制，每次全量重建；对话无记忆持久化
+**待改进**：本地快照约 150 个项目；无增量更新机制，每次全量重建；对话无记忆持久化
 
 ### 🎨 前端
 
@@ -137,7 +144,7 @@
 - SettingsProvider (React Context) + localStorage 持久化用户配置
 - 首页 SSR 获取每日一言，Canvas 星空 / 极光交互背景
 
-**待改进**：移动端未适配；无亮色主题；无无障碍（a11y）支持
+**待改进**：需补真实移动设备性能走查；无亮色阅读主题；尚未形成完整的自动化无障碍测试
 
 ---
 
@@ -151,7 +158,7 @@
 | LLM | 智谱 GLM-4.7（评分/对话）· Embedding-3（512d 向量化） |
 | 数据管道 | Python · asyncio + httpx · feedparser |
 | 部署 | Vercel（main 分支自动构建）|
-| CI/CD | GitHub Actions（每 12h 热点更新 + 手动 RAG 索引重建）|
+| CI/CD | GitHub Actions（热点手动更新，可恢复每 12h cron；RAG 索引手动重建）|
 
 ## 本地运行
 
@@ -199,11 +206,13 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py
 - 创建 `projects` 表（项目元数据）
 - 创建 `embedding_chunks` 表（512 维向量 + HNSW 索引）
 - 创建 `match_chunks()` RPC 函数（余弦距离 Top-K 检索）
-- 启用 RLS + SELECT 策略
+- 启用 RLS；线上读取只经过服务端 service role，不开放 anon 直读原始语料
 
 </details>
 
 ## 路线图
+
+更完整的接口契约与演进建议见：[`docs/API.md`](docs/API.md) · [`docs/IMPROVEMENT_ROADMAP.md`](docs/IMPROVEMENT_ROADMAP.md)。
 
 ### 已完成 ✅
 
@@ -211,20 +220,24 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py
 - [x] AI 项目导航「万象索骥」：RAG + 双模式对话 + 可视化卡片
 - [x] 更新公告系统：横幅 + 时间线
 - [x] 首页：每日一言 + 星空/极光交互背景
-- [x] 全自动 CI/CD：GitHub Actions 每 12h 更新热点
+- [x] CI/CD 管道：GitHub Actions 手动更新热点，可按需恢复每 12h cron
 - [x] RAG 存储迁移：本地 39MB JSON → Supabase pgvector
 - [x] API 稳定性：429 限流感知 + 指数退避重试 + 流中断保护 + 空响应兜底
 - [x] API Key 职责分离：Embedding / RAG / Trending 三份独立 Key
 - [x] LLM 评分降速 + 开源门槛放宽：串行限速控制 RPM + GitHub 高星仓库专用宽松门
 - [x] GitHub 源优化：精准 query（去 "AI" 避宽泛匹配）+ timestamp 改抓取时间（解决时间线沉底）+ 保留窗口 5→7 天
 - [x] 筛选可观测性 + ArXiv 选品：淘汰条目打印 F/S 分数（告别黑箱）+ 粗筛按质量相关性选品（根治 CI 偶发 0 通过）
+- [x] 取景框视觉系统：相机光圈转场 + 分页面氛围背景 + 减少动态效果偏好支持
+- [x] 个人档案改为真实经历驱动，不预设技术栈和内容分类
+- [x] Markdown 记录系统：图片、KaTeX 公式、代码高亮、表格与复制代码
 
 ### 进行中 / 计划中 🚧
 
 - [ ] **RAG 架构升级**：MCP 协议 + ReAct 推理循环
 - [ ] **嵌入数据集扩充**：增加项目覆盖面，引入更多数据源
 - [ ] **项目选取策略优化**：关注每周新增 star 数（增长趋势而非绝对值）
-- [ ] 移动端体验优化
+- [ ] 带站内引用的个人内容 LLM 向导
+- [ ] 真实移动设备性能与交互走查
 - [ ] 暗色/亮色主题切换
 - [ ] 自定义站点 Logo
 

@@ -5,7 +5,7 @@
 
 ## 项目概览
 
-**Flacko的取景框** — 个人知识站点，面向所有关注 AI 的计算机从业者。
+**Flacko的取景框** — 个人成长档案，记录求学、比赛、学习、科研与阶段作品；AI 热点和万象索骥作为长期实验保留。
 - 域名：https://flackoye.bond
 - 部署：Vercel（自动从 GitHub main 分支构建）
 - 框架：Next.js 16 + React 19 + TypeScript + Tailwind CSS v4
@@ -24,7 +24,7 @@ Python 管道 (scripts/fetch_trending.py)
       · 开源: 任一维 ≥ 60 入选, 否则 综合 ≥ 50 (高星再降一档)
   → 串行评分 + 6s 间隔 (控制账户级 RPM 限速, code 1302)
   → 写入 public/trending.json
-  → GitHub Actions 每 12h 自动运行, commit & push
+  → GitHub Actions 手动运行（保留每 12h cron 配置注释）, commit & push
   → Vercel 检测变更后自动部署
   → Next.js SSR 读 JSON → TimelineView 客户端渲染
 ```
@@ -91,17 +91,18 @@ Supabase 表结构：
 - `Customizer` 组件支持用户自定义背景图、亮度、卡片透明度
 - 设置通过 `SettingsProvider` (React Context) + localStorage 持久化
 - **自定义鼠标光标** (`CursorEffect`)：全局挂载，磁吸光环+涟漪点击，仅 `(pointer:fine)` 桌面启用，`globals.css` 的 `@media(pointer:fine){*{cursor:none}}` 配合（输入框还原 text）
-- **页面切换揭幕** (`PageTransition`)：监听 `usePathname`，毛玻璃从底滑上盖满→向上揭开。⚠️ `<main>` 在 layout 持久不 remount，路由切换动画必须用 overlay 组件而非 main 上的 class
+- **页面切换揭幕** (`PageTransition`)：监听 `usePathname`，通过 key 重启动画，模拟相机光圈打开、对焦框锁定和扫描读数。⚠️ `<main>` 在 layout 持久不 remount，路由切换动画必须用 overlay 组件而非 main 上的 class
+- **内页氛围背景** (`PageBackdrop`)：热点=信号扫描，日志=胶片档案，个人档案=相纸光斑；项目页继续使用 `StarfieldBackground`
 - **PetCharacter**（首页阿岳）：移动端 `<480px` 自动缩小；气泡 `fit-content`+`maxWidth:min(320px,calc(100vw-48px))`；含进场动画/脚下光晕/浮动话筒图标
 
 ## 页面状态
 
 | 页面 | 路由 | 状态 | 说明 |
 |------|------|------|------|
-| 首页 | `/` | ✅ 完成 | 每日一言 + 背景交互 |
+| 首页 | `/` | ✅ 完成 | 成长档案入口 + 每日一言 + 背景交互 |
 | 热点 | `/trending` | ✅ 完成 | 时间线 + 统计卡片 + 来源标签 |
 | 更新日志 | `/changelog` | ✅ 完成 | 版本时间线 + 顶部公告 |
-| 关于 | `/about` | ✅ 完成 | 个人信息 + 技术栈 + 收藏网址 |
+| 个人档案 | `/about` | ✅ 完成 | 个人信息 + 四条成长轨道 + 技术栈 + 收藏网址 |
 | 项目落地页 | `/projects` | ✅ 完成 | 万象索骥 — 数据概览 + 分类分布 + 模式选择 |
 | 引导探索 | `/projects/explore` | ✅ 完成 | Socratic 表格交互 + Klein Blue 选项 + 项目推荐 |
 | 自由对话 | `/projects/assistant` | ✅ 完成 | 直接聊天 + RAG 检索 + 项目卡片 |

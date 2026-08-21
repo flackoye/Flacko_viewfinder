@@ -21,6 +21,7 @@ export default function CursorEffect() {
   const [hovering, setHovering] = useState(false);
   const [ripples, setRipples] = useState<Ripple[]>([]);
   const [hue, setHue] = useState(HUE_SLOW);
+  const hueRef = useRef(HUE_SLOW);
 
   const mouseX = useMotionValue(-100);
   const mouseY = useMotionValue(-100);
@@ -77,7 +78,13 @@ export default function CursorEffect() {
       const speed = Math.sqrt(
         (e.clientX - lastPos.current.x) ** 2 + (e.clientY - lastPos.current.y) ** 2
       ) / dt;
-      setHue((p) => p + (HUE_SLOW + (HUE_FAST - HUE_SLOW) * Math.min(1, speed / 2.4) - p) * 0.2);
+      setHue((previousHue) => {
+        const nextHue = previousHue + (
+          HUE_SLOW + (HUE_FAST - HUE_SLOW) * Math.min(1, speed / 2.4) - previousHue
+        ) * 0.2;
+        hueRef.current = nextHue;
+        return nextHue;
+      });
       lastPos.current = { x: e.clientX, y: e.clientY, t: now };
     };
     const onOver = (e: PointerEvent) => {
@@ -87,7 +94,7 @@ export default function CursorEffect() {
     };
     const onDown = (e: PointerEvent) => {
       const id = e.timeStamp + Math.random();
-      setRipples((r) => [...r, { id, x: e.clientX, y: e.clientY, hue }]);
+      setRipples((r) => [...r, { id, x: e.clientX, y: e.clientY, hue: hueRef.current }]);
       setTimeout(() => setRipples((r) => r.filter((rp) => rp.id !== id)), 650);
     };
 

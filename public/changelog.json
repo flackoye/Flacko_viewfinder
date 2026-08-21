@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "version":"v2.4.0",
+      "date":"2026-08-21",
+      "title":"网站设计语言调整：围绕取景框与摄影",
+      "changes":[
+        {"type":"feature","description":"新增“记录”板块，以胶卷的形式展现"},
+        {"type":"improvement","description":"优化档案处ui设计"},
+        {"type":"improvement","description":"优化各模块的背景"}
+      ]
+    },
+    {
       "version": "v2.3.0",
       "date": "2026-06-08",
       "title": "万象索骥上线：RAG + 苏格拉底式引导",

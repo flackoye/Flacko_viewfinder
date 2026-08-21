@@ -1,4 +1,4 @@
-import type { EmbeddingChunk, ChatMessage, Project } from './project-types';
+import type { EmbeddingChunk, ChatHistoryMessage, Project } from './project-types';
 
 const ZHIPU_API_BASE = 'https://open.bigmodel.cn/api/paas/v4';
 
@@ -21,6 +21,7 @@ export async function fetchWithRetry(
       }
       return res;
     } catch (err) {
+      if ((err as Error).name === 'AbortError') throw err;
       lastError = err;
       if (attempt < maxRetries) {
         await new Promise(r => setTimeout(r, baseDelay * Math.pow(2, attempt)));
@@ -71,7 +72,7 @@ function formatChunks(chunks: EmbeddingChunk[], projects: Project[]): string {
 }
 
 /** 格式化对话历史 */
-function formatHistory(history: ChatMessage[]): string {
+function formatHistory(history: ChatHistoryMessage[]): string {
   return history.length > 0
     ? history.map(m => `${m.role === 'user' ? '用户' : 'AI'}: ${m.content}`).join('\n\n')
     : '（这是对话的开始）';
@@ -164,7 +165,7 @@ const SOCRATIC_SYSTEM_PROMPT = `你是「Flacko的取景框」AI 项目导航员
 
 /** 构建引导模式 Prompt */
 export function buildGuidedPrompt(
-  history: ChatMessage[],
+  history: ChatHistoryMessage[],
   question: string,
   chunks: EmbeddingChunk[],
   projects: Project[],
@@ -184,7 +185,7 @@ ${formatChunks(chunks, projects)}
 
 /** 构建助手模式 Prompt */
 export function buildAssistantPrompt(
-  history: ChatMessage[],
+  history: ChatHistoryMessage[],
   question: string,
   chunks: EmbeddingChunk[],
   projects: Project[],
@@ -202,7 +203,7 @@ ${formatChunks(chunks, projects)}
 
 /** 旧版兼容：苏格拉底式 Prompt */
 export function buildSocraticPrompt(
-  history: ChatMessage[],
+  history: ChatHistoryMessage[],
   question: string,
   chunks: EmbeddingChunk[],
   projects: Project[],
@@ -226,7 +227,9 @@ export function parseOptions(text: string): string[] {
   if (!match) return [];
   try {
     const parsed = JSON.parse(match[1].trim());
-    return Array.isArray(parsed) ? parsed.slice(0, 8) : [];
+    return Array.isArray(parsed)
+      ? parsed.filter((item): item is string => typeof item === 'string').slice(0, 8)
+      : [];
   } catch {
     return [];
   }
@@ -238,7 +241,9 @@ export function parseSuggestions(text: string): string[] {
   if (!match) return [];
   try {
     const parsed = JSON.parse(match[1].trim());
-    return Array.isArray(parsed) ? parsed.slice(0, 5) : [];
+    return Array.isArray(parsed)
+      ? parsed.filter((item): item is string => typeof item === 'string').slice(0, 5)
+      : [];
   } catch {
     return [];
   }

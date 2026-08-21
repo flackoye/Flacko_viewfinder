@@ -1,7 +1,33 @@
 'use client';
 
-import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useMemo,
+  useSyncExternalStore,
+  type ReactNode,
+} from 'react';
 import { loadSettings, saveSettings, defaultSettings, type SiteSettings } from '@/lib/settings';
+
+const SETTINGS_EVENT = 'flacko-settings-change';
+
+function subscribe(onStoreChange: () => void) {
+  window.addEventListener('storage', onStoreChange);
+  window.addEventListener(SETTINGS_EVENT, onStoreChange);
+  return () => {
+    window.removeEventListener('storage', onStoreChange);
+    window.removeEventListener(SETTINGS_EVENT, onStoreChange);
+  };
+}
+
+function getSnapshot() {
+  return localStorage.getItem('flacko-settings') ?? '';
+}
+
+function getServerSnapshot() {
+  return '';
+}
 
 const SettingsContext = createContext<{
   settings: SiteSettings;
@@ -16,18 +42,20 @@ export function useSettings() {
 }
 
 export function SettingsProvider({ children }: { children: ReactNode }) {
-  const [settings, setSettings] = useState<SiteSettings>(defaultSettings);
-
-  useEffect(() => {
-    setSettings(loadSettings());
-  }, []);
+  const serializedSettings = useSyncExternalStore(
+    subscribe,
+    getSnapshot,
+    getServerSnapshot,
+  );
+  const settings = useMemo(
+    () => serializedSettings ? loadSettings() : defaultSettings,
+    [serializedSettings],
+  );
 
   const update = useCallback((partial: Partial<SiteSettings>) => {
-    setSettings((prev) => {
-      const next = { ...prev, ...partial };
-      saveSettings(next);
-      return next;
-    });
+    const next = { ...loadSettings(), ...partial };
+    saveSettings(next);
+    window.dispatchEvent(new Event(SETTINGS_EVENT));
   }, []);
 
   return (

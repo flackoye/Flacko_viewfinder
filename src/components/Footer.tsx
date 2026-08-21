@@ -1,4 +1,3 @@
-import { Heart } from 'lucide-react';
 import Link from 'next/link';
 
 function GitHubIcon({ className }: { className?: string }) {
@@ -18,6 +17,9 @@ export default function Footer() {
           取景框里偶尔失焦，未完待续.....
         </div>
         <div className="flex items-center gap-6">
+          <Link href="/changelog" className="hover:text-text-muted transition-colors">
+            更新日志
+          </Link>
           <Link
             href="https://github.com/flackoye"
             target="_blank"

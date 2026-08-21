@@ -6,6 +6,9 @@
  * - brightness: 背景亮度 0~100
  * - overlayOpacity: 遮罩透明度 0~100（数值越小图越亮）
  * - cardGlass: 卡片玻璃透明度 0~100
+ * - petVisible: 是否显示阿岳
+ * - petRoaming: 阿岳是否会自行走动
+ * - petScale: 阿岳显示大小百分比
  */
 
 export interface SiteSettings {
@@ -13,6 +16,9 @@ export interface SiteSettings {
   brightness: number;       // 0~100, default 60
   overlayOpacity: number;   // 0~100, default 30
   cardGlass: number;        // 0~100, default 50
+  petVisible: boolean;
+  petRoaming: boolean;
+  petScale: number;         // 70~140, default 100
 }
 
 const STORAGE_KEY = 'flacko-settings';
@@ -22,6 +28,9 @@ export const defaultSettings: SiteSettings = {
   brightness: 60,
   overlayOpacity: 30,
   cardGlass: 50,
+  petVisible: true,
+  petRoaming: true,
+  petScale: 100,
 };
 
 export function loadSettings(): SiteSettings {
