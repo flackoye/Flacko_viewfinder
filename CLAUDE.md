@@ -15,14 +15,14 @@
 ### 热点数据流
 ```
 Python 管道 (scripts/fetch_trending.py)
-  → 12 数据源并发爬取 (RSS×3 + GitHub API + HN + Reddit×5 + ArXiv×2)
+  → 12 数据端点并发爬取 (RSS×3 + GitHub API + HN + Reddit×5 + ArXiv×2)
   → 去重 vs 已有数据 (public/trending.json)
-  → GLM-4.7 双维度评分 (前沿性 + 信息含量, 0-100)
+  → LLM 双维度评分 (前沿性 + 信息含量, 0-100, anthropic 兼容接口)
   → 三套 OR 门筛选:
       · 通用: 任一维 ≥ 80 入选, 否则 前沿×0.6+信息×0.4 ≥ 60
       · ArXiv: 任一维 ≥ 70 入选, 否则 综合 ≥ 65 (有开源代码可降至 55)
       · 开源: 任一维 ≥ 60 入选, 否则 综合 ≥ 50 (高星再降一档)
-  → 串行评分 + 6s 间隔 (控制账户级 RPM 限速, code 1302)
+  → 串行评分 + 6s 间隔 (控制账户级限流)
   → 写入 public/trending.json
   → GitHub Actions 手动运行（保留每 12h cron 配置注释）, commit & push
   → Vercel 检测变更后自动部署
@@ -51,7 +51,7 @@ Python 管道 (scripts/fetch_trending.py)
   - stars ≥ 500 时综合线降至 40
   - ⭐ stars ≥ 200 直通入选（绕过 LLM）：LLM 评分看不到 stars，高星新仓库常被主观误杀（如 ⭐1w+ 的 ponytail 连续被砍），用绝对社区热度兜底。常量 `OPENSOURCE_STAR_FAST_PATH`
   - 🔥 HN points ≥ 100 直通入选（绕过 LLM）：外链热点帖 `story_text` 永远为空（正文在外部网站），LLM 评不出信息含量，用热度兜底。常量 `HN_HIGH_POINTS_FAST_PATH`
-- **LLM 速率控制**: 串行评分（`LLM_CONCURRENCY=1`）+ 请求间隔（`LLM_REQUEST_INTERVAL=6s`），避免触发智谱账户级 RPM 限速（code 1302）。429 退避拉长到 15/30/45/60s 跨过窗口。⚠️ RPM 是账户级共享，Key 分离不隔离速率。
+- **LLM 速率控制**: 串行评分（`LLM_CONCURRENCY=1`）+ 请求间隔（`LLM_REQUEST_INTERVAL=6s`），避免触发账户级限流。429 退避拉长到 15/30/45/60s 跨过窗口。⚠️ 限流是账户级共享，Key 分离不隔离速率。
 - **ArXiv 选品** (`coarse_rank_arxiv`): 粗筛通过 ~185 篇后，按**质量相关性**排序（关键词命中数 + has_code×3 + lab_match×4）取 top 20 送筛，而非纯按时间。本地诊断证实：纯按时间会让送筛质量随抓取时刻随机波动（CI 曾连续 0/10，同一套逻辑本地却 6/12 通过——因为"最新 20 篇"有时恰好都是中庸论文）。改为质量排序后 top20 稳定含 12/20 有代码、4/20 顶级实验室。
 - **❌ 可观测**: 淘汰条目也打印 `F/S/综合` 分数，让 0/N 异常可诊断（此前 ❌ 黑箱，无法判断是门槛太高、prompt 过严还是选品差）。
 
@@ -76,7 +76,7 @@ Python 管道 (scripts/fetch_trending.py)
   POST /api/projects → mode=guided|assistant + category 过滤
     → embedQuery() 向量化用户提问
     → Supabase RPC match_chunks() 返回 Top-K 相关片段
-    → 片段拼入 Prompt → GLM 流式生成
+    → 片段拼入 Prompt → LLM 流式生成 (anthropic 兼容接口)
   → SSE 流式输出 (chunk/options/suggestions/projects/done)
 
 Supabase 表结构：
@@ -140,9 +140,11 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py  #
 ## 注意事项
 
 - Next.js 16 有 breaking changes：写代码前先读 `node_modules/next/dist/docs/`
-- `.env` 里有 ZHIPU_API_KEY、ZHIPU_RAG_API_KEY、ZHIPU_TRENDING_API_KEY、GITHUB_TOKEN、SUPABASE_URL、SUPABASE_SERVICE_KEY，不要泄露
-- API Key 职责分离：`ZHIPU_API_KEY` 仅用于 Embedding，`ZHIPU_RAG_API_KEY` 用于 RAG 对话，`ZHIPU_TRENDING_API_KEY` 用于热点评分。⚠️ 三把 key 共享账户级 RPM 限速（code 1302），Key 分离不能隔离速率限制
-- 热点管道 LLM 评分采用串行 + 请求间隔（`LLM_CONCURRENCY=1`, `LLM_REQUEST_INTERVAL=6s`），避免触发智谱账户级 RPM 限速
+- `.env` 里有 `LLM_API_KEY`、`EMBEDDING_API_KEY`、`GITHUB_TOKEN`、`SUPABASE_URL`、`SUPABASE_SERVICE_KEY`，不要泄露
+- Key 职责分离：`EMBEDDING_API_KEY` 仅用于向量化（智谱），`LLM_API_KEY` 用于评分/对话（anthropic 兼容，RAG 与 Trending 共用）。⚠️ 同一账号的限流是共享的，Key 分离不隔离速率
+- LLM 走 **anthropic Messages 接口**（`POST {LLM_API_BASE}/v1/messages`，`x-api-key` + `anthropic-version` 鉴权），模型名 `LLM_MODEL` 不写死在代码里，换模型只改 env
+- Embedding 保留智谱 SDK（DeepSeek anthropic 端点只做对话、无 embedding API），模型 `EMBEDDING_MODEL`
+- 热点管道 LLM 评分采用串行 + 请求间隔（`LLM_CONCURRENCY=1`, `LLM_REQUEST_INTERVAL=6s`），避免触发账户级限流
 - `public/trending.json` 和 `public/changelog.json` 是运行时数据，CI 会自动更新
 - RAG 数据存储在 Supabase pgvector（`projects` + `embedding_chunks` 表），不再依赖本地 JSON
 - `public/projects.json` 仅作本地开发参考，线上从 Supabase 读取

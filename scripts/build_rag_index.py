@@ -41,7 +41,8 @@ def load_env():
 
 load_env()
 
-API_KEY = os.environ.get("ZHIPU_API_KEY", "").strip('"').strip("'")
+EMBEDDING_API_KEY = os.environ.get("EMBEDDING_API_KEY", "").strip('"').strip("'")
+EMBEDDING_API_BASE = os.environ.get("EMBEDDING_API_BASE", "https://open.bigmodel.cn/api/paas/v4")
 EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "embedding-3")
 EMBEDDING_DIMENSIONS = int(os.environ.get("EMBEDDING_DIMENSIONS", "512"))
 
@@ -178,7 +179,7 @@ def _embed_batch_sync(client: ZhipuAiClient, texts: list[str]) -> list[list[floa
 
 async def embed_all_chunks(chunks: list[dict]) -> list[dict]:
     """对所有块进行 embedding"""
-    client = ZhipuAiClient(api_key=API_KEY)
+    client = ZhipuAiClient(api_key=EMBEDDING_API_KEY, base_url=EMBEDDING_API_BASE)
     total = len(chunks)
     embedded_chunks = []
     failed = 0

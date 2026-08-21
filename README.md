@@ -38,7 +38,7 @@
 | **方式** | Socratic 多轮对话，逐步建立画像 | 直接描述需求，即时推荐 |
 | **适合** | 不确定自己要什么的时候 | 有明确目标，想快速找到工具 |
 
-**技术链路**：`GitHub Search → README 切块 → Embedding-3 (512d) → Supabase pgvector → HNSW 余弦检索 → GLM 流式生成 → SSE 实时输出`
+**技术链路**：`GitHub Search → README 切块 → Embedding-3 (512d) → Supabase pgvector → HNSW 余弦检索 → LLM 流式生成 → SSE 实时输出`
 
 ### 🏠 更多内容
 
@@ -55,7 +55,7 @@
 ```
                     ┌────────── 线下管道 ──────────┐
                     │                               │
-  fetch_trending.py │  7 源爬取 → LLM 评分 → JSON   │ build_rag_index.py
+  fetch_trending.py │  12 源爬取 → LLM 评分 → JSON  │ build_rag_index.py
   (CI 手动/可开定时)  │  → commit → Vercel 自动部署   │ (手动触发, 直写 Supabase)
                     └────────────┬──────────────────┘
                                  │
@@ -70,7 +70,7 @@
                                           ┌───────────────┘
                                           ▼
                                    ┌─────────────┐
-                                   │  GLM 流式生成 │
+                                   │  LLM 流式生成 │
                                    │  → 实时打字   │
                                    │  → 项目卡片   │
                                    └─────────────┘
@@ -119,7 +119,7 @@
 - GitHub 初筛用精准关键词 `LLM OR GPT OR transformer`（避开宽泛的 "AI"，召回从 ~11万 降到 ~1.5万），条目 timestamp 取抓取时间而非仓库创建时间，保证在时间线与资讯同步出现
 - GitHub 高星仓库（⭐≥200）绕过 LLM 直接入选——LLM 评分看不到 stars，用绝对社区热度兜底，避免爆款被主观误杀
 - HackerNews 高赞热点（🔥≥100 赞）绕过 LLM 直通——外链帖正文在外部网站拿不到，用社区热度兜底
-- GLM-4.7 评分，5 级锚定 + few-shot 约束漂移；三套 OR 门（通用 ≥80/80/60、ArXiv ≥70/70/65、开源 ≥60/60/50）适配不同内容特征
+- LLM 评分走 anthropic 兼容接口（`POST /v1/messages`），5 级锚定 + few-shot 约束漂移；三套 OR 门（通用 ≥80/80/60、ArXiv ≥70/70/65、开源 ≥60/60/50）适配不同内容特征
 - 串行评分 + 6s 间隔控制账户级 RPM，429 退避 15→60s
 
 **待改进**：无评分质量监控（漂移不可见）；GitHub 高星项目仍可能被 LLM 主观评分误杀（stars 未进 prompt）；单 LLM 评分无交叉验证
@@ -155,7 +155,7 @@
 | 前端 | Next.js 16 · React 19 · TypeScript · Tailwind CSS v4 |
 | 设计 | 暗色主题 + 玻璃拟态（Glassmorphism）设计系统 |
 | 向量数据库 | Supabase pgvector — HNSW 索引 + RPC 余弦检索 |
-| LLM | 智谱 GLM-4.7（评分/对话）· Embedding-3（512d 向量化） |
+| LLM | DeepSeek（anthropic 兼容，评分/对话）· Embedding 智谱 Embedding-3（512d 向量化） |
 | 数据管道 | Python · asyncio + httpx · feedparser |
 | 部署 | Vercel（main 分支自动构建）|
 | CI/CD | GitHub Actions（热点手动更新，可恢复每 12h cron；RAG 索引手动重建）|
@@ -169,10 +169,10 @@ npm install
 # 启动开发服务器
 npm run dev
 
-# 运行热点管道（需要 ZHIPU_TRENDING_API_KEY）
+# 运行热点管道（需要 LLM_API_KEY）
 .venv/Scripts/python.exe scripts/fetch_trending.py
 
-# 重建 RAG 索引（需要 ZHIPU_API_KEY + GITHUB_TOKEN + SUPABASE_*）
+# 重建 RAG 索引（需要 EMBEDDING_API_KEY + GITHUB_TOKEN + SUPABASE_*）
 PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py
 ```
 
@@ -183,16 +183,21 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py
 
 | 变量 | 用途 | 必需 |
 |------|------|:---:|
-| `ZHIPU_API_KEY` | Embedding（用户提问向量化 + 索引构建）| ✅ |
-| `ZHIPU_RAG_API_KEY` | RAG 对话生成（GLM-4.7）| ✅ |
-| `ZHIPU_TRENDING_API_KEY` | 热点评分（GLM-4.7）| ✅ |
+| `LLM_API_KEY` | 评分 / 对话（anthropic 兼容，RAG + Trending 共用）| ✅ |
+| `LLM_API_BASE` | LLM 端点（默认 `https://api.deepseek.com/anthropic`）| 可选 |
+| `LLM_MODEL` | LLM 模型名（默认 `deepseek-v4-flash`）| 可选 |
+| `LLM_TEMPERATURE` | LLM 采样温度 | 可选 |
+| `LLM_MAX_TOKENS` | LLM 输出上限 | 可选 |
+| `EMBEDDING_API_KEY` | Embedding 向量化（智谱，用户提问 + 索引构建）| ✅ |
+| `EMBEDDING_API_BASE` | Embedding 端点（默认智谱 `open.bigmodel.cn`）| 可选 |
+| `EMBEDDING_MODEL` | Embedding 模型（默认 `embedding-3`）| 可选 |
 | `GITHUB_TOKEN` | GitHub API 项目搜索 | ✅ |
 | `SUPABASE_URL` | Supabase 项目 URL | ✅ |
 | `SUPABASE_SERVICE_KEY` | Supabase Service Role Key | ✅ |
-| `ZHIPU_MODEL` | 自定义 GLM 模型（默认 `glm-4.7`）| 可选 |
 
 **获取方式**：
-- 智谱 API Key → [open.bigmodel.cn](https://open.bigmodel.cn)
+- DeepSeek LLM Key → [platform.deepseek.com](https://platform.deepseek.com)
+- 智谱 Embedding Key → [open.bigmodel.cn](https://open.bigmodel.cn)
 - GitHub Token → Settings → Developer settings → Personal access tokens
 - Supabase → [supabase.com](https://supabase.com) 创建项目后获取
 
@@ -216,14 +221,14 @@ PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -u scripts/build_rag_index.py
 
 ### 已完成 ✅
 
-- [x] AI 热点追踪：7 源并发爬取 + OR 门评分 + 时间线展示
+- [x] AI 热点追踪：12 源并发爬取 + OR 门评分 + 时间线展示
 - [x] AI 项目导航「万象索骥」：RAG + 双模式对话 + 可视化卡片
 - [x] 更新公告系统：横幅 + 时间线
 - [x] 首页：每日一言 + 星空/极光交互背景
 - [x] CI/CD 管道：GitHub Actions 手动更新热点，可按需恢复每 12h cron
 - [x] RAG 存储迁移：本地 39MB JSON → Supabase pgvector
 - [x] API 稳定性：429 限流感知 + 指数退避重试 + 流中断保护 + 空响应兜底
-- [x] API Key 职责分离：Embedding / RAG / Trending 三份独立 Key
+- [x] 环境变量去模型名化 + Embedding / LLM 职责分离（模型可在不命名硬编码的前提下按需更换）
 - [x] LLM 评分降速 + 开源门槛放宽：串行限速控制 RPM + GitHub 高星仓库专用宽松门
 - [x] GitHub 源优化：精准 query（去 "AI" 避宽泛匹配）+ timestamp 改抓取时间（解决时间线沉底）+ 保留窗口 5→7 天
 - [x] 筛选可观测性 + ArXiv 选品：淘汰条目打印 F/S 分数（告别黑箱）+ 粗筛按质量相关性选品（根治 CI 偶发 0 通过）

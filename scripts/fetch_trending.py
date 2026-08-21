@@ -35,7 +35,6 @@ if sys.platform == "win32":
 
 import feedparser
 import httpx
-from zai import ZhipuAiClient
 
 
 # ========== 环境变量加载 ==========
@@ -83,13 +82,15 @@ OPENSOURCE_HIGH_STAR_STARS = int(_env("OPENSOURCE_HIGH_STAR_STARS", "500"))  # �
 OPENSOURCE_STAR_FAST_PATH = int(_env("OPENSOURCE_STAR_FAST_PATH", "200"))  # stars ≥ 此值的 GitHub 仓库绕过 LLM 直接入选（LLM 看不到 stars，高星项目常被主观误杀）
 HN_HIGH_POINTS_FAST_PATH = int(_env("HN_HIGH_POINTS_FAST_PATH", "100"))  # HN points ≥ 此值绕过 LLM 直接入选（外链热点帖 story_text 永远空，LLM 评不出）
 
-# --- LLM ---
-GLM_MODEL = _env("ZHIPU_MODEL", "glm-4.7")
-GLM_TEMPERATURE = float(_env("ZHIPU_TEMPERATURE", "0.1"))
-GLM_MAX_TOKENS = int(_env("ZHIPU_MAX_TOKENS", "512"))
-LLM_CONCURRENCY = 1     # 串行,避免密集请求触发账户级 RPM 限制(code 1302)
+# --- LLM (anthropic 兼容端点, DeepSeek / Claude 等均可) ---
+LLM_API_KEY = _env("LLM_API_KEY", "").strip('"').strip("'")
+LLM_API_BASE = _env("LLM_API_BASE", "https://api.deepseek.com/anthropic")
+LLM_MODEL = _env("LLM_MODEL", "deepseek-v4-flash")
+LLM_TEMPERATURE = float(_env("LLM_TEMPERATURE", "0.1"))
+LLM_MAX_TOKENS = int(_env("LLM_MAX_TOKENS", "512"))
+LLM_CONCURRENCY = 1     # 串行,避免密集请求触发账户级 RPM 限制
 LLM_RETRY_MAX = 4        # 429 最大重试次数
-LLM_RETRY_BASE = 15.0    # 重试基础等待(秒),拉长到跨过 RPM 窗口
+LLM_RETRY_BASE = 15.0    # 重试基础等待(秒),拉长到跨过限流窗口
 LLM_REQUEST_INTERVAL = float(_env("LLM_REQUEST_INTERVAL", "6"))  # 每次请求间隔秒数
 
 # --- 爬取 ---
@@ -690,26 +691,35 @@ tags 规则：2-4 个 | 中文 | 每个标签 2-6 字 | 只描述技术领域（
 
 
 def _llm_filter_sync(
-    client: ZhipuAiClient,
+    client: httpx.Client,
     item: dict,
     system_prompt: str,
     user_msg: str,
 ) -> dict | None:
-    """同步 LLM 筛选（在线程池中运行），遇 429 自动退避重试"""
+    """同步 LLM 筛选（在线程池中运行），走 anthropic Messages 兼容接口，遇 429 自动退避重试"""
     for attempt in range(LLM_RETRY_MAX):
         try:
-            response = client.chat.completions.create(
-                model=GLM_MODEL,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_msg},
-                ],
-                temperature=GLM_TEMPERATURE,
-                max_tokens=GLM_MAX_TOKENS,
-                thinking={"type": "disabled"},
+            resp = client.post(
+                f"{LLM_API_BASE}/v1/messages",
+                headers={
+                    "content-type": "application/json",
+                    "x-api-key": LLM_API_KEY,
+                    "anthropic-version": "2023-06-01",
+                },
+                json={
+                    "model": LLM_MODEL,
+                    "max_tokens": LLM_MAX_TOKENS,
+                    "temperature": LLM_TEMPERATURE,
+                    "system": system_prompt,
+                    "messages": [{"role": "user", "content": user_msg}],
+                    "stream": False,
+                },
             )
-
-            raw = response.choices[0].message.content.strip()
+            resp.raise_for_status()
+            data = resp.json()
+            raw = "".join(
+                block["text"] for block in data.get("content", []) if block.get("type") == "text"
+            ).strip()
 
             if "```" in raw:
                 raw = raw.split("```")[1]
@@ -718,12 +728,9 @@ def _llm_filter_sync(
 
             result = json.loads(raw)
 
-            frontier = int(result.get("frontier", 0))
-            signal = int(result.get("signal", 0))
-
             return {
-                "frontier": frontier,
-                "signal": signal,
+                "frontier": int(result.get("frontier", 0)),
+                "signal": int(result.get("signal", 0)),
                 "llm_summary": result.get("summary", ""),
                 "llm_tags": result.get("tags", []),
             }
@@ -772,7 +779,7 @@ def _build_user_msg_arxiv(item: dict) -> str:
 
 
 async def run_llm_pass_async(
-    client: ZhipuAiClient,
+    client: httpx.Client,
     items: list[dict],
     mode: str = "regular",
 ) -> tuple[list[dict], list[dict]]:
@@ -962,19 +969,19 @@ async def main():
     print("=" * 50)
     print("🚀 AI 热点爬取管道 v3")
     print(f"   时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"   模型: {GLM_MODEL}")
+    print(f"   模型: {LLM_MODEL}")
     print(f"   常规 OR门: 前沿≥{FRONTIER_THRESHOLD} | 信息≥{SIGNAL_THRESHOLD} | 综合≥{COMPOSITE_THRESHOLD}")
     print(f"   ArXiv OR门: 前沿≥{ARXIV_FRONTIER_THRESHOLD} | 实用≥{ARXIV_UTILITY_THRESHOLD} | 综合≥{ARXIV_COMPOSITE_THRESHOLD}")
     print(f"   保留: {MAX_AGE_DAYS}天 | 监控线: {MIN_ITEMS_PER_UPDATE}条 | 并发: {LLM_CONCURRENCY}")
     print(f"   数据源: {len(RSS_SOURCES)} RSS + GitHub + HN + {len(REDDIT_RSS_SOURCES)} Reddit + {len(ARXIV_SOURCES)} ArXiv")
     print("=" * 50)
 
-    api_key = _env("ZHIPU_TRENDING_API_KEY")
-    if not api_key:
-        print("❌ 请设置 ZHIPU_TRENDING_API_KEY")
+    if not LLM_API_KEY:
+        print("❌ 请设置 LLM_API_KEY")
         sys.exit(1)
 
-    client = ZhipuAiClient(api_key=api_key)
+    # 显式设置请求超时，避免 LLM 请求悬挂导致整条管道（串行 LLM_CONCURRENCY=1）无限阻塞
+    client = httpx.Client(timeout=60.0)
 
     # 1. 加载已有数据 + 清理过期
     existing = load_existing_data()

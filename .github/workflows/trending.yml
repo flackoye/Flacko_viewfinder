@@ -30,10 +30,11 @@ jobs:
 
       - name: Fetch & filter trending
         env:
-          ZHIPU_TRENDING_API_KEY: ${{ secrets.ZHIPU_TRENDING_API_KEY }}
-          ZHIPU_MODEL: "glm-4.7"
-          ZHIPU_TEMPERATURE: "0.1"
-          ZHIPU_MAX_TOKENS: "512"
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_API_BASE: "https://api.deepseek.com/anthropic"
+          LLM_MODEL: "deepseek-v4-flash"
+          LLM_TEMPERATURE: "0.1"
+          LLM_MAX_TOKENS: "512"
           FRONTIER_THRESHOLD: "80"
           SIGNAL_THRESHOLD: "80"
           COMPOSITE_THRESHOLD: "60"
@@ -47,7 +48,7 @@ jobs:
           ARXIV_MAX_ITEMS_PER_SOURCE: "100"
           ARXIV_MAX_AFTER_COARSE: "20"
           LLM_REQUEST_INTERVAL: "6"
-        run: python scripts/fetch_trending.py
+        run: PYTHONIOENCODING=utf-8 python -u scripts/fetch_trending.py
 
       - name: Commit changes
         run: |

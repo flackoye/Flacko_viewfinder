@@ -8,9 +8,9 @@
 浏览器
   ├─ 页面路由（SSR / Client Components）
   ├─ POST /api/projects（SSE）
-  │    ├─ 智谱 Embedding API
+  │    ├─ Embedding API（智谱，向量化查询）
   │    ├─ Supabase match_chunks()
-  │    └─ 智谱 Chat Completions API
+  │    └─ LLM Messages API（anthropic 兼容，对话流式）
   └─ 一言 API（首页“换一句”，失败时使用本地语料）
 
 离线任务
@@ -53,7 +53,7 @@ GET /api/projects
   "chunks": 5079,
   "supabaseUrl": "✅ set",
   "supabaseKey": "✅ set",
-  "zhipuKey": "✅ set"
+  "llmKey": "✅ set"
 }
 ```
 
@@ -258,15 +258,15 @@ interface TrendingItem {
 
 | 服务 | 调用位置 | 认证变量 | 用途 |
 |---|---|---|---|
-| 智谱 Embedding | `src/lib/rag.ts`、`build_rag_index.py` | `ZHIPU_API_KEY` | 512 维查询/语料向量化 |
-| 智谱 Chat | `/api/projects` | `ZHIPU_RAG_API_KEY` | RAG 回答和结构化标签 |
-| 智谱 Chat | `fetch_trending.py` | `ZHIPU_TRENDING_API_KEY` | 热点评分与摘要 |
+| Embedding（智谱） | `src/lib/rag.ts`、`build_rag_index.py` | `EMBEDDING_API_KEY`、`EMBEDDING_API_BASE` | 512 维查询/语料向量化 |
+| LLM 对话（anthropic 兼容） | `/api/projects` | `LLM_API_KEY`、`LLM_API_BASE` | RAG 回答和结构化标签 |
+| LLM 评分（anthropic 兼容） | `fetch_trending.py` | `LLM_API_KEY`、`LLM_API_BASE` | 热点评分与摘要 |
 | Supabase | 服务端与构建脚本 | `SUPABASE_URL`、`SUPABASE_SERVICE_KEY` | 项目元数据和 pgvector |
 | GitHub API | Python 管道 | `GITHUB_TOKEN` | 项目发现与 README 拉取 |
 | Hitokoto | `src/lib/quotes.ts` | 无 | 首页名言；5 秒超时后本地降级 |
 | RSS / HN Algolia | `fetch_trending.py` | 无 | 热点采集 |
 
-三个智谱 Key 负责不同任务，但如果属于同一账户，仍可能共享账户级限流额度。
+LLM 与 Embedding 是两颗独立 Key（品牌不同）、可能不同账号；同账号时仍共享账户级限流额度。
 
 ## 7. 兼容性与安全约束
 

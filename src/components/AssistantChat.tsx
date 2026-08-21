@@ -155,7 +155,7 @@ export default function AssistantChat() {
         }
       }
 
-      // 空响应（GLM 限流/故障，流正常结束但无内容）→ 标记为失败，显示重试
+      // 空响应（LLM 限流/故障，流正常结束但无内容）→ 标记为失败，显示重试
       if (!receivedContent) {
         setMessages(prev => {
           const updated = [...prev];

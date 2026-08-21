@@ -1,6 +1,7 @@
 import type { EmbeddingChunk, ChatHistoryMessage, Project } from './project-types';
 
-const ZHIPU_API_BASE = 'https://open.bigmodel.cn/api/paas/v4';
+const EMBEDDING_API_BASE = process.env.EMBEDDING_API_BASE || 'https://open.bigmodel.cn/api/paas/v4';
+const EMBEDDING_MODEL = process.env.EMBEDDING_MODEL || 'embedding-3';
 
 // ─── Embedding ───
 
@@ -31,19 +32,19 @@ export async function fetchWithRetry(
   throw lastError;
 }
 
-/** 调用 ZhipuAI Embedding API 向量化查询 */
+/** 调用 Embedding API 向量化查询 */
 export async function embedQuery(text: string): Promise<number[]> {
-  const apiKey = process.env.ZHIPU_API_KEY;
-  if (!apiKey) throw new Error('ZHIPU_API_KEY not configured');
+  const apiKey = process.env.EMBEDDING_API_KEY;
+  if (!apiKey) throw new Error('EMBEDDING_API_KEY not configured');
 
-  const res = await fetchWithRetry(`${ZHIPU_API_BASE}/embeddings`, {
+  const res = await fetchWithRetry(`${EMBEDDING_API_BASE}/embeddings`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
-      model: 'embedding-3',
+      model: EMBEDDING_MODEL,
       input: text,
       dimensions: 512,
     }),

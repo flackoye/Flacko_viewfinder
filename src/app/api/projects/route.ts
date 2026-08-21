@@ -12,7 +12,8 @@ import {
   fetchWithRetry,
 } from '@/lib/rag';
 
-const ZHIPU_API_BASE = 'https://open.bigmodel.cn/api/paas/v4';
+const LLM_API_BASE = process.env.LLM_API_BASE || 'https://api.deepseek.com/anthropic';
+const LLM_MODEL = process.env.LLM_MODEL || 'deepseek-v4-flash';
 const MAX_QUESTION_LENGTH = 1000;
 const MAX_HISTORY_MESSAGES = 12;
 const MAX_HISTORY_MESSAGE_LENGTH = 2000;
@@ -50,7 +51,7 @@ export async function GET() {
       chunks: chunkCount ?? 0,
       supabaseUrl: process.env.SUPABASE_URL ? '✅ set' : '❌ missing',
       supabaseKey: process.env.SUPABASE_SERVICE_KEY ? '✅ set' : '❌ missing',
-      zhipuKey: process.env.ZHIPU_RAG_API_KEY ? '✅ set' : '❌ missing',
+      llmKey: process.env.LLM_API_KEY ? '✅ set' : '❌ missing',
     });
   } catch (err) {
     return Response.json({ ok: false, error: String(err) });
@@ -136,22 +137,23 @@ export async function POST(request: NextRequest) {
       ? buildGuidedPrompt(safeHistory, question.trim(), topChunks, projects as Project[], category)
       : buildAssistantPrompt(safeHistory, question.trim(), topChunks, projects as Project[]);
 
-    // 流式调用 GLM
-    const apiKey = process.env.ZHIPU_RAG_API_KEY;
+    // 流式调用 LLM（anthropic Messages 兼容接口）
+    const apiKey = process.env.LLM_API_KEY;
     if (!apiKey) {
       return errorResponse('AI 服务未配置', 503);
     }
 
-    const glmRes = await fetchWithRetry(
-      `${ZHIPU_API_BASE}/chat/completions`,
+    const llmRes = await fetchWithRetry(
+      `${LLM_API_BASE}/v1/messages`,
       {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`,
+          'x-api-key': apiKey,
+          'anthropic-version': '2023-06-01',
         },
         body: JSON.stringify({
-          model: process.env.ZHIPU_MODEL || 'glm-4.7',
+          model: LLM_MODEL,
           messages: [{ role: 'user', content: prompt }],
           stream: true,
           temperature: 0.7,
@@ -163,17 +165,17 @@ export async function POST(request: NextRequest) {
       1000,  // 基础延迟 1s → 1s, 2s, 4s
     );
 
-    if (!glmRes.ok) {
-      const errText = await glmRes.text();
-      console.error('GLM API error:', glmRes.status, errText);
+    if (!llmRes.ok) {
+      const errText = await llmRes.text();
+      console.error('LLM API error:', llmRes.status, errText);
       let detail = 'AI 服务暂时不可用';
       try {
         const errJson = JSON.parse(errText);
         if (errJson.error?.message) detail = errJson.error.message;
       } catch { /* keep default */ }
-      if (glmRes.status === 429) {
+      if (llmRes.status === 429) {
         detail = '服务繁忙，请稍后重试';
-      } else if (glmRes.status === 408 || glmRes.status === 504) {
+      } else if (llmRes.status === 408 || llmRes.status === 504) {
         detail = 'AI 服务响应超时，请重试';
       }
       return errorResponse(detail, 502);
@@ -223,7 +225,7 @@ export async function POST(request: NextRequest) {
         };
 
         try {
-          const reader = glmRes.body!.getReader();
+          const reader = llmRes.body!.getReader();
           const decoder = new TextDecoder();
           let buffer = '';
 
@@ -240,14 +242,17 @@ export async function POST(request: NextRequest) {
               if (!trimmed || !trimmed.startsWith('data:')) continue;
 
               const dataStr = trimmed.slice(5).trim();
-              if (dataStr === '[DONE]') continue;
+              if (!dataStr || dataStr === '[DONE]') continue;
 
               try {
+                // anthropic 兼容流式：content_block_delta.delta.type === 'text_delta'
                 const parsed = JSON.parse(dataStr);
-                const content = parsed.choices?.[0]?.delta?.content || '';
-                if (content) {
-                  fullText += content;
-                  send({ type: 'chunk', content });
+                if (parsed.type === 'content_block_delta' && parsed.delta?.type === 'text_delta') {
+                  const content = parsed.delta.text || '';
+                  if (content) {
+                    fullText += content;
+                    send({ type: 'chunk', content });
+                  }
                 }
               } catch {
                 // 跳过不合法的 JSON
@@ -257,7 +262,7 @@ export async function POST(request: NextRequest) {
 
           // 正常完成：后处理
           if (fullText.length === 0) {
-            // GLM 返回空响应（限流/故障），通知前端
+            // LLM 返回空响应（限流/故障），通知前端
             send({ type: 'done', error: 'empty_response' });
           } else {
             finalizeStream(fullText, send);

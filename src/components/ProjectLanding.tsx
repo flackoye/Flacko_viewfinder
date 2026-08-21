@@ -40,7 +40,7 @@ const PIPELINE_STEPS = [
   { icon: '✂️', label: '文本分块', desc: 'Markdown 感知切割' },
   { icon: '🧮', label: '向量化', desc: 'Embedding-3 · 512 维' },
   { icon: '🎯', label: '语义检索', desc: 'Cosine Top-K' },
-  { icon: '🤖', label: '智能生成', desc: 'GLM 流式输出' },
+  { icon: '🤖', label: '智能生成', desc: 'LLM 流式输出' },
 ];
 
 export default function ProjectLanding({
