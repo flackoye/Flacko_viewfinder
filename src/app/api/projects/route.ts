@@ -9,7 +9,7 @@ import {
   parseOptions,
   parseSuggestions,
   parseGuidedProgress,
-  resolveProjectRefs,
+  parseProjectRefs,
   fetchWithRetry,
 } from '@/lib/rag';
 
@@ -25,11 +25,63 @@ function envInt(name: string, fallback: number, min: number, max: number): numbe
 const MAX_HISTORY_MESSAGES = envInt('RAG_MAX_HISTORY_MESSAGES', 30, 12, 60);
 const MAX_HISTORY_MESSAGE_LENGTH = envInt('RAG_MAX_HISTORY_MESSAGE_LENGTH', 4000, 1000, 12000);
 const MAX_OUTPUT_TOKENS = envInt('RAG_MAX_OUTPUT_TOKENS', 4096, 1024, 16384);
-const MATCH_COUNT = envInt('RAG_MATCH_COUNT', 5, 1, 10);
+const MATCH_COUNT = envInt('RAG_MATCH_COUNT', 8, 1, 12);
 const MAX_CANDIDATE_CARDS = envInt('RAG_MAX_CANDIDATE_CARDS', 6, 1, 10);
 const RETRIEVAL_CONTEXT_LENGTH = envInt('RAG_RETRIEVAL_CONTEXT_LENGTH', 6000, 1000, 16000);
 
 type MatchedChunk = EmbeddingChunk & { score?: number };
+
+async function resolveRecommendedProjects(
+  text: string,
+  candidates: Project[],
+): Promise<Project[]> {
+  const explicitRefs = parseProjectRefs(text)
+    .filter(ref => /^[\w.-]+\/[\w.-]+$/.test(ref))
+    .slice(0, MAX_CANDIDATE_CARDS);
+
+  // `<project>` 是唯一的卡片授权信号。正文中的仓库名可能只是比较或否定项，
+  // 不能再通过模糊扫描将它们误渲染为推荐结果。
+  if (explicitRefs.length === 0) {
+    return [];
+  }
+
+  const projectByName = new Map(
+    candidates.map(project => [project.full_name.toLowerCase(), project]),
+  );
+  const missingRefs = explicitRefs.filter(ref => !projectByName.has(ref.toLowerCase()));
+
+  // 合法标签可能引用了项目表中已有、但未进入本轮 top chunks 的仓库。
+  // 补查其元数据，避免正文有推荐而卡片缺失；查不到时不会用其他候选顶替。
+  if (missingRefs.length > 0) {
+    try {
+      const { data, error } = await supabase
+        .from('projects')
+        .select('*')
+        .in('full_name', missingRefs);
+
+      if (error) {
+        console.warn('Failed to resolve recommended project metadata:', error.message);
+      } else {
+        for (const project of (data ?? []) as Project[]) {
+          projectByName.set(project.full_name.toLowerCase(), project);
+        }
+      }
+    } catch (error) {
+      console.warn('Failed to resolve recommended project metadata:', error);
+    }
+  }
+
+  const ordered = explicitRefs
+    .map(ref => projectByName.get(ref.toLowerCase()))
+    .filter((project): project is Project => project !== undefined);
+
+  const unresolvedRefs = explicitRefs.filter(ref => !projectByName.has(ref.toLowerCase()));
+  if (unresolvedRefs.length > 0) {
+    console.warn('LLM referenced projects missing from project index:', unresolvedRefs);
+  }
+
+  return [...new Map(ordered.map(project => [project.id, project])).values()];
+}
 
 function errorResponse(error: string, status: number) {
   return Response.json({ error }, { status });
@@ -250,7 +302,7 @@ export async function POST(request: NextRequest) {
     let fullText = '';
 
     // 后处理：解析选项 / 建议 / 项目引用（正常完成和流中断共用）
-    const finalizeStream = (text: string, send: (data: object) => void) => {
+    const finalizeStream = async (text: string, send: (data: object) => void) => {
       const options = parseOptions(text);
       if (options.length > 0) send({ type: 'options', items: options });
 
@@ -263,9 +315,7 @@ export async function POST(request: NextRequest) {
       const canEmitProjects = mode === 'assistant'
         || (previousGuidedProgress?.ready === true && currentProgress?.ready === true);
       if (canEmitProjects) {
-        const outputProjects = candidateProjects.length <= MAX_CANDIDATE_CARDS
-          ? candidateProjects
-          : resolveProjectRefs(text, candidateProjects).slice(0, MAX_CANDIDATE_CARDS);
+        const outputProjects = await resolveRecommendedProjects(text, candidateProjects);
         if (outputProjects.length > 0) send({ type: 'projects', projects: outputProjects });
       }
     };
@@ -317,14 +367,14 @@ export async function POST(request: NextRequest) {
             // LLM 返回空响应（限流/故障），通知前端
             send({ type: 'done', error: 'empty_response' });
           } else {
-            finalizeStream(fullText, send);
+            await finalizeStream(fullText, send);
             send({ type: 'done' });
           }
         } catch (err) {
           console.error('Stream error:', err);
           // 已有部分输出 → 保留给用户，执行后处理后正常结束
           if (fullText.length > 0) {
-            finalizeStream(fullText, send);
+            await finalizeStream(fullText, send);
             send({ type: 'done' });
           } else {
             send({ type: 'done', error: 'Stream interrupted' });

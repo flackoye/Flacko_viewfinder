@@ -141,7 +141,7 @@ data: {"type":"done"}
 | `options` | `{ items: string[] }` | 最多 8 个 | 引导模式的结构化选项 |
 | `suggestions` | `{ items: string[] }` | 最多 5 个 | 回答后的追问建议 |
 | `guided_progress` | `{ progress: GuidedProgress }` | 引导模式每轮最多 1 个 | 方向、背景、需求、约束的调查完成状态 |
-| `projects` | `{ projects: Project[] }` | 默认最多 5 个候选 | 可渲染的项目卡片；引导模式仅在调查完整并经下一轮确认后发送 |
+| `projects` | `{ projects: Project[] }` | 默认最多 6 个推荐结果 | 只渲染模型通过 `<project>` 明确推荐且项目表中真实存在的仓库；不会把整个向量候选池作为替代结果发送。引导模式仅在调查完整并经下一轮确认后发送 |
 | `done` | `{ error?: string }` | 1 个 | 流结束；空响应或中断时可能带 `error` |
 
 `Project`：
@@ -277,7 +277,7 @@ LLM 与 Embedding 是两颗独立 Key（品牌不同）、可能不同账号；�
 
 当前 DeepSeek V4 对话请求显式传入 `thinking: { type: "disabled" }`。V4 默认开启思考模式；在 RAG 长提示与较小 `max_tokens` 下，可能只产生 `thinking_delta` 而没有可展示的 `text_delta`。项目推荐更依赖稳定正文和 `<project>` 结构化标签，因此使用非思考模式。
 
-站内 RAG 默认单次输出上限为 4096 token、保留最近 30 条历史消息、每条最多 4000 字符。分别可通过 `RAG_MAX_OUTPUT_TOKENS`、`RAG_MAX_HISTORY_MESSAGES`、`RAG_MAX_HISTORY_MESSAGE_LENGTH` 调整。候选检索数与卡片上限使用 `RAG_MATCH_COUNT`、`RAG_MAX_CANDIDATE_CARDS` 调整。引导模式会把最近的用户回答合并为最多 6000 字符的检索查询，避免最后一句“开始推荐”稀释完整需求；窗口由 `RAG_RETRIEVAL_CONTEXT_LENGTH` 控制。
+站内 RAG 默认单次输出上限为 4096 token、保留最近 30 条历史消息、每条最多 4000 字符。分别可通过 `RAG_MAX_OUTPUT_TOKENS`、`RAG_MAX_HISTORY_MESSAGES`、`RAG_MAX_HISTORY_MESSAGE_LENGTH` 调整。默认检索 8 个 chunk，最多渲染 6 个明确推荐的仓库，可通过 `RAG_MATCH_COUNT`、`RAG_MAX_CANDIDATE_CARDS` 调整。引导模式会把最近的用户回答合并为最多 6000 字符的检索查询，避免最后一句“开始推荐”稀释完整需求；窗口由 `RAG_RETRIEVAL_CONTEXT_LENGTH` 控制。
 
 ## 7. 兼容性与安全约束
 
@@ -285,4 +285,5 @@ LLM 与 Embedding 是两颗独立 Key（品牌不同）、可能不同账号；�
 - 不要把 `SUPABASE_SERVICE_KEY` 写入 `NEXT_PUBLIC_*` 变量。
 - SSE 客户端必须容忍事件被拆包，并保留未完成行到下一次读取。
 - LLM 返回的 `<project>`、`<options>`、`<suggestions>` 是内部渲染协议，不是可信 HTML；展示前会移除标签。
+- `<project>` 是生成仓库卡片的唯一授权信号。正文中裸写、比较或否定某个仓库不会触发卡片，防止将“不推荐项”误渲染成结果。
 - 当前接口尚未实现用户级限流。公开推广或访问量增长前，应增加 IP/会话级速率限制、调用预算和监控。

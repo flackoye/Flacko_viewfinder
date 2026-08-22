@@ -116,7 +116,9 @@ const GUIDED_SYSTEM_PROMPT = `你是「万象索骥」引导式项目导航员�
 
 ═══ 输出格式（严格遵守）═══
 - 中文回答，技术术语保留英文
-- 只推荐检索结果中真实存在的项目
+- 优先推荐本轮“优先候选仓库全名”列表中的项目
+- 若优先候选明显漏掉更匹配的知名仓库，可以补充你高度确信真实存在的精确 owner/repo；后端会再次核验项目索引
+- 不得拿不相关候选凑数，也不得虚构仓库
 - 每轮给出 3-4 个选项（用 <options> 标签，JSON 数组）：
   <options>
   ["选项1", "选项2", "选项3"]
@@ -142,7 +144,9 @@ const ASSISTANT_SYSTEM_PROMPT = `你是「万象索骥」AI 项目助手。直�
 
 输出格式（严格遵守）：
 - 中文回答，技术术语保留英文
-- 只推荐检索结果中真实存在的项目
+- 优先推荐本轮“优先候选仓库全名”列表中的项目
+- 若优先候选明显漏掉更匹配的知名仓库，可以补充你高度确信真实存在的精确 owner/repo；后端会再次核验项目索引
+- 如果没有足够合适的项目，直接说明候选不足，不得拿不相关项目凑数或虚构仓库
 - ⚠️ 推荐项目时必须用 <project> 标签包裹全名，否则无法渲染卡片：
   正确: <project>facebookresearch/AugLy</project>
   错误: facebookresearch/AugLy（裸写不生效！）
@@ -187,6 +191,9 @@ export function buildGuidedPrompt(
   const previousState = previousProgress
     ? JSON.stringify(previousProgress)
     : '（尚无已确认状态）';
+  const allowedProjects = canRecommend
+    ? projects.map(project => project.full_name).join('\n')
+    : '（调查阶段无可推荐仓库）';
 
   return `${GUIDED_SYSTEM_PROMPT}
 
@@ -201,6 +208,9 @@ ${formatHistory(history)}${categoryNote}
 
 检索到的项目片段：
 ${retrievalContext}
+
+优先候选仓库全名（优先逐字使用以下值；名单外项目必须使用精确 owner/repo 并接受后端核验）：
+${allowedProjects}
 
 用户说：${question}`;
 }
@@ -238,6 +248,7 @@ export function buildAssistantPrompt(
   chunks: EmbeddingChunk[],
   projects: Project[],
 ): string {
+  const allowedProjects = projects.map(project => project.full_name).join('\n');
   return `${ASSISTANT_SYSTEM_PROMPT}
 
 对话历史：
@@ -245,6 +256,9 @@ ${formatHistory(history)}
 
 检索到的项目片段：
 ${formatChunks(chunks, projects)}
+
+优先候选仓库全名（优先逐字使用以下值；名单外项目必须使用精确 owner/repo 并接受后端核验）：
+${allowedProjects}
 
 用户说：${question}`;
 }
@@ -317,34 +331,6 @@ export function parseProjectRefs(text: string): string[] {
     .map(match => normalizeProjectRef(match[1]));
 
   return [...new Set([...tagged, ...githubUrls].filter(Boolean))];
-}
-
-function escapeRegExp(value: string): string {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
-/** 将模型的标签、链接或正文仓库名稳定映射回本次检索到的真实项目。 */
-export function resolveProjectRefs(text: string, projects: Project[]): Project[] {
-  const explicitRefs = parseProjectRefs(text).map(ref => ref.toLowerCase());
-  const visibleText = stripTags(text).toLowerCase();
-  const uniqueNames = new Map<string, number>();
-
-  for (const project of projects) {
-    const name = project.name.toLowerCase();
-    uniqueNames.set(name, (uniqueNames.get(name) ?? 0) + 1);
-  }
-
-  return projects.filter(project => {
-    const fullName = project.full_name.toLowerCase();
-    const name = project.name.toLowerCase();
-
-    if (explicitRefs.some(ref => ref === fullName || (!ref.includes('/') && ref === name))) return true;
-    if (visibleText.includes(fullName)) return true;
-    if ((uniqueNames.get(name) ?? 0) !== 1 || name.length < 3) return false;
-
-    const namePattern = new RegExp(`(^|[^\\w.-])${escapeRegExp(name)}(?=$|[^\\w.-])`, 'i');
-    return namePattern.test(visibleText);
-  });
 }
 
 /** 从显示文本中移除所有标签 */
