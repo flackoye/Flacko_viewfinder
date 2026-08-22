@@ -1,4 +1,4 @@
-import { Star, ExternalLink, Code2 } from 'lucide-react';
+import { ArrowUpRight, Code2, Gauge, GitFork, ScanSearch, Star } from 'lucide-react';
 import type { Project } from '@/lib/project-types';
 
 function formatStars(n: number): string {
@@ -6,54 +6,93 @@ function formatStars(n: number): string {
   return String(n);
 }
 
+function formatUpdatedAt(value: string): string {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return '未知';
+  return new Intl.DateTimeFormat('zh-CN', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(date).replaceAll('/', '.');
+}
+
 export default function ProjectCard({ project }: { project: Project }) {
+  const [owner, repoName = project.name] = project.full_name.split('/');
+  const matchPercent = project.match_score === undefined
+    ? null
+    : Math.round(Math.min(1, Math.max(0, project.match_score)) * 100);
+
   return (
     <a
       href={project.html_url}
       target="_blank"
       rel="noopener noreferrer"
-      className="glass block overflow-hidden hover-lift group relative"
+      className="project-scan-card group"
     >
-      {/* 顶部渐变条 */}
-      <div className="h-1 bg-gradient-to-r from-klein via-accent to-accent-light" />
+      <span className="project-scan-card__beam" aria-hidden />
+      <span className="project-scan-card__corner project-scan-card__corner--tl" aria-hidden />
+      <span className="project-scan-card__corner project-scan-card__corner--br" aria-hidden />
 
-      <div className="p-5">
-        {/* 分类标签 */}
-        <span className="inline-block text-[10px] font-medium px-2 py-0.5 rounded-full bg-klein/15 text-klein-light mb-3">
-          {project.category}
-        </span>
-
-        {/* 名称 + Stars */}
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <h4 className="font-semibold text-text group-hover:text-accent transition-colors leading-snug text-sm">
-            {project.full_name}
-          </h4>
-          <div className="flex items-center gap-1 text-accent shrink-0">
-            <Star className="w-3.5 h-3.5 fill-accent/40" />
-            <span className="text-xs font-mono">{formatStars(project.stars)}</span>
-          </div>
+      <div className="project-scan-card__body">
+        <div className="project-scan-card__category">
+          <GitFork aria-hidden />
+          <span>{project.category}</span>
         </div>
 
-        {/* 描述 */}
-        <p className="text-xs text-text-muted leading-relaxed line-clamp-3 mb-4">
+        <div className="project-scan-card__identity">
+          <span>{owner}</span>
+          <h4>{repoName}</h4>
+        </div>
+
+        <p className="project-scan-card__description">
           {project.description || '暂无描述'}
         </p>
 
-        {/* 底部：标签 + 外链 */}
-        <div className="flex items-center justify-between gap-2 pt-3 border-t border-border/40">
-          <div className="flex items-center gap-2 flex-wrap">
-            {project.language && (
-              <span className="inline-flex items-center gap-1 text-[10px] text-text-muted">
-                <Code2 className="w-3 h-3" />
-                {project.language}
-              </span>
-            )}
-            {project.topics?.slice(0, 2).map(topic => (
-              <span key={topic} className="tag text-[10px]">{topic}</span>
-            ))}
+        {matchPercent !== null && (
+          <div className="project-scan-card__match">
+            <div>
+              <span><Gauge aria-hidden /> 向量匹配度</span>
+              <strong>{matchPercent}%</strong>
+            </div>
+            <span className="project-scan-card__match-track" aria-hidden>
+              <i style={{ width: `${matchPercent}%` }} />
+            </span>
           </div>
-          <ExternalLink className="w-3.5 h-3.5 text-text-dim group-hover:text-accent transition-colors shrink-0" />
-        </div>
+        )}
+
+        <dl className="project-scan-card__telemetry">
+          <div>
+            <dt><Star aria-hidden /> 星标</dt>
+            <dd>{formatStars(project.stars)}</dd>
+          </div>
+          <div>
+            <dt><Code2 aria-hidden /> 语言</dt>
+            <dd>{project.language || 'N/A'}</dd>
+          </div>
+          <div>
+            <dt>最近更新</dt>
+            <dd>{formatUpdatedAt(project.updated_at)}</dd>
+          </div>
+        </dl>
+
+        {project.topics?.length > 0 && (
+          <div className="project-scan-card__topics">
+            {project.topics.slice(0, 3).map(topic => <span key={topic}>#{topic}</span>)}
+          </div>
+        )}
+
+        {project.matched_sections && project.matched_sections.length > 0 && (
+          <div className="project-scan-card__evidence">
+            <span><ScanSearch aria-hidden /> 命中内容</span>
+            <div>
+              {project.matched_sections.map(section => <span key={section}>{section}</span>)}
+            </div>
+          </div>
+        )}
+
+        <footer className="project-scan-card__footer">
+          <span className="project-scan-card__open">打开仓库 <ArrowUpRight aria-hidden /></span>
+        </footer>
       </div>
     </a>
   );

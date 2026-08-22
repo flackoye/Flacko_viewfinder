@@ -72,7 +72,7 @@ Accept: text/event-stream
 | 字段 | 类型 | 必需 | 约束 | 说明 |
 |---|---|:---:|---|---|
 | `question` | `string` | 是 | 去空格后 1–1000 字符 | 当前问题 |
-| `history` | `ChatHistoryMessage[]` | 否 | 最多使用最后 12 条；单条最多 2000 字符 | 仅接受 `role` 和 `content` |
+| `history` | `ChatHistoryMessage[]` | 否 | 默认使用最后 30 条；单条最多 4000 字符，可通过环境变量调整 | 仅接受 `role` 和 `content` |
 | `mode` | `"guided" \| "assistant"` | 否 | 默认 `assistant` | 引导探索或自由对话 |
 | `category` | `string` | 否 | 必须是下表分类之一 | 引导模式的检索过滤条件 |
 
@@ -140,7 +140,8 @@ data: {"type":"done"}
 | `chunk` | `{ content: string }` | 不定 | LLM 增量文本 |
 | `options` | `{ items: string[] }` | 最多 8 个 | 引导模式的结构化选项 |
 | `suggestions` | `{ items: string[] }` | 最多 5 个 | 回答后的追问建议 |
-| `projects` | `{ projects: Project[] }` | 由命中结果决定 | 可渲染的项目卡片 |
+| `guided_progress` | `{ progress: GuidedProgress }` | 引导模式每轮最多 1 个 | 方向、背景、需求、约束的调查完成状态 |
+| `projects` | `{ projects: Project[] }` | 默认最多 5 个候选 | 可渲染的项目卡片；引导模式仅在调查完整并经下一轮确认后发送 |
 | `done` | `{ error?: string }` | 1 个 | 流结束；空响应或中断时可能带 `error` |
 
 `Project`：
@@ -157,8 +158,12 @@ interface Project {
   topics: string[];
   category: string;
   updated_at: string;
+  match_score?: number;       // 当前查询的向量相似度
+  matched_sections?: string[]; // 命中的 README 章节
 }
 ```
+
+引导模式不再以对话次数判断是否可以推荐。模型每轮输出隐藏的 `guided_state`，服务端只有在 `direction`、`background`、`requirements`、`constraints` 全部完成且上一轮已经确认 `ready` 时，才允许发送仓库卡片。调查期间即使正文意外出现仓库名，也不会触发项目事件。
 
 服务端只加载向量检索命中的项目元数据，不执行每次请求的全表扫描。客户端取消请求时，取消信号会继续传递给上游 LLM 请求。
 
@@ -195,6 +200,8 @@ match_chunks(
 ```
 
 返回字段：`id`、`repo_full_name`、`category`、`section_title`、`chunk_index`、`text`、`score`。`score = 1 - cosine_distance`，结果按余弦距离升序排列。
+
+函数内关闭了 HNSW `indexscan`，对当前数千条 chunk 执行精确扫描。这样可以避免近似索引先选取全局候选、再应用 `filter_category` 时，让 `Data & Training` 等较小分类错误返回空结果。已有 Supabase 项目需要执行 `scripts/fix_match_chunks_filtered.sql` 更新线上函数。
 
 ## 5. 静态数据契约
 
@@ -267,6 +274,10 @@ interface TrendingItem {
 | RSS / HN Algolia | `fetch_trending.py` | 无 | 热点采集 |
 
 LLM 与 Embedding 是两颗独立 Key（品牌不同）、可能不同账号；同账号时仍共享账户级限流额度。
+
+当前 DeepSeek V4 对话请求显式传入 `thinking: { type: "disabled" }`。V4 默认开启思考模式；在 RAG 长提示与较小 `max_tokens` 下，可能只产生 `thinking_delta` 而没有可展示的 `text_delta`。项目推荐更依赖稳定正文和 `<project>` 结构化标签，因此使用非思考模式。
+
+站内 RAG 默认单次输出上限为 4096 token、保留最近 30 条历史消息、每条最多 4000 字符。分别可通过 `RAG_MAX_OUTPUT_TOKENS`、`RAG_MAX_HISTORY_MESSAGES`、`RAG_MAX_HISTORY_MESSAGE_LENGTH` 调整。候选检索数与卡片上限使用 `RAG_MATCH_COUNT`、`RAG_MAX_CANDIDATE_CARDS` 调整。引导模式会把最近的用户回答合并为最多 6000 字符的检索查询，避免最后一句“开始推荐”稀释完整需求；窗口由 `RAG_RETRIEVAL_CONTEXT_LENGTH` 控制。
 
 ## 7. 兼容性与安全约束
 

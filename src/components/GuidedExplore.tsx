@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Send } from 'lucide-react';
-import type { ChatMessage as ChatMessageType, CategoryInfo } from '@/lib/project-types';
+import type { ChatMessage as ChatMessageType, CategoryInfo, GuidedProgress } from '@/lib/project-types';
 import ChatMessage from '@/components/ChatMessage';
 
 /** 根据错误信息分类，返回用户友好的提示 */
@@ -29,11 +29,23 @@ const PHASE_LABELS = [
   { id: 5, title: '精准推荐' },
 ];
 
-function computePhases(round: number, hasProjects: boolean) {
-  const effective = hasProjects ? 5 : Math.min(round, 4);
+const EMPTY_PROGRESS: GuidedProgress = {
+  direction: false,
+  background: false,
+  requirements: false,
+  constraints: false,
+  ready: false,
+};
+
+function computePhases(progress: GuidedProgress, hasProjects: boolean) {
+  const flags = [progress.direction, progress.background, progress.requirements, progress.constraints];
+  let completedCount = 0;
+  while (completedCount < flags.length && flags[completedCount]) completedCount += 1;
+  const activeIndex = hasProjects ? 4 : Math.min(completedCount, 4);
+
   return PHASE_LABELS.map((p, idx) => {
-    if (effective > idx + 1) return { ...p, status: 'completed' as const };
-    if (effective === idx + 1) return { ...p, status: 'active' as const };
+    if (idx < activeIndex) return { ...p, status: 'completed' as const };
+    if (idx === activeIndex) return { ...p, status: 'active' as const };
     return { ...p, status: 'locked' as const };
   });
 }
@@ -44,7 +56,7 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
   const [messages, setMessages] = useState<ChatMessageType[]>([]);
   const [isStreaming, setIsStreaming] = useState(false);
   const [aiOptions, setAiOptions] = useState<string[]>([]);
-  const [round, setRound] = useState(0);
+  const [guidedProgress, setGuidedProgress] = useState<GuidedProgress>(EMPTY_PROGRESS);
   const [hasProjects, setHasProjects] = useState(false);
   const [input, setInput] = useState('');
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -58,7 +70,9 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
     }
   }, [messages, isStreaming, aiOptions]);
 
-  const phases = computePhases(round, hasProjects);
+  const phases = computePhases(guidedProgress, hasProjects);
+  const activePhaseIndex = phases.findIndex(phase => phase.status === 'active');
+  const visiblePhases = phases.slice(0, Math.max(2, activePhaseIndex + 2));
 
   // 核心流式请求函数
   const streamRequest = useCallback(async (
@@ -138,11 +152,21 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
                   return u;
                 });
                 break;
+              case 'guided_progress':
+                if (data.progress && typeof data.progress === 'object') {
+                  setGuidedProgress({
+                    direction: data.progress.direction === true,
+                    background: data.progress.background === true,
+                    requirements: data.progress.requirements === true,
+                    constraints: data.progress.constraints === true,
+                    ready: data.progress.ready === true,
+                  });
+                }
+                break;
               case 'projects':
                 gotProjects = true;
                 setAiOptions([]); // 有项目推荐时清空选项
                 setHasProjects(true);
-                setRound(5);
                 setMessages(prev => {
                   const u = [...prev];
                   const l = u[u.length - 1];
@@ -165,7 +189,6 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
         });
       }
 
-      if (!gotProjects) setRound(prev => prev + 1);
     } catch (err) {
       if ((err as Error).name === 'AbortError') return;
       setMessages(prev => {
@@ -184,7 +207,7 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
   const handleCategoryConfirm = useCallback(() => {
     if (!selectedCategory) return;
     setCategoryConfirmed(true);
-    setRound(1);
+    setGuidedProgress({ ...EMPTY_PROGRESS, direction: true });
     streamRequest(
       `我对 ${selectedCategory} 方向感兴趣，请引导我深入了解`,
       selectedCategory,
@@ -231,12 +254,11 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
       </div>
 
       {/* 动态 Phase Tracker */}
-      <div className="glass p-4 mb-6">
-        <div className="flex items-center gap-1 flex-wrap">
-          {phases.filter(p => p.id <= Math.max(round + 1, 2)).map((phase, idx) => (
-            <div key={phase.id} className="flex items-center gap-1.5">
-              {idx > 0 && <div className="w-4 h-[2px] bg-border shrink-0" />}
-              <div className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] transition-all duration-300 ${
+      <div className="glass guided-phase-rail mb-6">
+        <div className="guided-phase-track">
+          {visiblePhases.map((phase, idx) => (
+            <div key={phase.id} className="guided-phase-step">
+              <div className={`guided-phase-pill ${
                 phase.status === 'completed'
                   ? 'bg-klein/15 text-klein-light border border-klein/30'
                   : phase.status === 'active'
@@ -246,6 +268,7 @@ export default function GuidedExplore({ categories }: GuidedExploreProps) {
                 <span>{phase.status === 'completed' ? '✓' : phase.status === 'active' ? '●' : '○'}</span>
                 <span className="font-medium">{phase.title}</span>
               </div>
+              {idx < visiblePhases.length - 1 && <i className="guided-phase-connector" aria-hidden />}
             </div>
           ))}
         </div>

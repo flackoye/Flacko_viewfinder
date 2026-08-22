@@ -72,11 +72,13 @@ export default function ChatMessage({
 
       {/* 嵌入的项目卡片 */}
       {message.projects && message.projects.length > 0 && (
-        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {message.projects.map(project => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
+        <section className="project-results" aria-label="匹配的 GitHub 仓库">
+          <div className={`project-results__grid ${message.projects.length % 2 === 1 ? 'project-results__grid--odd' : ''}`}>
+            {message.projects.map(project => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+        </section>
       )}
     </div>
   );

@@ -57,6 +57,9 @@ RETURNS TABLE (
   score          FLOAT
 )
 LANGUAGE plpgsql
+-- 数据量目前只有数千个 chunk。分类检索优先保证结果完整性，避免 HNSW
+-- 先取全局近邻、再应用 category 条件时把某个小分类全部过滤掉。
+SET enable_indexscan = off
 AS $$
 BEGIN
   RETURN QUERY

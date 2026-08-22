@@ -1,0 +1,616 @@
+[
+  {
+    "id": "8771fdd97ae0",
+    "title": "SigmanticAI/apex-inference-chip ⭐661",
+    "summary": "An inference chip design that runs a real LLM (Qwen2.5-0.5B) on FPGA — one transformer decoder layer in RTL, every silicon value bit-exact against a golden model. 0.56 tok/s measured, a 140× climb, fu",
+    "url": "https://github.com/SigmanticAI/apex-inference-chip",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-21T17:01:27.375392+00:00",
+    "created_at": "2026-08-17T04:25:26Z",
+    "stars": 661,
+    "language": "Python",
+    "frontier": 83,
+    "signal": 83,
+    "score": 83,
+    "llm_summary": "⭐661 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "37575c5fdd72",
+    "title": "browser-use/macos-harness ⭐660",
+    "summary": "The simplest, thinnest harness that gives an LLM complete freedom to control a Mac.",
+    "url": "https://github.com/browser-use/macos-harness",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-21T17:01:27.375392+00:00",
+    "created_at": "2026-08-17T00:22:20Z",
+    "stars": 660,
+    "language": "Python",
+    "frontier": 83,
+    "signal": 83,
+    "score": 83,
+    "llm_summary": "⭐660 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "bf7b98bf2a79",
+    "title": "Nervercc/gpt_nerver ⭐602",
+    "summary": "ChatGPT Plus automation toolkit: PyQt6 desktop + JSON-RPC registration engine + card/CDK/PayPal/GCash flows",
+    "url": "https://github.com/Nervercc/gpt_nerver",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-21T17:01:27.375392+00:00",
+    "created_at": "2026-08-15T18:51:26Z",
+    "stars": 602,
+    "language": "Python",
+    "frontier": 83,
+    "signal": 83,
+    "score": 83,
+    "llm_summary": "⭐602 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "5d7bef9a02e3",
+    "title": "amitshekhariitbhu/llm-inference-engineering ⭐212",
+    "summary": "Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs.",
+    "url": "https://github.com/amitshekhariitbhu/llm-inference-engineering",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-21T17:01:27.375392+00:00",
+    "created_at": "2026-08-18T03:10:26Z",
+    "stars": 212,
+    "language": "Markdown",
+    "frontier": 77,
+    "signal": 77,
+    "score": 77,
+    "llm_summary": "⭐212 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "6329acb6cdbf",
+    "title": "turkiyeyapayzekaakademisi/llm-rag-memory-ai-agents ⭐116",
+    "summary": "",
+    "url": "https://github.com/turkiyeyapayzekaakademisi/llm-rag-memory-ai-agents",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-21T17:01:27.375392+00:00",
+    "created_at": "2026-08-19T15:26:07Z",
+    "stars": 116,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 70,
+    "score": 61,
+    "llm_summary": "开源项目整合LLM、RAG、记忆与AI代理技术，提供示例实现。",
+    "llm_tags": [
+      "LLM",
+      "RAG",
+      "AI代理",
+      "记忆机制"
+    ]
+  },
+  {
+    "id": "ed8fbd57d9fc",
+    "title": "only-cli/oc ⭐70",
+    "summary": "Turn any website into a compact CLI tailored for AI agents. Browse the web in hundreds of tokens, not tens of thousands.",
+    "url": "https://github.com/only-cli/oc",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-21T17:01:27.375392+00:00",
+    "created_at": "2026-08-18T13:00:30Z",
+    "stars": 70,
+    "language": "JavaScript",
+    "frontier": 62,
+    "signal": 55,
+    "score": 59,
+    "llm_summary": "为AI代理将任意网站转为紧凑CLI，大幅减少浏览token消耗。",
+    "llm_tags": [
+      "AI代理",
+      "Token优化",
+      "CLI工具"
+    ]
+  },
+  {
+    "id": "ccf8e7e4b20d",
+    "title": "Vendredi218/awesome-ai-harness ⭐68",
+    "summary": "The model is the engine; the harness is the car. Curated knowledge on harness engineering — context management, tool design, agent loops, memory, sandboxing, evals. EN/中文",
+    "url": "https://github.com/Vendredi218/awesome-ai-harness",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-21T17:01:27.375392+00:00",
+    "created_at": "2026-08-16T04:57:52Z",
+    "stars": 68,
+    "language": null,
+    "frontier": 50,
+    "signal": 60,
+    "score": 54,
+    "llm_summary": "精选AI harness工程知识，涵盖上下文、工具、Agent循环等实践。",
+    "llm_tags": [
+      "AI工程",
+      "智能体",
+      "知识库"
+    ]
+  },
+  {
+    "id": "8bc460eb8d20",
+    "title": "Zyrexnn/Cybermes ⭐67",
+    "summary": "Autonomous Offensive Security, Bug Bounty & Red Teaming Agent Framework powered by Hermes Agent, specialized reasoning skills, and multi-model LLM orchestration.",
+    "url": "https://github.com/Zyrexnn/Cybermes",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-21T17:01:27.375392+00:00",
+    "created_at": "2026-08-19T13:25:08Z",
+    "stars": 67,
+    "language": "Python",
+    "frontier": 60,
+    "signal": 60,
+    "score": 60,
+    "llm_summary": "开源自主红队智能体框架，多模型编排实现安全自动化。",
+    "llm_tags": [
+      "安全测试",
+      "LLM智能体",
+      "红队"
+    ]
+  },
+  {
+    "id": "6aa8c8c7f1de",
+    "title": "NVIDIA’s coding agent scored 100% on ARC-AGI-3 interactive reasoning benchmark",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1vuhlhn/nvidias_coding_agent_scored_100_on_arcagi3/\"> <img alt=\"NVIDIA’s coding agent scored 100% on ARC-AGI-3 interactive reaso",
+    "url": "https://www.reddit.com/r/singularity/comments/1vuhlhn/nvidias_coding_agent_scored_100_on_arcagi3/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-21T14:15:56+00:00",
+    "frontier": 80,
+    "signal": 50,
+    "score": 68,
+    "llm_summary": "NVIDIA编码代理在ARC-AGI-3推理基准上获得满分，引起社区关注。",
+    "llm_tags": [
+      "编码代理",
+      "推理基准",
+      "AGI"
+    ]
+  },
+  {
+    "id": "b16ad931f539",
+    "title": "I fingerprinted Ox Alpha: same tokenizer as GLM-5.3 (+75 token offset), z.ai's exact error strings, near-identical temp-0 outputs",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Ran three black-box fingerprint tests on stealth/ox-alpha (OpenRouter + OpenCode) vs public GLM-5.3 on z.ai.</p> <p><strong>1. Tokenizer:</strong> I sent 6 texts (EN/",
+    "url": "https://www.reddit.com/r/singularity/comments/1vufbx1/i_fingerprinted_ox_alpha_same_tokenizer_as_glm53/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-21T12:43:54+00:00",
+    "frontier": 75,
+    "signal": 70,
+    "score": 73,
+    "llm_summary": "黑盒测试揭示Ox Alpha与GLM-5.3高度相似",
+    "llm_tags": [
+      "模型指纹",
+      "逆向工程",
+      "GLM",
+      "Tokenizer"
+    ]
+  },
+  {
+    "id": "31c8f84eea22",
+    "title": "AI companies destroy physical books – let's scan rare books before it's too late",
+    "summary": "HN 热度: 646 点赞, 384 评论（外链帖无正文）",
+    "url": "https://annas-archive.pk/blog/physical-destruction.html",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-21T10:05:46+00:00",
+    "points": 646,
+    "num_comments": 384,
+    "frontier": 78,
+    "signal": 78,
+    "score": 78,
+    "llm_summary": "🔥 HN 646赞 384评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "d6ba75dcbe8b",
+    "title": "ReCache: Efficient KV Cache Reuse and Compression for Tool-Augmented LLM Agents",
+    "summary": "arXiv:2608.19662v1 Announce Type: new  Abstract: Agentic language models repeatedly encode tool and skill schemas that recur across requests in different combinations and orders, preventing standard prefix caching from reusing their key--value (KV) states. We introduce \\textbf{ReCache}, a framework for independently caching resource representations while reducing their inference-time computational and memory overhead. Resource-wise attention removes cross-resource interactions and assigns resource-local positions, producing composition-invariant KV blocks. ReCache then restricts resource visibility to contribution-selected layer--KV-head-group routes and retains only invocation-critical fields through structural and semantic pruning. We evaluate ReCache on a benchmark assembled from seven ",
+    "url": "https://arxiv.org/abs/2608.19662",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-21T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 82,
+    "score": 78,
+    "llm_summary": "提出ReCache框架，独立缓存工具资源KV状态，降低代理推理开销",
+    "llm_tags": [
+      "KV缓存",
+      "LLM代理",
+      "推理加速",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "66494f4b5790",
+    "title": "Rule-Compliant Visual Spatial Planning for Multimodal Large Language Models",
+    "summary": "arXiv:2608.20237v1 Announce Type: new  Abstract: Multimodal large language models (MLLMs) combine linguistic reasoning with visual perception, yet their ability to perform visual spatial planning under explicit or previously unseen rule constraints remains underexplored. This setting requires models to jointly understand spatial layouts, interpret natural-language rules, and plan valid actions accordingly. To address this gap, we introduce RuleMaze, a controllable benchmark in which MLLMs must navigate mazes while obeying natural-language rules of varying complexity. RuleMaze isolates rule-compliant spatial planning by requiring accurate perception, rule interpretation, and constrained action planning. To enable scalable and systematic rule construction, we propose Language-Logic-Function ",
+    "url": "https://arxiv.org/abs/2608.20237",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-21T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 78,
+    "score": 75,
+    "llm_summary": "提出RuleMaze基准，评估多模态大模型在规则约束下的视觉空间规划能力。",
+    "llm_tags": [
+      "多模态",
+      "空间规划",
+      "基准测试",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "db8259a0e9f0",
+    "title": "Time-Series Retrieval for Grounding Multimodal Language Models in Remaining Useful Life",
+    "summary": "arXiv:2608.19218v1 Announce Type: cross  Abstract: Large language models (LLMs) and agentic AI systems are increasingly being explored for domain-specific maintenance and prognostics tasks, raising the question of whether they can effectively support prognostics and health management (PHM). In this paper, we investigate remaining useful life (RUL) estimation with multimodal large language models (MLLMs) grounded through time-series retrieval. We propose a framework in which historically similar degradation segments are retrieved from the training set and, together with the test trajectory, transformed into a visual comparison artifact that is processed by the MLLM through a structured multimodal prompt. The approach is evaluated on the FD001 partition of the C-MAPSS benchmark under repeate",
+    "url": "https://arxiv.org/abs/2608.19218",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-21T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 55,
+    "score": 62,
+    "llm_summary": "提出用时间序列检索为多模态语言模型提供剩余寿命预测基准",
+    "llm_tags": [
+      "多模态LLM",
+      "时间序列检索",
+      "寿命预测"
+    ]
+  },
+  {
+    "id": "8e2a64e995c6",
+    "title": "Automated Summarization of Financial News Using Large Language Models and Retrieval-Augmented Generation: An Early Empirical Study (Fall 2023)",
+    "summary": "arXiv:2608.19526v1 Announce Type: cross  Abstract: Stock market analysts and investors face a daily challenge: too much financial news, too little time. Manually reading and synthesizing hundreds of company-specific articles is impractical, yet missing key information can directly affect investment decisions. This project, conducted at George Washington University in Fall 2023, explores whether Large Language Models can automate this process reliably. We built a pipeline that pulls news articles from the News API, company background from Wikipedia, and stock price data from Yahoo Finance for ten major companies (AAPL, MSFT, GOOGL, AMZN, META, TSLA, JPM, NVDA, WMT, DIS). Because LLMs cannot directly process numerical tables, we developed a simple but effective template that converts stock d",
+    "url": "https://arxiv.org/abs/2608.19526",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-21T04:00:00+00:00",
+    "frontier": 50,
+    "signal": 75,
+    "score": 62,
+    "llm_summary": "利用LLM和RAG自动摘要金融新闻，构建了完整流程但未提供性能数据。",
+    "llm_tags": [
+      "金融摘要",
+      "RAG",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "01030356039f",
+    "title": "PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment",
+    "summary": "arXiv:2608.19598v1 Announce Type: cross  Abstract: Direct Preference Optimization (DPO) has emerged as an effective approach for aligning large language models (LLMs) with human preferences. However, its adaptation to multimodal settings remains unexplored. Through representational analysis, we identify a key limitation in multimodal preference optimization, which we term visual insensitivity: models often fail to distinguish between images and those with critical visual context removed. Our theoretical analysis further uncovers two manifestations of this problem, namely Across-Image Insensitivity and Within-Image Insensitivity. To address these challenges, we propose Perception-Enhanced Alignment DPO (PEA-DPO), a framework for multimodal LLMs alignment, which explicitly leverages visual p",
+    "url": "https://arxiv.org/abs/2608.19598",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-21T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 50,
+    "score": 61,
+    "llm_summary": "提出感知增强的直接偏好优化方法，解决多模态对齐中视觉不敏感问题。",
+    "llm_tags": [
+      "多模态对齐",
+      "偏好优化",
+      "DPO改进"
+    ]
+  },
+  {
+    "id": "517b45f6da9e",
+    "title": "PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment",
+    "summary": "arXiv:2608.19598v1 Announce Type: cross  Abstract: Direct Preference Optimization (DPO) has emerged as an effective approach for aligning large language models (LLMs) with human preferences. However, its adaptation to multimodal settings remains unexplored. Through representational analysis, we identify a key limitation in multimodal preference optimization, which we term visual insensitivity: models often fail to distinguish between images and those with critical visual context removed. Our theoretical analysis further uncovers two manifestations of this problem, namely Across-Image Insensitivity and Within-Image Insensitivity. To address these challenges, we propose Perception-Enhanced Alignment DPO (PEA-DPO), a framework for multimodal LLMs alignment, which explicitly leverages visual p",
+    "url": "https://arxiv.org/abs/2608.19598",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-21T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 56,
+    "score": 64,
+    "llm_summary": "提出感知增强的DPO方法，解决多模态对齐中视觉不敏感问题。",
+    "llm_tags": [
+      "多模态对齐",
+      "偏好优化",
+      "视觉感知"
+    ]
+  },
+  {
+    "id": "31c8f84eea22",
+    "title": "AI companies destroy physical books – let's scan rare books before it's too late",
+    "summary": "HN 热度: 383 点赞, 326 评论（外链帖无正文）",
+    "url": "https://annas-archive.gl/blog/physical-destruction.html",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-21T02:37:47+00:00",
+    "points": 383,
+    "num_comments": 326,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 383赞 326评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "5aa788f410c8",
+    "title": "Measuring benchmark optimization in speech recognition",
+    "summary": "",
+    "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-08-21T00:00:00+00:00",
+    "frontier": 58,
+    "signal": 82,
+    "score": 68,
+    "llm_summary": "分析语音识别基准测试过拟合问题，提出测量优化方法。",
+    "llm_tags": [
+      "语音识别",
+      "基准测试",
+      "模型评估"
+    ]
+  },
+  {
+    "id": "da22f664787e",
+    "title": "Show HN: Huzzah – a novel approach to coding with AI",
+    "summary": "HN ⭐353 203评 | Hello everyone. I've been working on this experimental editor called Huzzah. I've been working almost exclusively with coding agents since January of this year, and over the past few months I began to feel utterly exhausted by them. They're great, but I'm finding it more and more tedious to write fu",
+    "url": "https://www.danielvaughn.dev/posts/huzzah/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-20T19:05:36+00:00",
+    "points": 353,
+    "num_comments": 203,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 353赞 203评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "d94f2eaf29fb",
+    "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
+    "summary": "",
+    "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-08-20T16:52:57+00:00",
+    "frontier": 72,
+    "signal": 68,
+    "score": 70,
+    "llm_summary": "LFM2.5-DSpark实现推理速度最高提升3.2倍，介绍优化方法。",
+    "llm_tags": [
+      "推理优化",
+      "模型加速",
+      "语言模型"
+    ]
+  },
+  {
+    "id": "7a21afd9d9e4",
+    "title": "Don't paste the AI, please",
+    "summary": "HN 热度: 1024 点赞, 572 评论（外链帖无正文）",
+    "url": "https://dontpastetheai.com/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-20T08:20:44+00:00",
+    "points": 1024,
+    "num_comments": 572,
+    "frontier": 80,
+    "signal": 80,
+    "score": 80,
+    "llm_summary": "🔥 HN 1024赞 572评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "6f9af1e77dc2",
+    "title": "How Much Memory Does Your Agent Actually Need?",
+    "summary": "",
+    "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-08-18T18:09:38+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "探讨AI智能体实际内存需求，提供量化分析与优化建议",
+    "llm_tags": [
+      "智能体",
+      "内存优化",
+      "性能调优"
+    ]
+  },
+  {
+    "id": "226342567b5e",
+    "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
+    "summary": "",
+    "url": "https://huggingface.co/blog/multi-vector-encoder",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-08-18T00:00:00+00:00",
+    "frontier": 50,
+    "signal": 75,
+    "score": 60,
+    "llm_summary": "介绍多向量后期交互嵌入模型在Sentence Transformers中的实现",
+    "llm_tags": [
+      "嵌入模型",
+      "后期交互",
+      "多向量"
+    ]
+  },
+  {
+    "id": "0341b5960781",
+    "title": "GPT-5.6 Sol Pricing Cut by 50% on OpenRouter",
+    "summary": "HN 热度: 632 点赞, 448 评论（外链帖无正文）",
+    "url": "https://openrouter.ai/openai/gpt-5.6-sol",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-17T21:03:18+00:00",
+    "points": 632,
+    "num_comments": 448,
+    "frontier": 78,
+    "signal": 78,
+    "score": 78,
+    "llm_summary": "🔥 HN 632赞 448评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "06aa2620175d",
+    "title": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
+    "summary": "HN 热度: 1054 点赞, 856 评论（外链帖无正文）",
+    "url": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-17T20:46:10+00:00",
+    "points": 1054,
+    "num_comments": 856,
+    "frontier": 80,
+    "signal": 80,
+    "score": 80,
+    "llm_summary": "🔥 HN 1054赞 856评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "ed6eed03a259",
+    "title": "AI;DR (AI; Didn't Read)",
+    "summary": "HN 热度: 1101 点赞, 689 评论（外链帖无正文）",
+    "url": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-17T19:47:15+00:00",
+    "points": 1101,
+    "num_comments": 689,
+    "frontier": 80,
+    "signal": 80,
+    "score": 80,
+    "llm_summary": "🔥 HN 1101赞 689评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "1bd90c3293c0",
+    "title": "Same Cluster, 33 Points More Utilization: What Changed Was the Order",
+    "summary": "",
+    "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-08-17T19:46:21+00:00",
+    "frontier": 60,
+    "signal": 80,
+    "score": 68,
+    "llm_summary": "介绍仅通过调整调度顺序将集群利用率提升33个百分点的实践",
+    "llm_tags": [
+      "集群调度",
+      "资源优化",
+      "GPU利用率"
+    ]
+  },
+  {
+    "id": "a57cea204666",
+    "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+    "summary": "HN 热度: 424 点赞, 157 评论（外链帖无正文）",
+    "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-17T14:18:38+00:00",
+    "points": 424,
+    "num_comments": 157,
+    "frontier": 76,
+    "signal": 76,
+    "score": 76,
+    "llm_summary": "🔥 HN 424赞 157评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "2d9fa508e1b6",
+    "title": "How to disable or avoid intrusive AI",
+    "summary": "HN 热度: 338 点赞, 197 评论（外链帖无正文）",
+    "url": "https://www.librarian.net/notoai/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-17T14:07:56+00:00",
+    "points": 338,
+    "num_comments": 197,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 338赞 197评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "e09f762127ed",
+    "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+    "summary": "HN 热度: 365 点赞, 170 评论（外链帖无正文）",
+    "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-17T12:09:42+00:00",
+    "points": 365,
+    "num_comments": 170,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 365赞 170评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "f1f941d30b35",
+    "title": "AI isn’t outthinking mathematicians, it’s out-remembering them",
+    "summary": "HN 热度: 632 点赞, 521 评论（外链帖无正文）",
+    "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-15T18:13:02+00:00",
+    "points": 632,
+    "num_comments": 521,
+    "frontier": 78,
+    "signal": 78,
+    "score": 78,
+    "llm_summary": "🔥 HN 632赞 521评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "da1ab3290947",
+    "title": "Working with AI feels more like leadership than coding",
+    "summary": "HN 热度: 338 点赞, 203 评论（外链帖无正文）",
+    "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-15T10:39:41+00:00",
+    "points": 338,
+    "num_comments": 203,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 338赞 203评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  }
+]

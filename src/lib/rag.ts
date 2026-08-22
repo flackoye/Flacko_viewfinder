@@ -1,4 +1,4 @@
-import type { EmbeddingChunk, ChatHistoryMessage, Project } from './project-types';
+import type { EmbeddingChunk, ChatHistoryMessage, GuidedProgress, Project } from './project-types';
 
 const EMBEDDING_API_BASE = process.env.EMBEDDING_API_BASE || 'https://open.bigmodel.cn/api/paas/v4';
 const EMBEDDING_MODEL = process.env.EMBEDDING_MODEL || 'embedding-3';
@@ -126,9 +126,12 @@ const GUIDED_SYSTEM_PROMPT = `你是「万象索骥」引导式项目导航员�
   错误: facebookresearch/AugLy（裸写不生效！）
   每个推荐项目都必须单独用 <project> 标签包裹，不要遗漏。
 - 追问建议用 <suggestions>["a","b"]</suggestions>
+- 每轮末尾必须输出当前调查状态（标签只供程序读取，不要解释）：
+  <guided_state>{"direction":true,"background":false,"requirements":false,"constraints":false,"ready":false}</guided_state>
+- ready 只有在 direction、background、requirements、constraints 四项都已从用户回答中得到充分信息时才能为 true；不得根据轮数猜测完成度
 
 ═══ 关键规则 ═══
-- 前 4 轮绝对不能推荐项目，只能提问和引导
+- 调查未完整时绝对不能推荐项目，也不能提及任何具体仓库名、owner/repo 或链接；举例也不允许
 - 每轮只问一个维度的问题，不要一次问太多
 - 选项要具体、有区分度，不要泛泛而谈
 - 如果用户回答模糊，追问澄清而不是跳过
@@ -170,18 +173,62 @@ export function buildGuidedPrompt(
   question: string,
   chunks: EmbeddingChunk[],
   projects: Project[],
+  previousProgress: GuidedProgress | null,
   category?: string,
 ): string {
   const categoryNote = category ? `\n当前选择的分类：${category}` : '';
+  const canRecommend = previousProgress?.ready === true;
+  const turnInstruction = canRecommend
+    ? '此前四项调查已经完整。若用户希望继续，可以从检索结果中推荐 2-3 个真实项目，并必须使用 <project> 标签。'
+    : '此前调查尚未完整。继续补齐第一个缺失维度，不得输出或提及任何具体项目、仓库名、owner/repo、GitHub 链接或 <project> 标签。即使本轮刚好补齐最后一项，也先总结画像并让用户确认开始推荐。';
+  const retrievalContext = canRecommend
+    ? formatChunks(chunks, projects)
+    : '（调查阶段不提供仓库候选；不要自行举出具体项目。）';
+  const previousState = previousProgress
+    ? JSON.stringify(previousProgress)
+    : '（尚无已确认状态）';
+
   return `${GUIDED_SYSTEM_PROMPT}
+
+当前调查约束：
+${turnInstruction}
+
+上一轮调查状态：
+${previousState}
 
 对话历史：
 ${formatHistory(history)}${categoryNote}
 
 检索到的项目片段：
-${formatChunks(chunks, projects)}
+${retrievalContext}
 
 用户说：${question}`;
+}
+
+/** 解析引导模式的四维调查状态；ready 必须建立在四项均完成之上。 */
+export function parseGuidedProgress(text: string): GuidedProgress | null {
+  const matches = [...text.matchAll(/<guided_state\b[^>]*>\s*([\s\S]*?)\s*<\/guided_state>/gi)];
+  const raw = matches.at(-1)?.[1];
+  if (!raw) return null;
+
+  try {
+    const parsed = JSON.parse(raw) as Record<string, unknown>;
+    const progress: GuidedProgress = {
+      direction: parsed.direction === true,
+      background: parsed.background === true,
+      requirements: parsed.requirements === true,
+      constraints: parsed.constraints === true,
+      ready: false,
+    };
+    progress.ready = parsed.ready === true
+      && progress.direction
+      && progress.background
+      && progress.requirements
+      && progress.constraints;
+    return progress;
+  } catch {
+    return null;
+  }
 }
 
 /** 构建助手模式 Prompt */
@@ -250,17 +297,62 @@ export function parseSuggestions(text: string): string[] {
   }
 }
 
-/** 解析 <project> 标签 */
+function normalizeProjectRef(value: string): string {
+  return value
+    .trim()
+    .replace(/^https?:\/\/(?:www\.)?github\.com\//i, '')
+    .replace(/[?#].*$/, '')
+    .replace(/\.git$/i, '')
+    .replace(/^['"`\s]+|['"`\s/]+$/g, '');
+}
+
+/**
+ * 解析模型输出中的仓库引用。
+ * 同时兼容内部 <project> 标签和普通 GitHub 仓库链接，避免格式轻微偏差时丢卡片。
+ */
 export function parseProjectRefs(text: string): string[] {
-  const matches = text.matchAll(/<project>(.*?)<\/project>/g);
-  return [...new Set([...matches].map(m => m[1].trim()))];
+  const tagged = [...text.matchAll(/<project\b[^>]*>\s*([\s\S]*?)\s*<\/project>/gi)]
+    .map(match => normalizeProjectRef(match[1]));
+  const githubUrls = [...text.matchAll(/https?:\/\/(?:www\.)?github\.com\/([\w.-]+\/[\w.-]+)/gi)]
+    .map(match => normalizeProjectRef(match[1]));
+
+  return [...new Set([...tagged, ...githubUrls].filter(Boolean))];
+}
+
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/** 将模型的标签、链接或正文仓库名稳定映射回本次检索到的真实项目。 */
+export function resolveProjectRefs(text: string, projects: Project[]): Project[] {
+  const explicitRefs = parseProjectRefs(text).map(ref => ref.toLowerCase());
+  const visibleText = stripTags(text).toLowerCase();
+  const uniqueNames = new Map<string, number>();
+
+  for (const project of projects) {
+    const name = project.name.toLowerCase();
+    uniqueNames.set(name, (uniqueNames.get(name) ?? 0) + 1);
+  }
+
+  return projects.filter(project => {
+    const fullName = project.full_name.toLowerCase();
+    const name = project.name.toLowerCase();
+
+    if (explicitRefs.some(ref => ref === fullName || (!ref.includes('/') && ref === name))) return true;
+    if (visibleText.includes(fullName)) return true;
+    if ((uniqueNames.get(name) ?? 0) !== 1 || name.length < 3) return false;
+
+    const namePattern = new RegExp(`(^|[^\\w.-])${escapeRegExp(name)}(?=$|[^\\w.-])`, 'i');
+    return namePattern.test(visibleText);
+  });
 }
 
 /** 从显示文本中移除所有标签 */
 export function stripTags(text: string): string {
   return text
-    .replace(/<options>[\s\S]*?<\/options>/g, '')
-    .replace(/<suggestions>[\s\S]*?<\/suggestions>/g, '')
-    .replace(/<\/?project>/g, '')
+    .replace(/<options\b[^>]*>[\s\S]*?<\/options>/gi, '')
+    .replace(/<suggestions\b[^>]*>[\s\S]*?<\/suggestions>/gi, '')
+    .replace(/<guided_state\b[^>]*>[\s\S]*?<\/guided_state>/gi, '')
+    .replace(/<\/?project\b[^>]*>/gi, '')
     .trim();
 }

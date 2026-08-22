@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import type { Project, ChatHistoryMessage, ProjectsRequestBody } from '@/lib/project-types';
+import type { Project, ChatHistoryMessage, EmbeddingChunk, GuidedProgress, ProjectsRequestBody } from '@/lib/project-types';
 import { CATEGORY_MAP } from '@/lib/categories';
 import { supabase } from '@/lib/supabase';
 import {
@@ -8,18 +8,40 @@ import {
   buildAssistantPrompt,
   parseOptions,
   parseSuggestions,
-  parseProjectRefs,
+  parseGuidedProgress,
+  resolveProjectRefs,
   fetchWithRetry,
 } from '@/lib/rag';
 
 const LLM_API_BASE = process.env.LLM_API_BASE || 'https://api.deepseek.com/anthropic';
 const LLM_MODEL = process.env.LLM_MODEL || 'deepseek-v4-flash';
 const MAX_QUESTION_LENGTH = 1000;
-const MAX_HISTORY_MESSAGES = 12;
-const MAX_HISTORY_MESSAGE_LENGTH = 2000;
+
+function envInt(name: string, fallback: number, min: number, max: number): number {
+  const value = Number.parseInt(process.env[name] ?? '', 10);
+  return Number.isFinite(value) ? Math.min(max, Math.max(min, value)) : fallback;
+}
+
+const MAX_HISTORY_MESSAGES = envInt('RAG_MAX_HISTORY_MESSAGES', 30, 12, 60);
+const MAX_HISTORY_MESSAGE_LENGTH = envInt('RAG_MAX_HISTORY_MESSAGE_LENGTH', 4000, 1000, 12000);
+const MAX_OUTPUT_TOKENS = envInt('RAG_MAX_OUTPUT_TOKENS', 4096, 1024, 16384);
+const MATCH_COUNT = envInt('RAG_MATCH_COUNT', 5, 1, 10);
+const MAX_CANDIDATE_CARDS = envInt('RAG_MAX_CANDIDATE_CARDS', 6, 1, 10);
+const RETRIEVAL_CONTEXT_LENGTH = envInt('RAG_RETRIEVAL_CONTEXT_LENGTH', 6000, 1000, 16000);
+
+type MatchedChunk = EmbeddingChunk & { score?: number };
 
 function errorResponse(error: string, status: number) {
   return Response.json({ error }, { status });
+}
+
+function truncateHistoryContent(content: string): string {
+  if (content.length <= MAX_HISTORY_MESSAGE_LENGTH) return content;
+  const separator = '\n\n…（中间内容已压缩）…\n\n';
+  const remaining = MAX_HISTORY_MESSAGE_LENGTH - separator.length;
+  const headLength = Math.ceil(remaining * 0.62);
+  const tailLength = remaining - headLength;
+  return `${content.slice(0, headLength)}${separator}${content.slice(-tailLength)}`;
 }
 
 function sanitizeHistory(value: unknown): ChatHistoryMessage[] {
@@ -36,7 +58,7 @@ function sanitizeHistory(value: unknown): ChatHistoryMessage[] {
     .slice(-MAX_HISTORY_MESSAGES)
     .map(message => ({
       role: message.role as ChatHistoryMessage['role'],
-      content: (message.content as string).slice(0, MAX_HISTORY_MESSAGE_LENGTH),
+      content: truncateHistoryContent(message.content as string),
     }));
 }
 
@@ -95,16 +117,32 @@ export async function POST(request: NextRequest) {
     }
 
     const safeHistory = sanitizeHistory(history);
+    const previousGuidedProgress = mode === 'guided'
+      ? [...safeHistory]
+          .reverse()
+          .filter(message => message.role === 'assistant')
+          .map(message => parseGuidedProgress(message.content))
+          .find((progress): progress is GuidedProgress => progress !== null) ?? null
+      : null;
 
-    // 向量化查询
-    const queryVec = await embedQuery(question.trim());
+    // 引导模式的最后一句通常只是“开始推荐”，需要把此前用户回答一起用于检索。
+    const retrievalQuery = mode === 'guided'
+      ? [
+          ...safeHistory
+            .filter(message => message.role === 'user')
+            .slice(-8)
+            .map(message => message.content),
+          question.trim(),
+        ].join('\n').slice(-RETRIEVAL_CONTEXT_LENGTH)
+      : question.trim();
+    const queryVec = await embedQuery(retrievalQuery);
 
     // Supabase 向量检索
     const { data: topChunks, error: rpcError } = await supabase.rpc(
       'match_chunks',
       {
         query_embedding: queryVec,
-        match_count: 5,
+        match_count: MATCH_COUNT,
         filter_category: category || null,
       },
     );
@@ -115,7 +153,8 @@ export async function POST(request: NextRequest) {
     }
 
     if (!topChunks || topChunks.length === 0) {
-      return errorResponse('项目数据暂未就绪', 503);
+      console.warn('No embedding chunks matched:', { category: category || 'all' });
+      return errorResponse('该分类的项目索引暂时不可用', 503);
     }
 
     // 只加载检索结果涉及的项目，避免每次对话全表扫描。
@@ -127,15 +166,37 @@ export async function POST(request: NextRequest) {
       .select('*')
       .in('full_name', matchedRepoNames);
 
-    if (projError || !projects) {
+    if (projError || !projects || projects.length === 0) {
       console.error('Supabase projects error:', projError?.message);
-      return errorResponse('项目数据暂未就绪', 503);
+      return errorResponse('项目元数据暂时不可用', 503);
     }
+
+    const retrievedChunks = topChunks as MatchedChunk[];
+    const candidateProjects = (projects as Project[])
+      .map(project => {
+        const projectChunks = retrievedChunks.filter(chunk => chunk.repo_full_name === project.full_name);
+        const matchScore = Math.max(0, ...projectChunks.map(chunk => chunk.score ?? 0));
+        return {
+          ...project,
+          match_score: matchScore,
+          matched_sections: [...new Set(
+            projectChunks.map(chunk => chunk.section_title).filter(Boolean),
+          )].slice(0, 3),
+        };
+      })
+      .sort((a, b) => (b.match_score ?? 0) - (a.match_score ?? 0));
 
     // 根据 mode 选择 Prompt
     const prompt = mode === 'guided'
-      ? buildGuidedPrompt(safeHistory, question.trim(), topChunks, projects as Project[], category)
-      : buildAssistantPrompt(safeHistory, question.trim(), topChunks, projects as Project[]);
+      ? buildGuidedPrompt(
+          safeHistory,
+          question.trim(),
+          topChunks,
+          candidateProjects,
+          previousGuidedProgress,
+          category,
+        )
+      : buildAssistantPrompt(safeHistory, question.trim(), topChunks, candidateProjects);
 
     // 流式调用 LLM（anthropic Messages 兼容接口）
     const apiKey = process.env.LLM_API_KEY;
@@ -156,8 +217,11 @@ export async function POST(request: NextRequest) {
           model: LLM_MODEL,
           messages: [{ role: 'user', content: prompt }],
           stream: true,
+          // DeepSeek V4 默认启用 thinking；长 RAG prompt 容易在较小的 max_tokens
+          // 内只返回 thinking_delta、没有正文。项目推荐需要稳定的结构化文本，显式关闭。
+          thinking: { type: 'disabled' },
           temperature: 0.7,
-          max_tokens: mode === 'guided' ? 1500 : 1024,
+          max_tokens: MAX_OUTPUT_TOKENS,
         }),
         signal: request.signal,
       },
@@ -193,28 +257,16 @@ export async function POST(request: NextRequest) {
       const suggestions = parseSuggestions(text);
       if (suggestions.length > 0) send({ type: 'suggestions', items: suggestions });
 
-      let projectRefs = parseProjectRefs(text);
-      if (projectRefs.length === 0) {
-        const textLower = text.toLowerCase();
-        const topChunkOwners = [...new Set((topChunks as { repo_full_name: string }[]).map(c => c.repo_full_name))];
-        projectRefs = topChunkOwners.filter(name =>
-          textLower.includes(name.toLowerCase()),
-        );
-        if (projectRefs.length === 0) {
-          const allProjects = projects as Project[];
-          projectRefs = allProjects
-            .map(p => p.full_name)
-            .filter(name => textLower.includes(name.toLowerCase()));
-        }
-      }
-      if (projectRefs.length > 0) {
-        const matchedProjects = projectRefs
-          .map((ref: string) => (projects as Project[]).find(p =>
-            p.full_name === ref || p.full_name.toLowerCase() === ref.toLowerCase(),
-          ))
-          .filter((p): p is Project => p !== undefined);
-        const uniqueProjects = [...new Map(matchedProjects.map(p => [p.id, p])).values()];
-        if (uniqueProjects.length > 0) send({ type: 'projects', projects: uniqueProjects });
+      const currentProgress = mode === 'guided' ? parseGuidedProgress(text) : null;
+      if (currentProgress) send({ type: 'guided_progress', progress: currentProgress });
+
+      const canEmitProjects = mode === 'assistant'
+        || (previousGuidedProgress?.ready === true && currentProgress?.ready === true);
+      if (canEmitProjects) {
+        const outputProjects = candidateProjects.length <= MAX_CANDIDATE_CARDS
+          ? candidateProjects
+          : resolveProjectRefs(text, candidateProjects).slice(0, MAX_CANDIDATE_CARDS);
+        if (outputProjects.length > 0) send({ type: 'projects', projects: outputProjects });
       }
     };
 

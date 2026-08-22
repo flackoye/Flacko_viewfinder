@@ -9,6 +9,8 @@ export interface Project {
   topics: string[];
   category: string;
   updated_at: string;
+  match_score?: number;
+  matched_sections?: string[];
 }
 
 export interface EmbeddingIndex {
@@ -43,6 +45,14 @@ export interface ChatMessage {
 }
 
 export type ChatHistoryMessage = Pick<ChatMessage, 'role' | 'content'>;
+
+export interface GuidedProgress {
+  direction: boolean;
+  background: boolean;
+  requirements: boolean;
+  constraints: boolean;
+  ready: boolean;
+}
 
 export interface CategoryInfo {
   name: string;
