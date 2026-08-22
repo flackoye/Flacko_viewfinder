@@ -1,5 +1,131 @@
 [
   {
+    "id": "6ae2f29f44e0",
+    "title": "squall01337/mixamo-llm-mocap ⭐141",
+    "summary": "Turn any video into a Mixamo-rig animation - GVHMR estimator, spec-driven retarget, FK apply in Blender via MCP. Works with any Mixamo character; built to be operated end-to-end by an AI agent.",
+    "url": "https://github.com/squall01337/mixamo-llm-mocap",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-22T12:42:28.921087+00:00",
+    "created_at": "2026-08-17T21:05:02Z",
+    "stars": 141,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 60,
+    "score": 57,
+    "llm_summary": "视频转Mixamo骨骼动画，供AI智能体端到端操作",
+    "llm_tags": [
+      "动作捕捉",
+      "3D动画",
+      "AI智能体"
+    ]
+  },
+  {
+    "id": "c2f1f31efda5",
+    "title": "Jordanwei1/jiaojie-skill ⭐103",
+    "summary": "交接 Skill（Jiaojie）：跨窗口、跨模型、跨设备、跨语言的 AI 上下文交接工具。换窗口，不失忆；换模型，不重来。Open-source AI context handoff.",
+    "url": "https://github.com/Jordanwei1/jiaojie-skill",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-22T12:42:28.921087+00:00",
+    "created_at": "2026-08-20T08:57:52Z",
+    "stars": 103,
+    "language": "Python",
+    "frontier": 70,
+    "signal": 50,
+    "score": 62,
+    "llm_summary": "开源AI上下文交接工具，支持跨窗口模型设备语言。",
+    "llm_tags": [
+      "上下文交接",
+      "跨模型",
+      "开源工具"
+    ]
+  },
+  {
+    "id": "9ba168a237c7",
+    "title": "abligail/narralume ⭐78",
+    "summary": "Open-source AI-assisted writing studio for long-form fiction. 故事设定、正文版本、AI 协作、审稿与交付一体化的长篇小说写作工具。",
+    "url": "https://github.com/abligail/narralume",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-22T12:42:28.921087+00:00",
+    "created_at": "2026-08-20T16:16:58Z",
+    "stars": 78,
+    "language": "TypeScript",
+    "frontier": 55,
+    "signal": 65,
+    "score": 59,
+    "llm_summary": "开源AI辅助长篇小说写作工具，集设定、版本、审稿于一体。",
+    "llm_tags": [
+      "AI写作",
+      "写作工具",
+      "长篇小说"
+    ]
+  },
+  {
+    "id": "3e597dc7f8cf",
+    "title": "memovai/mimimodel ⭐63",
+    "summary": "MimiModel: Agentic LLM on a $5 chip. 100% on-device. Private by design.",
+    "url": "https://github.com/memovai/mimimodel",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-22T12:42:28.921087+00:00",
+    "created_at": "2026-08-16T10:19:09Z",
+    "stars": 63,
+    "language": "C",
+    "frontier": 75,
+    "signal": 35,
+    "score": 59,
+    "llm_summary": "在5美元芯片上实现端侧agentic LLM，注重隐私",
+    "llm_tags": [
+      "端侧模型",
+      "低成本AI",
+      "隐私保护"
+    ]
+  },
+  {
+    "id": "429e6d3edca9",
+    "title": "wolfiesch/omp-best-of ⭐55",
+    "summary": "Best-of-N coding agents with LLM-as-a-Verifier selection for Oh My Pi: isolated git worktrees, verifier-ranked trajectories, winner-only patch application",
+    "url": "https://github.com/wolfiesch/omp-best-of",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-22T12:42:28.921087+00:00",
+    "created_at": "2026-08-18T00:41:05Z",
+    "stars": 55,
+    "language": "TypeScript",
+    "frontier": 60,
+    "signal": 60,
+    "score": 60,
+    "llm_summary": "开源项目，用LLM验证器对编码代理结果排序并应用最优补丁",
+    "llm_tags": [
+      "编码代理",
+      "LLM验证",
+      "工作流"
+    ]
+  },
+  {
+    "id": "19ccd4c755d7",
+    "title": "unclecode/modelprint ⭐50",
+    "summary": "Who is really behind that API? Fingerprint any OpenAI-compatible endpoint in the browser: 9 infrastructure probes, side-by-side comparison, community-extensible.",
+    "url": "https://github.com/unclecode/modelprint",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-22T12:42:28.921087+00:00",
+    "created_at": "2026-08-21T12:16:56Z",
+    "stars": 50,
+    "language": "JavaScript",
+    "frontier": 55,
+    "signal": 65,
+    "score": 59,
+    "llm_summary": "开源工具通过9种探针指纹识别OpenAI兼容API背后的真实模型",
+    "llm_tags": [
+      "模型指纹",
+      "API识别",
+      "开源工具"
+    ]
+  },
+  {
     "id": "daeba0a2de06",
     "title": "zorost/AI-Engineering-Lab ⭐98",
     "summary": "A free, self-paced 24-week AI engineering course: Python, machine learning, LLMs, RAG, fine-tuning, agents and MCP, Azure and Vertex and Bedrock, and Databricks. 43 runnable notebooks, one continuous ",
@@ -279,6 +405,24 @@
     ]
   },
   {
+    "id": "af54e64ad6bf",
+    "title": "I'm becoming AI-blind",
+    "summary": "HN 热度: 406 点赞, 413 评论（外链帖无正文）",
+    "url": "https://cymerys.com/w/im-becoming-ai-blind",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-21T11:48:05+00:00",
+    "points": 406,
+    "num_comments": 413,
+    "frontier": 76,
+    "signal": 76,
+    "score": 76,
+    "llm_summary": "🔥 HN 406赞 413评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "31c8f84eea22",
     "title": "AI companies destroy physical books – let's scan rare books before it's too late",
     "summary": "HN 热度: 646 点赞, 384 评论（外链帖无正文）",
@@ -552,6 +696,42 @@
     ]
   },
   {
+    "id": "fc521a7dd7b0",
+    "title": "Replit expands access to software creation with GPT-5.6 Luna",
+    "summary": "Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs.",
+    "url": "https://openai.com/index/replit",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-08-19T07:00:00+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "Replit推出Free Mode，基于GPT-5.6 Luna实现免费软件生成，降低创作门槛。",
+    "llm_tags": [
+      "AI编程",
+      "大模型",
+      "低代码"
+    ]
+  },
+  {
+    "id": "12661e651e8c",
+    "title": "AI boosted homework scores, then exam scores dropped: study",
+    "summary": "HN ⭐323 330评 | https://archive.is/w1eng   https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6868618",
+    "url": "https://www.economist.com/graphic-detail/2026/08/18/does-ai-stop-children-from-learning",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-19T06:13:31+00:00",
+    "points": 323,
+    "num_comments": 330,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 323赞 330评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "6f9af1e77dc2",
     "title": "How Much Memory Does Your Agent Actually Need?",
     "summary": "",
@@ -714,6 +894,24 @@
     ]
   },
   {
+    "id": "7c0a9c22371b",
+    "title": "The AI Credit Resale Economy",
+    "summary": "HN 热度: 332 点赞, 129 评论（外链帖无正文）",
+    "url": "https://vectoral.com/blog/who-are-the-token-brokers",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-16T14:44:55+00:00",
+    "points": 332,
+    "num_comments": 129,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 332赞 129评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "f1f941d30b35",
     "title": "AI isn’t outthinking mathematicians, it’s out-remembering them",
     "summary": "HN 热度: 632 点赞, 521 评论（外链帖无正文）",
@@ -727,24 +925,6 @@
     "signal": 78,
     "score": 78,
     "llm_summary": "🔥 HN 632赞 521评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "da1ab3290947",
-    "title": "Working with AI feels more like leadership than coding",
-    "summary": "HN 热度: 338 点赞, 203 评论（外链帖无正文）",
-    "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-15T10:39:41+00:00",
-    "points": 338,
-    "num_comments": 203,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 338赞 203评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
     ]
