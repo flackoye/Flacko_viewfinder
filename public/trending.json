@@ -1,5 +1,26 @@
 [
   {
+    "id": "7aae5581a328",
+    "title": "mindsdb/setfree ⭐47",
+    "summary": "Set claude, codex, any coding CLI free to any LLM provider",
+    "url": "https://github.com/mindsdb/setfree",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-23T12:43:13.136578+00:00",
+    "created_at": "2026-08-20T14:09:52Z",
+    "stars": 47,
+    "language": "Go",
+    "frontier": 50,
+    "signal": 50,
+    "score": 50,
+    "llm_summary": "开源工具让Claude、Codex等编码CLI接入任意LLM提供商",
+    "llm_tags": [
+      "LLM接入",
+      "编码工具",
+      "CLI工具"
+    ]
+  },
+  {
     "id": "c242a80646de",
     "title": "agents-universe/agents-universe ⭐71",
     "summary": "让智能体像人一样学习和工作，共享智能体和项目记忆",
@@ -38,6 +59,24 @@
       "API网关",
       "任务调度",
       "多模型"
+    ]
+  },
+  {
+    "id": "f77a6ecccd58",
+    "title": "Why your local LLM feels dumber than it is",
+    "summary": "HN 热度: 388 点赞, 151 评论（外链帖无正文）",
+    "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-22T18:14:16+00:00",
+    "points": 388,
+    "num_comments": 151,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 388赞 151评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
