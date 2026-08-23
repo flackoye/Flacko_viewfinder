@@ -1,5 +1,46 @@
 [
   {
+    "id": "c242a80646de",
+    "title": "agents-universe/agents-universe ⭐71",
+    "summary": "让智能体像人一样学习和工作，共享智能体和项目记忆",
+    "url": "https://github.com/agents-universe/agents-universe",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-23T01:28:00.526065+00:00",
+    "created_at": "2026-08-18T12:49:42Z",
+    "stars": 71,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 45,
+    "score": 51,
+    "llm_summary": "开源智能体项目，强调共享记忆以提升学习能力。",
+    "llm_tags": [
+      "智能体",
+      "记忆共享"
+    ]
+  },
+  {
+    "id": "83d39ae51299",
+    "title": "xuliang2024/leo_proxy ⭐59",
+    "summary": "🔥 Leonardo Web/API 任务网关：账号池调度、Cookie ZIP 导入、Token/JWT 协议续签、积分与并发管理；统一 JSON 任务接口覆盖 Hailuo H3、Seedance 2.0/2.5、Kling O3、Gemini Omni Flash、Veo 3.1、GPT Image 2、Nano Banana 2/Pro、Seed Audio 1.0。",
+    "url": "https://github.com/xuliang2024/leo_proxy",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-23T01:28:00.526065+00:00",
+    "created_at": "2026-08-18T12:40:01Z",
+    "stars": 59,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 70,
+    "score": 61,
+    "llm_summary": "多模型API任务网关，支持账号池调度与统一接口调取",
+    "llm_tags": [
+      "API网关",
+      "任务调度",
+      "多模型"
+    ]
+  },
+  {
     "id": "6ae2f29f44e0",
     "title": "squall01337/mixamo-llm-mocap ⭐141",
     "summary": "Turn any video into a Mixamo-rig animation - GVHMR estimator, spec-driven retarget, FK apply in Blender via MCP. Works with any Mixamo character; built to be operated end-to-end by an AI agent.",
@@ -678,6 +719,24 @@
     ]
   },
   {
+    "id": "cab9aca7acce",
+    "title": "Vomit: Clean up Claude 5's token output with a separate LLM",
+    "summary": "HN 热度: 302 点赞, 294 评论（外链帖无正文）",
+    "url": "https://github.com/zachahn/vomit",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-20T15:26:02+00:00",
+    "points": 302,
+    "num_comments": 294,
+    "frontier": 74,
+    "signal": 74,
+    "score": 74,
+    "llm_summary": "🔥 HN 302赞 294评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "7a21afd9d9e4",
     "title": "Don't paste the AI, please",
     "summary": "HN 热度: 1024 点赞, 572 评论（外链帖无正文）",
@@ -907,24 +966,6 @@
     "signal": 75,
     "score": 75,
     "llm_summary": "🔥 HN 332赞 129评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "f1f941d30b35",
-    "title": "AI isn’t outthinking mathematicians, it’s out-remembering them",
-    "summary": "HN 热度: 632 点赞, 521 评论（外链帖无正文）",
-    "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-15T18:13:02+00:00",
-    "points": 632,
-    "num_comments": 521,
-    "frontier": 78,
-    "signal": 78,
-    "score": 78,
-    "llm_summary": "🔥 HN 632赞 521评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
     ]
