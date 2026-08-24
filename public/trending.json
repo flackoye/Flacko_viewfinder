@@ -1,5 +1,85 @@
 [
   {
+    "id": "74e2260d31a2",
+    "title": "itshen/source-reading-methodology ⭐68",
+    "summary": "带 AI 精读大型开源仓库的方法论：四阶段流程、可复用模板、28 条踩坑清单，核心是让每个技术论断都可回溯到源码具体行",
+    "url": "https://github.com/itshen/source-reading-methodology",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-24T01:25:00.936280+00:00",
+    "created_at": "2026-08-23T02:51:45Z",
+    "stars": 68,
+    "language": "Python",
+    "frontier": 40,
+    "signal": 75,
+    "score": 54,
+    "llm_summary": "提出AI辅助精读大型开源仓库的四阶段方法论与模板。",
+    "llm_tags": [
+      "AI辅助",
+      "源码阅读"
+    ]
+  },
+  {
+    "id": "1a7ed0fd65e5",
+    "title": "SeanEllyJames/deep-research-skill ⭐63",
+    "summary": "让AI Agent 做真正会思考，有判断的深度调研，而不是会摆信息的汇总报告。一个即插即用的 skill 文件。",
+    "url": "https://github.com/SeanEllyJames/deep-research-skill",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-24T01:25:00.936280+00:00",
+    "created_at": "2026-08-18T07:04:01Z",
+    "stars": 63,
+    "language": null,
+    "frontier": 55,
+    "signal": 55,
+    "score": 55,
+    "llm_summary": "开源skill使AI Agent能进行有判断的深度调研而非简单信息汇总。",
+    "llm_tags": [
+      "深度调研",
+      "AI Agent",
+      "开源项目"
+    ]
+  },
+  {
+    "id": "2f63a7b6e129",
+    "title": "JohnCorreiaisme/Subagent-Bionic-Claude ⭐33",
+    "summary": "Have Claude use a offline LLM as a subagent ",
+    "url": "https://github.com/JohnCorreiaisme/Subagent-Bionic-Claude",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-24T01:25:00.936280+00:00",
+    "created_at": "2026-08-20T21:56:12Z",
+    "stars": 33,
+    "language": "PowerShell",
+    "frontier": 52,
+    "signal": 58,
+    "score": 54,
+    "llm_summary": "实现让Claude调用离线LLM作为子代理协作",
+    "llm_tags": [
+      "AI协作",
+      "本地模型",
+      "开发工具"
+    ]
+  },
+  {
+    "id": "d4cfb0154375",
+    "title": "Robot plays ping pong with Ding Ning (2016 Olympic champion)",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1vw8hdg/robot_plays_ping_pong_with_ding_ning_2016_olympic/\"> <img alt=\"Robot plays ping pong with Ding Ning (2016 Olympic champi",
+    "url": "https://www.reddit.com/r/singularity/comments/1vw8hdg/robot_plays_ping_pong_with_ding_ning_2016_olympic/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-23T14:21:33+00:00",
+    "frontier": 75,
+    "signal": 45,
+    "score": 63,
+    "llm_summary": "机器人乒乓球对战奥运冠军，展示运动控制与感知进展",
+    "llm_tags": [
+      "机器人",
+      "运动控制",
+      "强化学习"
+    ]
+  },
+  {
     "id": "7aae5581a328",
     "title": "mindsdb/setfree ⭐47",
     "summary": "Set claude, codex, any coding CLI free to any LLM provider",
@@ -521,6 +601,24 @@
     ]
   },
   {
+    "id": "507a5b763e6a",
+    "title": "This company’s plans to deploy space mirrors could jeopardize the night sky for many",
+    "summary": "A company that plans to beam sunlight from space to Earth on demand might unintentionally brighten the night sky for many more people than intended, according to a new study. Later this year, the US company Reflect Orbital plans to launch a test satellite called Eärendil-1 that will extend an 18-by-18-meter mirror in orbit. The&#8230;",
+    "url": "https://www.technologyreview.com/2026/08/21/1142755/space-mirrors-night-sky/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-08-21T09:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "太空反射镜计划或致夜空变亮，影响天文观测引发担忧",
+    "llm_tags": [
+      "太空技术",
+      "光污染",
+      "卫星"
+    ]
+  },
+  {
     "id": "d6ba75dcbe8b",
     "title": "ReCache: Efficient KV Cache Reuse and Compression for Tool-Augmented LLM Agents",
     "summary": "arXiv:2608.19662v1 Announce Type: new  Abstract: Agentic language models repeatedly encode tool and skill schemas that recur across requests in different combinations and orders, preventing standard prefix caching from reusing their key--value (KV) states. We introduce \\textbf{ReCache}, a framework for independently caching resource representations while reducing their inference-time computational and memory overhead. Resource-wise attention removes cross-resource interactions and assigns resource-local positions, producing composition-invariant KV blocks. ReCache then restricts resource visibility to contribution-selected layer--KV-head-group routes and retains only invocation-critical fields through structural and semantic pruning. We evaluate ReCache on a benchmark assembled from seven ",
@@ -992,19 +1090,19 @@
     ]
   },
   {
-    "id": "7c0a9c22371b",
-    "title": "The AI Credit Resale Economy",
-    "summary": "HN 热度: 332 点赞, 129 评论（外链帖无正文）",
-    "url": "https://vectoral.com/blog/who-are-the-token-brokers",
+    "id": "787f10807ec5",
+    "title": "On AI regulation and messaging",
+    "summary": "HN ⭐250 544评 | https://xcancel.com/DarioAmodei/status/2088758816376807762",
+    "url": "https://twitter.com/DarioAmodei/status/2088758816376807762",
     "source": "HackerNews",
     "source_type": "tech_community",
-    "timestamp": "2026-08-16T14:44:55+00:00",
-    "points": 332,
-    "num_comments": 129,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 332赞 129评，高赞热点直通入选",
+    "timestamp": "2026-08-17T01:59:56+00:00",
+    "points": 250,
+    "num_comments": 544,
+    "frontier": 73,
+    "signal": 73,
+    "score": 73,
+    "llm_summary": "🔥 HN 250赞 544评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
     ]
