@@ -4,6 +4,8 @@ import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { BookOpen, FolderGit2, Sparkles, User, Menu, X, Flame, ScrollText } from 'lucide-react';
+import BackgroundViewfinder from '@/components/BackgroundViewfinder';
+import { PET_VIEWFINDER_EVENT, type PetViewfinderEventDetail } from '@/lib/pet-events';
 
 const navItems = [
   { name: '首页', href: '/', icon: Sparkles },
@@ -17,6 +19,7 @@ const navItems = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [viewfinderOpen, setViewfinderOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -30,23 +33,65 @@ export default function Navbar() {
     setTimeout(() => setMobileOpen(false), 120);
   }, []);
 
+  const notifyPetViewfinder = useCallback((active: boolean) => {
+    window.dispatchEvent(new CustomEvent<PetViewfinderEventDetail>(PET_VIEWFINDER_EVENT, {
+      detail: { active },
+    }));
+  }, []);
+
   return (
-    <nav
+    <>
+      <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? 'glass-nav shadow-lg shadow-black/20' : 'bg-transparent'
       }`}
     >
       <div className="w-full px-4 md:px-6 py-5 flex items-center justify-between">
-        {/* 左侧站名 — 大气设计 */}
-        <Link href="/" className="group flex items-baseline gap-3 select-none">
-          <span className="font-[family-name:var(--font-dancing)] text-2xl md:text-3xl tracking-wider text-accent">
-            Flacko
+        {/* 左侧互动取景框 */}
+        <button
+          type="button"
+          className="site-viewfinder-trigger"
+          onClick={() => {
+            notifyPetViewfinder(false);
+            setViewfinderOpen(true);
+          }}
+          onPointerEnter={(event) => {
+            if (event.pointerType === 'touch' || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+            notifyPetViewfinder(true);
+          }}
+          onPointerMove={(event) => {
+            const bounds = event.currentTarget.getBoundingClientRect();
+            const x = ((event.clientX - bounds.left) / bounds.width) * 100;
+            const y = ((event.clientY - bounds.top) / bounds.height) * 100;
+            const normalizedX = x / 100 - 0.5;
+            const normalizedY = y / 100 - 0.5;
+            event.currentTarget.style.setProperty('--vf-x', `${x}%`);
+            event.currentTarget.style.setProperty('--vf-y', `${y}%`);
+            event.currentTarget.style.setProperty('--vf-rx', `${normalizedY * -3.5}deg`);
+            event.currentTarget.style.setProperty('--vf-ry', `${normalizedX * 4.5}deg`);
+            event.currentTarget.style.setProperty('--vf-shift-x', `${normalizedX * 3}px`);
+            event.currentTarget.style.setProperty('--vf-shift-y', `${normalizedY * 2}px`);
+          }}
+          onPointerLeave={(event) => {
+            notifyPetViewfinder(false);
+            event.currentTarget.style.setProperty('--vf-x', '50%');
+            event.currentTarget.style.setProperty('--vf-y', '50%');
+            event.currentTarget.style.setProperty('--vf-rx', '0deg');
+            event.currentTarget.style.setProperty('--vf-ry', '0deg');
+            event.currentTarget.style.setProperty('--vf-shift-x', '0px');
+            event.currentTarget.style.setProperty('--vf-shift-y', '0px');
+          }}
+          aria-label="打开 Flacko 取景框查看背景原图"
+          aria-haspopup="dialog"
+        >
+          <span className="site-viewfinder-trigger__glass" aria-hidden />
+          <span className="site-viewfinder-trigger__brand">
+            <span className="site-viewfinder-trigger__signature font-[family-name:var(--font-dancing)] text-2xl md:text-3xl tracking-wider text-accent">
+              Flacko
+            </span>
+            <span className="site-subname">取景框</span>
           </span>
-          <span className="site-subname text-xs md:text-sm">
-            <span className="site-subname__particle">的</span>
-            <span className="site-subname__title">取景框</span>
-          </span>
-        </Link>
+        </button>
 
         {/* 右侧导航 */}
         <div className="hidden md:flex items-center gap-1">
@@ -127,6 +172,8 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </nav>
+      </nav>
+      <BackgroundViewfinder open={viewfinderOpen} onClose={() => setViewfinderOpen(false)} />
+    </>
   );
 }

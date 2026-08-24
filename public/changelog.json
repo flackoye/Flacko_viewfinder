@@ -1,11 +1,14 @@
 {
-  "announcement": {
-    "message": "🧭 万象索骥上线！帮你找到最适合的 AI 开源项目",
-    "type": "feature",
-    "date": "2026-06-08",
-    "dismissible": true
-  },
   "entries": [
+   {
+      "version":"v2.4.4",
+      "date":"2026-08-24",
+      "title":"阿岳升级：阿岳不再只是一个简单的纸片人",
+      "changes":[
+        {"type":"feature","description":"阿岳新增互动动作，来看阿岳弹吉他吧~"},
+        {"type":"improvement","description":"优化网站设计语言，左上角的取景框点击即可见底片签注"},
+      ]
+    },
     {
       "version":"v2.4.0",
       "date":"2026-08-21",

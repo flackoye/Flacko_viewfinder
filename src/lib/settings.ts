@@ -2,13 +2,11 @@
  * 设置管理 — 用 localStorage 保存用户的自定义偏好
  *
  * 存储内容：
- * - backgroundImage: 背景图 URL（默认图片 / 用户上传的 data URL）
+ * - backgroundImage: 旧版背景图字段，仅用于把已有 data URL 迁移到 IndexedDB
  * - brightness: 背景亮度 0~100
  * - overlayOpacity: 遮罩透明度 0~100（数值越小图越亮）
  * - cardGlass: 卡片玻璃透明度 0~100
  * - petVisible: 是否显示阿岳
- * - petRoaming: 阿岳是否会自行走动
- * - petScale: 阿岳显示大小百分比
  */
 
 export interface SiteSettings {
@@ -17,8 +15,6 @@ export interface SiteSettings {
   overlayOpacity: number;   // 0~100, default 30
   cardGlass: number;        // 0~100, default 50
   petVisible: boolean;
-  petRoaming: boolean;
-  petScale: number;         // 70~140, default 100
 }
 
 const STORAGE_KEY = 'flacko-settings';
@@ -29,8 +25,6 @@ export const defaultSettings: SiteSettings = {
   overlayOpacity: 30,
   cardGlass: 50,
   petVisible: true,
-  petRoaming: true,
-  petScale: 100,
 };
 
 export function loadSettings(): SiteSettings {
@@ -50,14 +44,4 @@ export function saveSettings(settings: SiteSettings): void {
   } catch {
     // localStorage 满了（可能因为上传的图太大），静默失败
   }
-}
-
-/** 把用户上传的图片文件转成 data URL */
-export function fileToDataUrl(file: File): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(reader.result as string);
-    reader.onerror = reject;
-    reader.readAsDataURL(file);
-  });
 }

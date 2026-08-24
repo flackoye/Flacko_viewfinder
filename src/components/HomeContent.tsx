@@ -5,11 +5,11 @@ import Image from 'next/image';
 import { GraduationCap, MapPin, RefreshCw } from 'lucide-react';
 import { fetchQuote, type Quote } from '@/lib/quotes';
 import { useSettings } from '@/components/SettingsProvider';
-import PetCharacter from '@/components/PetCharacter';
 import Customizer from '@/components/Customizer';
 import CameraDirectoryDial from '@/components/CameraDirectoryDial';
 import SectionRail from '@/components/SectionRail';
 import WritingShowcase, { type HomeRecord } from '@/components/WritingShowcase';
+import { useBackground } from '@/components/BackgroundProvider';
 
 export type { HomeRecord } from '@/components/WritingShowcase';
 
@@ -31,6 +31,7 @@ export default function HomeContent({ initialQuote, records, profile }: HomeCont
   const [quote, setQuote] = useState(initialQuote);
   const [loading, setLoading] = useState(false);
   const { settings } = useSettings();
+  const { activeBackground } = useBackground();
 
   const handleNewQuote = async () => {
     setLoading(true);
@@ -53,20 +54,21 @@ export default function HomeContent({ initialQuote, records, profile }: HomeCont
 
   return (
     <>
-      <PetCharacter />
       <Customizer />
 
       <section className="home-portrait relative min-h-[calc(100svh-4rem)] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src={settings.backgroundImage}
+            key={activeBackground.image}
+            src={activeBackground.image}
             alt="首页背景"
             fill
             className="object-cover"
             style={{
-              objectPosition: 'center 35%',
+              objectPosition: `${activeBackground.position.x}% ${activeBackground.position.y}%`,
               filter: `brightness(${settings.brightness / 100})`,
             }}
+            unoptimized={activeBackground.image.startsWith('blob:')}
             priority
           />
           <div

@@ -5,8 +5,10 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SettingsProvider } from "@/components/SettingsProvider";
+import BackgroundProvider from "@/components/BackgroundProvider";
 import CursorEffect from "@/components/CursorEffect";
 import PageTransition from "@/components/PageTransition";
+import PetCharacter from "@/components/PetCharacter";
 
 export const metadata: Metadata = {
   title: "Flacko的取景框",
@@ -30,11 +32,14 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-bg text-text">
         <SettingsProvider>
-          <Navbar />
-          <main className="flex-1 pt-16">
-            {children}
-          </main>
-          <Footer />
+          <BackgroundProvider>
+            <Navbar />
+            <PetCharacter />
+            <main className="flex-1 pt-16">
+              {children}
+            </main>
+            <Footer />
+          </BackgroundProvider>
         </SettingsProvider>
         <PageTransition />
         <CursorEffect />

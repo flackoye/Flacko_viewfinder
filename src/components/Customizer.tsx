@@ -1,42 +1,28 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import {
   Settings,
   X,
-  Upload,
   RotateCcw,
   Sun,
   Droplets,
   Layers,
   Eye,
-  MoveHorizontal,
-  Maximize2,
 } from 'lucide-react';
 import { useSettings } from '@/components/SettingsProvider';
-import { defaultSettings, fileToDataUrl } from '@/lib/settings';
+import { defaultSettings } from '@/lib/settings';
+import BackgroundStudio from '@/components/BackgroundStudio';
 
 export default function Customizer() {
   const [open, setOpen] = useState(false);
   const { settings, update } = useSettings();
-  const fileInputRef = useRef<HTMLInputElement>(null);
   const [saved, setSaved] = useState(false);
 
   const handleUpdate = (partial: Parameters<typeof update>[0]) => {
     update(partial);
     setSaved(true);
     setTimeout(() => setSaved(false), 1500);
-  };
-
-  const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    try {
-      const dataUrl = await fileToDataUrl(file);
-      handleUpdate({ backgroundImage: dataUrl });
-    } catch {
-      // 文件读取失败
-    }
   };
 
   const handleReset = () => {
@@ -86,34 +72,7 @@ export default function Customizer() {
             </button>
           </div>
 
-          {/* 背景图上传 */}
-          <section className="mb-8">
-            <label className="flex items-center gap-2 text-sm font-medium text-text-muted mb-3">
-              <Upload className="w-4 h-4" />
-              背景图片
-            </label>
-            <button
-              onClick={() => fileInputRef.current?.click()}
-              className="w-full py-3 rounded-xl glass text-sm text-text-muted hover:text-accent hover:border-accent/20 transition-all duration-200"
-            >
-              点击上传图片
-            </button>
-            <input
-              ref={fileInputRef}
-              type="file"
-              accept="image/*"
-              className="hidden"
-              onChange={handleUpload}
-            />
-            {settings.backgroundImage !== defaultSettings.backgroundImage && (
-              <button
-                onClick={() => handleUpdate({ backgroundImage: defaultSettings.backgroundImage })}
-                className="w-full mt-2 py-2 text-xs text-text-dim hover:text-accent transition-colors"
-              >
-                恢复默认背景
-              </button>
-            )}
-          </section>
+          <BackgroundStudio onSaved={() => handleUpdate({})} />
 
           {/* 亮度 */}
           <section className="mb-8">
@@ -200,50 +159,6 @@ export default function Customizer() {
               </button>
             </div>
 
-            <div className="mb-6 flex items-center justify-between gap-4">
-              <span className="flex items-center gap-2 text-sm font-medium text-text-muted">
-                <MoveHorizontal className="h-4 w-4" />
-                允许走动
-              </span>
-              <button
-                type="button"
-                role="switch"
-                aria-checked={settings.petRoaming}
-                onClick={() => handleUpdate({ petRoaming: !settings.petRoaming })}
-                className={`relative h-6 w-11 rounded-full border transition-colors ${
-                  settings.petRoaming
-                    ? 'border-accent/40 bg-accent/25'
-                    : 'border-white/10 bg-white/[0.05]'
-                }`}
-              >
-                <span
-                  className={`absolute top-1/2 h-4 w-4 -translate-y-1/2 rounded-full transition-all ${
-                    settings.petRoaming ? 'left-6 bg-accent' : 'left-1 bg-text-dim'
-                  }`}
-                />
-              </button>
-            </div>
-
-            <label className="mb-3 flex items-center justify-between text-sm font-medium text-text-muted">
-              <span className="flex items-center gap-2">
-                <Maximize2 className="h-4 w-4" />
-                显示大小
-              </span>
-              <span className="text-xs text-accent">{settings.petScale}%</span>
-            </label>
-            <input
-              type="range"
-              min={70}
-              max={140}
-              step={5}
-              value={settings.petScale}
-              onChange={(event) => handleUpdate({ petScale: Number(event.target.value) })}
-              className="custom-slider w-full"
-              aria-label="阿岳显示大小"
-            />
-            <p className="mt-2 text-xs leading-5 text-text-dim">
-              关闭走动后仍可直接拖动阿岳，位置会自动记住。
-            </p>
           </section>
 
           {/* 重置 */}
@@ -252,7 +167,7 @@ export default function Customizer() {
             className="w-full py-3 rounded-xl glass text-sm text-text-muted hover:text-accent transition-all duration-200 flex items-center justify-center gap-2"
           >
             <RotateCcw className="w-4 h-4" />
-            恢复默认设置
+            恢复外观参数
           </button>
         </div>
       </div>
