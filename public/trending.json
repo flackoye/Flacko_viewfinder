@@ -1,5 +1,103 @@
 [
   {
+    "id": "94129d7e77a9",
+    "title": "rome-os/rome ⭐195",
+    "summary": "Rome is the agentic OS.",
+    "url": "https://github.com/rome-os/rome",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-24T12:54:21.409612+00:00",
+    "created_at": "2026-08-23T06:15:15Z",
+    "stars": 195,
+    "language": "TypeScript",
+    "frontier": 65,
+    "signal": 45,
+    "score": 57,
+    "llm_summary": "Rome 项目定位为智能体操作系统，概念前沿但细节不足。",
+    "llm_tags": [
+      "智能体",
+      "操作系统"
+    ]
+  },
+  {
+    "id": "f31fbc2fa636",
+    "title": "MagnaFrisia/Kahoot-Tools-Pro-2026 ⭐55",
+    "summary": "Kahoot Tools AI — Open-source educational utility leveraging LLMs and OCR toautomatically generate, format, and export interactie Kahoot quizzes, flashcards, and study sets from PDs, URLs, and notes.",
+    "url": "https://github.com/MagnaFrisia/Kahoot-Tools-Pro-2026",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-24T12:54:21.409612+00:00",
+    "created_at": "2026-08-19T07:35:37Z",
+    "stars": 55,
+    "language": null,
+    "frontier": 45,
+    "signal": 60,
+    "score": 51,
+    "llm_summary": "开源工具利用LLM和OCR自动生成Kahoot测验和闪卡",
+    "llm_tags": [
+      "教育AI",
+      "LLM应用",
+      "OCR"
+    ]
+  },
+  {
+    "id": "cd672cc2b426",
+    "title": "EnSI-RAG: Entity-Structure-Indexed Retrieval-Augmented Generation for Long-Document Question Answering",
+    "summary": "arXiv:2608.21252v1 Announce Type: new  Abstract: Question answering (QA) over long, connected documents remains challenging because relevant evidence may span multiple entities and their relationships. Existing retrieval-augmented generation (RAG) methods typically index documents as raw chunks and retrieve them through embedding similarity. Their performance degrades when chunk boundaries separate entities from supporting evidence or when a question requires multi-hop reasoning across the corpus. We propose EnSI-RAG (Entity-Structure-Indexed Retrieval-Augmented Generation), a framework that constructs a query-independent, entity-centered index. Each record (e, t, k, v) represents an entity e, its type t, a semantic category k in {property, relation, aspect}, and a value v, while retaining",
+    "url": "https://arxiv.org/abs/2608.21252",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-24T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 75,
+    "score": 74,
+    "llm_summary": "提出实体结构索引的RAG方法，用于长文档问答。",
+    "llm_tags": [
+      "🔧 已开源",
+      "实体索引",
+      "RAG",
+      "长文档QA"
+    ]
+  },
+  {
+    "id": "03d11de89b19",
+    "title": "CAS: Conformalized Agentic Search via Adaptive Retrieval and Policy Weighting",
+    "summary": "arXiv:2608.20771v1 Announce Type: new  Abstract: Search Agents face a severe reliability crisis during reinforcement learning (RL) fine-tuning. Heuristic Top-K retrieval often causes critical evidence loss or noise inclusion, while over-confidence induced by progressive RL leads to hallucinated answers and redundant searches.   To build highly reliable agents, we introduce Conformal Prediction (CP) and propose Conformalized Agentic Search (CAS). This framework establishes reliability guarantees on both the retrieval and training sides: on the retrieval side, an Adaptive Prediction Set (APS), a specific CP realization, translates statistical coverage into dynamic document truncation to construct prediction sets that are adaptive in size; on the training side, Adaptive Conformal Inference (A",
+    "url": "https://arxiv.org/abs/2608.20771",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-24T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "利用保形预测构建可靠智能体搜索框架，应对检索噪声与幻觉问题",
+    "llm_tags": [
+      "智能体搜索",
+      "保形预测",
+      "强化学习",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "0782d36bb2c1",
+    "title": "Automated Trajectory Evaluation for Mobile Agents via Step-Level Consequence Reasoning and Aggregation",
+    "summary": "arXiv:2608.20797v1 Announce Type: new  Abstract: Evaluating language-guided mobile agents has recently shifted from rule-based to model-based approaches to achieve scalable and automated assessments. However, existing holistic evaluation paradigms process entire trajectories at once, leading to substantial context overload. Moreover, they primarily focus on task completion while overlooking operational safety. To address these limitations, we introduce CRATE, a novel two-stage VLM-as-judge framework for automated mobile agent evaluation that is compatible with both open- and closed-source models. Leveraging a step-level consequence reasoning mechanism, CRATE independently extracts task-relevant visual clues and infers action-conditioned state changes at each step. The resulting step-level ",
+    "url": "https://arxiv.org/abs/2608.20797",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-24T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 78,
+    "score": 76,
+    "llm_summary": "提出CRATE框架，逐步推理聚合评估移动代理轨迹",
+    "llm_tags": [
+      "评估框架",
+      "移动代理",
+      "VLM",
+      "🔧 已开源"
+    ]
+  },
+  {
     "id": "74e2260d31a2",
     "title": "itshen/source-reading-methodology ⭐68",
     "summary": "带 AI 精读大型开源仓库的方法论：四阶段流程、可复用模板、28 条踩坑清单，核心是让每个技术论断都可回溯到源码具体行",
@@ -874,6 +972,24 @@
     ]
   },
   {
+    "id": "e93c0fc11264",
+    "title": "Anti-AI fonts are useless and harmful",
+    "summary": "HN 热度: 210 点赞, 165 评论（外链帖无正文）",
+    "url": "https://blog.yaros.ae/anti-ai-fonts-are-useless-and-harmful/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-20T15:06:53+00:00",
+    "points": 210,
+    "num_comments": 165,
+    "frontier": 73,
+    "signal": 73,
+    "score": 73,
+    "llm_summary": "🔥 HN 210赞 165评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "7a21afd9d9e4",
     "title": "Don't paste the AI, please",
     "summary": "HN 热度: 1024 点赞, 572 评论（外链帖无正文）",
@@ -887,6 +1003,24 @@
     "signal": 80,
     "score": 80,
     "llm_summary": "🔥 HN 1024赞 572评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "85d70574bbca",
+    "title": "Mathematics in the age of AI",
+    "summary": "HN 热度: 208 点赞, 265 评论（外链帖无正文）",
+    "url": "https://arxiv.org/abs/2608.16753",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-19T15:14:25+00:00",
+    "points": 208,
+    "num_comments": 265,
+    "frontier": 73,
+    "signal": 73,
+    "score": 73,
+    "llm_summary": "🔥 HN 208赞 265评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
     ]
@@ -1067,42 +1201,6 @@
     "signal": 75,
     "score": 75,
     "llm_summary": "🔥 HN 338赞 197评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "e09f762127ed",
-    "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
-    "summary": "HN 热度: 365 点赞, 170 评论（外链帖无正文）",
-    "url": "https://blog.roboflow.com/openai-gpt-5-6/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-17T12:09:42+00:00",
-    "points": 365,
-    "num_comments": 170,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 365赞 170评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "787f10807ec5",
-    "title": "On AI regulation and messaging",
-    "summary": "HN ⭐250 544评 | https://xcancel.com/DarioAmodei/status/2088758816376807762",
-    "url": "https://twitter.com/DarioAmodei/status/2088758816376807762",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-17T01:59:56+00:00",
-    "points": 250,
-    "num_comments": 544,
-    "frontier": 73,
-    "signal": 73,
-    "score": 73,
-    "llm_summary": "🔥 HN 250赞 544评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
     ]
