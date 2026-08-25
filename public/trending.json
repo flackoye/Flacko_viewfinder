@@ -1,5 +1,178 @@
 [
   {
+    "id": "955f33df2db1",
+    "title": "AlpinDale/gpt2.cmake ⭐98",
+    "summary": "Implementation of the GPT-2 model in pure CMake",
+    "url": "https://github.com/AlpinDale/gpt2.cmake",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-25T12:51:20.821336+00:00",
+    "created_at": "2026-08-23T14:55:43Z",
+    "stars": 98,
+    "language": "CMake",
+    "frontier": 45,
+    "signal": 70,
+    "score": 55,
+    "llm_summary": "用纯CMake语言实现GPT-2模型，展现构建系统的极限创意",
+    "llm_tags": [
+      "CMake",
+      "GPT-2",
+      "模型实现"
+    ]
+  },
+  {
+    "id": "66ea72162e8b",
+    "title": "BraxisAI/braxis-blueprint ⭐62",
+    "summary": "The $0 AI Empire Playbook — 140+ agents, 20+ free LLM lanes, 1,800+ songs, a living 3D world, all on free tiers. Real scripts, real failure classes, MIT.",
+    "url": "https://github.com/BraxisAI/braxis-blueprint",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-25T12:51:20.821336+00:00",
+    "created_at": "2026-08-23T00:19:10Z",
+    "stars": 62,
+    "language": "Python",
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "开源项目展示用免费层构建多代理系统，含具体数量指标。",
+    "llm_tags": [
+      "多代理",
+      "免费API",
+      "开源"
+    ]
+  },
+  {
+    "id": "8d1e90c59ebb",
+    "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+    "summary": "",
+    "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-08-25T11:39:24+00:00",
+    "frontier": 78,
+    "signal": 74,
+    "score": 76,
+    "llm_summary": "提出量化感知修复方法，4比特压缩模型性能超越全精度原模型。",
+    "llm_tags": [
+      "模型压缩",
+      "量化感知",
+      "性能优化"
+    ]
+  },
+  {
+    "id": "77beafa63222",
+    "title": "Lexical Perturbations Disrupt LLM Reasoning: An Empirical Study of Attention Diversion",
+    "summary": "arXiv:2608.22140v1 Announce Type: new  Abstract: Large Language Models (LLMs) achieve strong reasoning performance, but their robustness to realistic lexical corruption remains poorly understood. We evaluate four open-weight instruction-tuned models and frontier models across four reasoning benchmarks under keyboard noise, character swaps, and filler insertion. Character-level perturbations substantially degrade accuracy, especially on multi-step reasoning tasks, while filler insertion has little effect. We trace this asymmetry to Attention Diversion: lexical corruption fragments subword tokenization, and the resulting fragments attract disproportionate attention mass, concentrated in middle and final transformer layers. Length-matched controls confirm that fragmentation, not prompt length",
+    "url": "https://arxiv.org/abs/2608.22140",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-25T04:00:00+00:00",
+    "frontier": 55,
+    "signal": 72,
+    "score": 64,
+    "llm_summary": "实证研究词汇扰动对LLM推理鲁棒性的影响",
+    "llm_tags": [
+      "鲁棒性",
+      "推理",
+      "词汇扰动",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "87c3ec413a14",
+    "title": "ESCRAG-R1: Retrieval-Augmented Reinforcement Learning for Emotional Support Conversation",
+    "summary": "arXiv:2608.21925v1 Announce Type: new  Abstract: Emotional Support Conversation (ESC) systems aim to provide holistic support by balancing professional therapeutic competence with natural empathy. However, existing methods struggle to simultaneously achieve structured, stage-aware reasoning and seamless empathy-expertise alignment, often resulting in an artificial splicing of clinical strategies and generic reassurance. To overcome these limitations, we propose ESCRAG-R1, a unified framework that integrates retrieval-based psychological guidance into Group Relative Policy Optimization (GRPO). By incorporating retrieval into the reinforcement learning loop, ESCRAG-R1 transforms external knowledge into a robust learning signal that stimulates explicit internal reasoning prior to generation a",
+    "url": "https://arxiv.org/abs/2608.21925",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-25T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 75,
+    "score": 72,
+    "llm_summary": "提出检索增强强化学习框架，提升情感支持对话的共情与专业一致性。",
+    "llm_tags": [
+      "🔧 已开源",
+      "情感对话",
+      "强化学习",
+      "检索增强"
+    ]
+  },
+  {
+    "id": "a7b759300603",
+    "title": "Teaching LLMs How ICU Physicians Approach Clinical Reasoning Through OMOP-Aligned Retrieval Improves Reasoning Across Clinical Domains",
+    "summary": "arXiv:2608.22622v1 Announce Type: new  Abstract: Clinical decision-making relies on identifying relevant patient information to guide diagnosis and treatment, a challenge that is especially difficult in the data-dense and rapidly changing intensive care unit (ICU). Large language models (LLMs) could support this task. However, existing applications and datasets mostly emphasize surface-level retrieval or factual recall rather than the inductive and deductive reasoning clinicians practice to select and reason over decision-relevant evidence. We hypothesized that training LLMs on expert ICU reasoning could yield clinical reasoning skills that generalize beyond critical care. Here we introduce ICU-REACT, a reasoning dataset developed with 19 clinicians through a clinician-in-the-loop framewor",
+    "url": "https://arxiv.org/abs/2608.22622",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-25T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 80,
+    "score": 75,
+    "llm_summary": "利用OMOP对齐检索提升LLM跨临床领域推理能力",
+    "llm_tags": [
+      "🔧 已开源",
+      "临床推理",
+      "检索增强",
+      "🔧已开源"
+    ]
+  },
+  {
+    "id": "4eebb3a28837",
+    "title": "Beyond Factual Knowledge: Benchmarking and Learning Step-Level Procedural Rule Reasoning in Large Language Models",
+    "summary": "arXiv:2608.22753v1 Announce Type: new  Abstract: Large language models (LLMs) excel at text understanding and generation, yet still struggle to reliably understand and apply externally provided procedural rules at scale. To evaluate this capability, we introduce RuleWorld, a large-scale benchmark that reformulates rules as globally reusable abstract units rather than instance-specific facts. In RuleWorld, several scenarios, including single-rule, parallel multi-rule, and multi-hop reasoning, are settled for comprehensive evaluation. We further propose DynaRule, an end-to-end framework that injects the given rules into the KV cache and turns retrieval into an internal, learnable, step-wise process. Specifically, DynaRule employs Stacked Step-Level Attention Training with a special  token to",
+    "url": "https://arxiv.org/abs/2608.22753",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-25T04:00:00+00:00",
+    "frontier": 60,
+    "signal": 75,
+    "score": 68,
+    "llm_summary": "提出RuleWorld基准，评估大模型程序性规则推理能力。",
+    "llm_tags": [
+      "规则推理",
+      "基准测试",
+      "LLM评估",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "59b29f056481",
+    "title": "MegaMem: A Retrieval Solution for Ultra-Large Context Windows",
+    "summary": "arXiv:2608.22137v1 Announce Type: new  Abstract: Modern language models and agents increasingly require persistent memory for complete codebases, long interaction histories, and heterogeneous enterprise records. The key challenge is to keep hundreds of millions of tokens searchable while passing only bounded source evidence to the answer model. We introduce MegaMem, a source-resolved dual-view retrieval system that separates semantic access from generation evidence. Distilled records and detailed evidence are searched with original and transformed queries; every distilled hit resolves to an immutable source ID before reciprocal-rank fusion, deduplication, and cross-encoder reranking; and only the highest-ranked detailed evidence within a fixed budget supports generation. Post-answer attrib",
+    "url": "https://arxiv.org/abs/2608.22137",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-25T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 80,
+    "score": 78,
+    "llm_summary": "提出双视图检索系统，支持超长上下文高效访问",
+    "llm_tags": [
+      "检索系统",
+      "超长上下文",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "d931df04ffc6",
+    "title": "MCP-Universe RL: A Framework for Training MCP Tool-Use Agents via Reinforcement Learning",
+    "summary": "arXiv:2608.22167v1 Announce Type: new  Abstract: Reinforcement learning (RL) has become an effective way to improve the tool-use ability of large language models (LLMs), but most existing RL frameworks stop at the policy update. For every new domain, the user is left with two hard systems problems: standing up an isolated environment for each of hundreds of concurrent trajectories and connecting it to training, and scheduling the rollout so that the GPU stays busy across long, multi-turn episodes that spend much of their time stalled on slow tool calls. We present MCP-Universe RL (MCP-U RL), an open-source framework that takes over both. It uses the Model Context Protocol (MCP) as the interface to the environment, so any tool already exposed as an MCP server plugs into training with no RL-",
+    "url": "https://arxiv.org/abs/2608.22167",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-25T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 85,
+    "score": 78,
+    "llm_summary": "提出MCP-Universe RL框架，简化MCP工具调用智能体的强化学习训练流程。",
+    "llm_tags": [
+      "工具智能体",
+      "强化学习",
+      "MCP",
+      "🔧 已开源"
+    ]
+  },
+  {
     "id": "541d08cc0c3d",
     "title": "forcewake/hermes-conductor ⭐57",
     "summary": "One Hermes conductor. Many coding CLIs. Zero trust in self-reports. Production multi-harness orchestration patterns: worktree lanes, verification gates, recovery playbooks — from 18 kanban boards and ",
