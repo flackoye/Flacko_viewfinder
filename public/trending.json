@@ -1,5 +1,146 @@
 [
   {
+    "id": "541d08cc0c3d",
+    "title": "forcewake/hermes-conductor ⭐57",
+    "summary": "One Hermes conductor. Many coding CLIs. Zero trust in self-reports. Production multi-harness orchestration patterns: worktree lanes, verification gates, recovery playbooks — from 18 kanban boards and ",
+    "url": "https://github.com/forcewake/hermes-conductor",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-25T01:22:15.195651+00:00",
+    "created_at": "2026-08-23T18:49:46Z",
+    "stars": 57,
+    "language": null,
+    "frontier": 60,
+    "signal": 55,
+    "score": 58,
+    "llm_summary": "开源多编码CLI编排工具，含验证门与恢复模式",
+    "llm_tags": [
+      "AI编排",
+      "编码工具",
+      "工程实践"
+    ]
+  },
+  {
+    "id": "05488619b1b1",
+    "title": "DavidCarliez/cover ⭐41",
+    "summary": "Reversible privacy proxy for AI agents: send realistic fakes, restore originals locally.",
+    "url": "https://github.com/DavidCarliez/cover",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-25T01:22:15.195651+00:00",
+    "created_at": "2026-08-21T18:56:30Z",
+    "stars": 41,
+    "language": "Go",
+    "frontier": 55,
+    "signal": 50,
+    "score": 53,
+    "llm_summary": "面向AI代理的可逆隐私代理，发送假数据并本地还原。",
+    "llm_tags": [
+      "隐私保护",
+      "AI代理",
+      "代理工具"
+    ]
+  },
+  {
+    "id": "96da5933b094",
+    "title": "hxhou0207/chatgpt-markdown-latex-copier ⭐33",
+    "summary": "Copy ChatGPT web responses containing LaTeX formulas as well-formatted Markdown.",
+    "url": "https://github.com/hxhou0207/chatgpt-markdown-latex-copier",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-25T01:22:15.195651+00:00",
+    "created_at": "2026-08-22T09:51:59Z",
+    "stars": 33,
+    "language": "JavaScript",
+    "frontier": 35,
+    "signal": 60,
+    "score": 45,
+    "llm_summary": "开源工具，将ChatGPT中的LaTeX公式复制为规范Markdown。",
+    "llm_tags": [
+      "Markdown",
+      "LaTeX",
+      "ChatGPT"
+    ]
+  },
+  {
+    "id": "27d2878896b5",
+    "title": "patcireamo/ChungusHub ⭐32",
+    "summary": "ChungusHub is a local-first, privacy-focused LLM frontend for roleplay.",
+    "url": "https://github.com/patcireamo/ChungusHub",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-25T01:22:15.195651+00:00",
+    "created_at": "2026-08-19T12:01:11Z",
+    "stars": 32,
+    "language": "TypeScript",
+    "frontier": 50,
+    "signal": 50,
+    "score": 50,
+    "llm_summary": "开源本地优先的LLM角色扮演前端，注重隐私。",
+    "llm_tags": [
+      "大模型应用",
+      "本地部署",
+      "角色扮演"
+    ]
+  },
+  {
+    "id": "4802c7450fa4",
+    "title": "mrpulor-gh/nuphus ⭐29",
+    "summary": "Nuphus — 本地优先的 AI Agent：真实桌面执行力 + 手机第二块屏幕。Local-first AI agent with real desktop execution and dual-device real-time sync.",
+    "url": "https://github.com/mrpulor-gh/nuphus",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-25T01:22:15.195651+00:00",
+    "created_at": "2026-08-21T20:35:53Z",
+    "stars": 29,
+    "language": "Rust",
+    "frontier": 55,
+    "signal": 50,
+    "score": 53,
+    "llm_summary": "本地优先AI智能体，支持真实桌面执行与多设备实时同步的开源项目。",
+    "llm_tags": [
+      "智能体",
+      "本地部署",
+      "多端同步"
+    ]
+  },
+  {
+    "id": "d1880379172a",
+    "title": "Coding expertise is going to collapse from AI reliance",
+    "summary": "HN 热度: 452 点赞, 455 评论（外链帖无正文）",
+    "url": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-24T15:52:33+00:00",
+    "points": 452,
+    "num_comments": 455,
+    "frontier": 76,
+    "signal": 76,
+    "score": 76,
+    "llm_summary": "🔥 HN 452赞 455评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "a545fb894686",
+    "title": "OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)",
+    "summary": "HN 热度: 290 点赞, 263 评论（外链帖无正文）",
+    "url": "https://developers.openai.com/api/docs/pricing",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-24T15:22:43+00:00",
+    "points": 290,
+    "num_comments": 263,
+    "frontier": 74,
+    "signal": 74,
+    "score": 74,
+    "llm_summary": "🔥 HN 290赞 263评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "94129d7e77a9",
     "title": "rome-os/rome ⭐195",
     "summary": "Rome is the agentic OS.",
@@ -38,6 +179,41 @@
       "教育AI",
       "LLM应用",
       "OCR"
+    ]
+  },
+  {
+    "id": "be6e7824d941",
+    "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+    "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
+    "url": "https://openai.com/index/gpt-5-6-in-kiro",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-08-24T12:00:00+00:00",
+    "frontier": 70,
+    "signal": 50,
+    "score": 62,
+    "llm_summary": "OpenAI发布GPT-5.6，面向Kiro开发者，提升性价比。",
+    "llm_tags": [
+      "大语言模型",
+      "开发者工具"
+    ]
+  },
+  {
+    "id": "ab3f5f0fe1d8",
+    "title": "Xiaomi AI Cube announced with 1.2TB/s memory bandwidth",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1vwvghi/xiaomi_ai_cube_announced_with_12tbs_memory/\"> <img alt=\"Xiaomi AI Cube announced with 1.2TB/s memory bandwidth\" src=\"http",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwvghi/xiaomi_ai_cube_announced_with_12tbs_memory/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-24T07:04:32+00:00",
+    "frontier": 75,
+    "signal": 50,
+    "score": 65,
+    "llm_summary": "小米发布AI Cube，内存带宽达1.2TB/s",
+    "llm_tags": [
+      "AI硬件",
+      "内存带宽",
+      "小米"
     ]
   },
   {
@@ -95,6 +271,61 @@
       "移动代理",
       "VLM",
       "🔧 已开源"
+    ]
+  },
+  {
+    "id": "326a914a09a5",
+    "title": "StateSight: Benchmarking Latent Spatial-State Reconstruction in Vision-Language Models",
+    "summary": "arXiv:2608.20414v1 Announce Type: new  Abstract: Vision-language models are increasingly used for multimodal question answering, yet their ability to reconstruct latent spatial structure from a single image remains difficult to isolate. Broad benchmarks often combine perception, optical character recognition, domain knowledge, linguistic priors, and reasoning in the same evaluation. We introduce StateSight, a procedurally generated benchmark for cube-net opposite-face reasoning, occluded cube-tower counting, and 4-neighbor connected-component counting. Each task family contains 300 single-image prompts with deterministic oracle labels and exact-match scoring. OpenAI GPT-5.5, using the API model identifier gpt-5.5, achieved 59.3%, 33.3%, and 28.3% accuracy across the three tasks, while Clau",
+    "url": "https://arxiv.org/abs/2608.20414",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-24T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 68,
+    "score": 66,
+    "llm_summary": "提出程序化基准测试视觉语言模型空间状态重建能力",
+    "llm_tags": [
+      "视觉语言模型",
+      "空间推理",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "93fdf21bdc96",
+    "title": "PrimeAgentOrchestrator: Memory-Primed Agent Spawning for Personal AI Infrastructure",
+    "summary": "arXiv:2608.20342v1 Announce Type: new  Abstract: Large language model (LLM) coding agents start each session with an empty context window, discarding accumulated knowledge from prior work. We present PrimeAgentOrchestrator (PAO), a system that spawns new instances of Claude Code -- Anthropic's terminal-based coding agent -- pre-loaded with relevant memories compiled from the user's existing personal databases. At spawn time, PAO queries two independently-operated memory backends in parallel (a PostgreSQL entity-observation database and a Cloudflare Worker semantic search index), fuses results using backend-specific retrieval strategies, and delivers the compiled briefing via filesystem injection that exploits the host agent's configuration auto-read behavior. PAO manages the full agent lif",
+    "url": "https://arxiv.org/abs/2608.20342",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-24T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 50,
+    "score": 60,
+    "llm_summary": "提出记忆预加载代理生成系统，增强编码代理连续工作能力",
+    "llm_tags": [
+      "记忆增强",
+      "Agent",
+      "编码代理"
+    ]
+  },
+  {
+    "id": "642f1f403c5c",
+    "title": "Is Multimodal Speculative Decoding Ready for Diffusion-Based Parallel Drafting? A Survey and Empirical Diagnosis",
+    "summary": "arXiv:2608.20743v1 Announce Type: new  Abstract: Speculative decoding accelerates autoregressive generation by allowing a lightweight drafter to propose future tokens while a target model verifies them in parallel. Its lossless guarantee has motivated a line of work that pushes the drafter itself toward parallel generation. The most recent paradigm is block-parallel generative drafting, including diffusion-based methods such as DFlash and DSpark, achieving up to 3.6x speedup on common daily chatting tasks. While this transition is well studied in text-only LLMs, its applicability to multimodal models remains an open question. Existing multimodal speculative decoding efforts focus on input compression, adapter alignment, candidate coverage, or modality-specific verification; however, block-",
+    "url": "https://arxiv.org/abs/2608.20743",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-24T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 68,
+    "score": 70,
+    "llm_summary": "实证诊断多模态推测解码与扩散并行草稿方法，加速效果显著。",
+    "llm_tags": [
+      "推测解码",
+      "扩散模型",
+      "多模态",
+      "加速推理"
     ]
   },
   {
@@ -157,6 +388,96 @@
       "AI协作",
       "本地模型",
       "开发工具"
+    ]
+  },
+  {
+    "id": "ee21903eadab",
+    "title": "I built a low-latency AI companion that plays Skyrim with me",
+    "summary": "HN 热度: 341 点赞, 69 评论（外链帖无正文）",
+    "url": "https://pantel.is/projects/ai-gaming-companion/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-23T23:18:17+00:00",
+    "points": 341,
+    "num_comments": 69,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 341赞 69评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "ba171d37cae3",
+    "title": "I were 17, I'd learn how to build LLMs from scratch",
+    "summary": "HN ⭐505 603评 | https://xcancel.com/paulg/status/2091544343589060625",
+    "url": "https://twitter.com/paulg/status/2091544343589060625",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-23T20:38:09+00:00",
+    "points": 505,
+    "num_comments": 603,
+    "frontier": 77,
+    "signal": 77,
+    "score": 77,
+    "llm_summary": "🔥 HN 505赞 603评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "158feafa6f91",
+    "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+    "summary": "HN 热度: 762 点赞, 674 评论（外链帖无正文）",
+    "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-23T18:16:37+00:00",
+    "points": 762,
+    "num_comments": 674,
+    "frontier": 78,
+    "signal": 78,
+    "score": 78,
+    "llm_summary": "🔥 HN 762赞 674评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "33925ccb63cc",
+    "title": "My agent.md to improve LLM-assisted code quality",
+    "summary": "HN 热度: 394 点赞, 171 评论（外链帖无正文）",
+    "url": "https://fabiensanglard.net/agent.md/index.html",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-23T17:59:52+00:00",
+    "points": 394,
+    "num_comments": 171,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 394赞 171评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "79bedc96b147",
+    "title": "I spent $266 and four AI models to own my tablet. GLM-5.3 finished it in a day",
+    "summary": "HN 热度: 681 点赞, 289 评论（外链帖无正文）",
+    "url": "https://ericpardee.github.io/fire-hd-ownership/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-23T14:23:09+00:00",
+    "points": 681,
+    "num_comments": 289,
+    "frontier": 78,
+    "signal": 78,
+    "score": 78,
+    "llm_summary": "🔥 HN 681赞 289评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -1008,6 +1329,24 @@
     ]
   },
   {
+    "id": "d3db9dd83d78",
+    "title": "Offering Zero Data Retention for frontier models",
+    "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
+    "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-08-19T19:00:00+00:00",
+    "frontier": 72,
+    "signal": 62,
+    "score": 68,
+    "llm_summary": "OpenAI为API客户重申零数据保留，并预览私有安全处理机制。",
+    "llm_tags": [
+      "隐私保护",
+      "安全处理",
+      "API服务"
+    ]
+  },
+  {
     "id": "85d70574bbca",
     "title": "Mathematics in the age of AI",
     "summary": "HN 热度: 208 点赞, 265 评论（外链帖无正文）",
@@ -1077,132 +1416,6 @@
       "智能体",
       "内存优化",
       "性能调优"
-    ]
-  },
-  {
-    "id": "226342567b5e",
-    "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
-    "summary": "",
-    "url": "https://huggingface.co/blog/multi-vector-encoder",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-08-18T00:00:00+00:00",
-    "frontier": 50,
-    "signal": 75,
-    "score": 60,
-    "llm_summary": "介绍多向量后期交互嵌入模型在Sentence Transformers中的实现",
-    "llm_tags": [
-      "嵌入模型",
-      "后期交互",
-      "多向量"
-    ]
-  },
-  {
-    "id": "0341b5960781",
-    "title": "GPT-5.6 Sol Pricing Cut by 50% on OpenRouter",
-    "summary": "HN 热度: 632 点赞, 448 评论（外链帖无正文）",
-    "url": "https://openrouter.ai/openai/gpt-5.6-sol",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-17T21:03:18+00:00",
-    "points": 632,
-    "num_comments": 448,
-    "frontier": 78,
-    "signal": 78,
-    "score": 78,
-    "llm_summary": "🔥 HN 632赞 448评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "06aa2620175d",
-    "title": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
-    "summary": "HN 热度: 1054 点赞, 856 评论（外链帖无正文）",
-    "url": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-17T20:46:10+00:00",
-    "points": 1054,
-    "num_comments": 856,
-    "frontier": 80,
-    "signal": 80,
-    "score": 80,
-    "llm_summary": "🔥 HN 1054赞 856评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "ed6eed03a259",
-    "title": "AI;DR (AI; Didn't Read)",
-    "summary": "HN 热度: 1101 点赞, 689 评论（外链帖无正文）",
-    "url": "https://www.rickmanelius.com/p/aidr-ai-didnt-read",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-17T19:47:15+00:00",
-    "points": 1101,
-    "num_comments": 689,
-    "frontier": 80,
-    "signal": 80,
-    "score": 80,
-    "llm_summary": "🔥 HN 1101赞 689评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "1bd90c3293c0",
-    "title": "Same Cluster, 33 Points More Utilization: What Changed Was the Order",
-    "summary": "",
-    "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-08-17T19:46:21+00:00",
-    "frontier": 60,
-    "signal": 80,
-    "score": 68,
-    "llm_summary": "介绍仅通过调整调度顺序将集群利用率提升33个百分点的实践",
-    "llm_tags": [
-      "集群调度",
-      "资源优化",
-      "GPU利用率"
-    ]
-  },
-  {
-    "id": "a57cea204666",
-    "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
-    "summary": "HN 热度: 424 点赞, 157 评论（外链帖无正文）",
-    "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-17T14:18:38+00:00",
-    "points": 424,
-    "num_comments": 157,
-    "frontier": 76,
-    "signal": 76,
-    "score": 76,
-    "llm_summary": "🔥 HN 424赞 157评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "2d9fa508e1b6",
-    "title": "How to disable or avoid intrusive AI",
-    "summary": "HN 热度: 338 点赞, 197 评论（外链帖无正文）",
-    "url": "https://www.librarian.net/notoai/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-17T14:07:56+00:00",
-    "points": 338,
-    "num_comments": 197,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 338赞 197评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
     ]
   }
 ]
