@@ -1,5 +1,106 @@
 [
   {
+    "id": "ba8456b956c8",
+    "title": "RomainLanz/adonis-llm-boilerplate ⭐36",
+    "summary": "",
+    "url": "https://github.com/RomainLanz/adonis-llm-boilerplate",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-26T01:25:36.697178+00:00",
+    "created_at": "2026-08-22T14:35:49Z",
+    "stars": 36,
+    "language": "TypeScript",
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "AdonisJS的LLM样板项目，提供框架集成参考。",
+    "llm_tags": [
+      "LLM",
+      "后端框架"
+    ]
+  },
+  {
+    "id": "93dbb765b4d8",
+    "title": "sunchaokun/pptx-designer ⭐33",
+    "summary": "Code-first Python library for generating editable PowerPoint presentations with native PPTX objects, SVG support, and LLM-friendly build APIs.",
+    "url": "https://github.com/sunchaokun/pptx-designer",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-26T01:25:36.697178+00:00",
+    "created_at": "2026-08-24T00:12:48Z",
+    "stars": 33,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 55,
+    "score": 55,
+    "llm_summary": "Python库用于生成可编辑PPT，支持SVG和LLM构建API",
+    "llm_tags": [
+      "幻灯片生成",
+      "Python库",
+      "LLM接口"
+    ]
+  },
+  {
+    "id": "835cfbd78086",
+    "title": "adpanru/cordis-mini ⭐26",
+    "summary": "用约 600 行纯 Python，从零实现 Cordis / deepseek-harness 的核心 Agent 插件架构：插件系统、Context 服务注册、依赖拓扑排序、事件分发、Waterfall 中间件与可逆副作用。无需真实 LLM API，内置 Fake LLM，通过完整 Agent Loop 直观理解 AI Agent 插件架构。",
+    "url": "https://github.com/adpanru/cordis-mini",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-26T01:25:36.697178+00:00",
+    "created_at": "2026-08-20T14:00:43Z",
+    "stars": 26,
+    "language": "Python",
+    "frontier": 35,
+    "signal": 62,
+    "score": 46,
+    "llm_summary": "600行Python复现Agent插件架构，含中间件与事件分发",
+    "llm_tags": [
+      "Agent架构",
+      "插件系统",
+      "Python"
+    ]
+  },
+  {
+    "id": "0a5bf4caa2d9",
+    "title": "Consensus-NLP/consensus-mcp ⭐23",
+    "summary": "Official MCP server for Consensus. Search 220M+ peer-reviewed research papers from Claude, ChatGPT, Cursor, and any MCP client.",
+    "url": "https://github.com/Consensus-NLP/consensus-mcp",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-26T01:25:36.697178+00:00",
+    "created_at": "2026-08-21T14:01:19Z",
+    "stars": 23,
+    "language": null,
+    "frontier": 55,
+    "signal": 55,
+    "score": 55,
+    "llm_summary": "官方MCP服务器，让AI客户端搜索2.2亿篇学术论文。",
+    "llm_tags": [
+      "MCP协议",
+      "学术搜索",
+      "AI集成"
+    ]
+  },
+  {
+    "id": "6ed599f2990d",
+    "title": "Granite 4.2 LLMs: How They're Built",
+    "summary": "",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-08-25T15:14:14+00:00",
+    "frontier": 82,
+    "signal": 86,
+    "score": 84,
+    "llm_summary": "IBM发布Granite 4.2 LLM技术细节，涵盖架构与训练方法",
+    "llm_tags": [
+      "大语言模型",
+      "模型架构",
+      "训练方法"
+    ]
+  },
+  {
     "id": "955f33df2db1",
     "title": "AlpinDale/gpt2.cmake ⭐98",
     "summary": "Implementation of the GPT-2 model in pure CMake",
@@ -169,6 +270,62 @@
       "工具智能体",
       "强化学习",
       "MCP",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "96e99f4f4c9a",
+    "title": "Beyond What Meets the Eye: Unveiling Situational Illusions for Multimodal Large Language Models",
+    "summary": "arXiv:2608.22232v1 Announce Type: new  Abstract: Real-world situation appearances can deviate from their underlying physical states, challenging the reliability of multimodal large language models (MLLMs) in practical applications. In this paper, we term this phenomenon situational illusions and investigate: (1) how MLLMs perform under such illusions, and (2) how to mitigate the limitations. We first develop a comprehensive where-what-how taxonomy that characterizes where situational illusions occur, what targets they take, and how they arise. Building on this taxonomy, we introduce MSIBench, a benchmark designed to assess the discrimination, understanding, and reasoning capabilities of MLLMs under situational illusions. Evaluations of 27 model configurations reveal that current MLLMs are ",
+    "url": "https://arxiv.org/abs/2608.22232",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-25T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 72,
+    "score": 74,
+    "llm_summary": "系统研究多模态大模型的情境错觉现象并提出缓解方法",
+    "llm_tags": [
+      "多模态",
+      "情境错觉",
+      "鲁棒性",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "4d95e7137dca",
+    "title": "Text-Anchored Semantic Perturbations for Transferable Jailbreak Attacks on Multimodal Large Language Models",
+    "summary": "arXiv:2608.22312v1 Announce Type: new  Abstract: Multimodal Large Language Models (MLLMs) have achieved remarkable progress in vision-language interaction, yet their safety alignment remains vulnerable to jailbreak attacks. A key challenge is that safety behavior learned in the textual space does not reliably transfer to fused cross-modal representations, leaving multimodal inputs exploitable through latent semantic cues. We propose Text-Anchored Semantic Perturbation Attack (TA-SPA), a black-box jailbreak framework that optimizes transferable perturbations in a text-anchored semantic space. TA-SPA integrates Text-Anchored Semantic Factorization (TASF), which encourages the separation of cross-modal semantic factors from modality-specific residuals, with Semantic-Preserving Augmentation (S",
+    "url": "https://arxiv.org/abs/2608.22312",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-25T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 68,
+    "llm_summary": "提出文本锚定语义扰动，实现跨模态迁移的黑盒越狱攻击",
+    "llm_tags": [
+      "多模态安全",
+      "越狱攻击",
+      "对抗扰动"
+    ]
+  },
+  {
+    "id": "42ed41cd47f5",
+    "title": "GTA-RAG: Graph-Trajectory-Augmented Reinforcement Learning for Multi-Turn Retrieval-Augmented Reasoning",
+    "summary": "arXiv:2608.22479v1 Announce Type: new  Abstract: Retrieval-augmented generation (RAG) enables LLMs to access external knowledge for answering knowledge-intensive questions. For complex multi-hop questions, multi-turn retrieval-augmented reasoning extends RAG into an iterative process that repeatedly searches for and integrates evidence across documents. However, existing reinforcement-learning (RL) approaches for agentic RAG are typically optimized with final-answer rewards, which provide sparse supervision and overlook whether the model actually retrieves the required evidence chain. We present \\textsc{GTA-RAG}, a graph-trajectory-augmented RL framework for multi-turn retrieval-augmented reasoning. From an entity--document graph, we sample connected document paths, synthesize multi-hop QA",
+    "url": "https://arxiv.org/abs/2608.22479",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-25T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出图轨迹增强强化学习方法，优化多轮检索增强推理",
+    "llm_tags": [
+      "强化学习",
+      "检索增强",
+      "多轮推理",
       "🔧 已开源"
     ]
   },
@@ -1412,6 +1569,24 @@
     ]
   },
   {
+    "id": "58a0b7de655b",
+    "title": "How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code",
+    "summary": "",
+    "url": "https://huggingface.co/blog/pwc-search",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-08-21T00:00:00+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "Hugging Face 分享如何用推理端点、任务和存储桶支撑论文代码搜索。",
+    "llm_tags": [
+      "基础设施",
+      "推理服务",
+      "搜索系统"
+    ]
+  },
+  {
     "id": "da22f664787e",
     "title": "Show HN: Huzzah – a novel approach to coding with AI",
     "summary": "HN ⭐353 203评 | Hello everyone. I've been working on this experimental editor called Huzzah. I've been working almost exclusively with coding agents since January of this year, and over the past few months I began to feel utterly exhausted by them. They're great, but I'm finding it more and more tedious to write fu",
@@ -1571,24 +1746,6 @@
     "llm_summary": "🔥 HN 323赞 330评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "6f9af1e77dc2",
-    "title": "How Much Memory Does Your Agent Actually Need?",
-    "summary": "",
-    "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-08-18T18:09:38+00:00",
-    "frontier": 55,
-    "signal": 75,
-    "score": 63,
-    "llm_summary": "探讨AI智能体实际内存需求，提供量化分析与优化建议",
-    "llm_tags": [
-      "智能体",
-      "内存优化",
-      "性能调优"
     ]
   }
 ]
