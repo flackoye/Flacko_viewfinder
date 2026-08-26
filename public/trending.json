@@ -1,5 +1,119 @@
 [
   {
+    "id": "06444a703929",
+    "title": "fkrein1/whatsapp-fitness-agent ⭐23",
+    "summary": "Log workouts, runs, meals, and body weight through WhatsApp using Cloudflare Workers, D1, and GPT-5.6 Luna",
+    "url": "https://github.com/fkrein1/whatsapp-fitness-agent",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-26T12:56:29.628973+00:00",
+    "created_at": "2026-08-22T11:49:16Z",
+    "stars": 23,
+    "language": "TypeScript",
+    "frontier": 45,
+    "signal": 60,
+    "score": 51,
+    "llm_summary": "通过WhatsApp记录健身数据，基于Cloudflare Workers和GPT-5.6的开源项目",
+    "llm_tags": [
+      "对话式AI",
+      "健身管理",
+      "云函数"
+    ]
+  },
+  {
+    "id": "dd2e563c286c",
+    "title": "MARS: Multi-Specialist LLM Relay System for Competitive Programming",
+    "summary": "arXiv:2608.23918v1 Announce Type: new  Abstract: Large Language Models excel at code generation, yet competitive programming exposes a persistent failure mode: existing multi-agent pipelines distribute work over generic planner, coder, and debugger roles and delegate the choice of algorithmic technique to the backbone alone. We present MARS (Multi-Agent Relay of Specialized LLMs), a prompt-only framework in which each agent is a topic specialist---dynamic programming, graphs, strings, geometry, and so on---grounded by retrieval-augmented generation over an algorithm-theory corpus. Given a problem, retrieval selects a small team of relevant specialists; a starter writes an initial C++17 solution, and each subsequent turn runs the candidate against public examples in a sandbox, lets the acti",
+    "url": "https://arxiv.org/abs/2608.23918",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-26T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 76,
+    "score": 74,
+    "llm_summary": "提出多专家LLM协作框架，专注竞赛编程算法领域，纯提示驱动。",
+    "llm_tags": [
+      "多智能体",
+      "竞赛编程",
+      "LLM",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "a4f9eaf6b0b2",
+    "title": "Generating Biomedical Fact-Checking Reports with RL-Enhanced Agentic Search",
+    "summary": "arXiv:2608.23811v1 Announce Type: new  Abstract: Automated fact-checking is essential for ensuring the reliability of public health information, yet the biomedical domain poses unique challenges. Validating biomedical claims requires rigorous interpretation of scientific literature, assessment of retrieved evidence, and comprehensive justification toward the conclusion. Although Large Language Models (LLMs) enhanced by Retrieval-Augmented Generation (RAG) and agentic search perform automated fact-checking in a retrieve-then-verify paradigm, current methods still output isolated prediction labels, lacking explanatory depth and offers limited utility for human understanding. To bridge this gap, we introduce an LLM-based agent named BioCheck Agent that generates structured biomedical fact-che",
+    "url": "https://arxiv.org/abs/2608.23811",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-26T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 80,
+    "score": 76,
+    "llm_summary": "利用强化学习增强智能体搜索，自动生成生物医学事实核查报告",
+    "llm_tags": [
+      "事实核查",
+      "智能体",
+      "强化学习",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "67f30e055d4b",
+    "title": "Claim-Level Confidence Calibration for Reliable Decision Making with Large Language Models",
+    "summary": "arXiv:2608.22483v1 Announce Type: new  Abstract: Large Language Models (LLMs) increasingly support decision-making in high-stakes domains, but they often hallucinate and express confidence that is misaligned with factual correctness. Response-level confidence is a coarse signal: a single generation can mix correct and incorrect statements, so a single number is not actionable for users that must accept, reject, or verify individual pieces of information. We study claim-level confidence calibration as a decision-relevant uncertainty signal: each response is decomposed into atomic, verifiable claims, and each claim is assigned a calibrated confidence using inference-time signals from consistency across samples and self-verification. Our framework operates in closed-box settings (no logits, n",
+    "url": "https://arxiv.org/abs/2608.22483",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-26T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 45,
+    "score": 60,
+    "llm_summary": "研究LLM声明级置信度校准以提升决策可靠性",
+    "llm_tags": [
+      "置信度校准",
+      "大语言模型",
+      "决策可靠性"
+    ]
+  },
+  {
+    "id": "6c5b25d83648",
+    "title": "EMRB: A Multi-Level Benchmark for Evaluating LLM Reasoning over Raw Electromagnetic Signals",
+    "summary": "arXiv:2608.24086v1 Announce Type: new  Abstract: Large language models (LLMs) are increasingly used as code agents for scientific and engineering analysis, but their ability to analyze raw physical-layer measurements remains untested. We introduce \\textbf{EMRB} (\\textbf{E}lectro\\textbf{m}agnetic \\textbf{R}easoning \\textbf{B}enchmark), which evaluates whether LLMs can analyze raw I/Q data by writing and running code. EMRB contains 200 problems across five difficulty levels and 27 question types, from signal detection to OFDM design, generated from 11 signal types with verified ground truth. Unlike benchmarks built on preprocessed features or structured tables, EMRB provides only the raw capture; the quantities each question refers to must first be discovered through code. We evaluate 14 LLM",
+    "url": "https://arxiv.org/abs/2608.24086",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-26T04:00:00+00:00",
+    "frontier": 60,
+    "signal": 75,
+    "score": 68,
+    "llm_summary": "构建多级电磁原始信号推理基准，含200问题五难度评估LLM。",
+    "llm_tags": [
+      "基准评测",
+      "电磁信号",
+      "LLM推理",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "210bef8998c6",
+    "title": "Joint Optimization of Tool Creation and Use for Large Language Model Agents",
+    "summary": "arXiv:2608.24571v1 Announce Type: new  Abstract: Tool-augmented language models are bounded by the APIs humans bothered to write; existing tool-creation systems patch this by prompting a frozen LLM at inference time, leaving the model that writes a tool decoupled from the one that uses it, with no signal that the schemas it produces are schemas it can invoke. We propose SMITH (Schema-grounded Multi-task Iterative Tool Honing), a reinforcement learning framework that jointly trains tool creation and tool use inside a single policy. Each rollout is either a build task (write a tool from a few examples) or a use task (invoke a pooled tool on a held-out question). Three separate reward axes catch schema, code, and outcome failures independently, so each failure mode contributes its own gradien",
+    "url": "https://arxiv.org/abs/2608.24571",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-26T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 62,
+    "score": 68,
+    "llm_summary": "提出强化学习框架联合优化LLM代理的工具创建与使用",
+    "llm_tags": [
+      "工具学习",
+      "强化学习",
+      "LLM代理"
+    ]
+  },
+  {
     "id": "ba8456b956c8",
     "title": "RomainLanz/adonis-llm-boilerplate ⭐36",
     "summary": "",
@@ -83,6 +197,24 @@
     ]
   },
   {
+    "id": "e06038b97905",
+    "title": "How much of HN is AI?",
+    "summary": "HN 热度: 270 点赞, 329 评论（外链帖无正文）",
+    "url": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-25T15:23:41+00:00",
+    "points": 270,
+    "num_comments": 329,
+    "frontier": 74,
+    "signal": 74,
+    "score": 74,
+    "llm_summary": "🔥 HN 270赞 329评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "6ed599f2990d",
     "title": "Granite 4.2 LLMs: How They're Built",
     "summary": "",
@@ -158,6 +290,24 @@
       "模型压缩",
       "量化感知",
       "性能优化"
+    ]
+  },
+  {
+    "id": "7e4179901bb1",
+    "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
+    "summary": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models.",
+    "url": "https://openai.com/index/jalapeno-first-results",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-08-25T07:00:00+00:00",
+    "frontier": 85,
+    "signal": 65,
+    "score": 77,
+    "llm_summary": "OpenAI自研推理芯片Jalapeño首次公开性能，速度与效率领先。",
+    "llm_tags": [
+      "AI芯片",
+      "推理加速",
+      "硬件"
     ]
   },
   {
@@ -754,6 +904,26 @@
     "llm_summary": "🔥 HN 505赞 603评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "9ec8771f26e4",
+    "title": "Etched Sohu vs. Nvidia: Transformer ASIC vs. GPU (2026)",
+    "summary": "HN 热度: 22 点赞, 6 评论（外链帖无正文）",
+    "url": "https://www.spheron.network/blog/etched-ai-sohu-vs-nvidia-transformer-asic-inference/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-23T18:27:33+00:00",
+    "points": 22,
+    "num_comments": 6,
+    "frontier": 80,
+    "signal": 35,
+    "score": 62,
+    "llm_summary": "HN讨论Etched Sohu Transformer ASIC与NVIDIA GPU对比，无正文。",
+    "llm_tags": [
+      "AI芯片",
+      "ASIC",
+      "GPU"
     ]
   },
   {
@@ -1708,42 +1878,6 @@
     "signal": 73,
     "score": 73,
     "llm_summary": "🔥 HN 208赞 265评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "fc521a7dd7b0",
-    "title": "Replit expands access to software creation with GPT-5.6 Luna",
-    "summary": "Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs.",
-    "url": "https://openai.com/index/replit",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-08-19T07:00:00+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 67,
-    "llm_summary": "Replit推出Free Mode，基于GPT-5.6 Luna实现免费软件生成，降低创作门槛。",
-    "llm_tags": [
-      "AI编程",
-      "大模型",
-      "低代码"
-    ]
-  },
-  {
-    "id": "12661e651e8c",
-    "title": "AI boosted homework scores, then exam scores dropped: study",
-    "summary": "HN ⭐323 330评 | https://archive.is/w1eng   https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6868618",
-    "url": "https://www.economist.com/graphic-detail/2026/08/18/does-ai-stop-children-from-learning",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-19T06:13:31+00:00",
-    "points": 323,
-    "num_comments": 330,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 323赞 330评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
     ]
