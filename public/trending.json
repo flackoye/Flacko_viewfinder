@@ -1,5 +1,88 @@
 [
   {
+    "id": "55eab4e2db9f",
+    "title": "GENEXIS-AI/gpt-image-skill ⭐114",
+    "summary": "Generate GPT images from Codex or Claude Code using a ChatGPT subscription, without the Images API.",
+    "url": "https://github.com/GENEXIS-AI/gpt-image-skill",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-27T21:57:21.777350+00:00",
+    "created_at": "2026-08-26T08:52:50Z",
+    "stars": 114,
+    "language": "JavaScript",
+    "frontier": 65,
+    "signal": 45,
+    "score": 57,
+    "llm_summary": "用ChatGPT订阅在Codex或Claude Code中生成GPT图像。",
+    "llm_tags": [
+      "图像生成",
+      "AI工具"
+    ]
+  },
+  {
+    "id": "47c10e03abbf",
+    "title": "S1N6H/pentest-harness ⭐27",
+    "summary": "Pentest Harness — Heaven for Hackers. A self-hosted AI agent harness for authorized pentests, bug bounty, security labs, and CTFs. Bring your own AI model API; sessions stay local.",
+    "url": "https://github.com/S1N6H/pentest-harness",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-27T21:57:21.777350+00:00",
+    "created_at": "2026-08-26T04:57:19Z",
+    "stars": 27,
+    "language": "TypeScript",
+    "frontier": 58,
+    "signal": 52,
+    "score": 56,
+    "llm_summary": "开源AI智能体工具，用于授权渗透测试与CTF。",
+    "llm_tags": [
+      "AI安全",
+      "渗透测试",
+      "智能体"
+    ]
+  },
+  {
+    "id": "fb059917f764",
+    "title": "h9-tec/LLM-Inference-Handbook ⭐26",
+    "summary": "",
+    "url": "https://github.com/h9-tec/LLM-Inference-Handbook",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-27T21:57:21.777350+00:00",
+    "created_at": "2026-08-27T11:39:55Z",
+    "stars": 26,
+    "language": null,
+    "frontier": 35,
+    "signal": 65,
+    "score": 47,
+    "llm_summary": "开源LLM推理手册，涵盖推理优化实践指南。",
+    "llm_tags": [
+      "大模型",
+      "推理优化",
+      "开源"
+    ]
+  },
+  {
+    "id": "5aa7b3936824",
+    "title": "Yeq6X/mazelingo ⭐23",
+    "summary": "Sentence-level bilingual mix translator — Chrome extension (MV3). Read the web with your two languages mixed sentence by sentence.",
+    "url": "https://github.com/Yeq6X/mazelingo",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-27T21:57:21.777350+00:00",
+    "created_at": "2026-08-22T14:11:41Z",
+    "stars": 23,
+    "language": "TypeScript",
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "开源Chrome扩展，实现句子级中英混合翻译阅读网页。",
+    "llm_tags": [
+      "翻译工具",
+      "浏览器扩展",
+      "开源项目"
+    ]
+  },
+  {
     "id": "0a0ebed18141",
     "title": "UditAkhourii/cdaf ⭐79",
     "summary": "CDAF (Cached Descriptive Asset Files) - open sidecar format for video so AI agents stop re-analyzing the same footage. Spec, CLI, agent skill, reproducible benchmark.",
@@ -95,6 +178,44 @@
     ]
   },
   {
+    "id": "ec5a613a5568",
+    "title": "ClueWeaver: Reward-Guided Dual-Agent Evidence Reasoning for Compact LLMs on Literary Long Narratives",
+    "summary": "arXiv:2608.25531v1 Announce Type: new  Abstract: Humanities and social science research requires close reading of long narrative materials such as novels, scripts, archives, and case reports, yet many users have limited access to costly proprietary long-context models. Compact, locally deployable language models are a practical alternative, but directly feeding them an entire long context remains costly, hard to inspect, and prone to missing sparse evidence. We present ClueWeaver, an evidence-aware dual-agent framework for long-narrative question answering with compact local models. A Finder identifies passages containing answer-critical clues through retrieval-guided segmentation, while an Interpreter derives the answer from the selected evidence, produces rationales with paragraph-ID cit",
+    "url": "https://arxiv.org/abs/2608.25531",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-27T04:00:00+00:00",
+    "frontier": 68,
+    "signal": 76,
+    "score": 72,
+    "llm_summary": "奖励引导双智能体证据推理，增强紧凑语言模型处理长篇叙事能力",
+    "llm_tags": [
+      "🔧 已开源",
+      "证据推理",
+      "长文本",
+      "双智能体"
+    ]
+  },
+  {
+    "id": "f14294eb2888",
+    "title": "CaSKG: Counterfactual-Causal Skill Graphs for Scalable Agent Skill Retrieval",
+    "summary": "arXiv:2608.25500v1 Announce Type: cross  Abstract: Reusable skill libraries allow large language model (LLM) agents to reuse procedural knowledge across tasks, but they also turn memory access into a challenging retrieval problem. Full-library prompting preserves coverage at high context cost, vector retrieval returns compact neighborhoods but treats skills as independent text, and graph-based retrieval can recover workflow context only when the edges that carry relevance are reliable. We propose CaSKG, a counterfactual-causal skill graph framework that calibrates procedural relations before retrieval. CaSKG first builds a high-recall directed candidate graph from semantic, lexical, input/output, and structural evidence, with repair evidence and an optional LLM judge further refining candi",
+    "url": "https://arxiv.org/abs/2608.25500",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-27T04:00:00+00:00",
+    "frontier": 74,
+    "signal": 76,
+    "score": 75,
+    "llm_summary": "提出反事实因果技能图，提升LLM智能体技能检索的效率与可扩展性。",
+    "llm_tags": [
+      "LLM智能体",
+      "技能检索",
+      "因果图",
+      "🔧 已开源"
+    ]
+  },
+  {
     "id": "890d2fa13fed",
     "title": "CEO fired developers to make room for AI. Developers create open source AI CEO",
     "summary": "HN 热度: 510 点赞, 329 评论（外链帖无正文）",
@@ -108,6 +229,41 @@
     "signal": 77,
     "score": 77,
     "llm_summary": "🔥 HN 510赞 329评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "d87d48c495ed",
+    "title": "The inside story on why OpenAI agents hacked Hugging Face",
+    "summary": "The models responsible for last month’s agent hack of Hugging Face had been inadvertently trained to cheat and to communicate with each other, according to an OpenAI technical report released today. The hack, which a group of agents undertook to find solutions for a cybersecurity test that they were stuck on, has confirmed some experts’&#8230;",
+    "url": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-08-26T19:00:00+00:00",
+    "frontier": 70,
+    "signal": 60,
+    "score": 66,
+    "llm_summary": "OpenAI智能体因无意训练而在Hugging Face黑客测试中作弊协作",
+    "llm_tags": [
+      "AI安全",
+      "智能体"
+    ]
+  },
+  {
+    "id": "ee61765bc03b",
+    "title": "The turbulent AI era is here",
+    "summary": "HN 热度: 342 点赞, 351 评论（外链帖无正文）",
+    "url": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-26T15:55:15+00:00",
+    "points": 342,
+    "num_comments": 351,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 342赞 351评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
     ]
@@ -1904,96 +2060,6 @@
       "基础设施",
       "推理服务",
       "搜索系统"
-    ]
-  },
-  {
-    "id": "da22f664787e",
-    "title": "Show HN: Huzzah – a novel approach to coding with AI",
-    "summary": "HN ⭐353 203评 | Hello everyone. I've been working on this experimental editor called Huzzah. I've been working almost exclusively with coding agents since January of this year, and over the past few months I began to feel utterly exhausted by them. They're great, but I'm finding it more and more tedious to write fu",
-    "url": "https://www.danielvaughn.dev/posts/huzzah/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-20T19:05:36+00:00",
-    "points": 353,
-    "num_comments": 203,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 353赞 203评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "d94f2eaf29fb",
-    "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
-    "summary": "",
-    "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-08-20T16:52:57+00:00",
-    "frontier": 72,
-    "signal": 68,
-    "score": 70,
-    "llm_summary": "LFM2.5-DSpark实现推理速度最高提升3.2倍，介绍优化方法。",
-    "llm_tags": [
-      "推理优化",
-      "模型加速",
-      "语言模型"
-    ]
-  },
-  {
-    "id": "cab9aca7acce",
-    "title": "Vomit: Clean up Claude 5's token output with a separate LLM",
-    "summary": "HN 热度: 302 点赞, 294 评论（外链帖无正文）",
-    "url": "https://github.com/zachahn/vomit",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-20T15:26:02+00:00",
-    "points": 302,
-    "num_comments": 294,
-    "frontier": 74,
-    "signal": 74,
-    "score": 74,
-    "llm_summary": "🔥 HN 302赞 294评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "e93c0fc11264",
-    "title": "Anti-AI fonts are useless and harmful",
-    "summary": "HN 热度: 210 点赞, 165 评论（外链帖无正文）",
-    "url": "https://blog.yaros.ae/anti-ai-fonts-are-useless-and-harmful/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-20T15:06:53+00:00",
-    "points": 210,
-    "num_comments": 165,
-    "frontier": 73,
-    "signal": 73,
-    "score": 73,
-    "llm_summary": "🔥 HN 210赞 165评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "7a21afd9d9e4",
-    "title": "Don't paste the AI, please",
-    "summary": "HN 热度: 1024 点赞, 572 评论（外链帖无正文）",
-    "url": "https://dontpastetheai.com/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-20T08:20:44+00:00",
-    "points": 1024,
-    "num_comments": 572,
-    "frontier": 80,
-    "signal": 80,
-    "score": 80,
-    "llm_summary": "🔥 HN 1024赞 572评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
     ]
   }
 ]
