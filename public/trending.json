@@ -1,5 +1,84 @@
 [
   {
+    "id": "219a4f54cf93",
+    "title": "Nanako0129/sepia ⭐238",
+    "summary": "De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
+    "url": "https://github.com/Nanako0129/sepia",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-28T21:51:16.875800+00:00",
+    "created_at": "2026-08-28T05:56:49Z",
+    "stars": 238,
+    "language": "Shell",
+    "frontier": 78,
+    "signal": 78,
+    "score": 78,
+    "llm_summary": "⭐238 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "14937c97f6d4",
+    "title": "Reality-JH/FailoverAI ⭐63",
+    "summary": "Open-source gateway for reliable image, video and LLM jobs. | 面向可靠图片、视频和 LLM 任务的开源网关。",
+    "url": "https://github.com/Reality-JH/FailoverAI",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-28T21:51:16.875800+00:00",
+    "created_at": "2026-08-25T11:22:11Z",
+    "stars": 63,
+    "language": "Python",
+    "frontier": 50,
+    "signal": 50,
+    "score": 50,
+    "llm_summary": "面向图片、视频和LLM任务的开源可靠性网关",
+    "llm_tags": [
+      "开源网关",
+      "任务调度",
+      "容错"
+    ]
+  },
+  {
+    "id": "42ae2f60d5e2",
+    "title": "DavidCarliez/trustmebro ⭐41",
+    "summary": "Bypass llm guardrails by confusing it with fabricated tool output.",
+    "url": "https://github.com/DavidCarliez/trustmebro",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-28T21:51:16.875800+00:00",
+    "created_at": "2026-08-26T19:10:55Z",
+    "stars": 41,
+    "language": "Go",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "通过伪造工具输出混淆LLM，绕过安全护栏",
+    "llm_tags": [
+      "LLM安全",
+      "越狱攻击",
+      "提示注入"
+    ]
+  },
+  {
+    "id": "5d3a6fb49f22",
+    "title": "ROCm 10.0: A Decade of Open Compute, Built for the Age of Agentic AI",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w0yfmn/rocm_100_a_decade_of_open_compute_built_for_the/\"> <img alt=\"ROCm 10.0: A Decade of Open Compute, Built for the Age of Ag",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0yfmn/rocm_100_a_decade_of_open_compute_built_for_the/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-28T18:20:40+00:00",
+    "frontier": 75,
+    "signal": 60,
+    "score": 69,
+    "llm_summary": "AMD发布ROCm 10.0，面向智能体AI时代。",
+    "llm_tags": [
+      "GPU计算",
+      "ROCm",
+      "AI基础设施"
+    ]
+  },
+  {
     "id": "b10a38652dff",
     "title": "OnlyTerp/opengrok ⭐97",
     "summary": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming you.",
@@ -39,6 +118,24 @@
       "代码生成",
       "单元测试",
       "基准测试"
+    ]
+  },
+  {
+    "id": "f1a5428a240a",
+    "title": "Luanti removed from Google Play due to baseless AI copyright notice",
+    "summary": "HN 热度: 386 点赞, 121 评论（外链帖无正文）",
+    "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-28T06:33:57+00:00",
+    "points": 386,
+    "num_comments": 121,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 386赞 121评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -169,6 +266,100 @@
       "句子嵌入",
       "低资源语言",
       "课程训练"
+    ]
+  },
+  {
+    "id": "545d10e8fafb",
+    "title": "Cross-lingual Representation Learning via Centroid Intervention Fusion",
+    "summary": "arXiv:2608.26357v1 Announce Type: new  Abstract: Large language models (LLMs) exhibit uneven multilingual performance, especially when dealing with low-resource languages. Inference-time intervention offers a lightweight way to improve cross-lingual transfer by modifying the hidden states produced by the LLMs during the forward pass, without updating model parameters. However, existing cross-lingual intervention methods typically learn separate projections from source to target languages, which limits scalability and prevents knowledge sharing across languages. We propose Centroid Intervention Fusion (CIF), a projection fusion framework that consolidates multiple multilingual intervention projections into a single language-shared operator. Across multilingual commonsense reasoning, natural",
+    "url": "https://arxiv.org/abs/2608.26357",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-28T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出质心干预融合方法，提升跨语言表征学习的推理时干预效果",
+    "llm_tags": [
+      "跨语言",
+      "推理干预",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "9c851c8e1b71",
+    "title": "Surgical Alignment in Knowledge Graph Training for Clinical Diagnosis with Large Language Models",
+    "summary": "arXiv:2608.26587v1 Announce Type: new  Abstract: Biomedical knowledge graphs (KGs) offer structured medical knowledge that can ground large language model (LLM) reasoning in clinical diagnosis application, yet how KG signal should be integrated into LLMs remains an open question. We present a systematic study spanning five KG task formulations, three training paradigms, two KGs, and three base LLMs. At the task level, all paradigms improve over the non-finetuned baseline, but methods with comparable in-domain accuracy show substantially different knowledge transfer behavior. We introduce Gradient Intervention Density (GID) and Gradient Distortion (GD) to measure how broadly an optimizer modifies the pretrained model. GID and GD together reveal a clear divide: KG-judgment training under KL ",
+    "url": "https://arxiv.org/abs/2608.26587",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-28T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 75,
+    "score": 72,
+    "llm_summary": "系统研究知识图谱融入LLM的临床诊断训练范式，提供多维度对比与开源实现。",
+    "llm_tags": [
+      "知识图谱",
+      "临床诊断",
+      "LLM训练",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "017d29717ace",
+    "title": "SymbolLKG: Towards Verifiable Logical Reasoning via Logical Knowledge Graph and Symbolic Solvers",
+    "summary": "arXiv:2608.26836v1 Announce Type: new  Abstract: Large Language Models (LLMs) have demonstrated remarkable proficiency in natural language understanding, yet they struggle with strict multi-step reasoning, frequently suffering from hallucinations and inconsistency. Existing solutions like Chain-of-Thought (CoT) lack rigorous verification mechanisms, while standard Retrieval-Augmented Generation (RAG) often misses the complex, structural dependencies inherent in logical tasks. To bridge this gap, we propose a Neuro-Symbolic architecture that integrates a Logical Knowledge Graph (LKG) with dynamic solver routing. Specifically, we introduce an ontology-based LKG that treats logical rules and constraints as first-class topological nodes, enabling explicit modeling of dependencies extracted fro",
+    "url": "https://arxiv.org/abs/2608.26836",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-28T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 45,
+    "score": 58,
+    "llm_summary": "构建逻辑知识图谱与符号求解器增强LLM推理可验证性",
+    "llm_tags": [
+      "逻辑推理",
+      "知识图谱",
+      "符号求解",
+      "LLM"
+    ]
+  },
+  {
+    "id": "ce89c049ba93",
+    "title": "Dependency-Aware Revocable Decoding for Efficient Diffusion Large Language Model Inference",
+    "summary": "arXiv:2608.26574v1 Announce Type: new  Abstract: Diffusion large language models (dLLMs) offer a promising alternative to autoregressive generation by decoding multiple tokens in parallel through iterative denoising. However, increasing decoding parallelism often degrades generation quality, as early errors can contaminate later contexts. Revocable decoding mitigates this issue by re-evaluating decoded tokens and remasking unreliable ones, but existing methods overlook that unreliable tokens may also corrupt the verification context itself. We identify this failure mode and propose Dependency-Aware Revocable Decoding (DARD), a training-free framework that separates tokens into masked, candidate, and unmasked states. DARD verifies candidate tokens using a selective context that excludes les",
+    "url": "https://arxiv.org/abs/2608.26574",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-28T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出依赖感知的可撤销解码，提升扩散大语言模型推理效率与质量。",
+    "llm_tags": [
+      "扩散模型",
+      "LLM推理",
+      "解码优化",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "70c6254aed43",
+    "title": "RuleWeaver: Benchmarking Rule-Centered Scenario Reasoning for Large Language Models",
+    "summary": "arXiv:2608.26832v1 Announce Type: new  Abstract: Large language models (LLMs) are increasingly applied to specialized domains, where effective use of domain expertise often requires reasoning over complex rules in concrete scenarios. However, existing benchmarks only partially evaluate this capability, as they either focus on output-level instruction constraints or overlook the distinct roles that rules play in scenario reasoning. To address these gaps, this paper introduces RuleWeaver, a benchmark construction framework for evaluating rule-centered scenario reasoning. RuleWeaver starts from corpus-derived IF-THEN Meta Rules, progressively augments them into complex rules, and composes these rules into rule-centered scenario QA instances. Beyond final-answer correctness, RuleWeaver further",
+    "url": "https://arxiv.org/abs/2608.26832",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-28T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 78,
+    "score": 72,
+    "llm_summary": "提出RuleWeaver基准，评估大模型在复杂规则场景中的推理能力。",
+    "llm_tags": [
+      "🔧 已开源",
+      "基准测试",
+      "规则推理",
+      "LLM评估"
     ]
   },
   {
@@ -1081,6 +1272,24 @@
     ]
   },
   {
+    "id": "78a06e9ced1c",
+    "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
+    "summary": "",
+    "url": "https://huggingface.co/blog/gradio-workflow-guide",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-08-25T00:00:00+00:00",
+    "frontier": 55,
+    "signal": 75,
+    "score": 63,
+    "llm_summary": "介绍Gradio构建、运行和部署AI工作流的实用方法",
+    "llm_tags": [
+      "AI工作流",
+      "Gradio",
+      "部署"
+    ]
+  },
+  {
     "id": "d1880379172a",
     "title": "Coding expertise is going to collapse from AI reliance",
     "summary": "HN 热度: 452 点赞, 455 评论（外链帖无正文）",
@@ -1779,222 +1988,6 @@
       "AI安全",
       "智能体",
       "蜜罐监测"
-    ]
-  },
-  {
-    "id": "8771fdd97ae0",
-    "title": "SigmanticAI/apex-inference-chip ⭐661",
-    "summary": "An inference chip design that runs a real LLM (Qwen2.5-0.5B) on FPGA — one transformer decoder layer in RTL, every silicon value bit-exact against a golden model. 0.56 tok/s measured, a 140× climb, fu",
-    "url": "https://github.com/SigmanticAI/apex-inference-chip",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-21T17:01:27.375392+00:00",
-    "created_at": "2026-08-17T04:25:26Z",
-    "stars": 661,
-    "language": "Python",
-    "frontier": 83,
-    "signal": 83,
-    "score": 83,
-    "llm_summary": "⭐661 高星新仓库，社区热度达标直通入选",
-    "llm_tags": [
-      "⭐高星直通"
-    ]
-  },
-  {
-    "id": "37575c5fdd72",
-    "title": "browser-use/macos-harness ⭐660",
-    "summary": "The simplest, thinnest harness that gives an LLM complete freedom to control a Mac.",
-    "url": "https://github.com/browser-use/macos-harness",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-21T17:01:27.375392+00:00",
-    "created_at": "2026-08-17T00:22:20Z",
-    "stars": 660,
-    "language": "Python",
-    "frontier": 83,
-    "signal": 83,
-    "score": 83,
-    "llm_summary": "⭐660 高星新仓库，社区热度达标直通入选",
-    "llm_tags": [
-      "⭐高星直通"
-    ]
-  },
-  {
-    "id": "bf7b98bf2a79",
-    "title": "Nervercc/gpt_nerver ⭐602",
-    "summary": "ChatGPT Plus automation toolkit: PyQt6 desktop + JSON-RPC registration engine + card/CDK/PayPal/GCash flows",
-    "url": "https://github.com/Nervercc/gpt_nerver",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-21T17:01:27.375392+00:00",
-    "created_at": "2026-08-15T18:51:26Z",
-    "stars": 602,
-    "language": "Python",
-    "frontier": 83,
-    "signal": 83,
-    "score": 83,
-    "llm_summary": "⭐602 高星新仓库，社区热度达标直通入选",
-    "llm_tags": [
-      "⭐高星直通"
-    ]
-  },
-  {
-    "id": "5d7bef9a02e3",
-    "title": "amitshekhariitbhu/llm-inference-engineering ⭐212",
-    "summary": "Learn LLM Inference Engineering step by step - from KV cache, PagedAttention, and continuous batching to vLLM, SGLang, and GPUs.",
-    "url": "https://github.com/amitshekhariitbhu/llm-inference-engineering",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-21T17:01:27.375392+00:00",
-    "created_at": "2026-08-18T03:10:26Z",
-    "stars": 212,
-    "language": "Markdown",
-    "frontier": 77,
-    "signal": 77,
-    "score": 77,
-    "llm_summary": "⭐212 高星新仓库，社区热度达标直通入选",
-    "llm_tags": [
-      "⭐高星直通"
-    ]
-  },
-  {
-    "id": "6329acb6cdbf",
-    "title": "turkiyeyapayzekaakademisi/llm-rag-memory-ai-agents ⭐116",
-    "summary": "",
-    "url": "https://github.com/turkiyeyapayzekaakademisi/llm-rag-memory-ai-agents",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-21T17:01:27.375392+00:00",
-    "created_at": "2026-08-19T15:26:07Z",
-    "stars": 116,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 70,
-    "score": 61,
-    "llm_summary": "开源项目整合LLM、RAG、记忆与AI代理技术，提供示例实现。",
-    "llm_tags": [
-      "LLM",
-      "RAG",
-      "AI代理",
-      "记忆机制"
-    ]
-  },
-  {
-    "id": "ed8fbd57d9fc",
-    "title": "only-cli/oc ⭐70",
-    "summary": "Turn any website into a compact CLI tailored for AI agents. Browse the web in hundreds of tokens, not tens of thousands.",
-    "url": "https://github.com/only-cli/oc",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-21T17:01:27.375392+00:00",
-    "created_at": "2026-08-18T13:00:30Z",
-    "stars": 70,
-    "language": "JavaScript",
-    "frontier": 62,
-    "signal": 55,
-    "score": 59,
-    "llm_summary": "为AI代理将任意网站转为紧凑CLI，大幅减少浏览token消耗。",
-    "llm_tags": [
-      "AI代理",
-      "Token优化",
-      "CLI工具"
-    ]
-  },
-  {
-    "id": "ccf8e7e4b20d",
-    "title": "Vendredi218/awesome-ai-harness ⭐68",
-    "summary": "The model is the engine; the harness is the car. Curated knowledge on harness engineering — context management, tool design, agent loops, memory, sandboxing, evals. EN/中文",
-    "url": "https://github.com/Vendredi218/awesome-ai-harness",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-21T17:01:27.375392+00:00",
-    "created_at": "2026-08-16T04:57:52Z",
-    "stars": 68,
-    "language": null,
-    "frontier": 50,
-    "signal": 60,
-    "score": 54,
-    "llm_summary": "精选AI harness工程知识，涵盖上下文、工具、Agent循环等实践。",
-    "llm_tags": [
-      "AI工程",
-      "智能体",
-      "知识库"
-    ]
-  },
-  {
-    "id": "8bc460eb8d20",
-    "title": "Zyrexnn/Cybermes ⭐67",
-    "summary": "Autonomous Offensive Security, Bug Bounty & Red Teaming Agent Framework powered by Hermes Agent, specialized reasoning skills, and multi-model LLM orchestration.",
-    "url": "https://github.com/Zyrexnn/Cybermes",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-21T17:01:27.375392+00:00",
-    "created_at": "2026-08-19T13:25:08Z",
-    "stars": 67,
-    "language": "Python",
-    "frontier": 60,
-    "signal": 60,
-    "score": 60,
-    "llm_summary": "开源自主红队智能体框架，多模型编排实现安全自动化。",
-    "llm_tags": [
-      "安全测试",
-      "LLM智能体",
-      "红队"
-    ]
-  },
-  {
-    "id": "6aa8c8c7f1de",
-    "title": "NVIDIA’s coding agent scored 100% on ARC-AGI-3 interactive reasoning benchmark",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1vuhlhn/nvidias_coding_agent_scored_100_on_arcagi3/\"> <img alt=\"NVIDIA’s coding agent scored 100% on ARC-AGI-3 interactive reaso",
-    "url": "https://www.reddit.com/r/singularity/comments/1vuhlhn/nvidias_coding_agent_scored_100_on_arcagi3/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-21T14:15:56+00:00",
-    "frontier": 80,
-    "signal": 50,
-    "score": 68,
-    "llm_summary": "NVIDIA编码代理在ARC-AGI-3推理基准上获得满分，引起社区关注。",
-    "llm_tags": [
-      "编码代理",
-      "推理基准",
-      "AGI"
-    ]
-  },
-  {
-    "id": "b16ad931f539",
-    "title": "I fingerprinted Ox Alpha: same tokenizer as GLM-5.3 (+75 token offset), z.ai's exact error strings, near-identical temp-0 outputs",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Ran three black-box fingerprint tests on stealth/ox-alpha (OpenRouter + OpenCode) vs public GLM-5.3 on z.ai.</p> <p><strong>1. Tokenizer:</strong> I sent 6 texts (EN/",
-    "url": "https://www.reddit.com/r/singularity/comments/1vufbx1/i_fingerprinted_ox_alpha_same_tokenizer_as_glm53/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-21T12:43:54+00:00",
-    "frontier": 75,
-    "signal": 70,
-    "score": 73,
-    "llm_summary": "黑盒测试揭示Ox Alpha与GLM-5.3高度相似",
-    "llm_tags": [
-      "模型指纹",
-      "逆向工程",
-      "GLM",
-      "Tokenizer"
-    ]
-  },
-  {
-    "id": "af54e64ad6bf",
-    "title": "I'm becoming AI-blind",
-    "summary": "HN 热度: 406 点赞, 413 评论（外链帖无正文）",
-    "url": "https://cymerys.com/w/im-becoming-ai-blind",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-21T11:48:05+00:00",
-    "points": 406,
-    "num_comments": 413,
-    "frontier": 76,
-    "signal": 76,
-    "score": 76,
-    "llm_summary": "🔥 HN 406赞 413评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
     ]
   }
 ]
