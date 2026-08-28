@@ -1,5 +1,177 @@
 [
   {
+    "id": "b10a38652dff",
+    "title": "OnlyTerp/opengrok ⭐97",
+    "summary": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming you.",
+    "url": "https://github.com/OnlyTerp/opengrok",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-28T10:14:03.027621+00:00",
+    "created_at": "2026-08-27T18:30:44Z",
+    "stars": 97,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 55,
+    "score": 55,
+    "llm_summary": "开源工具支持在Grok Bot中一键运行任意模型，含模型选择器与提供者映射。",
+    "llm_tags": [
+      "模型集成",
+      "开源工具",
+      "Grok"
+    ]
+  },
+  {
+    "id": "dc9ddfdc5ab5",
+    "title": "solis-team/XRepoTest ⭐31",
+    "summary": "[EMNLP 2026] A multilingual benchmark for repository-level unit test generation, evaluating LLMs across 5 programming languages and real-world code under reproducible, Docker-based execution.",
+    "url": "https://github.com/solis-team/XRepoTest",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-28T10:14:03.027621+00:00",
+    "created_at": "2026-08-24T02:43:18Z",
+    "stars": 31,
+    "language": "Python",
+    "frontier": 70,
+    "signal": 60,
+    "score": 66,
+    "llm_summary": "EMNLP 2026提出多语言仓库级单元测试生成基准",
+    "llm_tags": [
+      "代码生成",
+      "单元测试",
+      "基准测试"
+    ]
+  },
+  {
+    "id": "be7aaae582ec",
+    "title": "Tencent/Hy4-preview 770B-A49B weight dropped",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w0igxk/tencenthy4preview_770ba49b_weight_dropped/\"> <img alt=\"Tencent/Hy4-preview 770B-A49B weight dropped\" src=\"https://externa",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0igxk/tencenthy4preview_770ba49b_weight_dropped/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-28T06:14:02+00:00",
+    "frontier": 85,
+    "signal": 60,
+    "score": 75,
+    "llm_summary": "腾讯发布Hy4-preview 770B MoE模型权重，49B激活参数",
+    "llm_tags": [
+      "MoE",
+      "开源模型",
+      "大语言模型"
+    ]
+  },
+  {
+    "id": "19a6fd1b0f8f",
+    "title": "Assessing mentalization in humans and large language models",
+    "summary": "arXiv:2608.26291v1 Announce Type: new  Abstract: Mentalization - the ability to infer others' beliefs and intentions to guide one's own choices - is a key cognitive function underlying human social interactions. Large language models (LLMs) demonstrate behaviour consistent with humans on theory-of-mind tasks, yet whether these models can guide adaptive behaviour through mentalization is unknown. Here we use two economic games with cognitive computational modeling to uncover the latent strategies underlying mentalization in LLMs. We tested individual LLM agents across four model families, DeepSeek, GPT-4.1, GPT-5 and Gemini 2.0 Flash (N = 2,099), against opponents of varying sophistication and examined whether a prompting strategy designed to elicit strategic reasoning improved performance.",
+    "url": "https://arxiv.org/abs/2608.26291",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-28T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 70,
+    "score": 72,
+    "llm_summary": "用经济游戏和计算建模评估大型语言模型心智化能力",
+    "llm_tags": [
+      "心智化",
+      "LLM评估",
+      "计算建模"
+    ]
+  },
+  {
+    "id": "fb4f479f7e8a",
+    "title": "CIFQA: A Deterministic Tool-Grounded Multi-Agent LLM Framework for Financial Query Answering",
+    "summary": "arXiv:2608.26114v1 Announce Type: new  Abstract: Calculation-intensive financial question answering requires exact reasoning over structured rates, temporal conditions, numerical formulas, and rule-based constraints. Although Large Language Models (LLMs) perform strongly on natural language tasks, they often produce numerically incorrect yet plausible answers when solving multi-step financial calculations. To address this limitation, we introduce CIFQA (Calculation-Intensive Financial Query Answering), a deterministic tool-grounded multi-agent LLM framework for financial question answering. CIFQA separates language understanding from numerical execution by assigning specialized agents to query interpretation, routing, parameter extraction, computation planning, and response generation, whi",
+    "url": "https://arxiv.org/abs/2608.26114",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-28T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 74,
+    "score": 73,
+    "llm_summary": "提出确定性工具调用的多智能体LLM框架，用于计算密集型金融问答。",
+    "llm_tags": [
+      "多智能体",
+      "金融问答",
+      "工具调用",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "2e829c5291f3",
+    "title": "DeflectBench: A Benchmark for Evaluating Rhetorical Fallacy Generation in LLMs",
+    "summary": "arXiv:2608.26119v1 Announce Type: new  Abstract: Whether large language models can be prompted to generate rhetorical fallacies on demand, and whether current safety post-training constrains this behavior, has received less attention than the related question of detecting fallacies in existing text. We close this gap with DeflectBench, evaluating 23,990 generations from four frontier models across three deflection strategies (whataboutism, ad hominem, red herring), seven prompt framings, and 80 claims spanning four controversy levels. Refusal is governed primarily by request structure rather than claim content. Per claim refusal varies by only 11 percentage points across the 80 claims, while a single prompt frame change can swing within model refusal by nearly 100 percentage points and swi",
+    "url": "https://arxiv.org/abs/2608.26119",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-28T04:00:00+00:00",
+    "frontier": 60,
+    "signal": 75,
+    "score": 68,
+    "llm_summary": "构建基准评测LLM生成修辞谬误的能力及安全对齐效果",
+    "llm_tags": [
+      "大模型",
+      "安全评测",
+      "谬误生成",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "eafef8ad19b0",
+    "title": "AgentFold: Closed-Loop Agentic Search for Protein Folding Model Design",
+    "summary": "arXiv:2608.26747v1 Announce Type: new  Abstract: Scientific LLM agents have shown promise in literature reasoning, tool use, and experiment planning, but it remains unclear whether they can autonomously improve large, tightly coupled scientific machine-learning systems through executable code changes and computationally expensive validation. We study this question in protein folding, where progress requires coordinated architectural modifications, multi-objective evaluation, and domain-aware interpretation. We present AgentFold, a multi-agent framework that formulates folding-model development as a closed-loop search over executable code variants. Starting from ESMFold, AgentFold proposes hypotheses, implements and debugs code-level modifications, evaluates model variants, analyzes experim",
+    "url": "https://arxiv.org/abs/2608.26747",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-28T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 74,
+    "score": 74,
+    "llm_summary": "提出闭环智能体搜索框架，自主设计蛋白质折叠模型并优化代码。",
+    "llm_tags": [
+      "🔧 已开源",
+      "蛋白质折叠",
+      "智能体搜索",
+      "LLM智能体"
+    ]
+  },
+  {
+    "id": "1bc6fa13e056",
+    "title": "TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding",
+    "summary": "arXiv:2608.26112v1 Announce Type: new  Abstract: Speculative decoding accelerates large language model inference through a draft-then-verify paradigm. Building on this, tree-structured methods improve inference by organizing proposals into multiple candidate paths, increasing the accepted length. However, existing tree-structured methods use a single drafter for all drafting steps, creating a dilemma: a smaller drafter is fast but yields lower-quality trees, whereas a larger drafter improves tree quality but suffers from high latency. To address this, we propose TreeGraft, a multi-drafter framework in which drafters of different costs jointly construct a shared draft tree. TreeGraft uses the stronger drafter to rescore candidates by updating scores assigned by the weaker drafter, reselect ",
+    "url": "https://arxiv.org/abs/2608.26112",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-28T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 78,
+    "score": 76,
+    "llm_summary": "提出多草稿模型自适应嫁接策略，提升树形投机解码效率",
+    "llm_tags": [
+      "投机解码",
+      "多模型",
+      "推理加速",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "2c773b87d3ea",
+    "title": "KinyaEmbed: Contrastive Sentence Embeddings for Kinyarwanda via Multi-Stage Curriculum Training",
+    "summary": "arXiv:2608.26941v1 Announce Type: new  Abstract: We present KinyaEmbed, the first dedicated sentence embedding model for Kinyarwanda, a morphologically rich Bantu language spoken by over 12 million people in Rwanda. Existing multilingual embedding models such as LaBSE, mE5-large, and OpenAI text-embedding-3-large perform poorly on Kinyarwanda due to severe under-representation in their pre-training corpora. KinyaEmbed is built on KinyaBERT-large and trained via a four-stage curriculum using MultipleNegativesRankingLoss (MNRL): Stage 1 leverages ~18,000 paraphrase pairs from the Official Gazette of Rwanda with three temperature scales; Stage 2 fine-tunes on 715 NLLB-translated MNLI triplets for entailment structure; Stage 3 aligns representations using English-Kinyarwanda OPUS-100 translati",
+    "url": "https://arxiv.org/abs/2608.26941",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-28T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 52,
+    "score": 61,
+    "llm_summary": "首个针对基尼亚卢旺达语的句子嵌入模型，采用多阶段课程训练。",
+    "llm_tags": [
+      "句子嵌入",
+      "低资源语言",
+      "课程训练"
+    ]
+  },
+  {
     "id": "55eab4e2db9f",
     "title": "GENEXIS-AI/gpt-image-skill ⭐114",
     "summary": "Generate GPT images from Codex or Claude Code using a ChatGPT subscription, without the Images API.",
@@ -80,6 +252,24 @@
       "翻译工具",
       "浏览器扩展",
       "开源项目"
+    ]
+  },
+  {
+    "id": "6dbc18a18ae2",
+    "title": "No, Engrams won't let you run 1T models locally. It does something even better.",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Ever since Qwen 3.8 Flash Next dropped, there's a misconception going around that N-gram tables will let people run 1T+ parameter models on a single server with 980B ",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0198r/no_engrams_wont_let_you_run_1t_models_locally_it/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-27T17:56:34+00:00",
+    "frontier": 70,
+    "signal": 60,
+    "score": 66,
+    "llm_summary": "讨论Engrams技术无法本地运行1T模型，但其有独特优势",
+    "llm_tags": [
+      "大模型",
+      "推理优化",
+      "技术讨论"
     ]
   },
   {
@@ -1805,261 +1995,6 @@
     "llm_summary": "🔥 HN 406赞 413评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "31c8f84eea22",
-    "title": "AI companies destroy physical books – let's scan rare books before it's too late",
-    "summary": "HN 热度: 646 点赞, 384 评论（外链帖无正文）",
-    "url": "https://annas-archive.pk/blog/physical-destruction.html",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-21T10:05:46+00:00",
-    "points": 646,
-    "num_comments": 384,
-    "frontier": 78,
-    "signal": 78,
-    "score": 78,
-    "llm_summary": "🔥 HN 646赞 384评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "507a5b763e6a",
-    "title": "This company’s plans to deploy space mirrors could jeopardize the night sky for many",
-    "summary": "A company that plans to beam sunlight from space to Earth on demand might unintentionally brighten the night sky for many more people than intended, according to a new study. Later this year, the US company Reflect Orbital plans to launch a test satellite called Eärendil-1 that will extend an 18-by-18-meter mirror in orbit. The&#8230;",
-    "url": "https://www.technologyreview.com/2026/08/21/1142755/space-mirrors-night-sky/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-08-21T09:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "太空反射镜计划或致夜空变亮，影响天文观测引发担忧",
-    "llm_tags": [
-      "太空技术",
-      "光污染",
-      "卫星"
-    ]
-  },
-  {
-    "id": "d6ba75dcbe8b",
-    "title": "ReCache: Efficient KV Cache Reuse and Compression for Tool-Augmented LLM Agents",
-    "summary": "arXiv:2608.19662v1 Announce Type: new  Abstract: Agentic language models repeatedly encode tool and skill schemas that recur across requests in different combinations and orders, preventing standard prefix caching from reusing their key--value (KV) states. We introduce \\textbf{ReCache}, a framework for independently caching resource representations while reducing their inference-time computational and memory overhead. Resource-wise attention removes cross-resource interactions and assigns resource-local positions, producing composition-invariant KV blocks. ReCache then restricts resource visibility to contribution-selected layer--KV-head-group routes and retains only invocation-critical fields through structural and semantic pruning. We evaluate ReCache on a benchmark assembled from seven ",
-    "url": "https://arxiv.org/abs/2608.19662",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-21T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 82,
-    "score": 78,
-    "llm_summary": "提出ReCache框架，独立缓存工具资源KV状态，降低代理推理开销",
-    "llm_tags": [
-      "KV缓存",
-      "LLM代理",
-      "推理加速",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "66494f4b5790",
-    "title": "Rule-Compliant Visual Spatial Planning for Multimodal Large Language Models",
-    "summary": "arXiv:2608.20237v1 Announce Type: new  Abstract: Multimodal large language models (MLLMs) combine linguistic reasoning with visual perception, yet their ability to perform visual spatial planning under explicit or previously unseen rule constraints remains underexplored. This setting requires models to jointly understand spatial layouts, interpret natural-language rules, and plan valid actions accordingly. To address this gap, we introduce RuleMaze, a controllable benchmark in which MLLMs must navigate mazes while obeying natural-language rules of varying complexity. RuleMaze isolates rule-compliant spatial planning by requiring accurate perception, rule interpretation, and constrained action planning. To enable scalable and systematic rule construction, we propose Language-Logic-Function ",
-    "url": "https://arxiv.org/abs/2608.20237",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-21T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 78,
-    "score": 75,
-    "llm_summary": "提出RuleMaze基准，评估多模态大模型在规则约束下的视觉空间规划能力。",
-    "llm_tags": [
-      "多模态",
-      "空间规划",
-      "基准测试",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "db8259a0e9f0",
-    "title": "Time-Series Retrieval for Grounding Multimodal Language Models in Remaining Useful Life",
-    "summary": "arXiv:2608.19218v1 Announce Type: cross  Abstract: Large language models (LLMs) and agentic AI systems are increasingly being explored for domain-specific maintenance and prognostics tasks, raising the question of whether they can effectively support prognostics and health management (PHM). In this paper, we investigate remaining useful life (RUL) estimation with multimodal large language models (MLLMs) grounded through time-series retrieval. We propose a framework in which historically similar degradation segments are retrieved from the training set and, together with the test trajectory, transformed into a visual comparison artifact that is processed by the MLLM through a structured multimodal prompt. The approach is evaluated on the FD001 partition of the C-MAPSS benchmark under repeate",
-    "url": "https://arxiv.org/abs/2608.19218",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-21T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 55,
-    "score": 62,
-    "llm_summary": "提出用时间序列检索为多模态语言模型提供剩余寿命预测基准",
-    "llm_tags": [
-      "多模态LLM",
-      "时间序列检索",
-      "寿命预测"
-    ]
-  },
-  {
-    "id": "8e2a64e995c6",
-    "title": "Automated Summarization of Financial News Using Large Language Models and Retrieval-Augmented Generation: An Early Empirical Study (Fall 2023)",
-    "summary": "arXiv:2608.19526v1 Announce Type: cross  Abstract: Stock market analysts and investors face a daily challenge: too much financial news, too little time. Manually reading and synthesizing hundreds of company-specific articles is impractical, yet missing key information can directly affect investment decisions. This project, conducted at George Washington University in Fall 2023, explores whether Large Language Models can automate this process reliably. We built a pipeline that pulls news articles from the News API, company background from Wikipedia, and stock price data from Yahoo Finance for ten major companies (AAPL, MSFT, GOOGL, AMZN, META, TSLA, JPM, NVDA, WMT, DIS). Because LLMs cannot directly process numerical tables, we developed a simple but effective template that converts stock d",
-    "url": "https://arxiv.org/abs/2608.19526",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-21T04:00:00+00:00",
-    "frontier": 50,
-    "signal": 75,
-    "score": 62,
-    "llm_summary": "利用LLM和RAG自动摘要金融新闻，构建了完整流程但未提供性能数据。",
-    "llm_tags": [
-      "金融摘要",
-      "RAG",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "01030356039f",
-    "title": "PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment",
-    "summary": "arXiv:2608.19598v1 Announce Type: cross  Abstract: Direct Preference Optimization (DPO) has emerged as an effective approach for aligning large language models (LLMs) with human preferences. However, its adaptation to multimodal settings remains unexplored. Through representational analysis, we identify a key limitation in multimodal preference optimization, which we term visual insensitivity: models often fail to distinguish between images and those with critical visual context removed. Our theoretical analysis further uncovers two manifestations of this problem, namely Across-Image Insensitivity and Within-Image Insensitivity. To address these challenges, we propose Perception-Enhanced Alignment DPO (PEA-DPO), a framework for multimodal LLMs alignment, which explicitly leverages visual p",
-    "url": "https://arxiv.org/abs/2608.19598",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-21T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 50,
-    "score": 61,
-    "llm_summary": "提出感知增强的直接偏好优化方法，解决多模态对齐中视觉不敏感问题。",
-    "llm_tags": [
-      "多模态对齐",
-      "偏好优化",
-      "DPO改进"
-    ]
-  },
-  {
-    "id": "517b45f6da9e",
-    "title": "PEA-DPO: Perception-Enhanced Alignment Direct Preference Optimization for MLLMs Alignment",
-    "summary": "arXiv:2608.19598v1 Announce Type: cross  Abstract: Direct Preference Optimization (DPO) has emerged as an effective approach for aligning large language models (LLMs) with human preferences. However, its adaptation to multimodal settings remains unexplored. Through representational analysis, we identify a key limitation in multimodal preference optimization, which we term visual insensitivity: models often fail to distinguish between images and those with critical visual context removed. Our theoretical analysis further uncovers two manifestations of this problem, namely Across-Image Insensitivity and Within-Image Insensitivity. To address these challenges, we propose Perception-Enhanced Alignment DPO (PEA-DPO), a framework for multimodal LLMs alignment, which explicitly leverages visual p",
-    "url": "https://arxiv.org/abs/2608.19598",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-21T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 56,
-    "score": 64,
-    "llm_summary": "提出感知增强的DPO方法，解决多模态对齐中视觉不敏感问题。",
-    "llm_tags": [
-      "多模态对齐",
-      "偏好优化",
-      "视觉感知"
-    ]
-  },
-  {
-    "id": "c9470a7e0839",
-    "title": "OenoBench: A Wine-Domain Benchmark for Knowledge-Grounded Evaluation of Large Language Models",
-    "summary": "arXiv:2608.20106v1 Announce Type: new  Abstract: We introduce OenoBench, a wine-domain knowledge benchmark of 3,266 multiple-choice questions across six pillars (regions, grape varieties, viticulture, winemaking, producers, business) and four difficulty tiers. The corpus is built from 38,104 atomic, source-anchored facts extracted by 35 provenance-verified scrapers from government registries (INAO, TTB, OIV), peer-reviewed journals, and Wikipedia/Wikidata. Our methodological contribution is an LLM-driven pipeline in which language models reformat verified facts and audit the result, but never serve as the source of truth: every claim traces to a URL, every question is generated by one of five strategies across five generator families, and every question is scored by a nine-agent audit cali",
-    "url": "https://arxiv.org/abs/2608.20106",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-21T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 62,
-    "score": 66,
-    "llm_summary": "引入葡萄酒领域知识基准OenoBench，含3266道选择题评估大模型能力。",
-    "llm_tags": [
-      "知识基准",
-      "LLM评估",
-      "领域数据集"
-    ]
-  },
-  {
-    "id": "289a45dd8ec4",
-    "title": "Automated Summarization of Financial News Using Large Language Models and Retrieval-Augmented Generation: An Early Empirical Study (Fall 2023)",
-    "summary": "arXiv:2608.19526v1 Announce Type: new  Abstract: Stock market analysts and investors face a daily challenge: too much financial news, too little time. Manually reading and synthesizing hundreds of company-specific articles is impractical, yet missing key information can directly affect investment decisions. This project, conducted at George Washington University in Fall 2023, explores whether Large Language Models can automate this process reliably. We built a pipeline that pulls news articles from the News API, company background from Wikipedia, and stock price data from Yahoo Finance for ten major companies (AAPL, MSFT, GOOGL, AMZN, META, TSLA, JPM, NVDA, WMT, DIS). Because LLMs cannot directly process numerical tables, we developed a simple but effective template that converts stock dat",
-    "url": "https://arxiv.org/abs/2608.19526",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-21T04:00:00+00:00",
-    "frontier": 55,
-    "signal": 70,
-    "score": 62,
-    "llm_summary": "探索LLM与RAG自动总结财经新闻的实证研究",
-    "llm_tags": [
-      "RAG",
-      "LLM",
-      "财经新闻",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "a5d9b55f1636",
-    "title": "Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs",
-    "summary": "arXiv:2608.18578v2 Announce Type: replace  Abstract: Proactive interference (PI) is a documented failure mode in large language models in which retrieval of a repeatedly overwritten value degrades as prior overwrites accumulate, mirroring a classical phenomenon in human working memory. Post-training quantization (PTQ) is now the default deployment path for open-weight models, yet its effect on this failure mode has not been tested. We evaluate three precision levels (FP16, INT8, INT4/NF4, via bitsandbytes) across three architecturally distinct instruction-tuned models (Qwen2.5-7B-Instruct, Mistral-7B-Instruct-v0.3, Phi-3.5-mini-instruct), holding the retrieval task fixed. INT4 quantization significantly reduces accuracy under high interference in every model (e.g., from 81.0% to 68.3% for ",
-    "url": "https://arxiv.org/abs/2608.18578",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-21T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 75,
-    "score": 72,
-    "llm_summary": "研究bitsandbytes量化加剧大模型主动干扰现象，分析不同精度影响",
-    "llm_tags": [
-      "量化",
-      "LLM",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "31c8f84eea22",
-    "title": "AI companies destroy physical books – let's scan rare books before it's too late",
-    "summary": "HN 热度: 383 点赞, 326 评论（外链帖无正文）",
-    "url": "https://annas-archive.gl/blog/physical-destruction.html",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-21T02:37:47+00:00",
-    "points": 383,
-    "num_comments": 326,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 383赞 326评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "5aa788f410c8",
-    "title": "Measuring benchmark optimization in speech recognition",
-    "summary": "",
-    "url": "https://huggingface.co/blog/asr-benchmark-optimization",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-08-21T00:00:00+00:00",
-    "frontier": 58,
-    "signal": 82,
-    "score": 68,
-    "llm_summary": "分析语音识别基准测试过拟合问题，提出测量优化方法。",
-    "llm_tags": [
-      "语音识别",
-      "基准测试",
-      "模型评估"
-    ]
-  },
-  {
-    "id": "58a0b7de655b",
-    "title": "How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code",
-    "summary": "",
-    "url": "https://huggingface.co/blog/pwc-search",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-08-21T00:00:00+00:00",
-    "frontier": 55,
-    "signal": 75,
-    "score": 63,
-    "llm_summary": "Hugging Face 分享如何用推理端点、任务和存储桶支撑论文代码搜索。",
-    "llm_tags": [
-      "基础设施",
-      "推理服务",
-      "搜索系统"
     ]
   }
 ]
