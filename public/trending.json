@@ -1,5 +1,88 @@
 [
   {
+    "id": "91b3e681a529",
+    "title": "alberto4442/LlmCanvas ⭐116",
+    "summary": "LlmCanvas is a high-performance, event-driven architecture for real-time data processing and adaptive auto-scaling system optimization.",
+    "url": "https://github.com/alberto4442/LlmCanvas",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-29T06:13:15.215720+00:00",
+    "created_at": "2026-08-26T02:40:03Z",
+    "stars": 116,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 45,
+    "score": 51,
+    "llm_summary": "LlmCanvas 是一个事件驱动实时数据处理与自动缩放架构项目",
+    "llm_tags": [
+      "事件驱动",
+      "实时处理",
+      "自动缩放"
+    ]
+  },
+  {
+    "id": "62257cbfb927",
+    "title": "pamgarcia1993/robinhood-lp-bot ⭐93",
+    "summary": "Robinhood LP bot — auto liquidity on Uniswap v2/v3/v4 (incl. USDG pairs) via KyberSwap best-route, with real-time Nitro sequencer feed, self-run honeypot tests, GMGN/LLM screening, and shareable profi",
+    "url": "https://github.com/pamgarcia1993/robinhood-lp-bot",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-29T06:13:15.215720+00:00",
+    "created_at": "2026-08-25T08:38:23Z",
+    "stars": 93,
+    "language": "TypeScript",
+    "frontier": 55,
+    "signal": 70,
+    "score": 61,
+    "llm_summary": "开源Uniswap流动性机器人，支持V2/V3/V4及多链路由筛选。",
+    "llm_tags": [
+      "流动性做市",
+      "DeFi",
+      "Uniswap",
+      "自动交易"
+    ]
+  },
+  {
+    "id": "70e379a7ef36",
+    "title": "JordyZomer/lemmalog ⭐42",
+    "summary": "A Datalog engine for LLM agent memory: stratified rules, provenance-tracked facts, incremental derivation, and an MCP server that lets your harness use it as a shared brain.",
+    "url": "https://github.com/JordyZomer/lemmalog",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-29T06:13:15.215720+00:00",
+    "created_at": "2026-08-27T07:06:55Z",
+    "stars": 42,
+    "language": "Rust",
+    "frontier": 68,
+    "signal": 78,
+    "score": 72,
+    "llm_summary": "Datalog引擎用于LLM代理记忆，支持增量推导与MCP服务",
+    "llm_tags": [
+      "Datalog",
+      "代理记忆",
+      "MCP",
+      "推理引擎"
+    ]
+  },
+  {
+    "id": "8d6f2053e475",
+    "title": "From Atomic to Agentic: Towards Interpretable Evaluation of LLMs' Agentic Mathematical Capabilities",
+    "summary": "arXiv:2608.26950v1 Announce Type: new  Abstract: Large Language Models (LLMs) are evolving from performing end-to-end mathematical reasoning to integrating agentic intelligence. However, most existing math benchmarks evaluate only final answers. This outcome-oriented evaluation provides limited diagnostic value for identifying process-level failures or rigorous logic, failing to guide the transformation of LLMs into robust agents. To bridge this gap, we present a process-level benchmark designed to evaluate the inherent agentic mathematical reasoning abilities of LLMs. Our framework aligns problem-solving agentic behaviors with a structured taxonomy of reusable mathematical atomic capabilities. We design a comprehensive suite of planning, action, and feedback tasks across both textual and ",
+    "url": "https://arxiv.org/abs/2608.26950",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-29T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 60,
+    "score": 65,
+    "llm_summary": "提出过程级基准评估LLM智能体数学能力，强调诊断价值",
+    "llm_tags": [
+      "数学推理",
+      "基准评估",
+      "智能体"
+    ]
+  },
+  {
     "id": "219a4f54cf93",
     "title": "Nanako0129/sepia ⭐238",
     "summary": "De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
@@ -58,6 +141,25 @@
       "LLM安全",
       "越狱攻击",
       "提示注入"
+    ]
+  },
+  {
+    "id": "d58a8523c360",
+    "title": "I implemented a very tiny image generation model (latent flow transformer) on a RP2350 microcontroller - it can generate 128x128 images of faces [P]",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1w10tax/i_implemented_a_very_tiny_image_generation_model/\"> <img alt=\"I implemented a very tiny image generation model (late",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1w10tax/i_implemented_a_very_tiny_image_generation_model/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-28T19:48:27+00:00",
+    "frontier": 70,
+    "signal": 75,
+    "score": 72,
+    "llm_summary": "在微控制器上实现微型图像生成模型，可生成128x128人脸",
+    "llm_tags": [
+      "微控制器",
+      "图像生成",
+      "边缘计算",
+      "模型压缩"
     ]
   },
   {
@@ -1907,87 +2009,6 @@
       "模型指纹",
       "API识别",
       "开源工具"
-    ]
-  },
-  {
-    "id": "daeba0a2de06",
-    "title": "zorost/AI-Engineering-Lab ⭐98",
-    "summary": "A free, self-paced 24-week AI engineering course: Python, machine learning, LLMs, RAG, fine-tuning, agents and MCP, Azure and Vertex and Bedrock, and Databricks. 43 runnable notebooks, one continuous ",
-    "url": "https://github.com/zorost/AI-Engineering-Lab",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-22T01:20:38.318208+00:00",
-    "created_at": "2026-08-17T16:34:05Z",
-    "stars": 98,
-    "language": "Jupyter Notebook",
-    "frontier": 35,
-    "signal": 68,
-    "score": 48,
-    "llm_summary": "24周免费AI工程课程，覆盖LLM、RAG、微调与云平台",
-    "llm_tags": [
-      "AI工程",
-      "课程资源",
-      "LLM"
-    ]
-  },
-  {
-    "id": "b28e9d875d7a",
-    "title": "Apeireth/apeireth-rust ⭐79",
-    "summary": "Apeireth — An AGI Operating System / LLM Base (Rust). 85 crates: companion organ, world model, curiosity, hypothesis testing, double-onion security.",
-    "url": "https://github.com/Apeireth/apeireth-rust",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-22T01:20:38.318208+00:00",
-    "created_at": "2026-08-17T18:03:38Z",
-    "stars": 79,
-    "language": "Rust",
-    "frontier": 72,
-    "signal": 60,
-    "score": 67,
-    "llm_summary": "Rust实现的AGI操作系统，含世界模型与好奇机制，概念前沿但细节有限。",
-    "llm_tags": [
-      "AGI",
-      "Rust",
-      "LLM"
-    ]
-  },
-  {
-    "id": "9fd9c3b7c2b1",
-    "title": "nexpeakcore/deepseek-harness-pr-review ⭐42",
-    "summary": "AI code review with DeepSeek: headless PR review automation that verifies PR descriptions claim-by-claim against real code, checks docs against reality, flags requirement impact, human-in-the-loop + a",
-    "url": "https://github.com/nexpeakcore/deepseek-harness-pr-review",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-22T01:20:38.318208+00:00",
-    "created_at": "2026-08-16T05:51:52Z",
-    "stars": 42,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 70,
-    "score": 61,
-    "llm_summary": "基于DeepSeek的PR自动审查工具，逐条验证描述与代码一致性",
-    "llm_tags": [
-      "AI代码审查",
-      "DeepSeek",
-      "自动化工具"
-    ]
-  },
-  {
-    "id": "cc837a80013b",
-    "title": "I built a honeypot to catch AI agents spending money with no human watching",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>People are handing autonomous agents budgets and telling them to &quot;go.&quot; I wanted real data on how many actually spend with zero oversight, so I built a tripw",
-    "url": "https://www.reddit.com/r/artificial/comments/1vuwujt/i_built_a_honeypot_to_catch_ai_agents_spending/",
-    "source": "r/artificial",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-22T00:00:09+00:00",
-    "frontier": 68,
-    "signal": 72,
-    "score": 70,
-    "llm_summary": "构建蜜罐实测AI代理在无人工监督下自主花钱的行为",
-    "llm_tags": [
-      "AI安全",
-      "智能体",
-      "蜜罐监测"
     ]
   }
 ]
