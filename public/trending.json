@@ -1,5 +1,26 @@
 [
   {
+    "id": "a44058a6e76a",
+    "title": "usedotai/dot-reflex ⭐97",
+    "summary": "Open-source agent execution-recovery controller for coding and tool-using AI agents.",
+    "url": "https://github.com/usedotai/dot-reflex",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-29T16:24:03.363253+00:00",
+    "created_at": "2026-08-28T14:00:16Z",
+    "stars": 97,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 45,
+    "score": 51,
+    "llm_summary": "开源AI代理执行恢复控制器，用于编码和工具调用场景",
+    "llm_tags": [
+      "AI智能体",
+      "执行恢复",
+      "开源工具"
+    ]
+  },
+  {
     "id": "91b3e681a529",
     "title": "alberto4442/LlmCanvas ⭐116",
     "summary": "LlmCanvas is a high-performance, event-driven architecture for real-time data processing and adaptive auto-scaling system optimization.",
@@ -80,6 +101,62 @@
       "数学推理",
       "基准评估",
       "智能体"
+    ]
+  },
+  {
+    "id": "8ccc6fa65c3b",
+    "title": "Methodological and Conceptual Framework for 5D Multi-Table Analysis: A Unified Approach for Complex Data Reuse",
+    "summary": "arXiv:2608.26149v1 Announce Type: new  Abstract: Multi-table learning remains a major challenge in machine learning for healthcare and other complex information systems. Relational data combine several sources of complexity, including large data volume, high-dimensional variables, high-cardinality categorical features, complex inter-table dependencies, and repeated temporal observations. We introduce the Relational Hypergraph Transformer (RHT), a unified architecture that represents relational databases as hypergraphs, learns pentadimensional embeddings (PentE), and performs sparse relational attention with complexity proportional to the average relational degree rather than the square of the number of entities. We formally define the architecture, derive the complexity of its attention me",
+    "url": "https://arxiv.org/abs/2608.26149",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-29T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 78,
+    "score": 76,
+    "llm_summary": "提出统一的关系超图Transformer架构，用于复杂关系数据多表学习与复用。",
+    "llm_tags": [
+      "关系学习",
+      "超图Transformer",
+      "多表分析",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "32bb6066b8f3",
+    "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
+    "summary": "arXiv:2608.27142v1 Announce Type: new  Abstract: Despite their potential in standardized graph tasks, Large Language Models (LLMs) remain brittle to real-world shifts in node identifiers and task formulation. While deterministic graph tools are invariant to such shifts, extracting topological structures from noisy text is highly fragile for LLMs, which often overfit to surface patterns. Moreover, mitigating these parsing failures via multi-agent systems incurs prohibitive latency. To address this, we propose GRAIN, a single-agent framework optimized via reinforcement learning. GRAIN models reasoning as a semantic parsing and tool-execution pipeline, guided by a Structure Invariance Reward. By validating extracted intermediate graphs against ground-truth topologies, this reward forces the L",
+    "url": "https://arxiv.org/abs/2608.27142",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-29T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 55,
+    "score": 62,
+    "llm_summary": "提出不变性奖励的智能体强化学习方法，增强LLM图推理对名称和表述变化的鲁棒性",
+    "llm_tags": [
+      "图推理",
+      "强化学习",
+      "LLM",
+      "智能体"
+    ]
+  },
+  {
+    "id": "3c2f8ba0f9ef",
+    "title": "SKILL.state: Scalable Long-Horizon Agent Skills",
+    "summary": "arXiv:2608.26263v1 Announce Type: new  Abstract: Large Language Models (LLMs) increasingly act as autonomous agents executing complex, long-running procedural skills. Existing agent runtimes maintain execution by continually appending observations, actions, and intermediate reasoning traces to an ever-growing conversation history, causing latency degradation and context-poisoning failures over long horizons. We present SKILL.state, a runtime architecture that replaces append-only conversational history with an explicit, mutable execution state. At each execution step, the model receives only the immutable skill specification, the current structured execution state, and the latest observation. Intermediate reasoning is discarded immediately after producing a validated state update, preventi",
+    "url": "https://arxiv.org/abs/2608.26263",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-29T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出运行时架构替换追加式对话历史，缓解长时程智能体延迟与上下文污染。",
+    "llm_tags": [
+      "LLM智能体",
+      "长时程任务",
+      "运行时架构"
     ]
   },
   {
@@ -1883,132 +1960,6 @@
     "llm_summary": "🔥 HN 388赞 151评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "6ae2f29f44e0",
-    "title": "squall01337/mixamo-llm-mocap ⭐141",
-    "summary": "Turn any video into a Mixamo-rig animation - GVHMR estimator, spec-driven retarget, FK apply in Blender via MCP. Works with any Mixamo character; built to be operated end-to-end by an AI agent.",
-    "url": "https://github.com/squall01337/mixamo-llm-mocap",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-22T12:42:28.921087+00:00",
-    "created_at": "2026-08-17T21:05:02Z",
-    "stars": 141,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 60,
-    "score": 57,
-    "llm_summary": "视频转Mixamo骨骼动画，供AI智能体端到端操作",
-    "llm_tags": [
-      "动作捕捉",
-      "3D动画",
-      "AI智能体"
-    ]
-  },
-  {
-    "id": "c2f1f31efda5",
-    "title": "Jordanwei1/jiaojie-skill ⭐103",
-    "summary": "交接 Skill（Jiaojie）：跨窗口、跨模型、跨设备、跨语言的 AI 上下文交接工具。换窗口，不失忆；换模型，不重来。Open-source AI context handoff.",
-    "url": "https://github.com/Jordanwei1/jiaojie-skill",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-22T12:42:28.921087+00:00",
-    "created_at": "2026-08-20T08:57:52Z",
-    "stars": 103,
-    "language": "Python",
-    "frontier": 70,
-    "signal": 50,
-    "score": 62,
-    "llm_summary": "开源AI上下文交接工具，支持跨窗口模型设备语言。",
-    "llm_tags": [
-      "上下文交接",
-      "跨模型",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "9ba168a237c7",
-    "title": "abligail/narralume ⭐78",
-    "summary": "Open-source AI-assisted writing studio for long-form fiction. 故事设定、正文版本、AI 协作、审稿与交付一体化的长篇小说写作工具。",
-    "url": "https://github.com/abligail/narralume",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-22T12:42:28.921087+00:00",
-    "created_at": "2026-08-20T16:16:58Z",
-    "stars": 78,
-    "language": "TypeScript",
-    "frontier": 55,
-    "signal": 65,
-    "score": 59,
-    "llm_summary": "开源AI辅助长篇小说写作工具，集设定、版本、审稿于一体。",
-    "llm_tags": [
-      "AI写作",
-      "写作工具",
-      "长篇小说"
-    ]
-  },
-  {
-    "id": "3e597dc7f8cf",
-    "title": "memovai/mimimodel ⭐63",
-    "summary": "MimiModel: Agentic LLM on a $5 chip. 100% on-device. Private by design.",
-    "url": "https://github.com/memovai/mimimodel",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-22T12:42:28.921087+00:00",
-    "created_at": "2026-08-16T10:19:09Z",
-    "stars": 63,
-    "language": "C",
-    "frontier": 75,
-    "signal": 35,
-    "score": 59,
-    "llm_summary": "在5美元芯片上实现端侧agentic LLM，注重隐私",
-    "llm_tags": [
-      "端侧模型",
-      "低成本AI",
-      "隐私保护"
-    ]
-  },
-  {
-    "id": "429e6d3edca9",
-    "title": "wolfiesch/omp-best-of ⭐55",
-    "summary": "Best-of-N coding agents with LLM-as-a-Verifier selection for Oh My Pi: isolated git worktrees, verifier-ranked trajectories, winner-only patch application",
-    "url": "https://github.com/wolfiesch/omp-best-of",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-22T12:42:28.921087+00:00",
-    "created_at": "2026-08-18T00:41:05Z",
-    "stars": 55,
-    "language": "TypeScript",
-    "frontier": 60,
-    "signal": 60,
-    "score": 60,
-    "llm_summary": "开源项目，用LLM验证器对编码代理结果排序并应用最优补丁",
-    "llm_tags": [
-      "编码代理",
-      "LLM验证",
-      "工作流"
-    ]
-  },
-  {
-    "id": "19ccd4c755d7",
-    "title": "unclecode/modelprint ⭐50",
-    "summary": "Who is really behind that API? Fingerprint any OpenAI-compatible endpoint in the browser: 9 infrastructure probes, side-by-side comparison, community-extensible.",
-    "url": "https://github.com/unclecode/modelprint",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-22T12:42:28.921087+00:00",
-    "created_at": "2026-08-21T12:16:56Z",
-    "stars": 50,
-    "language": "JavaScript",
-    "frontier": 55,
-    "signal": 65,
-    "score": 59,
-    "llm_summary": "开源工具通过9种探针指纹识别OpenAI兼容API背后的真实模型",
-    "llm_tags": [
-      "模型指纹",
-      "API识别",
-      "开源工具"
     ]
   }
 ]
