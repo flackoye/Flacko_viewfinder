@@ -1,5 +1,85 @@
 [
   {
+    "id": "6ee99b383333",
+    "title": "TTheuPP/NLP-LLM-Orchestrator-FineTuner ⭐55",
+    "summary": "Master LLM Fine-Tuning Trainer 2026: Advanced NLP Optimization Toolkit",
+    "url": "https://github.com/TTheuPP/NLP-LLM-Orchestrator-FineTuner",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-30T16:17:20.828339+00:00",
+    "created_at": "2026-08-25T10:08:49Z",
+    "stars": 55,
+    "language": "HTML",
+    "frontier": 60,
+    "signal": 50,
+    "score": 56,
+    "llm_summary": "开源LLM微调编排工具，提供NLP优化集成方案",
+    "llm_tags": [
+      "LLM微调",
+      "NLP优化",
+      "工具库"
+    ]
+  },
+  {
+    "id": "85c18383dcc6",
+    "title": "lawmanalfred9/multilingual-review-sentiment-sleuth ⭐55",
+    "summary": "Multilingual Sentiment Analysis with Transformers: 2026 Amazon Review Classification Guide",
+    "url": "https://github.com/lawmanalfred9/multilingual-review-sentiment-sleuth",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-30T16:17:20.828339+00:00",
+    "created_at": "2026-08-25T10:25:28Z",
+    "stars": 55,
+    "language": "HTML",
+    "frontier": 35,
+    "signal": 65,
+    "score": 47,
+    "llm_summary": "使用Transformer实现多语言Amazon评论情感分析的项目指南",
+    "llm_tags": [
+      "情感分析",
+      "多语言",
+      "Transformer"
+    ]
+  },
+  {
+    "id": "ccc0b61c3664",
+    "title": "Uncensored Multi-Model Releases, LongCat-Flash-Lite-Sparse with MTPs and LSAs, Qwen3.8-27B with MTPs, Qwen3.5-122B-A10B with MTPs, Qwen3-Coder-Next and Laguna-S2.1 with Vision, All Available in GGUF Format! Bonus: Links to my llama.cpp Fork for LongCat-Flash-Lite Support and J-Wash Enhanced Fork!",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w2iqos/uncensored_multimodel_releases/\"> <img alt=\"Uncensored Multi-Model Releases, LongCat-Flash-Lite-Sparse with MTPs and LSAs",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2iqos/uncensored_multimodel_releases/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-30T14:16:07+00:00",
+    "frontier": 72,
+    "signal": 60,
+    "score": 67,
+    "llm_summary": "社区发布多款GGUF格式新模型，含MTP和稀疏注意力特性",
+    "llm_tags": [
+      "多模型",
+      "GGUF",
+      "注意力机制",
+      "本地LLM"
+    ]
+  },
+  {
+    "id": "5c04c1134b80",
+    "title": "I fine-tuned a 0.8B local model for dictation cleanup. It matched a hosted frontier model on this narrow task",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w2elkb/i_finetuned_a_08b_local_model_for_dictation/\"> <img alt=\"I fine-tuned a 0.8B local model for dictation cleanup. It matche",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2elkb/i_finetuned_a_08b_local_model_for_dictation/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-30T11:03:04+00:00",
+    "frontier": 55,
+    "signal": 70,
+    "score": 61,
+    "llm_summary": "微调0.8B本地模型，在口述清理任务上媲美托管前沿模型。",
+    "llm_tags": [
+      "模型微调",
+      "本地部署",
+      "语音处理",
+      "效率优化"
+    ]
+  },
+  {
     "id": "531607a78624",
     "title": "DDGTESTDEV-IONICS/ollama-gui-simple ⭐150",
     "summary": "'ollama gui windows' — A minimal local-LLM chat front-end: pick model, chat, switch — nothing else. Free, open community project for Windows.",
@@ -39,6 +119,24 @@
       "可观测性",
       "机器学习",
       "Transformers"
+    ]
+  },
+  {
+    "id": "ef2072e95d23",
+    "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
+    "summary": "HN 热度: 423 点赞, 107 评论（外链帖无正文）",
+    "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-29T17:19:47+00:00",
+    "points": 423,
+    "num_comments": 107,
+    "frontier": 76,
+    "signal": 76,
+    "score": 76,
+    "llm_summary": "🔥 HN 423赞 107评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -1958,63 +2056,6 @@
     "llm_summary": "🔥 HN 394赞 171评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "79bedc96b147",
-    "title": "I spent $266 and four AI models to own my tablet. GLM-5.3 finished it in a day",
-    "summary": "HN 热度: 681 点赞, 289 评论（外链帖无正文）",
-    "url": "https://ericpardee.github.io/fire-hd-ownership/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-23T14:23:09+00:00",
-    "points": 681,
-    "num_comments": 289,
-    "frontier": 78,
-    "signal": 78,
-    "score": 78,
-    "llm_summary": "🔥 HN 681赞 289评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "d4cfb0154375",
-    "title": "Robot plays ping pong with Ding Ning (2016 Olympic champion)",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1vw8hdg/robot_plays_ping_pong_with_ding_ning_2016_olympic/\"> <img alt=\"Robot plays ping pong with Ding Ning (2016 Olympic champi",
-    "url": "https://www.reddit.com/r/singularity/comments/1vw8hdg/robot_plays_ping_pong_with_ding_ning_2016_olympic/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-23T14:21:33+00:00",
-    "frontier": 75,
-    "signal": 45,
-    "score": 63,
-    "llm_summary": "机器人乒乓球对战奥运冠军，展示运动控制与感知进展",
-    "llm_tags": [
-      "机器人",
-      "运动控制",
-      "强化学习"
-    ]
-  },
-  {
-    "id": "7aae5581a328",
-    "title": "mindsdb/setfree ⭐47",
-    "summary": "Set claude, codex, any coding CLI free to any LLM provider",
-    "url": "https://github.com/mindsdb/setfree",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-23T12:43:13.136578+00:00",
-    "created_at": "2026-08-20T14:09:52Z",
-    "stars": 47,
-    "language": "Go",
-    "frontier": 50,
-    "signal": 50,
-    "score": 50,
-    "llm_summary": "开源工具让Claude、Codex等编码CLI接入任意LLM提供商",
-    "llm_tags": [
-      "LLM接入",
-      "编码工具",
-      "CLI工具"
     ]
   }
 ]
