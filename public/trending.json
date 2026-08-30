@@ -1,5 +1,47 @@
 [
   {
+    "id": "531607a78624",
+    "title": "DDGTESTDEV-IONICS/ollama-gui-simple ⭐150",
+    "summary": "'ollama gui windows' — A minimal local-LLM chat front-end: pick model, chat, switch — nothing else. Free, open community project for Windows.",
+    "url": "https://github.com/DDGTESTDEV-IONICS/ollama-gui-simple",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-30T04:21:51.099095+00:00",
+    "created_at": "2026-08-28T21:15:30Z",
+    "stars": 150,
+    "language": null,
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "一个极简的Windows本地大模型聊天界面，支持模型切换。",
+    "llm_tags": [
+      "大模型",
+      "GUI",
+      "本地部署"
+    ]
+  },
+  {
+    "id": "1a71e5a03779",
+    "title": "neminov4030034/logfire-trainer-trace ⭐55",
+    "summary": "Logfire ML Training Insights: 2026 AI Observability & Transformers Callback Monitoring",
+    "url": "https://github.com/neminov4030034/logfire-trainer-trace",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-30T04:21:51.099095+00:00",
+    "created_at": "2026-08-25T09:56:38Z",
+    "stars": 55,
+    "language": "HTML",
+    "frontier": 55,
+    "signal": 60,
+    "score": 57,
+    "llm_summary": "Logfire训练追踪工具，结合Transformers回调监控ML训练。",
+    "llm_tags": [
+      "可观测性",
+      "机器学习",
+      "Transformers"
+    ]
+  },
+  {
     "id": "a44058a6e76a",
     "title": "usedotai/dot-reflex ⭐97",
     "summary": "Open-source agent execution-recovery controller for coding and tool-using AI agents.",
@@ -18,6 +60,60 @@
       "AI智能体",
       "执行恢复",
       "开源工具"
+    ]
+  },
+  {
+    "id": "a6dbb06556f4",
+    "title": "Tencent compressed Hy4-preview from 1.5TB to about 200GB GGUF and kept about 98% performance.",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w1o324/tencent_compressed_hy4preview_from_15tb_to_about/\"> <img alt=\"Tencent compressed Hy4-preview from 1.5TB to about 200GB GG",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1o324/tencent_compressed_hy4preview_from_15tb_to_about/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-29T14:31:38+00:00",
+    "frontier": 70,
+    "signal": 65,
+    "score": 68,
+    "llm_summary": "腾讯将Hy4-preview压缩至200GB GGUF，性能保持98%",
+    "llm_tags": [
+      "模型压缩",
+      "GGUF",
+      "量化"
+    ]
+  },
+  {
+    "id": "c45d657adcbd",
+    "title": "Debian votes to allow \"responsible use of generative AI\"",
+    "summary": "HN 热度: 475 点赞, 442 评论（外链帖无正文）",
+    "url": "https://lwn.net/Articles/1091231/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-29T14:02:10+00:00",
+    "points": 475,
+    "num_comments": 442,
+    "frontier": 76,
+    "signal": 76,
+    "score": 76,
+    "llm_summary": "🔥 HN 475赞 442评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "a16b8ed2bc3e",
+    "title": "Qwen 3.8 27B at 50 tok/s with 100k Context on a 16GB GPU! (beellama.cpp)",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>I wanted to share my successful setup for running a <strong>Qwen 3.8 27B</strong> model with a massive context window on a consumer 16GB GPU (RTX 4070 Ti SUPER). The ",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1lq7u/qwen_38_27b_at_50_toks_with_100k_context_on_a/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-29T12:50:05+00:00",
+    "frontier": 72,
+    "signal": 62,
+    "score": 68,
+    "llm_summary": "16GB GPU上高效运行Qwen 3.8 27B，50 tok/s支持100k上下文",
+    "llm_tags": [
+      "模型推理",
+      "量化",
+      "性能优化"
     ]
   },
   {
@@ -539,6 +635,24 @@
       "基准测试",
       "规则推理",
       "LLM评估"
+    ]
+  },
+  {
+    "id": "41795c94e412",
+    "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+    "summary": "",
+    "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-08-28T00:00:00+00:00",
+    "frontier": 60,
+    "signal": 70,
+    "score": 64,
+    "llm_summary": "开源语音识别排行榜新增首个全球南方语言评测基准。",
+    "llm_tags": [
+      "语音识别",
+      "多语言",
+      "基准测试"
     ]
   },
   {
@@ -1901,65 +2015,6 @@
       "LLM接入",
       "编码工具",
       "CLI工具"
-    ]
-  },
-  {
-    "id": "c242a80646de",
-    "title": "agents-universe/agents-universe ⭐71",
-    "summary": "让智能体像人一样学习和工作，共享智能体和项目记忆",
-    "url": "https://github.com/agents-universe/agents-universe",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-23T01:28:00.526065+00:00",
-    "created_at": "2026-08-18T12:49:42Z",
-    "stars": 71,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 45,
-    "score": 51,
-    "llm_summary": "开源智能体项目，强调共享记忆以提升学习能力。",
-    "llm_tags": [
-      "智能体",
-      "记忆共享"
-    ]
-  },
-  {
-    "id": "83d39ae51299",
-    "title": "xuliang2024/leo_proxy ⭐59",
-    "summary": "🔥 Leonardo Web/API 任务网关：账号池调度、Cookie ZIP 导入、Token/JWT 协议续签、积分与并发管理；统一 JSON 任务接口覆盖 Hailuo H3、Seedance 2.0/2.5、Kling O3、Gemini Omni Flash、Veo 3.1、GPT Image 2、Nano Banana 2/Pro、Seed Audio 1.0。",
-    "url": "https://github.com/xuliang2024/leo_proxy",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-23T01:28:00.526065+00:00",
-    "created_at": "2026-08-18T12:40:01Z",
-    "stars": 59,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 70,
-    "score": 61,
-    "llm_summary": "多模型API任务网关，支持账号池调度与统一接口调取",
-    "llm_tags": [
-      "API网关",
-      "任务调度",
-      "多模型"
-    ]
-  },
-  {
-    "id": "f77a6ecccd58",
-    "title": "Why your local LLM feels dumber than it is",
-    "summary": "HN 热度: 388 点赞, 151 评论（外链帖无正文）",
-    "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-22T18:14:16+00:00",
-    "points": 388,
-    "num_comments": 151,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 388赞 151评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
     ]
   }
 ]
