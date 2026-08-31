@@ -1,5 +1,66 @@
 [
   {
+    "id": "ba7e4ee8139f",
+    "title": "baidu-baige/LoongSage ⭐76",
+    "summary": "A production-grade, high-efficiency Agentic RL framework for frontier LLMs with validated recipes.",
+    "url": "https://github.com/baidu-baige/LoongSage",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-31T18:55:49.270542+00:00",
+    "created_at": "2026-08-28T07:22:30Z",
+    "stars": 76,
+    "language": "Python",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "百度开源面向前沿大模型的高效智能体强化学习框架",
+    "llm_tags": [
+      "强化学习",
+      "智能体",
+      "LLM",
+      "框架"
+    ]
+  },
+  {
+    "id": "b00bcf7b87f6",
+    "title": "AMAP-ML/LoopArena ⭐69",
+    "summary": "Benchmarking models as runtime Controllers for Loop Engineering",
+    "url": "https://github.com/AMAP-ML/LoopArena",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-08-31T18:55:49.270542+00:00",
+    "created_at": "2026-08-31T02:47:02Z",
+    "stars": 69,
+    "language": "Python",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "开源基准测试，评估模型作为循环工程运行时控制器。",
+    "llm_tags": [
+      "基准测试",
+      "循环工程",
+      "运行时控制"
+    ]
+  },
+  {
+    "id": "01d459d5e485",
+    "title": "Introducing Solaris our first Interface World Model | Runway",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1w3jq0t/introducing_solaris_our_first_interface_world/\"> <img alt=\"Introducing Solaris our first Interface World Model | Runway\"",
+    "url": "https://www.reddit.com/r/singularity/comments/1w3jq0t/introducing_solaris_our_first_interface_world/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-31T16:59:07+00:00",
+    "frontier": 88,
+    "signal": 45,
+    "score": 71,
+    "llm_summary": "Runway发布首个界面世界模型Solaris，探索具身交互。",
+    "llm_tags": [
+      "世界模型",
+      "视频生成",
+      "交互AI"
+    ]
+  },
+  {
     "id": "9782f01e5028",
     "title": "Vuk97/forward-implementation-first ⭐139",
     "summary": "Stop your coding agent from stalling real work on self-invented bookkeeping - receipts, hashes, locks, certification rituals. Ship first, then verify. Skill for Claude Code, Codex, and other agents.",
@@ -189,6 +250,43 @@
       "长尾知识",
       "LLM评测",
       "🔧 已开源"
+    ]
+  },
+  {
+    "id": "4d459edee356",
+    "title": "OceanGym: A Benchmark Environment for Underwater Embodied Agents",
+    "summary": "arXiv:2509.26536v3 Announce Type: replace  Abstract: We introduce OceanGym, the first comprehensive benchmark for ocean underwater embodied agents, designed to advance AI in one of the most demanding real-world environments. Unlike terrestrial or aerial domains, underwater settings present extreme perceptual and decision-making challenges, including low visibility, dynamic ocean currents, making effective agent deployment exceptionally difficult. OceanGym encompasses eight realistic task domains and a unified agent framework driven by Multi-modal Large Language Models (MLLMs), which integrates perception, memory, and sequential decision-making. Agents are required to comprehend optical and sonar data, autonomously explore complex environments, and accomplish long-horizon objectives under t",
+    "url": "https://arxiv.org/abs/2509.26536",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-31T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 80,
+    "score": 78,
+    "llm_summary": "首个面向水下具身智能体的综合基准环境，涵盖八类真实任务域。",
+    "llm_tags": [
+      "水下机器人",
+      "具身智能",
+      "基准测试",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "3d2763675f91",
+    "title": "Cognitive Chain-of-Thought (CoCoT): Structured Multimodal Reasoning about Social Situations",
+    "summary": "arXiv:2507.20409v3 Announce Type: replace  Abstract: Chain-of-Thought (CoT) prompting helps models think step by step. But naive CoT breaks down in visually grounded social tasks, where models must perceive, understand, and judge all at once; bridging perception with norm-grounded reasoning. Recent work has introduced structured reasoning for multi-turn agent planning and visual QA, decomposing tasks into sequential sub-goals. To extend this to single-shot multimodal social reasoning, we introduce Cognitive Chain-of-Thought (CoCoT), a reasoning framework that structures vision-language-model (VLM) reasoning through three cognitively inspired stages: Perception (extract grounded facts), Situation (infer situations), and Norm (applying social norms). Evaluation across multiple distinct tasks",
+    "url": "https://arxiv.org/abs/2507.20409",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-08-31T04:00:00+00:00",
+    "frontier": 68,
+    "signal": 62,
+    "score": 65,
+    "llm_summary": "提出结构化多模态推理方法，改善社交情境理解与判断。",
+    "llm_tags": [
+      "多模态推理",
+      "思维链",
+      "社交智能"
     ]
   },
   {
@@ -578,6 +676,24 @@
       "LLM智能体",
       "长时程任务",
       "运行时架构"
+    ]
+  },
+  {
+    "id": "bc961c0eb192",
+    "title": "StemDeck, a free, open-source and local AI stem separator",
+    "summary": "HN 热度: 244 点赞, 63 评论（外链帖无正文）",
+    "url": "https://github.com/stemdeckapp/stemdeck",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-29T01:24:13+00:00",
+    "points": 244,
+    "num_comments": 63,
+    "frontier": 73,
+    "signal": 73,
+    "score": 73,
+    "llm_summary": "🔥 HN 244赞 63评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -978,6 +1094,24 @@
       "基准测试",
       "规则推理",
       "LLM评估"
+    ]
+  },
+  {
+    "id": "5dffb0d94792",
+    "title": "Please stop flooding our projects with AI slop to furnish your CV",
+    "summary": "HN 热度: 213 点赞, 144 评论（外链帖无正文）",
+    "url": "https://neilalexander.dev/2026/06/30/flooding-contributions",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-28T03:49:33+00:00",
+    "points": 213,
+    "num_comments": 144,
+    "frontier": 73,
+    "signal": 73,
+    "score": 73,
+    "llm_summary": "🔥 HN 213赞 144评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -1976,118 +2110,6 @@
       "AI工作流",
       "Gradio",
       "部署"
-    ]
-  },
-  {
-    "id": "d1880379172a",
-    "title": "Coding expertise is going to collapse from AI reliance",
-    "summary": "HN 热度: 452 点赞, 455 评论（外链帖无正文）",
-    "url": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-24T15:52:33+00:00",
-    "points": 452,
-    "num_comments": 455,
-    "frontier": 76,
-    "signal": 76,
-    "score": 76,
-    "llm_summary": "🔥 HN 452赞 455评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "a545fb894686",
-    "title": "OpenAI: GPT 5.6 Sol price reduction (until at least Nov 21)",
-    "summary": "HN 热度: 290 点赞, 263 评论（外链帖无正文）",
-    "url": "https://developers.openai.com/api/docs/pricing",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-24T15:22:43+00:00",
-    "points": 290,
-    "num_comments": 263,
-    "frontier": 74,
-    "signal": 74,
-    "score": 74,
-    "llm_summary": "🔥 HN 290赞 263评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "94129d7e77a9",
-    "title": "rome-os/rome ⭐195",
-    "summary": "Rome is the agentic OS.",
-    "url": "https://github.com/rome-os/rome",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-24T12:54:21.409612+00:00",
-    "created_at": "2026-08-23T06:15:15Z",
-    "stars": 195,
-    "language": "TypeScript",
-    "frontier": 65,
-    "signal": 45,
-    "score": 57,
-    "llm_summary": "Rome 项目定位为智能体操作系统，概念前沿但细节不足。",
-    "llm_tags": [
-      "智能体",
-      "操作系统"
-    ]
-  },
-  {
-    "id": "f31fbc2fa636",
-    "title": "MagnaFrisia/Kahoot-Tools-Pro-2026 ⭐55",
-    "summary": "Kahoot Tools AI — Open-source educational utility leveraging LLMs and OCR toautomatically generate, format, and export interactie Kahoot quizzes, flashcards, and study sets from PDs, URLs, and notes.",
-    "url": "https://github.com/MagnaFrisia/Kahoot-Tools-Pro-2026",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-24T12:54:21.409612+00:00",
-    "created_at": "2026-08-19T07:35:37Z",
-    "stars": 55,
-    "language": null,
-    "frontier": 45,
-    "signal": 60,
-    "score": 51,
-    "llm_summary": "开源工具利用LLM和OCR自动生成Kahoot测验和闪卡",
-    "llm_tags": [
-      "教育AI",
-      "LLM应用",
-      "OCR"
-    ]
-  },
-  {
-    "id": "be6e7824d941",
-    "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
-    "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
-    "url": "https://openai.com/index/gpt-5-6-in-kiro",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-08-24T12:00:00+00:00",
-    "frontier": 70,
-    "signal": 50,
-    "score": 62,
-    "llm_summary": "OpenAI发布GPT-5.6，面向Kiro开发者，提升性价比。",
-    "llm_tags": [
-      "大语言模型",
-      "开发者工具"
-    ]
-  },
-  {
-    "id": "ab3f5f0fe1d8",
-    "title": "Xiaomi AI Cube announced with 1.2TB/s memory bandwidth",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1vwvghi/xiaomi_ai_cube_announced_with_12tbs_memory/\"> <img alt=\"Xiaomi AI Cube announced with 1.2TB/s memory bandwidth\" src=\"http",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwvghi/xiaomi_ai_cube_announced_with_12tbs_memory/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-24T07:04:32+00:00",
-    "frontier": 75,
-    "signal": 50,
-    "score": 65,
-    "llm_summary": "小米发布AI Cube，内存带宽达1.2TB/s",
-    "llm_tags": [
-      "AI硬件",
-      "内存带宽",
-      "小米"
     ]
   }
 ]
