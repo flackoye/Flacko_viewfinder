@@ -1,5 +1,102 @@
 [
   {
+    "id": "8ebba683e5aa",
+    "title": "Player-YN/PawWork_ZhuaZhua ⭐209",
+    "summary": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
+    "url": "https://github.com/Player-YN/PawWork_ZhuaZhua",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-01T16:15:39.269332+00:00",
+    "created_at": "2026-08-28T10:56:56Z",
+    "stars": 209,
+    "language": "JavaScript",
+    "frontier": 77,
+    "signal": 77,
+    "score": 77,
+    "llm_summary": "⭐209 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "8f2ad13ba0f9",
+    "title": "rokbenko/quackd ⭐101",
+    "summary": "🦆🧠 Give your Microduck a brain. Tell a small robot with two legs what you want in plain language. An LLM (Claude, OpenAI, Gemini, Grok, or a local model via Ollama, vLLM or llama.cpp) uses the skills ",
+    "url": "https://github.com/rokbenko/quackd",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-01T16:15:39.269332+00:00",
+    "created_at": "2026-08-28T09:09:16Z",
+    "stars": 101,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 55,
+    "score": 55,
+    "llm_summary": "开源项目，用LLM为小型双足机器人提供自然语言控制能力",
+    "llm_tags": [
+      "机器人",
+      "LLM",
+      "自然语言"
+    ]
+  },
+  {
+    "id": "7ab35fc82871",
+    "title": "oce-ai/oce ⭐47",
+    "summary": "OpenContextEngine is a self-hosted, ACE-compatible code retrieval service. It indexes source files with cAST-aware chunking, stores metadata in PostgreSQL or SQLite, performs dense vector retrieval in",
+    "url": "https://github.com/oce-ai/oce",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-01T16:15:39.269332+00:00",
+    "created_at": "2026-08-27T01:03:32Z",
+    "stars": 47,
+    "language": "Python",
+    "frontier": 50,
+    "signal": 55,
+    "score": 52,
+    "llm_summary": "开源ACE兼容代码检索服务，支持cAST感知分块和向量检索",
+    "llm_tags": [
+      "代码检索",
+      "向量检索",
+      "自托管"
+    ]
+  },
+  {
+    "id": "198616d33ca8",
+    "title": "New Gemma models on arena ai",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w47nif/new_gemma_models_on_arena_ai/\"> <img alt=\"New Gemma models on arena ai\" src=\"https://preview.redd.it/via5e88evvmh1.png?wi",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w47nif/new_gemma_models_on_arena_ai/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-01T10:11:06+00:00",
+    "frontier": 70,
+    "signal": 50,
+    "score": 62,
+    "llm_summary": "Gemma 新模型出现在竞技场，社区开始讨论评测。",
+    "llm_tags": [
+      "Gemma",
+      "开源模型",
+      "模型评测"
+    ]
+  },
+  {
+    "id": "17f9946f1d78",
+    "title": "ExLlamav3 Recent Updates : CPU offload, GLM-5.3-FLASH, Qwen3.8-Flash, SC Quants ++",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w44jnv/exllamav3_recent_updates_cpu_offload_glm53flash/\"> <img alt=\"ExLlamav3 Recent Updates : CPU offload, GLM-5.3-FLASH, Qwen3",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w44jnv/exllamav3_recent_updates_cpu_offload_glm53flash/",
+    "source": "r/LocalLLaMA",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-01T07:14:40+00:00",
+    "frontier": 62,
+    "signal": 68,
+    "score": 64,
+    "llm_summary": "ExLlamav3更新，新增CPU offload及多模型支持",
+    "llm_tags": [
+      "LLM推理",
+      "量化加速",
+      "模型适配"
+    ]
+  },
+  {
     "id": "75699de749b0",
     "title": "gavishap/omnia-vault ⭐47",
     "summary": "Omnia Vault - the all-in-one project brain: an Obsidian LLM wiki, Graphify code graphs, a living plan that triages new videos against itself, and a Claude Code ⇄ Codex relay. Everything your project k",
@@ -131,6 +228,99 @@
       "LLM推理",
       "Apple Silicon",
       "🔧 已开源"
+    ]
+  },
+  {
+    "id": "199a155d2d82",
+    "title": "Pro-Router: Token-Aware Progressive Model Routing with Adaptive Edge-Cloud Collaboration for Efficient Multimodal LLM Inference",
+    "summary": "arXiv:2608.28726v1 Announce Type: new  Abstract: The remarkable performance of multimodal large language models (MLLMs) comes at the cost of substantial computational overhead, posing significant challenges to real-time deployment and cost effectiveness. Existing model routing approaches either decide from coarse request-level features alone or spend one or several extra language model passes to inspect the generated response, leaving the token-level uncertainty signals that emerge during generation unused. To address these limitations, we propose Pro-Router, a token-aware progressive model routing method with adaptive edge-cloud collaboration for efficient multimodal LLM inference. Pro-Router employs a two-stage progressive decision mechanism. First, a lightweight prompt pre-scorer module",
+    "url": "https://arxiv.org/abs/2608.28726",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 76,
+    "signal": 78,
+    "score": 77,
+    "llm_summary": "提出token级渐进式模型路由，结合边缘云协作优化多模态推理",
+    "llm_tags": [
+      "模型路由",
+      "多模态",
+      "边缘协同",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "2da09394417f",
+    "title": "HiVe: Beyond Static Prompts for Multitask Learning via Hierarchy-based Vertical Mixture-of-Experts",
+    "summary": "arXiv:2608.29790v1 Announce Type: new  Abstract: As large language models (LLMs) continue to scale, parameter-efficient fine-tuning (PEFT) has become a practical alternative to full-parameter adaptation. Prompt tuning is effective, but existing approaches either use flat prompt structures or hierarchical structures with fixed prompt composition, limiting adaptive prompt specialization. To address this limitation, we propose HiVe, a prompt tuning framework that models prompts at multiple levels and enables input-dependent specialization. HiVe constructs a prompt hierarchy by leveraging inter-task relationships during training, and employs a vertical mixture-of-experts (V-MoE) mechanism at inference time to compose prompts up to the level of specialization required for each input. Experiment",
+    "url": "https://arxiv.org/abs/2608.29790",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 62,
+    "score": 67,
+    "llm_summary": "提出分层垂直混合专家提示调优框架，实现自适应多任务学习",
+    "llm_tags": [
+      "提示调优",
+      "多任务学习",
+      "混合专家",
+      "参数高效"
+    ]
+  },
+  {
+    "id": "0750679f2b9f",
+    "title": "Benevolent Bias in Multi-Turn Human-Agent Dialogue",
+    "summary": "arXiv:2608.29206v1 Announce Type: new  Abstract: Bias in human-agent interaction can manifest not only through hostile language but also as benevolent bias, whereby unequal treatment hides behind a warm, positive tone. To make it detectable, we operationalise benevolent bias along two dimensions, tone and treatment, yielding three classes: neutral support, overt bias, and benevolent bias. Building on these definitions, we construct BENEVDIAL, a class-balanced corpus of 362,880 multi-turn support dialogues spanning user and agent demographics, roles, and generators, to support controlled evaluation. We then test two detector families on it: off-the-shelf safety detectors and prompted large language model (LLM) judges. Our results reveal a detection gap: off-the-shelf detectors reliably flag",
+    "url": "https://arxiv.org/abs/2608.29206",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 60,
+    "score": 65,
+    "llm_summary": "构建多轮人机对话语料库，识别善意偏见的分类与检测。",
+    "llm_tags": [
+      "对话系统",
+      "偏见检测",
+      "语料库"
+    ]
+  },
+  {
+    "id": "b4f503f8d033",
+    "title": "RACER: Reinforced Agent Collaboration for Explainable Reasoning on Knowledge Graphs",
+    "summary": "arXiv:2608.29263v1 Announce Type: new  Abstract: Large Language Models (LLMs) often suffer from hallucination and struggle with complex reasoning tasks requiring multi-hop domain knowledge. While integrating Knowledge Graphs (KGs) provides a structured and verifiable information source, current KG-enhanced LLM paradigms usually rely on single-agent path extraction and fixed prompting, lacking adaptability and facing huge search spaces. To address these challenges, we propose RACER, a Reinforced Agent Collaboration framework for Explainable Reasoning on knowledge graphs. RACER employs a semantic-aware action pruning and teacher-guided reinforcement learning mechanism to efficiently extract high-quality reasoning pathways from large-scale KGs. Furthermore, to mitigate single-path generation ",
+    "url": "https://arxiv.org/abs/2608.29263",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 50,
+    "score": 60,
+    "llm_summary": "提出基于强化学习和多智能体协作的知识图谱推理方法，增强可解释性。",
+    "llm_tags": [
+      "知识图谱",
+      "多智能体",
+      "强化学习",
+      "可解释推理"
+    ]
+  },
+  {
+    "id": "f10addecc73b",
+    "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+    "summary": "",
+    "url": "https://huggingface.co/blog/webgpu-kernels",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-09-01T00:00:00+00:00",
+    "frontier": 72,
+    "signal": 65,
+    "score": 69,
+    "llm_summary": "Hugging Face发布200多个WebGPU内核，加速本地AI推理。",
+    "llm_tags": [
+      "WebGPU",
+      "本地AI",
+      "内核优化"
     ]
   },
   {
@@ -554,6 +744,24 @@
       "本地部署",
       "语音处理",
       "效率优化"
+    ]
+  },
+  {
+    "id": "c4b16d6b8a53",
+    "title": "Smartphone LED detects hidden cameras with AI",
+    "summary": "HN 热度: 261 点赞, 78 评论（外链帖无正文）",
+    "url": "https://www.chosun.com/english/industry-en/2026/08/30/SBFXUIJQYZEARKP5T4FBAY25HQ/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-30T06:52:04+00:00",
+    "points": 261,
+    "num_comments": 78,
+    "frontier": 74,
+    "signal": 74,
+    "score": 74,
+    "llm_summary": "🔥 HN 261赞 78评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -1856,120 +2064,6 @@
       "多向量",
       "模型微调",
       "文本检索"
-    ]
-  },
-  {
-    "id": "e06038b97905",
-    "title": "How much of HN is AI?",
-    "summary": "HN 热度: 270 点赞, 329 评论（外链帖无正文）",
-    "url": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-25T15:23:41+00:00",
-    "points": 270,
-    "num_comments": 329,
-    "frontier": 74,
-    "signal": 74,
-    "score": 74,
-    "llm_summary": "🔥 HN 270赞 329评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "6ed599f2990d",
-    "title": "Granite 4.2 LLMs: How They're Built",
-    "summary": "",
-    "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-08-25T15:14:14+00:00",
-    "frontier": 82,
-    "signal": 86,
-    "score": 84,
-    "llm_summary": "IBM发布Granite 4.2 LLM技术细节，涵盖架构与训练方法",
-    "llm_tags": [
-      "大语言模型",
-      "模型架构",
-      "训练方法"
-    ]
-  },
-  {
-    "id": "955f33df2db1",
-    "title": "AlpinDale/gpt2.cmake ⭐98",
-    "summary": "Implementation of the GPT-2 model in pure CMake",
-    "url": "https://github.com/AlpinDale/gpt2.cmake",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-25T12:51:20.821336+00:00",
-    "created_at": "2026-08-23T14:55:43Z",
-    "stars": 98,
-    "language": "CMake",
-    "frontier": 45,
-    "signal": 70,
-    "score": 55,
-    "llm_summary": "用纯CMake语言实现GPT-2模型，展现构建系统的极限创意",
-    "llm_tags": [
-      "CMake",
-      "GPT-2",
-      "模型实现"
-    ]
-  },
-  {
-    "id": "66ea72162e8b",
-    "title": "BraxisAI/braxis-blueprint ⭐62",
-    "summary": "The $0 AI Empire Playbook — 140+ agents, 20+ free LLM lanes, 1,800+ songs, a living 3D world, all on free tiers. Real scripts, real failure classes, MIT.",
-    "url": "https://github.com/BraxisAI/braxis-blueprint",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-25T12:51:20.821336+00:00",
-    "created_at": "2026-08-23T00:19:10Z",
-    "stars": 62,
-    "language": "Python",
-    "frontier": 45,
-    "signal": 55,
-    "score": 49,
-    "llm_summary": "开源项目展示用免费层构建多代理系统，含具体数量指标。",
-    "llm_tags": [
-      "多代理",
-      "免费API",
-      "开源"
-    ]
-  },
-  {
-    "id": "8d1e90c59ebb",
-    "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-    "summary": "",
-    "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-08-25T11:39:24+00:00",
-    "frontier": 78,
-    "signal": 74,
-    "score": 76,
-    "llm_summary": "提出量化感知修复方法，4比特压缩模型性能超越全精度原模型。",
-    "llm_tags": [
-      "模型压缩",
-      "量化感知",
-      "性能优化"
-    ]
-  },
-  {
-    "id": "7e4179901bb1",
-    "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-    "summary": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models.",
-    "url": "https://openai.com/index/jalapeno-first-results",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-08-25T07:00:00+00:00",
-    "frontier": 85,
-    "signal": 65,
-    "score": 77,
-    "llm_summary": "OpenAI自研推理芯片Jalapeño首次公开性能，速度与效率领先。",
-    "llm_tags": [
-      "AI芯片",
-      "推理加速",
-      "硬件"
     ]
   }
 ]
