@@ -1,5 +1,139 @@
 [
   {
+    "id": "75699de749b0",
+    "title": "gavishap/omnia-vault ⭐47",
+    "summary": "Omnia Vault - the all-in-one project brain: an Obsidian LLM wiki, Graphify code graphs, a living plan that triages new videos against itself, and a Claude Code ⇄ Codex relay. Everything your project k",
+    "url": "https://github.com/gavishap/omnia-vault",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-01T04:10:12.190847+00:00",
+    "created_at": "2026-08-26T19:34:54Z",
+    "stars": 47,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 50,
+    "score": 53,
+    "llm_summary": "集成Obsidian LLM、代码图谱和Claude-Codex中继的多合一项目管理工具",
+    "llm_tags": [
+      "LLM集成",
+      "代码图谱",
+      "项目管理"
+    ]
+  },
+  {
+    "id": "299e90158f24",
+    "title": "ashutoshsinghpr7/wikiskill ⭐46",
+    "summary": "WikiSkill (arXiv:2608.27454) for Hermes Agent — self-evolving agent skills via a persistent knowledge wiki. Faithful Algorithm 1 implementation with real agent runs, isolated skill gating, and a docum",
+    "url": "https://github.com/ashutoshsinghpr7/wikiskill",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-01T04:10:12.190847+00:00",
+    "created_at": "2026-08-29T20:44:02Z",
+    "stars": 46,
+    "language": "Python",
+    "frontier": 72,
+    "signal": 58,
+    "score": 66,
+    "llm_summary": "实现WikiSkill自进化Agent技能知识库，支持持续更新",
+    "llm_tags": [
+      "Agent",
+      "知识库",
+      "自进化"
+    ]
+  },
+  {
+    "id": "09e1e4ee4c57",
+    "title": "SHAPE of Chain-of-Thought in Math Reasoning",
+    "summary": "arXiv:2608.28600v1 Announce Type: new  Abstract: Large language models (LLMs) achieve strong performance on mathematical reasoning benchmarks, yet the mathematically meaningful skills underlying their reasoning remain underexplored. We introduce \\texttt{SHAPE}, a framework that analyzes Chain-of-Thought (CoT) trajectories through two lenses developed in mathematics education: (1) semantic spaces: the model's evolving mathematical interpretations of a problem (e.g., algebraic, geometric), and (2) heuristics: the specific mathematical actions taken within those spaces (e.g., simplifying the problem, working backward). We first use \\texttt{SHAPE} to analyze the reasoning patterns of various models. Our findings reveal that the mathematical heuristics employed by a model better explain final a",
+    "url": "https://arxiv.org/abs/2608.28600",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 72,
+    "score": 71,
+    "llm_summary": "提出SHAPE框架分析数学推理链式思考的语义空间",
+    "llm_tags": [
+      "数学推理",
+      "链式思考",
+      "可解释性",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "ecbe40b3ecc8",
+    "title": "EmoLASP: Emotion Recognition with Language Models and Answer Set Programming",
+    "summary": "arXiv:2608.29035v1 Announce Type: new  Abstract: Emotion recognition in conversations is increasingly tackled with language models, but these models can be unstable and expensive to fine-tune or to prompt with long dialogue histories. We propose EmoLASP, a framework that combines a language model with declarative reasoning via Answer Set Programming (ASP) to predict VAD scores (Valence-Arousal-Dominance) in conversations. Experiments on a widely used benchmark dataset (IEMOCAP) across six open-source LLMs (3B-120B) and two PLMs (BERT, RoBERTa) show that EmoLASP improves prediction performance compared to using the language model alone, even when the LLMs/PLMs are given no dialogue history in their prompts or input vectors. The gains are largest for prompt-only LLMs, which EmoLASP uses with",
+    "url": "https://arxiv.org/abs/2608.29035",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 75,
+    "score": 74,
+    "llm_summary": "结合语言模型与答案集编程预测对话情感VAD分数，开源框架。",
+    "llm_tags": [
+      "情感识别",
+      "逻辑推理",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "93735d874737",
+    "title": "MMPCBench: Benchmarking Multimodal Large Language Models on Proactive Critique of Flawed Inputs",
+    "summary": "arXiv:2608.29286v1 Announce Type: new  Abstract: As Multimodal Large Language Models (MLLMs) evolve into sophisticated interactive assistants, their reliability depends not only on following instructions but also on validating them. We define Proactive Critique as the model's autonomous ability to identify, analyze and fix faulty user inputs without extra prompts. However, evaluations mainly test models under ideal circumstances or simple refusal behaviors, largely ignoring active error processing. To fill this gap, we propose MMPCBench, a comprehensive framework for evaluating MLLMs' proactive critique competence. It features a fine-grained taxonomy of 4 primary error types spanning 12 subcategories, ranging from cross-modal contradictions to missing visual premises. We adopt a hierarchic",
+    "url": "https://arxiv.org/abs/2608.29286",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 80,
+    "score": 76,
+    "llm_summary": "提出多模态大模型主动批评缺陷输入的评测基准，含数据集与评估框架",
+    "llm_tags": [
+      "多模态",
+      "评测基准",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "82607c2eff3c",
+    "title": "GenRubric: Self-Evolving Rubric Generation for Scalable LLM Evaluation",
+    "summary": "arXiv:2608.29856v1 Announce Type: new  Abstract: Large language models are increasingly used as scalable evaluators for open-ended tasks. However, many LLM judges derive query-specific criteria during scoring, leaving the evaluation requirements insufficiently specified and their coverage difficult to audit. Query-specific rubrics make these requirements explicit, but expert-written rubrics are costly to construct, while existing automatic methods typically rely on inference-time refinement or external supervision. We introduce GenRubric, a self-evolving framework that improves rubric generation from unlabeled queries without requiring additional human annotations during self-evolution. Our approach is based on rubric-induced self-consistency: independently sampled rubrics for the same que",
+    "url": "https://arxiv.org/abs/2608.29856",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出自我进化规则生成方法，提升LLM评估可扩展性",
+    "llm_tags": [
+      "LLM评估",
+      "自动评分",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "0cc2e1af7d53",
+    "title": "GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon",
+    "summary": "arXiv:2608.28667v1 Announce Type: new  Abstract: The rapid proliferation of Large Language Models (LLMs) has raised concerns about their environmental impact during inference. While Green AI research has focused on datacenter GPUs and embedded platforms, the energy profile of LLM inference on Apple Silicon, with its unified memory architecture, remains unstudied. This paper presents GreenBench, a benchmarking framework that evaluates the energy efficiency, throughput, and carbon footprint of five open-source LLMs (3-9B parameters) across three NLP tasks on an Apple M4 Pro with 48 GB unified memory. Using macOS powermetrics for direct power measurement and Ollama's nanosecond-precision timing, we find that the M4 Pro draws only 0.47 W of CPU+GPU package power during sustained inference, wit",
+    "url": "https://arxiv.org/abs/2608.28667",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 40,
+    "signal": 75,
+    "score": 58,
+    "llm_summary": "在Apple Silicon上基准测试开源LLM推理的能效与碳足迹。",
+    "llm_tags": [
+      "能效基准",
+      "LLM推理",
+      "Apple Silicon",
+      "🔧 已开源"
+    ]
+  },
+  {
     "id": "ba7e4ee8139f",
     "title": "baidu-baige/LoongSage ⭐76",
     "summary": "A production-grade, high-efficiency Agentic RL framework for frontier LLMs with validated recipes.",
@@ -58,6 +192,24 @@
       "世界模型",
       "视频生成",
       "交互AI"
+    ]
+  },
+  {
+    "id": "b09761f1d5a9",
+    "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+    "summary": "HN 热度: 336 点赞, 382 评论（外链帖无正文）",
+    "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-08-31T12:41:22+00:00",
+    "points": 336,
+    "num_comments": 382,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 336赞 382评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -1818,298 +1970,6 @@
       "AI芯片",
       "推理加速",
       "硬件"
-    ]
-  },
-  {
-    "id": "77beafa63222",
-    "title": "Lexical Perturbations Disrupt LLM Reasoning: An Empirical Study of Attention Diversion",
-    "summary": "arXiv:2608.22140v1 Announce Type: new  Abstract: Large Language Models (LLMs) achieve strong reasoning performance, but their robustness to realistic lexical corruption remains poorly understood. We evaluate four open-weight instruction-tuned models and frontier models across four reasoning benchmarks under keyboard noise, character swaps, and filler insertion. Character-level perturbations substantially degrade accuracy, especially on multi-step reasoning tasks, while filler insertion has little effect. We trace this asymmetry to Attention Diversion: lexical corruption fragments subword tokenization, and the resulting fragments attract disproportionate attention mass, concentrated in middle and final transformer layers. Length-matched controls confirm that fragmentation, not prompt length",
-    "url": "https://arxiv.org/abs/2608.22140",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-25T04:00:00+00:00",
-    "frontier": 55,
-    "signal": 72,
-    "score": 64,
-    "llm_summary": "实证研究词汇扰动对LLM推理鲁棒性的影响",
-    "llm_tags": [
-      "鲁棒性",
-      "推理",
-      "词汇扰动",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "87c3ec413a14",
-    "title": "ESCRAG-R1: Retrieval-Augmented Reinforcement Learning for Emotional Support Conversation",
-    "summary": "arXiv:2608.21925v1 Announce Type: new  Abstract: Emotional Support Conversation (ESC) systems aim to provide holistic support by balancing professional therapeutic competence with natural empathy. However, existing methods struggle to simultaneously achieve structured, stage-aware reasoning and seamless empathy-expertise alignment, often resulting in an artificial splicing of clinical strategies and generic reassurance. To overcome these limitations, we propose ESCRAG-R1, a unified framework that integrates retrieval-based psychological guidance into Group Relative Policy Optimization (GRPO). By incorporating retrieval into the reinforcement learning loop, ESCRAG-R1 transforms external knowledge into a robust learning signal that stimulates explicit internal reasoning prior to generation a",
-    "url": "https://arxiv.org/abs/2608.21925",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-25T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 75,
-    "score": 72,
-    "llm_summary": "提出检索增强强化学习框架，提升情感支持对话的共情与专业一致性。",
-    "llm_tags": [
-      "🔧 已开源",
-      "情感对话",
-      "强化学习",
-      "检索增强"
-    ]
-  },
-  {
-    "id": "a7b759300603",
-    "title": "Teaching LLMs How ICU Physicians Approach Clinical Reasoning Through OMOP-Aligned Retrieval Improves Reasoning Across Clinical Domains",
-    "summary": "arXiv:2608.22622v1 Announce Type: new  Abstract: Clinical decision-making relies on identifying relevant patient information to guide diagnosis and treatment, a challenge that is especially difficult in the data-dense and rapidly changing intensive care unit (ICU). Large language models (LLMs) could support this task. However, existing applications and datasets mostly emphasize surface-level retrieval or factual recall rather than the inductive and deductive reasoning clinicians practice to select and reason over decision-relevant evidence. We hypothesized that training LLMs on expert ICU reasoning could yield clinical reasoning skills that generalize beyond critical care. Here we introduce ICU-REACT, a reasoning dataset developed with 19 clinicians through a clinician-in-the-loop framewor",
-    "url": "https://arxiv.org/abs/2608.22622",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-25T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 80,
-    "score": 75,
-    "llm_summary": "利用OMOP对齐检索提升LLM跨临床领域推理能力",
-    "llm_tags": [
-      "🔧 已开源",
-      "临床推理",
-      "检索增强",
-      "🔧已开源"
-    ]
-  },
-  {
-    "id": "4eebb3a28837",
-    "title": "Beyond Factual Knowledge: Benchmarking and Learning Step-Level Procedural Rule Reasoning in Large Language Models",
-    "summary": "arXiv:2608.22753v1 Announce Type: new  Abstract: Large language models (LLMs) excel at text understanding and generation, yet still struggle to reliably understand and apply externally provided procedural rules at scale. To evaluate this capability, we introduce RuleWorld, a large-scale benchmark that reformulates rules as globally reusable abstract units rather than instance-specific facts. In RuleWorld, several scenarios, including single-rule, parallel multi-rule, and multi-hop reasoning, are settled for comprehensive evaluation. We further propose DynaRule, an end-to-end framework that injects the given rules into the KV cache and turns retrieval into an internal, learnable, step-wise process. Specifically, DynaRule employs Stacked Step-Level Attention Training with a special  token to",
-    "url": "https://arxiv.org/abs/2608.22753",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-25T04:00:00+00:00",
-    "frontier": 60,
-    "signal": 75,
-    "score": 68,
-    "llm_summary": "提出RuleWorld基准，评估大模型程序性规则推理能力。",
-    "llm_tags": [
-      "规则推理",
-      "基准测试",
-      "LLM评估",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "59b29f056481",
-    "title": "MegaMem: A Retrieval Solution for Ultra-Large Context Windows",
-    "summary": "arXiv:2608.22137v1 Announce Type: new  Abstract: Modern language models and agents increasingly require persistent memory for complete codebases, long interaction histories, and heterogeneous enterprise records. The key challenge is to keep hundreds of millions of tokens searchable while passing only bounded source evidence to the answer model. We introduce MegaMem, a source-resolved dual-view retrieval system that separates semantic access from generation evidence. Distilled records and detailed evidence are searched with original and transformed queries; every distilled hit resolves to an immutable source ID before reciprocal-rank fusion, deduplication, and cross-encoder reranking; and only the highest-ranked detailed evidence within a fixed budget supports generation. Post-answer attrib",
-    "url": "https://arxiv.org/abs/2608.22137",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-25T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 80,
-    "score": 78,
-    "llm_summary": "提出双视图检索系统，支持超长上下文高效访问",
-    "llm_tags": [
-      "检索系统",
-      "超长上下文",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "d931df04ffc6",
-    "title": "MCP-Universe RL: A Framework for Training MCP Tool-Use Agents via Reinforcement Learning",
-    "summary": "arXiv:2608.22167v1 Announce Type: new  Abstract: Reinforcement learning (RL) has become an effective way to improve the tool-use ability of large language models (LLMs), but most existing RL frameworks stop at the policy update. For every new domain, the user is left with two hard systems problems: standing up an isolated environment for each of hundreds of concurrent trajectories and connecting it to training, and scheduling the rollout so that the GPU stays busy across long, multi-turn episodes that spend much of their time stalled on slow tool calls. We present MCP-Universe RL (MCP-U RL), an open-source framework that takes over both. It uses the Model Context Protocol (MCP) as the interface to the environment, so any tool already exposed as an MCP server plugs into training with no RL-",
-    "url": "https://arxiv.org/abs/2608.22167",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-25T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 85,
-    "score": 78,
-    "llm_summary": "提出MCP-Universe RL框架，简化MCP工具调用智能体的强化学习训练流程。",
-    "llm_tags": [
-      "工具智能体",
-      "强化学习",
-      "MCP",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "96e99f4f4c9a",
-    "title": "Beyond What Meets the Eye: Unveiling Situational Illusions for Multimodal Large Language Models",
-    "summary": "arXiv:2608.22232v1 Announce Type: new  Abstract: Real-world situation appearances can deviate from their underlying physical states, challenging the reliability of multimodal large language models (MLLMs) in practical applications. In this paper, we term this phenomenon situational illusions and investigate: (1) how MLLMs perform under such illusions, and (2) how to mitigate the limitations. We first develop a comprehensive where-what-how taxonomy that characterizes where situational illusions occur, what targets they take, and how they arise. Building on this taxonomy, we introduce MSIBench, a benchmark designed to assess the discrimination, understanding, and reasoning capabilities of MLLMs under situational illusions. Evaluations of 27 model configurations reveal that current MLLMs are ",
-    "url": "https://arxiv.org/abs/2608.22232",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-25T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 72,
-    "score": 74,
-    "llm_summary": "系统研究多模态大模型的情境错觉现象并提出缓解方法",
-    "llm_tags": [
-      "多模态",
-      "情境错觉",
-      "鲁棒性",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "4d95e7137dca",
-    "title": "Text-Anchored Semantic Perturbations for Transferable Jailbreak Attacks on Multimodal Large Language Models",
-    "summary": "arXiv:2608.22312v1 Announce Type: new  Abstract: Multimodal Large Language Models (MLLMs) have achieved remarkable progress in vision-language interaction, yet their safety alignment remains vulnerable to jailbreak attacks. A key challenge is that safety behavior learned in the textual space does not reliably transfer to fused cross-modal representations, leaving multimodal inputs exploitable through latent semantic cues. We propose Text-Anchored Semantic Perturbation Attack (TA-SPA), a black-box jailbreak framework that optimizes transferable perturbations in a text-anchored semantic space. TA-SPA integrates Text-Anchored Semantic Factorization (TASF), which encourages the separation of cross-modal semantic factors from modality-specific residuals, with Semantic-Preserving Augmentation (S",
-    "url": "https://arxiv.org/abs/2608.22312",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-25T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 68,
-    "llm_summary": "提出文本锚定语义扰动，实现跨模态迁移的黑盒越狱攻击",
-    "llm_tags": [
-      "多模态安全",
-      "越狱攻击",
-      "对抗扰动"
-    ]
-  },
-  {
-    "id": "42ed41cd47f5",
-    "title": "GTA-RAG: Graph-Trajectory-Augmented Reinforcement Learning for Multi-Turn Retrieval-Augmented Reasoning",
-    "summary": "arXiv:2608.22479v1 Announce Type: new  Abstract: Retrieval-augmented generation (RAG) enables LLMs to access external knowledge for answering knowledge-intensive questions. For complex multi-hop questions, multi-turn retrieval-augmented reasoning extends RAG into an iterative process that repeatedly searches for and integrates evidence across documents. However, existing reinforcement-learning (RL) approaches for agentic RAG are typically optimized with final-answer rewards, which provide sparse supervision and overlook whether the model actually retrieves the required evidence chain. We present \\textsc{GTA-RAG}, a graph-trajectory-augmented RL framework for multi-turn retrieval-augmented reasoning. From an entity--document graph, we sample connected document paths, synthesize multi-hop QA",
-    "url": "https://arxiv.org/abs/2608.22479",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-25T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "提出图轨迹增强强化学习方法，优化多轮检索增强推理",
-    "llm_tags": [
-      "强化学习",
-      "检索增强",
-      "多轮推理",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "541d08cc0c3d",
-    "title": "forcewake/hermes-conductor ⭐57",
-    "summary": "One Hermes conductor. Many coding CLIs. Zero trust in self-reports. Production multi-harness orchestration patterns: worktree lanes, verification gates, recovery playbooks — from 18 kanban boards and ",
-    "url": "https://github.com/forcewake/hermes-conductor",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-25T01:22:15.195651+00:00",
-    "created_at": "2026-08-23T18:49:46Z",
-    "stars": 57,
-    "language": null,
-    "frontier": 60,
-    "signal": 55,
-    "score": 58,
-    "llm_summary": "开源多编码CLI编排工具，含验证门与恢复模式",
-    "llm_tags": [
-      "AI编排",
-      "编码工具",
-      "工程实践"
-    ]
-  },
-  {
-    "id": "05488619b1b1",
-    "title": "DavidCarliez/cover ⭐41",
-    "summary": "Reversible privacy proxy for AI agents: send realistic fakes, restore originals locally.",
-    "url": "https://github.com/DavidCarliez/cover",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-25T01:22:15.195651+00:00",
-    "created_at": "2026-08-21T18:56:30Z",
-    "stars": 41,
-    "language": "Go",
-    "frontier": 55,
-    "signal": 50,
-    "score": 53,
-    "llm_summary": "面向AI代理的可逆隐私代理，发送假数据并本地还原。",
-    "llm_tags": [
-      "隐私保护",
-      "AI代理",
-      "代理工具"
-    ]
-  },
-  {
-    "id": "96da5933b094",
-    "title": "hxhou0207/chatgpt-markdown-latex-copier ⭐33",
-    "summary": "Copy ChatGPT web responses containing LaTeX formulas as well-formatted Markdown.",
-    "url": "https://github.com/hxhou0207/chatgpt-markdown-latex-copier",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-25T01:22:15.195651+00:00",
-    "created_at": "2026-08-22T09:51:59Z",
-    "stars": 33,
-    "language": "JavaScript",
-    "frontier": 35,
-    "signal": 60,
-    "score": 45,
-    "llm_summary": "开源工具，将ChatGPT中的LaTeX公式复制为规范Markdown。",
-    "llm_tags": [
-      "Markdown",
-      "LaTeX",
-      "ChatGPT"
-    ]
-  },
-  {
-    "id": "27d2878896b5",
-    "title": "patcireamo/ChungusHub ⭐32",
-    "summary": "ChungusHub is a local-first, privacy-focused LLM frontend for roleplay.",
-    "url": "https://github.com/patcireamo/ChungusHub",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-25T01:22:15.195651+00:00",
-    "created_at": "2026-08-19T12:01:11Z",
-    "stars": 32,
-    "language": "TypeScript",
-    "frontier": 50,
-    "signal": 50,
-    "score": 50,
-    "llm_summary": "开源本地优先的LLM角色扮演前端，注重隐私。",
-    "llm_tags": [
-      "大模型应用",
-      "本地部署",
-      "角色扮演"
-    ]
-  },
-  {
-    "id": "4802c7450fa4",
-    "title": "mrpulor-gh/nuphus ⭐29",
-    "summary": "Nuphus — 本地优先的 AI Agent：真实桌面执行力 + 手机第二块屏幕。Local-first AI agent with real desktop execution and dual-device real-time sync.",
-    "url": "https://github.com/mrpulor-gh/nuphus",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-25T01:22:15.195651+00:00",
-    "created_at": "2026-08-21T20:35:53Z",
-    "stars": 29,
-    "language": "Rust",
-    "frontier": 55,
-    "signal": 50,
-    "score": 53,
-    "llm_summary": "本地优先AI智能体，支持真实桌面执行与多设备实时同步的开源项目。",
-    "llm_tags": [
-      "智能体",
-      "本地部署",
-      "多端同步"
-    ]
-  },
-  {
-    "id": "78a06e9ced1c",
-    "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
-    "summary": "",
-    "url": "https://huggingface.co/blog/gradio-workflow-guide",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-08-25T00:00:00+00:00",
-    "frontier": 55,
-    "signal": 75,
-    "score": 63,
-    "llm_summary": "介绍Gradio构建、运行和部署AI工作流的实用方法",
-    "llm_tags": [
-      "AI工作流",
-      "Gradio",
-      "部署"
     ]
   }
 ]
