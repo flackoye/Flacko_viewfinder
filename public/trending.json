@@ -1,5 +1,123 @@
 [
   {
+    "id": "8dd7c9238f77",
+    "title": "carloslfu/slotstream ⭐143",
+    "summary": "Run Qwen3.8-Flash-Next (125B MoE, 104 GB at 4-bit) on Macs with a fraction of that RAM by streaming experts from SSD. MLX + Swift, Ollama-compatible API.",
+    "url": "https://github.com/carloslfu/slotstream",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-02T03:32:32.477238+00:00",
+    "created_at": "2026-08-28T06:42:21Z",
+    "stars": 143,
+    "language": "Swift",
+    "frontier": 78,
+    "signal": 72,
+    "score": 76,
+    "llm_summary": "通过流式加载专家，在Mac上以少量内存运行125B MoE模型",
+    "llm_tags": [
+      "模型推理",
+      "内存优化",
+      "MoE",
+      "MLX"
+    ]
+  },
+  {
+    "id": "97151ca6e59f",
+    "title": "555cute/r20-quantum-trader ⭐50",
+    "summary": "⚡ LLM-Native Self-Evolving Quantitative Trading Terminal & Execution Engine (Bloomberg-Style Dark Terminal + 6-Asset AI Brain)",
+    "url": "https://github.com/555cute/r20-quantum-trader",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-02T03:32:32.477238+00:00",
+    "created_at": "2026-08-30T14:34:10Z",
+    "stars": 50,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 45,
+    "score": 51,
+    "llm_summary": "开源LLM量化交易终端，具自进化引擎和多资产AI大脑。",
+    "llm_tags": [
+      "量化交易",
+      "LLM",
+      "开源项目"
+    ]
+  },
+  {
+    "id": "82adc0ab28fc",
+    "title": "grapefruit0205/click ⭐36",
+    "summary": "Codex plugin for coding agents that turns software requests into approved implementation contracts, then keeps implementation and verification inside the agreed boundary.",
+    "url": "https://github.com/grapefruit0205/click",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-02T03:32:32.477238+00:00",
+    "created_at": "2026-08-27T01:06:45Z",
+    "stars": 36,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 45,
+    "score": 51,
+    "llm_summary": "Codex插件将软件请求转化为实施合同，约束编码代理的验证边界。",
+    "llm_tags": [
+      "Codex插件",
+      "编码代理",
+      "实施合同"
+    ]
+  },
+  {
+    "id": "292f1018bd54",
+    "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+    "summary": "",
+    "url": "https://huggingface.co/blog/allenai/benchmirt",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-09-01T21:39:07+00:00",
+    "frontier": 55,
+    "signal": 82,
+    "score": 66,
+    "llm_summary": "深入分析LLM基准测试的真实效度与局限",
+    "llm_tags": [
+      "基准测试",
+      "大模型评估",
+      "评测分析"
+    ]
+  },
+  {
+    "id": "56d0fdce2e47",
+    "title": "EvoUndo: Recoverability-Constrained Self-Evolution for LLM Agent Harnesses [R]",
+    "summary": "<!-- SC_OFF --><div class=\"md\"><p>LLM agents increasingly modify their own prompts, tools, middleware, resources, and execution harnesses at runtime. Such self-evolution can improve capability, but a ",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1w4m0hq/evoundo_recoverabilityconstrained_selfevolution/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-01T19:17:00+00:00",
+    "frontier": 80,
+    "signal": 65,
+    "score": 74,
+    "llm_summary": "提出约束可恢复性的LLM智能体自进化方法",
+    "llm_tags": [
+      "智能体",
+      "自我进化",
+      "可恢复性"
+    ]
+  },
+  {
+    "id": "3e3346551c11",
+    "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
+    "summary": "HN 热度: 484 点赞, 562 评论（外链帖无正文）",
+    "url": "https://danluu.com/zitron/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-01T18:35:15+00:00",
+    "points": 484,
+    "num_comments": 562,
+    "frontier": 76,
+    "signal": 76,
+    "score": 76,
+    "llm_summary": "🔥 HN 484赞 562评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "8ebba683e5aa",
     "title": "Player-YN/PawWork_ZhuaZhua ⭐209",
     "summary": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
@@ -61,6 +179,43 @@
     ]
   },
   {
+    "id": "af222dfb1e98",
+    "title": "Path to Astra: critical capabilities and frontier safeguards",
+    "summary": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
+    "url": "https://openai.com/index/path-to-astra",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-09-01T13:00:00+00:00",
+    "frontier": 95,
+    "signal": 65,
+    "score": 83,
+    "llm_summary": "OpenAI新模型Astra首次达到关键网络安全能力阈值并增强保障发布。",
+    "llm_tags": [
+      "AI安全",
+      "网络安全",
+      "模型发布",
+      "前沿模型"
+    ]
+  },
+  {
+    "id": "6ce3205ec5b6",
+    "title": "We released TontaubeV1, a character-level TTS model for long-form generation [P]",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1w4afjn/we_released_tontaubev1_a_characterlevel_tts_model/\"> <img alt=\"We released TontaubeV1, a character-level TTS model f",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1w4afjn/we_released_tontaubev1_a_characterlevel_tts_model/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-01T12:23:32+00:00",
+    "frontier": 75,
+    "signal": 55,
+    "score": 67,
+    "llm_summary": "发布字符级长文本语音合成模型TontaubeV1",
+    "llm_tags": [
+      "语音合成",
+      "字符级",
+      "长文本生成"
+    ]
+  },
+  {
     "id": "198616d33ca8",
     "title": "New Gemma models on arena ai",
     "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w47nif/new_gemma_models_on_arena_ai/\"> <img alt=\"New Gemma models on arena ai\" src=\"https://preview.redd.it/via5e88evvmh1.png?wi",
@@ -76,6 +231,24 @@
       "Gemma",
       "开源模型",
       "模型评测"
+    ]
+  },
+  {
+    "id": "a7532bde14ed",
+    "title": "I trained a small transformer in 1.5hrs and it beats many LLMs",
+    "summary": "HN 热度: 589 点赞, 154 评论（外链帖无正文）",
+    "url": "https://mvakde.github.io/blog/44-on-arc-1/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-01T09:52:45+00:00",
+    "points": 589,
+    "num_comments": 154,
+    "frontier": 77,
+    "signal": 77,
+    "score": 77,
+    "llm_summary": "🔥 HN 589赞 154评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -303,6 +476,62 @@
       "多智能体",
       "强化学习",
       "可解释推理"
+    ]
+  },
+  {
+    "id": "6e2f50f7ad5c",
+    "title": "DS-Lighting: Making Agent Harnesses Explicit for Data-Science Automation",
+    "summary": "arXiv:2608.28590v1 Announce Type: new  Abstract: Large Language Model (LLM) agents have shown promise for automating data-science workflows, yet their end-to-end performance depends critically on the agent harness that represents tasks, manages execution state, constrains output artifacts, and provides evaluation feedback. Existing data-science agents often leave this harness implicit, making results difficult to reproduce, compare, and attribute across heterogeneous tasks. We introduce DS-Lighting, a unified harness toolkit that makes harness design explicit for data-science automation. DS-Lighting decomposes the harness into four reusable layers: data, workflow, execution, and evaluation, and represents diverse agents as executable operator programs that support both predefined pipelines",
+    "url": "https://arxiv.org/abs/2608.28590",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "提出显式agent harness框架，提升数据科学自动化任务的可复现性与可比性",
+    "llm_tags": [
+      "LLM智能体",
+      "数据科学",
+      "自动化",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "30329773eb3e",
+    "title": "Cloud and On-Premises Deployment of Uzbek Legal RAG via Targeted Retriever Fine-Tuning",
+    "summary": "arXiv:2608.29284v1 Announce Type: new  Abstract: Deploying large language models for legal question answering raises challenges that general-purpose leaderboards do not capture, particularly for low-resource languages and under hard operational constraints. We report on building and operating a retrieval-augmented (RAG) legal assistant for Uzbek that must run in two regimes: a managed cloud service that maximizes answer quality within a per-token cost ceiling, and an on-premises deployment for clients whose legal data may not leave their infrastructure, restricting us to open-weight models on limited local hardware under latency constraints. Because no evaluation existed for this setting, we build two domain benchmarks: a retrieval benchmark of 178 expert-annotated legal queries with gold ",
+    "url": "https://arxiv.org/abs/2608.29284",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 76,
+    "score": 70,
+    "llm_summary": "针对乌兹别克语法律问答的RAG系统，通过定向微调检索器支持云和本地部署。",
+    "llm_tags": [
+      "RAG",
+      "法律问答",
+      "低资源语言",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "ebbecf0dc317",
+    "title": "Modality Fault Lines: Structural Corruptions Reveal Fragile Omni-Modal Reasoning",
+    "summary": "arXiv:2608.29278v1 Announce Type: new  Abstract: Omni-modal large language models are increasingly evaluated on clean text--vision--audio inputs, where every channel is present, synchronized, and readily interpretable. Such scores are often taken as evidence of robust cross-modal fusion, but clean evaluation cannot tell whether success depends on stable cross-modal structure or on cues sufficient only in intact inputs. To address this gap, we define a modality fault line: a boundary at which model behavior becomes unstable when a modality remains present and human-interpretable, but its internal evidence structure is perturbed. We introduce SCEval (Structure-Corruption Evaluation) a diagnostic evaluation protocol that keeps the question, answer space, and modality channels fixed while appl",
+    "url": "https://arxiv.org/abs/2608.29278",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-01T04:00:00+00:00",
+    "frontier": 45,
+    "signal": 72,
+    "score": 58,
+    "llm_summary": "揭示全模态大模型在结构损坏下推理脆弱性，提出模态断层线评估方法",
+    "llm_tags": [
+      "🔧 已开源",
+      "多模态",
+      "鲁棒性"
     ]
   },
   {
@@ -1962,108 +2191,6 @@
       "工具学习",
       "强化学习",
       "LLM代理"
-    ]
-  },
-  {
-    "id": "ba8456b956c8",
-    "title": "RomainLanz/adonis-llm-boilerplate ⭐36",
-    "summary": "",
-    "url": "https://github.com/RomainLanz/adonis-llm-boilerplate",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-26T01:25:36.697178+00:00",
-    "created_at": "2026-08-22T14:35:49Z",
-    "stars": 36,
-    "language": "TypeScript",
-    "frontier": 45,
-    "signal": 55,
-    "score": 49,
-    "llm_summary": "AdonisJS的LLM样板项目，提供框架集成参考。",
-    "llm_tags": [
-      "LLM",
-      "后端框架"
-    ]
-  },
-  {
-    "id": "93dbb765b4d8",
-    "title": "sunchaokun/pptx-designer ⭐33",
-    "summary": "Code-first Python library for generating editable PowerPoint presentations with native PPTX objects, SVG support, and LLM-friendly build APIs.",
-    "url": "https://github.com/sunchaokun/pptx-designer",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-26T01:25:36.697178+00:00",
-    "created_at": "2026-08-24T00:12:48Z",
-    "stars": 33,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 55,
-    "score": 55,
-    "llm_summary": "Python库用于生成可编辑PPT，支持SVG和LLM构建API",
-    "llm_tags": [
-      "幻灯片生成",
-      "Python库",
-      "LLM接口"
-    ]
-  },
-  {
-    "id": "835cfbd78086",
-    "title": "adpanru/cordis-mini ⭐26",
-    "summary": "用约 600 行纯 Python，从零实现 Cordis / deepseek-harness 的核心 Agent 插件架构：插件系统、Context 服务注册、依赖拓扑排序、事件分发、Waterfall 中间件与可逆副作用。无需真实 LLM API，内置 Fake LLM，通过完整 Agent Loop 直观理解 AI Agent 插件架构。",
-    "url": "https://github.com/adpanru/cordis-mini",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-26T01:25:36.697178+00:00",
-    "created_at": "2026-08-20T14:00:43Z",
-    "stars": 26,
-    "language": "Python",
-    "frontier": 35,
-    "signal": 62,
-    "score": 46,
-    "llm_summary": "600行Python复现Agent插件架构，含中间件与事件分发",
-    "llm_tags": [
-      "Agent架构",
-      "插件系统",
-      "Python"
-    ]
-  },
-  {
-    "id": "0a5bf4caa2d9",
-    "title": "Consensus-NLP/consensus-mcp ⭐23",
-    "summary": "Official MCP server for Consensus. Search 220M+ peer-reviewed research papers from Claude, ChatGPT, Cursor, and any MCP client.",
-    "url": "https://github.com/Consensus-NLP/consensus-mcp",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-26T01:25:36.697178+00:00",
-    "created_at": "2026-08-21T14:01:19Z",
-    "stars": 23,
-    "language": null,
-    "frontier": 55,
-    "signal": 55,
-    "score": 55,
-    "llm_summary": "官方MCP服务器，让AI客户端搜索2.2亿篇学术论文。",
-    "llm_tags": [
-      "MCP协议",
-      "学术搜索",
-      "AI集成"
-    ]
-  },
-  {
-    "id": "3b95b9fe0214",
-    "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
-    "summary": "",
-    "url": "https://huggingface.co/blog/train-multi-vector-encoder",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-08-26T00:00:00+00:00",
-    "frontier": 68,
-    "signal": 80,
-    "score": 73,
-    "llm_summary": "详解多向量嵌入模型在Sentence Transformers中的训练与微调方法",
-    "llm_tags": [
-      "嵌入模型",
-      "多向量",
-      "模型微调",
-      "文本检索"
     ]
   }
 ]
