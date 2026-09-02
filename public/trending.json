@@ -1,5 +1,120 @@
 [
   {
+    "id": "50384c9cab49",
+    "title": "Human-Agent-Society/reef ⭐122",
+    "summary": "Continual learning infra for self-improving agents",
+    "url": "https://github.com/Human-Agent-Society/reef",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-02T16:11:45.851829+00:00",
+    "created_at": "2026-08-31T01:39:18Z",
+    "stars": 122,
+    "language": "Python",
+    "frontier": 72,
+    "signal": 55,
+    "score": 65,
+    "llm_summary": "开源持续学习基础设施，支持自我改进智能体",
+    "llm_tags": [
+      "持续学习",
+      "智能体",
+      "开源框架"
+    ]
+  },
+  {
+    "id": "c0d810fa5ca6",
+    "title": "alesha-pro/atlas ⭐49",
+    "summary": "Interactive canvas for taking an LLM apart tensor by tensor: measured INT8/INT4/FP8 error, distributions, spectra and outlier channels for every weight tensor",
+    "url": "https://github.com/alesha-pro/atlas",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-02T16:11:45.851829+00:00",
+    "created_at": "2026-08-30T09:10:21Z",
+    "stars": 49,
+    "language": "TypeScript",
+    "frontier": 55,
+    "signal": 60,
+    "score": 57,
+    "llm_summary": "开源工具，交互式可视化LLM张量量化误差与分布",
+    "llm_tags": [
+      "模型分析",
+      "可视化",
+      "量化"
+    ]
+  },
+  {
+    "id": "069840ac99d5",
+    "title": "Escaping Redundant Reasoning: Structure-Aware Search for Inference-Time LLMs",
+    "summary": "arXiv:2609.00738v1 Announce Type: new  Abstract: Inference-time search with large language models (LLMs) often concentrates on a small set of structurally or semantically similar trajectories, leaving alternatives underexplored---a failure mode we call \\textit{reasoning basin collapse}. We introduce BASIN, a training-free, structure-aware selection method that groups reasoning states into basins and penalizes repeated visits to the same strategy, thereby reallocating search across genuinely distinct reasoning paths under a fixed compute budget. Under matched inference budgets, BASIN improves over Tree of Thoughts (ToT) by up to $+22$pp on Game of 24 and $+6.7$pp on MuSR. A quality-aware variant, QA-BASIN, further improves robustness by preserving high-quality basins when unconditional dive",
+    "url": "https://arxiv.org/abs/2609.00738",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-02T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 78,
+    "score": 75,
+    "llm_summary": "提出BASIN方法，通过结构感知分组惩罚重复推理路径，缓解推理盆地坍缩",
+    "llm_tags": [
+      "推理时搜索",
+      "🔧 已开源",
+      "结构感知"
+    ]
+  },
+  {
+    "id": "1e848fed07bf",
+    "title": "One Policy, Any Budget: Internalizing Budget-Aware Search via Reinforcement Learning",
+    "summary": "arXiv:2609.00813v1 Announce Type: new  Abstract: While reinforcement learning has enabled LLM-based search agents to invoke external tools, existing methods train under fixed budgets and cannot adapt when constraints vary at deployment. We propose AnySearch, a framework that enables a single policy to perform budget-aware search under any budget constraint through a training scaffold and curriculum reinforcement learning. In the first phase, we train the agent with explicit budget state injection and structured reasoning prompts that guide efficient allocation under linearly decaying budgets. In the second phase, the scaffold is removed and the agent learns to operate autonomously under adaptively sampled budget constraints, matching inference conditions. Both phases are optimized with a c",
+    "url": "https://arxiv.org/abs/2609.00813",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-02T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 78,
+    "score": 75,
+    "llm_summary": "提出AnySearch框架，用课程强化学习训练语言模型搜索代理适应任意预算约束",
+    "llm_tags": [
+      "强化学习",
+      "搜索代理",
+      "预算控制",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "a50bf21dde0b",
+    "title": "Validity-Aware Jailbreak Evaluation for Large Language Models",
+    "summary": "arXiv:2609.00498v1 Announce Type: new  Abstract: Jailbreak robustness has become central to large language model (LLM) safety evaluation, yet prevailing methodologies rely primarily on refusal behavior, semantic resemblance, and intent-matching heuristics that emphasize linguistic plausibility rather than correctness. We identify a key limitation in existing evaluations: many jailbreak intents depend on instructional validity rather than epistemic factuality, allowing realistic-looking responses to be labeled successful despite being factually or procedurally incorrect. To address this gap, we propose Sequential Epistemic and Action-Level Validation (SEAV), a verification-centric jailbreak evaluation framework that decomposes responses into ordered steps and evaluates both validity and cor",
+    "url": "https://arxiv.org/abs/2609.00498",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-02T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "提出有效性感知的越狱评估方法，关注指令合法性而非事实性。",
+    "llm_tags": [
+      "LLM安全",
+      "越狱评估",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "184a94583ffa",
+    "title": "ClinTraceBench: Source-Verifiable Longitudinal Clinical Reasoning over EHR-Derived Dialogues",
+    "summary": "arXiv:2609.01111v1 Announce Type: new  Abstract: Clinical LLM assistants must reason over multi-visit patient trajectories, yet whether the compact history representations used to scale them---retrieval, structured timelines, LLM summaries, agentic memory---preserve the longitudinal signal clinical reasoning needs has not been measured. We introduce ClinTraceBench: 385 MIMIC-IV-derived verified dialogues with event-ID provenance, a nine-task taxonomy (T1--T9), and L0--L4 deterministic + L5 human-audit validation (98.92\\% agreement). We evaluate eight history representation strategies---a no-context floor, \\textit{last-visit-only}, \\textit{full-context}, BGE-M3 \\textit{dense-retrieval}, two compression schemes, and two agentic-memory systems (\\textit{Mem0}, \\textit{A-Mem})---across four bac",
+    "url": "https://arxiv.org/abs/2609.01111",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-02T04:00:00+00:00",
+    "frontier": 88,
+    "signal": 85,
+    "score": 86,
+    "llm_summary": "提出基于病历对话的长序列临床推理基准与任务分类体系。",
+    "llm_tags": [
+      "临床推理",
+      "基准测试",
+      "医疗AI"
+    ]
+  },
+  {
     "id": "8dd7c9238f77",
     "title": "carloslfu/slotstream ⭐143",
     "summary": "Run Qwen3.8-Flash-Next (125B MoE, 104 GB at 4-bit) on Macs with a fraction of that RAM by streaming experts from SSD. MLX + Swift, Ollama-compatible API.",
@@ -179,6 +294,24 @@
     ]
   },
   {
+    "id": "658aa947424e",
+    "title": "Dwarf Fortress' creator says the industry's in shambles over AI",
+    "summary": "HN 热度: 233 点赞, 241 评论（外链帖无正文）",
+    "url": "https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-01T15:53:42+00:00",
+    "points": 233,
+    "num_comments": 241,
+    "frontier": 73,
+    "signal": 73,
+    "score": 73,
+    "llm_summary": "🔥 HN 233赞 241评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "af222dfb1e98",
     "title": "Path to Astra: critical capabilities and frontier safeguards",
     "summary": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
@@ -267,6 +400,24 @@
       "LLM推理",
       "量化加速",
       "模型适配"
+    ]
+  },
+  {
+    "id": "fa1655ba2837",
+    "title": "AI Can Make You Suck Faster Too",
+    "summary": "HN 热度: 181 点赞, 167 评论（外链帖无正文）",
+    "url": "https://www.hermit-tech.com/blog/ai-can-make-you-suck-faster-too",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-01T05:32:56+00:00",
+    "points": 181,
+    "num_comments": 167,
+    "frontier": 72,
+    "signal": 72,
+    "score": 72,
+    "llm_summary": "🔥 HN 181赞 167评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -1988,209 +2139,6 @@
     "llm_tags": [
       "AI安全",
       "智能体"
-    ]
-  },
-  {
-    "id": "ee61765bc03b",
-    "title": "The turbulent AI era is here",
-    "summary": "HN 热度: 342 点赞, 351 评论（外链帖无正文）",
-    "url": "https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-26T15:55:15+00:00",
-    "points": 342,
-    "num_comments": 351,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 342赞 351评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "e69e4a7f8a85",
-    "title": "It’s so hard to finish an idea that is not yours and is just suggested by AI",
-    "summary": "HN 热度: 261 点赞, 189 评论（外链帖无正文）",
-    "url": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-26T15:30:05+00:00",
-    "points": 261,
-    "num_comments": 189,
-    "frontier": 74,
-    "signal": 74,
-    "score": 74,
-    "llm_summary": "🔥 HN 261赞 189评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "127473eda43c",
-    "title": "[Megathread] GLM-5.3-Flash - former ox-alpha",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1vyzzxu/megathread_glm53flash_former_oxalpha/\"> <img alt=\"[Megathread] GLM-5.3-Flash - former ox-alpha\" src=\"https://preview.redd",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vyzzxu/megathread_glm53flash_former_oxalpha/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-26T15:17:48+00:00",
-    "frontier": 72,
-    "signal": 58,
-    "score": 66,
-    "llm_summary": "GLM-5.3-Flash模型发布，社区讨论其性能与实测表现",
-    "llm_tags": [
-      "大模型",
-      "开源社区"
-    ]
-  },
-  {
-    "id": "06444a703929",
-    "title": "fkrein1/whatsapp-fitness-agent ⭐23",
-    "summary": "Log workouts, runs, meals, and body weight through WhatsApp using Cloudflare Workers, D1, and GPT-5.6 Luna",
-    "url": "https://github.com/fkrein1/whatsapp-fitness-agent",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-26T12:56:29.628973+00:00",
-    "created_at": "2026-08-22T11:49:16Z",
-    "stars": 23,
-    "language": "TypeScript",
-    "frontier": 45,
-    "signal": 60,
-    "score": 51,
-    "llm_summary": "通过WhatsApp记录健身数据，基于Cloudflare Workers和GPT-5.6的开源项目",
-    "llm_tags": [
-      "对话式AI",
-      "健身管理",
-      "云函数"
-    ]
-  },
-  {
-    "id": "d3f3ef6c21f1",
-    "title": "Fake US thinktank set up and funded by Israel sought to game AI for propaganda",
-    "summary": "HN 热度: 247 点赞, 51 评论（外链帖无正文）",
-    "url": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-26T12:11:19+00:00",
-    "points": 247,
-    "num_comments": 51,
-    "frontier": 73,
-    "signal": 73,
-    "score": 73,
-    "llm_summary": "🔥 HN 247赞 51评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "c2a2fed1b47c",
-    "title": "Z.ai confirms Ox Alpha is a new GLM-series model and will release its weights",
-    "summary": "HN 热度: 425 点赞, 142 评论（外链帖无正文）",
-    "url": "https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-26T10:04:55+00:00",
-    "points": 425,
-    "num_comments": 142,
-    "frontier": 76,
-    "signal": 76,
-    "score": 76,
-    "llm_summary": "🔥 HN 425赞 142评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "dd2e563c286c",
-    "title": "MARS: Multi-Specialist LLM Relay System for Competitive Programming",
-    "summary": "arXiv:2608.23918v1 Announce Type: new  Abstract: Large Language Models excel at code generation, yet competitive programming exposes a persistent failure mode: existing multi-agent pipelines distribute work over generic planner, coder, and debugger roles and delegate the choice of algorithmic technique to the backbone alone. We present MARS (Multi-Agent Relay of Specialized LLMs), a prompt-only framework in which each agent is a topic specialist---dynamic programming, graphs, strings, geometry, and so on---grounded by retrieval-augmented generation over an algorithm-theory corpus. Given a problem, retrieval selects a small team of relevant specialists; a starter writes an initial C++17 solution, and each subsequent turn runs the candidate against public examples in a sandbox, lets the acti",
-    "url": "https://arxiv.org/abs/2608.23918",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-26T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 76,
-    "score": 74,
-    "llm_summary": "提出多专家LLM协作框架，专注竞赛编程算法领域，纯提示驱动。",
-    "llm_tags": [
-      "多智能体",
-      "竞赛编程",
-      "LLM",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "a4f9eaf6b0b2",
-    "title": "Generating Biomedical Fact-Checking Reports with RL-Enhanced Agentic Search",
-    "summary": "arXiv:2608.23811v1 Announce Type: new  Abstract: Automated fact-checking is essential for ensuring the reliability of public health information, yet the biomedical domain poses unique challenges. Validating biomedical claims requires rigorous interpretation of scientific literature, assessment of retrieved evidence, and comprehensive justification toward the conclusion. Although Large Language Models (LLMs) enhanced by Retrieval-Augmented Generation (RAG) and agentic search perform automated fact-checking in a retrieve-then-verify paradigm, current methods still output isolated prediction labels, lacking explanatory depth and offers limited utility for human understanding. To bridge this gap, we introduce an LLM-based agent named BioCheck Agent that generates structured biomedical fact-che",
-    "url": "https://arxiv.org/abs/2608.23811",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-26T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 80,
-    "score": 76,
-    "llm_summary": "利用强化学习增强智能体搜索，自动生成生物医学事实核查报告",
-    "llm_tags": [
-      "事实核查",
-      "智能体",
-      "强化学习",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "67f30e055d4b",
-    "title": "Claim-Level Confidence Calibration for Reliable Decision Making with Large Language Models",
-    "summary": "arXiv:2608.22483v1 Announce Type: new  Abstract: Large Language Models (LLMs) increasingly support decision-making in high-stakes domains, but they often hallucinate and express confidence that is misaligned with factual correctness. Response-level confidence is a coarse signal: a single generation can mix correct and incorrect statements, so a single number is not actionable for users that must accept, reject, or verify individual pieces of information. We study claim-level confidence calibration as a decision-relevant uncertainty signal: each response is decomposed into atomic, verifiable claims, and each claim is assigned a calibrated confidence using inference-time signals from consistency across samples and self-verification. Our framework operates in closed-box settings (no logits, n",
-    "url": "https://arxiv.org/abs/2608.22483",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-26T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 45,
-    "score": 60,
-    "llm_summary": "研究LLM声明级置信度校准以提升决策可靠性",
-    "llm_tags": [
-      "置信度校准",
-      "大语言模型",
-      "决策可靠性"
-    ]
-  },
-  {
-    "id": "6c5b25d83648",
-    "title": "EMRB: A Multi-Level Benchmark for Evaluating LLM Reasoning over Raw Electromagnetic Signals",
-    "summary": "arXiv:2608.24086v1 Announce Type: new  Abstract: Large language models (LLMs) are increasingly used as code agents for scientific and engineering analysis, but their ability to analyze raw physical-layer measurements remains untested. We introduce \\textbf{EMRB} (\\textbf{E}lectro\\textbf{m}agnetic \\textbf{R}easoning \\textbf{B}enchmark), which evaluates whether LLMs can analyze raw I/Q data by writing and running code. EMRB contains 200 problems across five difficulty levels and 27 question types, from signal detection to OFDM design, generated from 11 signal types with verified ground truth. Unlike benchmarks built on preprocessed features or structured tables, EMRB provides only the raw capture; the quantities each question refers to must first be discovered through code. We evaluate 14 LLM",
-    "url": "https://arxiv.org/abs/2608.24086",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-26T04:00:00+00:00",
-    "frontier": 60,
-    "signal": 75,
-    "score": 68,
-    "llm_summary": "构建多级电磁原始信号推理基准，含200问题五难度评估LLM。",
-    "llm_tags": [
-      "基准评测",
-      "电磁信号",
-      "LLM推理",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "210bef8998c6",
-    "title": "Joint Optimization of Tool Creation and Use for Large Language Model Agents",
-    "summary": "arXiv:2608.24571v1 Announce Type: new  Abstract: Tool-augmented language models are bounded by the APIs humans bothered to write; existing tool-creation systems patch this by prompting a frozen LLM at inference time, leaving the model that writes a tool decoupled from the one that uses it, with no signal that the schemas it produces are schemas it can invoke. We propose SMITH (Schema-grounded Multi-task Iterative Tool Honing), a reinforcement learning framework that jointly trains tool creation and tool use inside a single policy. Each rollout is either a build task (write a tool from a few examples) or a use task (invoke a pooled tool on a held-out question). Three separate reward axes catch schema, code, and outcome failures independently, so each failure mode contributes its own gradien",
-    "url": "https://arxiv.org/abs/2608.24571",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-26T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 62,
-    "score": 68,
-    "llm_summary": "提出强化学习框架联合优化LLM代理的工具创建与使用",
-    "llm_tags": [
-      "工具学习",
-      "强化学习",
-      "LLM代理"
     ]
   }
 ]
