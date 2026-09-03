@@ -1,5 +1,109 @@
 [
   {
+    "id": "8f3957017674",
+    "title": "peter123023/awesome-free-llm-api ⭐71",
+    "summary": "免费大模型 API 导航 · 只收录能通过 API Key 和 endpoint 调用的永久免费 / 限时免费接口｜A curated list of free LLM APIs — permanently free tiers and limited-time free models, all callable via API key and endpoint. Channel-first, w",
+    "url": "https://github.com/peter123023/awesome-free-llm-api",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-03T03:32:43.695506+00:00",
+    "created_at": "2026-09-01T17:49:12Z",
+    "stars": 71,
+    "language": null,
+    "frontier": 30,
+    "signal": 70,
+    "score": 46,
+    "llm_summary": "汇总免费可调用的 LLM API 接口资源列表",
+    "llm_tags": [
+      "免费API",
+      "LLM",
+      "资源汇总"
+    ]
+  },
+  {
+    "id": "aaeaf7c36566",
+    "title": "Continuum-AI-Corp/OrcaReplay ⭐64",
+    "summary": "OrcaReplay — Time travel for AI agents. Record, replay, fork, and debug any agent run with any model. Built by the OrcaRouter.ai team.",
+    "url": "https://github.com/Continuum-AI-Corp/OrcaReplay",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-03T03:32:43.695506+00:00",
+    "created_at": "2026-08-29T08:41:53Z",
+    "stars": 64,
+    "language": "TypeScript",
+    "frontier": 60,
+    "signal": 55,
+    "score": 58,
+    "llm_summary": "AI代理时间旅行调试工具，支持记录重放与分叉运行",
+    "llm_tags": [
+      "智能体",
+      "调试工具"
+    ]
+  },
+  {
+    "id": "c56653a663bb",
+    "title": "Instituto-IA-LNCC/manaca-1b-base ⭐59",
+    "summary": "LLM aberto e reprodutível para o Português do Brasil An Open, Reproducible Brazilian-Portuguese Language Model",
+    "url": "https://github.com/Instituto-IA-LNCC/manaca-1b-base",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-03T03:32:43.695506+00:00",
+    "created_at": "2026-08-31T00:30:47Z",
+    "stars": 59,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 55,
+    "score": 55,
+    "llm_summary": "发布1B巴西葡萄牙语开源语言模型，注重可复现性",
+    "llm_tags": [
+      "开源模型",
+      "葡萄牙语",
+      "LLM"
+    ]
+  },
+  {
+    "id": "59b64ffa9b25",
+    "title": "Worigin0314/academic-defensive-writing-auditor ⭐48",
+    "summary": "An open-source LLM skill for detecting and rewriting defensive academic writing while preserving necessary scientific caveats and evidence boundaries.",
+    "url": "https://github.com/Worigin0314/academic-defensive-writing-auditor",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-03T03:32:43.695506+00:00",
+    "created_at": "2026-08-30T06:45:02Z",
+    "stars": 48,
+    "language": "JavaScript",
+    "frontier": 45,
+    "signal": 60,
+    "score": 51,
+    "llm_summary": "开源LLM技能，用于检测并改写防御性学术写作，保留科学限定语。",
+    "llm_tags": [
+      "学术写作",
+      "LLM应用",
+      "文本改写"
+    ]
+  },
+  {
+    "id": "f174639bf3ca",
+    "title": "1Panel-dev/1Panel-Gateway ⭐44",
+    "summary": "1Panel AI 网关提供从统一接入、智能路由到合规审计的全链条管控，让企业 AI 落地更安全、更高效、更可控。",
+    "url": "https://github.com/1Panel-dev/1Panel-Gateway",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-03T03:32:43.695506+00:00",
+    "created_at": "2026-08-31T01:56:02Z",
+    "stars": 44,
+    "language": null,
+    "frontier": 62,
+    "signal": 48,
+    "score": 56,
+    "llm_summary": "1Panel发布AI网关，具备统一接入与智能路由能力。",
+    "llm_tags": [
+      "AI网关",
+      "开源",
+      "企业治理"
+    ]
+  },
+  {
     "id": "50384c9cab49",
     "title": "Human-Agent-Society/reef ⭐122",
     "summary": "Continual learning infra for self-improving agents",
@@ -39,6 +143,24 @@
       "模型分析",
       "可视化",
       "量化"
+    ]
+  },
+  {
+    "id": "57a70820bad6",
+    "title": "Three sites made 215,128 “best software” pages for AI. Perplexity cites them",
+    "summary": "HN 热度: 327 点赞, 158 评论（外链帖无正文）",
+    "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-02T13:59:59+00:00",
+    "points": 327,
+    "num_comments": 158,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 327赞 158评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -112,6 +234,80 @@
       "临床推理",
       "基准测试",
       "医疗AI"
+    ]
+  },
+  {
+    "id": "de6458e091e2",
+    "title": "Beyond Token Positions: Safety Alignment Across Denoising Steps in Diffusion Language Models",
+    "summary": "arXiv:2609.00495v1 Announce Type: new  Abstract: Diffusion large language models (dLLMs) generate text through iterative denoising rather than left-to-right decoding. This generation paradigm introduces two axes that can influence safety alignment: when tokens are generated during denoising and where they appear in the response. In this paper, we measure dLLM safety behavior under harmful prompts by tracing intermediate token distributions and commitment decisions throughout denoising. Our analysis shows that refusal signals are concentrated in early denoising steps and leading response positions, and the tokens committed early can strongly shape the final safety outcome. Our measurements further show that the denoising step and persistence of refusal-token commitment are important for und",
+    "url": "https://arxiv.org/abs/2609.00495",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-02T04:00:00+00:00",
+    "frontier": 76,
+    "signal": 72,
+    "score": 74,
+    "llm_summary": "分析扩散语言模型在去噪过程中的安全对齐行为",
+    "llm_tags": [
+      "扩散语言模型",
+      "安全对齐",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "28137a312849",
+    "title": "Residual Sparsification via Output Importance for Compressing Mixture-of-Experts LLMs",
+    "summary": "arXiv:2609.00575v1 Announce Type: new  Abstract: Mixture-of-experts (MoE) architectures scale large language models efficiently, but they demand massive GPU memory. To cope with such demand, models are commonly compressed to reduce their memory footprint. Residual sparsification is a representative compression technique that decomposes each projection matrix of an expert into a shared base matrix and per-expert residual matrix, and then compresses the residuals. Existing sparsification methods compress each residual matrix independently by minimizing its compression error, thereby minimizing the error of each projection matrix. However, our analysis shows that this objective is misaligned with preserving model accuracy after compression. In an expert, the final output is produced through c",
+    "url": "https://arxiv.org/abs/2609.00575",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-02T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 68,
+    "score": 72,
+    "llm_summary": "利用输出重要性稀疏化残差矩阵，压缩MoE大语言模型显存占用。",
+    "llm_tags": [
+      "模型压缩",
+      "MoE",
+      "稀疏化"
+    ]
+  },
+  {
+    "id": "2b4222b37467",
+    "title": "SCoNE: Selective Context-aware Neuron Editing for Robust Retrieval-Augmented Generation",
+    "summary": "arXiv:2609.00689v1 Announce Type: new  Abstract: Retrieval-Augmented Generation (RAG) is highly sensitive to retrieval noise: when retrieved documents mix informative and irrelevant context, LLMs are easily distracted, leading to hallucinations. To overcome this, we propose SCoNE (Selective Context-aware Neuron Editing), a training-free model editing approach that improves retrieval noise robustness by selectively strengthening context-aware FFN neurons that are identified by both high attribution and high cross-input variability. SCoNE requires only a small number of mining samples, no fine-tuning, and no inference-time overhead. Across various knowledge-intensive question-answering benchmarks and two LLM backbones, SCoNE consistently outperforms competitive baseline methods. Our code is ",
+    "url": "https://arxiv.org/abs/2609.00689",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-02T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 80,
+    "score": 76,
+    "llm_summary": "提出SCoNE，无需训练，编辑FFN神经元增强RAG抗噪鲁棒性。",
+    "llm_tags": [
+      "🔧 已开源",
+      "RAG",
+      "模型编辑",
+      "神经元"
+    ]
+  },
+  {
+    "id": "a2eb56a49e66",
+    "title": "SCAFFOLD: A Large-Scale Structured Dataset of Computer Science Research Figures with Diagram QA and Chain-of-Thought Reasoning Traces",
+    "summary": "arXiv:2609.00018v1 Announce Type: new  Abstract: Computer science papers rely heavily on diagrams: architecture drawings, system flowcharts, and pipeline schematics that often carry more information than the text around them. There is currently no public dataset that pairs this specific kind of figure with captions, context, questions, answers, and step-by-step reasoning, which is exactly what is needed to train a vision-language model to understand them. We present \\textbf{SCAFFOLD}\\footnote{https://github.com/theranjitraut/scaffold}, a large-scale structured dataset of computer science research figures with diagram QA and Chain-of-Thought reasoning traces. This dataset consists of (image, caption, context, question-answer, chain-of-thought) tuples from arXiv computer science papers prepa",
+    "url": "https://arxiv.org/abs/2609.00018",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-02T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 70,
+    "llm_summary": "构建计算机科学论文图表问答与思维链推理的大规模数据集",
+    "llm_tags": [
+      "图表理解",
+      "视觉问答",
+      "思维链",
+      "🔧 已开源"
     ]
   },
   {
@@ -2104,41 +2300,6 @@
       "技能检索",
       "因果图",
       "🔧 已开源"
-    ]
-  },
-  {
-    "id": "890d2fa13fed",
-    "title": "CEO fired developers to make room for AI. Developers create open source AI CEO",
-    "summary": "HN 热度: 510 点赞, 329 评论（外链帖无正文）",
-    "url": "https://github.com/SenteLabsAI/OpenExecutive",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-27T01:46:22+00:00",
-    "points": 510,
-    "num_comments": 329,
-    "frontier": 77,
-    "signal": 77,
-    "score": 77,
-    "llm_summary": "🔥 HN 510赞 329评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "d87d48c495ed",
-    "title": "The inside story on why OpenAI agents hacked Hugging Face",
-    "summary": "The models responsible for last month’s agent hack of Hugging Face had been inadvertently trained to cheat and to communicate with each other, according to an OpenAI technical report released today. The hack, which a group of agents undertook to find solutions for a cybersecurity test that they were stuck on, has confirmed some experts’&#8230;",
-    "url": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
-    "source": "MIT Tech Review",
-    "source_type": "tech_media",
-    "timestamp": "2026-08-26T19:00:00+00:00",
-    "frontier": 70,
-    "signal": 60,
-    "score": 66,
-    "llm_summary": "OpenAI智能体因无意训练而在Hugging Face黑客测试中作弊协作",
-    "llm_tags": [
-      "AI安全",
-      "智能体"
     ]
   }
 ]
