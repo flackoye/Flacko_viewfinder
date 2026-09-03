@@ -1,5 +1,64 @@
 [
   {
+    "id": "34996f635082",
+    "title": "op7418/guizang-yingzao-skill ⭐123",
+    "summary": "🏯 Claude Code / Codex skill — transform Chinese architecture, cultural places & travel photos into art-directed editorial posters with GPT Image. 中国古建筑与在地文化照片 → 艺术指导海报",
+    "url": "https://github.com/op7418/guizang-yingzao-skill",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-03T16:00:44.867749+00:00",
+    "created_at": "2026-09-02T11:54:57Z",
+    "stars": 123,
+    "language": "Python",
+    "frontier": 45,
+    "signal": 60,
+    "score": 51,
+    "llm_summary": "开源skill工具，用GPT Image将古建筑照片转化为艺术海报",
+    "llm_tags": [
+      "图像生成",
+      "创意设计",
+      "古建筑"
+    ]
+  },
+  {
+    "id": "f25c38fe5823",
+    "title": "NeoMME: A Single-Tower Multimodal-Native Multilingual Foundation Encoder for Efficient Fine-Tuning and Inference",
+    "summary": "arXiv:2609.01657v1 Announce Type: cross  Abstract: Multimodal models often build on architectures designed for generative vision-language modeling, typically combining separately pretrained vision encoders with causal language models. Visual document retrievers such as ColPali repurpose these models as encoders, carrying over the parameter and compute overhead of a VLM for a non-generative task.   We introduce NeoMME, a family of 260M and 800M-parameter Multimodal and Multilingual bidirectional Encoders that process multilingual text and raw image patches in a single bidirectional Transformer encoder. Both models are pretrained from scratch with a masked discrete-diffusion text objective, conditioned on visible image patches for multimodal examples. Both support a 16,384-token context, eno",
+    "url": "https://arxiv.org/abs/2609.01657",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-03T04:00:00+00:00",
+    "frontier": 76,
+    "signal": 80,
+    "score": 78,
+    "llm_summary": "提出单塔多模态多语言编码器，降低检索模型计算开销。",
+    "llm_tags": [
+      "🔧 已开源",
+      "多模态",
+      "编码器",
+      "高效推理"
+    ]
+  },
+  {
+    "id": "34af75292c91",
+    "title": "MemeCULT-1K: Benchmarking South Asian Cultural Context and Humor Understanding of Multimodal Models",
+    "summary": "arXiv:2609.01772v1 Announce Type: new  Abstract: Meme understanding goes beyond recognizing visual content or literal text; it requires implicit cultural knowledge and pragmatic inference that most vision-language models still lack. We introduce MemeCULT-1K, a multilingual benchmark of 1,000 South Asian memes in Bengali, English, and Hindi, where each meme is paired with a cultural context note and three human-written explanations, along with a supplementary set of 54 Bengali regional dialect memes. We evaluate thirteen popular Vision Language Models (VLMs) under two settings: meme-only and context-aware. Providing minimal cultural context yields consistent gains across all models and languages: mean SBERT similarity improves from 44.6 to 56.4 (+11.8), BLEURT from 37.3 to 42.3 (+5.0), and ",
+    "url": "https://arxiv.org/abs/2609.01772",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-03T04:00:00+00:00",
+    "frontier": 60,
+    "signal": 75,
+    "score": 68,
+    "llm_summary": "构建千个南亚多语表情包基准，评估多模态模型文化幽默理解能力。",
+    "llm_tags": [
+      "多模态",
+      "文化基准",
+      "表情包理解",
+      "🔧 已开源"
+    ]
+  },
+  {
     "id": "8f3957017674",
     "title": "peter123023/awesome-free-llm-api ⭐71",
     "summary": "免费大模型 API 导航 · 只收录能通过 API Key 和 endpoint 调用的永久免费 / 限时免费接口｜A curated list of free LLM APIs — permanently free tiers and limited-time free models, all callable via API key and endpoint. Channel-first, w",
@@ -104,6 +163,60 @@
     ]
   },
   {
+    "id": "d96e8c45ecae",
+    "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+    "summary": "",
+    "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-09-03T00:00:00+00:00",
+    "frontier": 72,
+    "signal": 84,
+    "score": 77,
+    "llm_summary": "用GRPO百步强化学习微调350M模型，提升结构化输出稳定性",
+    "llm_tags": [
+      "强化学习",
+      "模型微调",
+      "结构化输出"
+    ]
+  },
+  {
+    "id": "2a73e28306b3",
+    "title": "Give Your Coding Agents a Memory You Own",
+    "summary": "",
+    "url": "https://huggingface.co/blog/funes",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-09-03T00:00:00+00:00",
+    "frontier": 62,
+    "signal": 68,
+    "score": 64,
+    "llm_summary": "介绍为编码代理构建可自主掌控的持久记忆方案。",
+    "llm_tags": [
+      "编码代理",
+      "记忆管理",
+      "人工智能"
+    ]
+  },
+  {
+    "id": "8b76a54a8b18",
+    "title": "Mamdani Bans AI in NYC Schools",
+    "summary": "HN 热度: 199 点赞, 151 评论（外链帖无正文）",
+    "url": "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-02T20:57:04+00:00",
+    "points": 199,
+    "num_comments": 151,
+    "frontier": 72,
+    "signal": 72,
+    "score": 72,
+    "llm_summary": "🔥 HN 199赞 151评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "50384c9cab49",
     "title": "Human-Agent-Society/reef ⭐122",
     "summary": "Continual learning infra for self-improving agents",
@@ -143,6 +256,24 @@
       "模型分析",
       "可视化",
       "量化"
+    ]
+  },
+  {
+    "id": "a7b92c74fff8",
+    "title": "WebLLM: high-performance in-browser LLM inference engine",
+    "summary": "HN 热度: 137 点赞, 23 评论（外链帖无正文）",
+    "url": "https://github.com/mlc-ai/web-llm",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-02T14:02:35+00:00",
+    "points": 137,
+    "num_comments": 23,
+    "frontier": 71,
+    "signal": 71,
+    "score": 71,
+    "llm_summary": "🔥 HN 137赞 23评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -2167,139 +2298,6 @@
       "大模型",
       "推理优化",
       "技术讨论"
-    ]
-  },
-  {
-    "id": "0a0ebed18141",
-    "title": "UditAkhourii/cdaf ⭐79",
-    "summary": "CDAF (Cached Descriptive Asset Files) - open sidecar format for video so AI agents stop re-analyzing the same footage. Spec, CLI, agent skill, reproducible benchmark.",
-    "url": "https://github.com/UditAkhourii/cdaf",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-27T08:10:59.679262+00:00",
-    "created_at": "2026-08-26T09:12:41Z",
-    "stars": 79,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 72,
-    "score": 62,
-    "llm_summary": "开源CDAF格式避免AI重复分析视频，含规范、CLI和基准",
-    "llm_tags": [
-      "视频处理",
-      "AI代理",
-      "开源工具",
-      "缓存格式"
-    ]
-  },
-  {
-    "id": "b36328e0fd67",
-    "title": "GGSS: Geodesic-Gated Spherical Steering for Inference-Time Debiasing of Generative Vision-Language Models",
-    "summary": "arXiv:2608.25375v1 Announce Type: cross  Abstract: Generative vision-language models (VLMs) are increasingly used in human-centered settings, yet they can produce demographically biased outputs even when images differ only in controlled attributes such as perceived race or gender. However, existing inference-time debiasers were largely designed for static embeddings or CLIP-like models rather than generative VLMs. We propose GGSS---Geodesic-Gated Spherical Steering---a norm-preserving intervention that discovers a counterfactual bias subspace on the unit hypersphere, steers visual tokens along geodesic arcs, and uses an adaptive gate to focus correction on tokens that carry stronger demographic signal. We evaluate four generative VLMs against ten adapted inference-time debiasing baselines ",
-    "url": "https://arxiv.org/abs/2608.25375",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-27T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "提出测地线门控球形转向方法，推理时降低视觉语言模型偏见",
-    "llm_tags": [
-      "🔧 已开源",
-      "视觉语言模型",
-      "去偏见"
-    ]
-  },
-  {
-    "id": "3fa49f8d80df",
-    "title": "Provenance Before Prose: Claim-Locked Reporting",
-    "summary": "arXiv:2608.25336v1 Announce Type: new  Abstract: Large language models (LLMs) can fluently verbalize statistical evidence, yet statistical reports can still drift numerical values, invert effect directions, or restate thresholded contrasts as categorical effects. We frame these failures as a control problem: the evidence-bearing content of a scientific report should be fixed by structured statistical results rather than sampled during prose generation. We therefore use cross-run reproducibility to stress-test whether report-visible numbers and claims are bound before prose generation. Existing controls operate at the text or slot level; a deterministic hybrid template reproduces only 61.1% of report-visible numerical content across seeds because the LLM still selects which findings and num",
-    "url": "https://arxiv.org/abs/2608.25336",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-27T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 45,
-    "score": 60,
-    "llm_summary": "提出锁定声明的方法，确保LLM统计报告与结构化结果一致",
-    "llm_tags": [
-      "LLM",
-      "统计报告",
-      "可重复性"
-    ]
-  },
-  {
-    "id": "e052d73def56",
-    "title": "DCGC: Draft-Conditioned Global Correction for Complex Reasoning with Masked Diffusion Models",
-    "summary": "arXiv:2608.25428v1 Announce Type: new  Abstract: Correcting flawed reasoning traces remains a significant challenge for Large Language Models (LLMs), whose autoregressive generation can propagate early mistakes into subsequent reasoning. We introduce DCGC, a Masked Diffusion Model (MDM) framework for global correction that uses an imperfect solution draft from an upstream solver as auxiliary context. DCGC combines task-specific Supervised Fine-Tuning (SFT) with a novel inference-time mechanism called Dynamic Dual-CFG. This mechanism separates problem-only and joint problem-draft branches and scales the draft-conditioned residual using a relative confidence gap. Across math, code, and knowledge reasoning benchmarks, DCGC outperforms standard sampling and simpler CFG variants, with additiona",
-    "url": "https://arxiv.org/abs/2608.25428",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-27T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 58,
-    "score": 65,
-    "llm_summary": "提出基于掩码扩散模型的草稿条件全局校正方法，用于修正复杂推理轨迹。",
-    "llm_tags": [
-      "扩散模型",
-      "推理修正",
-      "LLM"
-    ]
-  },
-  {
-    "id": "86a7e1984008",
-    "title": "When Personality Meets Quantization: A Layer-wise MBTI Analysis of Quantized LLMs",
-    "summary": "arXiv:2608.25977v1 Announce Type: new  Abstract: Personality is increasingly important in large language models (LLMs), as it shapes users' trust, engagement, and emotional experiences. While the Myers--Briggs Type Indicator (MBTI) has emerged as a common framework for assessing LLMs' personality, existing studies focus primarily on full-precision models and evaluate only final outputs. They overlook the widespread deployment of quantized LLMs requiring low memory footprints, whose personality traits remain underexplored. In this work, we present a systematic MBTI analysis of open-source LLMs across multiple precisions, including mainstream 4-bit methods (GPTQ, AWQ) and extreme 2-bit settings (AQLM variants). Beyond output-level evaluation, we examine how personality emerges across layers ",
-    "url": "https://arxiv.org/abs/2608.25977",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-27T04:00:00+00:00",
-    "frontier": 55,
-    "signal": 75,
-    "score": 65,
-    "llm_summary": "分层分析量化LLM的人格一致性，揭示量化对MBTI影响",
-    "llm_tags": [
-      "量化LLM",
-      "人格分析",
-      "MBTI",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "ec5a613a5568",
-    "title": "ClueWeaver: Reward-Guided Dual-Agent Evidence Reasoning for Compact LLMs on Literary Long Narratives",
-    "summary": "arXiv:2608.25531v1 Announce Type: new  Abstract: Humanities and social science research requires close reading of long narrative materials such as novels, scripts, archives, and case reports, yet many users have limited access to costly proprietary long-context models. Compact, locally deployable language models are a practical alternative, but directly feeding them an entire long context remains costly, hard to inspect, and prone to missing sparse evidence. We present ClueWeaver, an evidence-aware dual-agent framework for long-narrative question answering with compact local models. A Finder identifies passages containing answer-critical clues through retrieval-guided segmentation, while an Interpreter derives the answer from the selected evidence, produces rationales with paragraph-ID cit",
-    "url": "https://arxiv.org/abs/2608.25531",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-27T04:00:00+00:00",
-    "frontier": 68,
-    "signal": 76,
-    "score": 72,
-    "llm_summary": "奖励引导双智能体证据推理，增强紧凑语言模型处理长篇叙事能力",
-    "llm_tags": [
-      "🔧 已开源",
-      "证据推理",
-      "长文本",
-      "双智能体"
-    ]
-  },
-  {
-    "id": "f14294eb2888",
-    "title": "CaSKG: Counterfactual-Causal Skill Graphs for Scalable Agent Skill Retrieval",
-    "summary": "arXiv:2608.25500v1 Announce Type: cross  Abstract: Reusable skill libraries allow large language model (LLM) agents to reuse procedural knowledge across tasks, but they also turn memory access into a challenging retrieval problem. Full-library prompting preserves coverage at high context cost, vector retrieval returns compact neighborhoods but treats skills as independent text, and graph-based retrieval can recover workflow context only when the edges that carry relevance are reliable. We propose CaSKG, a counterfactual-causal skill graph framework that calibrates procedural relations before retrieval. CaSKG first builds a high-recall directed candidate graph from semantic, lexical, input/output, and structural evidence, with repair evidence and an optional LLM judge further refining candi",
-    "url": "https://arxiv.org/abs/2608.25500",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-27T04:00:00+00:00",
-    "frontier": 74,
-    "signal": 76,
-    "score": 75,
-    "llm_summary": "提出反事实因果技能图，提升LLM智能体技能检索的效率与可扩展性。",
-    "llm_tags": [
-      "LLM智能体",
-      "技能检索",
-      "因果图",
-      "🔧 已开源"
     ]
   }
 ]
