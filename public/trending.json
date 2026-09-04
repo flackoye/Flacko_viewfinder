@@ -1,5 +1,123 @@
 [
   {
+    "id": "ae3ce2c98e2b",
+    "title": "kydlikebtc/awesome-grokbot ⭐239",
+    "summary": "440 live x.ai/bot shares for Grok Bot — every link status-checked, every row attributed. Bilingual EN/中文 catalog with a JSON schema, CI, and a searchable site.",
+    "url": "https://github.com/kydlikebtc/awesome-grokbot",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-04T15:57:36.989257+00:00",
+    "created_at": "2026-09-01T02:30:25Z",
+    "stars": 239,
+    "language": "Python",
+    "frontier": 78,
+    "signal": 78,
+    "score": 78,
+    "llm_summary": "⭐239 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "5a3032cc0d40",
+    "title": "internetphysics/live-classroom ⭐91",
+    "summary": "A live TV channel that teaches whatever you type — LLM-planned lessons rendered just-in-time as 1970s-style cartoons by MiniMax H3 Max Turbo, playing on a CRT in a 3D classroom. Bring your own fal key",
+    "url": "https://github.com/internetphysics/live-classroom",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-04T15:57:36.989257+00:00",
+    "created_at": "2026-09-02T19:24:07Z",
+    "stars": 91,
+    "language": "TypeScript",
+    "frontier": 55,
+    "signal": 65,
+    "score": 59,
+    "llm_summary": "用LLM实时生成课程并渲染为复古卡通风格在3D教室播放。",
+    "llm_tags": [
+      "LLM应用",
+      "实时渲染",
+      "教育工具"
+    ]
+  },
+  {
+    "id": "3ba593220ab0",
+    "title": "stevibe/SparklingKit ⭐58",
+    "summary": "Local-first AI workbench for OCR, transcription, translation, image generation, mind maps and composable workflows. Built for DGX Spark.",
+    "url": "https://github.com/stevibe/SparklingKit",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-04T15:57:36.989257+00:00",
+    "created_at": "2026-08-31T09:17:38Z",
+    "stars": 58,
+    "language": "TypeScript",
+    "frontier": 55,
+    "signal": 50,
+    "score": 53,
+    "llm_summary": "面向DGX Spark的本地AI工作台，集成OCR、翻译、图像生成等任务",
+    "llm_tags": [
+      "本地AI",
+      "工作流",
+      "OCR"
+    ]
+  },
+  {
+    "id": "b1b3da9003c5",
+    "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+    "summary": "arXiv:2609.03430v1 Announce Type: new  Abstract: Large language models achieve superior performance on tasks that require extended reasoning, but long chains of thought make the KV cache a severe memory bottleneck. Existing KV cache compression methods share one paradigm: score each cached token by some estimate of how much it will matter later, and keep the top-scoring ones. We show that the selection signal contributes almost nothing. Random Attention keeps the prompt and evicts uniformly at random within each attention head, computing no score at all; across four models and six reasoning tasks it matches the strongest prior evictor while serving 32-43% higher throughput than it in vLLM deployment. Controlled experiments explain this by showing that 1) the prompt is the fragile part of t",
+    "url": "https://arxiv.org/abs/2609.03430",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-04T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 70,
+    "score": 70,
+    "llm_summary": "重新思考KV缓存驱逐，提出随机均匀丢弃的简单方法并验证其效果。",
+    "llm_tags": [
+      "KV缓存",
+      "注意力机制",
+      "推理加速",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "8f06d564f656",
+    "title": "Decoupling Turn-Taking from Semantics: A Decoupled Data Approach for Finite-State-Machine-Based Full-Duplex Dialogue",
+    "summary": "arXiv:2609.03321v1 Announce Type: new  Abstract: The Neural Finite State Machine (NFSM) framework offers a pragmatic path to full-duplex dialogue by serializing turn-taking control and response generation onto a single causal tape under the standard next-token prediction objective, thereby preserving semantic prowess at a low fine-tuning cost. However, its reliance on synthetic text data fundamentally limits turn-taking naturalness, as Large Language Models (LLMs) cannot faithfully simulate the fine-grained acoustic temporal dynamics of real human dialogues. In this work, we propose a decoupled data approach that learns turn-taking from real Human-Human (HH) spoken dialogues while shaping semantic behavior through configurable Human-Agent (HA) text dialogues. To operationalize this approac",
+    "url": "https://arxiv.org/abs/2609.03321",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-04T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 75,
+    "score": 74,
+    "llm_summary": "解耦交互控制与语义数据，改进全双工对话自然度",
+    "llm_tags": [
+      "🔧 已开源",
+      "对话系统",
+      "全双工",
+      "有限状态机"
+    ]
+  },
+  {
+    "id": "0408e4be5e64",
+    "title": "Learning to Zoom Efficiently with a Contrastive Curriculum",
+    "summary": "arXiv:2609.03206v1 Announce Type: cross  Abstract: Using a zoom-in tool is an important foundational part of modern visual agents, because it allows to efficiently handle tasks involving high-resolution images. Most previous methods need an extensive warm-start supervised fine-tuning phase for teaching models zoom-in. We show that this is not necessary by proposing a new intrinsic reward for learning tool use in MLLMs without the need for additional labels or warm-start SFT. Our InfoNCE-style reward uses a curriculum of increasingly hard negative tool calls as a contrastive training signal. Empirical experiments on $V^*$, HRBench and MME-RealWorld show that our approach is competitive while being more efficient. When used as a drop-in replacement for SFT, we even outperform all baselines. ",
+    "url": "https://arxiv.org/abs/2609.03206",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-04T04:00:00+00:00",
+    "frontier": 78,
+    "signal": 75,
+    "score": 76,
+    "llm_summary": "提出对比课程内在奖励，让多模态大模型无需监督微调即可学会缩放工具。",
+    "llm_tags": [
+      "多模态",
+      "视觉智能体",
+      "工具使用",
+      "🔧 已开源"
+    ]
+  },
+  {
     "id": "5e2ec36c100a",
     "title": "2akouwu/reverify ⭐806",
     "summary": "Anti-hallucination for AI agents that read binaries. The model proposes, deterministic tools decide: every claim is VERIFIED or REFUTED against the real bytes, with evidence, and grounded facts surviv",
@@ -59,6 +177,26 @@
     ]
   },
   {
+    "id": "87803b51d109",
+    "title": "GPT-6 Astra makes major gains in the Artificial Analysis Coding Agent Index",
+    "summary": "HN 热度: 25 点赞, 16 评论（外链帖无正文）",
+    "url": "https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-03T20:11:25+00:00",
+    "points": 25,
+    "num_comments": 16,
+    "frontier": 85,
+    "signal": 15,
+    "score": 57,
+    "llm_summary": "传闻GPT-6 Astra编程智能体排名大幅提升，但帖子无实质内容。",
+    "llm_tags": [
+      "大模型",
+      "基准测试",
+      "编程智能体"
+    ]
+  },
+  {
     "id": "30a9f2def9cf",
     "title": "GPT-6 Astra",
     "summary": "HN ⭐1430 1183评 | System Card:  https://deploymentsafety.openai.com/gpt-6-astra  Related ongoing threads:  OpenAI's GPT-6 Astra on ARC-AGI-3  -  https://news.ycombinator.com/item?id=49555691   GPT-6 Astra makes major gains in the Artificial Analysis Coding Agent Index  -  https://news.ycombinator.com/item?id=49556147",
@@ -113,6 +251,42 @@
       "图像生成",
       "创意设计",
       "古建筑"
+    ]
+  },
+  {
+    "id": "5981fd6a4d59",
+    "title": "Porting my 1993 Amiga game to Godot, with an LLM reading the 68000 assembly",
+    "summary": "HN ⭐341 116评 | These are my notes from porting my Amiga game, which I originally built in Baghdad in 1993 in MC68000 assembly, to Godot, using Claude Fable 5 during last July holiday.  It took an evening! Getting the feel right and shipping it took a few more weekends and evenings. I spent the last few weeks analy",
+    "url": "https://babyloniantwins.com/blog/porting-a-1993-amiga-game-to-godot/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-03T14:28:18+00:00",
+    "points": 341,
+    "num_comments": 116,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 341赞 116评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "2b4618ce8df8",
+    "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+    "summary": "",
+    "url": "https://huggingface.co/blog/Hcompany/neomme",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-09-03T13:13:48+00:00",
+    "frontier": 75,
+    "signal": 70,
+    "score": 73,
+    "llm_summary": "NeoMME 提出高效的多模态原生多语言编码器模型。",
+    "llm_tags": [
+      "多模态",
+      "多语言",
+      "编码器"
     ]
   },
   {
@@ -309,6 +483,24 @@
       "AI网关",
       "开源",
       "企业治理"
+    ]
+  },
+  {
+    "id": "8416281f0fc8",
+    "title": "Go grandmaster Shin defeats AI KataGo with a two-stone handicap",
+    "summary": "HN 热度: 418 点赞, 161 评论（外链帖无正文）",
+    "url": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-03T01:11:22+00:00",
+    "points": 418,
+    "num_comments": 161,
+    "frontier": 76,
+    "signal": 76,
+    "score": 76,
+    "llm_summary": "🔥 HN 418赞 161评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -2081,308 +2273,6 @@
       "GPU计算",
       "ROCm",
       "AI基础设施"
-    ]
-  },
-  {
-    "id": "b10a38652dff",
-    "title": "OnlyTerp/opengrok ⭐97",
-    "summary": "Run any model in Grok Bot — one-command setup, model picker UI, evidence-based provider wire maps, and an update-proof doctor. Not farming you, arming you.",
-    "url": "https://github.com/OnlyTerp/opengrok",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-28T10:14:03.027621+00:00",
-    "created_at": "2026-08-27T18:30:44Z",
-    "stars": 97,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 55,
-    "score": 55,
-    "llm_summary": "开源工具支持在Grok Bot中一键运行任意模型，含模型选择器与提供者映射。",
-    "llm_tags": [
-      "模型集成",
-      "开源工具",
-      "Grok"
-    ]
-  },
-  {
-    "id": "dc9ddfdc5ab5",
-    "title": "solis-team/XRepoTest ⭐31",
-    "summary": "[EMNLP 2026] A multilingual benchmark for repository-level unit test generation, evaluating LLMs across 5 programming languages and real-world code under reproducible, Docker-based execution.",
-    "url": "https://github.com/solis-team/XRepoTest",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-28T10:14:03.027621+00:00",
-    "created_at": "2026-08-24T02:43:18Z",
-    "stars": 31,
-    "language": "Python",
-    "frontier": 70,
-    "signal": 60,
-    "score": 66,
-    "llm_summary": "EMNLP 2026提出多语言仓库级单元测试生成基准",
-    "llm_tags": [
-      "代码生成",
-      "单元测试",
-      "基准测试"
-    ]
-  },
-  {
-    "id": "f1a5428a240a",
-    "title": "Luanti removed from Google Play due to baseless AI copyright notice",
-    "summary": "HN 热度: 386 点赞, 121 评论（外链帖无正文）",
-    "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-28T06:33:57+00:00",
-    "points": 386,
-    "num_comments": 121,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 386赞 121评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "be7aaae582ec",
-    "title": "Tencent/Hy4-preview 770B-A49B weight dropped",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w0igxk/tencenthy4preview_770ba49b_weight_dropped/\"> <img alt=\"Tencent/Hy4-preview 770B-A49B weight dropped\" src=\"https://externa",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0igxk/tencenthy4preview_770ba49b_weight_dropped/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-28T06:14:02+00:00",
-    "frontier": 85,
-    "signal": 60,
-    "score": 75,
-    "llm_summary": "腾讯发布Hy4-preview 770B MoE模型权重，49B激活参数",
-    "llm_tags": [
-      "MoE",
-      "开源模型",
-      "大语言模型"
-    ]
-  },
-  {
-    "id": "19a6fd1b0f8f",
-    "title": "Assessing mentalization in humans and large language models",
-    "summary": "arXiv:2608.26291v1 Announce Type: new  Abstract: Mentalization - the ability to infer others' beliefs and intentions to guide one's own choices - is a key cognitive function underlying human social interactions. Large language models (LLMs) demonstrate behaviour consistent with humans on theory-of-mind tasks, yet whether these models can guide adaptive behaviour through mentalization is unknown. Here we use two economic games with cognitive computational modeling to uncover the latent strategies underlying mentalization in LLMs. We tested individual LLM agents across four model families, DeepSeek, GPT-4.1, GPT-5 and Gemini 2.0 Flash (N = 2,099), against opponents of varying sophistication and examined whether a prompting strategy designed to elicit strategic reasoning improved performance.",
-    "url": "https://arxiv.org/abs/2608.26291",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-28T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 70,
-    "score": 72,
-    "llm_summary": "用经济游戏和计算建模评估大型语言模型心智化能力",
-    "llm_tags": [
-      "心智化",
-      "LLM评估",
-      "计算建模"
-    ]
-  },
-  {
-    "id": "fb4f479f7e8a",
-    "title": "CIFQA: A Deterministic Tool-Grounded Multi-Agent LLM Framework for Financial Query Answering",
-    "summary": "arXiv:2608.26114v1 Announce Type: new  Abstract: Calculation-intensive financial question answering requires exact reasoning over structured rates, temporal conditions, numerical formulas, and rule-based constraints. Although Large Language Models (LLMs) perform strongly on natural language tasks, they often produce numerically incorrect yet plausible answers when solving multi-step financial calculations. To address this limitation, we introduce CIFQA (Calculation-Intensive Financial Query Answering), a deterministic tool-grounded multi-agent LLM framework for financial question answering. CIFQA separates language understanding from numerical execution by assigning specialized agents to query interpretation, routing, parameter extraction, computation planning, and response generation, whi",
-    "url": "https://arxiv.org/abs/2608.26114",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-28T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 74,
-    "score": 73,
-    "llm_summary": "提出确定性工具调用的多智能体LLM框架，用于计算密集型金融问答。",
-    "llm_tags": [
-      "多智能体",
-      "金融问答",
-      "工具调用",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "2e829c5291f3",
-    "title": "DeflectBench: A Benchmark for Evaluating Rhetorical Fallacy Generation in LLMs",
-    "summary": "arXiv:2608.26119v1 Announce Type: new  Abstract: Whether large language models can be prompted to generate rhetorical fallacies on demand, and whether current safety post-training constrains this behavior, has received less attention than the related question of detecting fallacies in existing text. We close this gap with DeflectBench, evaluating 23,990 generations from four frontier models across three deflection strategies (whataboutism, ad hominem, red herring), seven prompt framings, and 80 claims spanning four controversy levels. Refusal is governed primarily by request structure rather than claim content. Per claim refusal varies by only 11 percentage points across the 80 claims, while a single prompt frame change can swing within model refusal by nearly 100 percentage points and swi",
-    "url": "https://arxiv.org/abs/2608.26119",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-28T04:00:00+00:00",
-    "frontier": 60,
-    "signal": 75,
-    "score": 68,
-    "llm_summary": "构建基准评测LLM生成修辞谬误的能力及安全对齐效果",
-    "llm_tags": [
-      "大模型",
-      "安全评测",
-      "谬误生成",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "eafef8ad19b0",
-    "title": "AgentFold: Closed-Loop Agentic Search for Protein Folding Model Design",
-    "summary": "arXiv:2608.26747v1 Announce Type: new  Abstract: Scientific LLM agents have shown promise in literature reasoning, tool use, and experiment planning, but it remains unclear whether they can autonomously improve large, tightly coupled scientific machine-learning systems through executable code changes and computationally expensive validation. We study this question in protein folding, where progress requires coordinated architectural modifications, multi-objective evaluation, and domain-aware interpretation. We present AgentFold, a multi-agent framework that formulates folding-model development as a closed-loop search over executable code variants. Starting from ESMFold, AgentFold proposes hypotheses, implements and debugs code-level modifications, evaluates model variants, analyzes experim",
-    "url": "https://arxiv.org/abs/2608.26747",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-28T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 74,
-    "score": 74,
-    "llm_summary": "提出闭环智能体搜索框架，自主设计蛋白质折叠模型并优化代码。",
-    "llm_tags": [
-      "🔧 已开源",
-      "蛋白质折叠",
-      "智能体搜索",
-      "LLM智能体"
-    ]
-  },
-  {
-    "id": "1bc6fa13e056",
-    "title": "TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding",
-    "summary": "arXiv:2608.26112v1 Announce Type: new  Abstract: Speculative decoding accelerates large language model inference through a draft-then-verify paradigm. Building on this, tree-structured methods improve inference by organizing proposals into multiple candidate paths, increasing the accepted length. However, existing tree-structured methods use a single drafter for all drafting steps, creating a dilemma: a smaller drafter is fast but yields lower-quality trees, whereas a larger drafter improves tree quality but suffers from high latency. To address this, we propose TreeGraft, a multi-drafter framework in which drafters of different costs jointly construct a shared draft tree. TreeGraft uses the stronger drafter to rescore candidates by updating scores assigned by the weaker drafter, reselect ",
-    "url": "https://arxiv.org/abs/2608.26112",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-28T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 78,
-    "score": 76,
-    "llm_summary": "提出多草稿模型自适应嫁接策略，提升树形投机解码效率",
-    "llm_tags": [
-      "投机解码",
-      "多模型",
-      "推理加速",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "2c773b87d3ea",
-    "title": "KinyaEmbed: Contrastive Sentence Embeddings for Kinyarwanda via Multi-Stage Curriculum Training",
-    "summary": "arXiv:2608.26941v1 Announce Type: new  Abstract: We present KinyaEmbed, the first dedicated sentence embedding model for Kinyarwanda, a morphologically rich Bantu language spoken by over 12 million people in Rwanda. Existing multilingual embedding models such as LaBSE, mE5-large, and OpenAI text-embedding-3-large perform poorly on Kinyarwanda due to severe under-representation in their pre-training corpora. KinyaEmbed is built on KinyaBERT-large and trained via a four-stage curriculum using MultipleNegativesRankingLoss (MNRL): Stage 1 leverages ~18,000 paraphrase pairs from the Official Gazette of Rwanda with three temperature scales; Stage 2 fine-tunes on 715 NLLB-translated MNLI triplets for entailment structure; Stage 3 aligns representations using English-Kinyarwanda OPUS-100 translati",
-    "url": "https://arxiv.org/abs/2608.26941",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-28T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 52,
-    "score": 61,
-    "llm_summary": "首个针对基尼亚卢旺达语的句子嵌入模型，采用多阶段课程训练。",
-    "llm_tags": [
-      "句子嵌入",
-      "低资源语言",
-      "课程训练"
-    ]
-  },
-  {
-    "id": "545d10e8fafb",
-    "title": "Cross-lingual Representation Learning via Centroid Intervention Fusion",
-    "summary": "arXiv:2608.26357v1 Announce Type: new  Abstract: Large language models (LLMs) exhibit uneven multilingual performance, especially when dealing with low-resource languages. Inference-time intervention offers a lightweight way to improve cross-lingual transfer by modifying the hidden states produced by the LLMs during the forward pass, without updating model parameters. However, existing cross-lingual intervention methods typically learn separate projections from source to target languages, which limits scalability and prevents knowledge sharing across languages. We propose Centroid Intervention Fusion (CIF), a projection fusion framework that consolidates multiple multilingual intervention projections into a single language-shared operator. Across multilingual commonsense reasoning, natural",
-    "url": "https://arxiv.org/abs/2608.26357",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-28T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "提出质心干预融合方法，提升跨语言表征学习的推理时干预效果",
-    "llm_tags": [
-      "跨语言",
-      "推理干预",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "9c851c8e1b71",
-    "title": "Surgical Alignment in Knowledge Graph Training for Clinical Diagnosis with Large Language Models",
-    "summary": "arXiv:2608.26587v1 Announce Type: new  Abstract: Biomedical knowledge graphs (KGs) offer structured medical knowledge that can ground large language model (LLM) reasoning in clinical diagnosis application, yet how KG signal should be integrated into LLMs remains an open question. We present a systematic study spanning five KG task formulations, three training paradigms, two KGs, and three base LLMs. At the task level, all paradigms improve over the non-finetuned baseline, but methods with comparable in-domain accuracy show substantially different knowledge transfer behavior. We introduce Gradient Intervention Density (GID) and Gradient Distortion (GD) to measure how broadly an optimizer modifies the pretrained model. GID and GD together reveal a clear divide: KG-judgment training under KL ",
-    "url": "https://arxiv.org/abs/2608.26587",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-28T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 75,
-    "score": 72,
-    "llm_summary": "系统研究知识图谱融入LLM的临床诊断训练范式，提供多维度对比与开源实现。",
-    "llm_tags": [
-      "知识图谱",
-      "临床诊断",
-      "LLM训练",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "017d29717ace",
-    "title": "SymbolLKG: Towards Verifiable Logical Reasoning via Logical Knowledge Graph and Symbolic Solvers",
-    "summary": "arXiv:2608.26836v1 Announce Type: new  Abstract: Large Language Models (LLMs) have demonstrated remarkable proficiency in natural language understanding, yet they struggle with strict multi-step reasoning, frequently suffering from hallucinations and inconsistency. Existing solutions like Chain-of-Thought (CoT) lack rigorous verification mechanisms, while standard Retrieval-Augmented Generation (RAG) often misses the complex, structural dependencies inherent in logical tasks. To bridge this gap, we propose a Neuro-Symbolic architecture that integrates a Logical Knowledge Graph (LKG) with dynamic solver routing. Specifically, we introduce an ontology-based LKG that treats logical rules and constraints as first-class topological nodes, enabling explicit modeling of dependencies extracted fro",
-    "url": "https://arxiv.org/abs/2608.26836",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-28T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 45,
-    "score": 58,
-    "llm_summary": "构建逻辑知识图谱与符号求解器增强LLM推理可验证性",
-    "llm_tags": [
-      "逻辑推理",
-      "知识图谱",
-      "符号求解",
-      "LLM"
-    ]
-  },
-  {
-    "id": "ce89c049ba93",
-    "title": "Dependency-Aware Revocable Decoding for Efficient Diffusion Large Language Model Inference",
-    "summary": "arXiv:2608.26574v1 Announce Type: new  Abstract: Diffusion large language models (dLLMs) offer a promising alternative to autoregressive generation by decoding multiple tokens in parallel through iterative denoising. However, increasing decoding parallelism often degrades generation quality, as early errors can contaminate later contexts. Revocable decoding mitigates this issue by re-evaluating decoded tokens and remasking unreliable ones, but existing methods overlook that unreliable tokens may also corrupt the verification context itself. We identify this failure mode and propose Dependency-Aware Revocable Decoding (DARD), a training-free framework that separates tokens into masked, candidate, and unmasked states. DARD verifies candidate tokens using a selective context that excludes les",
-    "url": "https://arxiv.org/abs/2608.26574",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-28T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "提出依赖感知的可撤销解码，提升扩散大语言模型推理效率与质量。",
-    "llm_tags": [
-      "扩散模型",
-      "LLM推理",
-      "解码优化",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "70c6254aed43",
-    "title": "RuleWeaver: Benchmarking Rule-Centered Scenario Reasoning for Large Language Models",
-    "summary": "arXiv:2608.26832v1 Announce Type: new  Abstract: Large language models (LLMs) are increasingly applied to specialized domains, where effective use of domain expertise often requires reasoning over complex rules in concrete scenarios. However, existing benchmarks only partially evaluate this capability, as they either focus on output-level instruction constraints or overlook the distinct roles that rules play in scenario reasoning. To address these gaps, this paper introduces RuleWeaver, a benchmark construction framework for evaluating rule-centered scenario reasoning. RuleWeaver starts from corpus-derived IF-THEN Meta Rules, progressively augments them into complex rules, and composes these rules into rule-centered scenario QA instances. Beyond final-answer correctness, RuleWeaver further",
-    "url": "https://arxiv.org/abs/2608.26832",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-28T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 78,
-    "score": 72,
-    "llm_summary": "提出RuleWeaver基准，评估大模型在复杂规则场景中的推理能力。",
-    "llm_tags": [
-      "🔧 已开源",
-      "基准测试",
-      "规则推理",
-      "LLM评估"
-    ]
-  },
-  {
-    "id": "5dffb0d94792",
-    "title": "Please stop flooding our projects with AI slop to furnish your CV",
-    "summary": "HN 热度: 213 点赞, 144 评论（外链帖无正文）",
-    "url": "https://neilalexander.dev/2026/06/30/flooding-contributions",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-28T03:49:33+00:00",
-    "points": 213,
-    "num_comments": 144,
-    "frontier": 73,
-    "signal": 73,
-    "score": 73,
-    "llm_summary": "🔥 HN 213赞 144评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
     ]
   }
 ]
