@@ -1,5 +1,100 @@
 [
   {
+    "id": "5e2ec36c100a",
+    "title": "2akouwu/reverify ⭐806",
+    "summary": "Anti-hallucination for AI agents that read binaries. The model proposes, deterministic tools decide: every claim is VERIFIED or REFUTED against the real bytes, with evidence, and grounded facts surviv",
+    "url": "https://github.com/2akouwu/reverify",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-04T03:32:00.580405+00:00",
+    "created_at": "2026-08-31T01:02:18Z",
+    "stars": 806,
+    "language": "Python",
+    "frontier": 84,
+    "signal": 84,
+    "score": 84,
+    "llm_summary": "⭐806 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "3e8af3e82207",
+    "title": "codejunkie99/fable-orchestrator ⭐344",
+    "summary": "Fable 5.1 orchestrates. GPT-5.6 Luna and DeepSeek V4 Flash implement.",
+    "url": "https://github.com/codejunkie99/fable-orchestrator",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-04T03:32:00.580405+00:00",
+    "created_at": "2026-09-02T21:48:23Z",
+    "stars": 344,
+    "language": "Shell",
+    "frontier": 80,
+    "signal": 80,
+    "score": 80,
+    "llm_summary": "⭐344 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "7294fc025687",
+    "title": "Agenta-AI/awesome-ai-agent-platforms ⭐118",
+    "summary": "A curated list of open-source AI agent platforms: AI coworkers and teammates, agent builders and frameworks, workflow automation platforms, browser agents, and coding agents, with licenses.",
+    "url": "https://github.com/Agenta-AI/awesome-ai-agent-platforms",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-04T03:32:00.580405+00:00",
+    "created_at": "2026-09-02T16:32:59Z",
+    "stars": 118,
+    "language": "Astro",
+    "frontier": 52,
+    "signal": 58,
+    "score": 54,
+    "llm_summary": "收录开源AI智能体平台的精选列表，涵盖框架与工具。",
+    "llm_tags": [
+      "AI Agent",
+      "开源",
+      "开发工具"
+    ]
+  },
+  {
+    "id": "30a9f2def9cf",
+    "title": "GPT-6 Astra",
+    "summary": "HN ⭐1430 1183评 | System Card:  https://deploymentsafety.openai.com/gpt-6-astra  Related ongoing threads:  OpenAI's GPT-6 Astra on ARC-AGI-3  -  https://news.ycombinator.com/item?id=49555691   GPT-6 Astra makes major gains in the Artificial Analysis Coding Agent Index  -  https://news.ycombinator.com/item?id=49556147",
+    "url": "https://openai.com/index/gpt-6-astra/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-03T18:41:05+00:00",
+    "points": 1430,
+    "num_comments": 1183,
+    "frontier": 81,
+    "signal": 81,
+    "score": 81,
+    "llm_summary": "🔥 HN 1430赞 1183评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "37401d98c4bd",
+    "title": "OpenAI begins rolling out GPT-6 Astra",
+    "summary": "HN ⭐248 235评 | https://thenewstack.io/openai-gpt6-astra-benchmarks/ , image:  https://cdn.thenewstack.io/media/2026/09/358eb84a-screenshot...   https://venturebeat.com/technology/welcome-to-the-agi-era-op...   https://www.theverge.com/ai-artificial-intelligence/988334/o...   https://twitter.com/OpenAI/status/20955",
+    "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-03T18:18:22+00:00",
+    "points": 248,
+    "num_comments": 235,
+    "frontier": 73,
+    "signal": 73,
+    "score": 73,
+    "llm_summary": "🔥 HN 248赞 235评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "34996f635082",
     "title": "op7418/guizang-yingzao-skill ⭐123",
     "summary": "🏯 Claude Code / Codex skill — transform Chinese architecture, cultural places & travel photos into art-directed editorial posters with GPT Image. 中国古建筑与在地文化照片 → 艺术指导海报",
@@ -18,6 +113,24 @@
       "图像生成",
       "创意设计",
       "古建筑"
+    ]
+  },
+  {
+    "id": "bca8e3f96543",
+    "title": "Playco cut manual fixes 50% prototyping games with GPT-6 Astra",
+    "summary": "Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.",
+    "url": "https://openai.com/index/playco-game-prototyping-with-astra",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-09-03T12:00:00+00:00",
+    "frontier": 72,
+    "signal": 58,
+    "score": 66,
+    "llm_summary": "Playco用GPT-6 Astra制游戏原型，手动修复减少50%",
+    "llm_tags": [
+      "大模型",
+      "游戏开发",
+      "代码生成"
     ]
   },
   {
@@ -56,6 +169,42 @@
       "文化基准",
       "表情包理解",
       "🔧 已开源"
+    ]
+  },
+  {
+    "id": "74fead3846b7",
+    "title": "ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding",
+    "summary": "arXiv:2609.02780v1 Announce Type: cross  Abstract: Streaming video understanding is a critical capability for real-world applications, including embodied intelligence, autonomous driving, industrial monitoring, surveillance and early warning, and wearable assistants. However, processing continuous video streams with multimodal large language models (MLLMs) is computationally expensive. Existing efforts have explored reducing streaming overhead through visual token pruning, token merging, quantization, on-demand frame retrieval, and context offloading. However, most existing methods overlook the dimension of model depth. Repeatedly executing full-depth MLLM prefill over incoming frames is prohibitively expensive, incurring substantial computational overhead and causing the KV cache to grow ",
+    "url": "https://arxiv.org/abs/2609.02780",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-03T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 78,
+    "score": 75,
+    "llm_summary": "提出浅层索引与深层回答的流式视频理解方法，减少计算开销",
+    "llm_tags": [
+      "流式视频",
+      "多模态",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "bf81dfbceaeb",
+    "title": "MultiGhostBench: A Multilingual Benchmark for Long-Form LLM-Generated Text Attribution under Distribution Shifts",
+    "summary": "arXiv:2609.02379v1 Announce Type: new  Abstract: While existing work on LLM authorship attribution (AA) has made progress, available benchmarks remain limited, often focusing on English, controlled settings, or relatively outdated models, with the few multilingual studies considering only relatively short texts. We introduce MultiGhostBench, a multilingual benchmark comprising 928 books generated by five recent LLMs across six languages and three scripts, with an average length of approximately 59K words per book. The benchmark supports evaluation under domain, author, and language shifts. Evaluation of representative AA methods shows that no single method consistently performs best across settings, and performance generally degrades under distribution shifts. Transformer-based detectors c",
+    "url": "https://arxiv.org/abs/2609.02379",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-03T04:00:00+00:00",
+    "frontier": 65,
+    "signal": 78,
+    "score": 72,
+    "llm_summary": "提出多语言长文本AI归属基准，覆盖六语三文字。",
+    "llm_tags": [
+      "🔧 已开源",
+      "多语言基准",
+      "文本归属"
     ]
   },
   {
@@ -199,6 +348,43 @@
     ]
   },
   {
+    "id": "08d20f580e2c",
+    "title": "Safety overview: GPT-6 Astra",
+    "summary": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework.",
+    "url": "https://openai.com/index/safety-overview-gpt-6-astra",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-09-03T00:00:00+00:00",
+    "frontier": 96,
+    "signal": 62,
+    "score": 82,
+    "llm_summary": "OpenAI发布GPT-6 Astra，网络安全能力首达Critical级",
+    "llm_tags": [
+      "大模型",
+      "AI安全",
+      "GPT-6"
+    ]
+  },
+  {
+    "id": "ec3c0e6bac23",
+    "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+    "summary": "",
+    "url": "https://huggingface.co/blog/train-to-paint-with-code",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-09-03T00:00:00+00:00",
+    "frontier": 55,
+    "signal": 70,
+    "score": 61,
+    "llm_summary": "探索用TRL微调编码模型以生成水彩风格的创意应用",
+    "llm_tags": [
+      "强化学习",
+      "模型微调",
+      "生成式AI",
+      "编码模型"
+    ]
+  },
+  {
     "id": "8b76a54a8b18",
     "title": "Mamdani Bans AI in NYC Schools",
     "summary": "HN 热度: 199 点赞, 151 评论（外链帖无正文）",
@@ -292,6 +478,24 @@
     "llm_summary": "🔥 HN 327赞 158评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "55e8fa9d3d8e",
+    "title": "Real-Time Intelligence with IBM Time Series Models on Confluent",
+    "summary": "",
+    "url": "https://huggingface.co/blog/ibm-research/real-time-intelligence",
+    "source": "Hugging Face Blog",
+    "source_type": "tech_blog",
+    "timestamp": "2026-09-02T13:49:14+00:00",
+    "frontier": 70,
+    "signal": 85,
+    "score": 76,
+    "llm_summary": "IBM时间序列模型集成Confluent平台实现实时智能预测",
+    "llm_tags": [
+      "时间序列",
+      "实时计算",
+      "模型部署"
     ]
   },
   {
@@ -2179,125 +2383,6 @@
     "llm_summary": "🔥 HN 213赞 144评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "41795c94e412",
-    "title": "The Open ASR Leaderboard Adds Its First Global South Language",
-    "summary": "",
-    "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-08-28T00:00:00+00:00",
-    "frontier": 60,
-    "signal": 70,
-    "score": 64,
-    "llm_summary": "开源语音识别排行榜新增首个全球南方语言评测基准。",
-    "llm_tags": [
-      "语音识别",
-      "多语言",
-      "基准测试"
-    ]
-  },
-  {
-    "id": "55eab4e2db9f",
-    "title": "GENEXIS-AI/gpt-image-skill ⭐114",
-    "summary": "Generate GPT images from Codex or Claude Code using a ChatGPT subscription, without the Images API.",
-    "url": "https://github.com/GENEXIS-AI/gpt-image-skill",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-27T21:57:21.777350+00:00",
-    "created_at": "2026-08-26T08:52:50Z",
-    "stars": 114,
-    "language": "JavaScript",
-    "frontier": 65,
-    "signal": 45,
-    "score": 57,
-    "llm_summary": "用ChatGPT订阅在Codex或Claude Code中生成GPT图像。",
-    "llm_tags": [
-      "图像生成",
-      "AI工具"
-    ]
-  },
-  {
-    "id": "47c10e03abbf",
-    "title": "S1N6H/pentest-harness ⭐27",
-    "summary": "Pentest Harness — Heaven for Hackers. A self-hosted AI agent harness for authorized pentests, bug bounty, security labs, and CTFs. Bring your own AI model API; sessions stay local.",
-    "url": "https://github.com/S1N6H/pentest-harness",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-27T21:57:21.777350+00:00",
-    "created_at": "2026-08-26T04:57:19Z",
-    "stars": 27,
-    "language": "TypeScript",
-    "frontier": 58,
-    "signal": 52,
-    "score": 56,
-    "llm_summary": "开源AI智能体工具，用于授权渗透测试与CTF。",
-    "llm_tags": [
-      "AI安全",
-      "渗透测试",
-      "智能体"
-    ]
-  },
-  {
-    "id": "fb059917f764",
-    "title": "h9-tec/LLM-Inference-Handbook ⭐26",
-    "summary": "",
-    "url": "https://github.com/h9-tec/LLM-Inference-Handbook",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-27T21:57:21.777350+00:00",
-    "created_at": "2026-08-27T11:39:55Z",
-    "stars": 26,
-    "language": null,
-    "frontier": 35,
-    "signal": 65,
-    "score": 47,
-    "llm_summary": "开源LLM推理手册，涵盖推理优化实践指南。",
-    "llm_tags": [
-      "大模型",
-      "推理优化",
-      "开源"
-    ]
-  },
-  {
-    "id": "5aa7b3936824",
-    "title": "Yeq6X/mazelingo ⭐23",
-    "summary": "Sentence-level bilingual mix translator — Chrome extension (MV3). Read the web with your two languages mixed sentence by sentence.",
-    "url": "https://github.com/Yeq6X/mazelingo",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-27T21:57:21.777350+00:00",
-    "created_at": "2026-08-22T14:11:41Z",
-    "stars": 23,
-    "language": "TypeScript",
-    "frontier": 45,
-    "signal": 55,
-    "score": 49,
-    "llm_summary": "开源Chrome扩展，实现句子级中英混合翻译阅读网页。",
-    "llm_tags": [
-      "翻译工具",
-      "浏览器扩展",
-      "开源项目"
-    ]
-  },
-  {
-    "id": "6dbc18a18ae2",
-    "title": "No, Engrams won't let you run 1T models locally. It does something even better.",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>Ever since Qwen 3.8 Flash Next dropped, there's a misconception going around that N-gram tables will let people run 1T+ parameter models on a single server with 980B ",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0198r/no_engrams_wont_let_you_run_1t_models_locally_it/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-27T17:56:34+00:00",
-    "frontier": 70,
-    "signal": 60,
-    "score": 66,
-    "llm_summary": "讨论Engrams技术无法本地运行1T模型，但其有独特优势",
-    "llm_tags": [
-      "大模型",
-      "推理优化",
-      "技术讨论"
     ]
   }
 ]
