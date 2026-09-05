@@ -1,5 +1,65 @@
 [
   {
+    "id": "9f9d586ccf65",
+    "title": "dreamers-laboratory/video-input-to-modern-llm ⭐97",
+    "summary": "Give an LLM eyes on a video without blowing the context window: ffmpeg frame sampling at a chosen resolution, token estimates per model family, budget fitting, contact sheets.",
+    "url": "https://github.com/dreamers-laboratory/video-input-to-modern-llm",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-05T03:32:49.105490+00:00",
+    "created_at": "2026-09-02T20:09:59Z",
+    "stars": 97,
+    "language": "Python",
+    "frontier": 50,
+    "signal": 60,
+    "score": 54,
+    "llm_summary": "开源工具将视频采样为帧喂给LLM，控制上下文窗口并估算token。",
+    "llm_tags": [
+      "视频处理",
+      "LLM集成",
+      "提示工程"
+    ]
+  },
+  {
+    "id": "781a124676bb",
+    "title": "AbuZar-Ansarii/Needle ⭐81",
+    "summary": "This 14 MB Agentic LLM(Cactus Needle 2) can control your phone completely.",
+    "url": "https://github.com/AbuZar-Ansarii/Needle",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-05T03:32:49.105490+00:00",
+    "created_at": "2026-08-30T06:43:48Z",
+    "stars": 81,
+    "language": "Python",
+    "frontier": 62,
+    "signal": 48,
+    "score": 56,
+    "llm_summary": "14MB端侧智能体声称可操控手机，体积小但细节有限",
+    "llm_tags": [
+      "端侧AI",
+      "智能体",
+      "轻量模型"
+    ]
+  },
+  {
+    "id": "64a17c568d2e",
+    "title": "GPT-6 Astra on OpenRouter",
+    "summary": "HN 热度: 143 点赞, 74 评论（外链帖无正文）",
+    "url": "https://openrouter.ai/openai/gpt-6-astra",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-04T21:39:19+00:00",
+    "points": 143,
+    "num_comments": 74,
+    "frontier": 71,
+    "signal": 71,
+    "score": 71,
+    "llm_summary": "🔥 HN 143赞 74评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "ae3ce2c98e2b",
     "title": "kydlikebtc/awesome-grokbot ⭐239",
     "summary": "440 live x.ai/bot shares for Grok Bot — every link status-checked, every row attributed. Bilingual EN/中文 catalog with a JSON schema, CI, and a searchable site.",
@@ -61,6 +121,24 @@
     ]
   },
   {
+    "id": "9b9bc1e3470a",
+    "title": "Google AI Mode shows same products 21.6% more expensive than traditional search",
+    "summary": "HN 热度: 371 点赞, 72 评论（外链帖无正文）",
+    "url": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-04T11:59:15+00:00",
+    "points": 371,
+    "num_comments": 72,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 371赞 72评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "b1b3da9003c5",
     "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
     "summary": "arXiv:2609.03430v1 Announce Type: new  Abstract: Large language models achieve superior performance on tasks that require extended reasoning, but long chains of thought make the KV cache a severe memory bottleneck. Existing KV cache compression methods share one paradigm: score each cached token by some estimate of how much it will matter later, and keep the top-scoring ones. We show that the selection signal contributes almost nothing. Random Attention keeps the prompt and evicts uniformly at random within each attention head, computing no score at all; across four models and six reasoning tasks it matches the strongest prior evictor while serving 32-43% higher throughput than it in vLLM deployment. Controlled experiments explain this by showing that 1) the prompt is the fragile part of t",
@@ -114,6 +192,99 @@
       "多模态",
       "视觉智能体",
       "工具使用",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "ef1297219e2c",
+    "title": "StrixAE: An Intelligent Agent for Audio Enhancement under Complex Distortion Coupling in Real-World Scenarios",
+    "summary": "arXiv:2609.03414v1 Announce Type: cross  Abstract: Audio enhancement in real-world scenarios involves complex distortion couplings and requires personalized enhancement. Existing solutions struggle to address both simultaneously. To improve robustness and enable autonomous operation in such scenarios, we propose StrixAE, an agent based on a multimodal large language model (MLLM). StrixAE leverages the MLLM as a controller to coordinate multiple audio enhancement and personalization models. To further enhance system robustness, reduce artifacts, and improve generalization across diverse real-world scenarios, StrixAE is trained through a two-stage process: first, CoT supervised fine-tuning on AcoustBench to ground basic reasoning and tool invocation; second, Audio Perception Reinforcement Le",
+    "url": "https://arxiv.org/abs/2609.03414",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-04T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 78,
+    "score": 75,
+    "llm_summary": "基于多模态大模型协调音频增强任务，支持复杂失真耦合场景的智能体",
+    "llm_tags": [
+      "音频增强",
+      "多模态大模型",
+      "智能体",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "c836ae08c938",
+    "title": "Margins, Not Windows: Training-Free Per-Step Lossy Speculative Decoding",
+    "summary": "arXiv:2609.02897v1 Announce Type: new  Abstract: Speculative decoding accelerates LLM inference by drafting candidate tokens and verifying them in parallel. Tree-attention drafters such as EAGLE-3 are widely adopted, yet typically hold two decisions fixed: (1) a strict token-match verification rule and (2) a static draft-tree shape. Prior work relaxes each in isolation under limiting assumptions: long draft chains for training-free lossy verification, and adaptive tree shaping under a fixed token budget. We introduce AdaptiveSpec, a training-free per-step speculative decoding method that adapts both decisions from internal signals already produced during decoding. A per-step margin rule promotes a mismatched draft-proposed token when the ratio of the target's probability on the drafted tok",
+    "url": "https://arxiv.org/abs/2609.02897",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-04T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 65,
+    "score": 70,
+    "llm_summary": "提出训练自由的逐步骤有损投机解码方法，放宽验证规则与草稿树形状限制。",
+    "llm_tags": [
+      "投机解码",
+      "推理加速",
+      "大语言模型"
+    ]
+  },
+  {
+    "id": "93086dc5bec5",
+    "title": "CROCODIL: Cross-Model Code Editing with LLMs",
+    "summary": "arXiv:2609.03894v1 Announce Type: new  Abstract: Large language models (LLMs) have become ubiquitous tools for code generation and editing. However, development teams often use multiple LLM assistants. Different developers may prefer different models, and individual developers may switch between models across different coding sessions. Because of this, the edits any one model makes are frequently applied to foreign code originally generated by another model. These LLMs are often trained on different datasets, and as a result have different stylistic preferences. Do LLMs behave differently when they edit foreign code originally written by a different LLM with a different coding style? We find that models tend to make more, and often excessive, edits on foreign code. We introduce CROCODIL (C",
+    "url": "https://arxiv.org/abs/2609.03894",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-04T04:00:00+00:00",
+    "frontier": 70,
+    "signal": 75,
+    "score": 72,
+    "llm_summary": "提出跨模型代码编辑方法，应对不同LLM协作时的代码转换问题",
+    "llm_tags": [
+      "跨模型编辑",
+      "LLM",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "6f80ba366c10",
+    "title": "HalluPeer: A Taxonomy-driven Benchmark for Detecting Hallucinations in Scientific Peer Reviews",
+    "summary": "arXiv:2609.03580v1 Announce Type: cross  Abstract: The growing scale of academic peer review has motivated the use of Large Language Models (LLMs) as review assistants, yet LLMs can generate fluent but unsupported claims that undermine review reliability. Existing hallucination benchmarks are not designed for peer review, where verification requires grounding claims in long, technical papers. We introduce HalluPeer, a benchmark for detecting hallucinations in scientific peer reviews, providing aligned triples of paper content, human-written reviews, and hallucination-injected reviews, annotated for detection, classification, and localization. Our pipeline induces a peer-review-specific hallucination taxonomy, identifies review contexts, and injects hallucinations with automated filtering. ",
+    "url": "https://arxiv.org/abs/2609.03580",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-04T04:00:00+00:00",
+    "frontier": 62,
+    "signal": 74,
+    "score": 68,
+    "llm_summary": "Taxonomy-driven基准，用于检测科学同行评审中的幻觉内容",
+    "llm_tags": [
+      "幻觉检测",
+      "基准测试",
+      "同行评审",
+      "🔧 已开源"
+    ]
+  },
+  {
+    "id": "a5687c25449f",
+    "title": "Speculative Macro Commit for Faster Tool-Using Agents",
+    "summary": "arXiv:2609.03236v1 Announce Type: new  Abstract: Tool-using LLM agents spend wall-clock time not only on model inference but also in serial action--observation turns, where each tool call, environment transition, and observation can delay subsequent decisions. We introduce \\textbf{Speculative Macro Commit} (SMC), a runtime mechanism for a two-tier agent system: a large authoritative actor model produces the official trajectory, while a faster speculative drafter model continuously predicts and executes future action chains on an isolated environment snapshot. SMC mines recurring multi-action skeletons from training traces and stores them in a macro library used to match against action chains predicted by the drafter at runtime. When the actor's next tool call matches the first drafted acti",
+    "url": "https://arxiv.org/abs/2609.03236",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-04T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 80,
+    "score": 76,
+    "llm_summary": "提出宏投机提交机制加速工具使用智能体运行",
+    "llm_tags": [
+      "Agent",
+      "投机执行",
+      "性能优化",
       "🔧 已开源"
     ]
   },
@@ -305,6 +476,23 @@
       "大模型",
       "游戏开发",
       "代码生成"
+    ]
+  },
+  {
+    "id": "9f3ff26b9d1a",
+    "title": "GPT-6 Astra: A new generation of intelligence",
+    "summary": "Introducing GPT-6 Astra, our most intelligent and aligned model yet, with state-of-the-art capabilities across computer use, coding, cybersecurity, and science.",
+    "url": "https://openai.com/index/gpt-6-astra",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-09-03T11:00:00+00:00",
+    "frontier": 95,
+    "signal": 50,
+    "score": 77,
+    "llm_summary": "OpenAI发布GPT-6 Astra，宣称最智能且对齐的模型",
+    "llm_tags": [
+      "大模型",
+      "多模态"
     ]
   },
   {
@@ -2139,140 +2327,6 @@
       "LLM智能体",
       "长时程任务",
       "运行时架构"
-    ]
-  },
-  {
-    "id": "bc961c0eb192",
-    "title": "StemDeck, a free, open-source and local AI stem separator",
-    "summary": "HN 热度: 244 点赞, 63 评论（外链帖无正文）",
-    "url": "https://github.com/stemdeckapp/stemdeck",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-29T01:24:13+00:00",
-    "points": 244,
-    "num_comments": 63,
-    "frontier": 73,
-    "signal": 73,
-    "score": 73,
-    "llm_summary": "🔥 HN 244赞 63评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "ad2a860110d6",
-    "title": "I accidentally turned LLM memory into program analysis",
-    "summary": "HN 热度: 300 点赞, 83 评论（外链帖无正文）",
-    "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-28T23:27:45+00:00",
-    "points": 300,
-    "num_comments": 83,
-    "frontier": 74,
-    "signal": 74,
-    "score": 74,
-    "llm_summary": "🔥 HN 300赞 83评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "219a4f54cf93",
-    "title": "Nanako0129/sepia ⭐238",
-    "summary": "De-AI writing skill for Claude Code, Codex, Grok Build, and Antigravity — narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
-    "url": "https://github.com/Nanako0129/sepia",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-28T21:51:16.875800+00:00",
-    "created_at": "2026-08-28T05:56:49Z",
-    "stars": 238,
-    "language": "Shell",
-    "frontier": 78,
-    "signal": 78,
-    "score": 78,
-    "llm_summary": "⭐238 高星新仓库，社区热度达标直通入选",
-    "llm_tags": [
-      "⭐高星直通"
-    ]
-  },
-  {
-    "id": "14937c97f6d4",
-    "title": "Reality-JH/FailoverAI ⭐63",
-    "summary": "Open-source gateway for reliable image, video and LLM jobs. | 面向可靠图片、视频和 LLM 任务的开源网关。",
-    "url": "https://github.com/Reality-JH/FailoverAI",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-28T21:51:16.875800+00:00",
-    "created_at": "2026-08-25T11:22:11Z",
-    "stars": 63,
-    "language": "Python",
-    "frontier": 50,
-    "signal": 50,
-    "score": 50,
-    "llm_summary": "面向图片、视频和LLM任务的开源可靠性网关",
-    "llm_tags": [
-      "开源网关",
-      "任务调度",
-      "容错"
-    ]
-  },
-  {
-    "id": "42ae2f60d5e2",
-    "title": "DavidCarliez/trustmebro ⭐41",
-    "summary": "Bypass llm guardrails by confusing it with fabricated tool output.",
-    "url": "https://github.com/DavidCarliez/trustmebro",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-28T21:51:16.875800+00:00",
-    "created_at": "2026-08-26T19:10:55Z",
-    "stars": 41,
-    "language": "Go",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "通过伪造工具输出混淆LLM，绕过安全护栏",
-    "llm_tags": [
-      "LLM安全",
-      "越狱攻击",
-      "提示注入"
-    ]
-  },
-  {
-    "id": "d58a8523c360",
-    "title": "I implemented a very tiny image generation model (latent flow transformer) on a RP2350 microcontroller - it can generate 128x128 images of faces [P]",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1w10tax/i_implemented_a_very_tiny_image_generation_model/\"> <img alt=\"I implemented a very tiny image generation model (late",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1w10tax/i_implemented_a_very_tiny_image_generation_model/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-28T19:48:27+00:00",
-    "frontier": 70,
-    "signal": 75,
-    "score": 72,
-    "llm_summary": "在微控制器上实现微型图像生成模型，可生成128x128人脸",
-    "llm_tags": [
-      "微控制器",
-      "图像生成",
-      "边缘计算",
-      "模型压缩"
-    ]
-  },
-  {
-    "id": "5d3a6fb49f22",
-    "title": "ROCm 10.0: A Decade of Open Compute, Built for the Age of Agentic AI",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w0yfmn/rocm_100_a_decade_of_open_compute_built_for_the/\"> <img alt=\"ROCm 10.0: A Decade of Open Compute, Built for the Age of Ag",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w0yfmn/rocm_100_a_decade_of_open_compute_built_for_the/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-28T18:20:40+00:00",
-    "frontier": 75,
-    "signal": 60,
-    "score": 69,
-    "llm_summary": "AMD发布ROCm 10.0，面向智能体AI时代。",
-    "llm_tags": [
-      "GPU计算",
-      "ROCm",
-      "AI基础设施"
     ]
   }
 ]
