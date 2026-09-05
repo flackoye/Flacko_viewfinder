@@ -1,5 +1,24 @@
 [
   {
+    "id": "d875031a1a02",
+    "title": "GPT-6 Astra in code review: Gains, privacy, and cost",
+    "summary": "HN 热度: 66 点赞, 58 评论（外链帖无正文）",
+    "url": "https://www.coderabbit.ai/blog/gpt-6-astra-code-review-evaluation",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-05T03:38:56+00:00",
+    "points": 66,
+    "num_comments": 58,
+    "frontier": 85,
+    "signal": 40,
+    "score": 67,
+    "llm_summary": "GPT-6 Astra用于代码审查的收益、隐私与成本初探",
+    "llm_tags": [
+      "代码审查",
+      "大模型"
+    ]
+  },
+  {
     "id": "9f9d586ccf65",
     "title": "dreamers-laboratory/video-input-to-modern-llm ⭐97",
     "summary": "Give an LLM eyes on a video without blowing the context window: ffmpeg frame sampling at a chosen resolution, token estimates per model family, budget fitting, contact sheets.",
@@ -118,6 +137,24 @@
       "本地AI",
       "工作流",
       "OCR"
+    ]
+  },
+  {
+    "id": "de023e4384bc",
+    "title": "Corporate America is getting hooked on open-source AI",
+    "summary": "HN ⭐306 285评 | https://archive.is/kmOqm",
+    "url": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-04T15:33:45+00:00",
+    "points": 306,
+    "num_comments": 285,
+    "frontier": 74,
+    "signal": 74,
+    "score": 74,
+    "llm_summary": "🔥 HN 306赞 285评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -780,6 +817,23 @@
     "llm_summary": "🔥 HN 199赞 151评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "3baaaa42399b",
+    "title": "\"GPT-6-ASTRA\" has been staged on the OpenAI API",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1w5f55h/gpt6astra_has_been_staged_on_the_openai_api/\"> <img alt=\"&quot;GPT-6-ASTRA&quot; has been staged on the OpenAI API\" src=",
+    "url": "https://www.reddit.com/r/singularity/comments/1w5f55h/gpt6astra_has_been_staged_on_the_openai_api/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-02T16:24:16+00:00",
+    "frontier": 85,
+    "signal": 30,
+    "score": 63,
+    "llm_summary": "Reddit曝料称GPT-6-ASTRA已出现在OpenAI API暂存名单，消息未证实。",
+    "llm_tags": [
+      "OpenAI",
+      "模型迭代"
     ]
   },
   {
@@ -2134,199 +2188,6 @@
       "AI智能体",
       "执行恢复",
       "开源工具"
-    ]
-  },
-  {
-    "id": "a6dbb06556f4",
-    "title": "Tencent compressed Hy4-preview from 1.5TB to about 200GB GGUF and kept about 98% performance.",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w1o324/tencent_compressed_hy4preview_from_15tb_to_about/\"> <img alt=\"Tencent compressed Hy4-preview from 1.5TB to about 200GB GG",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1o324/tencent_compressed_hy4preview_from_15tb_to_about/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-29T14:31:38+00:00",
-    "frontier": 70,
-    "signal": 65,
-    "score": 68,
-    "llm_summary": "腾讯将Hy4-preview压缩至200GB GGUF，性能保持98%",
-    "llm_tags": [
-      "模型压缩",
-      "GGUF",
-      "量化"
-    ]
-  },
-  {
-    "id": "c45d657adcbd",
-    "title": "Debian votes to allow \"responsible use of generative AI\"",
-    "summary": "HN 热度: 475 点赞, 442 评论（外链帖无正文）",
-    "url": "https://lwn.net/Articles/1091231/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-29T14:02:10+00:00",
-    "points": 475,
-    "num_comments": 442,
-    "frontier": 76,
-    "signal": 76,
-    "score": 76,
-    "llm_summary": "🔥 HN 475赞 442评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "a16b8ed2bc3e",
-    "title": "Qwen 3.8 27B at 50 tok/s with 100k Context on a 16GB GPU! (beellama.cpp)",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>I wanted to share my successful setup for running a <strong>Qwen 3.8 27B</strong> model with a massive context window on a consumer 16GB GPU (RTX 4070 Ti SUPER). The ",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1lq7u/qwen_38_27b_at_50_toks_with_100k_context_on_a/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-29T12:50:05+00:00",
-    "frontier": 72,
-    "signal": 62,
-    "score": 68,
-    "llm_summary": "16GB GPU上高效运行Qwen 3.8 27B，50 tok/s支持100k上下文",
-    "llm_tags": [
-      "模型推理",
-      "量化",
-      "性能优化"
-    ]
-  },
-  {
-    "id": "91b3e681a529",
-    "title": "alberto4442/LlmCanvas ⭐116",
-    "summary": "LlmCanvas is a high-performance, event-driven architecture for real-time data processing and adaptive auto-scaling system optimization.",
-    "url": "https://github.com/alberto4442/LlmCanvas",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-29T06:13:15.215720+00:00",
-    "created_at": "2026-08-26T02:40:03Z",
-    "stars": 116,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 45,
-    "score": 51,
-    "llm_summary": "LlmCanvas 是一个事件驱动实时数据处理与自动缩放架构项目",
-    "llm_tags": [
-      "事件驱动",
-      "实时处理",
-      "自动缩放"
-    ]
-  },
-  {
-    "id": "62257cbfb927",
-    "title": "pamgarcia1993/robinhood-lp-bot ⭐93",
-    "summary": "Robinhood LP bot — auto liquidity on Uniswap v2/v3/v4 (incl. USDG pairs) via KyberSwap best-route, with real-time Nitro sequencer feed, self-run honeypot tests, GMGN/LLM screening, and shareable profi",
-    "url": "https://github.com/pamgarcia1993/robinhood-lp-bot",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-29T06:13:15.215720+00:00",
-    "created_at": "2026-08-25T08:38:23Z",
-    "stars": 93,
-    "language": "TypeScript",
-    "frontier": 55,
-    "signal": 70,
-    "score": 61,
-    "llm_summary": "开源Uniswap流动性机器人，支持V2/V3/V4及多链路由筛选。",
-    "llm_tags": [
-      "流动性做市",
-      "DeFi",
-      "Uniswap",
-      "自动交易"
-    ]
-  },
-  {
-    "id": "70e379a7ef36",
-    "title": "JordyZomer/lemmalog ⭐42",
-    "summary": "A Datalog engine for LLM agent memory: stratified rules, provenance-tracked facts, incremental derivation, and an MCP server that lets your harness use it as a shared brain.",
-    "url": "https://github.com/JordyZomer/lemmalog",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-29T06:13:15.215720+00:00",
-    "created_at": "2026-08-27T07:06:55Z",
-    "stars": 42,
-    "language": "Rust",
-    "frontier": 68,
-    "signal": 78,
-    "score": 72,
-    "llm_summary": "Datalog引擎用于LLM代理记忆，支持增量推导与MCP服务",
-    "llm_tags": [
-      "Datalog",
-      "代理记忆",
-      "MCP",
-      "推理引擎"
-    ]
-  },
-  {
-    "id": "8d6f2053e475",
-    "title": "From Atomic to Agentic: Towards Interpretable Evaluation of LLMs' Agentic Mathematical Capabilities",
-    "summary": "arXiv:2608.26950v1 Announce Type: new  Abstract: Large Language Models (LLMs) are evolving from performing end-to-end mathematical reasoning to integrating agentic intelligence. However, most existing math benchmarks evaluate only final answers. This outcome-oriented evaluation provides limited diagnostic value for identifying process-level failures or rigorous logic, failing to guide the transformation of LLMs into robust agents. To bridge this gap, we present a process-level benchmark designed to evaluate the inherent agentic mathematical reasoning abilities of LLMs. Our framework aligns problem-solving agentic behaviors with a structured taxonomy of reusable mathematical atomic capabilities. We design a comprehensive suite of planning, action, and feedback tasks across both textual and ",
-    "url": "https://arxiv.org/abs/2608.26950",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-29T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 60,
-    "score": 65,
-    "llm_summary": "提出过程级基准评估LLM智能体数学能力，强调诊断价值",
-    "llm_tags": [
-      "数学推理",
-      "基准评估",
-      "智能体"
-    ]
-  },
-  {
-    "id": "8ccc6fa65c3b",
-    "title": "Methodological and Conceptual Framework for 5D Multi-Table Analysis: A Unified Approach for Complex Data Reuse",
-    "summary": "arXiv:2608.26149v1 Announce Type: new  Abstract: Multi-table learning remains a major challenge in machine learning for healthcare and other complex information systems. Relational data combine several sources of complexity, including large data volume, high-dimensional variables, high-cardinality categorical features, complex inter-table dependencies, and repeated temporal observations. We introduce the Relational Hypergraph Transformer (RHT), a unified architecture that represents relational databases as hypergraphs, learns pentadimensional embeddings (PentE), and performs sparse relational attention with complexity proportional to the average relational degree rather than the square of the number of entities. We formally define the architecture, derive the complexity of its attention me",
-    "url": "https://arxiv.org/abs/2608.26149",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-29T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 78,
-    "score": 76,
-    "llm_summary": "提出统一的关系超图Transformer架构，用于复杂关系数据多表学习与复用。",
-    "llm_tags": [
-      "关系学习",
-      "超图Transformer",
-      "多表分析",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "32bb6066b8f3",
-    "title": "GRAIN: Bridging Name and Narrative Shifts in Real-World Graph Reasoning through Invariance-Rewarded Agentic RL",
-    "summary": "arXiv:2608.27142v1 Announce Type: new  Abstract: Despite their potential in standardized graph tasks, Large Language Models (LLMs) remain brittle to real-world shifts in node identifiers and task formulation. While deterministic graph tools are invariant to such shifts, extracting topological structures from noisy text is highly fragile for LLMs, which often overfit to surface patterns. Moreover, mitigating these parsing failures via multi-agent systems incurs prohibitive latency. To address this, we propose GRAIN, a single-agent framework optimized via reinforcement learning. GRAIN models reasoning as a semantic parsing and tool-execution pipeline, guided by a Structure Invariance Reward. By validating extracted intermediate graphs against ground-truth topologies, this reward forces the L",
-    "url": "https://arxiv.org/abs/2608.27142",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-29T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 55,
-    "score": 62,
-    "llm_summary": "提出不变性奖励的智能体强化学习方法，增强LLM图推理对名称和表述变化的鲁棒性",
-    "llm_tags": [
-      "图推理",
-      "强化学习",
-      "LLM",
-      "智能体"
-    ]
-  },
-  {
-    "id": "3c2f8ba0f9ef",
-    "title": "SKILL.state: Scalable Long-Horizon Agent Skills",
-    "summary": "arXiv:2608.26263v1 Announce Type: new  Abstract: Large Language Models (LLMs) increasingly act as autonomous agents executing complex, long-running procedural skills. Existing agent runtimes maintain execution by continually appending observations, actions, and intermediate reasoning traces to an ever-growing conversation history, causing latency degradation and context-poisoning failures over long horizons. We present SKILL.state, a runtime architecture that replaces append-only conversational history with an explicit, mutable execution state. At each execution step, the model receives only the immutable skill specification, the current structured execution state, and the latest observation. Intermediate reasoning is discarded immediately after producing a validated state update, preventi",
-    "url": "https://arxiv.org/abs/2608.26263",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-29T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出运行时架构替换追加式对话历史，缓解长时程智能体延迟与上下文污染。",
-    "llm_tags": [
-      "LLM智能体",
-      "长时程任务",
-      "运行时架构"
     ]
   }
 ]
