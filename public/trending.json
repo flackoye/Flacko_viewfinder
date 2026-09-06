@@ -1,5 +1,82 @@
 [
   {
+    "id": "a4b084b24812",
+    "title": "vaelkeep/hermes-paper-agent ⭐51",
+    "summary": "A nightly newspaper that writes itself: an agent runs the desks, the figures come from code, and it refuses to publish an edition with marks in it.",
+    "url": "https://github.com/vaelkeep/hermes-paper-agent",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-06T03:34:03.064692+00:00",
+    "created_at": "2026-09-03T02:15:43Z",
+    "stars": 51,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 50,
+    "score": 53,
+    "llm_summary": "开源Agent自动生成夜间报纸，代码生成图表并自动校验质量。",
+    "llm_tags": [
+      "自动生成",
+      "AI代理"
+    ]
+  },
+  {
+    "id": "07898ffd3b11",
+    "title": "htobty/ReadyLLM ⭐40",
+    "summary": "Deploy, monitor, and tune LLM through a visual interface — plus image / video generation on top of ComfyUI.",
+    "url": "https://github.com/htobty/ReadyLLM",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-06T03:34:03.064692+00:00",
+    "created_at": "2026-08-31T06:52:06Z",
+    "stars": 40,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 55,
+    "score": 55,
+    "llm_summary": "可视化界面支持LLM部署调优及基于ComfyUI的生成任务",
+    "llm_tags": [
+      "LLM运维",
+      "可视化",
+      "模型生成"
+    ]
+  },
+  {
+    "id": "e9b5b3be5d7b",
+    "title": "Astra turned a game ad video into a playable game in less than 30 minutes",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1w85dqz/astra_turned_a_game_ad_video_into_a_playable_game/\"> <img alt=\"Astra turned a game ad video into a playable game in less",
+    "url": "https://www.reddit.com/r/singularity/comments/1w85dqz/astra_turned_a_game_ad_video_into_a_playable_game/",
+    "source": "r/singularity",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-05T16:31:51+00:00",
+    "frontier": 75,
+    "signal": 45,
+    "score": 63,
+    "llm_summary": "Astra将游戏广告视频转化为可玩游戏，用时不到30分钟。",
+    "llm_tags": [
+      "视频生成",
+      "游戏开发",
+      "AI应用"
+    ]
+  },
+  {
+    "id": "4ebc1d3a769f",
+    "title": "AI handles incidents, engineers lose touch with their systems",
+    "summary": "HN 热度: 368 点赞, 324 评论（外链帖无正文）",
+    "url": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-05T07:52:50+00:00",
+    "points": 368,
+    "num_comments": 324,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 368赞 324评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "d875031a1a02",
     "title": "GPT-6 Astra in code review: Gains, privacy, and cost",
     "summary": "HN 热度: 66 点赞, 58 评论（外链帖无正文）",
@@ -74,6 +151,24 @@
     "signal": 71,
     "score": 71,
     "llm_summary": "🔥 HN 143赞 74评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "e2b395074db6",
+    "title": "Can AI design circuit boards yet?",
+    "summary": "HN 热度: 388 点赞, 209 评论（外链帖无正文）",
+    "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-04T19:48:29+00:00",
+    "points": 388,
+    "num_comments": 209,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 388赞 209评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
     ]
@@ -2149,45 +2244,6 @@
       "可观测性",
       "机器学习",
       "Transformers"
-    ]
-  },
-  {
-    "id": "ef2072e95d23",
-    "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
-    "summary": "HN 热度: 423 点赞, 107 评论（外链帖无正文）",
-    "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-29T17:19:47+00:00",
-    "points": 423,
-    "num_comments": 107,
-    "frontier": 76,
-    "signal": 76,
-    "score": 76,
-    "llm_summary": "🔥 HN 423赞 107评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "a44058a6e76a",
-    "title": "usedotai/dot-reflex ⭐97",
-    "summary": "Open-source agent execution-recovery controller for coding and tool-using AI agents.",
-    "url": "https://github.com/usedotai/dot-reflex",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-29T16:24:03.363253+00:00",
-    "created_at": "2026-08-28T14:00:16Z",
-    "stars": 97,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 45,
-    "score": 51,
-    "llm_summary": "开源AI代理执行恢复控制器，用于编码和工具调用场景",
-    "llm_tags": [
-      "AI智能体",
-      "执行恢复",
-      "开源工具"
     ]
   }
 ]
