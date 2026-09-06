@@ -1,5 +1,45 @@
 [
   {
+    "id": "e936ef0cf518",
+    "title": "fitchmultz/pi-posthorse ⭐212",
+    "summary": "Posthorse: fresh context, same journey. Native no-summary context windows for the fitchmultz/pi fork of the Pi coding agent, with rollover tools, durable notes, and history recovery.",
+    "url": "https://github.com/fitchmultz/pi-posthorse",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-06T15:07:56.921197+00:00",
+    "created_at": "2026-08-31T15:06:23Z",
+    "stars": 212,
+    "language": "TypeScript",
+    "frontier": 77,
+    "signal": 77,
+    "score": 77,
+    "llm_summary": "⭐212 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "2e13a0fb3165",
+    "title": "shtjww/llm-inference-capacity-handbook ⭐100",
+    "summary": "大模型推理案头手册（开源版）：给定 GPU 算力，一个模型能扛多少 QPS？三层模型 × 三面墙 × 排队论 × 开环压测",
+    "url": "https://github.com/shtjww/llm-inference-capacity-handbook",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-06T15:07:56.921197+00:00",
+    "created_at": "2026-09-02T02:41:51Z",
+    "stars": 100,
+    "language": null,
+    "frontier": 45,
+    "signal": 65,
+    "score": 53,
+    "llm_summary": "开源手册讲解GPU约束下大模型推理QPS容量估算方法。",
+    "llm_tags": [
+      "推理优化",
+      "容量规划",
+      "模型部署"
+    ]
+  },
+  {
     "id": "a4b084b24812",
     "title": "vaelkeep/hermes-paper-agent ⭐51",
     "summary": "A nightly newspaper that writes itself: an agent runs the desks, the figures come from code, and it refuses to publish an edition with marks in it.",
@@ -608,6 +648,24 @@
       "大模型",
       "游戏开发",
       "代码生成"
+    ]
+  },
+  {
+    "id": "eb43418c742b",
+    "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
+    "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
+    "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-09-03T12:00:00+00:00",
+    "frontier": 90,
+    "signal": 65,
+    "score": 80,
+    "llm_summary": "GPT-6 Astra 应用于金融文档审查，分钟级处理41份文件",
+    "llm_tags": [
+      "文档审查",
+      "金融AI",
+      "大模型"
     ]
   },
   {
@@ -2128,122 +2186,6 @@
       "情感分析",
       "多语言",
       "Transformer"
-    ]
-  },
-  {
-    "id": "ccc0b61c3664",
-    "title": "Uncensored Multi-Model Releases, LongCat-Flash-Lite-Sparse with MTPs and LSAs, Qwen3.8-27B with MTPs, Qwen3.5-122B-A10B with MTPs, Qwen3-Coder-Next and Laguna-S2.1 with Vision, All Available in GGUF Format! Bonus: Links to my llama.cpp Fork for LongCat-Flash-Lite Support and J-Wash Enhanced Fork!",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w2iqos/uncensored_multimodel_releases/\"> <img alt=\"Uncensored Multi-Model Releases, LongCat-Flash-Lite-Sparse with MTPs and LSAs",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2iqos/uncensored_multimodel_releases/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-30T14:16:07+00:00",
-    "frontier": 72,
-    "signal": 60,
-    "score": 67,
-    "llm_summary": "社区发布多款GGUF格式新模型，含MTP和稀疏注意力特性",
-    "llm_tags": [
-      "多模型",
-      "GGUF",
-      "注意力机制",
-      "本地LLM"
-    ]
-  },
-  {
-    "id": "ee34c5cf12a1",
-    "title": "No AI Fridays",
-    "summary": "HN 热度: 264 点赞, 189 评论（外链帖无正文）",
-    "url": "https://noaifridays.com/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-30T12:31:05+00:00",
-    "points": 264,
-    "num_comments": 189,
-    "frontier": 74,
-    "signal": 74,
-    "score": 74,
-    "llm_summary": "🔥 HN 264赞 189评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "5c04c1134b80",
-    "title": "I fine-tuned a 0.8B local model for dictation cleanup. It matched a hosted frontier model on this narrow task",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w2elkb/i_finetuned_a_08b_local_model_for_dictation/\"> <img alt=\"I fine-tuned a 0.8B local model for dictation cleanup. It matche",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w2elkb/i_finetuned_a_08b_local_model_for_dictation/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-30T11:03:04+00:00",
-    "frontier": 55,
-    "signal": 70,
-    "score": 61,
-    "llm_summary": "微调0.8B本地模型，在口述清理任务上媲美托管前沿模型。",
-    "llm_tags": [
-      "模型微调",
-      "本地部署",
-      "语音处理",
-      "效率优化"
-    ]
-  },
-  {
-    "id": "c4b16d6b8a53",
-    "title": "Smartphone LED detects hidden cameras with AI",
-    "summary": "HN 热度: 261 点赞, 78 评论（外链帖无正文）",
-    "url": "https://www.chosun.com/english/industry-en/2026/08/30/SBFXUIJQYZEARKP5T4FBAY25HQ/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-30T06:52:04+00:00",
-    "points": 261,
-    "num_comments": 78,
-    "frontier": 74,
-    "signal": 74,
-    "score": 74,
-    "llm_summary": "🔥 HN 261赞 78评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "531607a78624",
-    "title": "DDGTESTDEV-IONICS/ollama-gui-simple ⭐150",
-    "summary": "'ollama gui windows' — A minimal local-LLM chat front-end: pick model, chat, switch — nothing else. Free, open community project for Windows.",
-    "url": "https://github.com/DDGTESTDEV-IONICS/ollama-gui-simple",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-30T04:21:51.099095+00:00",
-    "created_at": "2026-08-28T21:15:30Z",
-    "stars": 150,
-    "language": null,
-    "frontier": 45,
-    "signal": 55,
-    "score": 49,
-    "llm_summary": "一个极简的Windows本地大模型聊天界面，支持模型切换。",
-    "llm_tags": [
-      "大模型",
-      "GUI",
-      "本地部署"
-    ]
-  },
-  {
-    "id": "1a71e5a03779",
-    "title": "neminov4030034/logfire-trainer-trace ⭐55",
-    "summary": "Logfire ML Training Insights: 2026 AI Observability & Transformers Callback Monitoring",
-    "url": "https://github.com/neminov4030034/logfire-trainer-trace",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-30T04:21:51.099095+00:00",
-    "created_at": "2026-08-25T09:56:38Z",
-    "stars": 55,
-    "language": "HTML",
-    "frontier": 55,
-    "signal": 60,
-    "score": 57,
-    "llm_summary": "Logfire训练追踪工具，结合Transformers回调监控ML训练。",
-    "llm_tags": [
-      "可观测性",
-      "机器学习",
-      "Transformers"
     ]
   }
 ]
