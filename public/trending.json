@@ -1,5 +1,79 @@
 [
   {
+    "id": "a629f155974d",
+    "title": "Unifying ICL, SFT, KL-Regularized RL Through a Bayesian Lens",
+    "summary": "arXiv:2609.05111v1 Announce Type: new  Abstract: Large language models are now trained and evaluated under a diverse set of paradigms: supervised fine-tuning (SFT), few-shot in-context learning (ICL), KL-regularized RLHF/RLVR, on-policy distillation (OPD), and test-time reasoning with search and chain-of-thought. These methods are often discussed as fundamentally different, and recent empirical results--such as the mixed impact of few-shot prompting on RL-tuned reasoning models--can appear puzzling. This note develops a Bayesian perspective that puts these procedures on the same footing. At the core is a two-step template: (i) construct a (generalized) Bayes or Gibbs posterior q* over outputs or actions given a context, using a prior/reference model and a utility signal (log-likelihood, re",
+    "url": "https://arxiv.org/abs/2609.05111",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-07T04:00:00+00:00",
+    "frontier": 80,
+    "signal": 40,
+    "score": 60,
+    "llm_summary": "贝叶斯视角统一LLM多范式训练方法",
+    "llm_tags": [
+      "贝叶斯方法",
+      "对齐理论",
+      "统一框架"
+    ]
+  },
+  {
+    "id": "90198ef011af",
+    "title": "MaxKernel: Agentic Kernel Generation for TPUs",
+    "summary": "arXiv:2609.04523v1 Announce Type: new  Abstract: Designing and authoring high-performance custom kernels for accelerators is a complex task that requires deep hardware-level expertise. Large Language Models (LLM) can be leveraged together with real-time compiler feedback to build agentic systems for kernel generation. In this work, we present MaxKernel, a multi-agent system that implements three distinct paradigms for TPU kernel development: (1) a Human-in-the-Loop (HITL) agent for collaborative, step-by-step design; (2) an Autonomous (Auto) agent that executes a fully automated, metric/trace-driven optimization loop; and (3) a Graph-Based Autonomous Search that scales the Auto agent for global exploration of the design space. All three paradigms leverage a shared pool of specialized sub-a",
+    "url": "https://arxiv.org/abs/2609.04523",
+    "source": "ArXiv cs.AI",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-07T04:00:00+00:00",
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "多智能体LLM系统自动生成TPU高性能自定义内核",
+    "llm_tags": [
+      "🔧 已开源",
+      "TPU内核",
+      "多智能体",
+      "代码生成"
+    ]
+  },
+  {
+    "id": "359f7fb32cf9",
+    "title": "Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs",
+    "summary": "arXiv:2609.04753v1 Announce Type: new  Abstract: Reasoning in large language models unfolds through diverse functional operations, such as problem formulation, goal decomposition, and deduction. Although these operations are explicitly distinguished in text, little is known about how they are geometrically organized in representation spaces. To this end, we investigate whether distinct reasoning operations exhibit corresponding geometric structure in hidden representations. We find that operations are separable in held-out representations, with separability peaking in middle layers, and verify that this structure is not explained by lexical or positional confounds. Across layers, token-wise operation-alignment becomes more distributed over spans, while identical surface tokens are represen",
+    "url": "https://arxiv.org/abs/2609.04753",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-07T04:00:00+00:00",
+    "frontier": 72,
+    "signal": 78,
+    "score": 75,
+    "llm_summary": "探究思维链推理操作在表示空间中的几何结构，促进LLM内部机制理解。",
+    "llm_tags": [
+      "🔧 已开源",
+      "机制解释",
+      "思维链",
+      "表示空间"
+    ]
+  },
+  {
+    "id": "1d4710aa4f24",
+    "title": "Abstraction Agent",
+    "summary": "arXiv:2609.04303v1 Announce Type: cross  Abstract: Information abstraction, which groups strategically similar private states into a tractable number of buckets, is essential for scaling game-solving algorithms to large imperfect-information games. Constructing effective abstractions, however, has traditionally required domain-specific evaluators such as hand-strength calculators or equity estimators, which demand expert knowledge and engineering effort and are unavailable for most less-studied games. We propose the Abstraction Agent, a zero-shot pipeline that uses a large language model (LLM) to discover continuous strategic features from a natural-language game description, score private states on these features, and cluster them into abstraction buckets, without any game-specific evalua",
+    "url": "https://arxiv.org/abs/2609.04303",
+    "source": "ArXiv cs.CL",
+    "source_type": "academic_paper",
+    "timestamp": "2026-09-07T04:00:00+00:00",
+    "frontier": 68,
+    "signal": 75,
+    "score": 72,
+    "llm_summary": "提出自动信息抽象代理，免领域知识创建博弈抽象",
+    "llm_tags": [
+      "博弈论",
+      "信息抽象",
+      "🔧 已开源"
+    ]
+  },
+  {
     "id": "ab6d5c19e8bc",
     "title": "zeroa234/ryza-ai-revive ⭐61",
     "summary": "Ryza AI companion. Bring your own LLM/TTS. 莱莎 AI 陪伴，自填大模型与语音。",
@@ -101,6 +175,23 @@
     ]
   },
   {
+    "id": "77382015e800",
+    "title": "Research acceleration: The view inside OpenAI",
+    "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-09-06T08:00:00+00:00",
+    "frontier": 70,
+    "signal": 65,
+    "score": 68,
+    "llm_summary": "OpenAI披露内部编码智能体使用数据及对研究加速的影响",
+    "llm_tags": [
+      "AI智能体",
+      "研究效率"
+    ]
+  },
+  {
     "id": "a4b084b24812",
     "title": "vaelkeep/hermes-paper-agent ⭐51",
     "summary": "A nightly newspaper that writes itself: an agent runs the desks, the figures come from code, and it refuses to publish an edition with marks in it.",
@@ -139,6 +230,24 @@
       "LLM运维",
       "可视化",
       "模型生成"
+    ]
+  },
+  {
+    "id": "75528836dcac",
+    "title": "LLMs as a Cognitive Virus",
+    "summary": "HN 热度: 391 点赞, 251 评论（外链帖无正文）",
+    "url": "https://arxiv.org/abs/2609.03344",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-05T20:02:35+00:00",
+    "points": 391,
+    "num_comments": 251,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 391赞 251评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
     ]
   },
   {
@@ -1940,271 +2049,6 @@
       "基准测试",
       "循环工程",
       "运行时控制"
-    ]
-  },
-  {
-    "id": "01d459d5e485",
-    "title": "Introducing Solaris our first Interface World Model | Runway",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1w3jq0t/introducing_solaris_our_first_interface_world/\"> <img alt=\"Introducing Solaris our first Interface World Model | Runway\"",
-    "url": "https://www.reddit.com/r/singularity/comments/1w3jq0t/introducing_solaris_our_first_interface_world/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-31T16:59:07+00:00",
-    "frontier": 88,
-    "signal": 45,
-    "score": 71,
-    "llm_summary": "Runway发布首个界面世界模型Solaris，探索具身交互。",
-    "llm_tags": [
-      "世界模型",
-      "视频生成",
-      "交互AI"
-    ]
-  },
-  {
-    "id": "b09761f1d5a9",
-    "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
-    "summary": "HN 热度: 336 点赞, 382 评论（外链帖无正文）",
-    "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-08-31T12:41:22+00:00",
-    "points": 336,
-    "num_comments": 382,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 336赞 382评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "9782f01e5028",
-    "title": "Vuk97/forward-implementation-first ⭐139",
-    "summary": "Stop your coding agent from stalling real work on self-invented bookkeeping - receipts, hashes, locks, certification rituals. Ship first, then verify. Skill for Claude Code, Codex, and other agents.",
-    "url": "https://github.com/Vuk97/forward-implementation-first",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-31T04:26:50.633867+00:00",
-    "created_at": "2026-08-29T23:16:12Z",
-    "stars": 139,
-    "language": "Shell",
-    "frontier": 50,
-    "signal": 60,
-    "score": 54,
-    "llm_summary": "指导AI编程代理先交付后验证，避免自我发明琐碎流程。",
-    "llm_tags": [
-      "AI代理",
-      "编码实践",
-      "流程优化"
-    ]
-  },
-  {
-    "id": "9602105b42c1",
-    "title": "useagenthq/useagent ⭐129",
-    "summary": "Hand off the work. Get back the result. The open-source AI coworker for your team: agents with their own cloud computer, your tools and context, handing back finished work - websites, decks, spreadshe",
-    "url": "https://github.com/useagenthq/useagent",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-31T04:26:50.633867+00:00",
-    "created_at": "2026-08-29T21:14:31Z",
-    "stars": 129,
-    "language": "TypeScript",
-    "frontier": 72,
-    "signal": 55,
-    "score": 65,
-    "llm_summary": "开源AI同事代理，拥有云电脑和工具链，可交付完整工作成果。",
-    "llm_tags": [
-      "AI代理",
-      "开源",
-      "云电脑"
-    ]
-  },
-  {
-    "id": "ddc8984f6fe1",
-    "title": "tosinonye7-ui/SummaraMind-Transformer-Suite ⭐55",
-    "summary": "Advanced Transformer Summarization Suite: Abstract & Extractive AI Models 2026",
-    "url": "https://github.com/tosinonye7-ui/SummaraMind-Transformer-Suite",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-31T04:26:50.633867+00:00",
-    "created_at": "2026-08-25T09:48:39Z",
-    "stars": 55,
-    "language": "HTML",
-    "frontier": 55,
-    "signal": 45,
-    "score": 51,
-    "llm_summary": "开源Transformer摘要套件，支持抽象式与抽取式模型",
-    "llm_tags": [
-      "文本摘要",
-      "Transformer",
-      "开源工具"
-    ]
-  },
-  {
-    "id": "0d65856c6468",
-    "title": "SciReC: Diagnostic Evaluation of Multimodal, Multi-Turn Relational Reasoning with Adaptive Interaction",
-    "summary": "arXiv:2608.27461v1 Announce Type: new  Abstract: Relational reasoning requires the process of perceptual understanding, comparing, and integrating the underlying relationships between concepts. This ability consists of multiple categories, such as analogical, structural, and cause-effect, each capturing a different aspect of higher-order understanding. To examine the performance of multimodal large language models (MLLM) on these relational inference tasks, we developed SciReC, a model-adaptive multimodal academic dialog benchmark. As the relational reasoning process involves multiple representations and various factors (visual understanding, exhibiting knowledge, and memory recall), we propose DMRA, a deficit-based diagnostic framework that quantifies the contribution of these components ",
-    "url": "https://arxiv.org/abs/2608.27461",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-31T04:00:00+00:00",
-    "frontier": 68,
-    "signal": 78,
-    "score": 73,
-    "llm_summary": "提出多模态多轮关系推理诊断基准SciReC，支持模型自适应交互评估",
-    "llm_tags": [
-      "多模态推理",
-      "基准测评",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "e64a07008996",
-    "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
-    "summary": "arXiv:2608.28476v1 Announce Type: new  Abstract: Long-horizon agentic tasks require large language models (LLMs) to iteratively retrieve, integrate, and maintain dispersed information across multi-turn interactions, but preserving all interaction histories leads to a continuously growing working context. Recent proactive context management methods allow models to edit their own working context with specialized tools, yet they still face three key limitations: (1) a limited toolset restricted to search, deletion, and summarization, with no support for global planning, long-term memory, and adaptive compression; (2) inefficient exploration that treats context management actions uniformly despite their heterogeneous impacts on final outcomes; and (3) coarse-grained credit assignment that assi",
-    "url": "https://arxiv.org/abs/2608.28476",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-31T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 78,
-    "score": 76,
-    "llm_summary": "用细粒度强化学习教授智能代理主动管理工作上下文",
-    "llm_tags": [
-      "🔧 已开源",
-      "强化学习",
-      "上下文管理",
-      "智能代理"
-    ]
-  },
-  {
-    "id": "f4fae805534b",
-    "title": "OpenStamp: A Watermark for Open-Source Language Models",
-    "summary": "arXiv:2608.27899v1 Announce Type: new  Abstract: With the growing prevalence of large language model (LLM) generated content, watermarking is considered a promising approach for attributing text to LLMs and distinguishing it from human-written content. A prominent class of techniques embeds subtle but detectable signals in generated text by modifying token sampling probabilities. However, such methods are unsuitable for open-source models, where users have white-box access and can easily disable watermarking during inference. In this work, we introduce OpenStamp, a watermarking technique that encodes the watermarking logic directly into the model weights by modifying only the final projection, or unembedding, layer. Through experiments across two models, we show that OpenStamp achieves sup",
-    "url": "https://arxiv.org/abs/2608.27899",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-31T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 75,
-    "score": 72,
-    "llm_summary": "提出针对开源语言模型的水印方法，解决白盒访问下难以保护的问题",
-    "llm_tags": [
-      "🔧 已开源",
-      "水印技术",
-      "开源模型"
-    ]
-  },
-  {
-    "id": "6143709c22a0",
-    "title": "CamoDocs: A Poisoning Attack Against Retrieval-Augmented Language Models Using Camouflaged Documents",
-    "summary": "arXiv:2608.28389v1 Announce Type: cross  Abstract: Retrieval-augmented generation (RAG) augments LLMs with external documents, but public or user-editable sources expose RAG systems to data poisoning: attackers can inject malicious documents to steer outputs toward targeted answers. Existing poisoning attacks often rely on query inclusion, inserting the target query into poisoned documents to improve retrieval; however, this creates lexical and embedding-space artifacts that make them easy to filter. We propose CamoDocs, a poisoning attack that avoids direct query inclusion by camouflaging adversarial documents among benign content. CamoDocs chunks synthesized benign and adversarial drafts, replaces selected tokens in benign chunks with dispersion tokens that spread poisoned-document embed",
-    "url": "https://arxiv.org/abs/2608.28389",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-31T04:00:00+00:00",
-    "frontier": 76,
-    "signal": 78,
-    "score": 77,
-    "llm_summary": "提出伪装文档投毒攻击，规避RAG系统检测，威胁检索增强生成安全。",
-    "llm_tags": [
-      "RAG安全",
-      "数据投毒",
-      "对抗攻击",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "1f31f590f8f0",
-    "title": "AI Writers Have a Consistent Stylometric Footprint, but AI Editors Do Not",
-    "summary": "arXiv:2608.27855v1 Announce Type: new  Abstract: Text generated by large language models (LLMs) has been shown to be stylometrically distinct from human-written text \\citep{andreDetectingAIAuthorship2023, shahDetectingUnmaskingAIGenerated2023, oparaStyloAIDistinguishingAIGenerated2024, soto2024fewshot, liLinguisticDifferencesAI2025, selviogluFeatureExtractionAnalysis2025}. But LLMs are increasingly used not only to generate text but also to edit human writing, and it is unclear whether the two leave the same trace. We show that AI generation leaves a consistent ``stylometric footprint'': a small subset of features, primarily entropy and lexical diversity, consistently separates AI-generated text from human writing across 8 LLMs and 5 domains, while the remaining features depend heavily on ",
-    "url": "https://arxiv.org/abs/2608.27855",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-31T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "发现AI写作风格稳定而AI编辑风格不一致，影响文本检测",
-    "llm_tags": [
-      "风格计量",
-      "AI检测",
-      "大语言模型"
-    ]
-  },
-  {
-    "id": "09062d0e83b8",
-    "title": "SMRC: Aligning Large Language Models with Student Reasoning for Mathematical Error Correction",
-    "summary": "arXiv:2511.14684v2 Announce Type: replace  Abstract: Large language models (LLMs) often make reasoning errors when solving mathematical problems, and how to automatically detect and correct these errors has become an important research direction. However, existing approaches \\textit{mainly focus on self-correction within the model}, which falls short of the \"teacher-style\" correction required in educational settings, \\textit{i.e.}, systematically guiding and revising a student' s problem-solving process. To address this gap, we propose \\texttt{SMRC} (\\textit{\\underline{S}tudent \\underline{M}athematical \\underline{R}easoning \\underline{C}orrection}), a novel method that aligns LLMs with student reasoning. Specifically, \\texttt{SMRC} formulates student reasoning as a multi-step sequential de",
-    "url": "https://arxiv.org/abs/2511.14684",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-31T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出SMRC方法，用学生推理对齐LLM进行数学错误纠正。",
-    "llm_tags": [
-      "🔧 已开源",
-      "数学推理",
-      "错误纠正"
-    ]
-  },
-  {
-    "id": "0c44a80ebe07",
-    "title": "Blind Men and the Elephant: Probing the Epistemic Myopia of LLMs under Long-Tail Divergent Knowledge",
-    "summary": "arXiv:2608.28478v1 Announce Type: new  Abstract: Factual question answering (QA) typically assumes a single canonical answer, obscuring whether large language models (LLMs) retain divergent accounts of long-tail facts. To address this gap, we introduce ElephantBench, a closed-book knowledge probe comprising 1,094 questions generated through an auditable graph-based pipeline. The pipeline retrieves related documents from a low-exposure web corpus, identifies naturally occurring disagreements, and converts them into multi-account QA records. Each answer is verified against the originating documents and authoritative public web sources and is then reviewed by human annotators. Across 32 models, even the strongest model recovers both accounts on only 52.4% of questions, while on nearly all rem",
-    "url": "https://arxiv.org/abs/2608.28478",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-31T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "构建ElephantBench基准，探测LLM对长尾分歧知识的认知缺陷",
-    "llm_tags": [
-      "基准测试",
-      "长尾知识",
-      "LLM评测",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "4d459edee356",
-    "title": "OceanGym: A Benchmark Environment for Underwater Embodied Agents",
-    "summary": "arXiv:2509.26536v3 Announce Type: replace  Abstract: We introduce OceanGym, the first comprehensive benchmark for ocean underwater embodied agents, designed to advance AI in one of the most demanding real-world environments. Unlike terrestrial or aerial domains, underwater settings present extreme perceptual and decision-making challenges, including low visibility, dynamic ocean currents, making effective agent deployment exceptionally difficult. OceanGym encompasses eight realistic task domains and a unified agent framework driven by Multi-modal Large Language Models (MLLMs), which integrates perception, memory, and sequential decision-making. Agents are required to comprehend optical and sonar data, autonomously explore complex environments, and accomplish long-horizon objectives under t",
-    "url": "https://arxiv.org/abs/2509.26536",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-31T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 80,
-    "score": 78,
-    "llm_summary": "首个面向水下具身智能体的综合基准环境，涵盖八类真实任务域。",
-    "llm_tags": [
-      "水下机器人",
-      "具身智能",
-      "基准测试",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "3d2763675f91",
-    "title": "Cognitive Chain-of-Thought (CoCoT): Structured Multimodal Reasoning about Social Situations",
-    "summary": "arXiv:2507.20409v3 Announce Type: replace  Abstract: Chain-of-Thought (CoT) prompting helps models think step by step. But naive CoT breaks down in visually grounded social tasks, where models must perceive, understand, and judge all at once; bridging perception with norm-grounded reasoning. Recent work has introduced structured reasoning for multi-turn agent planning and visual QA, decomposing tasks into sequential sub-goals. To extend this to single-shot multimodal social reasoning, we introduce Cognitive Chain-of-Thought (CoCoT), a reasoning framework that structures vision-language-model (VLM) reasoning through three cognitively inspired stages: Perception (extract grounded facts), Situation (infer situations), and Norm (applying social norms). Evaluation across multiple distinct tasks",
-    "url": "https://arxiv.org/abs/2507.20409",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-08-31T04:00:00+00:00",
-    "frontier": 68,
-    "signal": 62,
-    "score": 65,
-    "llm_summary": "提出结构化多模态推理方法，改善社交情境理解与判断。",
-    "llm_tags": [
-      "多模态推理",
-      "思维链",
-      "社交智能"
     ]
   }
 ]
