@@ -1,5 +1,67 @@
 [
   {
+    "id": "2fda823000f9",
+    "title": "TripoGrowthLab/awesome-astra-prompts ⭐56",
+    "summary": "Curated GPT-6 Astra prompts and 3D examples for games, Blender scenes and interactive worlds. 14 languages, previews and source links. Updated twice daily. Curated by Tripo.",
+    "url": "https://github.com/TripoGrowthLab/awesome-astra-prompts",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-08T03:38:41.564648+00:00",
+    "created_at": "2026-09-05T19:33:25Z",
+    "stars": 56,
+    "language": "JavaScript",
+    "frontier": 55,
+    "signal": 72,
+    "score": 62,
+    "llm_summary": "GPT-6 Astra提示词与3D示例的精选开源合集",
+    "llm_tags": [
+      "提示词",
+      "3D生成",
+      "开源资源"
+    ]
+  },
+  {
+    "id": "192593464a91",
+    "title": "MartinDelophy/awesome-gpt-6-astra ⭐47",
+    "summary": "A curated collection of fun games built with GPT-6 Astra, with source code, demos, and prompts. | GPT-6 Astra 游戏精选",
+    "url": "https://github.com/MartinDelophy/awesome-gpt-6-astra",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-08T03:38:41.564648+00:00",
+    "created_at": "2026-09-05T08:01:11Z",
+    "stars": 47,
+    "language": "JavaScript",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "收录基于GPT-6 Astra构建的趣味游戏，含源码演示",
+    "llm_tags": [
+      "GPT游戏",
+      "应用合集"
+    ]
+  },
+  {
+    "id": "f66da5614641",
+    "title": "ifm-ai/uno ⭐43",
+    "summary": "Unlocking Lossless Speedups in LLMs via Discrete Diffusion",
+    "url": "https://github.com/ifm-ai/uno",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-08T03:38:41.564648+00:00",
+    "created_at": "2026-09-03T06:54:48Z",
+    "stars": 43,
+    "language": "Python",
+    "frontier": 78,
+    "signal": 85,
+    "score": 81,
+    "llm_summary": "开源项目利用离散扩散实现LLM无损加速",
+    "llm_tags": [
+      "扩散模型",
+      "大语言模型",
+      "推理加速"
+    ]
+  },
+  {
     "id": "a629f155974d",
     "title": "Unifying ICL, SFT, KL-Regularized RL Through a Bayesian Lens",
     "summary": "arXiv:2609.05111v1 Announce Type: new  Abstract: Large language models are now trained and evaluated under a diverse set of paradigms: supervised fine-tuning (SFT), few-shot in-context learning (ICL), KL-regularized RLHF/RLVR, on-policy distillation (OPD), and test-time reasoning with search and chain-of-thought. These methods are often discussed as fundamentally different, and recent empirical results--such as the mixed impact of few-shot prompting on RL-tuned reasoning models--can appear puzzling. This note develops a Bayesian perspective that puts these procedures on the same footing. At the core is a two-step template: (i) construct a (generalized) Bayes or Gibbs posterior q* over outputs or actions given a context, using a prior/reference model and a utility signal (log-likelihood, re",
@@ -1988,67 +2050,6 @@
       "🔧 已开源",
       "多模态",
       "鲁棒性"
-    ]
-  },
-  {
-    "id": "f10addecc73b",
-    "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
-    "summary": "",
-    "url": "https://huggingface.co/blog/webgpu-kernels",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-09-01T00:00:00+00:00",
-    "frontier": 72,
-    "signal": 65,
-    "score": 69,
-    "llm_summary": "Hugging Face发布200多个WebGPU内核，加速本地AI推理。",
-    "llm_tags": [
-      "WebGPU",
-      "本地AI",
-      "内核优化"
-    ]
-  },
-  {
-    "id": "ba7e4ee8139f",
-    "title": "baidu-baige/LoongSage ⭐76",
-    "summary": "A production-grade, high-efficiency Agentic RL framework for frontier LLMs with validated recipes.",
-    "url": "https://github.com/baidu-baige/LoongSage",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-31T18:55:49.270542+00:00",
-    "created_at": "2026-08-28T07:22:30Z",
-    "stars": 76,
-    "language": "Python",
-    "frontier": 75,
-    "signal": 55,
-    "score": 67,
-    "llm_summary": "百度开源面向前沿大模型的高效智能体强化学习框架",
-    "llm_tags": [
-      "强化学习",
-      "智能体",
-      "LLM",
-      "框架"
-    ]
-  },
-  {
-    "id": "b00bcf7b87f6",
-    "title": "AMAP-ML/LoopArena ⭐69",
-    "summary": "Benchmarking models as runtime Controllers for Loop Engineering",
-    "url": "https://github.com/AMAP-ML/LoopArena",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-08-31T18:55:49.270542+00:00",
-    "created_at": "2026-08-31T02:47:02Z",
-    "stars": 69,
-    "language": "Python",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "开源基准测试，评估模型作为循环工程运行时控制器。",
-    "llm_tags": [
-      "基准测试",
-      "循环工程",
-      "运行时控制"
     ]
   }
 ]
