@@ -1,5 +1,80 @@
 [
   {
+    "id": "e07e08886b9e",
+    "title": "hku-sail/Real2Sim_GPT6_ASTRA ⭐54",
+    "summary": "",
+    "url": "https://github.com/hku-sail/Real2Sim_GPT6_ASTRA",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-08T16:14:57.459481+00:00",
+    "created_at": "2026-09-07T01:49:19Z",
+    "stars": 54,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 45,
+    "score": 51,
+    "llm_summary": "港大开源项目，声称结合GPT-6实现真实到仿真转换",
+    "llm_tags": [
+      "机器人",
+      "仿真",
+      "开源"
+    ]
+  },
+  {
+    "id": "cba97a68c81f",
+    "title": "LibreOffice breaks download records after declaring it has no AI features",
+    "summary": "HN 热度: 429 点赞, 135 评论（外链帖无正文）",
+    "url": "https://manualdousuario.net/en/libreoffice-download-record-no-ai/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-08T14:05:57+00:00",
+    "points": 429,
+    "num_comments": 135,
+    "frontier": 76,
+    "signal": 76,
+    "score": 76,
+    "llm_summary": "🔥 HN 429赞 135评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "a660a0908783",
+    "title": "This founder is teaching chips how to recycle (their energy)",
+    "summary": "Throughout the history of the computer chip, engineers have treated waste heat as an inevitable cost of a calculation. Hannah Earley, however, thinks it’s a design choice. Earley, 31, is cofounder and chief technology officer of Vaire Computing, a startup building chips that recycle energy usually thrown away as heat—a strategy known as reversible computing.&#8230;",
+    "url": "https://www.technologyreview.com/2026/09/08/1142079/hannah-earley-computer-chips-recycle-energy/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-09-08T10:36:00+00:00",
+    "frontier": 65,
+    "signal": 55,
+    "score": 61,
+    "llm_summary": "初创公司Vaire打造可回收能量的芯片，将废热视为设计选择。",
+    "llm_tags": [
+      "芯片设计",
+      "能量回收",
+      "初创公司"
+    ]
+  },
+  {
+    "id": "c726f2910b7f",
+    "title": "This AI entrepreneur is developing agents that can plan ahead for the unexpected",
+    "summary": "Danijar Hafner’s office in San Francisco’s SoMa district sits mostly empty. His brand-new startup is still in stealth mode and doesn’t even have its name on the door. On the day I visit, there’s only one other person there, and little in the way of furniture. But what it lacks in decor, it makes up&#8230;",
+    "url": "https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/",
+    "source": "MIT Tech Review",
+    "source_type": "tech_media",
+    "timestamp": "2026-09-08T10:34:00+00:00",
+    "frontier": 60,
+    "signal": 60,
+    "score": 60,
+    "llm_summary": "专访AI创业者Danijar Hafner，介绍其打造能预应意外的前瞻型智能体",
+    "llm_tags": [
+      "智能体",
+      "规划",
+      "世界模型"
+    ]
+  },
+  {
     "id": "2fda823000f9",
     "title": "TripoGrowthLab/awesome-astra-prompts ⭐56",
     "summary": "Curated GPT-6 Astra prompts and 3D examples for games, Blender scenes and interactive worlds. 14 languages, previews and source links. Updated twice daily. Curated by Tripo.",
@@ -59,6 +134,24 @@
       "扩散模型",
       "大语言模型",
       "推理加速"
+    ]
+  },
+  {
+    "id": "ae31e2122620",
+    "title": "Generating Bad Apple autonomously from a single initial state using a tiny recurrent dynamical system (417k params) [P]",
+    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1wa8rub/generating_bad_apple_autonomously_from_a_single/\"> <img alt=\"Generating Bad Apple autonomously from a single initial",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1wa8rub/generating_bad_apple_autonomously_from_a_single/",
+    "source": "r/MachineLearning",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-08T00:05:37+00:00",
+    "frontier": 65,
+    "signal": 75,
+    "score": 69,
+    "llm_summary": "用417k参数递归动态系统从单状态自动生成Bad Apple动画",
+    "llm_tags": [
+      "递归动态系统",
+      "序列生成",
+      "小型模型"
     ]
   },
   {
@@ -1658,398 +1751,6 @@
       "代码检索",
       "向量检索",
       "自托管"
-    ]
-  },
-  {
-    "id": "658aa947424e",
-    "title": "Dwarf Fortress' creator says the industry's in shambles over AI",
-    "summary": "HN 热度: 233 点赞, 241 评论（外链帖无正文）",
-    "url": "https://www.pcgamer.com/gaming-industry/dwarf-fortress-creator-says-the-industrys-in-shambles-over-ai-and-layoff-happy-ceos-everyone-i-know-their-bosses-are-slowly-getting-psychosis/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-01T15:53:42+00:00",
-    "points": 233,
-    "num_comments": 241,
-    "frontier": 73,
-    "signal": 73,
-    "score": 73,
-    "llm_summary": "🔥 HN 233赞 241评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "af222dfb1e98",
-    "title": "Path to Astra: critical capabilities and frontier safeguards",
-    "summary": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
-    "url": "https://openai.com/index/path-to-astra",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-09-01T13:00:00+00:00",
-    "frontier": 95,
-    "signal": 65,
-    "score": 83,
-    "llm_summary": "OpenAI新模型Astra首次达到关键网络安全能力阈值并增强保障发布。",
-    "llm_tags": [
-      "AI安全",
-      "网络安全",
-      "模型发布",
-      "前沿模型"
-    ]
-  },
-  {
-    "id": "6ce3205ec5b6",
-    "title": "We released TontaubeV1, a character-level TTS model for long-form generation [P]",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1w4afjn/we_released_tontaubev1_a_characterlevel_tts_model/\"> <img alt=\"We released TontaubeV1, a character-level TTS model f",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1w4afjn/we_released_tontaubev1_a_characterlevel_tts_model/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-01T12:23:32+00:00",
-    "frontier": 75,
-    "signal": 55,
-    "score": 67,
-    "llm_summary": "发布字符级长文本语音合成模型TontaubeV1",
-    "llm_tags": [
-      "语音合成",
-      "字符级",
-      "长文本生成"
-    ]
-  },
-  {
-    "id": "198616d33ca8",
-    "title": "New Gemma models on arena ai",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w47nif/new_gemma_models_on_arena_ai/\"> <img alt=\"New Gemma models on arena ai\" src=\"https://preview.redd.it/via5e88evvmh1.png?wi",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w47nif/new_gemma_models_on_arena_ai/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-01T10:11:06+00:00",
-    "frontier": 70,
-    "signal": 50,
-    "score": 62,
-    "llm_summary": "Gemma 新模型出现在竞技场，社区开始讨论评测。",
-    "llm_tags": [
-      "Gemma",
-      "开源模型",
-      "模型评测"
-    ]
-  },
-  {
-    "id": "a7532bde14ed",
-    "title": "I trained a small transformer in 1.5hrs and it beats many LLMs",
-    "summary": "HN 热度: 589 点赞, 154 评论（外链帖无正文）",
-    "url": "https://mvakde.github.io/blog/44-on-arc-1/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-01T09:52:45+00:00",
-    "points": 589,
-    "num_comments": 154,
-    "frontier": 77,
-    "signal": 77,
-    "score": 77,
-    "llm_summary": "🔥 HN 589赞 154评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "17f9946f1d78",
-    "title": "ExLlamav3 Recent Updates : CPU offload, GLM-5.3-FLASH, Qwen3.8-Flash, SC Quants ++",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1w44jnv/exllamav3_recent_updates_cpu_offload_glm53flash/\"> <img alt=\"ExLlamav3 Recent Updates : CPU offload, GLM-5.3-FLASH, Qwen3",
-    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w44jnv/exllamav3_recent_updates_cpu_offload_glm53flash/",
-    "source": "r/LocalLLaMA",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-01T07:14:40+00:00",
-    "frontier": 62,
-    "signal": 68,
-    "score": 64,
-    "llm_summary": "ExLlamav3更新，新增CPU offload及多模型支持",
-    "llm_tags": [
-      "LLM推理",
-      "量化加速",
-      "模型适配"
-    ]
-  },
-  {
-    "id": "fa1655ba2837",
-    "title": "AI Can Make You Suck Faster Too",
-    "summary": "HN 热度: 181 点赞, 167 评论（外链帖无正文）",
-    "url": "https://www.hermit-tech.com/blog/ai-can-make-you-suck-faster-too",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-01T05:32:56+00:00",
-    "points": 181,
-    "num_comments": 167,
-    "frontier": 72,
-    "signal": 72,
-    "score": 72,
-    "llm_summary": "🔥 HN 181赞 167评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "75699de749b0",
-    "title": "gavishap/omnia-vault ⭐47",
-    "summary": "Omnia Vault - the all-in-one project brain: an Obsidian LLM wiki, Graphify code graphs, a living plan that triages new videos against itself, and a Claude Code ⇄ Codex relay. Everything your project k",
-    "url": "https://github.com/gavishap/omnia-vault",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-01T04:10:12.190847+00:00",
-    "created_at": "2026-08-26T19:34:54Z",
-    "stars": 47,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 50,
-    "score": 53,
-    "llm_summary": "集成Obsidian LLM、代码图谱和Claude-Codex中继的多合一项目管理工具",
-    "llm_tags": [
-      "LLM集成",
-      "代码图谱",
-      "项目管理"
-    ]
-  },
-  {
-    "id": "299e90158f24",
-    "title": "ashutoshsinghpr7/wikiskill ⭐46",
-    "summary": "WikiSkill (arXiv:2608.27454) for Hermes Agent — self-evolving agent skills via a persistent knowledge wiki. Faithful Algorithm 1 implementation with real agent runs, isolated skill gating, and a docum",
-    "url": "https://github.com/ashutoshsinghpr7/wikiskill",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-01T04:10:12.190847+00:00",
-    "created_at": "2026-08-29T20:44:02Z",
-    "stars": 46,
-    "language": "Python",
-    "frontier": 72,
-    "signal": 58,
-    "score": 66,
-    "llm_summary": "实现WikiSkill自进化Agent技能知识库，支持持续更新",
-    "llm_tags": [
-      "Agent",
-      "知识库",
-      "自进化"
-    ]
-  },
-  {
-    "id": "09e1e4ee4c57",
-    "title": "SHAPE of Chain-of-Thought in Math Reasoning",
-    "summary": "arXiv:2608.28600v1 Announce Type: new  Abstract: Large language models (LLMs) achieve strong performance on mathematical reasoning benchmarks, yet the mathematically meaningful skills underlying their reasoning remain underexplored. We introduce \\texttt{SHAPE}, a framework that analyzes Chain-of-Thought (CoT) trajectories through two lenses developed in mathematics education: (1) semantic spaces: the model's evolving mathematical interpretations of a problem (e.g., algebraic, geometric), and (2) heuristics: the specific mathematical actions taken within those spaces (e.g., simplifying the problem, working backward). We first use \\texttt{SHAPE} to analyze the reasoning patterns of various models. Our findings reveal that the mathematical heuristics employed by a model better explain final a",
-    "url": "https://arxiv.org/abs/2608.28600",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 72,
-    "score": 71,
-    "llm_summary": "提出SHAPE框架分析数学推理链式思考的语义空间",
-    "llm_tags": [
-      "数学推理",
-      "链式思考",
-      "可解释性",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "ecbe40b3ecc8",
-    "title": "EmoLASP: Emotion Recognition with Language Models and Answer Set Programming",
-    "summary": "arXiv:2608.29035v1 Announce Type: new  Abstract: Emotion recognition in conversations is increasingly tackled with language models, but these models can be unstable and expensive to fine-tune or to prompt with long dialogue histories. We propose EmoLASP, a framework that combines a language model with declarative reasoning via Answer Set Programming (ASP) to predict VAD scores (Valence-Arousal-Dominance) in conversations. Experiments on a widely used benchmark dataset (IEMOCAP) across six open-source LLMs (3B-120B) and two PLMs (BERT, RoBERTa) show that EmoLASP improves prediction performance compared to using the language model alone, even when the LLMs/PLMs are given no dialogue history in their prompts or input vectors. The gains are largest for prompt-only LLMs, which EmoLASP uses with",
-    "url": "https://arxiv.org/abs/2608.29035",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 75,
-    "score": 74,
-    "llm_summary": "结合语言模型与答案集编程预测对话情感VAD分数，开源框架。",
-    "llm_tags": [
-      "情感识别",
-      "逻辑推理",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "93735d874737",
-    "title": "MMPCBench: Benchmarking Multimodal Large Language Models on Proactive Critique of Flawed Inputs",
-    "summary": "arXiv:2608.29286v1 Announce Type: new  Abstract: As Multimodal Large Language Models (MLLMs) evolve into sophisticated interactive assistants, their reliability depends not only on following instructions but also on validating them. We define Proactive Critique as the model's autonomous ability to identify, analyze and fix faulty user inputs without extra prompts. However, evaluations mainly test models under ideal circumstances or simple refusal behaviors, largely ignoring active error processing. To fill this gap, we propose MMPCBench, a comprehensive framework for evaluating MLLMs' proactive critique competence. It features a fine-grained taxonomy of 4 primary error types spanning 12 subcategories, ranging from cross-modal contradictions to missing visual premises. We adopt a hierarchic",
-    "url": "https://arxiv.org/abs/2608.29286",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 80,
-    "score": 76,
-    "llm_summary": "提出多模态大模型主动批评缺陷输入的评测基准，含数据集与评估框架",
-    "llm_tags": [
-      "多模态",
-      "评测基准",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "82607c2eff3c",
-    "title": "GenRubric: Self-Evolving Rubric Generation for Scalable LLM Evaluation",
-    "summary": "arXiv:2608.29856v1 Announce Type: new  Abstract: Large language models are increasingly used as scalable evaluators for open-ended tasks. However, many LLM judges derive query-specific criteria during scoring, leaving the evaluation requirements insufficiently specified and their coverage difficult to audit. Query-specific rubrics make these requirements explicit, but expert-written rubrics are costly to construct, while existing automatic methods typically rely on inference-time refinement or external supervision. We introduce GenRubric, a self-evolving framework that improves rubric generation from unlabeled queries without requiring additional human annotations during self-evolution. Our approach is based on rubric-induced self-consistency: independently sampled rubrics for the same que",
-    "url": "https://arxiv.org/abs/2608.29856",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "提出自我进化规则生成方法，提升LLM评估可扩展性",
-    "llm_tags": [
-      "LLM评估",
-      "自动评分",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "0cc2e1af7d53",
-    "title": "GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon",
-    "summary": "arXiv:2608.28667v1 Announce Type: new  Abstract: The rapid proliferation of Large Language Models (LLMs) has raised concerns about their environmental impact during inference. While Green AI research has focused on datacenter GPUs and embedded platforms, the energy profile of LLM inference on Apple Silicon, with its unified memory architecture, remains unstudied. This paper presents GreenBench, a benchmarking framework that evaluates the energy efficiency, throughput, and carbon footprint of five open-source LLMs (3-9B parameters) across three NLP tasks on an Apple M4 Pro with 48 GB unified memory. Using macOS powermetrics for direct power measurement and Ollama's nanosecond-precision timing, we find that the M4 Pro draws only 0.47 W of CPU+GPU package power during sustained inference, wit",
-    "url": "https://arxiv.org/abs/2608.28667",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 40,
-    "signal": 75,
-    "score": 58,
-    "llm_summary": "在Apple Silicon上基准测试开源LLM推理的能效与碳足迹。",
-    "llm_tags": [
-      "能效基准",
-      "LLM推理",
-      "Apple Silicon",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "199a155d2d82",
-    "title": "Pro-Router: Token-Aware Progressive Model Routing with Adaptive Edge-Cloud Collaboration for Efficient Multimodal LLM Inference",
-    "summary": "arXiv:2608.28726v1 Announce Type: new  Abstract: The remarkable performance of multimodal large language models (MLLMs) comes at the cost of substantial computational overhead, posing significant challenges to real-time deployment and cost effectiveness. Existing model routing approaches either decide from coarse request-level features alone or spend one or several extra language model passes to inspect the generated response, leaving the token-level uncertainty signals that emerge during generation unused. To address these limitations, we propose Pro-Router, a token-aware progressive model routing method with adaptive edge-cloud collaboration for efficient multimodal LLM inference. Pro-Router employs a two-stage progressive decision mechanism. First, a lightweight prompt pre-scorer module",
-    "url": "https://arxiv.org/abs/2608.28726",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 76,
-    "signal": 78,
-    "score": 77,
-    "llm_summary": "提出token级渐进式模型路由，结合边缘云协作优化多模态推理",
-    "llm_tags": [
-      "模型路由",
-      "多模态",
-      "边缘协同",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "2da09394417f",
-    "title": "HiVe: Beyond Static Prompts for Multitask Learning via Hierarchy-based Vertical Mixture-of-Experts",
-    "summary": "arXiv:2608.29790v1 Announce Type: new  Abstract: As large language models (LLMs) continue to scale, parameter-efficient fine-tuning (PEFT) has become a practical alternative to full-parameter adaptation. Prompt tuning is effective, but existing approaches either use flat prompt structures or hierarchical structures with fixed prompt composition, limiting adaptive prompt specialization. To address this limitation, we propose HiVe, a prompt tuning framework that models prompts at multiple levels and enables input-dependent specialization. HiVe constructs a prompt hierarchy by leveraging inter-task relationships during training, and employs a vertical mixture-of-experts (V-MoE) mechanism at inference time to compose prompts up to the level of specialization required for each input. Experiment",
-    "url": "https://arxiv.org/abs/2608.29790",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 62,
-    "score": 67,
-    "llm_summary": "提出分层垂直混合专家提示调优框架，实现自适应多任务学习",
-    "llm_tags": [
-      "提示调优",
-      "多任务学习",
-      "混合专家",
-      "参数高效"
-    ]
-  },
-  {
-    "id": "0750679f2b9f",
-    "title": "Benevolent Bias in Multi-Turn Human-Agent Dialogue",
-    "summary": "arXiv:2608.29206v1 Announce Type: new  Abstract: Bias in human-agent interaction can manifest not only through hostile language but also as benevolent bias, whereby unequal treatment hides behind a warm, positive tone. To make it detectable, we operationalise benevolent bias along two dimensions, tone and treatment, yielding three classes: neutral support, overt bias, and benevolent bias. Building on these definitions, we construct BENEVDIAL, a class-balanced corpus of 362,880 multi-turn support dialogues spanning user and agent demographics, roles, and generators, to support controlled evaluation. We then test two detector families on it: off-the-shelf safety detectors and prompted large language model (LLM) judges. Our results reveal a detection gap: off-the-shelf detectors reliably flag",
-    "url": "https://arxiv.org/abs/2608.29206",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 60,
-    "score": 65,
-    "llm_summary": "构建多轮人机对话语料库，识别善意偏见的分类与检测。",
-    "llm_tags": [
-      "对话系统",
-      "偏见检测",
-      "语料库"
-    ]
-  },
-  {
-    "id": "b4f503f8d033",
-    "title": "RACER: Reinforced Agent Collaboration for Explainable Reasoning on Knowledge Graphs",
-    "summary": "arXiv:2608.29263v1 Announce Type: new  Abstract: Large Language Models (LLMs) often suffer from hallucination and struggle with complex reasoning tasks requiring multi-hop domain knowledge. While integrating Knowledge Graphs (KGs) provides a structured and verifiable information source, current KG-enhanced LLM paradigms usually rely on single-agent path extraction and fixed prompting, lacking adaptability and facing huge search spaces. To address these challenges, we propose RACER, a Reinforced Agent Collaboration framework for Explainable Reasoning on knowledge graphs. RACER employs a semantic-aware action pruning and teacher-guided reinforcement learning mechanism to efficiently extract high-quality reasoning pathways from large-scale KGs. Furthermore, to mitigate single-path generation ",
-    "url": "https://arxiv.org/abs/2608.29263",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 50,
-    "score": 60,
-    "llm_summary": "提出基于强化学习和多智能体协作的知识图谱推理方法，增强可解释性。",
-    "llm_tags": [
-      "知识图谱",
-      "多智能体",
-      "强化学习",
-      "可解释推理"
-    ]
-  },
-  {
-    "id": "6e2f50f7ad5c",
-    "title": "DS-Lighting: Making Agent Harnesses Explicit for Data-Science Automation",
-    "summary": "arXiv:2608.28590v1 Announce Type: new  Abstract: Large Language Model (LLM) agents have shown promise for automating data-science workflows, yet their end-to-end performance depends critically on the agent harness that represents tasks, manages execution state, constrains output artifacts, and provides evaluation feedback. Existing data-science agents often leave this harness implicit, making results difficult to reproduce, compare, and attribute across heterogeneous tasks. We introduce DS-Lighting, a unified harness toolkit that makes harness design explicit for data-science automation. DS-Lighting decomposes the harness into four reusable layers: data, workflow, execution, and evaluation, and represents diverse agents as executable operator programs that support both predefined pipelines",
-    "url": "https://arxiv.org/abs/2608.28590",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "提出显式agent harness框架，提升数据科学自动化任务的可复现性与可比性",
-    "llm_tags": [
-      "LLM智能体",
-      "数据科学",
-      "自动化",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "30329773eb3e",
-    "title": "Cloud and On-Premises Deployment of Uzbek Legal RAG via Targeted Retriever Fine-Tuning",
-    "summary": "arXiv:2608.29284v1 Announce Type: new  Abstract: Deploying large language models for legal question answering raises challenges that general-purpose leaderboards do not capture, particularly for low-resource languages and under hard operational constraints. We report on building and operating a retrieval-augmented (RAG) legal assistant for Uzbek that must run in two regimes: a managed cloud service that maximizes answer quality within a per-token cost ceiling, and an on-premises deployment for clients whose legal data may not leave their infrastructure, restricting us to open-weight models on limited local hardware under latency constraints. Because no evaluation existed for this setting, we build two domain benchmarks: a retrieval benchmark of 178 expert-annotated legal queries with gold ",
-    "url": "https://arxiv.org/abs/2608.29284",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 76,
-    "score": 70,
-    "llm_summary": "针对乌兹别克语法律问答的RAG系统，通过定向微调检索器支持云和本地部署。",
-    "llm_tags": [
-      "RAG",
-      "法律问答",
-      "低资源语言",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "ebbecf0dc317",
-    "title": "Modality Fault Lines: Structural Corruptions Reveal Fragile Omni-Modal Reasoning",
-    "summary": "arXiv:2608.29278v1 Announce Type: new  Abstract: Omni-modal large language models are increasingly evaluated on clean text--vision--audio inputs, where every channel is present, synchronized, and readily interpretable. Such scores are often taken as evidence of robust cross-modal fusion, but clean evaluation cannot tell whether success depends on stable cross-modal structure or on cues sufficient only in intact inputs. To address this gap, we define a modality fault line: a boundary at which model behavior becomes unstable when a modality remains present and human-interpretable, but its internal evidence structure is perturbed. We introduce SCEval (Structure-Corruption Evaluation) a diagnostic evaluation protocol that keeps the question, answer space, and modality channels fixed while appl",
-    "url": "https://arxiv.org/abs/2608.29278",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-01T04:00:00+00:00",
-    "frontier": 45,
-    "signal": 72,
-    "score": 58,
-    "llm_summary": "揭示全模态大模型在结构损坏下推理脆弱性，提出模态断层线评估方法",
-    "llm_tags": [
-      "🔧 已开源",
-      "多模态",
-      "鲁棒性"
     ]
   }
 ]
