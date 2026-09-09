@@ -84,6 +84,42 @@
     ]
   },
   {
+    "id": "68e3dd6a70d9",
+    "title": "Tao: Open math problems being non-renewably mined by AI",
+    "summary": "HN 热度: 443 点赞, 381 评论（外链帖无正文）",
+    "url": "https://mathstodon.xyz/@tao/117237320796901560",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-08T21:00:52+00:00",
+    "points": 443,
+    "num_comments": 381,
+    "frontier": 76,
+    "signal": 76,
+    "score": 76,
+    "llm_summary": "🔥 HN 443赞 381评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "4de9a92da919",
+    "title": "Muse – Meta’s personal AI agent",
+    "summary": "HN 热度: 596 点赞, 650 评论（外链帖无正文）",
+    "url": "https://ai.meta.com/muse/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-08T19:25:00+00:00",
+    "points": 596,
+    "num_comments": 650,
+    "frontier": 77,
+    "signal": 77,
+    "score": 77,
+    "llm_summary": "🔥 HN 596赞 650评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "e07e08886b9e",
     "title": "hku-sail/Real2Sim_GPT6_ASTRA ⭐54",
     "summary": "",
@@ -1472,207 +1508,6 @@
       "模型分析",
       "可视化",
       "量化"
-    ]
-  },
-  {
-    "id": "a7b92c74fff8",
-    "title": "WebLLM: high-performance in-browser LLM inference engine",
-    "summary": "HN 热度: 137 点赞, 23 评论（外链帖无正文）",
-    "url": "https://github.com/mlc-ai/web-llm",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-02T14:02:35+00:00",
-    "points": 137,
-    "num_comments": 23,
-    "frontier": 71,
-    "signal": 71,
-    "score": 71,
-    "llm_summary": "🔥 HN 137赞 23评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "57a70820bad6",
-    "title": "Three sites made 215,128 “best software” pages for AI. Perplexity cites them",
-    "summary": "HN 热度: 327 点赞, 158 评论（外链帖无正文）",
-    "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-02T13:59:59+00:00",
-    "points": 327,
-    "num_comments": 158,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 327赞 158评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "55e8fa9d3d8e",
-    "title": "Real-Time Intelligence with IBM Time Series Models on Confluent",
-    "summary": "",
-    "url": "https://huggingface.co/blog/ibm-research/real-time-intelligence",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-09-02T13:49:14+00:00",
-    "frontier": 70,
-    "signal": 85,
-    "score": 76,
-    "llm_summary": "IBM时间序列模型集成Confluent平台实现实时智能预测",
-    "llm_tags": [
-      "时间序列",
-      "实时计算",
-      "模型部署"
-    ]
-  },
-  {
-    "id": "069840ac99d5",
-    "title": "Escaping Redundant Reasoning: Structure-Aware Search for Inference-Time LLMs",
-    "summary": "arXiv:2609.00738v1 Announce Type: new  Abstract: Inference-time search with large language models (LLMs) often concentrates on a small set of structurally or semantically similar trajectories, leaving alternatives underexplored---a failure mode we call \\textit{reasoning basin collapse}. We introduce BASIN, a training-free, structure-aware selection method that groups reasoning states into basins and penalizes repeated visits to the same strategy, thereby reallocating search across genuinely distinct reasoning paths under a fixed compute budget. Under matched inference budgets, BASIN improves over Tree of Thoughts (ToT) by up to $+22$pp on Game of 24 and $+6.7$pp on MuSR. A quality-aware variant, QA-BASIN, further improves robustness by preserving high-quality basins when unconditional dive",
-    "url": "https://arxiv.org/abs/2609.00738",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-02T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 78,
-    "score": 75,
-    "llm_summary": "提出BASIN方法，通过结构感知分组惩罚重复推理路径，缓解推理盆地坍缩",
-    "llm_tags": [
-      "推理时搜索",
-      "🔧 已开源",
-      "结构感知"
-    ]
-  },
-  {
-    "id": "1e848fed07bf",
-    "title": "One Policy, Any Budget: Internalizing Budget-Aware Search via Reinforcement Learning",
-    "summary": "arXiv:2609.00813v1 Announce Type: new  Abstract: While reinforcement learning has enabled LLM-based search agents to invoke external tools, existing methods train under fixed budgets and cannot adapt when constraints vary at deployment. We propose AnySearch, a framework that enables a single policy to perform budget-aware search under any budget constraint through a training scaffold and curriculum reinforcement learning. In the first phase, we train the agent with explicit budget state injection and structured reasoning prompts that guide efficient allocation under linearly decaying budgets. In the second phase, the scaffold is removed and the agent learns to operate autonomously under adaptively sampled budget constraints, matching inference conditions. Both phases are optimized with a c",
-    "url": "https://arxiv.org/abs/2609.00813",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-02T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 78,
-    "score": 75,
-    "llm_summary": "提出AnySearch框架，用课程强化学习训练语言模型搜索代理适应任意预算约束",
-    "llm_tags": [
-      "强化学习",
-      "搜索代理",
-      "预算控制",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "a50bf21dde0b",
-    "title": "Validity-Aware Jailbreak Evaluation for Large Language Models",
-    "summary": "arXiv:2609.00498v1 Announce Type: new  Abstract: Jailbreak robustness has become central to large language model (LLM) safety evaluation, yet prevailing methodologies rely primarily on refusal behavior, semantic resemblance, and intent-matching heuristics that emphasize linguistic plausibility rather than correctness. We identify a key limitation in existing evaluations: many jailbreak intents depend on instructional validity rather than epistemic factuality, allowing realistic-looking responses to be labeled successful despite being factually or procedurally incorrect. To address this gap, we propose Sequential Epistemic and Action-Level Validation (SEAV), a verification-centric jailbreak evaluation framework that decomposes responses into ordered steps and evaluates both validity and cor",
-    "url": "https://arxiv.org/abs/2609.00498",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-02T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "提出有效性感知的越狱评估方法，关注指令合法性而非事实性。",
-    "llm_tags": [
-      "LLM安全",
-      "越狱评估",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "184a94583ffa",
-    "title": "ClinTraceBench: Source-Verifiable Longitudinal Clinical Reasoning over EHR-Derived Dialogues",
-    "summary": "arXiv:2609.01111v1 Announce Type: new  Abstract: Clinical LLM assistants must reason over multi-visit patient trajectories, yet whether the compact history representations used to scale them---retrieval, structured timelines, LLM summaries, agentic memory---preserve the longitudinal signal clinical reasoning needs has not been measured. We introduce ClinTraceBench: 385 MIMIC-IV-derived verified dialogues with event-ID provenance, a nine-task taxonomy (T1--T9), and L0--L4 deterministic + L5 human-audit validation (98.92\\% agreement). We evaluate eight history representation strategies---a no-context floor, \\textit{last-visit-only}, \\textit{full-context}, BGE-M3 \\textit{dense-retrieval}, two compression schemes, and two agentic-memory systems (\\textit{Mem0}, \\textit{A-Mem})---across four bac",
-    "url": "https://arxiv.org/abs/2609.01111",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-02T04:00:00+00:00",
-    "frontier": 88,
-    "signal": 85,
-    "score": 86,
-    "llm_summary": "提出基于病历对话的长序列临床推理基准与任务分类体系。",
-    "llm_tags": [
-      "临床推理",
-      "基准测试",
-      "医疗AI"
-    ]
-  },
-  {
-    "id": "de6458e091e2",
-    "title": "Beyond Token Positions: Safety Alignment Across Denoising Steps in Diffusion Language Models",
-    "summary": "arXiv:2609.00495v1 Announce Type: new  Abstract: Diffusion large language models (dLLMs) generate text through iterative denoising rather than left-to-right decoding. This generation paradigm introduces two axes that can influence safety alignment: when tokens are generated during denoising and where they appear in the response. In this paper, we measure dLLM safety behavior under harmful prompts by tracing intermediate token distributions and commitment decisions throughout denoising. Our analysis shows that refusal signals are concentrated in early denoising steps and leading response positions, and the tokens committed early can strongly shape the final safety outcome. Our measurements further show that the denoising step and persistence of refusal-token commitment are important for und",
-    "url": "https://arxiv.org/abs/2609.00495",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-02T04:00:00+00:00",
-    "frontier": 76,
-    "signal": 72,
-    "score": 74,
-    "llm_summary": "分析扩散语言模型在去噪过程中的安全对齐行为",
-    "llm_tags": [
-      "扩散语言模型",
-      "安全对齐",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "28137a312849",
-    "title": "Residual Sparsification via Output Importance for Compressing Mixture-of-Experts LLMs",
-    "summary": "arXiv:2609.00575v1 Announce Type: new  Abstract: Mixture-of-experts (MoE) architectures scale large language models efficiently, but they demand massive GPU memory. To cope with such demand, models are commonly compressed to reduce their memory footprint. Residual sparsification is a representative compression technique that decomposes each projection matrix of an expert into a shared base matrix and per-expert residual matrix, and then compresses the residuals. Existing sparsification methods compress each residual matrix independently by minimizing its compression error, thereby minimizing the error of each projection matrix. However, our analysis shows that this objective is misaligned with preserving model accuracy after compression. In an expert, the final output is produced through c",
-    "url": "https://arxiv.org/abs/2609.00575",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-02T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 68,
-    "score": 72,
-    "llm_summary": "利用输出重要性稀疏化残差矩阵，压缩MoE大语言模型显存占用。",
-    "llm_tags": [
-      "模型压缩",
-      "MoE",
-      "稀疏化"
-    ]
-  },
-  {
-    "id": "2b4222b37467",
-    "title": "SCoNE: Selective Context-aware Neuron Editing for Robust Retrieval-Augmented Generation",
-    "summary": "arXiv:2609.00689v1 Announce Type: new  Abstract: Retrieval-Augmented Generation (RAG) is highly sensitive to retrieval noise: when retrieved documents mix informative and irrelevant context, LLMs are easily distracted, leading to hallucinations. To overcome this, we propose SCoNE (Selective Context-aware Neuron Editing), a training-free model editing approach that improves retrieval noise robustness by selectively strengthening context-aware FFN neurons that are identified by both high attribution and high cross-input variability. SCoNE requires only a small number of mining samples, no fine-tuning, and no inference-time overhead. Across various knowledge-intensive question-answering benchmarks and two LLM backbones, SCoNE consistently outperforms competitive baseline methods. Our code is ",
-    "url": "https://arxiv.org/abs/2609.00689",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-02T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 80,
-    "score": 76,
-    "llm_summary": "提出SCoNE，无需训练，编辑FFN神经元增强RAG抗噪鲁棒性。",
-    "llm_tags": [
-      "🔧 已开源",
-      "RAG",
-      "模型编辑",
-      "神经元"
-    ]
-  },
-  {
-    "id": "a2eb56a49e66",
-    "title": "SCAFFOLD: A Large-Scale Structured Dataset of Computer Science Research Figures with Diagram QA and Chain-of-Thought Reasoning Traces",
-    "summary": "arXiv:2609.00018v1 Announce Type: new  Abstract: Computer science papers rely heavily on diagrams: architecture drawings, system flowcharts, and pipeline schematics that often carry more information than the text around them. There is currently no public dataset that pairs this specific kind of figure with captions, context, questions, answers, and step-by-step reasoning, which is exactly what is needed to train a vision-language model to understand them. We present \\textbf{SCAFFOLD}\\footnote{https://github.com/theranjitraut/scaffold}, a large-scale structured dataset of computer science research figures with diagram QA and Chain-of-Thought reasoning traces. This dataset consists of (image, caption, context, question-answer, chain-of-thought) tuples from arXiv computer science papers prepa",
-    "url": "https://arxiv.org/abs/2609.00018",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-02T04:00:00+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 70,
-    "llm_summary": "构建计算机科学论文图表问答与思维链推理的大规模数据集",
-    "llm_tags": [
-      "图表理解",
-      "视觉问答",
-      "思维链",
-      "🔧 已开源"
     ]
   }
 ]
