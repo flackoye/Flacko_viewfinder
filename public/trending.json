@@ -1,5 +1,89 @@
 [
   {
+    "id": "505e4af50984",
+    "title": "cozyblaze/portal-agent ⭐71",
+    "summary": "The setup I used for my GPT-6 Astra Portal run: controller, SourcePauseTool patch, setup guide, and sanitized session log.",
+    "url": "https://github.com/cozyblaze/portal-agent",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-09T03:44:01.287007+00:00",
+    "created_at": "2026-09-07T04:40:30Z",
+    "stars": 71,
+    "language": "JavaScript",
+    "frontier": 55,
+    "signal": 45,
+    "score": 51,
+    "llm_summary": "个人配置GPT-6 Astra Portal运行，含补丁及指南",
+    "llm_tags": [
+      "智能体",
+      "GPT-6",
+      "工具配置"
+    ]
+  },
+  {
+    "id": "479273e1a299",
+    "title": "fanfanyuyang/bid-agent-vscode ⭐52",
+    "summary": "Intelligent Parsing Agent for Electrical Tender Documents – A seven-step workflow + document processing ledger, enabling multi-format uploads, automatic equipment parameter extraction, evidence review",
+    "url": "https://github.com/fanfanyuyang/bid-agent-vscode",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-09T03:44:01.287007+00:00",
+    "created_at": "2026-09-04T16:14:02Z",
+    "stars": 52,
+    "language": "Python",
+    "frontier": 55,
+    "signal": 60,
+    "score": 57,
+    "llm_summary": "开源VSCode插件，实现电气招标文件智能解析与参数提取",
+    "llm_tags": [
+      "文档解析",
+      "智能代理",
+      "电气领域"
+    ]
+  },
+  {
+    "id": "26a31819dce8",
+    "title": "TokenRhythm/NeoHorse ⭐35",
+    "summary": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness.",
+    "url": "https://github.com/TokenRhythm/NeoHorse",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-09T03:44:01.287007+00:00",
+    "created_at": "2026-09-04T08:34:54Z",
+    "stars": 35,
+    "language": null,
+    "frontier": 70,
+    "signal": 45,
+    "score": 60,
+    "llm_summary": "开源NeoHorse项目探索Agent递归自改进后训练",
+    "llm_tags": [
+      "自改进",
+      "Agent后训练",
+      "开源项目"
+    ]
+  },
+  {
+    "id": "0b1d371f813c",
+    "title": "cyptnpassira/PromptLedger ⭐35",
+    "summary": "PromptLedger - version prompt templates, run deterministic comparison snapshots, score candidate responses, and ship diffable experiment reports. Python core plus a Go companion CLI.",
+    "url": "https://github.com/cyptnpassira/PromptLedger",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-09T03:44:01.287007+00:00",
+    "created_at": "2026-09-03T04:26:04Z",
+    "stars": 35,
+    "language": "Python",
+    "frontier": 45,
+    "signal": 55,
+    "score": 49,
+    "llm_summary": "开源PromptLedger工具用于提示模板版本管理与实验对比",
+    "llm_tags": [
+      "提示管理",
+      "实验评估",
+      "开源工具"
+    ]
+  },
+  {
     "id": "e07e08886b9e",
     "title": "hku-sail/Real2Sim_GPT6_ASTRA ⭐54",
     "summary": "",
@@ -36,6 +120,23 @@
     "llm_summary": "🔥 HN 429赞 135评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "3a30dd1576a6",
+    "title": "Introducing ChatGPT Images 2.5",
+    "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+    "source": "OpenAI Blog",
+    "source_type": "official_blog",
+    "timestamp": "2026-09-08T11:30:00+00:00",
+    "frontier": 78,
+    "signal": 45,
+    "score": 65,
+    "llm_summary": "OpenAI发布ChatGPT图像生成2.5，提升个性化与精细度。",
+    "llm_tags": [
+      "图像生成",
+      "模型迭代"
     ]
   },
   {
@@ -1572,185 +1673,6 @@
       "视觉问答",
       "思维链",
       "🔧 已开源"
-    ]
-  },
-  {
-    "id": "8dd7c9238f77",
-    "title": "carloslfu/slotstream ⭐143",
-    "summary": "Run Qwen3.8-Flash-Next (125B MoE, 104 GB at 4-bit) on Macs with a fraction of that RAM by streaming experts from SSD. MLX + Swift, Ollama-compatible API.",
-    "url": "https://github.com/carloslfu/slotstream",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-02T03:32:32.477238+00:00",
-    "created_at": "2026-08-28T06:42:21Z",
-    "stars": 143,
-    "language": "Swift",
-    "frontier": 78,
-    "signal": 72,
-    "score": 76,
-    "llm_summary": "通过流式加载专家，在Mac上以少量内存运行125B MoE模型",
-    "llm_tags": [
-      "模型推理",
-      "内存优化",
-      "MoE",
-      "MLX"
-    ]
-  },
-  {
-    "id": "97151ca6e59f",
-    "title": "555cute/r20-quantum-trader ⭐50",
-    "summary": "⚡ LLM-Native Self-Evolving Quantitative Trading Terminal & Execution Engine (Bloomberg-Style Dark Terminal + 6-Asset AI Brain)",
-    "url": "https://github.com/555cute/r20-quantum-trader",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-02T03:32:32.477238+00:00",
-    "created_at": "2026-08-30T14:34:10Z",
-    "stars": 50,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 45,
-    "score": 51,
-    "llm_summary": "开源LLM量化交易终端，具自进化引擎和多资产AI大脑。",
-    "llm_tags": [
-      "量化交易",
-      "LLM",
-      "开源项目"
-    ]
-  },
-  {
-    "id": "82adc0ab28fc",
-    "title": "grapefruit0205/click ⭐36",
-    "summary": "Codex plugin for coding agents that turns software requests into approved implementation contracts, then keeps implementation and verification inside the agreed boundary.",
-    "url": "https://github.com/grapefruit0205/click",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-02T03:32:32.477238+00:00",
-    "created_at": "2026-08-27T01:06:45Z",
-    "stars": 36,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 45,
-    "score": 51,
-    "llm_summary": "Codex插件将软件请求转化为实施合同，约束编码代理的验证边界。",
-    "llm_tags": [
-      "Codex插件",
-      "编码代理",
-      "实施合同"
-    ]
-  },
-  {
-    "id": "292f1018bd54",
-    "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
-    "summary": "",
-    "url": "https://huggingface.co/blog/allenai/benchmirt",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-09-01T21:39:07+00:00",
-    "frontier": 55,
-    "signal": 82,
-    "score": 66,
-    "llm_summary": "深入分析LLM基准测试的真实效度与局限",
-    "llm_tags": [
-      "基准测试",
-      "大模型评估",
-      "评测分析"
-    ]
-  },
-  {
-    "id": "56d0fdce2e47",
-    "title": "EvoUndo: Recoverability-Constrained Self-Evolution for LLM Agent Harnesses [R]",
-    "summary": "<!-- SC_OFF --><div class=\"md\"><p>LLM agents increasingly modify their own prompts, tools, middleware, resources, and execution harnesses at runtime. Such self-evolution can improve capability, but a ",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1w4m0hq/evoundo_recoverabilityconstrained_selfevolution/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-01T19:17:00+00:00",
-    "frontier": 80,
-    "signal": 65,
-    "score": 74,
-    "llm_summary": "提出约束可恢复性的LLM智能体自进化方法",
-    "llm_tags": [
-      "智能体",
-      "自我进化",
-      "可恢复性"
-    ]
-  },
-  {
-    "id": "3e3346551c11",
-    "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
-    "summary": "HN 热度: 484 点赞, 562 评论（外链帖无正文）",
-    "url": "https://danluu.com/zitron/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-01T18:35:15+00:00",
-    "points": 484,
-    "num_comments": 562,
-    "frontier": 76,
-    "signal": 76,
-    "score": 76,
-    "llm_summary": "🔥 HN 484赞 562评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "8ebba683e5aa",
-    "title": "Player-YN/PawWork_ZhuaZhua ⭐209",
-    "summary": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
-    "url": "https://github.com/Player-YN/PawWork_ZhuaZhua",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-01T16:15:39.269332+00:00",
-    "created_at": "2026-08-28T10:56:56Z",
-    "stars": 209,
-    "language": "JavaScript",
-    "frontier": 77,
-    "signal": 77,
-    "score": 77,
-    "llm_summary": "⭐209 高星新仓库，社区热度达标直通入选",
-    "llm_tags": [
-      "⭐高星直通"
-    ]
-  },
-  {
-    "id": "8f2ad13ba0f9",
-    "title": "rokbenko/quackd ⭐101",
-    "summary": "🦆🧠 Give your Microduck a brain. Tell a small robot with two legs what you want in plain language. An LLM (Claude, OpenAI, Gemini, Grok, or a local model via Ollama, vLLM or llama.cpp) uses the skills ",
-    "url": "https://github.com/rokbenko/quackd",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-01T16:15:39.269332+00:00",
-    "created_at": "2026-08-28T09:09:16Z",
-    "stars": 101,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 55,
-    "score": 55,
-    "llm_summary": "开源项目，用LLM为小型双足机器人提供自然语言控制能力",
-    "llm_tags": [
-      "机器人",
-      "LLM",
-      "自然语言"
-    ]
-  },
-  {
-    "id": "7ab35fc82871",
-    "title": "oce-ai/oce ⭐47",
-    "summary": "OpenContextEngine is a self-hosted, ACE-compatible code retrieval service. It indexes source files with cAST-aware chunking, stores metadata in PostgreSQL or SQLite, performs dense vector retrieval in",
-    "url": "https://github.com/oce-ai/oce",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-01T16:15:39.269332+00:00",
-    "created_at": "2026-08-27T01:03:32Z",
-    "stars": 47,
-    "language": "Python",
-    "frontier": 50,
-    "signal": 55,
-    "score": 52,
-    "llm_summary": "开源ACE兼容代码检索服务，支持cAST感知分块和向量检索",
-    "llm_tags": [
-      "代码检索",
-      "向量检索",
-      "自托管"
     ]
   }
 ]
