@@ -1,5 +1,23 @@
 [
   {
+    "id": "1d45394d38a8",
+    "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
+    "summary": "HN 热度: 365 点赞, 128 评论（外链帖无正文）",
+    "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-09T14:37:47+00:00",
+    "points": 365,
+    "num_comments": 128,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 365赞 128评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "505e4af50984",
     "title": "cozyblaze/portal-agent ⭐71",
     "summary": "The setup I used for my GPT-6 Astra Portal run: controller, SourcePauseTool patch, setup guide, and sanitized session log.",
@@ -1236,278 +1254,6 @@
       "🔧 已开源",
       "多语言基准",
       "文本归属"
-    ]
-  },
-  {
-    "id": "8f3957017674",
-    "title": "peter123023/awesome-free-llm-api ⭐71",
-    "summary": "免费大模型 API 导航 · 只收录能通过 API Key 和 endpoint 调用的永久免费 / 限时免费接口｜A curated list of free LLM APIs — permanently free tiers and limited-time free models, all callable via API key and endpoint. Channel-first, w",
-    "url": "https://github.com/peter123023/awesome-free-llm-api",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-03T03:32:43.695506+00:00",
-    "created_at": "2026-09-01T17:49:12Z",
-    "stars": 71,
-    "language": null,
-    "frontier": 30,
-    "signal": 70,
-    "score": 46,
-    "llm_summary": "汇总免费可调用的 LLM API 接口资源列表",
-    "llm_tags": [
-      "免费API",
-      "LLM",
-      "资源汇总"
-    ]
-  },
-  {
-    "id": "aaeaf7c36566",
-    "title": "Continuum-AI-Corp/OrcaReplay ⭐64",
-    "summary": "OrcaReplay — Time travel for AI agents. Record, replay, fork, and debug any agent run with any model. Built by the OrcaRouter.ai team.",
-    "url": "https://github.com/Continuum-AI-Corp/OrcaReplay",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-03T03:32:43.695506+00:00",
-    "created_at": "2026-08-29T08:41:53Z",
-    "stars": 64,
-    "language": "TypeScript",
-    "frontier": 60,
-    "signal": 55,
-    "score": 58,
-    "llm_summary": "AI代理时间旅行调试工具，支持记录重放与分叉运行",
-    "llm_tags": [
-      "智能体",
-      "调试工具"
-    ]
-  },
-  {
-    "id": "c56653a663bb",
-    "title": "Instituto-IA-LNCC/manaca-1b-base ⭐59",
-    "summary": "LLM aberto e reprodutível para o Português do Brasil An Open, Reproducible Brazilian-Portuguese Language Model",
-    "url": "https://github.com/Instituto-IA-LNCC/manaca-1b-base",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-03T03:32:43.695506+00:00",
-    "created_at": "2026-08-31T00:30:47Z",
-    "stars": 59,
-    "language": "Python",
-    "frontier": 55,
-    "signal": 55,
-    "score": 55,
-    "llm_summary": "发布1B巴西葡萄牙语开源语言模型，注重可复现性",
-    "llm_tags": [
-      "开源模型",
-      "葡萄牙语",
-      "LLM"
-    ]
-  },
-  {
-    "id": "59b64ffa9b25",
-    "title": "Worigin0314/academic-defensive-writing-auditor ⭐48",
-    "summary": "An open-source LLM skill for detecting and rewriting defensive academic writing while preserving necessary scientific caveats and evidence boundaries.",
-    "url": "https://github.com/Worigin0314/academic-defensive-writing-auditor",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-03T03:32:43.695506+00:00",
-    "created_at": "2026-08-30T06:45:02Z",
-    "stars": 48,
-    "language": "JavaScript",
-    "frontier": 45,
-    "signal": 60,
-    "score": 51,
-    "llm_summary": "开源LLM技能，用于检测并改写防御性学术写作，保留科学限定语。",
-    "llm_tags": [
-      "学术写作",
-      "LLM应用",
-      "文本改写"
-    ]
-  },
-  {
-    "id": "f174639bf3ca",
-    "title": "1Panel-dev/1Panel-Gateway ⭐44",
-    "summary": "1Panel AI 网关提供从统一接入、智能路由到合规审计的全链条管控，让企业 AI 落地更安全、更高效、更可控。",
-    "url": "https://github.com/1Panel-dev/1Panel-Gateway",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-03T03:32:43.695506+00:00",
-    "created_at": "2026-08-31T01:56:02Z",
-    "stars": 44,
-    "language": null,
-    "frontier": 62,
-    "signal": 48,
-    "score": 56,
-    "llm_summary": "1Panel发布AI网关，具备统一接入与智能路由能力。",
-    "llm_tags": [
-      "AI网关",
-      "开源",
-      "企业治理"
-    ]
-  },
-  {
-    "id": "8416281f0fc8",
-    "title": "Go grandmaster Shin defeats AI KataGo with a two-stone handicap",
-    "summary": "HN 热度: 418 点赞, 161 评论（外链帖无正文）",
-    "url": "https://www.kedglobal.com/artificial-intelligence/newsView/ked202607210007",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-03T01:11:22+00:00",
-    "points": 418,
-    "num_comments": 161,
-    "frontier": 76,
-    "signal": 76,
-    "score": 76,
-    "llm_summary": "🔥 HN 418赞 161评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "d96e8c45ecae",
-    "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
-    "summary": "",
-    "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-09-03T00:00:00+00:00",
-    "frontier": 72,
-    "signal": 84,
-    "score": 77,
-    "llm_summary": "用GRPO百步强化学习微调350M模型，提升结构化输出稳定性",
-    "llm_tags": [
-      "强化学习",
-      "模型微调",
-      "结构化输出"
-    ]
-  },
-  {
-    "id": "2a73e28306b3",
-    "title": "Give Your Coding Agents a Memory You Own",
-    "summary": "",
-    "url": "https://huggingface.co/blog/funes",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-09-03T00:00:00+00:00",
-    "frontier": 62,
-    "signal": 68,
-    "score": 64,
-    "llm_summary": "介绍为编码代理构建可自主掌控的持久记忆方案。",
-    "llm_tags": [
-      "编码代理",
-      "记忆管理",
-      "人工智能"
-    ]
-  },
-  {
-    "id": "08d20f580e2c",
-    "title": "Safety overview: GPT-6 Astra",
-    "summary": "GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework.",
-    "url": "https://openai.com/index/safety-overview-gpt-6-astra",
-    "source": "OpenAI Blog",
-    "source_type": "official_blog",
-    "timestamp": "2026-09-03T00:00:00+00:00",
-    "frontier": 96,
-    "signal": 62,
-    "score": 82,
-    "llm_summary": "OpenAI发布GPT-6 Astra，网络安全能力首达Critical级",
-    "llm_tags": [
-      "大模型",
-      "AI安全",
-      "GPT-6"
-    ]
-  },
-  {
-    "id": "ec3c0e6bac23",
-    "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
-    "summary": "",
-    "url": "https://huggingface.co/blog/train-to-paint-with-code",
-    "source": "Hugging Face Blog",
-    "source_type": "tech_blog",
-    "timestamp": "2026-09-03T00:00:00+00:00",
-    "frontier": 55,
-    "signal": 70,
-    "score": 61,
-    "llm_summary": "探索用TRL微调编码模型以生成水彩风格的创意应用",
-    "llm_tags": [
-      "强化学习",
-      "模型微调",
-      "生成式AI",
-      "编码模型"
-    ]
-  },
-  {
-    "id": "8b76a54a8b18",
-    "title": "Mamdani Bans AI in NYC Schools",
-    "summary": "HN 热度: 199 点赞, 151 评论（外链帖无正文）",
-    "url": "https://www.nytimes.com/2026/09/01/nyregion/ai-ban-schools-nyc.html",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-02T20:57:04+00:00",
-    "points": 199,
-    "num_comments": 151,
-    "frontier": 72,
-    "signal": 72,
-    "score": 72,
-    "llm_summary": "🔥 HN 199赞 151评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "3baaaa42399b",
-    "title": "\"GPT-6-ASTRA\" has been staged on the OpenAI API",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1w5f55h/gpt6astra_has_been_staged_on_the_openai_api/\"> <img alt=\"&quot;GPT-6-ASTRA&quot; has been staged on the OpenAI API\" src=",
-    "url": "https://www.reddit.com/r/singularity/comments/1w5f55h/gpt6astra_has_been_staged_on_the_openai_api/",
-    "source": "r/singularity",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-02T16:24:16+00:00",
-    "frontier": 85,
-    "signal": 30,
-    "score": 63,
-    "llm_summary": "Reddit曝料称GPT-6-ASTRA已出现在OpenAI API暂存名单，消息未证实。",
-    "llm_tags": [
-      "OpenAI",
-      "模型迭代"
-    ]
-  },
-  {
-    "id": "50384c9cab49",
-    "title": "Human-Agent-Society/reef ⭐122",
-    "summary": "Continual learning infra for self-improving agents",
-    "url": "https://github.com/Human-Agent-Society/reef",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-02T16:11:45.851829+00:00",
-    "created_at": "2026-08-31T01:39:18Z",
-    "stars": 122,
-    "language": "Python",
-    "frontier": 72,
-    "signal": 55,
-    "score": 65,
-    "llm_summary": "开源持续学习基础设施，支持自我改进智能体",
-    "llm_tags": [
-      "持续学习",
-      "智能体",
-      "开源框架"
-    ]
-  },
-  {
-    "id": "c0d810fa5ca6",
-    "title": "alesha-pro/atlas ⭐49",
-    "summary": "Interactive canvas for taking an LLM apart tensor by tensor: measured INT8/INT4/FP8 error, distributions, spectra and outlier channels for every weight tensor",
-    "url": "https://github.com/alesha-pro/atlas",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-02T16:11:45.851829+00:00",
-    "created_at": "2026-08-30T09:10:21Z",
-    "stars": 49,
-    "language": "TypeScript",
-    "frontier": 55,
-    "signal": 60,
-    "score": 57,
-    "llm_summary": "开源工具，交互式可视化LLM张量量化误差与分布",
-    "llm_tags": [
-      "模型分析",
-      "可视化",
-      "量化"
     ]
   }
 ]
