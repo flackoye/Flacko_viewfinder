@@ -1,5 +1,23 @@
 [
   {
+    "id": "8395c831ebd3",
+    "title": "Ask HN: Can we please limit the AI news flood?",
+    "summary": "HN ⭐616 303评 | Over past couple months I noticed that HN feed is almost exclusively AI or AI-adjacent news. Meanwhile the legitimately, broadly-hacker stuff gets left out for the most part. I noticed that because the things I find genuinely interesting that I post here now get zero traction, which is the stuff tha",
+    "url": "https://news.ycombinator.com/item?id=49657850",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-11T13:11:04+00:00",
+    "points": 616,
+    "num_comments": 303,
+    "frontier": 77,
+    "signal": 77,
+    "score": 77,
+    "llm_summary": "🔥 HN 616赞 303评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "6007122438cb",
     "title": "iamzulx/crypto-rag ⭐899",
     "summary": "Asisten crypto berbahasa Indonesia: RAG pengetahuan 267 topik + data pasar realtime (6 bursa, WebSocket, derivatif, on-chain, TVL, DeFi) + tool-calling agent + LLM synthesis",
@@ -746,253 +764,6 @@
     "llm_summary": "🔥 HN 388赞 209评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "ae3ce2c98e2b",
-    "title": "kydlikebtc/awesome-grokbot ⭐239",
-    "summary": "440 live x.ai/bot shares for Grok Bot — every link status-checked, every row attributed. Bilingual EN/中文 catalog with a JSON schema, CI, and a searchable site.",
-    "url": "https://github.com/kydlikebtc/awesome-grokbot",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-04T15:57:36.989257+00:00",
-    "created_at": "2026-09-01T02:30:25Z",
-    "stars": 239,
-    "language": "Python",
-    "frontier": 78,
-    "signal": 78,
-    "score": 78,
-    "llm_summary": "⭐239 高星新仓库，社区热度达标直通入选",
-    "llm_tags": [
-      "⭐高星直通"
-    ]
-  },
-  {
-    "id": "5a3032cc0d40",
-    "title": "internetphysics/live-classroom ⭐91",
-    "summary": "A live TV channel that teaches whatever you type — LLM-planned lessons rendered just-in-time as 1970s-style cartoons by MiniMax H3 Max Turbo, playing on a CRT in a 3D classroom. Bring your own fal key",
-    "url": "https://github.com/internetphysics/live-classroom",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-04T15:57:36.989257+00:00",
-    "created_at": "2026-09-02T19:24:07Z",
-    "stars": 91,
-    "language": "TypeScript",
-    "frontier": 55,
-    "signal": 65,
-    "score": 59,
-    "llm_summary": "用LLM实时生成课程并渲染为复古卡通风格在3D教室播放。",
-    "llm_tags": [
-      "LLM应用",
-      "实时渲染",
-      "教育工具"
-    ]
-  },
-  {
-    "id": "3ba593220ab0",
-    "title": "stevibe/SparklingKit ⭐58",
-    "summary": "Local-first AI workbench for OCR, transcription, translation, image generation, mind maps and composable workflows. Built for DGX Spark.",
-    "url": "https://github.com/stevibe/SparklingKit",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-04T15:57:36.989257+00:00",
-    "created_at": "2026-08-31T09:17:38Z",
-    "stars": 58,
-    "language": "TypeScript",
-    "frontier": 55,
-    "signal": 50,
-    "score": 53,
-    "llm_summary": "面向DGX Spark的本地AI工作台，集成OCR、翻译、图像生成等任务",
-    "llm_tags": [
-      "本地AI",
-      "工作流",
-      "OCR"
-    ]
-  },
-  {
-    "id": "de023e4384bc",
-    "title": "Corporate America is getting hooked on open-source AI",
-    "summary": "HN ⭐306 285评 | https://archive.is/kmOqm",
-    "url": "https://www.nytimes.com/2026/09/04/technology/open-source-ai-anthropic-openai.html",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-04T15:33:45+00:00",
-    "points": 306,
-    "num_comments": 285,
-    "frontier": 74,
-    "signal": 74,
-    "score": 74,
-    "llm_summary": "🔥 HN 306赞 285评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "9b9bc1e3470a",
-    "title": "Google AI Mode shows same products 21.6% more expensive than traditional search",
-    "summary": "HN 热度: 371 点赞, 72 评论（外链帖无正文）",
-    "url": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-04T11:59:15+00:00",
-    "points": 371,
-    "num_comments": 72,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 371赞 72评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "b1b3da9003c5",
-    "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
-    "summary": "arXiv:2609.03430v1 Announce Type: new  Abstract: Large language models achieve superior performance on tasks that require extended reasoning, but long chains of thought make the KV cache a severe memory bottleneck. Existing KV cache compression methods share one paradigm: score each cached token by some estimate of how much it will matter later, and keep the top-scoring ones. We show that the selection signal contributes almost nothing. Random Attention keeps the prompt and evicts uniformly at random within each attention head, computing no score at all; across four models and six reasoning tasks it matches the strongest prior evictor while serving 32-43% higher throughput than it in vLLM deployment. Controlled experiments explain this by showing that 1) the prompt is the fragile part of t",
-    "url": "https://arxiv.org/abs/2609.03430",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-04T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 70,
-    "score": 70,
-    "llm_summary": "重新思考KV缓存驱逐，提出随机均匀丢弃的简单方法并验证其效果。",
-    "llm_tags": [
-      "KV缓存",
-      "注意力机制",
-      "推理加速",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "8f06d564f656",
-    "title": "Decoupling Turn-Taking from Semantics: A Decoupled Data Approach for Finite-State-Machine-Based Full-Duplex Dialogue",
-    "summary": "arXiv:2609.03321v1 Announce Type: new  Abstract: The Neural Finite State Machine (NFSM) framework offers a pragmatic path to full-duplex dialogue by serializing turn-taking control and response generation onto a single causal tape under the standard next-token prediction objective, thereby preserving semantic prowess at a low fine-tuning cost. However, its reliance on synthetic text data fundamentally limits turn-taking naturalness, as Large Language Models (LLMs) cannot faithfully simulate the fine-grained acoustic temporal dynamics of real human dialogues. In this work, we propose a decoupled data approach that learns turn-taking from real Human-Human (HH) spoken dialogues while shaping semantic behavior through configurable Human-Agent (HA) text dialogues. To operationalize this approac",
-    "url": "https://arxiv.org/abs/2609.03321",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-04T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 75,
-    "score": 74,
-    "llm_summary": "解耦交互控制与语义数据，改进全双工对话自然度",
-    "llm_tags": [
-      "🔧 已开源",
-      "对话系统",
-      "全双工",
-      "有限状态机"
-    ]
-  },
-  {
-    "id": "0408e4be5e64",
-    "title": "Learning to Zoom Efficiently with a Contrastive Curriculum",
-    "summary": "arXiv:2609.03206v1 Announce Type: cross  Abstract: Using a zoom-in tool is an important foundational part of modern visual agents, because it allows to efficiently handle tasks involving high-resolution images. Most previous methods need an extensive warm-start supervised fine-tuning phase for teaching models zoom-in. We show that this is not necessary by proposing a new intrinsic reward for learning tool use in MLLMs without the need for additional labels or warm-start SFT. Our InfoNCE-style reward uses a curriculum of increasingly hard negative tool calls as a contrastive training signal. Empirical experiments on $V^*$, HRBench and MME-RealWorld show that our approach is competitive while being more efficient. When used as a drop-in replacement for SFT, we even outperform all baselines. ",
-    "url": "https://arxiv.org/abs/2609.03206",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-04T04:00:00+00:00",
-    "frontier": 78,
-    "signal": 75,
-    "score": 76,
-    "llm_summary": "提出对比课程内在奖励，让多模态大模型无需监督微调即可学会缩放工具。",
-    "llm_tags": [
-      "多模态",
-      "视觉智能体",
-      "工具使用",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "ef1297219e2c",
-    "title": "StrixAE: An Intelligent Agent for Audio Enhancement under Complex Distortion Coupling in Real-World Scenarios",
-    "summary": "arXiv:2609.03414v1 Announce Type: cross  Abstract: Audio enhancement in real-world scenarios involves complex distortion couplings and requires personalized enhancement. Existing solutions struggle to address both simultaneously. To improve robustness and enable autonomous operation in such scenarios, we propose StrixAE, an agent based on a multimodal large language model (MLLM). StrixAE leverages the MLLM as a controller to coordinate multiple audio enhancement and personalization models. To further enhance system robustness, reduce artifacts, and improve generalization across diverse real-world scenarios, StrixAE is trained through a two-stage process: first, CoT supervised fine-tuning on AcoustBench to ground basic reasoning and tool invocation; second, Audio Perception Reinforcement Le",
-    "url": "https://arxiv.org/abs/2609.03414",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-04T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 78,
-    "score": 75,
-    "llm_summary": "基于多模态大模型协调音频增强任务，支持复杂失真耦合场景的智能体",
-    "llm_tags": [
-      "音频增强",
-      "多模态大模型",
-      "智能体",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "c836ae08c938",
-    "title": "Margins, Not Windows: Training-Free Per-Step Lossy Speculative Decoding",
-    "summary": "arXiv:2609.02897v1 Announce Type: new  Abstract: Speculative decoding accelerates LLM inference by drafting candidate tokens and verifying them in parallel. Tree-attention drafters such as EAGLE-3 are widely adopted, yet typically hold two decisions fixed: (1) a strict token-match verification rule and (2) a static draft-tree shape. Prior work relaxes each in isolation under limiting assumptions: long draft chains for training-free lossy verification, and adaptive tree shaping under a fixed token budget. We introduce AdaptiveSpec, a training-free per-step speculative decoding method that adapts both decisions from internal signals already produced during decoding. A per-step margin rule promotes a mismatched draft-proposed token when the ratio of the target's probability on the drafted tok",
-    "url": "https://arxiv.org/abs/2609.02897",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-04T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 65,
-    "score": 70,
-    "llm_summary": "提出训练自由的逐步骤有损投机解码方法，放宽验证规则与草稿树形状限制。",
-    "llm_tags": [
-      "投机解码",
-      "推理加速",
-      "大语言模型"
-    ]
-  },
-  {
-    "id": "93086dc5bec5",
-    "title": "CROCODIL: Cross-Model Code Editing with LLMs",
-    "summary": "arXiv:2609.03894v1 Announce Type: new  Abstract: Large language models (LLMs) have become ubiquitous tools for code generation and editing. However, development teams often use multiple LLM assistants. Different developers may prefer different models, and individual developers may switch between models across different coding sessions. Because of this, the edits any one model makes are frequently applied to foreign code originally generated by another model. These LLMs are often trained on different datasets, and as a result have different stylistic preferences. Do LLMs behave differently when they edit foreign code originally written by a different LLM with a different coding style? We find that models tend to make more, and often excessive, edits on foreign code. We introduce CROCODIL (C",
-    "url": "https://arxiv.org/abs/2609.03894",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-04T04:00:00+00:00",
-    "frontier": 70,
-    "signal": 75,
-    "score": 72,
-    "llm_summary": "提出跨模型代码编辑方法，应对不同LLM协作时的代码转换问题",
-    "llm_tags": [
-      "跨模型编辑",
-      "LLM",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "6f80ba366c10",
-    "title": "HalluPeer: A Taxonomy-driven Benchmark for Detecting Hallucinations in Scientific Peer Reviews",
-    "summary": "arXiv:2609.03580v1 Announce Type: cross  Abstract: The growing scale of academic peer review has motivated the use of Large Language Models (LLMs) as review assistants, yet LLMs can generate fluent but unsupported claims that undermine review reliability. Existing hallucination benchmarks are not designed for peer review, where verification requires grounding claims in long, technical papers. We introduce HalluPeer, a benchmark for detecting hallucinations in scientific peer reviews, providing aligned triples of paper content, human-written reviews, and hallucination-injected reviews, annotated for detection, classification, and localization. Our pipeline induces a peer-review-specific hallucination taxonomy, identifies review contexts, and injects hallucinations with automated filtering. ",
-    "url": "https://arxiv.org/abs/2609.03580",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-04T04:00:00+00:00",
-    "frontier": 62,
-    "signal": 74,
-    "score": 68,
-    "llm_summary": "Taxonomy-driven基准，用于检测科学同行评审中的幻觉内容",
-    "llm_tags": [
-      "幻觉检测",
-      "基准测试",
-      "同行评审",
-      "🔧 已开源"
-    ]
-  },
-  {
-    "id": "a5687c25449f",
-    "title": "Speculative Macro Commit for Faster Tool-Using Agents",
-    "summary": "arXiv:2609.03236v1 Announce Type: new  Abstract: Tool-using LLM agents spend wall-clock time not only on model inference but also in serial action--observation turns, where each tool call, environment transition, and observation can delay subsequent decisions. We introduce \\textbf{Speculative Macro Commit} (SMC), a runtime mechanism for a two-tier agent system: a large authoritative actor model produces the official trajectory, while a faster speculative drafter model continuously predicts and executes future action chains on an isolated environment snapshot. SMC mines recurring multi-action skeletons from training traces and stores them in a macro library used to match against action chains predicted by the drafter at runtime. When the actor's next tool call matches the first drafted acti",
-    "url": "https://arxiv.org/abs/2609.03236",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-04T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 80,
-    "score": 76,
-    "llm_summary": "提出宏投机提交机制加速工具使用智能体运行",
-    "llm_tags": [
-      "Agent",
-      "投机执行",
-      "性能优化",
-      "🔧 已开源"
     ]
   }
 ]
