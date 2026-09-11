@@ -1,5 +1,42 @@
 [
   {
+    "id": "6007122438cb",
+    "title": "iamzulx/crypto-rag ⭐899",
+    "summary": "Asisten crypto berbahasa Indonesia: RAG pengetahuan 267 topik + data pasar realtime (6 bursa, WebSocket, derivatif, on-chain, TVL, DeFi) + tool-calling agent + LLM synthesis",
+    "url": "https://github.com/iamzulx/crypto-rag",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-11T03:39:46.234500+00:00",
+    "created_at": "2026-09-05T06:20:08Z",
+    "stars": 899,
+    "language": "Python",
+    "frontier": 85,
+    "signal": 85,
+    "score": 85,
+    "llm_summary": "⭐899 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "75c38a4e5c3b",
+    "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+    "summary": "HN 热度: 365 点赞, 155 评论（外链帖无正文）",
+    "url": "https://cognition.com/blog/swe-2",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-10T15:29:47+00:00",
+    "points": 365,
+    "num_comments": 155,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 365赞 155评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "1d45394d38a8",
     "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
     "summary": "HN 热度: 365 点赞, 128 评论（外链帖无正文）",
@@ -172,6 +209,24 @@
     "signal": 76,
     "score": 76,
     "llm_summary": "🔥 HN 429赞 135评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
+    "id": "e6e7711928a7",
+    "title": "We Must Return to the Office to Use AI in Person",
+    "summary": "HN 热度: 395 点赞, 68 评论（外链帖无正文）",
+    "url": "https://www.mcsweeneys.net/articles/why-we-must-return-to-the-office-to-use-ai-in-person",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-08T13:41:25+00:00",
+    "points": 395,
+    "num_comments": 68,
+    "frontier": 75,
+    "signal": 75,
+    "score": 75,
+    "llm_summary": "🔥 HN 395赞 68评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
     ]
@@ -938,121 +993,6 @@
       "投机执行",
       "性能优化",
       "🔧 已开源"
-    ]
-  },
-  {
-    "id": "5e2ec36c100a",
-    "title": "2akouwu/reverify ⭐806",
-    "summary": "Anti-hallucination for AI agents that read binaries. The model proposes, deterministic tools decide: every claim is VERIFIED or REFUTED against the real bytes, with evidence, and grounded facts surviv",
-    "url": "https://github.com/2akouwu/reverify",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-04T03:32:00.580405+00:00",
-    "created_at": "2026-08-31T01:02:18Z",
-    "stars": 806,
-    "language": "Python",
-    "frontier": 84,
-    "signal": 84,
-    "score": 84,
-    "llm_summary": "⭐806 高星新仓库，社区热度达标直通入选",
-    "llm_tags": [
-      "⭐高星直通"
-    ]
-  },
-  {
-    "id": "3e8af3e82207",
-    "title": "codejunkie99/fable-orchestrator ⭐344",
-    "summary": "Fable 5.1 orchestrates. GPT-5.6 Luna and DeepSeek V4 Flash implement.",
-    "url": "https://github.com/codejunkie99/fable-orchestrator",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-04T03:32:00.580405+00:00",
-    "created_at": "2026-09-02T21:48:23Z",
-    "stars": 344,
-    "language": "Shell",
-    "frontier": 80,
-    "signal": 80,
-    "score": 80,
-    "llm_summary": "⭐344 高星新仓库，社区热度达标直通入选",
-    "llm_tags": [
-      "⭐高星直通"
-    ]
-  },
-  {
-    "id": "7294fc025687",
-    "title": "Agenta-AI/awesome-ai-agent-platforms ⭐118",
-    "summary": "A curated list of open-source AI agent platforms: AI coworkers and teammates, agent builders and frameworks, workflow automation platforms, browser agents, and coding agents, with licenses.",
-    "url": "https://github.com/Agenta-AI/awesome-ai-agent-platforms",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-04T03:32:00.580405+00:00",
-    "created_at": "2026-09-02T16:32:59Z",
-    "stars": 118,
-    "language": "Astro",
-    "frontier": 52,
-    "signal": 58,
-    "score": 54,
-    "llm_summary": "收录开源AI智能体平台的精选列表，涵盖框架与工具。",
-    "llm_tags": [
-      "AI Agent",
-      "开源",
-      "开发工具"
-    ]
-  },
-  {
-    "id": "87803b51d109",
-    "title": "GPT-6 Astra makes major gains in the Artificial Analysis Coding Agent Index",
-    "summary": "HN 热度: 25 点赞, 16 评论（外链帖无正文）",
-    "url": "https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-03T20:11:25+00:00",
-    "points": 25,
-    "num_comments": 16,
-    "frontier": 85,
-    "signal": 15,
-    "score": 57,
-    "llm_summary": "传闻GPT-6 Astra编程智能体排名大幅提升，但帖子无实质内容。",
-    "llm_tags": [
-      "大模型",
-      "基准测试",
-      "编程智能体"
-    ]
-  },
-  {
-    "id": "30a9f2def9cf",
-    "title": "GPT-6 Astra",
-    "summary": "HN ⭐1430 1183评 | System Card:  https://deploymentsafety.openai.com/gpt-6-astra  Related ongoing threads:  OpenAI's GPT-6 Astra on ARC-AGI-3  -  https://news.ycombinator.com/item?id=49555691   GPT-6 Astra makes major gains in the Artificial Analysis Coding Agent Index  -  https://news.ycombinator.com/item?id=49556147",
-    "url": "https://openai.com/index/gpt-6-astra/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-03T18:41:05+00:00",
-    "points": 1430,
-    "num_comments": 1183,
-    "frontier": 81,
-    "signal": 81,
-    "score": 81,
-    "llm_summary": "🔥 HN 1430赞 1183评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "37401d98c4bd",
-    "title": "OpenAI begins rolling out GPT-6 Astra",
-    "summary": "HN ⭐248 235评 | https://thenewstack.io/openai-gpt6-astra-benchmarks/ , image:  https://cdn.thenewstack.io/media/2026/09/358eb84a-screenshot...   https://venturebeat.com/technology/welcome-to-the-agi-era-op...   https://www.theverge.com/ai-artificial-intelligence/988334/o...   https://twitter.com/OpenAI/status/20955",
-    "url": "https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-03T18:18:22+00:00",
-    "points": 248,
-    "num_comments": 235,
-    "frontier": 73,
-    "signal": 73,
-    "score": 73,
-    "llm_summary": "🔥 HN 248赞 235评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
     ]
   }
 ]
