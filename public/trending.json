@@ -1,5 +1,23 @@
 [
   {
+    "id": "b8c58f1eca53",
+    "title": "A misalignment of AI in mathematics",
+    "summary": "HN ⭐733 744评 | https://terrytao.wordpress.com/2026/09/11/a-severe-misalignm...   https://www.economist.com/science-and-technology/2026/09/11/... ,  https://unwall.app/www.economist.com/science-and-technology/...",
+    "url": "https://mathandai.org/",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-11T17:45:12+00:00",
+    "points": 733,
+    "num_comments": 744,
+    "frontier": 78,
+    "signal": 78,
+    "score": 78,
+    "llm_summary": "🔥 HN 733赞 744评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "8395c831ebd3",
     "title": "Ask HN: Can we please limit the AI news flood?",
     "summary": "HN ⭐616 303评 | Over past couple months I noticed that HN feed is almost exclusively AI or AI-adjacent news. Meanwhile the legitimately, broadly-hacker stuff gets left out for the most part. I noticed that because the things I find genuinely interesting that I post here now get zero traction, which is the stuff tha",
@@ -665,103 +683,6 @@
     "signal": 75,
     "score": 75,
     "llm_summary": "🔥 HN 368赞 324评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "d875031a1a02",
-    "title": "GPT-6 Astra in code review: Gains, privacy, and cost",
-    "summary": "HN 热度: 66 点赞, 58 评论（外链帖无正文）",
-    "url": "https://www.coderabbit.ai/blog/gpt-6-astra-code-review-evaluation",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-05T03:38:56+00:00",
-    "points": 66,
-    "num_comments": 58,
-    "frontier": 85,
-    "signal": 40,
-    "score": 67,
-    "llm_summary": "GPT-6 Astra用于代码审查的收益、隐私与成本初探",
-    "llm_tags": [
-      "代码审查",
-      "大模型"
-    ]
-  },
-  {
-    "id": "9f9d586ccf65",
-    "title": "dreamers-laboratory/video-input-to-modern-llm ⭐97",
-    "summary": "Give an LLM eyes on a video without blowing the context window: ffmpeg frame sampling at a chosen resolution, token estimates per model family, budget fitting, contact sheets.",
-    "url": "https://github.com/dreamers-laboratory/video-input-to-modern-llm",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-05T03:32:49.105490+00:00",
-    "created_at": "2026-09-02T20:09:59Z",
-    "stars": 97,
-    "language": "Python",
-    "frontier": 50,
-    "signal": 60,
-    "score": 54,
-    "llm_summary": "开源工具将视频采样为帧喂给LLM，控制上下文窗口并估算token。",
-    "llm_tags": [
-      "视频处理",
-      "LLM集成",
-      "提示工程"
-    ]
-  },
-  {
-    "id": "781a124676bb",
-    "title": "AbuZar-Ansarii/Needle ⭐81",
-    "summary": "This 14 MB Agentic LLM(Cactus Needle 2) can control your phone completely.",
-    "url": "https://github.com/AbuZar-Ansarii/Needle",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-05T03:32:49.105490+00:00",
-    "created_at": "2026-08-30T06:43:48Z",
-    "stars": 81,
-    "language": "Python",
-    "frontier": 62,
-    "signal": 48,
-    "score": 56,
-    "llm_summary": "14MB端侧智能体声称可操控手机，体积小但细节有限",
-    "llm_tags": [
-      "端侧AI",
-      "智能体",
-      "轻量模型"
-    ]
-  },
-  {
-    "id": "64a17c568d2e",
-    "title": "GPT-6 Astra on OpenRouter",
-    "summary": "HN 热度: 143 点赞, 74 评论（外链帖无正文）",
-    "url": "https://openrouter.ai/openai/gpt-6-astra",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-04T21:39:19+00:00",
-    "points": 143,
-    "num_comments": 74,
-    "frontier": 71,
-    "signal": 71,
-    "score": 71,
-    "llm_summary": "🔥 HN 143赞 74评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
-  },
-  {
-    "id": "e2b395074db6",
-    "title": "Can AI design circuit boards yet?",
-    "summary": "HN 热度: 388 点赞, 209 评论（外链帖无正文）",
-    "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet/",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-04T19:48:29+00:00",
-    "points": 388,
-    "num_comments": 209,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 388赞 209评，高赞热点直通入选",
     "llm_tags": [
       "🔥HN高赞"
     ]
