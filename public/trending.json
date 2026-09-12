@@ -668,23 +668,5 @@
       "游戏开发",
       "AI应用"
     ]
-  },
-  {
-    "id": "4ebc1d3a769f",
-    "title": "AI handles incidents, engineers lose touch with their systems",
-    "summary": "HN 热度: 368 点赞, 324 评论（外链帖无正文）",
-    "url": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
-    "source": "HackerNews",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-05T07:52:50+00:00",
-    "points": 368,
-    "num_comments": 324,
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "🔥 HN 368赞 324评，高赞热点直通入选",
-    "llm_tags": [
-      "🔥HN高赞"
-    ]
   }
 ]
