@@ -1,5 +1,43 @@
 [
   {
+    "id": "4463e33cb2ae",
+    "title": "zjwzcx/Awesome-Astra-Embodied-AI ⭐289",
+    "summary": "GPT-6 Astra for embodied AI and robotics.",
+    "url": "https://github.com/zjwzcx/Awesome-Astra-Embodied-AI",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-14T03:58:46.555360+00:00",
+    "created_at": "2026-09-12T12:20:24Z",
+    "stars": 289,
+    "language": null,
+    "frontier": 79,
+    "signal": 79,
+    "score": 79,
+    "llm_summary": "⭐289 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
+    "id": "fc2646f90ca3",
+    "title": "xiaYuTian11/maskit ⭐204",
+    "summary": "数据面具 Data Maskit — 专为大模型打造的本地隐私脱敏网关（请求自动打码，回复流式还原；支持 Cursor / Claude Code / Codex / Pi 等任意可配 Base URL 工具）",
+    "url": "https://github.com/xiaYuTian11/maskit",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-14T03:58:46.555360+00:00",
+    "created_at": "2026-09-09T12:36:06Z",
+    "stars": 204,
+    "language": "Python",
+    "frontier": 77,
+    "signal": 77,
+    "score": 77,
+    "llm_summary": "⭐204 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
     "id": "bb2236727f8f",
     "title": "yifanzhang-pro/recurrent-looped-tranformer ⭐408",
     "summary": "Official Project Page for Recurrent Looped Transformer (RLT)",
@@ -545,49 +583,6 @@
       "博弈论",
       "信息抽象",
       "🔧 已开源"
-    ]
-  },
-  {
-    "id": "ab6d5c19e8bc",
-    "title": "zeroa234/ryza-ai-revive ⭐61",
-    "summary": "Ryza AI companion. Bring your own LLM/TTS. 莱莎 AI 陪伴，自填大模型与语音。",
-    "url": "https://github.com/zeroa234/ryza-ai-revive",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-07T03:33:58.856664+00:00",
-    "created_at": "2026-09-02T00:52:18Z",
-    "stars": 61,
-    "language": "JavaScript",
-    "frontier": 60,
-    "signal": 55,
-    "score": 58,
-    "llm_summary": "莱莎AI陪伴开源项目，支持接入自选大语言模型和语音合成，中等规格应用方案。",
-    "llm_tags": [
-      "AI陪伴",
-      "大模型",
-      "语音合成",
-      "开源"
-    ]
-  },
-  {
-    "id": "f731da3848c1",
-    "title": "mpaymenremora/CacheCraft ⭐38",
-    "summary": "Semantic cache strategy bench: replay recorded request traces through candidate caching policies and measure which one actually pays off.",
-    "url": "https://github.com/mpaymenremora/CacheCraft",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-07T03:33:58.856664+00:00",
-    "created_at": "2026-09-03T13:34:21Z",
-    "stars": 38,
-    "language": "Python",
-    "frontier": 50,
-    "signal": 60,
-    "score": 54,
-    "llm_summary": "开源语义缓存策略基准框架，可重放请求轨迹比较效果。",
-    "llm_tags": [
-      "语义缓存",
-      "基准测试",
-      "缓存策略"
     ]
   }
 ]
