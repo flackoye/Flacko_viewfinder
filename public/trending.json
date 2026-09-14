@@ -1,5 +1,24 @@
 [
   {
+    "id": "8cba315a4c37",
+    "title": "anonymous-report-421/GPT-as-Policy ⭐225",
+    "summary": "GPT as Policy",
+    "url": "https://github.com/anonymous-report-421/GPT-as-Policy",
+    "source": "GitHub",
+    "source_type": "open_source",
+    "timestamp": "2026-09-14T17:53:27.613939+00:00",
+    "created_at": "2026-09-13T19:05:04Z",
+    "stars": 225,
+    "language": "HTML",
+    "frontier": 78,
+    "signal": 78,
+    "score": 78,
+    "llm_summary": "⭐225 高星新仓库，社区热度达标直通入选",
+    "llm_tags": [
+      "⭐高星直通"
+    ]
+  },
+  {
     "id": "4463e33cb2ae",
     "title": "zjwzcx/Awesome-Astra-Embodied-AI ⭐289",
     "summary": "GPT-6 Astra for embodied AI and robotics.",
@@ -509,80 +528,6 @@
       "递归动态系统",
       "序列生成",
       "小型模型"
-    ]
-  },
-  {
-    "id": "a629f155974d",
-    "title": "Unifying ICL, SFT, KL-Regularized RL Through a Bayesian Lens",
-    "summary": "arXiv:2609.05111v1 Announce Type: new  Abstract: Large language models are now trained and evaluated under a diverse set of paradigms: supervised fine-tuning (SFT), few-shot in-context learning (ICL), KL-regularized RLHF/RLVR, on-policy distillation (OPD), and test-time reasoning with search and chain-of-thought. These methods are often discussed as fundamentally different, and recent empirical results--such as the mixed impact of few-shot prompting on RL-tuned reasoning models--can appear puzzling. This note develops a Bayesian perspective that puts these procedures on the same footing. At the core is a two-step template: (i) construct a (generalized) Bayes or Gibbs posterior q* over outputs or actions given a context, using a prior/reference model and a utility signal (log-likelihood, re",
-    "url": "https://arxiv.org/abs/2609.05111",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-07T04:00:00+00:00",
-    "frontier": 80,
-    "signal": 40,
-    "score": 60,
-    "llm_summary": "贝叶斯视角统一LLM多范式训练方法",
-    "llm_tags": [
-      "贝叶斯方法",
-      "对齐理论",
-      "统一框架"
-    ]
-  },
-  {
-    "id": "90198ef011af",
-    "title": "MaxKernel: Agentic Kernel Generation for TPUs",
-    "summary": "arXiv:2609.04523v1 Announce Type: new  Abstract: Designing and authoring high-performance custom kernels for accelerators is a complex task that requires deep hardware-level expertise. Large Language Models (LLM) can be leveraged together with real-time compiler feedback to build agentic systems for kernel generation. In this work, we present MaxKernel, a multi-agent system that implements three distinct paradigms for TPU kernel development: (1) a Human-in-the-Loop (HITL) agent for collaborative, step-by-step design; (2) an Autonomous (Auto) agent that executes a fully automated, metric/trace-driven optimization loop; and (3) a Graph-Based Autonomous Search that scales the Auto agent for global exploration of the design space. All three paradigms leverage a shared pool of specialized sub-a",
-    "url": "https://arxiv.org/abs/2609.04523",
-    "source": "ArXiv cs.AI",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-07T04:00:00+00:00",
-    "frontier": 75,
-    "signal": 75,
-    "score": 75,
-    "llm_summary": "多智能体LLM系统自动生成TPU高性能自定义内核",
-    "llm_tags": [
-      "🔧 已开源",
-      "TPU内核",
-      "多智能体",
-      "代码生成"
-    ]
-  },
-  {
-    "id": "359f7fb32cf9",
-    "title": "Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs",
-    "summary": "arXiv:2609.04753v1 Announce Type: new  Abstract: Reasoning in large language models unfolds through diverse functional operations, such as problem formulation, goal decomposition, and deduction. Although these operations are explicitly distinguished in text, little is known about how they are geometrically organized in representation spaces. To this end, we investigate whether distinct reasoning operations exhibit corresponding geometric structure in hidden representations. We find that operations are separable in held-out representations, with separability peaking in middle layers, and verify that this structure is not explained by lexical or positional confounds. Across layers, token-wise operation-alignment becomes more distributed over spans, while identical surface tokens are represen",
-    "url": "https://arxiv.org/abs/2609.04753",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-07T04:00:00+00:00",
-    "frontier": 72,
-    "signal": 78,
-    "score": 75,
-    "llm_summary": "探究思维链推理操作在表示空间中的几何结构，促进LLM内部机制理解。",
-    "llm_tags": [
-      "🔧 已开源",
-      "机制解释",
-      "思维链",
-      "表示空间"
-    ]
-  },
-  {
-    "id": "1d4710aa4f24",
-    "title": "Abstraction Agent",
-    "summary": "arXiv:2609.04303v1 Announce Type: cross  Abstract: Information abstraction, which groups strategically similar private states into a tractable number of buckets, is essential for scaling game-solving algorithms to large imperfect-information games. Constructing effective abstractions, however, has traditionally required domain-specific evaluators such as hand-strength calculators or equity estimators, which demand expert knowledge and engineering effort and are unavailable for most less-studied games. We propose the Abstraction Agent, a zero-shot pipeline that uses a large language model (LLM) to discover continuous strategic features from a natural-language game description, score private states on these features, and cluster them into abstraction buckets, without any game-specific evalua",
-    "url": "https://arxiv.org/abs/2609.04303",
-    "source": "ArXiv cs.CL",
-    "source_type": "academic_paper",
-    "timestamp": "2026-09-07T04:00:00+00:00",
-    "frontier": 68,
-    "signal": 75,
-    "score": 72,
-    "llm_summary": "提出自动信息抽象代理，免领域知识创建博弈抽象",
-    "llm_tags": [
-      "博弈论",
-      "信息抽象",
-      "🔧 已开源"
     ]
   }
 ]
