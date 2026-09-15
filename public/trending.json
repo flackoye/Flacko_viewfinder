@@ -1,5 +1,23 @@
 [
   {
+    "id": "2318e5eb07d5",
+    "title": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+    "summary": "HN 热度: 126 点赞, 118 评论（外链帖无正文）",
+    "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+    "source": "HackerNews",
+    "source_type": "tech_community",
+    "timestamp": "2026-09-14T19:56:20+00:00",
+    "points": 126,
+    "num_comments": 118,
+    "frontier": 71,
+    "signal": 71,
+    "score": 71,
+    "llm_summary": "🔥 HN 126赞 118评，高赞热点直通入选",
+    "llm_tags": [
+      "🔥HN高赞"
+    ]
+  },
+  {
     "id": "8cba315a4c37",
     "title": "anonymous-report-421/GPT-as-Policy ⭐225",
     "summary": "GPT as Policy",
@@ -448,86 +466,6 @@
       "智能体",
       "规划",
       "世界模型"
-    ]
-  },
-  {
-    "id": "2fda823000f9",
-    "title": "TripoGrowthLab/awesome-astra-prompts ⭐56",
-    "summary": "Curated GPT-6 Astra prompts and 3D examples for games, Blender scenes and interactive worlds. 14 languages, previews and source links. Updated twice daily. Curated by Tripo.",
-    "url": "https://github.com/TripoGrowthLab/awesome-astra-prompts",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-08T03:38:41.564648+00:00",
-    "created_at": "2026-09-05T19:33:25Z",
-    "stars": 56,
-    "language": "JavaScript",
-    "frontier": 55,
-    "signal": 72,
-    "score": 62,
-    "llm_summary": "GPT-6 Astra提示词与3D示例的精选开源合集",
-    "llm_tags": [
-      "提示词",
-      "3D生成",
-      "开源资源"
-    ]
-  },
-  {
-    "id": "192593464a91",
-    "title": "MartinDelophy/awesome-gpt-6-astra ⭐47",
-    "summary": "A curated collection of fun games built with GPT-6 Astra, with source code, demos, and prompts. | GPT-6 Astra 游戏精选",
-    "url": "https://github.com/MartinDelophy/awesome-gpt-6-astra",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-08T03:38:41.564648+00:00",
-    "created_at": "2026-09-05T08:01:11Z",
-    "stars": 47,
-    "language": "JavaScript",
-    "frontier": 65,
-    "signal": 55,
-    "score": 61,
-    "llm_summary": "收录基于GPT-6 Astra构建的趣味游戏，含源码演示",
-    "llm_tags": [
-      "GPT游戏",
-      "应用合集"
-    ]
-  },
-  {
-    "id": "f66da5614641",
-    "title": "ifm-ai/uno ⭐43",
-    "summary": "Unlocking Lossless Speedups in LLMs via Discrete Diffusion",
-    "url": "https://github.com/ifm-ai/uno",
-    "source": "GitHub",
-    "source_type": "open_source",
-    "timestamp": "2026-09-08T03:38:41.564648+00:00",
-    "created_at": "2026-09-03T06:54:48Z",
-    "stars": 43,
-    "language": "Python",
-    "frontier": 78,
-    "signal": 85,
-    "score": 81,
-    "llm_summary": "开源项目利用离散扩散实现LLM无损加速",
-    "llm_tags": [
-      "扩散模型",
-      "大语言模型",
-      "推理加速"
-    ]
-  },
-  {
-    "id": "ae31e2122620",
-    "title": "Generating Bad Apple autonomously from a single initial state using a tiny recurrent dynamical system (417k params) [P]",
-    "summary": "<table> <tr><td> <a href=\"https://www.reddit.com/r/MachineLearning/comments/1wa8rub/generating_bad_apple_autonomously_from_a_single/\"> <img alt=\"Generating Bad Apple autonomously from a single initial",
-    "url": "https://www.reddit.com/r/MachineLearning/comments/1wa8rub/generating_bad_apple_autonomously_from_a_single/",
-    "source": "r/MachineLearning",
-    "source_type": "tech_community",
-    "timestamp": "2026-09-08T00:05:37+00:00",
-    "frontier": 65,
-    "signal": 75,
-    "score": 69,
-    "llm_summary": "用417k参数递归动态系统从单状态自动生成Bad Apple动画",
-    "llm_tags": [
-      "递归动态系统",
-      "序列生成",
-      "小型模型"
     ]
   }
 ]
